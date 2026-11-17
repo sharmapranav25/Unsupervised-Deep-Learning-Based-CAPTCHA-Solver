@@ -626,3 +626,27 @@ Prelaunch fixes were diagnosed and preserved: WDDM graphics/stale PID queue clas
 ### 2026-11-16: Requested seed123 Model1-A interim real900 measurement
 
 Measured latest committed checkpoint1 (782 updates), SHA d453901386c302f8175d3f882670559481142b01105e1e404fae177e19494694, on fixed900 historical DarkBay images; reference100 excluded and all pixel identities verified. Seed123 epoch1 exact-string accuracy0/900 (0%), original seed48 epoch1 also0/900, difference0 percentage points. GPU batch4 IEEE FP32, TF32 disabled, allocator fraction0.025 and50ms yield under one evaluator lock. Predictions frozen before labels; separate saved-prediction recount agrees. Training continued through optimizer step1525 during epoch2; no training source/protocol/selection changes. Epoch20 remains primary. Finite wrapper E:/pranav/CAPRI/runs/darkbay_m1a_seed123_20261116/measure_latest.py; request/source/verification evidence requested_accuracy_20261117T020902Z under that run. Canonical epoch01 summary can be reused by the final all20 evaluator; this diagnostic did not mark the study complete.
+
+
+## 2026-11-17T06:01:24.915369+00:00: User-selected GitHub examples finalized
+
+Supersedes the earlier unpublished 60-image example preparation. User chose four real and four synthetic images each for CryptBB and DarkBay (16 PNGs total); City is excluded. Chart numbers are retained as filenames. These are user-selected illustration examples, not a representative benchmark sample. All files are byte-identical copies of existing source images, validated against saved candidate SHA256 and original sources, with PNG decoding verified. Dataset pixels, training, model selection and scoring are unchanged. Earlier candidate copies are archived outside the thesis folder; the larger draft commit is not published.
+
+| Example | Original source | SHA256 |
+|---|---|---|
+| examples/CryptBB/real/09.png | evaluation_data/cryptbb/images/cryptbb_0328.png | a90bee069da82326f42fbaa606ed3a080591eb6fe59b2906fff11db107adbc16 |
+| examples/CryptBB/real/11.png | evaluation_data/cryptbb/images/cryptbb_0298.png | da1df5b7f1e299b5565477936d5fe4d8b29e36956309f72780b1e34f0fe44bb1 |
+| examples/CryptBB/real/14.png | evaluation_data/cryptbb/images/cryptbb_0279.png | 650bcdc0aa50caea510c92c924ec6294ecf5da9edb817be8dd2ad49224bc0608 |
+| examples/CryptBB/real/20.png | evaluation_data/cryptbb/images/cryptbb_0295.png | 7a5dee7e5beeeda6733b71fcc72e3eeca16b8e1465577b11d5ea1458c13ab2e0 |
+| examples/CryptBB/synthetic/01.png | datasets/cryptbb_v3/A/corpus/custom_041.zip::00131.png | f1ac2728ace5723f4d92837c8220d8481ebffe1a4445415660e77873d748a5ff |
+| examples/CryptBB/synthetic/02.png | datasets/cryptbb_v3/B/corpus/dino_052.zip::00048.png | 809318fa77c552f3d779f64bcfcacc9a30f021479989b927cea03a8176d0c05d |
+| examples/CryptBB/synthetic/04.png | datasets/cryptbb_v3/B/corpus/custom_094.zip::00072.png | 3e6d07251f883a999acd5a2b237b72706a55878d919e537b342fd302c6fb215b |
+| examples/CryptBB/synthetic/08.png | datasets/cryptbb_v3/B/corpus/dino_010.zip::00065.png | e3b48010562386f0fc1013ea39518b934e17af6de190595b94f1afdad4feaf3f |
+| examples/DarkBay/real/01.png | evaluation_data/darkbay/images/darkbay_24b9992ffaa626fe0ddf795ddd46183b4032df398fe8d67ac89906a2874bc7f8.png | e0d7f4c00ccb93b185ac8f3b12cb3d6f97d2915522758c828eaf4eaf5b4baf9a |
+| examples/DarkBay/real/06.png | evaluation_data/darkbay/images/darkbay_3b5300fe335048dafb45a43016dd3edf2aea8ad9d5bcf2fd1252af2834319f79.png | a171ba2706e00f0aa5e0e4d9f2d6159cdc6b92e1f7e4d1b7336ff238d53adc2d |
+| examples/DarkBay/real/11.png | evaluation_data/darkbay/images/darkbay_f40570c7e404ff54998dcf18a6bf70a406b388a3474a9b29331bd1e0c1b221cb.png | 7b69a1b7efce620f39a095aa22d0402e5b6ff34d56ee849c151a9dc10927fcab |
+| examples/DarkBay/real/16.png | evaluation_data/darkbay/images/darkbay_ad0d24be273eee3d69ba20828df45d8c5fff042000ecc6a1c6bfb000169326eb.png | 40e97e35021ea071808261c4f76e7309be3dd1d61f82721b65f19ac2d77ba2b8 |
+| examples/DarkBay/synthetic/09.png | datasets/darkbay_v3_feature_20261115/A/corpus/mixed_091.zip::00202.png | 84139ae4c176118c16c2db4e74bcbde9a33b7833df52732acd05858ae4cb77a3 |
+| examples/DarkBay/synthetic/14.png | datasets/darkbay_v3_feature_20261115/B/corpus/dino_006.zip::00171.png | 7f5d65c4755dfbaf11dda4d2098aadf1337c86fa146193d5f309f8ae7ba0873a |
+| examples/DarkBay/synthetic/15.png | datasets/darkbay_v3_feature_20261115/A/corpus/mixed_081.zip::00037.png | e417fa6f157bb2611b35ac735162a03216c45c3fe5258c285149bf748493c7cf |
+| examples/DarkBay/synthetic/18.png | datasets/darkbay_v3_feature_20261115/B/corpus/mixed_065.zip::00081.png | c756cd692007cb36ddbdc8bb2a2ada4d64c2e7f7dbf7a1a6b6bd84f1d8472d51 |
