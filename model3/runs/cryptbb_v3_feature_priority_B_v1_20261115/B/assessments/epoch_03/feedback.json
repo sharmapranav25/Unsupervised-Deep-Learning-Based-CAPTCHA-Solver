@@ -1,0 +1,4004 @@
+{
+  "completed_epoch": 3,
+  "overall_accuracy": 0.43798,
+  "active_families": [
+    "rotation",
+    "size_variation",
+    "slant"
+  ],
+  "bucket_demand": [
+    0.6341394717784687,
+    1.4877070909095533,
+    2.230219719703526
+  ],
+  "next_mass": [
+    0.18323464713961043,
+    0.3401380697891445,
+    0.476627283071245
+  ],
+  "families": [
+    {
+      "name": "rotation",
+      "importance": 1.0,
+      "reference_count": 100,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 1.0,
+      "forgetting": false
+    },
+    {
+      "name": "size_variation",
+      "importance": 1.0,
+      "reference_count": 100,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 1.0,
+      "forgetting": false
+    },
+    {
+      "name": "slant",
+      "importance": 1.0,
+      "reference_count": 100,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 1.0,
+      "forgetting": false
+    },
+    {
+      "name": "spacing",
+      "importance": 1.0,
+      "reference_count": 100,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "vertical_jitter",
+      "importance": 1.0,
+      "reference_count": 100,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "width",
+      "importance": 0.99,
+      "reference_count": 99,
+      "accuracy": 0.43798,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "content:mixed",
+      "importance": 0.89,
+      "reference_count": 89,
+      "accuracy": 0.41838894829881496,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:grid",
+      "importance": 0.4,
+      "reference_count": 40,
+      "accuracy": 0.5109367636051121,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:border",
+      "importance": 0.39,
+      "reference_count": 39,
+      "accuracy": 0.4331166094756487,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:diplomata",
+      "importance": 0.39,
+      "reference_count": 39,
+      "accuracy": 0.598477002741395,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:blocks",
+      "importance": 0.36,
+      "reference_count": 36,
+      "accuracy": 0.34390323635174896,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:grain",
+      "importance": 0.18,
+      "reference_count": 18,
+      "accuracy": 0.3625754855557369,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:montenegringothicone",
+      "importance": 0.17,
+      "reference_count": 17,
+      "accuracy": 0.23507646768623583,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:manuale",
+      "importance": 0.14,
+      "reference_count": 14,
+      "accuracy": 0.4804641598119859,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:playfairdisplaysc",
+      "importance": 0.14,
+      "reference_count": 14,
+      "accuracy": 0.18510435138453143,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:circles",
+      "importance": 0.13,
+      "reference_count": 13,
+      "accuracy": 0.1782021425244527,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:existing_06",
+      "importance": 0.13,
+      "reference_count": 13,
+      "accuracy": 0.30206333973128596,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:lemon",
+      "importance": 0.12,
+      "reference_count": 12,
+      "accuracy": 0.4368138881797294,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:shrikhand",
+      "importance": 0.11,
+      "reference_count": 11,
+      "accuracy": 0.6257185437513306,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:aclonica",
+      "importance": 0.07,
+      "reference_count": 7,
+      "accuracy": 0.681783243658724,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:unlock",
+      "importance": 0.07,
+      "reference_count": 7,
+      "accuracy": 0.5914893617021276,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:alumnisansinlineone",
+      "importance": 0.06,
+      "reference_count": 6,
+      "accuracy": 0.3057019645424054,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:breeserif",
+      "importance": 0.06,
+      "reference_count": 6,
+      "accuracy": 0.7471190781049936,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:montaguslab",
+      "importance": 0.06,
+      "reference_count": 6,
+      "accuracy": 0.5271232876712328,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:caacupeone",
+      "importance": 0.05,
+      "reference_count": 5,
+      "accuracy": 0.5833688699360341,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:margarine",
+      "importance": 0.05,
+      "reference_count": 5,
+      "accuracy": 0.5881789137380191,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:sancreek",
+      "importance": 0.05,
+      "reference_count": 5,
+      "accuracy": 0.19319051262433054,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:curves",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.6026828489300543,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:occluders",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.31842231842231844,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:cousine",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.5984630163304515,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:eastseadokdo",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.3269378357636224,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:glegoo",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.47586206896551725,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:moolahlah",
+      "importance": 0.04,
+      "reference_count": 4,
+      "accuracy": 0.42270992366412213,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:diplomatasc",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.11100478468899522,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:ericaone",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.42081101759755163,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:holtwoodonesc",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.08242811501597444,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:poetsenone",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.7298630136986302,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:protestrevolution",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.618995633187773,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:vastshadow",
+      "importance": 0.03,
+      "reference_count": 3,
+      "accuracy": 0.5755258126195029,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "content:digits",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.8429870751555768,
+      "learned": true,
+      "attention": 0.25,
+      "forgetting": false
+    },
+    {
+      "name": "font:bahianita",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.44103547459252157,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:existing_11",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.5692307692307692,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:graduate",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.17857142857142858,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:khand",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.46087786259541985,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:ruda",
+      "importance": 0.02,
+      "reference_count": 2,
+      "accuracy": 0.5325670498084292,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "content:upper",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.577714012434242,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:dots",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.45352576988019616,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:morph",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.03154875717017208,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "effect:texture",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.24470134874759153,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:alumnisanssc",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.29693486590038315,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:antonio",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.31928480204342274,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:astloch",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.22413793103448276,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:bitcountpropsingleink",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.2923076923076923,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:bowlbyonesc",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.1577437858508604,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:climatecrisis",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.3665389527458493,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:croissantone",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.0842911877394636,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:genos",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.14885496183206107,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:passeroone",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.5632183908045977,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:puritan",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.3422562141491396,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:slabo13px",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.03244274809160305,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:tiltprism",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.1431297709923664,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:titanone",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.46564885496183206,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    },
+    {
+      "name": "font:zcoolkuaile",
+      "importance": 0.01,
+      "reference_count": 1,
+      "accuracy": 0.2824427480916031,
+      "learned": false,
+      "attention": 0.0,
+      "forgetting": false
+    }
+  ],
+  "cells": [
+    {
+      "family": "rotation",
+      "group": 0,
+      "bucket": 0,
+      "images": 3142,
+      "correct": 2392,
+      "accuracy": 0.7612985359643539,
+      "support_factor": 1.0,
+      "demand": 0.047740292807129214
+    },
+    {
+      "family": "rotation",
+      "group": 0,
+      "bucket": 1,
+      "images": 3965,
+      "correct": 1519,
+      "accuracy": 0.3831021437578815,
+      "support_factor": 1.0,
+      "demand": 0.12337957124842372
+    },
+    {
+      "family": "rotation",
+      "group": 0,
+      "bucket": 2,
+      "images": 6999,
+      "correct": 562,
+      "accuracy": 0.08029718531218745,
+      "support_factor": 1.0,
+      "demand": 0.1839405629375625
+    },
+    {
+      "family": "rotation",
+      "group": 1,
+      "bucket": 0,
+      "images": 8932,
+      "correct": 6848,
+      "accuracy": 0.7666815942678011,
+      "support_factor": 1.0,
+      "demand": 0.046663681146439775
+    },
+    {
+      "family": "rotation",
+      "group": 1,
+      "bucket": 1,
+      "images": 7979,
+      "correct": 3905,
+      "accuracy": 0.48940970046371723,
+      "support_factor": 1.0,
+      "demand": 0.10211805990725656
+    },
+    {
+      "family": "rotation",
+      "group": 1,
+      "bucket": 2,
+      "images": 5279,
+      "correct": 1095,
+      "accuracy": 0.20742564879712067,
+      "support_factor": 1.0,
+      "demand": 0.15851487024057587
+    },
+    {
+      "family": "rotation",
+      "group": 2,
+      "bucket": 0,
+      "images": 14670,
+      "correct": 10991,
+      "accuracy": 0.7492160872528971,
+      "support_factor": 1.0,
+      "demand": 0.050156782549420575
+    },
+    {
+      "family": "rotation",
+      "group": 2,
+      "bucket": 1,
+      "images": 13666,
+      "correct": 5646,
+      "accuracy": 0.4131421044929021,
+      "support_factor": 1.0,
+      "demand": 0.11737157910141957
+    },
+    {
+      "family": "rotation",
+      "group": 2,
+      "bucket": 2,
+      "images": 11346,
+      "correct": 1848,
+      "accuracy": 0.16287678476996298,
+      "support_factor": 1.0,
+      "demand": 0.1674246430460074
+    },
+    {
+      "family": "rotation",
+      "group": 3,
+      "bucket": 0,
+      "images": 6068,
+      "correct": 4483,
+      "accuracy": 0.738793671720501,
+      "support_factor": 1.0,
+      "demand": 0.052241265655899795
+    },
+    {
+      "family": "rotation",
+      "group": 3,
+      "bucket": 1,
+      "images": 7035,
+      "correct": 2447,
+      "accuracy": 0.3478322672352523,
+      "support_factor": 1.0,
+      "demand": 0.13043354655294953
+    },
+    {
+      "family": "rotation",
+      "group": 3,
+      "bucket": 2,
+      "images": 8829,
+      "correct": 928,
+      "accuracy": 0.10510816627024579,
+      "support_factor": 1.0,
+      "demand": 0.17897836674595086
+    },
+    {
+      "family": "rotation",
+      "group": 4,
+      "bucket": 0,
+      "images": 522,
+      "correct": 475,
+      "accuracy": 0.9099616858237548,
+      "support_factor": 1.0,
+      "demand": 0.018007662835249037
+    },
+    {
+      "family": "rotation",
+      "group": 4,
+      "bucket": 1,
+      "images": 688,
+      "correct": 495,
+      "accuracy": 0.7194767441860465,
+      "support_factor": 1.0,
+      "demand": 0.05610465116279071
+    },
+    {
+      "family": "rotation",
+      "group": 4,
+      "bucket": 2,
+      "images": 880,
+      "correct": 164,
+      "accuracy": 0.18636363636363637,
+      "support_factor": 1.0,
+      "demand": 0.16272727272727272
+    },
+    {
+      "family": "size_variation",
+      "group": 0,
+      "bucket": 0,
+      "images": 32885,
+      "correct": 24785,
+      "accuracy": 0.7536870913790482,
+      "support_factor": 1.0,
+      "demand": 0.1231564543104759
+    },
+    {
+      "family": "size_variation",
+      "group": 0,
+      "bucket": 1,
+      "images": 32992,
+      "correct": 13731,
+      "accuracy": 0.41619180407371487,
+      "support_factor": 1.0,
+      "demand": 0.29190409796314254
+    },
+    {
+      "family": "size_variation",
+      "group": 0,
+      "bucket": 2,
+      "images": 33079,
+      "correct": 4393,
+      "accuracy": 0.13280328909580097,
+      "support_factor": 1.0,
+      "demand": 0.4335983554520995
+    },
+    {
+      "family": "size_variation",
+      "group": 1,
+      "bucket": 0,
+      "images": 449,
+      "correct": 404,
+      "accuracy": 0.8997772828507795,
+      "support_factor": 1.0,
+      "demand": 0.05011135857461024
+    },
+    {
+      "family": "size_variation",
+      "group": 1,
+      "bucket": 1,
+      "images": 341,
+      "correct": 281,
+      "accuracy": 0.8240469208211144,
+      "support_factor": 1.0,
+      "demand": 0.08797653958944279
+    },
+    {
+      "family": "size_variation",
+      "group": 1,
+      "bucket": 2,
+      "images": 254,
+      "correct": 204,
+      "accuracy": 0.8031496062992126,
+      "support_factor": 1.0,
+      "demand": 0.09842519685039369
+    },
+    {
+      "family": "slant",
+      "group": 0,
+      "bucket": 0,
+      "images": 1532,
+      "correct": 1179,
+      "accuracy": 0.7695822454308094,
+      "support_factor": 1.0,
+      "demand": 0.032916822081312934
+    },
+    {
+      "family": "slant",
+      "group": 0,
+      "bucket": 1,
+      "images": 1649,
+      "correct": 808,
+      "accuracy": 0.4899939357186173,
+      "support_factor": 1.0,
+      "demand": 0.07285800918305466
+    },
+    {
+      "family": "slant",
+      "group": 0,
+      "bucket": 2,
+      "images": 997,
+      "correct": 249,
+      "accuracy": 0.24974924774322968,
+      "support_factor": 1.0,
+      "demand": 0.10717867889382433
+    },
+    {
+      "family": "slant",
+      "group": 1,
+      "bucket": 0,
+      "images": 8607,
+      "correct": 6455,
+      "accuracy": 0.7499709538747531,
+      "support_factor": 1.0,
+      "demand": 0.03571843516074956
+    },
+    {
+      "family": "slant",
+      "group": 1,
+      "bucket": 1,
+      "images": 7441,
+      "correct": 3029,
+      "accuracy": 0.4070689423464588,
+      "support_factor": 1.0,
+      "demand": 0.08470443680764873
+    },
+    {
+      "family": "slant",
+      "group": 1,
+      "bucket": 2,
+      "images": 6674,
+      "correct": 960,
+      "accuracy": 0.1438417740485466,
+      "support_factor": 1.0,
+      "demand": 0.12230831799306477
+    },
+    {
+      "family": "slant",
+      "group": 2,
+      "bucket": 0,
+      "images": 6140,
+      "correct": 4852,
+      "accuracy": 0.790228013029316,
+      "support_factor": 1.0,
+      "demand": 0.029967426710097715
+    },
+    {
+      "family": "slant",
+      "group": 2,
+      "bucket": 1,
+      "images": 5104,
+      "correct": 2150,
+      "accuracy": 0.4212382445141066,
+      "support_factor": 1.0,
+      "demand": 0.08268025078369907
+    },
+    {
+      "family": "slant",
+      "group": 2,
+      "bucket": 2,
+      "images": 5458,
+      "correct": 715,
+      "accuracy": 0.13100036643459143,
+      "support_factor": 1.0,
+      "demand": 0.12414280479505836
+    },
+    {
+      "family": "slant",
+      "group": 3,
+      "bucket": 0,
+      "images": 8648,
+      "correct": 6363,
+      "accuracy": 0.7357770582793709,
+      "support_factor": 1.0,
+      "demand": 0.03774613453151844
+    },
+    {
+      "family": "slant",
+      "group": 3,
+      "bucket": 1,
+      "images": 9451,
+      "correct": 3920,
+      "accuracy": 0.41477092371177654,
+      "support_factor": 1.0,
+      "demand": 0.0836041537554605
+    },
+    {
+      "family": "slant",
+      "group": 3,
+      "bucket": 2,
+      "images": 11667,
+      "correct": 1363,
+      "accuracy": 0.1168252335647553,
+      "support_factor": 1.0,
+      "demand": 0.12616782377646354
+    },
+    {
+      "family": "slant",
+      "group": 4,
+      "bucket": 0,
+      "images": 4842,
+      "correct": 3584,
+      "accuracy": 0.7401900041305246,
+      "support_factor": 1.0,
+      "demand": 0.03711571369563934
+    },
+    {
+      "family": "slant",
+      "group": 4,
+      "bucket": 1,
+      "images": 5459,
+      "correct": 2343,
+      "accuracy": 0.4291994870855468,
+      "support_factor": 1.0,
+      "demand": 0.08154293041635045
+    },
+    {
+      "family": "slant",
+      "group": 4,
+      "bucket": 2,
+      "images": 3798,
+      "correct": 639,
+      "accuracy": 0.16824644549763032,
+      "support_factor": 1.0,
+      "demand": 0.11882193635748138
+    },
+    {
+      "family": "slant",
+      "group": 5,
+      "bucket": 0,
+      "images": 2958,
+      "correct": 2326,
+      "accuracy": 0.786342123056119,
+      "support_factor": 1.0,
+      "demand": 0.030522553849125864
+    },
+    {
+      "family": "slant",
+      "group": 5,
+      "bucket": 1,
+      "images": 2979,
+      "correct": 1314,
+      "accuracy": 0.44108761329305135,
+      "support_factor": 1.0,
+      "demand": 0.07984462667242123
+    },
+    {
+      "family": "slant",
+      "group": 5,
+      "bucket": 2,
+      "images": 2418,
+      "correct": 436,
+      "accuracy": 0.18031430934656742,
+      "support_factor": 1.0,
+      "demand": 0.11709795580763323
+    },
+    {
+      "family": "slant",
+      "group": 6,
+      "bucket": 0,
+      "images": 607,
+      "correct": 430,
+      "accuracy": 0.7084019769357496,
+      "support_factor": 1.0,
+      "demand": 0.04165686043775006
+    },
+    {
+      "family": "slant",
+      "group": 6,
+      "bucket": 1,
+      "images": 1250,
+      "correct": 448,
+      "accuracy": 0.3584,
+      "support_factor": 1.0,
+      "demand": 0.09165714285714285
+    },
+    {
+      "family": "slant",
+      "group": 6,
+      "bucket": 2,
+      "images": 2321,
+      "correct": 235,
+      "accuracy": 0.1012494614390349,
+      "support_factor": 1.0,
+      "demand": 0.12839293408013788
+    },
+    {
+      "family": "spacing",
+      "group": 0,
+      "bucket": 0,
+      "images": 2529,
+      "correct": 1763,
+      "accuracy": 0.697113483590352,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 0,
+      "bucket": 1,
+      "images": 3352,
+      "correct": 1158,
+      "accuracy": 0.3454653937947494,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 0,
+      "bucket": 2,
+      "images": 3763,
+      "correct": 350,
+      "accuracy": 0.09301089556205155,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 1,
+      "bucket": 0,
+      "images": 9036,
+      "correct": 6780,
+      "accuracy": 0.750332005312085,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 1,
+      "bucket": 1,
+      "images": 9521,
+      "correct": 3997,
+      "accuracy": 0.4198088436088646,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 1,
+      "bucket": 2,
+      "images": 10771,
+      "correct": 1411,
+      "accuracy": 0.13099990715810975,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 2,
+      "bucket": 0,
+      "images": 2196,
+      "correct": 1761,
+      "accuracy": 0.8019125683060109,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 2,
+      "bucket": 1,
+      "images": 1817,
+      "correct": 893,
+      "accuracy": 0.4914694551458448,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 2,
+      "bucket": 2,
+      "images": 2200,
+      "correct": 288,
+      "accuracy": 0.13090909090909092,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 3,
+      "bucket": 0,
+      "images": 19573,
+      "correct": 14885,
+      "accuracy": 0.7604863843049098,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 3,
+      "bucket": 1,
+      "images": 18643,
+      "correct": 7964,
+      "accuracy": 0.42718446601941745,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "spacing",
+      "group": 3,
+      "bucket": 2,
+      "images": 16599,
+      "correct": 2548,
+      "accuracy": 0.15350322308572806,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 0,
+      "bucket": 0,
+      "images": 5144,
+      "correct": 3760,
+      "accuracy": 0.7309486780715396,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 0,
+      "bucket": 1,
+      "images": 4626,
+      "correct": 1936,
+      "accuracy": 0.41850410722006054,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 0,
+      "bucket": 2,
+      "images": 5905,
+      "correct": 568,
+      "accuracy": 0.09618966977138019,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 1,
+      "bucket": 0,
+      "images": 10509,
+      "correct": 7943,
+      "accuracy": 0.7558283376153773,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 1,
+      "bucket": 1,
+      "images": 10346,
+      "correct": 4139,
+      "accuracy": 0.40005799342741155,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 1,
+      "bucket": 2,
+      "images": 12556,
+      "correct": 1572,
+      "accuracy": 0.12519910799617712,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 2,
+      "bucket": 0,
+      "images": 7472,
+      "correct": 5825,
+      "accuracy": 0.7795770877944326,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 2,
+      "bucket": 1,
+      "images": 8348,
+      "correct": 3526,
+      "accuracy": 0.4223766171538093,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 2,
+      "bucket": 2,
+      "images": 7668,
+      "correct": 1194,
+      "accuracy": 0.15571205007824726,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 3,
+      "bucket": 0,
+      "images": 5655,
+      "correct": 4180,
+      "accuracy": 0.7391688770999116,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 3,
+      "bucket": 1,
+      "images": 6028,
+      "correct": 2695,
+      "accuracy": 0.4470802919708029,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 3,
+      "bucket": 2,
+      "images": 4249,
+      "correct": 638,
+      "accuracy": 0.15015297717109907,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 4,
+      "bucket": 0,
+      "images": 4554,
+      "correct": 3481,
+      "accuracy": 0.764382960035134,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 4,
+      "bucket": 1,
+      "images": 3985,
+      "correct": 1716,
+      "accuracy": 0.43061480552070264,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "vertical_jitter",
+      "group": 4,
+      "bucket": 2,
+      "images": 2955,
+      "correct": 625,
+      "accuracy": 0.21150592216582065,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 0,
+      "bucket": 0,
+      "images": 5946,
+      "correct": 4510,
+      "accuracy": 0.7584931046081399,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 0,
+      "bucket": 1,
+      "images": 5839,
+      "correct": 2437,
+      "accuracy": 0.417365987326597,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 0,
+      "bucket": 2,
+      "images": 6532,
+      "correct": 783,
+      "accuracy": 0.11987140232700551,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 1,
+      "bucket": 0,
+      "images": 5588,
+      "correct": 4285,
+      "accuracy": 0.7668217609162491,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 1,
+      "bucket": 1,
+      "images": 6210,
+      "correct": 2594,
+      "accuracy": 0.4177133655394525,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 1,
+      "bucket": 2,
+      "images": 7598,
+      "correct": 1064,
+      "accuracy": 0.14003685180310607,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 2,
+      "bucket": 0,
+      "images": 8881,
+      "correct": 6683,
+      "accuracy": 0.7525053484967908,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 2,
+      "bucket": 1,
+      "images": 6946,
+      "correct": 3004,
+      "accuracy": 0.4324791246760726,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 2,
+      "bucket": 2,
+      "images": 6124,
+      "correct": 911,
+      "accuracy": 0.14875898105813193,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 3,
+      "bucket": 0,
+      "images": 6400,
+      "correct": 4764,
+      "accuracy": 0.744375,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 3,
+      "bucket": 1,
+      "images": 6723,
+      "correct": 2979,
+      "accuracy": 0.4431057563587684,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 3,
+      "bucket": 2,
+      "images": 6182,
+      "correct": 954,
+      "accuracy": 0.154318990617923,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 4,
+      "bucket": 0,
+      "images": 6519,
+      "correct": 4947,
+      "accuracy": 0.7588587206626783,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 4,
+      "bucket": 1,
+      "images": 7615,
+      "correct": 2998,
+      "accuracy": 0.3936966513460276,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "width",
+      "group": 4,
+      "bucket": 2,
+      "images": 6897,
+      "correct": 885,
+      "accuracy": 0.12831665941713788,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:mixed",
+      "group": 0,
+      "bucket": 0,
+      "images": 29523,
+      "correct": 21922,
+      "accuracy": 0.7425397147986316,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:mixed",
+      "group": 0,
+      "bucket": 1,
+      "images": 30078,
+      "correct": 11948,
+      "accuracy": 0.3972338586342177,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:mixed",
+      "group": 0,
+      "bucket": 2,
+      "images": 32041,
+      "correct": 4472,
+      "accuracy": 0.13957117443275802,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 0,
+      "bucket": 0,
+      "images": 1395,
+      "correct": 1150,
+      "accuracy": 0.8243727598566308,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 0,
+      "bucket": 1,
+      "images": 1178,
+      "correct": 462,
+      "accuracy": 0.3921901528013582,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 0,
+      "bucket": 2,
+      "images": 1308,
+      "correct": 190,
+      "accuracy": 0.1452599388379205,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 1,
+      "bucket": 0,
+      "images": 733,
+      "correct": 642,
+      "accuracy": 0.8758526603001364,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 1,
+      "bucket": 1,
+      "images": 309,
+      "correct": 171,
+      "accuracy": 0.5533980582524272,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 1,
+      "bucket": 2,
+      "images": 256,
+      "correct": 37,
+      "accuracy": 0.14453125,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 2,
+      "bucket": 0,
+      "images": 395,
+      "correct": 261,
+      "accuracy": 0.660759493670886,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 2,
+      "bucket": 1,
+      "images": 568,
+      "correct": 302,
+      "accuracy": 0.5316901408450704,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 2,
+      "bucket": 2,
+      "images": 83,
+      "correct": 20,
+      "accuracy": 0.24096385542168675,
+      "support_factor": 0.83,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 3,
+      "bucket": 0,
+      "images": 175,
+      "correct": 143,
+      "accuracy": 0.8171428571428572,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 3,
+      "bucket": 1,
+      "images": 408,
+      "correct": 205,
+      "accuracy": 0.5024509803921569,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 3,
+      "bucket": 2,
+      "images": 463,
+      "correct": 125,
+      "accuracy": 0.26997840172786175,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 4,
+      "bucket": 0,
+      "images": 2570,
+      "correct": 1896,
+      "accuracy": 0.7377431906614786,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 4,
+      "bucket": 1,
+      "images": 2039,
+      "correct": 931,
+      "accuracy": 0.45659637076998527,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 4,
+      "bucket": 2,
+      "images": 1138,
+      "correct": 261,
+      "accuracy": 0.22934973637961337,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 5,
+      "bucket": 0,
+      "images": 8526,
+      "correct": 6614,
+      "accuracy": 0.775744780670889,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 5,
+      "bucket": 1,
+      "images": 8394,
+      "correct": 3762,
+      "accuracy": 0.4481772694781987,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grid",
+      "group": 5,
+      "bucket": 2,
+      "images": 6133,
+      "correct": 1258,
+      "accuracy": 0.2051198434697538,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 0,
+      "bucket": 0,
+      "images": 4989,
+      "correct": 3614,
+      "accuracy": 0.7243936660653437,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 0,
+      "bucket": 1,
+      "images": 5995,
+      "correct": 2444,
+      "accuracy": 0.40767306088407007,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 0,
+      "bucket": 2,
+      "images": 6815,
+      "correct": 789,
+      "accuracy": 0.11577402787967718,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 1,
+      "bucket": 0,
+      "images": 3617,
+      "correct": 2698,
+      "accuracy": 0.745922034835499,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 1,
+      "bucket": 1,
+      "images": 3538,
+      "correct": 1327,
+      "accuracy": 0.3750706613906162,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 1,
+      "bucket": 2,
+      "images": 2792,
+      "correct": 381,
+      "accuracy": 0.13646131805157594,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 2,
+      "bucket": 0,
+      "images": 546,
+      "correct": 398,
+      "accuracy": 0.7289377289377289,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 2,
+      "bucket": 1,
+      "images": 576,
+      "correct": 239,
+      "accuracy": 0.4149305555555556,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 2,
+      "bucket": 2,
+      "images": 430,
+      "correct": 44,
+      "accuracy": 0.10232558139534884,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 3,
+      "bucket": 0,
+      "images": 1687,
+      "correct": 1334,
+      "accuracy": 0.7907528156490812,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 3,
+      "bucket": 1,
+      "images": 743,
+      "correct": 429,
+      "accuracy": 0.5773889636608345,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 3,
+      "bucket": 2,
+      "images": 179,
+      "correct": 64,
+      "accuracy": 0.3575418994413408,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 4,
+      "bucket": 0,
+      "images": 617,
+      "correct": 463,
+      "accuracy": 0.7504051863857374,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 4,
+      "bucket": 1,
+      "images": 302,
+      "correct": 134,
+      "accuracy": 0.44370860927152317,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:border",
+      "group": 4,
+      "bucket": 2,
+      "images": 396,
+      "correct": 31,
+      "accuracy": 0.07828282828282829,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomata",
+      "group": 0,
+      "bucket": 0,
+      "images": 8177,
+      "correct": 6593,
+      "accuracy": 0.8062859239329827,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomata",
+      "group": 0,
+      "bucket": 1,
+      "images": 5029,
+      "correct": 2590,
+      "accuracy": 0.5150129250347981,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomata",
+      "group": 0,
+      "bucket": 2,
+      "images": 3209,
+      "correct": 641,
+      "accuracy": 0.19975070115300717,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 0,
+      "bucket": 0,
+      "images": 47,
+      "correct": 15,
+      "accuracy": 0.3191489361702128,
+      "support_factor": 0.47,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 0,
+      "bucket": 1,
+      "images": 177,
+      "correct": 30,
+      "accuracy": 0.1694915254237288,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 0,
+      "bucket": 2,
+      "images": 295,
+      "correct": 11,
+      "accuracy": 0.03728813559322034,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 1,
+      "bucket": 0,
+      "images": 3776,
+      "correct": 2708,
+      "accuracy": 0.7171610169491526,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 1,
+      "bucket": 1,
+      "images": 5195,
+      "correct": 1768,
+      "accuracy": 0.3403272377285852,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 1,
+      "bucket": 2,
+      "images": 8041,
+      "correct": 756,
+      "accuracy": 0.09401815694565352,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 2,
+      "bucket": 0,
+      "images": 2879,
+      "correct": 2091,
+      "accuracy": 0.7262938520319555,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 2,
+      "bucket": 1,
+      "images": 3179,
+      "correct": 1319,
+      "accuracy": 0.4149103491664045,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 2,
+      "bucket": 2,
+      "images": 3077,
+      "correct": 502,
+      "accuracy": 0.1631459213519662,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 3,
+      "bucket": 0,
+      "images": 1051,
+      "correct": 701,
+      "accuracy": 0.6669838249286394,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 3,
+      "bucket": 1,
+      "images": 1184,
+      "correct": 461,
+      "accuracy": 0.3893581081081081,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 3,
+      "bucket": 2,
+      "images": 1162,
+      "correct": 147,
+      "accuracy": 0.12650602409638553,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 4,
+      "bucket": 1,
+      "images": 46,
+      "correct": 7,
+      "accuracy": 0.15217391304347827,
+      "support_factor": 0.46,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:blocks",
+      "group": 4,
+      "bucket": 2,
+      "images": 481,
+      "correct": 4,
+      "accuracy": 0.008316008316008316,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 0,
+      "bucket": 0,
+      "images": 327,
+      "correct": 243,
+      "accuracy": 0.7431192660550459,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 0,
+      "bucket": 1,
+      "images": 521,
+      "correct": 202,
+      "accuracy": 0.3877159309021113,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 0,
+      "bucket": 2,
+      "images": 704,
+      "correct": 90,
+      "accuracy": 0.1278409090909091,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 1,
+      "bucket": 0,
+      "images": 708,
+      "correct": 493,
+      "accuracy": 0.6963276836158192,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 1,
+      "bucket": 1,
+      "images": 1068,
+      "correct": 477,
+      "accuracy": 0.44662921348314605,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 1,
+      "bucket": 2,
+      "images": 1074,
+      "correct": 197,
+      "accuracy": 0.18342644320297952,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 2,
+      "bucket": 0,
+      "images": 1024,
+      "correct": 838,
+      "accuracy": 0.818359375,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 2,
+      "bucket": 1,
+      "images": 773,
+      "correct": 444,
+      "accuracy": 0.574385510996119,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 2,
+      "bucket": 2,
+      "images": 537,
+      "correct": 141,
+      "accuracy": 0.26256983240223464,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 3,
+      "bucket": 0,
+      "images": 462,
+      "correct": 348,
+      "accuracy": 0.7532467532467533,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 3,
+      "bucket": 1,
+      "images": 410,
+      "correct": 151,
+      "accuracy": 0.36829268292682926,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 3,
+      "bucket": 2,
+      "images": 162,
+      "correct": 38,
+      "accuracy": 0.2345679012345679,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 4,
+      "bucket": 0,
+      "images": 743,
+      "correct": 525,
+      "accuracy": 0.7065948855989233,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 4,
+      "bucket": 1,
+      "images": 1041,
+      "correct": 343,
+      "accuracy": 0.32949087415946204,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 4,
+      "bucket": 2,
+      "images": 1614,
+      "correct": 143,
+      "accuracy": 0.0885997521685254,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 5,
+      "bucket": 0,
+      "images": 330,
+      "correct": 230,
+      "accuracy": 0.696969696969697,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 5,
+      "bucket": 1,
+      "images": 874,
+      "correct": 278,
+      "accuracy": 0.3180778032036613,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 5,
+      "bucket": 2,
+      "images": 1671,
+      "correct": 124,
+      "accuracy": 0.07420706163973669,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 6,
+      "bucket": 0,
+      "images": 741,
+      "correct": 515,
+      "accuracy": 0.6950067476383266,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 6,
+      "bucket": 1,
+      "images": 1077,
+      "correct": 458,
+      "accuracy": 0.42525533890436396,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 6,
+      "bucket": 2,
+      "images": 1320,
+      "correct": 70,
+      "accuracy": 0.05303030303030303,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 7,
+      "bucket": 0,
+      "images": 1490,
+      "correct": 1194,
+      "accuracy": 0.8013422818791947,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 7,
+      "bucket": 1,
+      "images": 2142,
+      "correct": 1034,
+      "accuracy": 0.4827264239028945,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:grain",
+      "group": 7,
+      "bucket": 2,
+      "images": 3695,
+      "correct": 310,
+      "accuracy": 0.08389715832205684,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montenegringothicone",
+      "group": 0,
+      "bucket": 0,
+      "images": 325,
+      "correct": 217,
+      "accuracy": 0.6676923076923077,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montenegringothicone",
+      "group": 0,
+      "bucket": 1,
+      "images": 2529,
+      "correct": 914,
+      "accuracy": 0.36140767101621196,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montenegringothicone",
+      "group": 0,
+      "bucket": 2,
+      "images": 5254,
+      "correct": 775,
+      "accuracy": 0.14750666159116863,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:manuale",
+      "group": 0,
+      "bucket": 0,
+      "images": 2973,
+      "correct": 2177,
+      "accuracy": 0.7322569794820047,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:manuale",
+      "group": 0,
+      "bucket": 1,
+      "images": 1894,
+      "correct": 856,
+      "accuracy": 0.45195353748680045,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:manuale",
+      "group": 0,
+      "bucket": 2,
+      "images": 1941,
+      "correct": 238,
+      "accuracy": 0.1226172076249356,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:playfairdisplaysc",
+      "group": 0,
+      "bucket": 0,
+      "images": 654,
+      "correct": 254,
+      "accuracy": 0.38837920489296635,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:playfairdisplaysc",
+      "group": 0,
+      "bucket": 1,
+      "images": 3547,
+      "correct": 798,
+      "accuracy": 0.22497885537073584,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:playfairdisplaysc",
+      "group": 0,
+      "bucket": 2,
+      "images": 3130,
+      "correct": 305,
+      "accuracy": 0.09744408945686901,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 0,
+      "bucket": 0,
+      "images": 27,
+      "correct": 11,
+      "accuracy": 0.4074074074074074,
+      "support_factor": 0.27,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 0,
+      "bucket": 1,
+      "images": 387,
+      "correct": 68,
+      "accuracy": 0.17571059431524547,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 0,
+      "bucket": 2,
+      "images": 624,
+      "correct": 19,
+      "accuracy": 0.030448717948717948,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 1,
+      "bucket": 0,
+      "images": 608,
+      "correct": 355,
+      "accuracy": 0.5838815789473685,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 1,
+      "bucket": 1,
+      "images": 1432,
+      "correct": 357,
+      "accuracy": 0.24930167597765363,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 1,
+      "bucket": 2,
+      "images": 2686,
+      "correct": 164,
+      "accuracy": 0.06105733432613552,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 2,
+      "bucket": 0,
+      "images": 765,
+      "correct": 442,
+      "accuracy": 0.5777777777777777,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 2,
+      "bucket": 1,
+      "images": 1374,
+      "correct": 329,
+      "accuracy": 0.23944687045123728,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:circles",
+      "group": 2,
+      "bucket": 2,
+      "images": 2832,
+      "correct": 168,
+      "accuracy": 0.059322033898305086,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_06",
+      "group": 0,
+      "bucket": 0,
+      "images": 924,
+      "correct": 626,
+      "accuracy": 0.6774891774891775,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_06",
+      "group": 0,
+      "bucket": 1,
+      "images": 1243,
+      "correct": 451,
+      "accuracy": 0.36283185840707965,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_06",
+      "group": 0,
+      "bucket": 2,
+      "images": 2001,
+      "correct": 182,
+      "accuracy": 0.09095452273863068,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:lemon",
+      "group": 0,
+      "bucket": 0,
+      "images": 3378,
+      "correct": 2318,
+      "accuracy": 0.6862048549437537,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:lemon",
+      "group": 0,
+      "bucket": 1,
+      "images": 2238,
+      "correct": 886,
+      "accuracy": 0.3958891867739053,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:lemon",
+      "group": 0,
+      "bucket": 2,
+      "images": 2218,
+      "correct": 218,
+      "accuracy": 0.09828674481514878,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:shrikhand",
+      "group": 0,
+      "bucket": 0,
+      "images": 2504,
+      "correct": 1982,
+      "accuracy": 0.7915335463258786,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:shrikhand",
+      "group": 0,
+      "bucket": 1,
+      "images": 1465,
+      "correct": 781,
+      "accuracy": 0.5331058020477816,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:shrikhand",
+      "group": 0,
+      "bucket": 2,
+      "images": 728,
+      "correct": 176,
+      "accuracy": 0.24175824175824176,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:aclonica",
+      "group": 0,
+      "bucket": 0,
+      "images": 1264,
+      "correct": 1086,
+      "accuracy": 0.8591772151898734,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:aclonica",
+      "group": 0,
+      "bucket": 1,
+      "images": 789,
+      "correct": 495,
+      "accuracy": 0.6273764258555133,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:aclonica",
+      "group": 0,
+      "bucket": 2,
+      "images": 549,
+      "correct": 193,
+      "accuracy": 0.35154826958105645,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:unlock",
+      "group": 0,
+      "bucket": 0,
+      "images": 712,
+      "correct": 584,
+      "accuracy": 0.8202247191011236,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:unlock",
+      "group": 0,
+      "bucket": 1,
+      "images": 872,
+      "correct": 518,
+      "accuracy": 0.5940366972477065,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:unlock",
+      "group": 0,
+      "bucket": 2,
+      "images": 766,
+      "correct": 288,
+      "accuracy": 0.37597911227154046,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisansinlineone",
+      "group": 0,
+      "bucket": 0,
+      "images": 273,
+      "correct": 211,
+      "accuracy": 0.7728937728937729,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisansinlineone",
+      "group": 0,
+      "bucket": 1,
+      "images": 652,
+      "correct": 258,
+      "accuracy": 0.39570552147239263,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisansinlineone",
+      "group": 0,
+      "bucket": 2,
+      "images": 1162,
+      "correct": 169,
+      "accuracy": 0.14543889845094665,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:breeserif",
+      "group": 0,
+      "bucket": 0,
+      "images": 1032,
+      "correct": 866,
+      "accuracy": 0.8391472868217055,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:breeserif",
+      "group": 0,
+      "bucket": 1,
+      "images": 412,
+      "correct": 272,
+      "accuracy": 0.6601941747572816,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:breeserif",
+      "group": 0,
+      "bucket": 2,
+      "images": 118,
+      "correct": 29,
+      "accuracy": 0.2457627118644068,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montaguslab",
+      "group": 0,
+      "bucket": 0,
+      "images": 716,
+      "correct": 570,
+      "accuracy": 0.7960893854748603,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montaguslab",
+      "group": 0,
+      "bucket": 1,
+      "images": 633,
+      "correct": 354,
+      "accuracy": 0.5592417061611374,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:montaguslab",
+      "group": 0,
+      "bucket": 2,
+      "images": 476,
+      "correct": 38,
+      "accuracy": 0.07983193277310924,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:caacupeone",
+      "group": 0,
+      "bucket": 0,
+      "images": 1344,
+      "correct": 1007,
+      "accuracy": 0.7492559523809523,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:caacupeone",
+      "group": 0,
+      "bucket": 1,
+      "images": 645,
+      "correct": 278,
+      "accuracy": 0.4310077519379845,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:caacupeone",
+      "group": 0,
+      "bucket": 2,
+      "images": 356,
+      "correct": 83,
+      "accuracy": 0.23314606741573032,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:margarine",
+      "group": 0,
+      "bucket": 0,
+      "images": 1729,
+      "correct": 1247,
+      "accuracy": 0.7212261422787739,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:margarine",
+      "group": 0,
+      "bucket": 1,
+      "images": 1098,
+      "correct": 519,
+      "accuracy": 0.4726775956284153,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:margarine",
+      "group": 0,
+      "bucket": 2,
+      "images": 303,
+      "correct": 75,
+      "accuracy": 0.24752475247524752,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:sancreek",
+      "group": 0,
+      "bucket": 0,
+      "images": 397,
+      "correct": 228,
+      "accuracy": 0.5743073047858942,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:sancreek",
+      "group": 0,
+      "bucket": 1,
+      "images": 797,
+      "correct": 202,
+      "accuracy": 0.2534504391468005,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:sancreek",
+      "group": 0,
+      "bucket": 2,
+      "images": 1420,
+      "correct": 75,
+      "accuracy": 0.0528169014084507,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 0,
+      "bucket": 0,
+      "images": 337,
+      "correct": 313,
+      "accuracy": 0.9287833827893175,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 0,
+      "bucket": 1,
+      "images": 170,
+      "correct": 126,
+      "accuracy": 0.7411764705882353,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 0,
+      "bucket": 2,
+      "images": 10,
+      "correct": 3,
+      "accuracy": 0.3,
+      "support_factor": 0.1,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 1,
+      "bucket": 0,
+      "images": 1185,
+      "correct": 885,
+      "accuracy": 0.7468354430379747,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 1,
+      "bucket": 1,
+      "images": 962,
+      "correct": 446,
+      "accuracy": 0.46361746361746364,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:curves",
+      "group": 1,
+      "bucket": 2,
+      "images": 467,
+      "correct": 114,
+      "accuracy": 0.24411134903640258,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 0,
+      "bucket": 0,
+      "images": 156,
+      "correct": 118,
+      "accuracy": 0.7564102564102564,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 0,
+      "bucket": 1,
+      "images": 221,
+      "correct": 100,
+      "accuracy": 0.45248868778280543,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 0,
+      "bucket": 2,
+      "images": 140,
+      "correct": 36,
+      "accuracy": 0.2571428571428571,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 1,
+      "bucket": 0,
+      "images": 199,
+      "correct": 137,
+      "accuracy": 0.6884422110552764,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 1,
+      "bucket": 1,
+      "images": 376,
+      "correct": 152,
+      "accuracy": 0.40425531914893614,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 1,
+      "bucket": 2,
+      "images": 468,
+      "correct": 77,
+      "accuracy": 0.16452991452991453,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 2,
+      "bucket": 0,
+      "images": 15,
+      "correct": 5,
+      "accuracy": 0.3333333333333333,
+      "support_factor": 0.15,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 2,
+      "bucket": 1,
+      "images": 91,
+      "correct": 25,
+      "accuracy": 0.27472527472527475,
+      "support_factor": 0.91,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:occluders",
+      "group": 2,
+      "bucket": 2,
+      "images": 413,
+      "correct": 12,
+      "accuracy": 0.029055690072639227,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:cousine",
+      "group": 0,
+      "bucket": 0,
+      "images": 539,
+      "correct": 398,
+      "accuracy": 0.738404452690167,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:cousine",
+      "group": 0,
+      "bucket": 1,
+      "images": 360,
+      "correct": 190,
+      "accuracy": 0.5277777777777778,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:cousine",
+      "group": 0,
+      "bucket": 2,
+      "images": 142,
+      "correct": 35,
+      "accuracy": 0.24647887323943662,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:eastseadokdo",
+      "group": 0,
+      "bucket": 0,
+      "images": 242,
+      "correct": 186,
+      "accuracy": 0.768595041322314,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:eastseadokdo",
+      "group": 0,
+      "bucket": 1,
+      "images": 623,
+      "correct": 216,
+      "accuracy": 0.3467094703049759,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:eastseadokdo",
+      "group": 0,
+      "bucket": 2,
+      "images": 438,
+      "correct": 24,
+      "accuracy": 0.0547945205479452,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:glegoo",
+      "group": 0,
+      "bucket": 0,
+      "images": 558,
+      "correct": 402,
+      "accuracy": 0.7204301075268817,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:glegoo",
+      "group": 0,
+      "bucket": 1,
+      "images": 398,
+      "correct": 193,
+      "accuracy": 0.4849246231155779,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:glegoo",
+      "group": 0,
+      "bucket": 2,
+      "images": 349,
+      "correct": 26,
+      "accuracy": 0.07449856733524356,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:moolahlah",
+      "group": 0,
+      "bucket": 0,
+      "images": 521,
+      "correct": 344,
+      "accuracy": 0.6602687140115163,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:moolahlah",
+      "group": 0,
+      "bucket": 1,
+      "images": 934,
+      "correct": 457,
+      "accuracy": 0.4892933618843683,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:moolahlah",
+      "group": 0,
+      "bucket": 2,
+      "images": 641,
+      "correct": 85,
+      "accuracy": 0.13260530421216848,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomatasc",
+      "group": 0,
+      "bucket": 0,
+      "images": 17,
+      "correct": 8,
+      "accuracy": 0.47058823529411764,
+      "support_factor": 0.17,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomatasc",
+      "group": 0,
+      "bucket": 1,
+      "images": 268,
+      "correct": 58,
+      "accuracy": 0.21641791044776118,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:diplomatasc",
+      "group": 0,
+      "bucket": 2,
+      "images": 760,
+      "correct": 50,
+      "accuracy": 0.06578947368421052,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ericaone",
+      "group": 0,
+      "bucket": 0,
+      "images": 399,
+      "correct": 309,
+      "accuracy": 0.7744360902255639,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ericaone",
+      "group": 0,
+      "bucket": 1,
+      "images": 509,
+      "correct": 205,
+      "accuracy": 0.4027504911591356,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ericaone",
+      "group": 0,
+      "bucket": 2,
+      "images": 399,
+      "correct": 36,
+      "accuracy": 0.09022556390977443,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:holtwoodonesc",
+      "group": 0,
+      "bucket": 0,
+      "images": 2,
+      "correct": 1,
+      "accuracy": 0.5,
+      "support_factor": 0.02,
+      "demand": 0.0
+    },
+    {
+      "family": "font:holtwoodonesc",
+      "group": 0,
+      "bucket": 1,
+      "images": 236,
+      "correct": 45,
+      "accuracy": 0.1906779661016949,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:holtwoodonesc",
+      "group": 0,
+      "bucket": 2,
+      "images": 1327,
+      "correct": 83,
+      "accuracy": 0.06254709871891484,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:poetsenone",
+      "group": 0,
+      "bucket": 0,
+      "images": 1228,
+      "correct": 1050,
+      "accuracy": 0.8550488599348535,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:poetsenone",
+      "group": 0,
+      "bucket": 1,
+      "images": 414,
+      "correct": 228,
+      "accuracy": 0.5507246376811594,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:poetsenone",
+      "group": 0,
+      "bucket": 2,
+      "images": 183,
+      "correct": 54,
+      "accuracy": 0.29508196721311475,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:protestrevolution",
+      "group": 0,
+      "bucket": 0,
+      "images": 917,
+      "correct": 743,
+      "accuracy": 0.8102508178844057,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:protestrevolution",
+      "group": 0,
+      "bucket": 1,
+      "images": 682,
+      "correct": 360,
+      "accuracy": 0.5278592375366569,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:protestrevolution",
+      "group": 0,
+      "bucket": 2,
+      "images": 233,
+      "correct": 31,
+      "accuracy": 0.13304721030042918,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:vastshadow",
+      "group": 0,
+      "bucket": 0,
+      "images": 403,
+      "correct": 298,
+      "accuracy": 0.739454094292804,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:vastshadow",
+      "group": 0,
+      "bucket": 1,
+      "images": 443,
+      "correct": 272,
+      "accuracy": 0.6139954853273137,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:vastshadow",
+      "group": 0,
+      "bucket": 2,
+      "images": 200,
+      "correct": 32,
+      "accuracy": 0.16,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:digits",
+      "group": 0,
+      "bucket": 0,
+      "images": 1531,
+      "correct": 1403,
+      "accuracy": 0.9163945133899413,
+      "support_factor": 1.0,
+      "demand": 0.00041802743305029366
+    },
+    {
+      "family": "content:digits",
+      "group": 0,
+      "bucket": 1,
+      "images": 491,
+      "correct": 341,
+      "accuracy": 0.6945010183299389,
+      "support_factor": 1.0,
+      "demand": 0.0015274949083503055
+    },
+    {
+      "family": "content:digits",
+      "group": 0,
+      "bucket": 2,
+      "images": 67,
+      "correct": 17,
+      "accuracy": 0.2537313432835821,
+      "support_factor": 0.67,
+      "demand": 0.0025
+    },
+    {
+      "family": "font:bahianita",
+      "group": 0,
+      "bucket": 0,
+      "images": 301,
+      "correct": 206,
+      "accuracy": 0.6843853820598007,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bahianita",
+      "group": 0,
+      "bucket": 1,
+      "images": 533,
+      "correct": 210,
+      "accuracy": 0.39399624765478425,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bahianita",
+      "group": 0,
+      "bucket": 2,
+      "images": 209,
+      "correct": 44,
+      "accuracy": 0.21052631578947367,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_11",
+      "group": 0,
+      "bucket": 0,
+      "images": 255,
+      "correct": 197,
+      "accuracy": 0.7725490196078432,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_11",
+      "group": 0,
+      "bucket": 1,
+      "images": 182,
+      "correct": 88,
+      "accuracy": 0.4835164835164835,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:existing_11",
+      "group": 0,
+      "bucket": 2,
+      "images": 83,
+      "correct": 11,
+      "accuracy": 0.13253012048192772,
+      "support_factor": 0.83,
+      "demand": 0.0
+    },
+    {
+      "family": "font:graduate",
+      "group": 0,
+      "bucket": 0,
+      "images": 50,
+      "correct": 22,
+      "accuracy": 0.44,
+      "support_factor": 0.5,
+      "demand": 0.0
+    },
+    {
+      "family": "font:graduate",
+      "group": 0,
+      "bucket": 1,
+      "images": 461,
+      "correct": 83,
+      "accuracy": 0.18004338394793926,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:graduate",
+      "group": 0,
+      "bucket": 2,
+      "images": 273,
+      "correct": 35,
+      "accuracy": 0.1282051282051282,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:khand",
+      "group": 0,
+      "bucket": 0,
+      "images": 391,
+      "correct": 280,
+      "accuracy": 0.7161125319693095,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:khand",
+      "group": 0,
+      "bucket": 1,
+      "images": 333,
+      "correct": 134,
+      "accuracy": 0.4024024024024024,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:khand",
+      "group": 0,
+      "bucket": 2,
+      "images": 324,
+      "correct": 69,
+      "accuracy": 0.21296296296296297,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ruda",
+      "group": 0,
+      "bucket": 0,
+      "images": 314,
+      "correct": 251,
+      "accuracy": 0.7993630573248408,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ruda",
+      "group": 0,
+      "bucket": 1,
+      "images": 243,
+      "correct": 114,
+      "accuracy": 0.4691358024691358,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:ruda",
+      "group": 0,
+      "bucket": 2,
+      "images": 226,
+      "correct": 52,
+      "accuracy": 0.23008849557522124,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:upper",
+      "group": 0,
+      "bucket": 0,
+      "images": 1353,
+      "correct": 1153,
+      "accuracy": 0.852180339985218,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:upper",
+      "group": 0,
+      "bucket": 1,
+      "images": 1655,
+      "correct": 1163,
+      "accuracy": 0.7027190332326284,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "content:upper",
+      "group": 0,
+      "bucket": 2,
+      "images": 1174,
+      "correct": 100,
+      "accuracy": 0.08517887563884156,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 0,
+      "bucket": 0,
+      "images": 901,
+      "correct": 739,
+      "accuracy": 0.8201997780244173,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 0,
+      "bucket": 1,
+      "images": 635,
+      "correct": 310,
+      "accuracy": 0.4881889763779528,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 0,
+      "bucket": 2,
+      "images": 538,
+      "correct": 105,
+      "accuracy": 0.19516728624535315,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 1,
+      "bucket": 0,
+      "images": 4797,
+      "correct": 3660,
+      "accuracy": 0.7629768605378362,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 1,
+      "bucket": 1,
+      "images": 4633,
+      "correct": 1924,
+      "accuracy": 0.4152816749406432,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 1,
+      "bucket": 2,
+      "images": 4032,
+      "correct": 588,
+      "accuracy": 0.14583333333333334,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 2,
+      "bucket": 0,
+      "images": 2325,
+      "correct": 1807,
+      "accuracy": 0.7772043010752688,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 2,
+      "bucket": 1,
+      "images": 2347,
+      "correct": 888,
+      "accuracy": 0.3783553472518108,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 2,
+      "bucket": 2,
+      "images": 2325,
+      "correct": 311,
+      "accuracy": 0.13376344086021505,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 3,
+      "bucket": 0,
+      "images": 411,
+      "correct": 328,
+      "accuracy": 0.7980535279805353,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 3,
+      "bucket": 1,
+      "images": 450,
+      "correct": 207,
+      "accuracy": 0.46,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 3,
+      "bucket": 2,
+      "images": 436,
+      "correct": 60,
+      "accuracy": 0.13761467889908258,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 4,
+      "bucket": 0,
+      "images": 219,
+      "correct": 141,
+      "accuracy": 0.6438356164383562,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 4,
+      "bucket": 1,
+      "images": 455,
+      "correct": 175,
+      "accuracy": 0.38461538461538464,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:dots",
+      "group": 4,
+      "bucket": 2,
+      "images": 370,
+      "correct": 38,
+      "accuracy": 0.10270270270270271,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:morph",
+      "group": 0,
+      "bucket": 0,
+      "images": 3,
+      "correct": 0,
+      "accuracy": 0.0,
+      "support_factor": 0.03,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:morph",
+      "group": 0,
+      "bucket": 1,
+      "images": 76,
+      "correct": 9,
+      "accuracy": 0.11842105263157894,
+      "support_factor": 0.76,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:morph",
+      "group": 0,
+      "bucket": 2,
+      "images": 967,
+      "correct": 24,
+      "accuracy": 0.02481902792140641,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:texture",
+      "group": 0,
+      "bucket": 0,
+      "images": 123,
+      "correct": 81,
+      "accuracy": 0.6585365853658537,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:texture",
+      "group": 0,
+      "bucket": 1,
+      "images": 140,
+      "correct": 32,
+      "accuracy": 0.22857142857142856,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "effect:texture",
+      "group": 0,
+      "bucket": 2,
+      "images": 256,
+      "correct": 14,
+      "accuracy": 0.0546875,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisanssc",
+      "group": 0,
+      "bucket": 0,
+      "images": 82,
+      "correct": 54,
+      "accuracy": 0.6585365853658537,
+      "support_factor": 0.82,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisanssc",
+      "group": 0,
+      "bucket": 1,
+      "images": 159,
+      "correct": 64,
+      "accuracy": 0.4025157232704403,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:alumnisanssc",
+      "group": 0,
+      "bucket": 2,
+      "images": 281,
+      "correct": 37,
+      "accuracy": 0.13167259786476868,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:antonio",
+      "group": 0,
+      "bucket": 0,
+      "images": 129,
+      "correct": 82,
+      "accuracy": 0.6356589147286822,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:antonio",
+      "group": 0,
+      "bucket": 1,
+      "images": 287,
+      "correct": 112,
+      "accuracy": 0.3902439024390244,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:antonio",
+      "group": 0,
+      "bucket": 2,
+      "images": 367,
+      "correct": 56,
+      "accuracy": 0.15258855585831063,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:astloch",
+      "group": 0,
+      "bucket": 0,
+      "images": 22,
+      "correct": 5,
+      "accuracy": 0.22727272727272727,
+      "support_factor": 0.22,
+      "demand": 0.0
+    },
+    {
+      "family": "font:astloch",
+      "group": 0,
+      "bucket": 1,
+      "images": 434,
+      "correct": 104,
+      "accuracy": 0.23963133640552994,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:astloch",
+      "group": 0,
+      "bucket": 2,
+      "images": 66,
+      "correct": 8,
+      "accuracy": 0.12121212121212122,
+      "support_factor": 0.66,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bitcountpropsingleink",
+      "group": 0,
+      "bucket": 0,
+      "images": 31,
+      "correct": 19,
+      "accuracy": 0.6129032258064516,
+      "support_factor": 0.31,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bitcountpropsingleink",
+      "group": 0,
+      "bucket": 1,
+      "images": 99,
+      "correct": 41,
+      "accuracy": 0.41414141414141414,
+      "support_factor": 0.99,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bitcountpropsingleink",
+      "group": 0,
+      "bucket": 2,
+      "images": 130,
+      "correct": 16,
+      "accuracy": 0.12307692307692308,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bowlbyonesc",
+      "group": 0,
+      "bucket": 0,
+      "images": 12,
+      "correct": 11,
+      "accuracy": 0.9166666666666666,
+      "support_factor": 0.12,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bowlbyonesc",
+      "group": 0,
+      "bucket": 1,
+      "images": 306,
+      "correct": 72,
+      "accuracy": 0.23529411764705882,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:bowlbyonesc",
+      "group": 0,
+      "bucket": 2,
+      "images": 728,
+      "correct": 82,
+      "accuracy": 0.11263736263736264,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:climatecrisis",
+      "group": 0,
+      "bucket": 0,
+      "images": 97,
+      "correct": 54,
+      "accuracy": 0.5567010309278351,
+      "support_factor": 0.97,
+      "demand": 0.0
+    },
+    {
+      "family": "font:climatecrisis",
+      "group": 0,
+      "bucket": 1,
+      "images": 384,
+      "correct": 164,
+      "accuracy": 0.4270833333333333,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:climatecrisis",
+      "group": 0,
+      "bucket": 2,
+      "images": 302,
+      "correct": 69,
+      "accuracy": 0.22847682119205298,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:croissantone",
+      "group": 0,
+      "bucket": 0,
+      "images": 12,
+      "correct": 1,
+      "accuracy": 0.08333333333333333,
+      "support_factor": 0.12,
+      "demand": 0.0
+    },
+    {
+      "family": "font:croissantone",
+      "group": 0,
+      "bucket": 1,
+      "images": 99,
+      "correct": 17,
+      "accuracy": 0.1717171717171717,
+      "support_factor": 0.99,
+      "demand": 0.0
+    },
+    {
+      "family": "font:croissantone",
+      "group": 0,
+      "bucket": 2,
+      "images": 150,
+      "correct": 4,
+      "accuracy": 0.02666666666666667,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:genos",
+      "group": 0,
+      "bucket": 0,
+      "images": 22,
+      "correct": 8,
+      "accuracy": 0.36363636363636365,
+      "support_factor": 0.22,
+      "demand": 0.0
+    },
+    {
+      "family": "font:genos",
+      "group": 0,
+      "bucket": 1,
+      "images": 138,
+      "correct": 36,
+      "accuracy": 0.2608695652173913,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:genos",
+      "group": 0,
+      "bucket": 2,
+      "images": 364,
+      "correct": 34,
+      "accuracy": 0.09340659340659341,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:passeroone",
+      "group": 0,
+      "bucket": 0,
+      "images": 73,
+      "correct": 54,
+      "accuracy": 0.7397260273972602,
+      "support_factor": 0.73,
+      "demand": 0.0
+    },
+    {
+      "family": "font:passeroone",
+      "group": 0,
+      "bucket": 1,
+      "images": 150,
+      "correct": 85,
+      "accuracy": 0.5666666666666667,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:passeroone",
+      "group": 0,
+      "bucket": 2,
+      "images": 38,
+      "correct": 8,
+      "accuracy": 0.21052631578947367,
+      "support_factor": 0.38,
+      "demand": 0.0
+    },
+    {
+      "family": "font:puritan",
+      "group": 0,
+      "bucket": 0,
+      "images": 102,
+      "correct": 84,
+      "accuracy": 0.8235294117647058,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:puritan",
+      "group": 0,
+      "bucket": 1,
+      "images": 163,
+      "correct": 67,
+      "accuracy": 0.4110429447852761,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:puritan",
+      "group": 0,
+      "bucket": 2,
+      "images": 258,
+      "correct": 28,
+      "accuracy": 0.10852713178294573,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:slabo13px",
+      "group": 0,
+      "bucket": 0,
+      "images": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "support_factor": 0.01,
+      "demand": 0.0
+    },
+    {
+      "family": "font:slabo13px",
+      "group": 0,
+      "bucket": 1,
+      "images": 79,
+      "correct": 10,
+      "accuracy": 0.12658227848101267,
+      "support_factor": 0.79,
+      "demand": 0.0
+    },
+    {
+      "family": "font:slabo13px",
+      "group": 0,
+      "bucket": 2,
+      "images": 444,
+      "correct": 6,
+      "accuracy": 0.013513513513513514,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:tiltprism",
+      "group": 0,
+      "bucket": 0,
+      "images": 8,
+      "correct": 6,
+      "accuracy": 0.75,
+      "support_factor": 0.08,
+      "demand": 0.0
+    },
+    {
+      "family": "font:tiltprism",
+      "group": 0,
+      "bucket": 1,
+      "images": 80,
+      "correct": 34,
+      "accuracy": 0.425,
+      "support_factor": 0.8,
+      "demand": 0.0
+    },
+    {
+      "family": "font:tiltprism",
+      "group": 0,
+      "bucket": 2,
+      "images": 436,
+      "correct": 35,
+      "accuracy": 0.08027522935779817,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:titanone",
+      "group": 0,
+      "bucket": 0,
+      "images": 163,
+      "correct": 126,
+      "accuracy": 0.7730061349693251,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:titanone",
+      "group": 0,
+      "bucket": 1,
+      "images": 208,
+      "correct": 80,
+      "accuracy": 0.38461538461538464,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:titanone",
+      "group": 0,
+      "bucket": 2,
+      "images": 153,
+      "correct": 38,
+      "accuracy": 0.24836601307189543,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:zcoolkuaile",
+      "group": 0,
+      "bucket": 0,
+      "images": 41,
+      "correct": 23,
+      "accuracy": 0.5609756097560976,
+      "support_factor": 0.41,
+      "demand": 0.0
+    },
+    {
+      "family": "font:zcoolkuaile",
+      "group": 0,
+      "bucket": 1,
+      "images": 285,
+      "correct": 101,
+      "accuracy": 0.3543859649122807,
+      "support_factor": 1.0,
+      "demand": 0.0
+    },
+    {
+      "family": "font:zcoolkuaile",
+      "group": 0,
+      "bucket": 2,
+      "images": 198,
+      "correct": 24,
+      "accuracy": 0.12121212121212122,
+      "support_factor": 1.0,
+      "demand": 0.0
+    }
+  ],
+  "seconds": 169.76599999982864,
+  "predictions_sha256": "eacf7950d2ed351a57abe29ca90fe7b688aacb53118f1bdbb851718cbf8573a4",
+  "correct_sha256": "bf8a3d80c37f805fb20405c1767318572dfac4786149c7b709fab1b04e29883d",
+  "model_tensor_sha256": "6f1c33004a2554de10db9310b71faebefd7e4285c1c419530e0f0c321f2d4a84"
+}

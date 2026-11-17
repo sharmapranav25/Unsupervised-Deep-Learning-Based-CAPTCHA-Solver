@@ -1,0 +1,460 @@
+[2026/11/16 01:51:46] openrec INFO: ----------- Config -----------
+[2026/11/16 01:51:46] openrec INFO: Architecture : 
+[2026/11/16 01:51:46] openrec INFO:     Decoder : 
+[2026/11/16 01:51:46] openrec INFO:         decode_ar : True
+[2026/11/16 01:51:46] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 01:51:46] openrec INFO:         only_attn : False
+[2026/11/16 01:51:46] openrec INFO:         refine_iters : 1
+[2026/11/16 01:51:46] openrec INFO:     Encoder : 
+[2026/11/16 01:51:46] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 01:51:46] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 01:51:46] openrec INFO:         last_stage : False
+[2026/11/16 01:51:46] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 01:51:46] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 01:51:46] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 01:51:46] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 01:51:46] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 01:51:46] openrec INFO:         use_pos_embed : False
+[2026/11/16 01:51:46] openrec INFO:     Transform : None
+[2026/11/16 01:51:46] openrec INFO:     algorithm : PARSeq
+[2026/11/16 01:51:46] openrec INFO:     model_type : rec
+[2026/11/16 01:51:46] openrec INFO: Eval : None
+[2026/11/16 01:51:46] openrec INFO: Global : 
+[2026/11/16 01:51:46] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 01:51:46] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 01:51:46] openrec INFO:     checkpoints : None
+[2026/11/16 01:51:46] openrec INFO:     device : gpu
+[2026/11/16 01:51:46] openrec INFO:     distributed : False
+[2026/11/16 01:51:46] openrec INFO:     epoch_num : 20
+[2026/11/16 01:51:46] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 01:51:46] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 01:51:46] openrec INFO:     grad_clip_val : 20
+[2026/11/16 01:51:46] openrec INFO:     infer_img : None
+[2026/11/16 01:51:46] openrec INFO:     log_smooth_window : 20
+[2026/11/16 01:51:46] openrec INFO:     max_text_length : 25
+[2026/11/16 01:51:46] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_feature_20261115\A
+[2026/11/16 01:51:46] openrec INFO:     pretrained_model : None
+[2026/11/16 01:51:46] openrec INFO:     print_batch_step : 50
+[2026/11/16 01:51:46] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 01:51:46] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_feature_20261115\A\predictions_unused.txt
+[2026/11/16 01:51:46] openrec INFO:     seed : 48
+[2026/11/16 01:51:46] openrec INFO:     use_amp : True
+[2026/11/16 01:51:46] openrec INFO:     use_space_char : False
+[2026/11/16 01:51:46] openrec INFO:     use_tensorboard : False
+[2026/11/16 01:51:46] openrec INFO: LRScheduler : 
+[2026/11/16 01:51:46] openrec INFO:     cycle_momentum : False
+[2026/11/16 01:51:46] openrec INFO:     name : OneCycleLR
+[2026/11/16 01:51:46] openrec INFO:     warmup_epoch : 2
+[2026/11/16 01:51:46] openrec INFO: Loss : 
+[2026/11/16 01:51:46] openrec INFO:     name : PARSeqLoss
+[2026/11/16 01:51:46] openrec INFO: Metric : 
+[2026/11/16 01:51:46] openrec INFO:     is_filter : False
+[2026/11/16 01:51:46] openrec INFO:     is_lower : False
+[2026/11/16 01:51:46] openrec INFO:     main_indicator : acc
+[2026/11/16 01:51:46] openrec INFO:     name : RecMetric
+[2026/11/16 01:51:46] openrec INFO: Optimizer : 
+[2026/11/16 01:51:46] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 01:51:46] openrec INFO:     lr : 0.00035
+[2026/11/16 01:51:46] openrec INFO:     name : AdamW
+[2026/11/16 01:51:46] openrec INFO:     weight_decay : 0.05
+[2026/11/16 01:51:46] openrec INFO: PostProcess : 
+[2026/11/16 01:51:46] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 01:51:46] openrec INFO:     name : ARLabelDecode
+[2026/11/16 01:51:46] openrec INFO:     use_space_char : False
+[2026/11/16 01:51:46] openrec INFO: Train : 
+[2026/11/16 01:51:46] openrec INFO:     dataset : 
+[2026/11/16 01:51:46] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 01:51:46] openrec INFO:         ds_width : True
+[2026/11/16 01:51:46] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 01:51:46] openrec INFO:         padding : False
+[2026/11/16 01:51:46] openrec INFO:         transforms : 
+[2026/11/16 01:51:46] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 01:51:46] openrec INFO:                 img_mode : RGB
+[2026/11/16 01:51:46] openrec INFO:             ARLabelEncode : 
+[2026/11/16 01:51:46] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 01:51:46] openrec INFO:                 max_text_length : 25
+[2026/11/16 01:51:46] openrec INFO:                 use_space_char : False
+[2026/11/16 01:51:46] openrec INFO:             KeepKeys : 
+[2026/11/16 01:51:46] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 01:51:46] openrec INFO:     loader : 
+[2026/11/16 01:51:46] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 01:51:46] openrec INFO:         drop_last : True
+[2026/11/16 01:51:46] openrec INFO:         max_ratio : 4
+[2026/11/16 01:51:46] openrec INFO:         min_ratio : 4
+[2026/11/16 01:51:46] openrec INFO:         num_workers : 0
+[2026/11/16 01:51:46] openrec INFO:         shuffle : True
+[2026/11/16 01:51:46] openrec INFO:     sampler : 
+[2026/11/16 01:51:46] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 01:51:46] openrec INFO:         first_bs : 128
+[2026/11/16 01:51:46] openrec INFO:         fix_bs : True
+[2026/11/16 01:51:46] openrec INFO:         is_training : True
+[2026/11/16 01:51:46] openrec INFO:         name : RatioSampler
+[2026/11/16 01:51:46] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 01:51:46] openrec INFO: filename : prepared
+[2026/11/16 01:51:46] openrec INFO: ---------------------------------------------
+[2026/11/16 01:51:49] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\A\train_lmdb
+[2026/11/16 01:51:50] openrec INFO: 0
+[2026/11/16 01:51:50] openrec INFO: 0
+[2026/11/16 01:51:50] openrec INFO: 0
+[2026/11/16 01:51:50] openrec INFO: 0
+[2026/11/16 01:51:50] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/16 01:51:50] openrec INFO: train dataloader has 782 iters
+[2026/11/16 01:51:50] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/16 01:51:50] openrec INFO: train from scratch
+[2026/11/16 01:51:50] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+[2026/11/16 01:53:02] openrec INFO: epoch: [1/20], global_step: 50, lr: 0.000015, loss: 4.122112, avg_reader_cost: 0.90465 s, avg_batch_cost: 1.42953 s, avg_samples: 128.0, ips: 89.54013 samples/s, eta: 6:11:26
+[2026/11/16 01:54:09] openrec INFO: epoch: [1/20], global_step: 100, lr: 0.000017, loss: 4.084186, avg_reader_cost: 0.80996 s, avg_batch_cost: 1.32192 s, avg_samples: 128.0, ips: 96.82913 samples/s, eta: 5:56:18
+[2026/11/16 01:55:15] openrec INFO: epoch: [1/20], global_step: 150, lr: 0.000021, loss: 4.025776, avg_reader_cost: 0.80670 s, avg_batch_cost: 1.31896 s, avg_samples: 128.0, ips: 97.04625 samples/s, eta: 5:50:16
+[2026/11/16 01:56:21] openrec INFO: epoch: [1/20], global_step: 200, lr: 0.000026, loss: 4.000798, avg_reader_cost: 0.80959 s, avg_batch_cost: 1.32328 s, avg_samples: 128.0, ips: 96.72947 samples/s, eta: 5:46:59
+[2026/11/16 01:57:28] openrec INFO: epoch: [1/20], global_step: 250, lr: 0.000033, loss: 3.990974, avg_reader_cost: 0.82047 s, avg_batch_cost: 1.33693 s, avg_samples: 128.0, ips: 95.74139 samples/s, eta: 5:45:16
+[2026/11/16 01:58:35] openrec INFO: epoch: [1/20], global_step: 300, lr: 0.000042, loss: 3.963620, avg_reader_cost: 0.81959 s, avg_batch_cost: 1.33496 s, avg_samples: 128.0, ips: 95.88311 samples/s, eta: 5:43:40
+[2026/11/16 01:59:41] openrec INFO: epoch: [1/20], global_step: 350, lr: 0.000052, loss: 3.906501, avg_reader_cost: 0.80710 s, avg_batch_cost: 1.31764 s, avg_samples: 128.0, ips: 97.14325 samples/s, eta: 5:41:35
+[2026/11/16 02:00:48] openrec INFO: epoch: [1/20], global_step: 400, lr: 0.000063, loss: 3.901989, avg_reader_cost: 0.81371 s, avg_batch_cost: 1.32800 s, avg_samples: 128.0, ips: 96.38522 samples/s, eta: 5:40:04
+[2026/11/16 02:01:56] openrec INFO: epoch: [1/20], global_step: 450, lr: 0.000076, loss: 3.890251, avg_reader_cost: 0.83152 s, avg_batch_cost: 1.34658 s, avg_samples: 128.0, ips: 95.05528 samples/s, eta: 5:39:10
+[2026/11/16 02:03:01] openrec INFO: epoch: [1/20], global_step: 500, lr: 0.000089, loss: 3.888574, avg_reader_cost: 0.79850 s, avg_batch_cost: 1.30907 s, avg_samples: 128.0, ips: 97.77963 samples/s, eta: 5:37:17
+[2026/11/16 02:04:09] openrec INFO: epoch: [1/20], global_step: 550, lr: 0.000104, loss: 3.868795, avg_reader_cost: 0.83398 s, avg_batch_cost: 1.35388 s, avg_samples: 128.0, ips: 94.54331 samples/s, eta: 5:36:34
+[2026/11/16 02:05:16] openrec INFO: epoch: [1/20], global_step: 600, lr: 0.000119, loss: 3.869913, avg_reader_cost: 0.81056 s, avg_batch_cost: 1.32373 s, avg_samples: 128.0, ips: 96.69676 samples/s, eta: 5:35:09
+[2026/11/16 02:06:22] openrec INFO: epoch: [1/20], global_step: 650, lr: 0.000135, loss: 3.857075, avg_reader_cost: 0.80358 s, avg_batch_cost: 1.31430 s, avg_samples: 128.0, ips: 97.39015 samples/s, eta: 5:33:36
+[2026/11/16 02:07:29] openrec INFO: epoch: [1/20], global_step: 700, lr: 0.000151, loss: 3.850998, avg_reader_cost: 0.82123 s, avg_batch_cost: 1.32994 s, avg_samples: 128.0, ips: 96.24511 samples/s, eta: 5:32:23
+[2026/11/16 02:08:35] openrec INFO: epoch: [1/20], global_step: 750, lr: 0.000168, loss: 3.813593, avg_reader_cost: 0.81269 s, avg_batch_cost: 1.32094 s, avg_samples: 128.0, ips: 96.90059 samples/s, eta: 5:31:02
+[2026/11/16 02:09:18] openrec INFO: epoch: [1/20], global_step: 782, lr: 0.000179, loss: 3.775692, avg_reader_cost: 0.52707 s, avg_batch_cost: 0.85784 s, avg_samples: 81.92, ips: 95.49535 samples/s, eta: 5:30:24
+0 100000 128.0 781 128
+[2026/11/16 02:09:46] openrec INFO: epoch: [2/20], global_step: 800, lr: 0.000185, loss: 3.740214, avg_reader_cost: 0.37141 s, avg_batch_cost: 0.55747 s, avg_samples: 46.08, ips: 82.65928 samples/s, eta: 5:31:11
+[2026/11/16 02:10:52] openrec INFO: epoch: [2/20], global_step: 850, lr: 0.000202, loss: 3.384353, avg_reader_cost: 0.80865 s, avg_batch_cost: 1.31528 s, avg_samples: 128.0, ips: 97.31780 samples/s, eta: 5:29:44
+[2026/11/16 02:11:59] openrec INFO: epoch: [2/20], global_step: 900, lr: 0.000219, loss: 2.695918, avg_reader_cost: 0.81390 s, avg_batch_cost: 1.32802 s, avg_samples: 128.0, ips: 96.38425 samples/s, eta: 5:28:29
+[2026/11/16 02:13:05] openrec INFO: epoch: [2/20], global_step: 950, lr: 0.000235, loss: 1.929946, avg_reader_cost: 0.81032 s, avg_batch_cost: 1.32043 s, avg_samples: 128.0, ips: 96.93835 samples/s, eta: 5:27:09
+[2026/11/16 02:14:12] openrec INFO: epoch: [2/20], global_step: 1000, lr: 0.000251, loss: 1.487554, avg_reader_cost: 0.81989 s, avg_batch_cost: 1.33384 s, avg_samples: 128.0, ips: 95.96326 samples/s, eta: 5:26:00
+[2026/11/16 02:15:18] openrec INFO: epoch: [2/20], global_step: 1050, lr: 0.000266, loss: 1.230057, avg_reader_cost: 0.81445 s, avg_batch_cost: 1.32326 s, avg_samples: 128.0, ips: 96.73065 samples/s, eta: 5:24:45
+[2026/11/16 02:16:25] openrec INFO: epoch: [2/20], global_step: 1100, lr: 0.000280, loss: 1.271328, avg_reader_cost: 0.81598 s, avg_batch_cost: 1.32459 s, avg_samples: 128.0, ips: 96.63386 samples/s, eta: 5:23:31
+[2026/11/16 02:17:31] openrec INFO: epoch: [2/20], global_step: 1150, lr: 0.000293, loss: 0.977299, avg_reader_cost: 0.81969 s, avg_batch_cost: 1.32525 s, avg_samples: 128.0, ips: 96.58530 samples/s, eta: 5:22:18
+[2026/11/16 02:18:38] openrec INFO: epoch: [2/20], global_step: 1200, lr: 0.000305, loss: 0.936151, avg_reader_cost: 0.81116 s, avg_batch_cost: 1.32209 s, avg_samples: 128.0, ips: 96.81610 samples/s, eta: 5:21:04
+[2026/11/16 02:19:45] openrec INFO: epoch: [2/20], global_step: 1250, lr: 0.000316, loss: 0.868520, avg_reader_cost: 0.81784 s, avg_batch_cost: 1.33308 s, avg_samples: 128.0, ips: 96.01807 samples/s, eta: 5:19:56
+[2026/11/16 02:20:52] openrec INFO: epoch: [2/20], global_step: 1300, lr: 0.000325, loss: 0.857043, avg_reader_cost: 0.82520 s, avg_batch_cost: 1.33944 s, avg_samples: 128.0, ips: 95.56263 samples/s, eta: 5:18:53
+[2026/11/16 02:21:58] openrec INFO: epoch: [2/20], global_step: 1350, lr: 0.000333, loss: 0.842982, avg_reader_cost: 0.80687 s, avg_batch_cost: 1.32446 s, avg_samples: 128.0, ips: 96.64346 samples/s, eta: 5:17:41
+[2026/11/16 02:23:04] openrec INFO: epoch: [2/20], global_step: 1400, lr: 0.000340, loss: 0.784476, avg_reader_cost: 0.80211 s, avg_batch_cost: 1.31649 s, avg_samples: 128.0, ips: 97.22802 samples/s, eta: 5:16:25
+[2026/11/16 02:24:11] openrec INFO: epoch: [2/20], global_step: 1450, lr: 0.000345, loss: 0.738807, avg_reader_cost: 0.80896 s, avg_batch_cost: 1.32561 s, avg_samples: 128.0, ips: 96.55955 samples/s, eta: 5:15:15
+[2026/11/16 02:25:18] openrec INFO: epoch: [2/20], global_step: 1500, lr: 0.000348, loss: 0.723274, avg_reader_cost: 0.82488 s, avg_batch_cost: 1.33927 s, avg_samples: 128.0, ips: 95.57412 samples/s, eta: 5:14:11
+[2026/11/16 02:26:25] openrec INFO: epoch: [2/20], global_step: 1550, lr: 0.000350, loss: 0.729706, avg_reader_cost: 0.80925 s, avg_batch_cost: 1.32301 s, avg_samples: 128.0, ips: 96.74883 samples/s, eta: 5:13:00
+[2026/11/16 02:26:43] openrec INFO: epoch: [2/20], global_step: 1564, lr: 0.000350, loss: 0.713212, avg_reader_cost: 0.22606 s, avg_batch_cost: 0.36590 s, avg_samples: 35.84, ips: 97.95019 samples/s, eta: 5:12:38
+0 100000 128.0 781 128
+[2026/11/16 02:27:34] openrec INFO: epoch: [3/20], global_step: 1600, lr: 0.000350, loss: 0.614640, avg_reader_cost: 0.64656 s, avg_batch_cost: 1.01857 s, avg_samples: 92.16, ips: 90.48019 samples/s, eta: 5:12:16
+[2026/11/16 02:28:41] openrec INFO: epoch: [3/20], global_step: 1650, lr: 0.000350, loss: 0.654210, avg_reader_cost: 0.81475 s, avg_batch_cost: 1.32404 s, avg_samples: 128.0, ips: 96.67393 samples/s, eta: 5:11:05
+[2026/11/16 02:29:47] openrec INFO: epoch: [3/20], global_step: 1700, lr: 0.000350, loss: 0.627724, avg_reader_cost: 0.80479 s, avg_batch_cost: 1.31237 s, avg_samples: 128.0, ips: 97.53324 samples/s, eta: 5:09:49
+[2026/11/16 02:30:52] openrec INFO: epoch: [3/20], global_step: 1750, lr: 0.000350, loss: 0.575067, avg_reader_cost: 0.80537 s, avg_batch_cost: 1.31274 s, avg_samples: 128.0, ips: 97.50618 samples/s, eta: 5:08:34
+[2026/11/16 02:31:59] openrec INFO: epoch: [3/20], global_step: 1800, lr: 0.000350, loss: 0.577250, avg_reader_cost: 0.81437 s, avg_batch_cost: 1.32745 s, avg_samples: 128.0, ips: 96.42539 samples/s, eta: 5:07:25
+[2026/11/16 02:33:05] openrec INFO: epoch: [3/20], global_step: 1850, lr: 0.000350, loss: 0.571144, avg_reader_cost: 0.80183 s, avg_batch_cost: 1.31768 s, avg_samples: 128.0, ips: 97.14040 samples/s, eta: 5:06:13
+[2026/11/16 02:34:12] openrec INFO: epoch: [3/20], global_step: 1900, lr: 0.000350, loss: 0.582464, avg_reader_cost: 0.81212 s, avg_batch_cost: 1.32321 s, avg_samples: 128.0, ips: 96.73444 samples/s, eta: 5:05:03
+[2026/11/16 02:35:18] openrec INFO: epoch: [3/20], global_step: 1950, lr: 0.000349, loss: 0.584356, avg_reader_cost: 0.80205 s, avg_batch_cost: 1.31379 s, avg_samples: 128.0, ips: 97.42794 samples/s, eta: 5:03:50
+[2026/11/16 02:36:23] openrec INFO: epoch: [3/20], global_step: 2000, lr: 0.000349, loss: 0.521137, avg_reader_cost: 0.79474 s, avg_batch_cost: 1.30514 s, avg_samples: 128.0, ips: 98.07356 samples/s, eta: 5:02:34
+[2026/11/16 02:37:29] openrec INFO: epoch: [3/20], global_step: 2050, lr: 0.000349, loss: 0.570860, avg_reader_cost: 0.79965 s, avg_batch_cost: 1.31100 s, avg_samples: 128.0, ips: 97.63511 samples/s, eta: 5:01:21
+[2026/11/16 02:38:36] openrec INFO: epoch: [3/20], global_step: 2100, lr: 0.000349, loss: 0.541224, avg_reader_cost: 0.81325 s, avg_batch_cost: 1.32648 s, avg_samples: 128.0, ips: 96.49615 samples/s, eta: 5:00:13
+[2026/11/16 02:39:41] openrec INFO: epoch: [3/20], global_step: 2150, lr: 0.000349, loss: 0.525559, avg_reader_cost: 0.78847 s, avg_batch_cost: 1.30109 s, avg_samples: 128.0, ips: 98.37938 samples/s, eta: 4:58:58
+[2026/11/16 02:40:46] openrec INFO: epoch: [3/20], global_step: 2200, lr: 0.000348, loss: 0.520383, avg_reader_cost: 0.78208 s, avg_batch_cost: 1.29518 s, avg_samples: 128.0, ips: 98.82815 samples/s, eta: 4:57:41
+[2026/11/16 02:41:53] openrec INFO: epoch: [3/20], global_step: 2250, lr: 0.000348, loss: 0.498657, avg_reader_cost: 0.81439 s, avg_batch_cost: 1.32723 s, avg_samples: 128.0, ips: 96.44152 samples/s, eta: 4:56:34
+[2026/11/16 02:42:58] openrec INFO: epoch: [3/20], global_step: 2300, lr: 0.000348, loss: 0.513823, avg_reader_cost: 0.80013 s, avg_batch_cost: 1.29965 s, avg_samples: 128.0, ips: 98.48787 samples/s, eta: 4:55:19
+[2026/11/16 02:43:58] openrec INFO: epoch: [3/20], global_step: 2346, lr: 0.000347, loss: 0.500010, avg_reader_cost: 0.73681 s, avg_batch_cost: 1.20072 s, avg_samples: 117.76, ips: 98.07462 samples/s, eta: 4:54:12
+0 100000 128.0 781 128
+[2026/11/16 02:44:08] openrec INFO: epoch: [4/20], global_step: 2350, lr: 0.000347, loss: 0.503446, avg_reader_cost: 0.14781 s, avg_batch_cost: 0.18989 s, avg_samples: 10.24, ips: 53.92476 samples/s, eta: 4:54:30
+[2026/11/16 02:45:13] openrec INFO: epoch: [4/20], global_step: 2400, lr: 0.000347, loss: 0.455408, avg_reader_cost: 0.79728 s, avg_batch_cost: 1.29837 s, avg_samples: 128.0, ips: 98.58503 samples/s, eta: 4:53:15
+[2026/11/16 02:46:19] openrec INFO: epoch: [4/20], global_step: 2450, lr: 0.000347, loss: 0.412076, avg_reader_cost: 0.80657 s, avg_batch_cost: 1.31705 s, avg_samples: 128.0, ips: 97.18709 samples/s, eta: 4:52:05
+[2026/11/16 02:47:25] openrec INFO: epoch: [4/20], global_step: 2500, lr: 0.000346, loss: 0.462003, avg_reader_cost: 0.82198 s, avg_batch_cost: 1.32677 s, avg_samples: 128.0, ips: 96.47466 samples/s, eta: 4:50:58
+[2026/11/16 02:48:32] openrec INFO: epoch: [4/20], global_step: 2550, lr: 0.000346, loss: 0.433407, avg_reader_cost: 0.80793 s, avg_batch_cost: 1.32233 s, avg_samples: 128.0, ips: 96.79912 samples/s, eta: 4:49:50
+[2026/11/16 02:49:39] openrec INFO: epoch: [4/20], global_step: 2600, lr: 0.000345, loss: 0.446711, avg_reader_cost: 0.81903 s, avg_batch_cost: 1.33059 s, avg_samples: 128.0, ips: 96.19776 samples/s, eta: 4:48:44
+[2026/11/16 02:50:46] openrec INFO: epoch: [4/20], global_step: 2650, lr: 0.000345, loss: 0.413349, avg_reader_cost: 0.81736 s, avg_batch_cost: 1.33228 s, avg_samples: 128.0, ips: 96.07623 samples/s, eta: 4:47:39
+[2026/11/16 02:51:52] openrec INFO: epoch: [4/20], global_step: 2700, lr: 0.000344, loss: 0.420956, avg_reader_cost: 0.80818 s, avg_batch_cost: 1.31735 s, avg_samples: 128.0, ips: 97.16496 samples/s, eta: 4:46:30
+[2026/11/16 02:52:58] openrec INFO: epoch: [4/20], global_step: 2750, lr: 0.000344, loss: 0.424136, avg_reader_cost: 0.81883 s, avg_batch_cost: 1.32975 s, avg_samples: 128.0, ips: 96.25866 samples/s, eta: 4:45:23
+[2026/11/16 02:54:05] openrec INFO: epoch: [4/20], global_step: 2800, lr: 0.000343, loss: 0.414174, avg_reader_cost: 0.81026 s, avg_batch_cost: 1.32534 s, avg_samples: 128.0, ips: 96.57869 samples/s, eta: 4:44:16
+[2026/11/16 02:55:11] openrec INFO: epoch: [4/20], global_step: 2850, lr: 0.000343, loss: 0.404892, avg_reader_cost: 0.80619 s, avg_batch_cost: 1.31303 s, avg_samples: 128.0, ips: 97.48460 samples/s, eta: 4:43:06
+[2026/11/16 02:56:17] openrec INFO: epoch: [4/20], global_step: 2900, lr: 0.000342, loss: 0.403963, avg_reader_cost: 0.79919 s, avg_batch_cost: 1.30933 s, avg_samples: 128.0, ips: 97.75999 samples/s, eta: 4:41:56
+[2026/11/16 02:57:23] openrec INFO: epoch: [4/20], global_step: 2950, lr: 0.000342, loss: 0.417837, avg_reader_cost: 0.80491 s, avg_batch_cost: 1.31200 s, avg_samples: 128.0, ips: 97.56134 samples/s, eta: 4:40:46
+[2026/11/16 02:58:29] openrec INFO: epoch: [4/20], global_step: 3000, lr: 0.000341, loss: 0.386504, avg_reader_cost: 0.80577 s, avg_batch_cost: 1.31560 s, avg_samples: 128.0, ips: 97.29364 samples/s, eta: 4:39:37
+[2026/11/16 02:59:35] openrec INFO: epoch: [4/20], global_step: 3050, lr: 0.000341, loss: 0.390421, avg_reader_cost: 0.80581 s, avg_batch_cost: 1.31898 s, avg_samples: 128.0, ips: 97.04462 samples/s, eta: 4:38:29
+[2026/11/16 03:00:41] openrec INFO: epoch: [4/20], global_step: 3100, lr: 0.000340, loss: 0.417318, avg_reader_cost: 0.80036 s, avg_batch_cost: 1.31015 s, avg_samples: 128.0, ips: 97.69871 samples/s, eta: 4:37:19
+[2026/11/16 03:01:18] openrec INFO: epoch: [4/20], global_step: 3128, lr: 0.000340, loss: 0.403884, avg_reader_cost: 0.45509 s, avg_batch_cost: 0.73964 s, avg_samples: 71.68, ips: 96.91187 samples/s, eta: 4:36:41
+0 100000 128.0 781 128
+[2026/11/16 03:01:49] openrec INFO: epoch: [5/20], global_step: 3150, lr: 0.000339, loss: 0.379442, avg_reader_cost: 0.40547 s, avg_batch_cost: 0.62843 s, avg_samples: 56.32, ips: 89.62030 samples/s, eta: 4:36:21
+[2026/11/16 03:02:55] openrec INFO: epoch: [5/20], global_step: 3200, lr: 0.000339, loss: 0.329706, avg_reader_cost: 0.80786 s, avg_batch_cost: 1.31450 s, avg_samples: 128.0, ips: 97.37511 samples/s, eta: 4:35:12
+[2026/11/16 03:04:01] openrec INFO: epoch: [5/20], global_step: 3250, lr: 0.000338, loss: 0.372521, avg_reader_cost: 0.79919 s, avg_batch_cost: 1.30707 s, avg_samples: 128.0, ips: 97.92932 samples/s, eta: 4:34:02
+[2026/11/16 03:05:07] openrec INFO: epoch: [5/20], global_step: 3300, lr: 0.000337, loss: 0.383692, avg_reader_cost: 0.80885 s, avg_batch_cost: 1.31729 s, avg_samples: 128.0, ips: 97.16882 samples/s, eta: 4:32:54
+[2026/11/16 03:06:13] openrec INFO: epoch: [5/20], global_step: 3350, lr: 0.000336, loss: 0.375355, avg_reader_cost: 0.80829 s, avg_batch_cost: 1.31566 s, avg_samples: 128.0, ips: 97.28977 samples/s, eta: 4:31:45
+[2026/11/16 03:07:20] openrec INFO: epoch: [5/20], global_step: 3400, lr: 0.000336, loss: 0.357063, avg_reader_cost: 0.81567 s, avg_batch_cost: 1.32722 s, avg_samples: 128.0, ips: 96.44231 samples/s, eta: 4:30:39
+[2026/11/16 03:08:26] openrec INFO: epoch: [5/20], global_step: 3450, lr: 0.000335, loss: 0.356982, avg_reader_cost: 0.81659 s, avg_batch_cost: 1.33020 s, avg_samples: 128.0, ips: 96.22587 samples/s, eta: 4:29:33
+[2026/11/16 03:09:32] openrec INFO: epoch: [5/20], global_step: 3500, lr: 0.000334, loss: 0.360720, avg_reader_cost: 0.79854 s, avg_batch_cost: 1.30683 s, avg_samples: 128.0, ips: 97.94678 samples/s, eta: 4:28:24
+[2026/11/16 03:10:38] openrec INFO: epoch: [5/20], global_step: 3550, lr: 0.000333, loss: 0.380162, avg_reader_cost: 0.79950 s, avg_batch_cost: 1.31264 s, avg_samples: 128.0, ips: 97.51352 samples/s, eta: 4:27:15
+[2026/11/16 03:11:43] openrec INFO: epoch: [5/20], global_step: 3600, lr: 0.000332, loss: 0.357612, avg_reader_cost: 0.79432 s, avg_batch_cost: 1.29875 s, avg_samples: 128.0, ips: 98.55662 samples/s, eta: 4:26:04
+[2026/11/16 03:12:49] openrec INFO: epoch: [5/20], global_step: 3650, lr: 0.000332, loss: 0.365664, avg_reader_cost: 0.79247 s, avg_batch_cost: 1.30395 s, avg_samples: 128.0, ips: 98.16292 samples/s, eta: 4:24:54
+[2026/11/16 03:13:54] openrec INFO: epoch: [5/20], global_step: 3700, lr: 0.000331, loss: 0.334149, avg_reader_cost: 0.79552 s, avg_batch_cost: 1.30720 s, avg_samples: 128.0, ips: 97.91905 samples/s, eta: 4:23:45
+[2026/11/16 03:15:00] openrec INFO: epoch: [5/20], global_step: 3750, lr: 0.000330, loss: 0.355224, avg_reader_cost: 0.79841 s, avg_batch_cost: 1.30709 s, avg_samples: 128.0, ips: 97.92725 samples/s, eta: 4:22:36
+[2026/11/16 03:16:06] openrec INFO: epoch: [5/20], global_step: 3800, lr: 0.000329, loss: 0.345456, avg_reader_cost: 0.80436 s, avg_batch_cost: 1.31593 s, avg_samples: 128.0, ips: 97.26988 samples/s, eta: 4:21:28
+[2026/11/16 03:17:12] openrec INFO: epoch: [5/20], global_step: 3850, lr: 0.000328, loss: 0.355310, avg_reader_cost: 0.79840 s, avg_batch_cost: 1.30935 s, avg_samples: 128.0, ips: 97.75820 samples/s, eta: 4:20:19
+[2026/11/16 03:18:18] openrec INFO: epoch: [5/20], global_step: 3900, lr: 0.000327, loss: 0.351720, avg_reader_cost: 0.81473 s, avg_batch_cost: 1.32596 s, avg_samples: 128.0, ips: 96.53418 samples/s, eta: 4:19:13
+[2026/11/16 03:18:31] openrec INFO: epoch: [5/20], global_step: 3910, lr: 0.000327, loss: 0.351358, avg_reader_cost: 0.16160 s, avg_batch_cost: 0.26432 s, avg_samples: 25.6, ips: 96.85412 samples/s, eta: 4:19:00
+0 100000 128.0 781 128
+[2026/11/16 03:19:27] openrec INFO: epoch: [6/20], global_step: 3950, lr: 0.000326, loss: 0.298203, avg_reader_cost: 0.69622 s, avg_batch_cost: 1.10231 s, avg_samples: 102.4, ips: 92.89616 samples/s, eta: 4:18:13
+[2026/11/16 03:20:33] openrec INFO: epoch: [6/20], global_step: 4000, lr: 0.000325, loss: 0.301189, avg_reader_cost: 0.80396 s, avg_batch_cost: 1.31634 s, avg_samples: 128.0, ips: 97.23936 samples/s, eta: 4:17:06
+[2026/11/16 03:21:39] openrec INFO: epoch: [6/20], global_step: 4050, lr: 0.000324, loss: 0.304581, avg_reader_cost: 0.81324 s, avg_batch_cost: 1.32434 s, avg_samples: 128.0, ips: 96.65186 samples/s, eta: 4:15:59
+[2026/11/16 03:22:46] openrec INFO: epoch: [6/20], global_step: 4100, lr: 0.000323, loss: 0.329848, avg_reader_cost: 0.81188 s, avg_batch_cost: 1.32312 s, avg_samples: 128.0, ips: 96.74133 samples/s, eta: 4:14:53
+[2026/11/16 03:23:54] openrec INFO: epoch: [6/20], global_step: 4150, lr: 0.000322, loss: 0.307774, avg_reader_cost: 0.83799 s, avg_batch_cost: 1.35738 s, avg_samples: 128.0, ips: 94.29955 samples/s, eta: 4:13:51
+[2026/11/16 03:25:01] openrec INFO: epoch: [6/20], global_step: 4200, lr: 0.000321, loss: 0.304239, avg_reader_cost: 0.82767 s, avg_batch_cost: 1.33834 s, avg_samples: 128.0, ips: 95.64106 samples/s, eta: 4:12:46
+[2026/11/16 03:26:08] openrec INFO: epoch: [6/20], global_step: 4250, lr: 0.000320, loss: 0.330296, avg_reader_cost: 0.81813 s, avg_batch_cost: 1.33247 s, avg_samples: 128.0, ips: 96.06219 samples/s, eta: 4:11:41
+[2026/11/16 03:27:14] openrec INFO: epoch: [6/20], global_step: 4300, lr: 0.000319, loss: 0.292993, avg_reader_cost: 0.81251 s, avg_batch_cost: 1.32510 s, avg_samples: 128.0, ips: 96.59618 samples/s, eta: 4:10:34
+[2026/11/16 03:28:21] openrec INFO: epoch: [6/20], global_step: 4350, lr: 0.000317, loss: 0.329199, avg_reader_cost: 0.81391 s, avg_batch_cost: 1.32199 s, avg_samples: 128.0, ips: 96.82343 samples/s, eta: 4:09:28
+[2026/11/16 03:29:27] openrec INFO: epoch: [6/20], global_step: 4400, lr: 0.000316, loss: 0.341549, avg_reader_cost: 0.80395 s, avg_batch_cost: 1.31353 s, avg_samples: 128.0, ips: 97.44723 samples/s, eta: 4:08:20
+[2026/11/16 03:30:32] openrec INFO: epoch: [6/20], global_step: 4450, lr: 0.000315, loss: 0.317443, avg_reader_cost: 0.79305 s, avg_batch_cost: 1.30079 s, avg_samples: 128.0, ips: 98.40170 samples/s, eta: 4:07:10
+[2026/11/16 03:31:38] openrec INFO: epoch: [6/20], global_step: 4500, lr: 0.000314, loss: 0.308162, avg_reader_cost: 0.80700 s, avg_batch_cost: 1.31562 s, avg_samples: 128.0, ips: 97.29260 samples/s, eta: 4:06:03
+[2026/11/16 03:32:45] openrec INFO: epoch: [6/20], global_step: 4550, lr: 0.000313, loss: 0.305112, avg_reader_cost: 0.80597 s, avg_batch_cost: 1.32597 s, avg_samples: 128.0, ips: 96.53335 samples/s, eta: 4:04:57
+[2026/11/16 03:33:51] openrec INFO: epoch: [6/20], global_step: 4600, lr: 0.000312, loss: 0.331105, avg_reader_cost: 0.81181 s, avg_batch_cost: 1.31849 s, avg_samples: 128.0, ips: 97.08097 samples/s, eta: 4:03:50
+[2026/11/16 03:34:57] openrec INFO: epoch: [6/20], global_step: 4650, lr: 0.000310, loss: 0.292755, avg_reader_cost: 0.80506 s, avg_batch_cost: 1.31791 s, avg_samples: 128.0, ips: 97.12335 samples/s, eta: 4:02:43
+[2026/11/16 03:35:52] openrec INFO: epoch: [6/20], global_step: 4692, lr: 0.000309, loss: 0.326556, avg_reader_cost: 0.66410 s, avg_batch_cost: 1.09127 s, avg_samples: 107.52, ips: 98.52777 samples/s, eta: 4:01:44
+0 100000 128.0 781 128
+[2026/11/16 03:36:05] openrec INFO: epoch: [7/20], global_step: 4700, lr: 0.000309, loss: 0.302786, avg_reader_cost: 0.17808 s, avg_batch_cost: 0.26162 s, avg_samples: 20.48, ips: 78.28042 samples/s, eta: 4:01:40
+[2026/11/16 03:37:12] openrec INFO: epoch: [7/20], global_step: 4750, lr: 0.000308, loss: 0.256770, avg_reader_cost: 0.81386 s, avg_batch_cost: 1.32706 s, avg_samples: 128.0, ips: 96.45348 samples/s, eta: 4:00:33
+[2026/11/16 03:38:18] openrec INFO: epoch: [7/20], global_step: 4800, lr: 0.000307, loss: 0.260974, avg_reader_cost: 0.81225 s, avg_batch_cost: 1.32511 s, avg_samples: 128.0, ips: 96.59569 samples/s, eta: 3:59:27
+[2026/11/16 03:39:25] openrec INFO: epoch: [7/20], global_step: 4850, lr: 0.000305, loss: 0.272549, avg_reader_cost: 0.81032 s, avg_batch_cost: 1.32768 s, avg_samples: 128.0, ips: 96.40878 samples/s, eta: 3:58:21
+[2026/11/16 03:40:31] openrec INFO: epoch: [7/20], global_step: 4900, lr: 0.000304, loss: 0.264471, avg_reader_cost: 0.80734 s, avg_batch_cost: 1.32172 s, avg_samples: 128.0, ips: 96.84325 samples/s, eta: 3:57:14
+[2026/11/16 03:41:37] openrec INFO: epoch: [7/20], global_step: 4950, lr: 0.000303, loss: 0.281602, avg_reader_cost: 0.80760 s, avg_batch_cost: 1.31470 s, avg_samples: 128.0, ips: 97.36076 samples/s, eta: 3:56:07
+[2026/11/16 03:42:43] openrec INFO: epoch: [7/20], global_step: 5000, lr: 0.000301, loss: 0.276815, avg_reader_cost: 0.79755 s, avg_batch_cost: 1.30747 s, avg_samples: 128.0, ips: 97.89884 samples/s, eta: 3:54:59
+[2026/11/16 03:43:50] openrec INFO: epoch: [7/20], global_step: 5050, lr: 0.000300, loss: 0.267869, avg_reader_cost: 0.81555 s, avg_batch_cost: 1.33136 s, avg_samples: 128.0, ips: 96.14246 samples/s, eta: 3:53:53
+[2026/11/16 03:44:56] openrec INFO: epoch: [7/20], global_step: 5100, lr: 0.000299, loss: 0.286290, avg_reader_cost: 0.81072 s, avg_batch_cost: 1.32609 s, avg_samples: 128.0, ips: 96.52409 samples/s, eta: 3:52:47
+[2026/11/16 03:46:02] openrec INFO: epoch: [7/20], global_step: 5150, lr: 0.000297, loss: 0.276127, avg_reader_cost: 0.81077 s, avg_batch_cost: 1.32050 s, avg_samples: 128.0, ips: 96.93301 samples/s, eta: 3:51:40
+[2026/11/16 03:47:09] openrec INFO: epoch: [7/20], global_step: 5200, lr: 0.000296, loss: 0.281306, avg_reader_cost: 0.80884 s, avg_batch_cost: 1.32148 s, avg_samples: 128.0, ips: 96.86140 samples/s, eta: 3:50:34
+[2026/11/16 03:48:16] openrec INFO: epoch: [7/20], global_step: 5250, lr: 0.000294, loss: 0.291143, avg_reader_cost: 0.81646 s, avg_batch_cost: 1.33082 s, avg_samples: 128.0, ips: 96.18143 samples/s, eta: 3:49:28
+[2026/11/16 03:49:22] openrec INFO: epoch: [7/20], global_step: 5300, lr: 0.000293, loss: 0.284182, avg_reader_cost: 0.81012 s, avg_batch_cost: 1.32741 s, avg_samples: 128.0, ips: 96.42820 samples/s, eta: 3:48:22
+[2026/11/16 03:50:29] openrec INFO: epoch: [7/20], global_step: 5350, lr: 0.000291, loss: 0.274068, avg_reader_cost: 0.81755 s, avg_batch_cost: 1.33156 s, avg_samples: 128.0, ips: 96.12755 samples/s, eta: 3:47:16
+[2026/11/16 03:51:35] openrec INFO: epoch: [7/20], global_step: 5400, lr: 0.000290, loss: 0.288544, avg_reader_cost: 0.80324 s, avg_batch_cost: 1.30973 s, avg_samples: 128.0, ips: 97.73007 samples/s, eta: 3:46:09
+[2026/11/16 03:52:41] openrec INFO: epoch: [7/20], global_step: 5450, lr: 0.000288, loss: 0.275148, avg_reader_cost: 0.80841 s, avg_batch_cost: 1.31785 s, avg_samples: 128.0, ips: 97.12805 samples/s, eta: 3:45:02
+[2026/11/16 03:53:13] openrec INFO: epoch: [7/20], global_step: 5474, lr: 0.000288, loss: 0.280577, avg_reader_cost: 0.38942 s, avg_batch_cost: 0.63281 s, avg_samples: 61.44, ips: 97.09118 samples/s, eta: 3:44:30
+0 100000 128.0 781 128
+[2026/11/16 03:53:49] openrec INFO: epoch: [8/20], global_step: 5500, lr: 0.000287, loss: 0.239267, avg_reader_cost: 0.44460 s, avg_batch_cost: 0.71217 s, avg_samples: 66.56, ips: 93.46081 samples/s, eta: 3:43:57
+[2026/11/16 03:54:54] openrec INFO: epoch: [8/20], global_step: 5550, lr: 0.000285, loss: 0.266754, avg_reader_cost: 0.80816 s, avg_batch_cost: 1.31451 s, avg_samples: 128.0, ips: 97.37455 samples/s, eta: 3:42:50
+[2026/11/16 03:56:01] openrec INFO: epoch: [8/20], global_step: 5600, lr: 0.000284, loss: 0.258520, avg_reader_cost: 0.81808 s, avg_batch_cost: 1.33009 s, avg_samples: 128.0, ips: 96.23385 samples/s, eta: 3:41:44
+[2026/11/16 03:57:08] openrec INFO: epoch: [8/20], global_step: 5650, lr: 0.000282, loss: 0.238726, avg_reader_cost: 0.81387 s, avg_batch_cost: 1.32057 s, avg_samples: 128.0, ips: 96.92795 samples/s, eta: 3:40:38
+[2026/11/16 03:58:14] openrec INFO: epoch: [8/20], global_step: 5700, lr: 0.000281, loss: 0.217085, avg_reader_cost: 0.81487 s, avg_batch_cost: 1.32776 s, avg_samples: 128.0, ips: 96.40331 samples/s, eta: 3:39:31
+[2026/11/16 03:59:21] openrec INFO: epoch: [8/20], global_step: 5750, lr: 0.000279, loss: 0.242973, avg_reader_cost: 0.80934 s, avg_batch_cost: 1.32138 s, avg_samples: 128.0, ips: 96.86857 samples/s, eta: 3:38:25
+[2026/11/16 04:00:28] openrec INFO: epoch: [8/20], global_step: 5800, lr: 0.000278, loss: 0.258652, avg_reader_cost: 0.82575 s, avg_batch_cost: 1.33766 s, avg_samples: 128.0, ips: 95.68974 samples/s, eta: 3:37:20
+[2026/11/16 04:01:34] openrec INFO: epoch: [8/20], global_step: 5850, lr: 0.000276, loss: 0.228291, avg_reader_cost: 0.81256 s, avg_batch_cost: 1.31905 s, avg_samples: 128.0, ips: 97.03963 samples/s, eta: 3:36:13
+[2026/11/16 04:02:40] openrec INFO: epoch: [8/20], global_step: 5900, lr: 0.000275, loss: 0.245234, avg_reader_cost: 0.81183 s, avg_batch_cost: 1.31944 s, avg_samples: 128.0, ips: 97.01107 samples/s, eta: 3:35:06
+[2026/11/16 04:03:45] openrec INFO: epoch: [8/20], global_step: 5950, lr: 0.000273, loss: 0.231473, avg_reader_cost: 0.79510 s, avg_batch_cost: 1.29578 s, avg_samples: 128.0, ips: 98.78236 samples/s, eta: 3:33:58
+[2026/11/16 04:04:51] openrec INFO: epoch: [8/20], global_step: 6000, lr: 0.000271, loss: 0.232676, avg_reader_cost: 0.80967 s, avg_batch_cost: 1.31760 s, avg_samples: 128.0, ips: 97.14611 samples/s, eta: 3:32:51
+[2026/11/16 04:05:57] openrec INFO: epoch: [8/20], global_step: 6050, lr: 0.000270, loss: 0.239094, avg_reader_cost: 0.80430 s, avg_batch_cost: 1.31800 s, avg_samples: 128.0, ips: 97.11698 samples/s, eta: 3:31:44
+[2026/11/16 04:07:03] openrec INFO: epoch: [8/20], global_step: 6100, lr: 0.000268, loss: 0.245178, avg_reader_cost: 0.79871 s, avg_batch_cost: 1.30743 s, avg_samples: 128.0, ips: 97.90165 samples/s, eta: 3:30:36
+[2026/11/16 04:08:09] openrec INFO: epoch: [8/20], global_step: 6150, lr: 0.000266, loss: 0.222813, avg_reader_cost: 0.80962 s, avg_batch_cost: 1.32303 s, avg_samples: 128.0, ips: 96.74769 samples/s, eta: 3:29:30
+[2026/11/16 04:09:16] openrec INFO: epoch: [8/20], global_step: 6200, lr: 0.000265, loss: 0.248028, avg_reader_cost: 0.80950 s, avg_batch_cost: 1.32472 s, avg_samples: 128.0, ips: 96.62398 samples/s, eta: 3:28:24
+[2026/11/16 04:10:23] openrec INFO: epoch: [8/20], global_step: 6250, lr: 0.000263, loss: 0.239580, avg_reader_cost: 0.81418 s, avg_batch_cost: 1.32484 s, avg_samples: 128.0, ips: 96.61562 samples/s, eta: 3:27:18
+[2026/11/16 04:10:30] openrec INFO: epoch: [8/20], global_step: 6256, lr: 0.000263, loss: 0.241002, avg_reader_cost: 0.09498 s, avg_batch_cost: 0.15518 s, avg_samples: 15.36, ips: 98.98043 samples/s, eta: 3:27:09
+0 100000 128.0 781 128
+[2026/11/16 04:11:30] openrec INFO: epoch: [9/20], global_step: 6300, lr: 0.000261, loss: 0.200573, avg_reader_cost: 0.74166 s, avg_batch_cost: 1.19048 s, avg_samples: 112.64, ips: 94.61697 samples/s, eta: 3:26:13
+[2026/11/16 04:12:37] openrec INFO: epoch: [9/20], global_step: 6350, lr: 0.000260, loss: 0.207278, avg_reader_cost: 0.82142 s, avg_batch_cost: 1.32989 s, avg_samples: 128.0, ips: 96.24866 samples/s, eta: 3:25:07
+[2026/11/16 04:13:43] openrec INFO: epoch: [9/20], global_step: 6400, lr: 0.000258, loss: 0.202721, avg_reader_cost: 0.81074 s, avg_batch_cost: 1.32160 s, avg_samples: 128.0, ips: 96.85240 samples/s, eta: 3:24:01
+[2026/11/16 04:14:49] openrec INFO: epoch: [9/20], global_step: 6450, lr: 0.000256, loss: 0.196463, avg_reader_cost: 0.80098 s, avg_batch_cost: 1.31462 s, avg_samples: 128.0, ips: 97.36663 samples/s, eta: 3:22:54
+[2026/11/16 04:15:56] openrec INFO: epoch: [9/20], global_step: 6500, lr: 0.000254, loss: 0.191829, avg_reader_cost: 0.82508 s, avg_batch_cost: 1.33489 s, avg_samples: 128.0, ips: 95.88792 samples/s, eta: 3:21:48
+[2026/11/16 04:17:03] openrec INFO: epoch: [9/20], global_step: 6550, lr: 0.000253, loss: 0.217044, avg_reader_cost: 0.81060 s, avg_batch_cost: 1.32389 s, avg_samples: 128.0, ips: 96.68507 samples/s, eta: 3:20:42
+[2026/11/16 04:18:10] openrec INFO: epoch: [9/20], global_step: 6600, lr: 0.000251, loss: 0.220133, avg_reader_cost: 0.81914 s, avg_batch_cost: 1.33868 s, avg_samples: 128.0, ips: 95.61631 samples/s, eta: 3:19:36
+[2026/11/16 04:19:17] openrec INFO: epoch: [9/20], global_step: 6650, lr: 0.000249, loss: 0.215828, avg_reader_cost: 0.81161 s, avg_batch_cost: 1.32701 s, avg_samples: 128.0, ips: 96.45746 samples/s, eta: 3:18:30
+[2026/11/16 04:20:23] openrec INFO: epoch: [9/20], global_step: 6700, lr: 0.000247, loss: 0.205207, avg_reader_cost: 0.82634 s, avg_batch_cost: 1.33447 s, avg_samples: 128.0, ips: 95.91846 samples/s, eta: 3:17:25
+[2026/11/16 04:21:29] openrec INFO: epoch: [9/20], global_step: 6750, lr: 0.000246, loss: 0.212694, avg_reader_cost: 0.80393 s, avg_batch_cost: 1.31309 s, avg_samples: 128.0, ips: 97.47996 samples/s, eta: 3:16:18
+[2026/11/16 04:22:36] openrec INFO: epoch: [9/20], global_step: 6800, lr: 0.000244, loss: 0.204622, avg_reader_cost: 0.80440 s, avg_batch_cost: 1.31949 s, avg_samples: 128.0, ips: 97.00691 samples/s, eta: 3:15:11
+[2026/11/16 04:23:42] openrec INFO: epoch: [9/20], global_step: 6850, lr: 0.000242, loss: 0.205974, avg_reader_cost: 0.81397 s, avg_batch_cost: 1.32959 s, avg_samples: 128.0, ips: 96.27036 samples/s, eta: 3:14:05
+[2026/11/16 04:24:50] openrec INFO: epoch: [9/20], global_step: 6900, lr: 0.000240, loss: 0.217946, avg_reader_cost: 0.82724 s, avg_batch_cost: 1.34131 s, avg_samples: 128.0, ips: 95.42938 samples/s, eta: 3:13:00
+[2026/11/16 04:25:56] openrec INFO: epoch: [9/20], global_step: 6950, lr: 0.000238, loss: 0.221547, avg_reader_cost: 0.80147 s, avg_batch_cost: 1.31112 s, avg_samples: 128.0, ips: 97.62657 samples/s, eta: 3:11:53
+[2026/11/16 04:27:01] openrec INFO: epoch: [9/20], global_step: 7000, lr: 0.000237, loss: 0.204993, avg_reader_cost: 0.80178 s, avg_batch_cost: 1.31105 s, avg_samples: 128.0, ips: 97.63203 samples/s, eta: 3:10:46
+[2026/11/16 04:27:52] openrec INFO: epoch: [9/20], global_step: 7038, lr: 0.000235, loss: 0.214413, avg_reader_cost: 0.61936 s, avg_batch_cost: 1.00518 s, avg_samples: 97.28, ips: 96.77893 samples/s, eta: 3:09:55
+0 100000 128.0 781 128
+[2026/11/16 04:28:10] openrec INFO: epoch: [10/20], global_step: 7050, lr: 0.000235, loss: 0.179873, avg_reader_cost: 0.22703 s, avg_batch_cost: 0.35307 s, avg_samples: 30.72, ips: 87.00744 samples/s, eta: 3:09:42
+[2026/11/16 04:29:16] openrec INFO: epoch: [10/20], global_step: 7100, lr: 0.000233, loss: 0.166956, avg_reader_cost: 0.82518 s, avg_batch_cost: 1.33251 s, avg_samples: 128.0, ips: 96.05938 samples/s, eta: 3:08:36
+[2026/11/16 04:30:22] openrec INFO: epoch: [10/20], global_step: 7150, lr: 0.000231, loss: 0.161705, avg_reader_cost: 0.80515 s, avg_batch_cost: 1.31154 s, avg_samples: 128.0, ips: 97.59526 samples/s, eta: 3:07:29
+[2026/11/16 04:31:28] openrec INFO: epoch: [10/20], global_step: 7200, lr: 0.000229, loss: 0.177864, avg_reader_cost: 0.80009 s, avg_batch_cost: 1.30046 s, avg_samples: 128.0, ips: 98.42646 samples/s, eta: 3:06:21
+[2026/11/16 04:32:34] openrec INFO: epoch: [10/20], global_step: 7250, lr: 0.000227, loss: 0.171922, avg_reader_cost: 0.81505 s, avg_batch_cost: 1.33096 s, avg_samples: 128.0, ips: 96.17087 samples/s, eta: 3:05:15
+[2026/11/16 04:33:42] openrec INFO: epoch: [10/20], global_step: 7300, lr: 0.000225, loss: 0.200512, avg_reader_cost: 0.82103 s, avg_batch_cost: 1.34207 s, avg_samples: 128.0, ips: 95.37475 samples/s, eta: 3:04:10
+[2026/11/16 04:34:48] openrec INFO: epoch: [10/20], global_step: 7350, lr: 0.000224, loss: 0.184075, avg_reader_cost: 0.81309 s, avg_batch_cost: 1.32725 s, avg_samples: 128.0, ips: 96.44022 samples/s, eta: 3:03:04
+[2026/11/16 04:35:55] openrec INFO: epoch: [10/20], global_step: 7400, lr: 0.000222, loss: 0.169165, avg_reader_cost: 0.81047 s, avg_batch_cost: 1.31871 s, avg_samples: 128.0, ips: 97.06449 samples/s, eta: 3:01:57
+[2026/11/16 04:37:01] openrec INFO: epoch: [10/20], global_step: 7450, lr: 0.000220, loss: 0.178462, avg_reader_cost: 0.81218 s, avg_batch_cost: 1.32813 s, avg_samples: 128.0, ips: 96.37580 samples/s, eta: 3:00:51
+[2026/11/16 04:38:08] openrec INFO: epoch: [10/20], global_step: 7500, lr: 0.000218, loss: 0.178591, avg_reader_cost: 0.81200 s, avg_batch_cost: 1.32565 s, avg_samples: 128.0, ips: 96.55636 samples/s, eta: 2:59:45
+[2026/11/16 04:39:14] openrec INFO: epoch: [10/20], global_step: 7550, lr: 0.000216, loss: 0.181378, avg_reader_cost: 0.80487 s, avg_batch_cost: 1.31700 s, avg_samples: 128.0, ips: 97.19056 samples/s, eta: 2:58:38
+[2026/11/16 04:40:20] openrec INFO: epoch: [10/20], global_step: 7600, lr: 0.000214, loss: 0.178010, avg_reader_cost: 0.80244 s, avg_batch_cost: 1.30860 s, avg_samples: 128.0, ips: 97.81464 samples/s, eta: 2:57:31
+[2026/11/16 04:41:26] openrec INFO: epoch: [10/20], global_step: 7650, lr: 0.000212, loss: 0.185569, avg_reader_cost: 0.80700 s, avg_batch_cost: 1.31467 s, avg_samples: 128.0, ips: 97.36310 samples/s, eta: 2:56:24
+[2026/11/16 04:42:32] openrec INFO: epoch: [10/20], global_step: 7700, lr: 0.000210, loss: 0.174200, avg_reader_cost: 0.81586 s, avg_batch_cost: 1.32887 s, avg_samples: 128.0, ips: 96.32216 samples/s, eta: 2:55:18
+[2026/11/16 04:43:39] openrec INFO: epoch: [10/20], global_step: 7750, lr: 0.000208, loss: 0.181835, avg_reader_cost: 0.81373 s, avg_batch_cost: 1.32761 s, avg_samples: 128.0, ips: 96.41369 samples/s, eta: 2:54:12
+[2026/11/16 04:44:46] openrec INFO: epoch: [10/20], global_step: 7800, lr: 0.000206, loss: 0.186363, avg_reader_cost: 0.81608 s, avg_batch_cost: 1.33320 s, avg_samples: 128.0, ips: 96.00968 samples/s, eta: 2:53:06
+[2026/11/16 04:45:13] openrec INFO: epoch: [10/20], global_step: 7820, lr: 0.000206, loss: 0.190437, avg_reader_cost: 0.32531 s, avg_batch_cost: 0.53109 s, avg_samples: 51.2, ips: 96.40561 samples/s, eta: 2:52:40
+0 100000 128.0 781 128
+[2026/11/16 04:45:54] openrec INFO: epoch: [11/20], global_step: 7850, lr: 0.000205, loss: 0.141828, avg_reader_cost: 0.52695 s, avg_batch_cost: 0.83336 s, avg_samples: 76.8, ips: 92.15690 samples/s, eta: 2:52:02
+[2026/11/16 04:47:01] openrec INFO: epoch: [11/20], global_step: 7900, lr: 0.000203, loss: 0.141926, avg_reader_cost: 0.81756 s, avg_batch_cost: 1.32844 s, avg_samples: 128.0, ips: 96.35381 samples/s, eta: 2:50:56
+[2026/11/16 04:48:08] openrec INFO: epoch: [11/20], global_step: 7950, lr: 0.000201, loss: 0.153048, avg_reader_cost: 0.82572 s, avg_batch_cost: 1.34028 s, avg_samples: 128.0, ips: 95.50221 samples/s, eta: 2:49:50
+[2026/11/16 04:49:15] openrec INFO: epoch: [11/20], global_step: 8000, lr: 0.000199, loss: 0.146026, avg_reader_cost: 0.81131 s, avg_batch_cost: 1.32153 s, avg_samples: 128.0, ips: 96.85748 samples/s, eta: 2:48:44
+[2026/11/16 04:50:22] openrec INFO: epoch: [11/20], global_step: 8050, lr: 0.000197, loss: 0.152273, avg_reader_cost: 0.81926 s, avg_batch_cost: 1.33355 s, avg_samples: 128.0, ips: 95.98434 samples/s, eta: 2:47:38
+[2026/11/16 04:51:27] openrec INFO: epoch: [11/20], global_step: 8100, lr: 0.000195, loss: 0.139468, avg_reader_cost: 0.80432 s, avg_batch_cost: 1.31065 s, avg_samples: 128.0, ips: 97.66110 samples/s, eta: 2:46:31
+[2026/11/16 04:52:33] openrec INFO: epoch: [11/20], global_step: 8150, lr: 0.000193, loss: 0.139865, avg_reader_cost: 0.80675 s, avg_batch_cost: 1.31168 s, avg_samples: 128.0, ips: 97.58506 samples/s, eta: 2:45:24
+[2026/11/16 04:53:40] openrec INFO: epoch: [11/20], global_step: 8200, lr: 0.000191, loss: 0.149332, avg_reader_cost: 0.81020 s, avg_batch_cost: 1.32064 s, avg_samples: 128.0, ips: 96.92265 samples/s, eta: 2:44:18
+[2026/11/16 04:54:46] openrec INFO: epoch: [11/20], global_step: 8250, lr: 0.000189, loss: 0.138939, avg_reader_cost: 0.81031 s, avg_batch_cost: 1.31557 s, avg_samples: 128.0, ips: 97.29594 samples/s, eta: 2:43:11
+[2026/11/16 04:55:51] openrec INFO: epoch: [11/20], global_step: 8300, lr: 0.000187, loss: 0.149728, avg_reader_cost: 0.80999 s, avg_batch_cost: 1.30979 s, avg_samples: 128.0, ips: 97.72585 samples/s, eta: 2:42:04
+[2026/11/16 04:56:57] openrec INFO: epoch: [11/20], global_step: 8350, lr: 0.000185, loss: 0.148862, avg_reader_cost: 0.80555 s, avg_batch_cost: 1.31558 s, avg_samples: 128.0, ips: 97.29542 samples/s, eta: 2:40:58
+[2026/11/16 04:58:04] openrec INFO: epoch: [11/20], global_step: 8400, lr: 0.000183, loss: 0.148915, avg_reader_cost: 0.80855 s, avg_batch_cost: 1.31504 s, avg_samples: 128.0, ips: 97.33525 samples/s, eta: 2:39:51
+[2026/11/16 04:59:10] openrec INFO: epoch: [11/20], global_step: 8450, lr: 0.000181, loss: 0.158482, avg_reader_cost: 0.81563 s, avg_batch_cost: 1.32679 s, avg_samples: 128.0, ips: 96.47367 samples/s, eta: 2:38:45
+[2026/11/16 05:00:16] openrec INFO: epoch: [11/20], global_step: 8500, lr: 0.000179, loss: 0.146448, avg_reader_cost: 0.80563 s, avg_batch_cost: 1.32099 s, avg_samples: 128.0, ips: 96.89731 samples/s, eta: 2:37:38
+[2026/11/16 05:01:23] openrec INFO: epoch: [11/20], global_step: 8550, lr: 0.000177, loss: 0.147499, avg_reader_cost: 0.81176 s, avg_batch_cost: 1.31943 s, avg_samples: 128.0, ips: 97.01182 samples/s, eta: 2:36:32
+[2026/11/16 05:02:29] openrec INFO: epoch: [11/20], global_step: 8600, lr: 0.000175, loss: 0.146382, avg_reader_cost: 0.82355 s, avg_batch_cost: 1.32922 s, avg_samples: 128.0, ips: 96.29676 samples/s, eta: 2:35:26
+[2026/11/16 05:02:32] openrec INFO: epoch: [11/20], global_step: 8602, lr: 0.000175, loss: 0.146382, avg_reader_cost: 0.03166 s, avg_batch_cost: 0.05199 s, avg_samples: 5.12, ips: 98.48790 samples/s, eta: 2:35:23
+0 100000 128.0 781 128
+[2026/11/16 05:03:38] openrec INFO: epoch: [12/20], global_step: 8650, lr: 0.000173, loss: 0.103115, avg_reader_cost: 0.82716 s, avg_batch_cost: 1.30942 s, avg_samples: 122.88, ips: 93.84329 samples/s, eta: 2:34:21
+[2026/11/16 05:04:44] openrec INFO: epoch: [12/20], global_step: 8700, lr: 0.000172, loss: 0.114764, avg_reader_cost: 0.80548 s, avg_batch_cost: 1.31487 s, avg_samples: 128.0, ips: 97.34827 samples/s, eta: 2:33:15
+[2026/11/16 05:05:49] openrec INFO: epoch: [12/20], global_step: 8750, lr: 0.000170, loss: 0.110973, avg_reader_cost: 0.80128 s, avg_batch_cost: 1.30532 s, avg_samples: 128.0, ips: 98.06031 samples/s, eta: 2:32:07
+[2026/11/16 05:06:55] openrec INFO: epoch: [12/20], global_step: 8800, lr: 0.000168, loss: 0.114696, avg_reader_cost: 0.80971 s, avg_batch_cost: 1.31736 s, avg_samples: 128.0, ips: 97.16413 samples/s, eta: 2:31:01
+[2026/11/16 05:08:01] openrec INFO: epoch: [12/20], global_step: 8850, lr: 0.000166, loss: 0.121840, avg_reader_cost: 0.80745 s, avg_batch_cost: 1.31508 s, avg_samples: 128.0, ips: 97.33260 samples/s, eta: 2:29:54
+[2026/11/16 05:09:08] openrec INFO: epoch: [12/20], global_step: 8900, lr: 0.000164, loss: 0.109489, avg_reader_cost: 0.81324 s, avg_batch_cost: 1.32428 s, avg_samples: 128.0, ips: 96.65608 samples/s, eta: 2:28:48
+[2026/11/16 05:10:14] openrec INFO: epoch: [12/20], global_step: 8950, lr: 0.000162, loss: 0.124633, avg_reader_cost: 0.80905 s, avg_batch_cost: 1.31157 s, avg_samples: 128.0, ips: 97.59301 samples/s, eta: 2:27:41
+[2026/11/16 05:11:19] openrec INFO: epoch: [12/20], global_step: 9000, lr: 0.000160, loss: 0.132155, avg_reader_cost: 0.79954 s, avg_batch_cost: 1.30102 s, avg_samples: 128.0, ips: 98.38435 samples/s, eta: 2:26:34
+[2026/11/16 05:12:25] openrec INFO: epoch: [12/20], global_step: 9050, lr: 0.000158, loss: 0.117760, avg_reader_cost: 0.81851 s, avg_batch_cost: 1.32253 s, avg_samples: 128.0, ips: 96.78442 samples/s, eta: 2:25:28
+[2026/11/16 05:13:31] openrec INFO: epoch: [12/20], global_step: 9100, lr: 0.000156, loss: 0.124955, avg_reader_cost: 0.80806 s, avg_batch_cost: 1.31116 s, avg_samples: 128.0, ips: 97.62358 samples/s, eta: 2:24:21
+[2026/11/16 05:14:37] openrec INFO: epoch: [12/20], global_step: 9150, lr: 0.000154, loss: 0.123370, avg_reader_cost: 0.80569 s, avg_batch_cost: 1.31269 s, avg_samples: 128.0, ips: 97.50966 samples/s, eta: 2:23:15
+[2026/11/16 05:15:43] openrec INFO: epoch: [12/20], global_step: 9200, lr: 0.000152, loss: 0.111905, avg_reader_cost: 0.80975 s, avg_batch_cost: 1.31933 s, avg_samples: 128.0, ips: 97.01898 samples/s, eta: 2:22:08
+[2026/11/16 05:16:49] openrec INFO: epoch: [12/20], global_step: 9250, lr: 0.000150, loss: 0.117790, avg_reader_cost: 0.79790 s, avg_batch_cost: 1.30797 s, avg_samples: 128.0, ips: 97.86172 samples/s, eta: 2:21:01
+[2026/11/16 05:17:56] openrec INFO: epoch: [12/20], global_step: 9300, lr: 0.000148, loss: 0.110176, avg_reader_cost: 0.81541 s, avg_batch_cost: 1.32387 s, avg_samples: 128.0, ips: 96.68632 samples/s, eta: 2:19:55
+[2026/11/16 05:19:02] openrec INFO: epoch: [12/20], global_step: 9350, lr: 0.000146, loss: 0.124181, avg_reader_cost: 0.81530 s, avg_batch_cost: 1.33136 s, avg_samples: 128.0, ips: 96.14222 samples/s, eta: 2:18:49
+[2026/11/16 05:19:48] openrec INFO: epoch: [12/20], global_step: 9384, lr: 0.000145, loss: 0.119809, avg_reader_cost: 0.54624 s, avg_batch_cost: 0.89881 s, avg_samples: 87.04, ips: 96.83954 samples/s, eta: 2:18:04
+0 100000 128.0 781 128
+[2026/11/16 05:20:11] openrec INFO: epoch: [13/20], global_step: 9400, lr: 0.000144, loss: 0.080262, avg_reader_cost: 0.30531 s, avg_batch_cost: 0.46802 s, avg_samples: 40.96, ips: 87.51824 samples/s, eta: 2:17:44
+[2026/11/16 05:21:17] openrec INFO: epoch: [13/20], global_step: 9450, lr: 0.000142, loss: 0.087861, avg_reader_cost: 0.81134 s, avg_batch_cost: 1.32156 s, avg_samples: 128.0, ips: 96.85557 samples/s, eta: 2:16:38
+[2026/11/16 05:22:24] openrec INFO: epoch: [13/20], global_step: 9500, lr: 0.000140, loss: 0.097063, avg_reader_cost: 0.80949 s, avg_batch_cost: 1.32395 s, avg_samples: 128.0, ips: 96.68059 samples/s, eta: 2:15:32
+[2026/11/16 05:23:31] openrec INFO: epoch: [13/20], global_step: 9550, lr: 0.000139, loss: 0.083352, avg_reader_cost: 0.82124 s, avg_batch_cost: 1.33783 s, avg_samples: 128.0, ips: 95.67747 samples/s, eta: 2:14:26
+[2026/11/16 05:24:38] openrec INFO: epoch: [13/20], global_step: 9600, lr: 0.000137, loss: 0.082761, avg_reader_cost: 0.81991 s, avg_batch_cost: 1.33515 s, avg_samples: 128.0, ips: 95.86933 samples/s, eta: 2:13:20
+[2026/11/16 05:25:45] openrec INFO: epoch: [13/20], global_step: 9650, lr: 0.000135, loss: 0.078111, avg_reader_cost: 0.81861 s, avg_batch_cost: 1.32696 s, avg_samples: 128.0, ips: 96.46085 samples/s, eta: 2:12:14
+[2026/11/16 05:26:51] openrec INFO: epoch: [13/20], global_step: 9700, lr: 0.000133, loss: 0.093129, avg_reader_cost: 0.81673 s, avg_batch_cost: 1.32829 s, avg_samples: 128.0, ips: 96.36437 samples/s, eta: 2:11:08
+[2026/11/16 05:27:58] openrec INFO: epoch: [13/20], global_step: 9750, lr: 0.000131, loss: 0.082937, avg_reader_cost: 0.81863 s, avg_batch_cost: 1.33330 s, avg_samples: 128.0, ips: 96.00246 samples/s, eta: 2:10:02
+[2026/11/16 05:29:05] openrec INFO: epoch: [13/20], global_step: 9800, lr: 0.000129, loss: 0.084773, avg_reader_cost: 0.80868 s, avg_batch_cost: 1.32339 s, avg_samples: 128.0, ips: 96.72153 samples/s, eta: 2:08:56
+[2026/11/16 05:30:11] openrec INFO: epoch: [13/20], global_step: 9850, lr: 0.000127, loss: 0.091416, avg_reader_cost: 0.81453 s, avg_batch_cost: 1.32354 s, avg_samples: 128.0, ips: 96.71050 samples/s, eta: 2:07:49
+[2026/11/16 05:31:18] openrec INFO: epoch: [13/20], global_step: 9900, lr: 0.000125, loss: 0.089969, avg_reader_cost: 0.81345 s, avg_batch_cost: 1.32580 s, avg_samples: 128.0, ips: 96.54541 samples/s, eta: 2:06:43
+[2026/11/16 05:32:24] openrec INFO: epoch: [13/20], global_step: 9950, lr: 0.000123, loss: 0.084120, avg_reader_cost: 0.81799 s, avg_batch_cost: 1.32874 s, avg_samples: 128.0, ips: 96.33207 samples/s, eta: 2:05:37
+[2026/11/16 05:33:32] openrec INFO: epoch: [13/20], global_step: 10000, lr: 0.000122, loss: 0.082733, avg_reader_cost: 0.82205 s, avg_batch_cost: 1.33903 s, avg_samples: 128.0, ips: 95.59166 samples/s, eta: 2:04:31
+[2026/11/16 05:34:39] openrec INFO: epoch: [13/20], global_step: 10050, lr: 0.000120, loss: 0.081859, avg_reader_cost: 0.82952 s, avg_batch_cost: 1.34838 s, avg_samples: 128.0, ips: 94.92847 samples/s, eta: 2:03:26
+[2026/11/16 05:35:46] openrec INFO: epoch: [13/20], global_step: 10100, lr: 0.000118, loss: 0.078572, avg_reader_cost: 0.82223 s, avg_batch_cost: 1.33504 s, avg_samples: 128.0, ips: 95.87722 samples/s, eta: 2:02:20
+[2026/11/16 05:36:53] openrec INFO: epoch: [13/20], global_step: 10150, lr: 0.000116, loss: 0.082167, avg_reader_cost: 0.81950 s, avg_batch_cost: 1.33382 s, avg_samples: 128.0, ips: 95.96473 samples/s, eta: 2:01:14
+[2026/11/16 05:37:15] openrec INFO: epoch: [13/20], global_step: 10166, lr: 0.000115, loss: 0.080711, avg_reader_cost: 0.26440 s, avg_batch_cost: 0.42592 s, avg_samples: 40.96, ips: 96.16905 samples/s, eta: 2:00:53
+0 100000 128.0 781 128
+[2026/11/16 05:38:04] openrec INFO: epoch: [14/20], global_step: 10200, lr: 0.000114, loss: 0.053028, avg_reader_cost: 0.62996 s, avg_batch_cost: 0.98256 s, avg_samples: 87.04, ips: 88.58530 samples/s, eta: 2:00:10
+[2026/11/16 05:39:11] openrec INFO: epoch: [14/20], global_step: 10250, lr: 0.000112, loss: 0.061961, avg_reader_cost: 0.81526 s, avg_batch_cost: 1.33129 s, avg_samples: 128.0, ips: 96.14756 samples/s, eta: 1:59:04
+[2026/11/16 05:40:18] openrec INFO: epoch: [14/20], global_step: 10300, lr: 0.000111, loss: 0.063062, avg_reader_cost: 0.82941 s, avg_batch_cost: 1.33768 s, avg_samples: 128.0, ips: 95.68825 samples/s, eta: 1:57:58
+[2026/11/16 05:41:24] openrec INFO: epoch: [14/20], global_step: 10350, lr: 0.000109, loss: 0.057086, avg_reader_cost: 0.79773 s, avg_batch_cost: 1.30793 s, avg_samples: 128.0, ips: 97.86463 samples/s, eta: 1:56:51
+[2026/11/16 05:42:30] openrec INFO: epoch: [14/20], global_step: 10400, lr: 0.000107, loss: 0.056782, avg_reader_cost: 0.80983 s, avg_batch_cost: 1.32648 s, avg_samples: 128.0, ips: 96.49623 samples/s, eta: 1:55:45
+[2026/11/16 05:43:37] openrec INFO: epoch: [14/20], global_step: 10450, lr: 0.000105, loss: 0.062100, avg_reader_cost: 0.81137 s, avg_batch_cost: 1.32477 s, avg_samples: 128.0, ips: 96.62021 samples/s, eta: 1:54:38
+[2026/11/16 05:44:43] openrec INFO: epoch: [14/20], global_step: 10500, lr: 0.000103, loss: 0.058337, avg_reader_cost: 0.81833 s, avg_batch_cost: 1.32622 s, avg_samples: 128.0, ips: 96.51482 samples/s, eta: 1:53:32
+[2026/11/16 05:45:50] openrec INFO: epoch: [14/20], global_step: 10550, lr: 0.000102, loss: 0.059330, avg_reader_cost: 0.81245 s, avg_batch_cost: 1.32457 s, avg_samples: 128.0, ips: 96.63531 samples/s, eta: 1:52:26
+[2026/11/16 05:46:57] openrec INFO: epoch: [14/20], global_step: 10600, lr: 0.000100, loss: 0.065340, avg_reader_cost: 0.81572 s, avg_batch_cost: 1.33309 s, avg_samples: 128.0, ips: 96.01733 samples/s, eta: 1:51:20
+[2026/11/16 05:48:04] openrec INFO: epoch: [14/20], global_step: 10650, lr: 0.000098, loss: 0.056273, avg_reader_cost: 0.82611 s, avg_batch_cost: 1.33439 s, avg_samples: 128.0, ips: 95.92371 samples/s, eta: 1:50:14
+[2026/11/16 05:49:10] openrec INFO: epoch: [14/20], global_step: 10700, lr: 0.000096, loss: 0.060336, avg_reader_cost: 0.82295 s, avg_batch_cost: 1.32768 s, avg_samples: 128.0, ips: 96.40879 samples/s, eta: 1:49:07
+[2026/11/16 05:50:17] openrec INFO: epoch: [14/20], global_step: 10750, lr: 0.000095, loss: 0.061670, avg_reader_cost: 0.81489 s, avg_batch_cost: 1.32415 s, avg_samples: 128.0, ips: 96.66570 samples/s, eta: 1:48:01
+[2026/11/16 05:51:23] openrec INFO: epoch: [14/20], global_step: 10800, lr: 0.000093, loss: 0.060871, avg_reader_cost: 0.81012 s, avg_batch_cost: 1.31916 s, avg_samples: 128.0, ips: 97.03139 samples/s, eta: 1:46:55
+[2026/11/16 05:52:29] openrec INFO: epoch: [14/20], global_step: 10850, lr: 0.000091, loss: 0.065944, avg_reader_cost: 0.80386 s, avg_batch_cost: 1.31195 s, avg_samples: 128.0, ips: 97.56435 samples/s, eta: 1:45:48
+[2026/11/16 05:53:35] openrec INFO: epoch: [14/20], global_step: 10900, lr: 0.000089, loss: 0.053539, avg_reader_cost: 0.81045 s, avg_batch_cost: 1.31861 s, avg_samples: 128.0, ips: 97.07179 samples/s, eta: 1:44:42
+[2026/11/16 05:54:39] openrec INFO: epoch: [14/20], global_step: 10948, lr: 0.000088, loss: 0.055132, avg_reader_cost: 0.77140 s, avg_batch_cost: 1.26520 s, avg_samples: 122.88, ips: 97.12297 samples/s, eta: 1:43:38
+0 100000 128.0 781 128
+[2026/11/16 05:54:44] openrec INFO: epoch: [15/20], global_step: 10950, lr: 0.000088, loss: 0.055132, avg_reader_cost: 0.08479 s, avg_batch_cost: 0.10672 s, avg_samples: 5.12, ips: 47.97823 samples/s, eta: 1:43:36
+[2026/11/16 05:55:51] openrec INFO: epoch: [15/20], global_step: 11000, lr: 0.000086, loss: 0.037672, avg_reader_cost: 0.81790 s, avg_batch_cost: 1.32687 s, avg_samples: 128.0, ips: 96.46737 samples/s, eta: 1:42:30
+[2026/11/16 05:56:57] openrec INFO: epoch: [15/20], global_step: 11050, lr: 0.000084, loss: 0.038725, avg_reader_cost: 0.81646 s, avg_batch_cost: 1.32735 s, avg_samples: 128.0, ips: 96.43260 samples/s, eta: 1:41:24
+[2026/11/16 05:58:04] openrec INFO: epoch: [15/20], global_step: 11100, lr: 0.000083, loss: 0.038297, avg_reader_cost: 0.81490 s, avg_batch_cost: 1.32752 s, avg_samples: 128.0, ips: 96.42020 samples/s, eta: 1:40:18
+[2026/11/16 05:59:10] openrec INFO: epoch: [15/20], global_step: 11150, lr: 0.000081, loss: 0.039442, avg_reader_cost: 0.80414 s, avg_batch_cost: 1.31750 s, avg_samples: 128.0, ips: 97.15374 samples/s, eta: 1:39:11
+[2026/11/16 06:00:16] openrec INFO: epoch: [15/20], global_step: 11200, lr: 0.000079, loss: 0.036501, avg_reader_cost: 0.80629 s, avg_batch_cost: 1.31616 s, avg_samples: 128.0, ips: 97.25277 samples/s, eta: 1:38:05
+[2026/11/16 06:01:23] openrec INFO: epoch: [15/20], global_step: 11250, lr: 0.000078, loss: 0.041190, avg_reader_cost: 0.82107 s, avg_batch_cost: 1.33508 s, avg_samples: 128.0, ips: 95.87467 samples/s, eta: 1:36:59
+[2026/11/16 06:02:29] openrec INFO: epoch: [15/20], global_step: 11300, lr: 0.000076, loss: 0.039006, avg_reader_cost: 0.80876 s, avg_batch_cost: 1.32235 s, avg_samples: 128.0, ips: 96.79772 samples/s, eta: 1:35:52
+[2026/11/16 06:03:36] openrec INFO: epoch: [15/20], global_step: 11350, lr: 0.000075, loss: 0.040387, avg_reader_cost: 0.80460 s, avg_batch_cost: 1.31760 s, avg_samples: 128.0, ips: 97.14641 samples/s, eta: 1:34:46
+[2026/11/16 06:04:42] openrec INFO: epoch: [15/20], global_step: 11400, lr: 0.000073, loss: 0.041538, avg_reader_cost: 0.81157 s, avg_batch_cost: 1.32484 s, avg_samples: 128.0, ips: 96.61543 samples/s, eta: 1:33:40
+[2026/11/16 06:05:48] openrec INFO: epoch: [15/20], global_step: 11450, lr: 0.000071, loss: 0.040118, avg_reader_cost: 0.80749 s, avg_batch_cost: 1.32115 s, avg_samples: 128.0, ips: 96.88555 samples/s, eta: 1:32:33
+[2026/11/16 06:06:55] openrec INFO: epoch: [15/20], global_step: 11500, lr: 0.000070, loss: 0.039945, avg_reader_cost: 0.80994 s, avg_batch_cost: 1.32133 s, avg_samples: 128.0, ips: 96.87183 samples/s, eta: 1:31:27
+[2026/11/16 06:08:01] openrec INFO: epoch: [15/20], global_step: 11550, lr: 0.000068, loss: 0.037605, avg_reader_cost: 0.81353 s, avg_batch_cost: 1.32443 s, avg_samples: 128.0, ips: 96.64554 samples/s, eta: 1:30:21
+[2026/11/16 06:09:07] openrec INFO: epoch: [15/20], global_step: 11600, lr: 0.000067, loss: 0.038859, avg_reader_cost: 0.80320 s, avg_batch_cost: 1.31928 s, avg_samples: 128.0, ips: 97.02251 samples/s, eta: 1:29:14
+[2026/11/16 06:10:14] openrec INFO: epoch: [15/20], global_step: 11650, lr: 0.000065, loss: 0.044932, avg_reader_cost: 0.81185 s, avg_batch_cost: 1.32842 s, avg_samples: 128.0, ips: 96.35513 samples/s, eta: 1:28:08
+[2026/11/16 06:11:21] openrec INFO: epoch: [15/20], global_step: 11700, lr: 0.000064, loss: 0.036837, avg_reader_cost: 0.81070 s, avg_batch_cost: 1.32305 s, avg_samples: 128.0, ips: 96.74604 samples/s, eta: 1:27:02
+[2026/11/16 06:12:01] openrec INFO: epoch: [15/20], global_step: 11730, lr: 0.000063, loss: 0.032882, avg_reader_cost: 0.48396 s, avg_batch_cost: 0.79633 s, avg_samples: 76.8, ips: 96.44265 samples/s, eta: 1:26:22
+0 100000 128.0 781 128
+[2026/11/16 06:12:30] openrec INFO: epoch: [16/20], global_step: 11750, lr: 0.000062, loss: 0.027128, avg_reader_cost: 0.37577 s, avg_batch_cost: 0.58320 s, avg_samples: 51.2, ips: 87.79091 samples/s, eta: 1:25:56
+[2026/11/16 06:13:36] openrec INFO: epoch: [16/20], global_step: 11800, lr: 0.000061, loss: 0.023588, avg_reader_cost: 0.81162 s, avg_batch_cost: 1.32342 s, avg_samples: 128.0, ips: 96.71905 samples/s, eta: 1:24:50
+[2026/11/16 06:14:42] openrec INFO: epoch: [16/20], global_step: 11850, lr: 0.000059, loss: 0.025232, avg_reader_cost: 0.80094 s, avg_batch_cost: 1.31162 s, avg_samples: 128.0, ips: 97.58956 samples/s, eta: 1:23:44
+[2026/11/16 06:15:48] openrec INFO: epoch: [16/20], global_step: 11900, lr: 0.000058, loss: 0.026203, avg_reader_cost: 0.80036 s, avg_batch_cost: 1.30698 s, avg_samples: 128.0, ips: 97.93588 samples/s, eta: 1:22:37
+[2026/11/16 06:16:54] openrec INFO: epoch: [16/20], global_step: 11950, lr: 0.000056, loss: 0.021217, avg_reader_cost: 0.80789 s, avg_batch_cost: 1.31253 s, avg_samples: 128.0, ips: 97.52128 samples/s, eta: 1:21:31
+[2026/11/16 06:18:00] openrec INFO: epoch: [16/20], global_step: 12000, lr: 0.000055, loss: 0.030089, avg_reader_cost: 0.81076 s, avg_batch_cost: 1.32229 s, avg_samples: 128.0, ips: 96.80150 samples/s, eta: 1:20:24
+[2026/11/16 06:19:06] openrec INFO: epoch: [16/20], global_step: 12050, lr: 0.000053, loss: 0.022191, avg_reader_cost: 0.80561 s, avg_batch_cost: 1.31734 s, avg_samples: 128.0, ips: 97.16537 samples/s, eta: 1:19:18
+[2026/11/16 06:20:12] openrec INFO: epoch: [16/20], global_step: 12100, lr: 0.000052, loss: 0.026782, avg_reader_cost: 0.80858 s, avg_batch_cost: 1.31758 s, avg_samples: 128.0, ips: 97.14790 samples/s, eta: 1:18:11
+[2026/11/16 06:21:18] openrec INFO: epoch: [16/20], global_step: 12150, lr: 0.000051, loss: 0.026687, avg_reader_cost: 0.80616 s, avg_batch_cost: 1.31738 s, avg_samples: 128.0, ips: 97.16278 samples/s, eta: 1:17:05
+[2026/11/16 06:22:25] openrec INFO: epoch: [16/20], global_step: 12200, lr: 0.000049, loss: 0.024113, avg_reader_cost: 0.80878 s, avg_batch_cost: 1.32192 s, avg_samples: 128.0, ips: 96.82886 samples/s, eta: 1:15:59
+[2026/11/16 06:23:32] openrec INFO: epoch: [16/20], global_step: 12250, lr: 0.000048, loss: 0.024410, avg_reader_cost: 0.82034 s, avg_batch_cost: 1.33705 s, avg_samples: 128.0, ips: 95.73282 samples/s, eta: 1:14:53
+[2026/11/16 06:24:38] openrec INFO: epoch: [16/20], global_step: 12300, lr: 0.000047, loss: 0.022474, avg_reader_cost: 0.80907 s, avg_batch_cost: 1.32690 s, avg_samples: 128.0, ips: 96.46568 samples/s, eta: 1:13:46
+[2026/11/16 06:25:45] openrec INFO: epoch: [16/20], global_step: 12350, lr: 0.000045, loss: 0.028514, avg_reader_cost: 0.81027 s, avg_batch_cost: 1.31938 s, avg_samples: 128.0, ips: 97.01553 samples/s, eta: 1:12:40
+[2026/11/16 06:26:51] openrec INFO: epoch: [16/20], global_step: 12400, lr: 0.000044, loss: 0.024967, avg_reader_cost: 0.81143 s, avg_batch_cost: 1.32612 s, avg_samples: 128.0, ips: 96.52240 samples/s, eta: 1:11:34
+[2026/11/16 06:27:58] openrec INFO: epoch: [16/20], global_step: 12450, lr: 0.000043, loss: 0.023973, avg_reader_cost: 0.81891 s, avg_batch_cost: 1.33162 s, avg_samples: 128.0, ips: 96.12366 samples/s, eta: 1:10:28
+[2026/11/16 06:29:05] openrec INFO: epoch: [16/20], global_step: 12500, lr: 0.000041, loss: 0.027757, avg_reader_cost: 0.82626 s, avg_batch_cost: 1.33924 s, avg_samples: 128.0, ips: 95.57657 samples/s, eta: 1:09:21
+[2026/11/16 06:29:21] openrec INFO: epoch: [16/20], global_step: 12512, lr: 0.000041, loss: 0.026002, avg_reader_cost: 0.19172 s, avg_batch_cost: 0.31257 s, avg_samples: 30.72, ips: 98.28238 samples/s, eta: 1:09:05
+0 100000 128.0 781 128
+[2026/11/16 06:30:14] openrec INFO: epoch: [17/20], global_step: 12550, lr: 0.000040, loss: 0.013752, avg_reader_cost: 0.66587 s, avg_batch_cost: 1.05663 s, avg_samples: 97.28, ips: 92.06653 samples/s, eta: 1:08:16
+[2026/11/16 06:31:21] openrec INFO: epoch: [17/20], global_step: 12600, lr: 0.000039, loss: 0.014467, avg_reader_cost: 0.81454 s, avg_batch_cost: 1.32837 s, avg_samples: 128.0, ips: 96.35852 samples/s, eta: 1:07:09
+[2026/11/16 06:32:27] openrec INFO: epoch: [17/20], global_step: 12650, lr: 0.000038, loss: 0.014618, avg_reader_cost: 0.80237 s, avg_batch_cost: 1.31428 s, avg_samples: 128.0, ips: 97.39187 samples/s, eta: 1:06:03
+[2026/11/16 06:33:33] openrec INFO: epoch: [17/20], global_step: 12700, lr: 0.000037, loss: 0.015658, avg_reader_cost: 0.80106 s, avg_batch_cost: 1.31785 s, avg_samples: 128.0, ips: 97.12779 samples/s, eta: 1:04:57
+[2026/11/16 06:34:39] openrec INFO: epoch: [17/20], global_step: 12750, lr: 0.000035, loss: 0.015276, avg_reader_cost: 0.80961 s, avg_batch_cost: 1.32322 s, avg_samples: 128.0, ips: 96.73388 samples/s, eta: 1:03:50
+[2026/11/16 06:35:46] openrec INFO: epoch: [17/20], global_step: 12800, lr: 0.000034, loss: 0.017029, avg_reader_cost: 0.81696 s, avg_batch_cost: 1.33223 s, avg_samples: 128.0, ips: 96.07964 samples/s, eta: 1:02:44
+[2026/11/16 06:36:52] openrec INFO: epoch: [17/20], global_step: 12850, lr: 0.000033, loss: 0.017257, avg_reader_cost: 0.80669 s, avg_batch_cost: 1.31789 s, avg_samples: 128.0, ips: 97.12515 samples/s, eta: 1:01:38
+[2026/11/16 06:37:59] openrec INFO: epoch: [17/20], global_step: 12900, lr: 0.000032, loss: 0.016964, avg_reader_cost: 0.80542 s, avg_batch_cost: 1.32233 s, avg_samples: 128.0, ips: 96.79869 samples/s, eta: 1:00:31
+[2026/11/16 06:39:05] openrec INFO: epoch: [17/20], global_step: 12950, lr: 0.000031, loss: 0.014571, avg_reader_cost: 0.81024 s, avg_batch_cost: 1.32678 s, avg_samples: 128.0, ips: 96.47428 samples/s, eta: 0:59:25
+[2026/11/16 06:40:12] openrec INFO: epoch: [17/20], global_step: 13000, lr: 0.000030, loss: 0.016046, avg_reader_cost: 0.80839 s, avg_batch_cost: 1.31909 s, avg_samples: 128.0, ips: 97.03656 samples/s, eta: 0:58:19
+[2026/11/16 06:41:18] openrec INFO: epoch: [17/20], global_step: 13050, lr: 0.000029, loss: 0.013051, avg_reader_cost: 0.81748 s, avg_batch_cost: 1.32181 s, avg_samples: 128.0, ips: 96.83726 samples/s, eta: 0:57:13
+[2026/11/16 06:42:24] openrec INFO: epoch: [17/20], global_step: 13100, lr: 0.000028, loss: 0.011659, avg_reader_cost: 0.81294 s, avg_batch_cost: 1.32241 s, avg_samples: 128.0, ips: 96.79308 samples/s, eta: 0:56:06
+[2026/11/16 06:43:31] openrec INFO: epoch: [17/20], global_step: 13150, lr: 0.000027, loss: 0.013964, avg_reader_cost: 0.81230 s, avg_batch_cost: 1.32480 s, avg_samples: 128.0, ips: 96.61819 samples/s, eta: 0:55:00
+[2026/11/16 06:44:37] openrec INFO: epoch: [17/20], global_step: 13200, lr: 0.000025, loss: 0.012261, avg_reader_cost: 0.80437 s, avg_batch_cost: 1.31737 s, avg_samples: 128.0, ips: 97.16316 samples/s, eta: 0:53:54
+[2026/11/16 06:45:44] openrec INFO: epoch: [17/20], global_step: 13250, lr: 0.000024, loss: 0.016310, avg_reader_cost: 0.82345 s, avg_batch_cost: 1.33516 s, avg_samples: 128.0, ips: 95.86831 samples/s, eta: 0:52:47
+[2026/11/16 06:46:42] openrec INFO: epoch: [17/20], global_step: 13294, lr: 0.000024, loss: 0.013345, avg_reader_cost: 0.70810 s, avg_batch_cost: 1.15649 s, avg_samples: 112.64, ips: 97.39801 samples/s, eta: 0:51:49
+0 100000 128.0 781 128
+[2026/11/16 06:46:53] openrec INFO: epoch: [18/20], global_step: 13300, lr: 0.000023, loss: 0.014652, avg_reader_cost: 0.16027 s, avg_batch_cost: 0.22047 s, avg_samples: 15.36, ips: 69.66897 samples/s, eta: 0:51:42
+[2026/11/16 06:47:59] openrec INFO: epoch: [18/20], global_step: 13350, lr: 0.000023, loss: 0.009706, avg_reader_cost: 0.80473 s, avg_batch_cost: 1.30789 s, avg_samples: 128.0, ips: 97.86776 samples/s, eta: 0:50:35
+[2026/11/16 06:49:04] openrec INFO: epoch: [18/20], global_step: 13400, lr: 0.000022, loss: 0.010537, avg_reader_cost: 0.79687 s, avg_batch_cost: 1.30784 s, avg_samples: 128.0, ips: 97.87101 samples/s, eta: 0:49:29
+[2026/11/16 06:50:10] openrec INFO: epoch: [18/20], global_step: 13450, lr: 0.000021, loss: 0.009354, avg_reader_cost: 0.80178 s, avg_batch_cost: 1.31026 s, avg_samples: 128.0, ips: 97.69058 samples/s, eta: 0:48:22
+[2026/11/16 06:51:17] openrec INFO: epoch: [18/20], global_step: 13500, lr: 0.000020, loss: 0.009793, avg_reader_cost: 0.81748 s, avg_batch_cost: 1.32529 s, avg_samples: 128.0, ips: 96.58272 samples/s, eta: 0:47:16
+[2026/11/16 06:52:22] openrec INFO: epoch: [18/20], global_step: 13550, lr: 0.000019, loss: 0.009789, avg_reader_cost: 0.79875 s, avg_batch_cost: 1.30736 s, avg_samples: 128.0, ips: 97.90720 samples/s, eta: 0:46:10
+[2026/11/16 06:53:30] openrec INFO: epoch: [18/20], global_step: 13600, lr: 0.000018, loss: 0.009749, avg_reader_cost: 0.82687 s, avg_batch_cost: 1.33914 s, avg_samples: 128.0, ips: 95.58390 samples/s, eta: 0:45:03
+[2026/11/16 06:54:36] openrec INFO: epoch: [18/20], global_step: 13650, lr: 0.000017, loss: 0.008566, avg_reader_cost: 0.80850 s, avg_batch_cost: 1.31566 s, avg_samples: 128.0, ips: 97.28983 samples/s, eta: 0:43:57
+[2026/11/16 06:55:42] openrec INFO: epoch: [18/20], global_step: 13700, lr: 0.000016, loss: 0.008527, avg_reader_cost: 0.80410 s, avg_batch_cost: 1.31774 s, avg_samples: 128.0, ips: 97.13625 samples/s, eta: 0:42:51
+[2026/11/16 06:56:49] openrec INFO: epoch: [18/20], global_step: 13750, lr: 0.000015, loss: 0.009559, avg_reader_cost: 0.82266 s, avg_batch_cost: 1.33429 s, avg_samples: 128.0, ips: 95.93151 samples/s, eta: 0:41:45
+[2026/11/16 06:57:55] openrec INFO: epoch: [18/20], global_step: 13800, lr: 0.000015, loss: 0.010178, avg_reader_cost: 0.82141 s, avg_batch_cost: 1.33007 s, avg_samples: 128.0, ips: 96.23567 samples/s, eta: 0:40:38
+[2026/11/16 06:59:01] openrec INFO: epoch: [18/20], global_step: 13850, lr: 0.000014, loss: 0.011267, avg_reader_cost: 0.79979 s, avg_batch_cost: 1.30600 s, avg_samples: 128.0, ips: 98.00912 samples/s, eta: 0:39:32
+[2026/11/16 07:00:07] openrec INFO: epoch: [18/20], global_step: 13900, lr: 0.000013, loss: 0.009356, avg_reader_cost: 0.80451 s, avg_batch_cost: 1.31387 s, avg_samples: 128.0, ips: 97.42239 samples/s, eta: 0:38:26
+[2026/11/16 07:01:13] openrec INFO: epoch: [18/20], global_step: 13950, lr: 0.000012, loss: 0.008797, avg_reader_cost: 0.80437 s, avg_batch_cost: 1.31565 s, avg_samples: 128.0, ips: 97.29050 samples/s, eta: 0:37:19
+[2026/11/16 07:02:19] openrec INFO: epoch: [18/20], global_step: 14000, lr: 0.000012, loss: 0.008948, avg_reader_cost: 0.80786 s, avg_batch_cost: 1.32249 s, avg_samples: 128.0, ips: 96.78695 samples/s, eta: 0:36:13
+[2026/11/16 07:03:26] openrec INFO: epoch: [18/20], global_step: 14050, lr: 0.000011, loss: 0.011623, avg_reader_cost: 0.82073 s, avg_batch_cost: 1.33288 s, avg_samples: 128.0, ips: 96.03238 samples/s, eta: 0:35:07
+[2026/11/16 07:04:01] openrec INFO: epoch: [18/20], global_step: 14076, lr: 0.000011, loss: 0.010099, avg_reader_cost: 0.42033 s, avg_batch_cost: 0.68859 s, avg_samples: 66.56, ips: 96.66156 samples/s, eta: 0:34:32
+0 100000 128.0 781 128
+[2026/11/16 07:04:37] openrec INFO: epoch: [19/20], global_step: 14100, lr: 0.000010, loss: 0.009001, avg_reader_cost: 0.47211 s, avg_batch_cost: 0.71984 s, avg_samples: 61.44, ips: 85.35237 samples/s, eta: 0:34:01
+[2026/11/16 07:05:43] openrec INFO: epoch: [19/20], global_step: 14150, lr: 0.000010, loss: 0.008332, avg_reader_cost: 0.81211 s, avg_batch_cost: 1.32176 s, avg_samples: 128.0, ips: 96.84043 samples/s, eta: 0:32:55
+[2026/11/16 07:06:50] openrec INFO: epoch: [19/20], global_step: 14200, lr: 0.000009, loss: 0.007831, avg_reader_cost: 0.81414 s, avg_batch_cost: 1.32618 s, avg_samples: 128.0, ips: 96.51758 samples/s, eta: 0:31:48
+[2026/11/16 07:07:56] openrec INFO: epoch: [19/20], global_step: 14250, lr: 0.000008, loss: 0.006332, avg_reader_cost: 0.81559 s, avg_batch_cost: 1.32424 s, avg_samples: 128.0, ips: 96.65921 samples/s, eta: 0:30:42
+[2026/11/16 07:09:03] openrec INFO: epoch: [19/20], global_step: 14300, lr: 0.000008, loss: 0.007401, avg_reader_cost: 0.81919 s, avg_batch_cost: 1.32939 s, avg_samples: 128.0, ips: 96.28510 samples/s, eta: 0:29:36
+[2026/11/16 07:10:09] openrec INFO: epoch: [19/20], global_step: 14350, lr: 0.000007, loss: 0.008240, avg_reader_cost: 0.80764 s, avg_batch_cost: 1.32014 s, avg_samples: 128.0, ips: 96.95960 samples/s, eta: 0:28:30
+[2026/11/16 07:11:16] openrec INFO: epoch: [19/20], global_step: 14400, lr: 0.000007, loss: 0.008394, avg_reader_cost: 0.80801 s, avg_batch_cost: 1.31857 s, avg_samples: 128.0, ips: 97.07480 samples/s, eta: 0:27:23
+[2026/11/16 07:12:22] openrec INFO: epoch: [19/20], global_step: 14450, lr: 0.000006, loss: 0.007930, avg_reader_cost: 0.81004 s, avg_batch_cost: 1.32074 s, avg_samples: 128.0, ips: 96.91555 samples/s, eta: 0:26:17
+[2026/11/16 07:13:29] openrec INFO: epoch: [19/20], global_step: 14500, lr: 0.000006, loss: 0.007243, avg_reader_cost: 0.81490 s, avg_batch_cost: 1.32881 s, avg_samples: 128.0, ips: 96.32663 samples/s, eta: 0:25:11
+[2026/11/16 07:14:35] openrec INFO: epoch: [19/20], global_step: 14550, lr: 0.000005, loss: 0.006299, avg_reader_cost: 0.80860 s, avg_batch_cost: 1.31781 s, avg_samples: 128.0, ips: 97.13068 samples/s, eta: 0:24:04
+[2026/11/16 07:15:41] openrec INFO: epoch: [19/20], global_step: 14600, lr: 0.000005, loss: 0.007612, avg_reader_cost: 0.80796 s, avg_batch_cost: 1.32390 s, avg_samples: 128.0, ips: 96.68373 samples/s, eta: 0:22:58
+[2026/11/16 07:16:47] openrec INFO: epoch: [19/20], global_step: 14650, lr: 0.000004, loss: 0.007256, avg_reader_cost: 0.80504 s, avg_batch_cost: 1.31083 s, avg_samples: 128.0, ips: 97.64778 samples/s, eta: 0:21:52
+[2026/11/16 07:17:54] openrec INFO: epoch: [19/20], global_step: 14700, lr: 0.000004, loss: 0.007622, avg_reader_cost: 0.81074 s, avg_batch_cost: 1.32269 s, avg_samples: 128.0, ips: 96.77257 samples/s, eta: 0:20:45
+[2026/11/16 07:18:59] openrec INFO: epoch: [19/20], global_step: 14750, lr: 0.000004, loss: 0.005865, avg_reader_cost: 0.80539 s, avg_batch_cost: 1.31374 s, avg_samples: 128.0, ips: 97.43155 samples/s, eta: 0:19:39
+[2026/11/16 07:20:07] openrec INFO: epoch: [19/20], global_step: 14800, lr: 0.000003, loss: 0.006533, avg_reader_cost: 0.82143 s, avg_batch_cost: 1.33964 s, avg_samples: 128.0, ips: 95.54800 samples/s, eta: 0:18:33
+[2026/11/16 07:21:13] openrec INFO: epoch: [19/20], global_step: 14850, lr: 0.000003, loss: 0.007899, avg_reader_cost: 0.80845 s, avg_batch_cost: 1.32185 s, avg_samples: 128.0, ips: 96.83376 samples/s, eta: 0:17:27
+[2026/11/16 07:21:24] openrec INFO: epoch: [19/20], global_step: 14858, lr: 0.000003, loss: 0.007007, avg_reader_cost: 0.12803 s, avg_batch_cost: 0.20905 s, avg_samples: 20.48, ips: 97.96865 samples/s, eta: 0:17:16
+0 100000 128.0 781 128
+[2026/11/16 07:22:23] openrec INFO: epoch: [20/20], global_step: 14900, lr: 0.000002, loss: 0.007144, avg_reader_cost: 0.75546 s, avg_batch_cost: 1.18779 s, avg_samples: 107.52, ips: 90.52111 samples/s, eta: 0:16:21
+[2026/11/16 07:23:30] openrec INFO: epoch: [20/20], global_step: 14950, lr: 0.000002, loss: 0.007980, avg_reader_cost: 0.80534 s, avg_batch_cost: 1.32464 s, avg_samples: 128.0, ips: 96.63022 samples/s, eta: 0:15:14
+[2026/11/16 07:24:36] openrec INFO: epoch: [20/20], global_step: 15000, lr: 0.000002, loss: 0.005867, avg_reader_cost: 0.80782 s, avg_batch_cost: 1.31561 s, avg_samples: 128.0, ips: 97.29354 samples/s, eta: 0:14:08
+[2026/11/16 07:25:43] openrec INFO: epoch: [20/20], global_step: 15050, lr: 0.000002, loss: 0.006727, avg_reader_cost: 0.81880 s, avg_batch_cost: 1.33345 s, avg_samples: 128.0, ips: 95.99166 samples/s, eta: 0:13:02
+[2026/11/16 07:26:50] openrec INFO: epoch: [20/20], global_step: 15100, lr: 0.000001, loss: 0.006787, avg_reader_cost: 0.82181 s, avg_batch_cost: 1.33354 s, avg_samples: 128.0, ips: 95.98508 samples/s, eta: 0:11:55
+[2026/11/16 07:27:56] openrec INFO: epoch: [20/20], global_step: 15150, lr: 0.000001, loss: 0.008056, avg_reader_cost: 0.81471 s, avg_batch_cost: 1.32670 s, avg_samples: 128.0, ips: 96.47981 samples/s, eta: 0:10:49
+[2026/11/16 07:29:03] openrec INFO: epoch: [20/20], global_step: 15200, lr: 0.000001, loss: 0.007744, avg_reader_cost: 0.81945 s, avg_batch_cost: 1.33090 s, avg_samples: 128.0, ips: 96.17519 samples/s, eta: 0:09:43
+[2026/11/16 07:30:08] openrec INFO: epoch: [20/20], global_step: 15250, lr: 0.000001, loss: 0.006929, avg_reader_cost: 0.79499 s, avg_batch_cost: 1.30290 s, avg_samples: 128.0, ips: 98.24264 samples/s, eta: 0:08:37
+[2026/11/16 07:31:14] openrec INFO: epoch: [20/20], global_step: 15300, lr: 0.000001, loss: 0.006458, avg_reader_cost: 0.79809 s, avg_batch_cost: 1.30466 s, avg_samples: 128.0, ips: 98.10962 samples/s, eta: 0:07:30
+[2026/11/16 07:32:20] openrec INFO: epoch: [20/20], global_step: 15350, lr: 0.000000, loss: 0.007207, avg_reader_cost: 0.81731 s, avg_batch_cost: 1.32611 s, avg_samples: 128.0, ips: 96.52306 samples/s, eta: 0:06:24
+[2026/11/16 07:33:26] openrec INFO: epoch: [20/20], global_step: 15400, lr: 0.000000, loss: 0.006723, avg_reader_cost: 0.80039 s, avg_batch_cost: 1.30309 s, avg_samples: 128.0, ips: 98.22831 samples/s, eta: 0:05:18
+[2026/11/16 07:34:32] openrec INFO: epoch: [20/20], global_step: 15450, lr: 0.000000, loss: 0.006423, avg_reader_cost: 0.81821 s, avg_batch_cost: 1.32029 s, avg_samples: 128.0, ips: 96.94851 samples/s, eta: 0:04:11
+[2026/11/16 07:35:38] openrec INFO: epoch: [20/20], global_step: 15500, lr: 0.000000, loss: 0.006290, avg_reader_cost: 0.79962 s, avg_batch_cost: 1.31460 s, avg_samples: 128.0, ips: 97.36838 samples/s, eta: 0:03:05
+[2026/11/16 07:36:45] openrec INFO: epoch: [20/20], global_step: 15550, lr: 0.000000, loss: 0.007357, avg_reader_cost: 0.81479 s, avg_batch_cost: 1.32368 s, avg_samples: 128.0, ips: 96.69977 samples/s, eta: 0:01:59
+[2026/11/16 07:37:51] openrec INFO: epoch: [20/20], global_step: 15600, lr: 0.000000, loss: 0.005821, avg_reader_cost: 0.80863 s, avg_batch_cost: 1.32595 s, avg_samples: 128.0, ips: 96.53479 samples/s, eta: 0:00:53
+[2026/11/16 07:38:44] openrec INFO: epoch: [20/20], global_step: 15640, lr: 0.000000, loss: 0.008483, avg_reader_cost: 0.64335 s, avg_batch_cost: 1.05807 s, avg_samples: 102.4, ips: 96.77995 samples/s, eta: 0:00:00
+[2026/11/16 07:38:48] openrec INFO: best metric, acc: 0

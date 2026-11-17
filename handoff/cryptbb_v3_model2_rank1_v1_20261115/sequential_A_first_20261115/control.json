@@ -1,0 +1,22 @@
+{
+  "A": {
+    "pid": 37500,
+    "process_created": 1794716657.0286992,
+    "created_at": "2026-11-15T04:24:24.856416+00:00"
+  },
+  "B": {
+    "pid": 158488,
+    "process_created": 1794716657.03179,
+    "created_at": "2026-11-15T04:24:24.934378+00:00"
+  },
+  "coordinator": {
+    "pid": 142232,
+    "process_created": 1794715799.2775445,
+    "created_at": "2026-11-15T04:10:04.054090+00:00"
+  },
+  "created_at": "2026-11-15T04:31:10.777626+00:00",
+  "protocol_sha256": "57d9ea9974edc3edd908a17671cc4adc8c891e5dd9e1f4b8806ec38850025062",
+  "source_sha256": "21f31de4166ccbb9631d4ff0a888aa64fb4998f7b23ee73745a155c81d20dc00",
+  "intent": "User requested one at a time; retain A; pause B at first committed epoch, then resume B after A completes",
+  "training_configuration_unchanged": true
+}

@@ -1,0 +1,37 @@
+{
+  "request": "Test epoch 15 for both Model 1 readers",
+  "same_900_images_verified": true,
+  "results": [
+    {
+      "model": "Model 1-A",
+      "epoch15_correct": 592,
+      "epoch15_accuracy_percent": 65.77777777777777,
+      "later_epoch": 20,
+      "later_correct": 615,
+      "later_accuracy_percent": 68.33333333333333,
+      "later_gain_correct": 23,
+      "later_gain_percentage_points": 2.555555555555557,
+      "epoch15_evaluation": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_capri2_100k_20261112\\evaluation_darkbay_cpu_epoch15_requested",
+      "later_evaluation": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_capri2_100k_20261112\\evaluation_darkbay_cpu_requested_v2"
+    },
+    {
+      "model": "Model 1-B",
+      "epoch15_correct": 548,
+      "epoch15_accuracy_percent": 60.888888888888886,
+      "later_epoch": 17,
+      "later_correct": 572,
+      "later_accuracy_percent": 63.55555555555556,
+      "later_gain_correct": 24,
+      "later_gain_percentage_points": 2.6666666666666714,
+      "epoch15_evaluation": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_dataset_b_100k_20261112\\evaluation_darkbay_cpu_epoch15_requested",
+      "later_evaluation": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_dataset_b_100k_20261112\\evaluation_darkbay_cpu_epoch17_requested"
+    }
+  ],
+  "interpretation": "Both readers improved after epoch 15 at the later checkpoints already tested. These results do not support declaring epoch 15 sufficient under the current schedule.",
+  "limits": [
+    "Epoch 15 checkpoints belong to 20-epoch learning-rate schedules; a fresh 15-epoch schedule may differ.",
+    "Later comparisons are A epoch20 and B epoch17, not a matched final comparison.",
+    "Historical real-test diagnostics only; no training, checkpoint selection or curriculum changes."
+  ],
+  "stop_after_model1_b_remains_active": true
+}

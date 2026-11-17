@@ -1,0 +1,176 @@
+<?php
+
+namespace Captcha\View\Helper;
+
+use Cake\Core\Configure;
+use Cake\ORM\TableRegistry;
+use Cake\View\Helper;
+use Cake\View\View;
+use Captcha\Engine\MathEngine;
+use Captcha\Engine\NullEngine;
+
+/**
+ * @property \Cake\View\Helper\FormHelper $Form
+ * @property \Cake\View\Helper\HtmlHelper $Html
+ * @property \Cake\View\Helper\UrlHelper $Url
+ */
+class CaptchaHelper extends Helper {
+
+	/**
+	 * @var array<int|string, array<string, mixed>|string>
+	 */
+	protected array $helpers = ['Form', 'Html', 'Url'];
+
+	/**
+	 * @var string|null
+	 */
+	protected ?string $_id = null;
+
+	/**
+	 * Options:
+	 * - ext: jpg, png (defaults to none)
+	 *
+	 * @var array<string, mixed>
+	 */
+	protected array $_defaultConfig = [
+		'ext' => null,
+		'engine' => MathEngine::class,
+		'passiveClass' => null, // CSS class for honeypot wrapper (e.g. 'd-none'); null uses inline style
+	];
+
+	/**
+	 * @param \Cake\View\View $view
+	 * @param array<string, mixed> $config
+	 */
+	public function __construct(View $view, array $config = []) {
+		$config += (array)Configure::read('Captcha');
+
+		parent::__construct($view, $config);
+	}
+
+	/**
+	 * @deprecated Use control()
+	 *
+	 * @param array<string, mixed> $options
+	 *
+	 * @return string
+	 */
+	public function input(array $options = []) {
+		return $this->control($options);
+	}
+
+	/**
+	 * @param array<string, mixed> $options
+	 *
+	 * @return string
+	 */
+	public function control(array $options = []) {
+		$options += [
+			'label' => ['escape' => false, 'text' => $this->image()],
+			'escapeLabel' => false,
+			'autocomplete' => 'off',
+			'required' => !is_a($this->getConfig('engine'), NullEngine::class, true),
+			'value' => '',
+		];
+
+		return $this->Form->control('captcha_result', $options);
+	}
+
+	/**
+	 * @param array<string, mixed> $options
+	 *
+	 * @return string
+	 */
+	public function render(array $options = []) {
+		$id = $this->_getId();
+		if (is_a($this->getConfig('engine'), NullEngine::class, true)) {
+			$html = $this->Form->hidden('captcha_result');
+		} else {
+			$html = $this->control($options);
+		}
+		$html .= $this->Form->control('captcha_uuid', ['type' => 'hidden', 'value' => $id ?? '']);
+
+		return $html . $this->passive();
+	}
+
+	/**
+	 * Add a honey pot trap field. Requires corresponding validation to be activated.
+	 *
+	 * If you pass null, it will use the configured default field name.
+	 *
+	 * @param array|string|null $field
+	 *
+	 * @return string
+	 */
+	public function passive($field = null) {
+		if (!$field) {
+			$field = $this->getConfig('dummyField') ?: 'email_homepage';
+		}
+		$dummyFields = (array)$field;
+		$passiveClass = $this->getConfig('passiveClass');
+		$html = [];
+		foreach ($dummyFields as $dummyField) {
+			if ($passiveClass !== null) {
+				$html[] = '<div class="' . h($passiveClass) . '">'
+				. $this->Form->text($dummyField, ['default' => ''])
+				. '</div>';
+			} else {
+				$html[] = '<div style="display: none">'
+				. $this->Form->text($dummyField, ['default' => ''])
+				. '</div>';
+			}
+		}
+
+		return implode(PHP_EOL, $html);
+	}
+
+	/**
+	 * @param array<string, mixed> $options
+	 *
+	 * @return string HTML
+	 */
+	public function image(array $options = []) {
+		return $this->Html->image($this->imageUrl(), $options);
+	}
+
+	/**
+	 * @return string
+	 */
+	public function imageUrl() {
+		$id = $this->_getId();
+		$ext = $this->getConfig('ext');
+
+		return $this->Url->build(['prefix' => false, 'plugin' => 'Captcha', 'controller' => 'Captcha', 'action' => 'display', $id, '_ext' => $ext], ['fullBase' => true]);
+	}
+
+	/**
+	 * @return string|null
+	 */
+	protected function _getId() {
+		if ($this->_id) {
+			return $this->_id;
+		}
+		$CaptchasTable = $this->_getTable();
+		if (!$this->_View->getRequest()->getSession()->started()) {
+			$this->_View->getRequest()->getSession()->start();
+		}
+		$id = $this->_View->getRequest()->getSession()->id();
+		if (!$id && PHP_SAPI === 'cli') {
+			$id = 'test';
+		}
+		$this->_id = $CaptchasTable->touch($id, $this->_View->getRequest()->clientIp());
+
+		return $this->_id;
+	}
+
+	/**
+	 * @return \Captcha\Model\Table\CaptchasTable
+	 */
+	protected function _getTable() {
+		/** @var \Captcha\Model\Table\CaptchasTable $table */
+		$table = TableRegistry::getTableLocator()->get('Captcha.Captchas');
+
+		return $table;
+	}
+
+}

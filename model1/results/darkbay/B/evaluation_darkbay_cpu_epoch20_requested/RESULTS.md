@@ -1,0 +1,26 @@
+# Model 1 on labeled DarkBay
+
+{
+  "correct": 573,
+  "total": 900,
+  "exact_match_percent": 63.666666666666664,
+  "character_error_rate_percent": 7.239400111090538,
+  "checkpoint_epoch": 20,
+  "checkpoint_sha256": "ab1074d7c8e4f1addadb584903f97c054391cc2394da2f8df985006d01445c4b",
+  "device": "cpu",
+  "seconds": 60.16876983642578,
+  "previous_capri_reader": {
+    "seed": 48,
+    "correct": 492,
+    "total": 900,
+    "exact_match_percent": 54.666666666666664,
+    "character_error_rate_percent": 9.794482503240141,
+    "predicted_lengths": {
+      "6": 900
+    }
+  },
+  "change_percentage_points": 9.0,
+  "checkpoint_selection": "Fixed final epoch20",
+  "baseline_checkpoint_epoch": 20,
+  "historical_real_test": true
+}

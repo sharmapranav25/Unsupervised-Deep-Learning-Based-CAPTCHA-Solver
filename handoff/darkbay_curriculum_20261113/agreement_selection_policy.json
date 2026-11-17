@@ -1,0 +1,39 @@
+{
+  "adopted_at": "2026-11-13T22:43:30.124530+00:00",
+  "user_instruction": "Scratch the old synthetic evaluation, replace it with epoch agreement and show updated message",
+  "scope": "Primary checkpoint-selection/reporting rule; prior artifacts retained",
+  "rule": "For each model type, maximize exact full-string A/B agreement on the same unlabeled real images at a shared epoch; earliest tie. Freeze choices before label scoring.",
+  "selection_unit": "One shared epoch for the A/B pair within each model type",
+  "adopted_choices": [
+    {
+      "model": 1,
+      "epoch": 17,
+      "agreement_count": 601,
+      "images": 900
+    },
+    {
+      "model": 2,
+      "epoch": 12,
+      "agreement_count": 589,
+      "images": 900
+    },
+    {
+      "model": 3,
+      "epoch": 13,
+      "agreement_count": 603,
+      "images": 900
+    }
+  ],
+  "selection_freeze_sha256": "87741149bc6f2ddd4ed20a0ae02a13063b5c3443891afc10fd6f0fb31917a2f5",
+  "supersedes": "validation_selection_policy.json as primary selection/reporting rule",
+  "historical_synthetic_selection_preserved": "family_report_validation_selected.json",
+  "limitations": [
+    "Retrospective adoption after inspecting DarkBay real results; not prospectively validated",
+    "The same900 real images used unlabeled for selection and then scoring",
+    "Shared wrong predictions can inflate agreement",
+    "Model1 epoch1 unavailable",
+    "Raw/nonempty variants yielded identical choices here"
+  ],
+  "future_family_requirement": "Freeze the exact agreement rule and unlabeled selection pool before examining real scores. Update future launch gates after current preparation completes; no new training authorization.",
+  "cryptbb_training_authorized": false
+}

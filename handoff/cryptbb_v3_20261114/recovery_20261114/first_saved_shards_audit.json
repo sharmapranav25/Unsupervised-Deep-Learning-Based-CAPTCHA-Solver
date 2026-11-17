@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "at": "2026-11-14T17:22:14.263346+00:00",
+  "shards": [
+    "custom_000",
+    "dino_000",
+    "mixed_000",
+    "synthtiger_000"
+  ],
+  "decoded_images": 1046,
+  "by_arm": {
+    "custom": 266,
+    "dino": 258,
+    "mixed": 261,
+    "synthtiger": 261
+  },
+  "pixel_overlap": 0,
+  "checks": [
+    "saved zip sha",
+    "variable allocation",
+    "full decode",
+    "RGB hash",
+    "label consistency",
+    "completeness/usability",
+    "contrast>=40",
+    "no old/real pixel overlap"
+  ]
+}

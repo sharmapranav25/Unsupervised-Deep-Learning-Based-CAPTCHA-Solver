@@ -1,0 +1,237 @@
+{
+  "verified_at": "2026-11-16T16:07:02.433367+00:00",
+  "passed": true,
+  "observations": [
+    "E:\\pranav\\CAPRI\\runs\\darkbay_v3_overnight_20261115\\monitor_observation_20261116T160544.json",
+    "E:\\pranav\\CAPRI\\runs\\darkbay_v3_overnight_20261115\\monitor_observation_20261116T160629.json"
+  ],
+  "checks": [
+    {
+      "model": 2,
+      "dataset": "A",
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "1d2b263423b13df594b1b49630c84593a70ddf7695b11dc2ab44c49371f27cd3",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "full128_resume_exact": true,
+        "scratch": true,
+        "checked_at": "2026-11-16T16:03:12.419365+00:00"
+      }
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "05672addbc1c7547a4fd420b5eb89005524347cc6da5c784c8c60e09df028b1d",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "full128_resume_exact": true,
+        "scratch": true,
+        "checked_at": "2026-11-16T16:04:04.794755+00:00"
+      }
+    },
+    {
+      "model": 3,
+      "dataset": "A",
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "a5db61c966ff984a95bb45623cc686a768040ad6a0880970d8c4b0822701b463",
+        "checked_at": "2026-11-16T16:03:05.873713+00:00",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "all100k_synthetic_labels_match": true,
+        "policy_tests": {
+          "passed": true,
+          "threshold_strict": true,
+          "forgetting": true,
+          "reference_importance": true,
+          "immutable_buckets": true,
+          "exact_replay": true,
+          "full_batches": true,
+          "coverage": true
+        },
+        "warmup_draws_exact": true,
+        "fixed256_inference_repeats_exactly": true,
+        "early_256_vs64_string_differences": 0,
+        "mature_inference256_matches64_on512_images": true,
+        "mature_probe_unique_strings": 512,
+        "real_data_guard_tested": true,
+        "baseline_step_and_preprocessing_source_hashes_match": true,
+        "inference_preserves_weights_and_all_rng": true,
+        "full128_resume_weights_optimizer_scheduler_scaler_rng_sampler_exact": true,
+        "production_size_adaptive_replay": true,
+        "losses": [
+          4.218663215637207,
+          4.206302165985107,
+          4.206302165985107
+        ],
+        "peak_gpu_gib": 7.358211517333984,
+        "pilot_weights_disposable": true
+      }
+    },
+    {
+      "model": 3,
+      "dataset": "B",
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "5f38dd2b934d31b50e9f2144d101e39d2d1f5bc93a7733d06ee602f18de431f9",
+        "checked_at": "2026-11-16T16:03:58.164519+00:00",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "all100k_synthetic_labels_match": true,
+        "policy_tests": {
+          "passed": true,
+          "threshold_strict": true,
+          "forgetting": true,
+          "reference_importance": true,
+          "immutable_buckets": true,
+          "exact_replay": true,
+          "full_batches": true,
+          "coverage": true
+        },
+        "warmup_draws_exact": true,
+        "fixed256_inference_repeats_exactly": true,
+        "early_256_vs64_string_differences": 0,
+        "mature_inference256_matches64_on512_images": true,
+        "mature_probe_unique_strings": 512,
+        "real_data_guard_tested": true,
+        "baseline_step_and_preprocessing_source_hashes_match": true,
+        "inference_preserves_weights_and_all_rng": true,
+        "full128_resume_weights_optimizer_scheduler_scaler_rng_sampler_exact": true,
+        "production_size_adaptive_replay": true,
+        "losses": [
+          4.2204461097717285,
+          4.202203273773193,
+          4.202203273773193
+        ],
+        "peak_gpu_gib": 7.358211517333984,
+        "pilot_weights_disposable": true
+      }
+    }
+  ],
+  "model2_workers": [
+    {
+      "model": 2,
+      "dataset": "A",
+      "status": {
+        "state": "training",
+        "epoch": 1,
+        "completed_epoch": 0,
+        "batch": 75,
+        "global_step": 75,
+        "loss": 4.0844597816467285,
+        "gradient_norm": 1.0763417482376099,
+        "epoch_seconds": 91.125,
+        "mass": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "updated_at": "2026-11-16T16:05:59.682905+00:00"
+      },
+      "committed_epoch": 0,
+      "optimizer_steps": 75,
+      "receipt": null,
+      "checkpoint_hash_verified": null,
+      "receipt_count": 0,
+      "completion": null,
+      "updates_since_previous": 25,
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "1d2b263423b13df594b1b49630c84593a70ddf7695b11dc2ab44c49371f27cd3",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "full128_resume_exact": true,
+        "scratch": true,
+        "checked_at": "2026-11-16T16:03:12.419365+00:00"
+      },
+      "readiness_matches_protocol": true,
+      "worker_identity": {
+        "expected": {
+          "pid": 135868,
+          "process_created": 1794845052.092941,
+          "created_at": "2026-11-16T16:04:22.027961+00:00"
+        },
+        "actual_created": 1794845052.092941,
+        "matches": true,
+        "command": [
+          "C:\\ProgramData\\Anaconda3\\python.exe",
+          "-B",
+          "-u",
+          "-m",
+          "capri_controller.training.darkbay_overnight_v1.execution_fp32",
+          "readers",
+          "worker",
+          "--dataset",
+          "A",
+          "--model",
+          "2"
+        ],
+        "children": []
+      }
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "status": {
+        "state": "training",
+        "epoch": 1,
+        "completed_epoch": 0,
+        "batch": 75,
+        "global_step": 75,
+        "loss": 4.0843825340271,
+        "gradient_norm": 1.1567158699035645,
+        "epoch_seconds": 100.26500000013039,
+        "mass": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "updated_at": "2026-11-16T16:06:14.171652+00:00"
+      },
+      "committed_epoch": 0,
+      "optimizer_steps": 75,
+      "receipt": null,
+      "checkpoint_hash_verified": null,
+      "receipt_count": 0,
+      "completion": null,
+      "updates_since_previous": 25,
+      "readiness": {
+        "passed": true,
+        "protocol_sha256": "05672addbc1c7547a4fd420b5eb89005524347cc6da5c784c8c60e09df028b1d",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "full128_resume_exact": true,
+        "scratch": true,
+        "checked_at": "2026-11-16T16:04:04.794755+00:00"
+      },
+      "readiness_matches_protocol": true,
+      "worker_identity": {
+        "expected": {
+          "pid": 128012,
+          "process_created": 1794845055.6276505,
+          "created_at": "2026-11-16T16:04:26.803809+00:00"
+        },
+        "actual_created": 1794845055.6276505,
+        "matches": true,
+        "command": [
+          "C:\\ProgramData\\Anaconda3\\python.exe",
+          "-B",
+          "-u",
+          "-m",
+          "capri_controller.training.darkbay_overnight_v1.execution_fp32",
+          "readers",
+          "worker",
+          "--dataset",
+          "B",
+          "--model",
+          "2"
+        ],
+        "children": []
+      }
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "execution_manifest_sha256": "1b380e1d33ae60aec88cc6d6878beb7fac1eeb4ab241f99b45136e461d0e44f7",
+  "evaluation_backlog": {
+    "committed": 40,
+    "evaluated": 0
+  },
+  "selection": "final20; real diagnostics do not steer training"
+}

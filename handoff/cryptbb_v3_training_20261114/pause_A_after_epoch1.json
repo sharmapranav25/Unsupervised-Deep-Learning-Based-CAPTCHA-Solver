@@ -1,0 +1,21 @@
+{
+  "requested_at": "2026-11-14T20:30:56.436501+00:00",
+  "user_request": "Pause model A after epoch one. Give all resources to model B.",
+  "A": {
+    "pid": 142888,
+    "process_created": 1794687332.3785963,
+    "created_at": "2026-11-14T20:16:21.406212+00:00"
+  },
+  "B": {
+    "pid": 22408,
+    "process_created": 1794687429.655081,
+    "created_at": "2026-11-14T20:18:00.413285+00:00"
+  },
+  "old_coordinator": {
+    "pid": 19760,
+    "process_created": 1794687331.572014,
+    "created_at": "2026-11-14T20:15:31.791592+00:00"
+  },
+  "A_resume_requires_user": true,
+  "Model2_blocked_until_A_resumed": true
+}

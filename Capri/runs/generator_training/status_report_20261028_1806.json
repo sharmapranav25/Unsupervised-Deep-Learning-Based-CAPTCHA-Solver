@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-28T18:06:51.9631127-07:00",
+  "status": {
+    "time": "2026-10-28T18:06:46.911262-07:00",
+    "pid": 2268,
+    "state": "training",
+    "epoch": 16,
+    "epochs": 20,
+    "images": 23850,
+    "epoch_images": 100000,
+    "step": 14631,
+    "loss_parts": {
+      "eff_presence": 0.10367392189800739,
+      "eff_ordinal": 0.3412836343050003,
+      "txt_presence": 0.4239852502942085,
+      "txt_ordinal": 0.0,
+      "ctc": 1.3733379244804382,
+      "length": 0.5035954639315605,
+      "font": 0.31016334146261215,
+      "separate_count": 1.5645590722560883,
+      "font_reference": 1.6929048597812653
+    },
+    "loss": 6.313503468409181,
+    "gradient_norm": 299.8966369628906,
+    "images_per_second": 77.3745205231527,
+    "estimated_remaining_seconds": 7384.601495902343
+  },
+  "latest_tested_epoch": 15,
+  "metrics": [
+    {
+      "epoch": 10,
+      "metrics": {
+        "images": 2000,
+        "count_correct": 1376,
+        "count_accuracy": 0.688,
+        "separate_count_correct": 596,
+        "separate_count_accuracy": 0.298,
+        "font_category_correct": 1164,
+        "font_category_support": 1870,
+        "font_category_accuracy": 0.6224598930481283,
+        "font_retrieval_single_family_support": 1677,
+        "font_retrieval_unambiguous_correct": 133,
+        "font_retrieval_accuracy": 0.07930828861061419,
+        "font_tied_predictions": 17,
+        "effect_bce": 0.12463754849820524,
+        "limitation": "Reused synthetic DEV. Whole-image font retrieval; multi-font scenes excluded from exact single-family metric. Known pixel aliases retained. No real/calibration/test."
+      }
+    },
+    {
+      "epoch": 14,
+      "metrics": {
+        "images": 2000,
+        "count_correct": 1551,
+        "count_accuracy": 0.7755,
+        "separate_count_correct": 640,
+        "separate_count_accuracy": 0.32,
+        "font_category_correct": 1155,
+        "font_category_support": 1870,
+        "font_category_accuracy": 0.6176470588235294,
+        "font_retrieval_single_family_support": 1677,
+        "font_retrieval_unambiguous_correct": 141,
+        "font_retrieval_accuracy": 0.08407871198568873,
+        "font_tied_predictions": 35,
+        "effect_bce": 0.11706382081315324,
+        "limitation": "Reused synthetic DEV. Whole-image font retrieval; multi-font scenes excluded from exact single-family metric. Known pixel aliases retained. No real/calibration/test."
+      }
+    },
+    {
+      "epoch": 15,
+      "metrics": {
+        "images": 2000,
+        "count_correct": 1583,
+        "count_accuracy": 0.7915,
+        "separate_count_correct": 642,
+        "separate_count_accuracy": 0.321,
+        "font_category_correct": 1159,
+        "font_category_support": 1870,
+        "font_category_accuracy": 0.6197860962566845,
+        "font_retrieval_single_family_support": 1677,
+        "font_retrieval_unambiguous_correct": 140,
+        "font_retrieval_accuracy": 0.08348240906380441,
+        "font_tied_predictions": 23,
+        "effect_bce": 0.11601315957146723,
+        "limitation": "Reused synthetic DEV. Whole-image font retrieval; multi-font scenes excluded from exact single-family metric. Known pixel aliases retained. No real/calibration/test."
+      }
+    }
+  ],
+  "estimated_completion_pacific": "2026-10-28T20:09:50.6014959-07:00",
+  "note": "Synthetic DEV only. Main count improving; separate count and exact font retrieval remain weak and show little recent progress. No training changes."
+}

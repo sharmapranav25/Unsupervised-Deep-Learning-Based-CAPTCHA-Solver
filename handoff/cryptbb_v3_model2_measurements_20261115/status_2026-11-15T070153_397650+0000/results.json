@@ -1,0 +1,124 @@
+{
+  "verified_at": "2026-11-15T07:02:43.745691+00:00",
+  "results": [
+    {
+      "model2": {
+        "model": 2,
+        "dataset": "A",
+        "epoch": 14,
+        "correct": 49,
+        "total": 251,
+        "accuracy_percent": 19.52191235059761,
+        "cer_percent": 27.66295707472178,
+        "checkpoint_sha256": "03cfb1b60c17dfbf76f32caf65f7654a3502200ef1f82ead2a125501bfbec441",
+        "device": "cpu",
+        "seconds": 25.5,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model1": {
+        "A": {
+          "model": 1,
+          "dataset": "A",
+          "epoch": 14,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964,
+          "cer_percent": 29.252782193958666,
+          "checkpoint_sha256": "97af794639e6de6dfd9fca2cabadce50bf1fc8f3cbacc823cdb871c8bf4ed40e",
+          "device": "cpu",
+          "seconds": 22.82800000021234,
+          "diagnostic_only": true,
+          "training_changed": false
+        },
+        "B": {
+          "model": 1,
+          "dataset": "B",
+          "epoch": 14,
+          "correct": 53,
+          "total": 251,
+          "accuracy_percent": 21.115537848605577,
+          "cer_percent": 27.106518282988873,
+          "checkpoint_sha256": "c3fe53250d2bc1d48e6eb7f5ef1b1060348fcd2ef0117ed0d3113ec82205d075",
+          "device": "cpu",
+          "seconds": 24.233999999705702,
+          "diagnostic_only": true,
+          "training_changed": false
+        }
+      },
+      "training_status": {
+        "model": 2,
+        "dataset": "A",
+        "state": "training",
+        "epoch": 15,
+        "completed_epoch": 14,
+        "batch": 75,
+        "batches": 782,
+        "global_step": 11023,
+        "loss": 0.022373132407665253,
+        "gradient_norm": 0.972323477268219,
+        "lr": 8.494306208693216e-05,
+        "epoch_seconds": 61.75,
+        "updated_at": "2026-11-15T07:02:13.734724+00:00",
+        "peak_gpu_gib": 7.359851837158203
+      }
+    },
+    {
+      "model2": {
+        "model": 2,
+        "dataset": "B",
+        "epoch": 1,
+        "correct": 0,
+        "total": 251,
+        "accuracy_percent": 0.0,
+        "cer_percent": 97.61526232114467,
+        "checkpoint_sha256": "826fb1b2f2a6cdb8aed91b0f1efbc564835f169fa8005de0a982a16878cefcce",
+        "device": "cpu",
+        "seconds": 22.969000000040978,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model1": {
+        "A": {
+          "model": 1,
+          "dataset": "A",
+          "epoch": 1,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0,
+          "cer_percent": 97.8537360890302,
+          "checkpoint_sha256": "f32822442cdc8584b70f7bfb6e37144c3fcf3e80e9a442efc6e86838e9bc6fe8",
+          "device": "cpu",
+          "seconds": 22.561999999918044,
+          "diagnostic_only": true,
+          "training_changed": false
+        },
+        "B": {
+          "model": 1,
+          "dataset": "B",
+          "epoch": 1,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0,
+          "cer_percent": 98.48966613672496,
+          "checkpoint_sha256": "58bbf327d894d6adf18155cd807399ff22c71411f82b34bc624646646e390785",
+          "device": "cpu",
+          "seconds": 22.67200000025332,
+          "diagnostic_only": true,
+          "training_changed": false
+        }
+      },
+      "training_status": {
+        "model": 2,
+        "dataset": "B",
+        "state": "paused",
+        "completed_epoch": 1,
+        "global_step": 782,
+        "updated_at": "2026-11-15T06:33:43.870255+00:00",
+        "resume_after": "Model2-A epoch20 completion",
+        "pause_receipt": "handoff\\cryptbb_v3_model2_rank1_v1_20261115\\sequential_A_first_20261115\\B_paused_receipt.json"
+      }
+    }
+  ],
+  "training_unchanged": true
+}

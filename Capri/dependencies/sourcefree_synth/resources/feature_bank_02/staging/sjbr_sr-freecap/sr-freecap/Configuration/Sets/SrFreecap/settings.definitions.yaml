@@ -1,0 +1,125 @@
+categories:
+  freecap: ~
+  freecap.image:
+    parent: freecap
+  freecap.image.dimensions:
+    parent: freecap.image
+  freecap.image.text:
+    parent: freecap.image
+  freecap.image.background:
+    parent: freecap.image
+  freecap.content:
+    parent: freecap
+  freecap.accessibility:
+    parent: freecap
+  freecap.behavior:
+    parent: freecap
+  freecap.templates:
+    parent: freecap
+
+settings:
+  freecap.imageFormat:
+    default: 'png'
+    type: string
+    enum:
+      png: 'png'
+      jpg: 'jpg'
+      gif: 'gif'
+    category: freecap.image
+  freecap.imageHeight:
+    default: 90
+    type: int
+    category: freecap.image.dimensions
+  freecap.imageAdditionalWidth:
+    default: 30
+    type: int
+    category: freecap.image.dimensions
+  freecap.textHorizontalPosition:
+    default: 1
+    type: int
+    category: freecap.image.dimensions
+  freecap.textVerticalPosition:
+    default: 15
+    type: int
+    category: freecap.image.dimensions
+  freecap.fontFiles:
+    default: 'EXT:sr_freecap/Resources/Private/Captcha/Fonts/freecap_extended_font1.gdf,EXT:sr_freecap/Resources/Private/Captcha/Fonts/freecap_extended_font2.gdf,EXT:sr_freecap/Resources/Private/Captcha/Fonts/freecap_extended_font3.gdf,EXT:sr_freecap/Resources/Private/Captcha/Fonts/freecap_extended_font4.gdf'
+    type: string
+    category: freecap.image.text
+  freecap.morphFactor:
+    default: 1
+    type: number
+    category: freecap.image.text
+  freecap.textColor:
+    default: false
+    type: bool
+    category: freecap.image.text
+  freecap.colorMaximumDarkness:
+    default: 5
+    type: int
+    category: freecap.image.text
+  freecap.colorMaximumLightness:
+    default: 50
+    type: int
+    category: freecap.image.text
+  freecap.backgroundType:
+    default: 'White with grid'
+    type: string
+    enum:
+      '': 'Not set'
+      'Transparent': 'Transparent'
+      'White with grid': 'White with grid'
+      'White with squiggles': 'White with squiggles'
+      'Morphed image blocks': 'Morphed image blocks'
+    category: freecap.image.background
+  freecap.backgroundBlur:
+    default: true
+    type: bool
+    category: freecap.image.background
+  freecap.backgroundMorph:
+    default: false
+    type: bool
+    category: freecap.image.background
+  freecap.mergeWithBackground:
+    default: false
+    type: bool
+    category: freecap.image.background
+  freecap.maxAttempts:
+    default: 100
+    type: int
+    category: freecap.behavior
+  freecap.salutation:
+    default: 'formal'
+    type: string
+    enum:
+      formal: 'Formal'
+      informal: 'Informal'
+    category: freecap.behavior
+  freecap.maxWordLength:
+    default: 5
+    type: int
+    category: freecap.content
+  freecap.useWordsList:
+    default: false
+    type: bool
+    category: freecap.content
+  freecap.generateNumbers:
+    default: false
+    type: bool
+    category: freecap.content
+  freecap.defaultWordsList:
+    default: 'EXT:sr_freecap/Resources/Private/Captcha/Words/default_freecap_words'
+    type: string
+    category: freecap.content
+  freecap.accessibleOutput:
+    default: false
+    type: bool
+    category: freecap.accessibility
+  freecap.accessibleOutputImage:
+    default: 'EXT:sr_freecap/Resources/Public/Images/audio.png'
+    type: string
+    category: freecap.accessibility
+  freecap.view.partialRootPath:
+    default: 'EXT:sr_freecap/Resources/Private/Partials/'
+    type: string
+    category: freecap.templates

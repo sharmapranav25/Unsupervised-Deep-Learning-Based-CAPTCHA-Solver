@@ -1,0 +1,19 @@
+<?php
+
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'Accessible Form Captcha',
+    'description' => 'Captcha element with audio support for TYPO3 form components. The captcha generation does not rely on Google or third-party integrations.',
+    'category' => 'plugin',
+    'author' => 'Maik Schneider',
+    'author_company' => 'XIMA Media GmbH',
+    'author_email' => 'maik.schneider@xima.de',
+    'state' => 'stable',
+    'version' => '5.4.0',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '12.4.0-14.99.99',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+];

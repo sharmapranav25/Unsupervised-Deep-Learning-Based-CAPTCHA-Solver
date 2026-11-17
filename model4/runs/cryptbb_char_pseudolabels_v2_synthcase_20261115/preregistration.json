@@ -1,0 +1,15 @@
+{
+  "written_at_utc": "2026-11-15 (before any synthetic case measurement)",
+  "purpose": "Remove label influence from the character pseudo-label case rule (user request).",
+  "replaces": "v1 a-priori case-ambiguous list CKOPSUVWXZ and the case-folding choice informed by real-label diagnostics",
+  "held_out_synthetic": "Each member scored on the OTHER synthetic corpus it never trained on: M1A, M2A, M3A on cryptbb_v3/B; M1B, M2B on cryptbb_v3/A. 10000 images per corpus, fixed seed 20261115, uniform sample of LMDB indices.",
+  "case_swap_rate": "For each letter pair (e.g. s/S): among held-out positions whose true char is in the pair and whose length-5 prediction at that position is in the pair, fraction predicted in the wrong case. Pooled over all 5 members.",
+  "rule": "A letter pair is case-ambiguous iff case_swap_rate >= 0.02 with >= 200 pooled occurrences. Fixed now; not revised after seeing results.",
+  "char_modes": {
+    "exact": "all 5 identical and letter pair not case-ambiguous (digits always exact-eligible)",
+    "case_insensitive": "all 5 identical ignoring case AND (pair is case-ambiguous OR members disagree on case)",
+    "ignore": "anything else"
+  },
+  "note_on_committee_case_disagreement": "Positions where members agree on the letter but split on case are treated case_insensitive because the committee itself is uncertain; this is a label-free signal.",
+  "real_labels": "Not read by any step. No real-label accuracy check of v2 will be run by Claude unless the user explicitly asks."
+}

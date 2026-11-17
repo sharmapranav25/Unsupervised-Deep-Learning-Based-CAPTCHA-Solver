@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T23:46:21.534496+00:00",
+  "model": 1,
+  "dataset": "B",
+  "epoch": 20,
+  "checkpoint_sha256": "b530ebe4ec3a0a312d71b6eafa9e3452b8c0e0198df795b557cd8c25d2486022",
+  "manifest_sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd",
+  "images": 251,
+  "device": "cpu",
+  "precision": "FP32",
+  "threads": 2,
+  "batch_size": 16,
+  "preprocessing": "RGB PIL bicubic32x128 ToTensor Normalize0.5",
+  "decoding": "Saved free AR and1 refinement; no length forcing or text normalization",
+  "purpose": "User-requested diagnostic only; no training/curriculum/selection changes",
+  "labels": "Opened only after persisted prediction freeze",
+  "cpu_adapter": "Process-local memory.get_device() -> memory.device",
+  "decoder_source_sha256": "fbe9268799515a080dad7dbd68eaf4b321e614723c412bbf19d1309c15660dac",
+  "evaluator_sha256": "b441dc4a5bfafdfdf26b5b84b1f06b2ad45ca075fd31840d62e59c8bedebd209"
+}

@@ -1,0 +1,15 @@
+{
+  "protocol": "handoff/darkbay_curriculum_20261113/protocol.json",
+  "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3",
+  "model": 3,
+  "dataset": "B",
+  "teacher": "A",
+  "dataset_manifest": "datasets/darkbay/manifests/datasets.json",
+  "baseline_config": "model1/configs/darkbay/B/relocated.yml",
+  "runner": "Capri/src/capri_controller/training/ab_curriculum.py",
+  "loader_override": "Synthetic ReaderDataset, no augmentation; curriculum replacement draws100096, batch128",
+  "ranking": "model2/rankings/darkbay/B",
+  "outputs": "model3/runs/darkbay/B",
+  "checkpoint_selection": "fixed final epoch20",
+  "adaptive": true
+}

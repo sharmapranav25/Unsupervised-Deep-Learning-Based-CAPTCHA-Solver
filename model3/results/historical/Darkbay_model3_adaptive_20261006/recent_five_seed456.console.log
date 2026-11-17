@@ -1,0 +1,23 @@
+TESTING Darkbay_model3_adaptive_20261006 456 13
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+{"seed": 456, "epoch": 13, "correct": 516, "total": 900, "accuracy": 57.333333333333336, "CER": 9.239029809294575, "synthetic_validation": {"epoch": 13, "acc": 0.9551999980896001, "norm_edit_dis": 0.9907333333518666, "num_samples": 5000, "mean_sequence_nll": 0.18102812344194932, "validation_seconds": 11.325369300000148}}
+TESTING Darkbay_ds2_noFont-intel 456 13
+{"seed": 456, "epoch": 13, "correct": 489, "total": 900, "accuracy": 54.333333333333336, "CER": 10.016663580818367, "synthetic_validation": {"epoch": 13, "acc": 0.9557999980884001, "norm_edit_dis": 0.9908333333516667, "num_samples": 5000}}
+ROW {'epoch': 13, 'model1_correct': 364, 'model2_correct': 489, 'model3_correct': 516, 'model3_accuracy': 57.333333333333336, 'synthetic_validation': 95.51999980896001}
+TESTING Darkbay_model3_adaptive_20261006 456 14
+{"seed": 456, "epoch": 14, "correct": 520, "total": 900, "accuracy": 57.77777777777778, "CER": 9.294575078689132, "synthetic_validation": {"epoch": 14, "acc": 0.9573999980852, "norm_edit_dis": 0.9916333333500666, "num_samples": 5000, "mean_sequence_nll": 0.16564019634805635, "validation_seconds": 11.52893240000003}}
+TESTING Darkbay_ds2_noFont-intel 456 14
+{"seed": 456, "epoch": 14, "correct": 485, "total": 900, "accuracy": 53.888888888888886, "CER": 10.701721903351231, "synthetic_validation": {"epoch": 14, "acc": 0.9565999980868001, "norm_edit_dis": 0.9914000000172, "num_samples": 5000}}
+ROW {'epoch': 14, 'model1_correct': 372, 'model2_correct': 485, 'model3_correct': 520, 'model3_accuracy': 57.77777777777778, 'synthetic_validation': 95.73999980852001}
+TESTING Darkbay_model3_adaptive_20261006 456 15
+{"seed": 456, "epoch": 15, "correct": 517, "total": 900, "accuracy": 57.44444444444444, "CER": 9.424180707276431, "synthetic_validation": {"epoch": 15, "acc": 0.9597999980804001, "norm_edit_dis": 0.9921333333490666, "num_samples": 5000, "mean_sequence_nll": 0.15443709824460697, "validation_seconds": 11.315401800000018}}
+TESTING Darkbay_ds2_noFont-intel 456 15
+{"seed": 456, "epoch": 15, "correct": 453, "total": 900, "accuracy": 50.333333333333336, "CER": 11.831142381040548, "synthetic_validation": {"epoch": 15, "acc": 0.9577999980844001, "norm_edit_dis": 0.9917333333498667, "num_samples": 5000}}
+ROW {'epoch': 15, 'model1_correct': 467, 'model2_correct': 453, 'model3_correct': 517, 'model3_accuracy': 57.44444444444444, 'synthetic_validation': 95.97999980804}
+TESTING Darkbay_model3_adaptive_20261006 456 16
+{"seed": 456, "epoch": 16, "correct": 537, "total": 900, "accuracy": 59.666666666666664, "CER": 8.35030549898167, "synthetic_validation": {"epoch": 16, "acc": 0.9609999980780001, "norm_edit_dis": 0.9924333333484666, "num_samples": 5000, "mean_sequence_nll": 0.1453422947539092, "validation_seconds": 11.387755599999764}}
+TESTING Darkbay_ds2_noFont-intel 456 16
+{"seed": 456, "epoch": 16, "correct": 513, "total": 900, "accuracy": 57.0, "CER": 9.812997593038327, "synthetic_validation": {"epoch": 16, "acc": 0.9625999980748, "norm_edit_dis": 0.9923000000154, "num_samples": 5000}}
+ROW {'epoch': 16, 'model1_correct': 458, 'model2_correct': 513, 'model3_correct': 537, 'model3_accuracy': 59.666666666666664, 'synthetic_validation': 96.0999998078}
+ROW {'epoch': 17, 'model1_correct': 461, 'model2_correct': 533, 'model3_correct': 539, 'model3_accuracy': 59.888888888888886, 'synthetic_validation': 96.43999980712}

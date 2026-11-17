@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-14T20:14:42.958233+00:00",
+  "reason": "A native NVIDIA nvcuda64.dll crash0xc0000409 before first optimizer progress; B committed epoch1 and stopped on sibling failure",
+  "attempts": 1,
+  "A": "Same scratch seed48; no committed checkpoint existed",
+  "B": "Resume saved epoch1 with full optimizer/scheduler/scaler/RNG/sampler state",
+  "startup": "Launch A first, wait for50 real optimizer updates, then launch B concurrently",
+  "numeric_training_changes": false,
+  "original_sources_and_protocol_preserved": true,
+  "model4": "Keep stopped",
+  "checkpoint_B_sha256": "58bbf327d894d6adf18155cd807399ff22c71411f82b34bc624646646e390785"
+}

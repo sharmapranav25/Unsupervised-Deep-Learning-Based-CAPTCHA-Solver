@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\pranav\Thesis-Pranav-Final\Capri\capri.py", line 10, in <module>
+    cryptbb()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_preparation.py", line 224, in main
+    if a.stage=='run':return run()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_preparation.py", line 215, in run
+    for tag in 'AB':child('preflight',tag)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_preparation.py", line 206, in child
+    if code:raise RuntimeError(label+' failed, see '+str(OUT/(label+'.log')))
+RuntimeError: preflight_A failed, see E:\pranav\Thesis-Pranav-Final\handoff\cryptbb_model1_preparation\preflight_A.log

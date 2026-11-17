@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-13T00:16:04.964711+00:00",
+  "A": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_capri2_100k_20261112",
+  "B": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_dataset_b_100k_20261112",
+  "images_each": 100000,
+  "total_unique_pixels": 200000,
+  "cross_dataset_pixel_overlap": 0,
+  "identical_controller_recipes": true,
+  "disjoint_render_seed_intervals": true,
+  "A_lmdb_sha256": "8a082f717065812f9acf4fdd9839d53e52ba25544ca5ca19631558400829c272",
+  "B_lmdb_sha256": "ded1e77ff3e2cba930aebd6570fce289d665a1d17b42031f7da5a9b65cdaafa8",
+  "target_pixel_overlap_each": 0,
+  "controllers_each": {
+    "custom": 33334,
+    "dino": 33333,
+    "mixed": 33333
+  },
+  "note": "Independent rendered pixels, shared target-conditioned recipes; not independent CAPTCHA families"
+}

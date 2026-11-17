@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-11-16T17:25:06.0474048Z",
+  "user_authorization": "Fix the mistake now; Resume after last checkpoint 5",
+  "overlay_sha256": "a715ed87ee4d19ad6b96f3afa91ba26724593a45aba5da03dac2550ea659dc32",
+  "frozen_manifest_sha256": "fd88041bf68594bb69c1a3319b876ade27cc9846ea4c02f97ef65725e5a11bb6",
+  "execution": "Model2 A then B; Model3 A then B; one GPU owner retaining allocator cache; unchanged OrderedBatches prefetch",
+  "resume": "Model2 A/B committed epoch5 full state; start epoch6",
+  "protocol_files_unchanged": true,
+  "fp32_inference_overlay_preserved": true,
+  "historical_sources_unchanged": true,
+  "validation": "24 full128 baseline versus fast updates from each epoch5 checkpoint; exact weights optimizer scheduler scaler RNG sampler and losses/gradients required before launch"
+}

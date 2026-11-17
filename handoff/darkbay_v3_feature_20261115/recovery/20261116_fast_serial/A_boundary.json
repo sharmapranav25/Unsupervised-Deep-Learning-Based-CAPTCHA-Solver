@@ -1,0 +1,65 @@
+{
+  "tag": "A",
+  "identity": {
+    "pid": 135868,
+    "process_created": 1794845052.092941,
+    "created_at": "2026-11-16T16:04:22.027961+00:00"
+  },
+  "launch": {
+    "name": "worker_M2_A",
+    "pid": 121408,
+    "process_created": 1794845052.003666,
+    "args": [
+      "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-u",
+      "-m",
+      "capri_controller.training.darkbay_overnight_v1.execution_fp32",
+      "readers",
+      "worker",
+      "--dataset",
+      "A",
+      "--model",
+      "2"
+    ],
+    "started_at": "2026-11-16T16:04:12.034647+00:00",
+    "log": "handoff\\darkbay_v3_feature_20261115\\logs\\worker_M2_A.log",
+    "exit_code": null,
+    "no_progress_seconds": 25.1,
+    "elapsed_seconds": 4765.6
+  },
+  "target": 5,
+  "status_before": {
+    "state": "training",
+    "epoch": 5,
+    "completed_epoch": 4,
+    "batch": 600,
+    "global_step": 3728,
+    "loss": 0.4367620646953583,
+    "gradient_norm": 2.4437530040740967,
+    "epoch_seconds": 753.5469999997877,
+    "mass": [
+      0.15,
+      0.25,
+      0.6
+    ],
+    "updated_at": "2026-11-16T17:23:38.482268+00:00"
+  },
+  "done": true,
+  "stopped_at": "2026-11-16T17:27:27.957414+00:00",
+  "resume_receipt": {
+    "epoch": 5,
+    "global_step": 3910,
+    "checkpoint": "checkpoints\\epoch_05.pth",
+    "sha256": "67a38a6bf166f1ba6f724969eec6a8bce0ecb76f69cdc89773ea4707365f4258",
+    "protocol_sha256": "1d2b263423b13df594b1b49630c84593a70ddf7695b11dc2ab44c49371f27cd3",
+    "assessment_sha256": "6d1a6af258a771eae93d6deec9a3096e7a187cf370de3ebb3d95ee9914cdb862",
+    "committed_at": "2026-11-16T17:27:25.980945+00:00"
+  },
+  "status_at_stop": {
+    "state": "epoch_complete",
+    "completed_epoch": 5,
+    "global_step": 3910,
+    "updated_at": "2026-11-16T17:27:25.983965+00:00"
+  }
+}

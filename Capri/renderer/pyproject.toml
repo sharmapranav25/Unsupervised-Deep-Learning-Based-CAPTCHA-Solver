@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "captcha-effects"
+version = "0.5.0"
+description = "Parameterised CAPTCHA background/interference/deformation effects with exact per-pixel labels and calibrated 0-10 intensity."
+requires-python = ">=3.9"
+dependencies = ["numpy", "Pillow"]
+
+[tool.setuptools.packages.find]
+include = ["captcha_effects*"]

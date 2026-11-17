@@ -1,0 +1,34 @@
+{
+  "pid": 69560,
+  "process_created": 1794729847.4082375,
+  "args": [
+    "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "faulthandler",
+    "-m",
+    "capri_controller.training.cryptbb_v3_model2_selected_v1",
+    "worker",
+    "--dataset",
+    "B",
+    "--resume"
+  ],
+  "created_at": "2026-11-15T08:04:07.419390+00:00",
+  "resume_from": {
+    "paused_at": "2026-11-15T04:42:20.912954+00:00",
+    "process": {
+      "pid": 158488,
+      "process_created": 1794716657.03179,
+      "created_at": "2026-11-15T04:24:24.934378+00:00"
+    },
+    "epoch": 1,
+    "global_step": 782,
+    "checkpoint": "checkpoints\\epoch_01.pth",
+    "sha256": "826fb1b2f2a6cdb8aed91b0f1efbc564835f169fa8005de0a982a16878cefcce",
+    "protocol_sha256": "57d9ea9974edc3edd908a17671cc4adc8c891e5dd9e1f4b8806ec38850025062",
+    "reason": "User requested one model at a time; A first, B resumes after A completion",
+    "optimizer_scheduler_rng_sampler_preserved": true,
+    "A_interrupted": false
+  }
+}

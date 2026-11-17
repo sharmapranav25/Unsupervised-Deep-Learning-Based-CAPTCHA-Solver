@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "created_at": "2026-11-15T04:24:11.616483+00:00",
+  "protocol_sha256": "57d9ea9974edc3edd908a17671cc4adc8c891e5dd9e1f4b8806ec38850025062",
+  "preprocessing_exact_matches": 3,
+  "static_schedule_counts": [
+    [
+      100096,
+      0,
+      0
+    ],
+    [
+      50048,
+      50048,
+      0
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ]
+  ],
+  "deterministic_scoring": true,
+  "checkpoint_next_step_max_tensor_error": 0.0,
+  "resume_losses": [
+    4.038330078125,
+    4.038330078125
+  ],
+  "rng_scheduler_sampler_replay": true,
+  "paired_full_batch_pilots": {
+    "A": {
+      "pilot": true,
+      "steps": 4,
+      "record": {
+        "epoch": 1,
+        "mean_loss": 4.209805488586426,
+        "training_wall_seconds": 5.890999999828637,
+        "gpu_step_including_wait_seconds": 5.110000000335276,
+        "rescore_wall_seconds": 0,
+        "update": null
+      },
+      "passed": true,
+      "peak_gpu_gib": 7.359851837158203,
+      "protocol_sha256": "57d9ea9974edc3edd908a17671cc4adc8c891e5dd9e1f4b8806ec38850025062"
+    },
+    "B": {
+      "pilot": true,
+      "steps": 4,
+      "record": {
+        "epoch": 1,
+        "mean_loss": 4.200630187988281,
+        "training_wall_seconds": 8.094000000040978,
+        "gpu_step_including_wait_seconds": 7.361000000499189,
+        "rescore_wall_seconds": 0,
+        "update": null
+      },
+      "passed": true,
+      "peak_gpu_gib": 7.359851837158203,
+      "protocol_sha256": "57d9ea9974edc3edd908a17671cc4adc8c891e5dd9e1f4b8806ec38850025062"
+    }
+  },
+  "real_labels_used": false
+}

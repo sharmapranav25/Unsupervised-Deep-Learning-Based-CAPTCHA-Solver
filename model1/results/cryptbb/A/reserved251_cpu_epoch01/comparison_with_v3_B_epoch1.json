@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-14T20:26:36.353285+00:00",
+  "same251_images": true,
+  "same_cpu_fp32_preprocessing_and_decoder": true,
+  "previous_A": {
+    "model": 1,
+    "dataset": "A",
+    "epoch": 1,
+    "correct": 0,
+    "total": 251,
+    "accuracy_percent": 0.0,
+    "cer_percent": 98.25119236883943,
+    "checkpoint_sha256": "87bedffb9fc9f5ec875f3902b13d78c59d4309aac260d1253ae981944af9871c",
+    "device": "cpu",
+    "seconds": 22.530999999959022,
+    "diagnostic_only": true,
+    "training_changed": false
+  },
+  "current_v3_B": {
+    "model": 1,
+    "dataset": "B",
+    "epoch": 1,
+    "correct": 0,
+    "total": 251,
+    "accuracy_percent": 0.0,
+    "cer_percent": 98.48966613672496,
+    "checkpoint_sha256": "58bbf327d894d6adf18155cd807399ff22c71411f82b34bc624646646e390785",
+    "device": "cpu",
+    "seconds": 22.67200000025332,
+    "diagnostic_only": true,
+    "training_changed": false
+  },
+  "accuracy_difference_percentage_points": 0.0,
+  "training_changed": false
+}

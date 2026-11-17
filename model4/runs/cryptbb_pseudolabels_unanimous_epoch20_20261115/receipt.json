@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-11-16T06:20:48.617082+00:00",
+  "rule": "all 5 epoch-20 members predict the identical case-sensitive string",
+  "members": {
+    "M1A": {
+      "checkpoint": "model1/runs/cryptbb_v3/A/epoch_20.pth",
+      "sha256": "a599a42d9a33e991cc7ae1f22ab92851bd3495e7d9f9fce517fdb1feb81cc8c3"
+    },
+    "M1B": {
+      "checkpoint": "model1/runs/cryptbb_v3/B/epoch_20.pth",
+      "sha256": "b530ebe4ec3a0a312d71b6eafa9e3452b8c0e0198df795b557cd8c25d2486022"
+    },
+    "M2A": {
+      "checkpoint": "model2/runs/cryptbb_v3_epoch20_static_A_20261115/A/checkpoints/epoch_20.pth",
+      "sha256": "42eb13dec856ac054a731864e1442a115980ce642d0ac6628e4407d8129d49f9"
+    },
+    "M2B": {
+      "checkpoint": "model2/runs/cryptbb_v3_epoch20_static_B_20261115/B/checkpoints/epoch_20.pth",
+      "sha256": "56f96e7828e879b8f81fba7471640c534f7a4a56b08e9b54cbaa892478a92fd0"
+    },
+    "M3A": {
+      "checkpoint": "model3/runs/cryptbb_v3_feature_priority_v1_20261115/A/checkpoints/epoch_20.pth",
+      "sha256": "fc6df1515ca82526d4dce774f5d10672809fcbe894cd4a7d6c0e603ddab55f52"
+    }
+  },
+  "pool": {
+    "reference_pool": 100,
+    "pseudo_label_pool": 300
+  },
+  "kept": 58,
+  "kept_by_pool": {
+    "reference_pool": 16,
+    "pseudo_label_pool": 42
+  },
+  "labels_read": false,
+  "audit_hook": "scoring/label opens blocked",
+  "device": "cuda FP32 batch16",
+  "preprocessing": "RGB bicubic 32x128 Normalize0.5",
+  "pseudo_labels_sha256": "091e0fec4afcf961469b4711cde44848c6c565d3b36d44a865c7e53b5a16241e",
+  "script_sha256": "5592b14faf10c474ce06a6e6983a47f713ee9129fa4fdf8e9b3b409bc635fb23"
+}

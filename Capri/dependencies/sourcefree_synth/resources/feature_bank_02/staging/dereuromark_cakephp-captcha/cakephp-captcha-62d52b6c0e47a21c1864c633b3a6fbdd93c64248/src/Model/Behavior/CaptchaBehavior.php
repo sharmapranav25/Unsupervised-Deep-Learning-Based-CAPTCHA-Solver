@@ -1,0 +1,432 @@
+<?php
+
+namespace Captcha\Model\Behavior;
+
+use Cake\Core\Configure;
+use Cake\Event\EventInterface;
+use Cake\I18n\DateTime;
+use Cake\ORM\Behavior;
+use Cake\ORM\Table;
+use Cake\ORM\TableRegistry;
+use Cake\Routing\Router;
+use Cake\Validation\Validator;
+use Captcha\Cache\VerifyRateLimiter;
+use Captcha\Engine\EngineInterface;
+use Captcha\Engine\MathEngine;
+use Captcha\Engine\NullEngine;
+use Captcha\Model\Table\CaptchasTable;
+use Captcha\Validation\VerificationContext;
+use RuntimeException;
+
+/**
+ * CaptchaBehavior
+ *
+ * Uses different captcha types, database driven and session-free.
+ * This allows a cleaner, robust and completely tab-safe approach.
+ */
+class CaptchaBehavior extends Behavior {
+
+	/**
+	 * @var array<string, mixed>
+	 */
+	protected array $_defaultConfig = [
+		'minTime' => 2, // Seconds the form will need to be filled in by a human
+		'maxTime' => DAY, // Seconds the form will need to be submitted in
+		'engine' => MathEngine::class,
+		'verifyRateLimit' => [
+			'enabled' => true,
+			'maxFailures' => 5,
+			'window' => 600,
+			'scope' => 'ip_session',
+			'cache' => 'default',
+		],
+	];
+
+	/**
+	 * @var \Captcha\Engine\EngineInterface
+	 */
+	protected EngineInterface $_engine;
+
+	/**
+	 * @var \Captcha\Model\Table\CaptchasTable
+	 */
+	protected CaptchasTable $_captchasTable;
+
+	/**
+	 * @var array
+	 */
+	protected array $_captchas = [];
+
+	/**
+	 * Tracks UUID-scoped verification failures already counted during the current request.
+	 *
+	 * @var array<string, bool>
+	 */
+	protected array $_countedFailures = [];
+
+	protected ?VerificationContext $_verificationContext = null;
+
+	/**
+	 * @param \Cake\ORM\Table $table
+	 * @param array<string, mixed> $config
+	 */
+	public function __construct(Table $table, array $config = []) {
+		$globalConfig = (array)Configure::read('Captcha');
+		$config += $globalConfig;
+		if (isset($config['verifyRateLimit']) && is_array($config['verifyRateLimit'])) {
+			$config['verifyRateLimit'] += (array)($globalConfig['verifyRateLimit'] ?? []) + $this->_defaultConfig['verifyRateLimit'];
+		}
+
+		parent::__construct($table, $config);
+	}
+
+	/**
+	 * Behavior configuration
+	 *
+	 * @param array $config
+	 * @return void
+	 */
+	public function initialize(array $config): void {
+		parent::initialize($config);
+
+		$this->_captchasTable = TableRegistry::getTableLocator()->get('Captcha.Captchas');
+		/** @phpstan-var class-string<\Captcha\Engine\EngineInterface> $engine */
+		$engine = $this->getConfig('engine');
+		$this->_engine = new $engine($this->getConfig());
+	}
+
+	/**
+	 * @param \Cake\Event\EventInterface $event
+	 * @param \Cake\Validation\Validator $validator
+	 * @param string $name
+	 * @return void
+	 */
+	public function buildValidator(EventInterface $event, Validator $validator, $name) {
+		$this->addCaptchaValidation($validator);
+	}
+
+	/**
+	 * @param \Cake\Validation\Validator $validator
+	 *
+	 * @return void
+	 */
+	public function addCaptchaValidation(Validator $validator): void {
+		$state = VerificationContext::forValidator($validator);
+		$state->attach($validator, 'captcha_result');
+		$state->onStart(function () use ($state): void {
+			$this->_verificationContext = $state;
+			$this->_captchas = [];
+			$this->_countedFailures = [];
+		});
+		if (!$this->_engine instanceof NullEngine) {
+			$validator->add('captcha_result', [
+				'required' => [
+					'rule' => 'notBlank',
+					'message' => __d('captcha', 'Please solve the riddle'),
+					'last' => true,
+				],
+			]);
+
+			$validator->add('captcha_result', [
+				'maxPerUser' => [
+					'rule' => 'validateCaptchaMaxPerUser',
+					'provider' => 'table',
+					'message' => __d('captcha', 'Limit reached. Please retry later'),
+					'last' => true,
+				],
+			]);
+		}
+
+		if ($this->_isVerifyRateLimitEnabled()) {
+			$validator->add('captcha_result', [
+				'verifyRateLimit' => [
+					'rule' => 'validateCaptchaRateLimit',
+					'provider' => 'table',
+					'message' => __d('captcha', 'Too many failed attempts. Please retry later'),
+					'last' => true,
+				],
+			]);
+		}
+
+		if ($this->getConfig('minTime')) {
+			$validator->add('captcha_result', [
+				'minTime' => [
+					'rule' => 'validateCaptchaMinTime',
+					'provider' => 'table',
+					'message' => __d('captcha', 'You were too fast'),
+					'last' => true,
+				],
+			]);
+		}
+		if ($this->getConfig('maxTime')) {
+			$validator->add('captcha_result', [
+				'maxTime' => [
+					'rule' => 'validateCaptchaMaxTime',
+					'provider' => 'table',
+					'message' => __d('captcha', 'You were too slow'),
+					'last' => true,
+				],
+			]);
+		}
+
+		if ($this->_engine instanceof NullEngine) {
+			$validator->add('captcha_result', [
+				'consume' => [
+					'rule' => 'validateCaptchaWithoutChallenge',
+					'provider' => 'table',
+					'last' => true,
+				],
+			]);
+		}
+
+		$this->_engine->buildValidator($validator);
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaMaxPerUser($value, $context) {
+		// If no id was provided, the captcha was dummy due to MaxRule failure
+		return !empty($context['data']['captcha_uuid']);
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaRateLimit($value, $context) {
+		return !$this->_isRateLimited();
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaMinTime($value, $context) {
+		$captcha = $this->_getCaptcha($context['data']);
+		if (!$captcha) {
+			return false;
+		}
+
+		return $captcha->created < new DateTime('- ' . $this->getConfig('minTime') . ' seconds');
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaMaxTime($value, $context) {
+		$captcha = $this->_getCaptcha($context['data']);
+		if (!$captcha) {
+			return false;
+		}
+
+		return $captcha->created > new DateTime('- ' . $this->getConfig('maxTime') . ' seconds');
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaWithoutChallenge($value, $context) {
+		$captcha = $this->_getCaptcha($context['data']);
+		if (!$captcha || $captcha->used !== null) {
+			return false;
+		}
+
+		if (!$this->_captchasTable->markUsed($captcha)) {
+			$this->_incrementFailedAttemptCounter();
+
+			return false;
+		}
+
+		$this->_clearFailedAttemptCounter();
+
+		return true;
+	}
+
+	/**
+	 * @param string $value
+	 * @param array $context
+	 *
+	 * @return bool
+	 */
+	public function validateCaptchaResult($value, $context) {
+		$captcha = $this->_getCaptcha($context['data']);
+		if (!$captcha) {
+			return false;
+		}
+		if ($captcha->used !== null) {
+			return false;
+		}
+
+		$isValid = hash_equals((string)$captcha->result, (string)$value);
+		$captcha->solved = $isValid;
+		if (!$this->_captchasTable->markUsed($captcha)) {
+			$this->_incrementFailedAttemptCounter();
+
+			return false;
+		}
+		if (!$isValid) {
+			$this->_incrementFailedAttemptCounter();
+
+			return false;
+		}
+
+		$this->_clearFailedAttemptCounter();
+
+		return true;
+	}
+
+	/**
+	 * @param array $data
+	 *
+	 * @return \Captcha\Model\Entity\Captcha|null
+	 */
+	protected function _getCaptcha(array $data) {
+		$uuid = empty($data['captcha_uuid']) ? null : (string)$data['captcha_uuid'];
+
+		if ($uuid && array_key_exists($uuid, $this->_captchas)) {
+			$captcha = $this->_captchas[$uuid];
+			if ($captcha && $captcha->used === null) {
+				return $captcha;
+			}
+			if ($captcha) {
+				$this->_registerLookupFailure($uuid);
+			}
+
+			return null;
+		}
+
+		['sessionId' => $sessionId, 'ip' => $ip] = $this->_getRequestIdentity();
+
+		if (!$uuid) {
+			return null;
+		}
+
+		$conditions = [
+			'uuid' => $uuid,
+			'ip' => $ip,
+			'session_id' => $sessionId,
+		];
+		/** @var \Captcha\Model\Entity\Captcha|null $captcha */
+		$captcha = $this->_captchasTable->find()->where($conditions)->first();
+		if ($captcha && $captcha->used === null) {
+			$this->_captchas[$uuid] = $captcha;
+
+			return $this->_captchas[$uuid];
+		}
+
+		$this->_registerLookupFailure($uuid);
+		$this->_captchas[$uuid] = $captcha;
+
+		return null;
+	}
+
+	/**
+	 * @return array{sessionId: string, ip: string}
+	 */
+	protected function _getRequestIdentity(): array {
+		$request = Router::getRequest();
+		if ($request === null) {
+			throw new RuntimeException('No request found.');
+		}
+		if (!$request->getSession()->started()) {
+			$request->getSession()->start();
+		}
+		$sessionId = $request->getSession()->id();
+		if (!$sessionId && PHP_SAPI === 'cli') {
+			$sessionId = 'test';
+		}
+
+		return [
+			'sessionId' => $sessionId,
+			'ip' => (string)$request->clientIp(),
+		];
+	}
+
+	/**
+	 * @return bool
+	 */
+	protected function _isVerifyRateLimitEnabled(): bool {
+		return $this->_verifyRateLimiter()->enabled();
+	}
+
+	protected function _isRateLimited(): bool {
+		['sessionId' => $sessionId, 'ip' => $ip] = $this->_getRequestIdentity();
+
+		return $this->_verificationContext?->limited($this->_verifyRateLimiter(), $ip, $sessionId)
+			?? $this->_verifyRateLimiter()->limited($ip, $sessionId);
+	}
+
+	protected function _incrementFailedAttemptCounter(): void {
+		$limiter = $this->_verifyRateLimiter();
+		if (!$limiter->enabled()) {
+			return;
+		}
+		['sessionId' => $sessionId, 'ip' => $ip] = $this->_getRequestIdentity();
+		if ($this->_verificationContext !== null) {
+			$this->_verificationContext->increment($limiter, $ip, $sessionId);
+		} else {
+			$limiter->increment($ip, $sessionId);
+		}
+	}
+
+	protected function _clearFailedAttemptCounter(): void {
+		if ($this->_verificationContext !== null && !$this->_verificationContext->passiveValid()) {
+			return;
+		}
+
+		$limiter = $this->_verifyRateLimiter();
+		if (!$limiter->enabled()) {
+			return;
+		}
+		['sessionId' => $sessionId, 'ip' => $ip] = $this->_getRequestIdentity();
+		$limiter->clear($ip, $sessionId);
+	}
+
+	protected function _registerLookupFailure(string $uuid): void {
+		if (isset($this->_countedFailures[$uuid])) {
+			return;
+		}
+
+		$this->_incrementFailedAttemptCounter();
+		$this->_countedFailures[$uuid] = true;
+	}
+
+	/**
+	 * @return array{enabled: bool, maxFailures: int, window: int, scope: string, cache: string}
+	 */
+	protected function _getVerifyRateLimitConfig(): array {
+		/** @var array{enabled: bool, maxFailures: int, window: int, scope: string, cache: string} $config */
+		$config = (array)$this->getConfig('verifyRateLimit') + $this->_defaultConfig['verifyRateLimit'];
+
+		return $config;
+	}
+
+	/**
+	 * @return \Captcha\Cache\VerifyRateLimiter
+	 */
+	protected function _verifyRateLimiter(): VerifyRateLimiter {
+		return new VerifyRateLimiter($this->_getVerifyRateLimitConfig());
+	}
+
+	/**
+	 * @return array
+	 */
+	public function generate() {
+		return $this->_engine->generate();
+	}
+
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_v3_workflow.py", line 58, in <module>
+    if __name__=='__main__':run()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_v3_workflow.py", line 46, in run
+    validate_entries() # Invalid entries stop export and are reported by ID.
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\cryptbb_v3_corpus.py", line 68, in validate_entries
+    assert not invalid,f'Unvalidated recipes require repair before export: {invalid}'
+AssertionError: Unvalidated recipes require repair before export: ['dino_015', 'custom_016', 'synthtiger_016', 'custom_027', 'dino_027', 'synthtiger_027', 'mixed_027', 'custom_035', 'synthtiger_035', 'custom_043', 'synthtiger_043', 'dino_051', 'mixed_051', 'custom_097', 'mixed_097', 'custom_098', 'mixed_098']

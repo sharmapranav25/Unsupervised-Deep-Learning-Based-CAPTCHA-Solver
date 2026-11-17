@@ -1,0 +1,42 @@
+{
+  "inputs": 100,
+  "refined_inputs": 6,
+  "preview_only": true,
+  "controllers": [
+    "custom",
+    "dino",
+    "mixed"
+  ],
+  "length_rule": {
+    "counts": {
+      "2": 0,
+      "3": 0,
+      "4": 9,
+      "5": 91,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "threshold": 0.6,
+    "default_length": 5,
+    "votes": 91,
+    "mode": "majority"
+  },
+  "refinement": "Highest probability resolves incompatible heads; inactive levels zero; clamp generic renderer parameter ranges; apply observed majority length. Preserve every raw prediction and per-image recipe.",
+  "comparison": "50% corresponding image appearance descriptors +50% full100-image distribution. Custom and DINO metrics differ; mixed uses calibrated50/50 components. No character-string matching.",
+  "candidates": "Per-image neutral, pixel-derived colors, generic geometry/effect variants, then separate mutations around each controller leader. Same model-derived length throughout.",
+  "selection": "Per-controller shortlist validated on3 fresh synthetic seeds against the same unlabeled reference pixels; require all3 complete and usable. This is recipe reliability testing, not an unseen-target evaluation.",
+  "diversity": "6 entries per controller, including shared choices. Do not select one globally best controller. Track exact duplicate settings and pixel hashes.",
+  "corpus": "Disabled: visual preview only.",
+  "source_hashes": {
+    "hybrid": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+    "custom_encoder": "0dfac96c3b903cab88bddcfe28dde69550fe53d7d43571a26eb2cd5bd7e3ba38",
+    "text_mask": "8d7747a31215371a3d0721536bb14e46ffb07cdd00798effeaf732f57785f33c",
+    "dino": "55c8b267f479b614ec20858947ce361ba804846c193e20be74263a096bb6d75e"
+  },
+  "vlm": false,
+  "target_labels": false,
+  "code_sha256": "3f3a9d43e4a3da37f5f22a33ec7223e10906a6f53cc7f13218321b9e37d3633a",
+  "description_checkpoint": "E:\\pranav\\CAPRI\\models\\active\\hybrid\\hybrid.pt",
+  "description_checkpoint_sha256": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32"
+}

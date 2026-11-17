@@ -1,0 +1,24 @@
+{
+  "epoch": 20,
+  "seeds": [
+    48,
+    123,
+    456
+  ],
+  "sources": {
+    "48": {
+      "path": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\Darkbay_ds2_noFont-intel\\interim_evaluation\\seed_48_epoch_20\\predictions.json",
+      "sha256": "13e9a4c1ec86567fe3948cf44801b38f26706c98f29b23289d2ce1376610bf6c"
+    },
+    "123": {
+      "path": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\Darkbay_ds2_noFont-intel\\evaluation_darkbay\\seed_123_predictions.json",
+      "sha256": "68634575a7ac5c77cac5e1b7cd2508aba467ac41d4cb17d043fe57c07b87439e"
+    },
+    "456": {
+      "path": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\Darkbay_ds2_noFont-intel\\interim_evaluation\\seed_456_epoch_20\\predictions.json",
+      "sha256": "8d8d82a1e67657834b490423afe1ea70cfab82f68fcfc532747e1816be9376a4"
+    }
+  },
+  "rule": "Whole-string majority; highest mean confidence for three-way disagreement; seed-order exact ties",
+  "comparison_only": true
+}

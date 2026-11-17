@@ -1,0 +1,26 @@
+# Iteration 2 baseline (docs/ITERATION2_PLAN.md 2B, decision 5): one model, CNN -> effect heads,
+# transformer -> text / font heads (incl. length). No curriculum, no freezing, no specialists.
+data: runs/iter2_data_20261003        # iter2_h96/{train_*, steering, selection, calibration, seen_test, generalisation}
+model:
+  d: 160
+  d_eff: 128
+  layers: 5
+  heads: 4
+  mlp: 640
+  dropout: 0.1
+  drop_path: 0.1
+  max_cols: 128
+train:
+  epochs: 15
+  loss_weighting: fixed
+  batch: 128
+  lr: 5.0e-4
+  min_lr: 1.0e-5
+  weight_decay: 0.05
+  warmup_steps: 300
+  grad_clip: 1.0
+  ema: 0.999                  # warm-up EMA: decay = min(0.999, (1 + t) / (10 + t))
+  level_balance: true         # ordinal loss rows weighted by 1 / frequency of (head, level), clipped to [0.25, 4]
+  gpu_memory_fraction: 0.8
+score:
+  every_epoch: [steering, selection, generalisation]   # selection: checkpoint choice at the end; generalisation: watch only

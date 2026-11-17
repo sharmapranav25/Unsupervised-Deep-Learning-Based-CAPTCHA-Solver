@@ -1,0 +1,208 @@
+{
+  "observed_at": "2026-11-16T09:53:48.0329764+00:00",
+  "live": {
+    "observed_at": "2026-11-16T01:53:47.474117-08:00",
+    "coordinator_pid": 84056,
+    "active": [
+      {
+        "name": "model1-worker_M1_A",
+        "pid": 7648,
+        "process_created": 1794822655.0696447,
+        "args": [
+          "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+          "-B",
+          "-u",
+          "-m",
+          "capri_controller.training.darkbay_overnight_v1.readers",
+          "model1-worker",
+          "--dataset",
+          "A"
+        ],
+        "started_at": "2026-11-16T01:50:55.09049-08:00",
+        "log": "handoff\\darkbay_v3_feature_20261115\\logs\\model1-worker_M1_A.log",
+        "exit_code": null,
+        "no_progress_seconds": 40.1,
+        "elapsed_seconds": 172.4
+      },
+      {
+        "name": "model1-worker_M1_B",
+        "pid": 41416,
+        "process_created": 1794822657.038421,
+        "args": [
+          "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+          "-B",
+          "-u",
+          "-m",
+          "capri_controller.training.darkbay_overnight_v1.readers",
+          "model1-worker",
+          "--dataset",
+          "B"
+        ],
+        "started_at": "2026-11-16T01:50:57.054199-08:00",
+        "log": "handoff\\darkbay_v3_feature_20261115\\logs\\model1-worker_M1_B.log",
+        "exit_code": null,
+        "no_progress_seconds": 40.1,
+        "elapsed_seconds": 170.4
+      }
+    ],
+    "failed": [],
+    "state": "running",
+    "STOP_present": false
+  },
+  "identities": [
+    {
+      "actual_created": 1794812658.155,
+      "matches": true,
+      "pid": 84056,
+      "expected_created": 1794812658.155028
+    },
+    {
+      "actual_created": 1794822655.069,
+      "matches": true,
+      "pid": 7648,
+      "expected_created": 1794822655.0696447
+    },
+    {
+      "actual_created": 1794822657.038,
+      "matches": true,
+      "pid": 41416,
+      "expected_created": 1794822657.038421
+    },
+    {
+      "actual_created": 1794822655.16,
+      "matches": true,
+      "pid": 11520,
+      "expected_created": 1794822655.1603453
+    },
+    {
+      "actual_created": 1794822657.093,
+      "matches": true,
+      "pid": 93012,
+      "expected_created": 1794822657.0930932
+    }
+  ],
+  "source_mismatches": [],
+  "model1_progress": [
+    {
+      "readiness": {
+        "passed": true,
+        "dataset": "A",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "completed_at": "2026-11-16T01:50:44.81656-08:00",
+        "protocol_sha256": "53b85edaaf41d34a6e6e1923156435559ab965b8b52a2e0daf828f2d16c61192",
+        "losses": [
+          4.254404067993164,
+          4.220937728881836,
+          4.220937728881836
+        ],
+        "recovery_max_abs_difference": 0.0,
+        "sampler_replay": true,
+        "batch_shape": [
+          128,
+          3,
+          32,
+          128
+        ],
+        "other_probe_initialized": true,
+        "peak_allocated_gib": 7.3560791015625,
+        "production_weights_used": false
+      },
+      "initial_observed_steps": 1,
+      "current": {
+        "updated_at": "2026-11-16T01:53:02.689283-08:00",
+        "pid": 11520,
+        "optimizer_steps": 50,
+        "epoch": 1,
+        "step_in_epoch": 50
+      },
+      "dataset": "A"
+    },
+    {
+      "readiness": {
+        "passed": true,
+        "dataset": "B",
+        "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "completed_at": "2026-11-16T01:50:47.412111-08:00",
+        "protocol_sha256": "53b85edaaf41d34a6e6e1923156435559ab965b8b52a2e0daf828f2d16c61192",
+        "losses": [
+          4.2182393074035645,
+          4.204288005828857,
+          4.204288005828857
+        ],
+        "recovery_max_abs_difference": 0.0,
+        "sampler_replay": true,
+        "batch_shape": [
+          128,
+          3,
+          32,
+          128
+        ],
+        "other_probe_initialized": true,
+        "peak_allocated_gib": 7.3560791015625,
+        "production_weights_used": false
+      },
+      "initial_observed_steps": 1,
+      "current": {
+        "updated_at": "2026-11-16T01:53:03.331686-08:00",
+        "pid": 93012,
+        "optimizer_steps": 50,
+        "epoch": 1,
+        "step_in_epoch": 50
+      },
+      "dataset": "B"
+    }
+  ],
+  "datasets_ready": {
+    "created_at": "2026-11-16T01:49:27.734342-08:00",
+    "images_each": 100000,
+    "datasets": {
+      "A": {
+        "images": 100000,
+        "unique_pixels": 100000,
+        "unique_seeds": 100000,
+        "controllers": {
+          "custom": 25000,
+          "dino": 25000,
+          "mixed": 25000,
+          "synthtiger": 25000
+        },
+        "all_images_decoded": true,
+        "old_AB_and_real_pixel_overlap": 0,
+        "new_A_overlap": null,
+        "lmdb_sha256": "b4e888839cb9418752d8b59225278e62ea944f690f796b2007c5937ad7662af1",
+        "provenance_sha256": "6e18a28ba97070a6d09b06f6bf8fb7a4766b9020e1b700997a359dea731cb734",
+        "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+      },
+      "B": {
+        "images": 100000,
+        "unique_pixels": 100000,
+        "unique_seeds": 100000,
+        "controllers": {
+          "custom": 25000,
+          "dino": 25000,
+          "mixed": 25000,
+          "synthtiger": 25000
+        },
+        "all_images_decoded": true,
+        "old_AB_and_real_pixel_overlap": 0,
+        "new_A_overlap": 0,
+        "lmdb_sha256": "762d8af0e90a3539b0f6393b720d61b46d5350ee8682b20b7f7511a223b345b5",
+        "provenance_sha256": "fd2b396da59d83782a523d07b1e943aca129268ca72b9e625d5be63aa111742d",
+        "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+      }
+    }
+  },
+  "gpu": [
+    "11520, C:\\ProgramData\\Anaconda3\\python.exe, [N/A]",
+    "93012, C:\\ProgramData\\Anaconda3\\python.exe, [N/A]"
+  ],
+  "failure_receipts": [],
+  "committed_epochs": {
+    "A": 0,
+    "B": 0
+  },
+  "evaluated_epochs": {
+    "A": 0,
+    "B": 0
+  }
+}

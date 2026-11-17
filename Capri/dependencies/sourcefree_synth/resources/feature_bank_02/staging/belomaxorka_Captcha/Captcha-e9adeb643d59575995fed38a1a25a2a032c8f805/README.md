@@ -1,0 +1,234 @@
+# ⚠️ ARCHIVED REPOSITORY
+
+## This repository is now archived and no longer maintained.
+
+This fork was originally created to provide bug fixes and PHP compatibility updates that were not being merged into the upstream repository. However, **as of version v1.3.0, the original repository has incorporated all necessary fixes and updates**.
+
+## 🔄 Migration Notice
+
+**Please migrate to the original repository:** [gregwar/captcha](https://github.com/Gregwar/Captcha)
+
+The upstream repository is now actively maintained and includes all the improvements that were previously only available in this fork.
+
+## Why was this fork created?
+
+This fork served as a temporary solution when:
+- Critical bug fixes were not being merged upstream
+- PHP version compatibility issues needed to be addressed
+- The original repository appeared to be inactive
+
+## Current Status
+
+✅ **Original repository is now active and maintained**  
+✅ **All fixes have been merged upstream**  
+❌ **This fork is no longer necessary**
+
+---
+
+**For new projects:** Use the original repository  
+**For existing projects:** Please plan migration to the upstream repository
+
+Thank you to everyone who used this fork during the transition period!
+
+---
+
+Captcha (Based on `gregwar/Captcha`)
+=======
+
+![Captchas examples](http://gregwar.com/captchas.png)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YUXRLWHQSWS6L)
+
+Requirements
+============
+* PHP Versions: `5.3` and above (up to `8.4`).
+* PHP Extensions: `gd`, `mbstring`, `fileinfo` (enabled by default).
+
+Installation
+============
+
+It's available for [Composer](https://getcomposer.org):
+
+```shell
+composer require belomaxorka/captcha
+```
+
+How to migrate
+============
+
+Just replace:
+``` json
+{
+    ...
+    "require": {
+        "gregwar/captcha": "1.*"
+    }
+}
+```
+
+To:
+
+``` json
+{
+    ...
+    "require": {
+        "belomaxorka/captcha": "1.*"
+    }
+}
+```
+
+Usage
+=====
+
+You can create a captcha with the `CaptchaBuilder`:
+
+```php
+<?php
+
+use Gregwar\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\PhraseBuilder;
+
+$builder = new CaptchaBuilder;
+$builder->build();
+```
+
+You can then save it to a file:
+
+```php
+<?php
+
+$builder->save('out.jpg');
+```
+
+Or output it directly:
+
+```php
+<?php
+
+header('Content-type: image/jpeg');
+$builder->output();
+```
+
+Or inline it directly in the HTML page:
+
+```php
+<img src="<?php echo $builder->inline(); ?>" />
+```
+
+You'll be able to get the code and compare it with a user input:
+
+```php
+<?php
+
+// Create session to store $_SESSION['phrase']
+session_start();
+
+// Example: storing the phrase in the session to test for the user
+// input later
+$_SESSION['phrase'] = $builder->getPhrase();
+```
+
+You can compare the phrase with user input:
+```php
+if ($builder->testPhrase($userInput)) {
+    // instructions if user phrase is good
+} else {
+    // user phrase is wrong
+}
+```
+
+Or with using `PhraseBuilder`:
+
+```php
+if (PhraseBuilder::comparePhrases($_SESSION['phrase'], $userInput)) {
+    // instructions if user phrase is good
+} else {
+    // user phrase is wrong
+}
+```
+
+API
+===
+
+You can use these functions:
+
+* **__construct($phrase = null)**, constructs the builder with the given phrase, if the phrase is null, a random one will be generated
+* **getPhrase()**, allow you to get the phrase contents
+* **setDistortion($distortion)**, enable or disable the distortion, call it before `build()`
+* **isOCRReadable()**, returns `true` if the OCR can be read using the `ocrad` software, you'll need to have shell_exec enabled, imagemagick and ocrad installed
+* **buildAgainstOCR($width = 150, $height = 40, $font = null)**, builds a code until it is not readable by `ocrad`
+* **build($width = 150, $height = 40, $font = null)**, builds a code with the given $width, $height and $font. By default, a random font will be used from the library
+* **save($filename, $quality = 80)**, saves the captcha into a jpeg in the $filename, with the given quality
+* **get($quality = 80)**, returns the jpeg data
+* **output($quality = 80)**, directly outputs the jpeg code to a browser
+* **setBackgroundColor($r, $g, $b)**, sets the background color to force it (this will disable many effects and is not recommended)
+* **setBackgroundImages(array($imagepath1, $imagePath2))**, Sets custom background images to be used as captcha background. It is recommended to disable image effects when passing custom images for background (ignore_all_effects). A random image is selected from the list passed, the full paths to the image files must be passed.
+* **setInterpolation($interpolate)**, enable or disable the interpolation (enabled by default), disabling it will be quicker but the images will look uglier
+* **setScatterEffect($scatterEffect)**, enable or disable the scatter effect (enabled by default). Note: Requires PHP 7.4 or higher.
+* **setIgnoreAllEffects($ignoreAllEffects)**, disable all effects on the captcha image. Recommended to use when passing custom background images for the captcha.
+* **setIgnorePostEffects($ignorePostEffects)**, disable post effects on the captcha image (edge, negate, contrast, colorize). Note: **setIgnoreAllEffects** also disables post effects.
+* **testPhrase($phrase)**, returns true if the given phrase is good
+* **setMaxBehindLines($lines)**, sets the maximum number of lines behind the code
+* **setMaxFrontLines($lines)**, sets the maximum number of lines on the front of the code
+
+If you want to change the number of character, you can call the phrase builder directly using
+extra parameters:
+
+```php
+use Gregwar\Captcha\CaptchaBuilder;
+use Gregwar\Captcha\PhraseBuilder;
+
+// Will build phrases of 3 characters
+$phraseBuilder = new PhraseBuilder(4);
+
+// Will build phrases of 5 characters, only digits
+$phraseBuilder = new PhraseBuilder(5, '0123456789');
+
+// Pass it as first argument of CaptchaBuilder, passing it the phrase
+// builder
+$captcha = new CaptchaBuilder(null, $phraseBuilder);
+```
+
+You can also pass directly the wanted phrase to the builder:
+
+```php
+// Building a Captcha with the "hello" phrase
+$captcha = new CaptchaBuilder('hello');
+```
+
+Complete example
+================
+
+If you want to see an example you can have a look at the ``demo/form.php``, which uses ``demo/session.php`` to
+render a captcha and check it after the submission
+
+Symfony Bundle
+================
+
+You can have a look at the following repository to enjoy the Symfony 2 bundle packaging this captcha generator:
+https://github.com/Gregwar/CaptchaBundle
+
+Yii2 Extension
+===============
+
+You can use the following extension for integrating with Yii2 Framework:
+https://github.com/juliardi/yii2-captcha
+
+Examples
+=======
+
+Have a look at the examples inside the `demo` folder, which should give you an impression of what's possible - or simply whip up a PHP development server:
+
+```bash
+# Change directory
+cd demo
+
+# Launch server
+php -S localhost:3000
+
+# All examples are now available in your browser, eg 'http://localhost:3000/form.php'
+```
+
+License
+=======
+
+This library is under MIT license, have a look to the `LICENSE` file

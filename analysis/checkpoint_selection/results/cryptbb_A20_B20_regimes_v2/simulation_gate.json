@@ -1,0 +1,56 @@
+{
+  "original_required_tests": [
+    {
+      "case": 1,
+      "mae": 0.00867795782120615,
+      "selected_epoch": 13,
+      "passed": true
+    },
+    {
+      "case": 2,
+      "unmasked_epoch": 19,
+      "masked_epoch": 6,
+      "true_best_epoch": 6,
+      "passed": true
+    },
+    {
+      "case": 3,
+      "relative_mse_improvement": 0.9631994272534848,
+      "absolute_rmse_improvement": 0.018721955694760203,
+      "passed": true
+    }
+  ],
+  "v2_outcomes": [
+    {
+      "case": 1,
+      "cap": 4,
+      "chosen_k": 0,
+      "criterion_passed": true,
+      "capped_pick": 13,
+      "joint_pick": 13,
+      "true_best": 13,
+      "joint_converged": true
+    },
+    {
+      "case": 2,
+      "cap": 4,
+      "chosen_k": 0,
+      "criterion_passed": true,
+      "capped_pick": 19,
+      "joint_pick": 19,
+      "true_best": 6,
+      "joint_converged": true
+    },
+    {
+      "case": 3,
+      "cap": 4,
+      "chosen_k": 0,
+      "criterion_passed": true,
+      "capped_pick": 20,
+      "joint_pick": 20,
+      "true_best": 8,
+      "joint_converged": true
+    }
+  ],
+  "note": "Simulation outcomes reported without tuning. Original case2 used k5, disallowed by v2."
+}

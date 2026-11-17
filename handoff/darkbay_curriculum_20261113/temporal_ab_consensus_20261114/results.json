@@ -1,0 +1,181 @@
+{
+  "selection_freeze_sha256": "ec1aff599f3b3519e08561f621dbb18594db153a035a6fbb97871864b55ff896",
+  "scored_source_sha256": "07d2ef183528a5499eed3804f33407fd81b5615953a5a9a13602ed3cda8c6660",
+  "results": [
+    {
+      "model": 1,
+      "rule": "temporal",
+      "epoch": 20,
+      "all_maximizing_epochs": [
+        20
+      ],
+      "score_percent": 98.04629629629629,
+      "A_correct": 615,
+      "B_correct": 573,
+      "A_accuracy_percent": 68.33333333333333,
+      "B_accuracy_percent": 63.666666666666664
+    },
+    {
+      "model": 1,
+      "rule": "ab",
+      "epoch": 17,
+      "all_maximizing_epochs": [
+        17
+      ],
+      "score_percent": 66.77777777777777,
+      "A_correct": 621,
+      "B_correct": 572,
+      "A_accuracy_percent": 69.0,
+      "B_accuracy_percent": 63.55555555555556
+    },
+    {
+      "model": 1,
+      "rule": "combined",
+      "epoch": 17,
+      "all_maximizing_epochs": [
+        17
+      ],
+      "score_percent": 82.30092592592592,
+      "A_correct": 621,
+      "B_correct": 572,
+      "A_accuracy_percent": 69.0,
+      "B_accuracy_percent": 63.55555555555556
+    },
+    {
+      "model": 2,
+      "rule": "temporal",
+      "epoch": 20,
+      "all_maximizing_epochs": [
+        20
+      ],
+      "score_percent": 97.96296296296296,
+      "A_correct": 600,
+      "B_correct": 627,
+      "A_accuracy_percent": 66.66666666666667,
+      "B_accuracy_percent": 69.66666666666667
+    },
+    {
+      "model": 2,
+      "rule": "ab",
+      "epoch": 12,
+      "all_maximizing_epochs": [
+        12
+      ],
+      "score_percent": 65.44444444444444,
+      "A_correct": 659,
+      "B_correct": 646,
+      "A_accuracy_percent": 73.22222222222223,
+      "B_accuracy_percent": 71.77777777777777
+    },
+    {
+      "model": 2,
+      "rule": "combined",
+      "epoch": 18,
+      "all_maximizing_epochs": [
+        18
+      ],
+      "score_percent": 81.05555555555556,
+      "A_correct": 594,
+      "B_correct": 625,
+      "A_accuracy_percent": 66.0,
+      "B_accuracy_percent": 69.44444444444444
+    },
+    {
+      "model": 3,
+      "rule": "temporal",
+      "epoch": 20,
+      "all_maximizing_epochs": [
+        20
+      ],
+      "score_percent": 98.10185185185185,
+      "A_correct": 629,
+      "B_correct": 610,
+      "A_accuracy_percent": 69.88888888888889,
+      "B_accuracy_percent": 67.77777777777777
+    },
+    {
+      "model": 3,
+      "rule": "ab",
+      "epoch": 13,
+      "all_maximizing_epochs": [
+        13
+      ],
+      "score_percent": 67.0,
+      "A_correct": 646,
+      "B_correct": 636,
+      "A_accuracy_percent": 71.77777777777777,
+      "B_accuracy_percent": 70.66666666666667
+    },
+    {
+      "model": 3,
+      "rule": "combined",
+      "epoch": 13,
+      "all_maximizing_epochs": [
+        13
+      ],
+      "score_percent": 82.01388888888889,
+      "A_correct": 646,
+      "B_correct": 636,
+      "A_accuracy_percent": 71.77777777777777,
+      "B_accuracy_percent": 70.66666666666667
+    }
+  ],
+  "best_observed_per_reader": [
+    {
+      "model": 1,
+      "dataset": "A",
+      "correct": 639,
+      "accuracy_percent": 71.0,
+      "epochs": [
+        14
+      ]
+    },
+    {
+      "model": 1,
+      "dataset": "B",
+      "correct": 619,
+      "accuracy_percent": 68.77777777777777,
+      "epochs": [
+        12
+      ]
+    },
+    {
+      "model": 2,
+      "dataset": "A",
+      "correct": 664,
+      "accuracy_percent": 73.77777777777777,
+      "epochs": [
+        6
+      ]
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "correct": 662,
+      "accuracy_percent": 73.55555555555556,
+      "epochs": [
+        7
+      ]
+    },
+    {
+      "model": 3,
+      "dataset": "A",
+      "correct": 662,
+      "accuracy_percent": 73.55555555555556,
+      "epochs": [
+        6
+      ]
+    },
+    {
+      "model": 3,
+      "dataset": "B",
+      "correct": 649,
+      "accuracy_percent": 72.11111111111111,
+      "epochs": [
+        6
+      ]
+    }
+  ],
+  "independent_recount_passed": true,
+  "existing_ab_counts_reproduced": true
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-29T17:29:33.510469+00:00",
+  "baseline_checkpoint": "E:\\pranav\\CAPRI\\models\\active\\hybrid\\hybrid.pt",
+  "baseline_sha256": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+  "baseline_selection": "Currently deployed original CAPRI, epoch15 EMA, fixed before scoring",
+  "reference": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_internal_count_epoch20_20261029",
+  "reference_manifest_sha256": "8775d5d936aacb8f4ff9102185ab5548673fe22c1d11844e34b9698fa99f21d9",
+  "preprocessing": "Identical to new-model diagnostic: RGB, height96, width cap480, bilinear, right edge padding, batch8, CPU FP32. This controls preprocessing; historical deployed inference used Lanczos and cap960.",
+  "label_policy": "Read saved scoring counts only after baseline predictions are persisted and SHA256-frozen. No selection or tuning.",
+  "source_hashes": {
+    "src\\capri_controller\\count_baseline_comparison.py": "16207d7b63005edb6db6c05df671e40c7745d90022f9ca9e21d322f0a57ca960",
+    "capri.py": "890ed2a2fdb4aec44c927142ab33458631a4d0a053b989f48d255b918d9e7ad2",
+    "src\\capri_controller\\lightweight_count_evaluation.py": "e09357977609cad11170982c0487f11ba081e039b10b9773e04b550d1d297779",
+    "src\\capri_controller\\lightweight\\legacy_model.py": "2420d2356db66eecff5dbb03d91cfa0b1c6482c56f682f0e24286b41767f8d2a",
+    "src\\capri_controller\\lightweight\\primitives.py": "37564e5b5132660ed09c55767d8bba10fc2fa2b6b11f2b889323e3c63e1eb29b"
+  }
+}

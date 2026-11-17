@@ -1,0 +1,101 @@
+[2026/10/05 23:31:30] openrec INFO: ----------- Config -----------
+[2026/10/05 23:31:30] openrec INFO: Architecture : 
+[2026/10/05 23:31:30] openrec INFO:     Decoder : 
+[2026/10/05 23:31:30] openrec INFO:         decode_ar : True
+[2026/10/05 23:31:30] openrec INFO:         name : PARSeqDecoder
+[2026/10/05 23:31:30] openrec INFO:         only_attn : False
+[2026/10/05 23:31:30] openrec INFO:         refine_iters : 1
+[2026/10/05 23:31:30] openrec INFO:     Encoder : 
+[2026/10/05 23:31:30] openrec INFO:         depths : [6, 6, 6]
+[2026/10/05 23:31:30] openrec INFO:         dims : [128, 256, 384]
+[2026/10/05 23:31:30] openrec INFO:         last_stage : False
+[2026/10/05 23:31:30] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/10/05 23:31:30] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/10/05 23:31:30] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/10/05 23:31:30] openrec INFO:         num_heads : [4, 8, 12]
+[2026/10/05 23:31:30] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/10/05 23:31:30] openrec INFO:         use_pos_embed : False
+[2026/10/05 23:31:30] openrec INFO:     Transform : None
+[2026/10/05 23:31:30] openrec INFO:     algorithm : PARSeq
+[2026/10/05 23:31:30] openrec INFO:     model_type : rec
+[2026/10/05 23:31:30] openrec INFO: Curriculum : 
+[2026/10/05 23:31:30] openrec INFO:     augmentation : Exact Model 2 v2 operations/parameters; explicitly seeded Albumentations
+[2026/10/05 23:31:30] openrec INFO:     batch_size : 128
+[2026/10/05 23:31:30] openrec INFO:     epochs : 20
+[2026/10/05 23:31:30] openrec INFO:     initialization : from scratch, same architecture as DS1
+[2026/10/05 23:31:30] openrec INFO:     optimizer : DS1 AdamW/OneCycleLR settings retained; this is a curriculum adaptation, not an exact old-architecture reproduction
+[2026/10/05 23:31:30] openrec INFO:     sampling : with replacement, 95000 draws per epoch; drop final partial batch
+[2026/10/05 23:31:30] openrec INFO:     schedule : 
+[2026/10/05 23:31:30] openrec INFO:         1 : [1, 0, 0]
+[2026/10/05 23:31:30] openrec INFO:         2 : [0.5, 0.5, 0]
+[2026/10/05 23:31:30] openrec INFO:         3-20 : [0.15, 0.25, 0.6]
+[2026/10/05 23:31:30] openrec INFO:     seeds : [48, 123, 456]
+[2026/10/05 23:31:30] openrec INFO:     selection : Best synthetic validation whole-string accuracy per seed; retain final epoch20 as well
+[2026/10/05 23:31:30] openrec INFO: Eval : 
+[2026/10/05 23:31:30] openrec INFO:     dataset : 
+[2026/10/05 23:31:30] openrec INFO:         data_dir_list : ['C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\Darkbay_ds2_noFont-intel\\all_lmdb']
+[2026/10/05 23:31:30] openrec INFO:         name : CAPRISyntheticHoldout
+[2026/10/05 23:31:30] openrec INFO: Global : 
+[2026/10/05 23:31:30] openrec INFO:     cal_metric_during_train : False
+[2026/10/05 23:31:30] openrec INFO:     character_dict_path : C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\charset.txt
+[2026/10/05 23:31:30] openrec INFO:     checkpoints : None
+[2026/10/05 23:31:30] openrec INFO:     device : gpu
+[2026/10/05 23:31:30] openrec INFO:     distributed : False
+[2026/10/05 23:31:30] openrec INFO:     epoch_num : 1
+[2026/10/05 23:31:30] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/10/05 23:31:30] openrec INFO:     eval_epoch_step : 1
+[2026/10/05 23:31:30] openrec INFO:     grad_clip_val : 20
+[2026/10/05 23:31:30] openrec INFO:     infer_img : None
+[2026/10/05 23:31:30] openrec INFO:     log_smooth_window : 20
+[2026/10/05 23:31:30] openrec INFO:     max_text_length : 25
+[2026/10/05 23:31:30] openrec INFO:     output_dir : C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\smoke
+[2026/10/05 23:31:30] openrec INFO:     pretrained_model : None
+[2026/10/05 23:31:30] openrec INFO:     print_batch_step : 50
+[2026/10/05 23:31:30] openrec INFO:     save_epoch_step : [0, 1]
+[2026/10/05 23:31:30] openrec INFO:     save_res_path : C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\smoke\unused.txt
+[2026/10/05 23:31:30] openrec INFO:     seed : 48
+[2026/10/05 23:31:30] openrec INFO:     use_amp : True
+[2026/10/05 23:31:30] openrec INFO:     use_space_char : False
+[2026/10/05 23:31:30] openrec INFO:     use_tensorboard : False
+[2026/10/05 23:31:30] openrec INFO: LRScheduler : 
+[2026/10/05 23:31:30] openrec INFO:     cycle_momentum : False
+[2026/10/05 23:31:30] openrec INFO:     name : OneCycleLR
+[2026/10/05 23:31:30] openrec INFO:     warmup_epoch : 0.1
+[2026/10/05 23:31:30] openrec INFO: Loss : 
+[2026/10/05 23:31:30] openrec INFO:     name : PARSeqLoss
+[2026/10/05 23:31:30] openrec INFO: Metric : 
+[2026/10/05 23:31:30] openrec INFO:     is_filter : False
+[2026/10/05 23:31:30] openrec INFO:     is_lower : False
+[2026/10/05 23:31:30] openrec INFO:     main_indicator : acc
+[2026/10/05 23:31:30] openrec INFO:     name : RecMetric
+[2026/10/05 23:31:30] openrec INFO: Optimizer : 
+[2026/10/05 23:31:30] openrec INFO:     filter_bias_and_bn : True
+[2026/10/05 23:31:30] openrec INFO:     lr : 0.00035
+[2026/10/05 23:31:30] openrec INFO:     name : AdamW
+[2026/10/05 23:31:30] openrec INFO:     weight_decay : 0.05
+[2026/10/05 23:31:30] openrec INFO: PostProcess : 
+[2026/10/05 23:31:30] openrec INFO:     character_dict_path : C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\charset.txt
+[2026/10/05 23:31:30] openrec INFO:     name : ARLabelDecode
+[2026/10/05 23:31:30] openrec INFO:     use_space_char : False
+[2026/10/05 23:31:30] openrec INFO: Train : 
+[2026/10/05 23:31:30] openrec INFO:     dataset : 
+[2026/10/05 23:31:30] openrec INFO:         data_dir_list : ['C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\Darkbay_ds2_noFont-intel\\all_lmdb']
+[2026/10/05 23:31:30] openrec INFO:         name : CAPRICurriculum
+[2026/10/05 23:31:30] openrec INFO:     loader : 
+[2026/10/05 23:31:30] openrec INFO:         batch_size_per_card : 128
+[2026/10/05 23:31:30] openrec INFO: filename : smoke
+[2026/10/05 23:31:30] openrec INFO: ---------------------------------------------
+[2026/10/05 23:31:31] openrec INFO: train dataloader has 3 iters
+[2026/10/05 23:31:31] openrec INFO: valid dataloader has 1 iters
+[2026/10/05 23:31:31] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/10/05 23:31:31] openrec INFO: train from scratch
+[2026/10/05 23:31:31] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+[2026/10/05 23:31:34] openrec INFO: epoch: [1/1], global_step: 3, lr: 0.000106, loss: 2.754944, avg_reader_cost: 0.01271 s, avg_batch_cost: 0.05611 s, avg_samples: 7.68, ips: 136.87359 samples/s, eta: 0:00:00
+[2026/10/05 23:31:35] openrec INFO: cur metric, acc: 0.0, norm_edit_dis: 0.013221230938244677, num_samples: 128
+[2026/10/05 23:31:35] openrec INFO: save ckpt to C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\smoke\best.pth
+[2026/10/05 23:31:35] openrec INFO: best metric, acc: 0.0, norm_edit_dis: 0.013221230938244677, num_samples: 128, best_epoch: 1
+[2026/10/05 23:31:35] openrec INFO: save ckpt to C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\smoke\latest.pth
+[2026/10/05 23:31:35] openrec INFO: save ckpt to C:\Users\pranav\Documents\ChatGPT\thesis\runs\Darkbay_ds2_noFont-intel\smoke\epoch_1.pth
+[2026/10/05 23:31:35] openrec INFO: best metric, acc: 0.0, norm_edit_dis: 0.013221230938244677, num_samples: 128, best_epoch: 1

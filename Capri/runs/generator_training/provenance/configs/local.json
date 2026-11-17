@@ -1,0 +1,24 @@
+﻿{
+    "project":  "E:/pranav/Final sem/sourcefree_synth",
+    "renderer":  "E:/pranav/Final sem/captcha-effects",
+    "python":  "E:/pranav/Final sem/sourcefree_synth/experiments_xgb/.venv/Scripts/python.exe",
+    "default_run":  "capri_darkbay_workflow",
+    "decoder_scheme_inputs": {
+        "cryptbb": "E:/pranav/cryptbb_sourcefree/data/cryptbb_split/test",
+        "city": "E:/pranav/City (live)-20260503T045450Z-3-001/City (live)",
+        "city_scoring_splits": "E:/pranav/Final sem/CaptchaThesis/system5_clean_baseline/splits",
+        "simple": "controller_mvp_v3/simple_captcha_dataset"
+    },
+    "target_manifest":  "configs/targets/darkbay.json",
+    "decoder_run":  "runs/capri_decoder_500k_20261007",
+    "decoder_download_python":  "E:/pranav/CAPRI/.runtime/glm_ocr/Scripts/python.exe",
+    "decoder_dinov3_source":  "E:/pranav/CAPRI/controller_mvp_v9_vision/vendor/dinov3-main",
+    "decoder_dinov3_checkpoint":  null,
+    "decoder_backbone":  "dinov2_vits14_reg",
+    "decoder_dinov2_source":  "E:\\pranav\\CAPRI\\src\\capri_controller\\vendor\\dinov2-85a24602099d397264d5b30461ad7f3bfd726ca1",
+    "decoder_dinov2_checkpoint":  "E:\\pranav\\CAPRI\\runs\\capri_decoder_500k_20261007\\pretrained\\dinov2\\dinov2_vits14_reg4_pretrain.pth",
+    "decoder_storage":  {
+                            "logical_path":  "runs/capri_decoder_500k_20261007",
+                            "physical_path":  "E:\\pranav\\CAPRI\\runs\\capri_decoder_500k_20261007"
+                        }
+}

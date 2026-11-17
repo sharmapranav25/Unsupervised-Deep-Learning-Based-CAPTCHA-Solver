@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-14T22:05:42.659242+00:00",
+  "model": 1,
+  "dataset": "A",
+  "epoch": 12,
+  "checkpoint_sha256": "cfa50f5433666c73ff4953b729f9ff28c12d3aa556166507547f10702169ad24",
+  "manifest_sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd",
+  "images": 251,
+  "device": "cpu",
+  "precision": "FP32",
+  "threads": 2,
+  "batch_size": 16,
+  "preprocessing": "RGB PIL bicubic32x128 ToTensor Normalize0.5",
+  "decoding": "Saved free AR and1 refinement; no length forcing or text normalization",
+  "purpose": "User-requested diagnostic only; no training/curriculum/selection changes",
+  "labels": "Opened only after persisted prediction freeze",
+  "cpu_adapter": "Process-local memory.get_device() -> memory.device",
+  "decoder_source_sha256": "fbe9268799515a080dad7dbd68eaf4b321e614723c412bbf19d1309c15660dac",
+  "evaluator_sha256": "3e2d683393f3047f95453c4f762644f4a27f77ea2108fc2b6711533148eed8f0",
+  "source_predictions_sha256": "815c4cc59c5b96a4a1ecc713d3cc2052d61639a92658d41d8f9c20115b32c9a0",
+  "method": "Subset frozen551 predictions by exact RGB hash; no new inference"
+}

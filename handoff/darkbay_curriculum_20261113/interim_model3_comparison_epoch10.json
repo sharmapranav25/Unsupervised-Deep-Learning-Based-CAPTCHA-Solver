@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-11-13T16:57:07.352170+00:00",
+  "tested_epoch": 10,
+  "seed": 48,
+  "comparisons": {
+    "A": {
+      "model3": {
+        "model": 3,
+        "dataset": "A",
+        "epoch": 10,
+        "seed": 48,
+        "correct": 641,
+        "total": 900,
+        "accuracy_percent": 71.22222222222223,
+        "device": "cuda",
+        "diagnostic_only": true
+      },
+      "model1": {
+        "model": 1,
+        "dataset": "A",
+        "epoch": 10,
+        "seed": 48,
+        "correct": 628,
+        "total": 900,
+        "accuracy_percent": 69.77777777777777,
+        "device": "cuda",
+        "diagnostic_only": true
+      },
+      "difference_correct": 13,
+      "difference_percentage_points": 1.4444444444444444
+    },
+    "B": {
+      "model3": {
+        "model": 3,
+        "dataset": "B",
+        "epoch": 10,
+        "seed": 48,
+        "correct": 565,
+        "total": 900,
+        "accuracy_percent": 62.77777777777778,
+        "device": "cuda",
+        "diagnostic_only": true
+      },
+      "model1": {
+        "model": 1,
+        "dataset": "B",
+        "epoch": 10,
+        "seed": 48,
+        "correct": 594,
+        "total": 900,
+        "accuracy_percent": 66.0,
+        "device": "cuda",
+        "diagnostic_only": true
+      },
+      "difference_correct": -29,
+      "difference_percentage_points": -3.2222222222222223
+    }
+  },
+  "training_changed": false,
+  "checkpoint_selection_unchanged": "fixed final20"
+}

@@ -1,0 +1,64 @@
+{
+  "dataset": "darkbay",
+  "version": "v3split",
+  "inputs": [
+    86,
+    45,
+    21,
+    26
+  ],
+  "arms": [
+    "custom",
+    "dino",
+    "synthtiger",
+    "mixed"
+  ],
+  "engine": {
+    "custom": "capri",
+    "dino": "capri",
+    "synthtiger": "synthtiger",
+    "mixed": "capri"
+  },
+  "judge": {
+    "custom": "custom_objective",
+    "dino": "dino_objective",
+    "synthtiger": "custom_objective",
+    "mixed": "objective"
+  },
+  "owns": {
+    "custom": [
+      "weight_absolute",
+      "bold_absolute",
+      "text_palette",
+      "effect_palette",
+      "color_mode"
+    ],
+    "dino": [
+      "keep_only",
+      "effects",
+      "background",
+      "background_pool",
+      "size_absolute",
+      "width_absolute",
+      "spacing_absolute"
+    ],
+    "synthtiger": [
+      "font"
+    ]
+  },
+  "fixed_at_capri": [
+    "slant",
+    "rotation",
+    "jitter",
+    "size_jitter"
+  ],
+  "fit_seeds": 3,
+  "validation_seeds": 4,
+  "min_text_contrast": 40.0,
+  "split_evidence": "Capri/runs/controller_split_sensitivity_20261114",
+  "target_labels": false,
+  "reader_used": false,
+  "vlm": false,
+  "corpus": false,
+  "code_sha256": "af8ede7f50ba2116118e66d0d235d878f5d5107ed48e305ef5a85184730f5cbd"
+}

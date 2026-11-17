@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-12T20:49:48.8396062-08:00",
+  "ready_to_launch": false,
+  "ready": [
+    "Dataset A: 100000 images, audited",
+    "Dataset B: 100000 images, audited",
+    "Model 1-A and Model 1-B: completed epoch20 teachers",
+    "Historical static and adaptive curriculum implementations exist"
+  ],
+  "directions": {
+    "A": "Model 1-B ranks A for Model 2-A and initial Model 3-A",
+    "B": "Model 1-A ranks B for Model 2-B and initial Model 3-B"
+  },
+  "pending": [
+    "Compute and freeze opposite-dataset rankings for the new A/B corpora",
+    "Adapt historical curriculum runners to the new A/B paths, single reader per direction and 100000-image training budget",
+    "Freeze validation/checkpoint-selection and static/adaptive scheduling rules",
+    "Run sampler and resume smoke checks before production"
+  ],
+  "historical_code_limit": "Existing ds2/ds3 runners target old corpora, three readers and 95000/5000 split; not ready to run unchanged",
+  "recommendation": "Retain all 100000 training images and fixed final epoch20 selection to match Model1; confirm protocol before implementation. Real labels never guide curricula.",
+  "training_started": false,
+  "stop_marker_preserved": true
+}

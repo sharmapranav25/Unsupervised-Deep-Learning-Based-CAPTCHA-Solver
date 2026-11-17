@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-16T16:01:08.688685+00:00",
+  "reason": "cuDNN TF32 caused one mature B probe string mismatch across inference batch sizes; IEEE FP32 removed mismatch without relaxing gate",
+  "overlay_path": "Capri/src/capri_controller/training/darkbay_overnight_v1/execution_fp32.py",
+  "overlay_sha256": "835e4f20e2729cfe4c307ebc0ca1b5f64c0de1b08b4eac71e70c02aa852ad3d5",
+  "frozen_manifest_sha256": "fd88041bf68594bb69c1a3319b876ade27cc9846ea4c02f97ef65725e5a11bb6",
+  "scope": "Only engine.predict (synthetic Model3 assessment/readiness) disables cuDNN and matmul TF32, restoring both flags in finally; original readiness assertions, train step, architecture, optimizer, preprocessing, batch sizes, curriculum, seed and selection unchanged",
+  "diagnostic_paths": [
+    "E:\\pranav\\CAPRI\\runs\\darkbay_v3_overnight_20261115\\parity_diagnosis\\summary.json",
+    "E:\\pranav\\CAPRI\\runs\\darkbay_v3_overnight_20261115\\parity_diagnosis_ieee\\summary.json"
+  ],
+  "real_labels_used": false
+}

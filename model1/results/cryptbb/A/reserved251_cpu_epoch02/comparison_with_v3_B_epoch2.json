@@ -1,0 +1,35 @@
+{
+  "previous_A": {
+    "model": 1,
+    "dataset": "A",
+    "epoch": 2,
+    "correct": 3,
+    "total": 251,
+    "accuracy_percent": 1.1952191235059761,
+    "cer_percent": 47.93322734499205,
+    "edit_based_character_accuracy_percent": 52.066772655007945,
+    "character_errors": 603,
+    "reference_characters": 1258,
+    "checkpoint_sha256": "84e227e37acb76fe3e4c8a1bb1cf63c57597aed0368920ff14179c724829317c",
+    "device": "cpu",
+    "no_new_inference": true,
+    "diagnostic_only": true,
+    "training_changed": false
+  },
+  "current_B": {
+    "model": 1,
+    "dataset": "B",
+    "epoch": 2,
+    "correct": 0,
+    "total": 251,
+    "accuracy_percent": 0.0,
+    "cer_percent": 90.77901430842607,
+    "checkpoint_sha256": "91387990dc0196d50aff58d72390d1d8022b3c2eb5d67c7091ef9d3903dba044",
+    "device": "cpu",
+    "seconds": 22.719000000040978,
+    "diagnostic_only": true,
+    "training_changed": false
+  },
+  "same251_images": true,
+  "training_changed": false
+}

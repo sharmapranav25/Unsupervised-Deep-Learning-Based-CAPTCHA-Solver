@@ -1,0 +1,28 @@
+{
+  "requested_at": "2026-11-14T02:28:29.385444+00:00",
+  "user_instruction": "Do not start B after this; let A finish",
+  "action": "Terminate coordinator process only, not its reader child; no STOP marker because that would stop A at the next epoch",
+  "coordinator_pid": 123152,
+  "coordinator_created": 1794617929.0936408,
+  "coordinator_command": [
+    "C:\\ProgramData\\Anaconda3\\python.exe",
+    "-B",
+    "-u",
+    "Capri/capri.py",
+    "train-cryptbb-model1",
+    "coordinate"
+  ],
+  "reader_pid": 69180,
+  "reader_created": 1794617929.6087453,
+  "reader_command": [
+    "C:\\ProgramData\\Anaconda3\\python.exe",
+    "-B",
+    "-u",
+    "E:\\pranav\\Thesis-Pranav-Final\\Capri\\capri.py",
+    "train-cryptbb-model1",
+    "worker",
+    "--dataset",
+    "A"
+  ],
+  "B_started": false
+}

@@ -1,0 +1,58 @@
+<?php
+
+namespace Captcha\Test\Fixture;
+
+use Cake\TestSuite\Fixture\TestFixture;
+
+/**
+ * CaptchasFixture
+ */
+class CaptchasFixture extends TestFixture {
+
+	/**
+	 * Fields
+	 *
+	 * @var array
+	 */
+	// phpcs:disable
+	public array $fields = [
+		'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+		'uuid' => ['type' => 'string', 'length' => 36, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+		'session_id' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+		'ip' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+		'image' => ['type' => 'binary', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+		'result' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+		'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+		'used' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+		'solved' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+		'_constraints' => [
+			'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+			'uuid' => ['type' => 'unique', 'columns' => ['uuid'], 'length' => []],
+		],
+		'_indexes' => [
+			'idx_solved_created' => ['type' => 'index', 'columns' => ['solved', 'created'], 'length' => []],
+		],
+		'_options' => [
+			'engine' => 'InnoDB',
+			'collation' => 'utf8_general_ci'
+		],
+	];
+
+	/**
+	 * Records
+	 *
+	 * @var array
+	 */
+	public array $records = [
+		[
+			'uuid' => '11111111-1111-4111-8111-111111111111',
+			'session_id' => 'Lorem ipsum dolor sit amet',
+			'ip' => 'Lorem ipsum dolor sit amet',
+			'image' => 'Lorem ipsum dolor sit amet',
+			'result' => 'Lorem ipsum dolor sit amet',
+			'created' => '2016-06-09 08:41:21',
+			'used' => '2016-06-09 08:41:21'
+		],
+	];
+
+}

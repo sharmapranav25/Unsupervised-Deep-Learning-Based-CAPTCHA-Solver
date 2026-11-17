@@ -1,0 +1,95 @@
+{
+  "dataset": "darkbay",
+  "source_run": "E:\\pranav\\Thesis-Pranav-Final\\Capri\\controllers\\darkbay",
+  "preview_inputs": [
+    0
+  ],
+  "arms": [
+    "custom",
+    "dino",
+    "mixed",
+    "synthtiger"
+  ],
+  "reused_unchanged": [
+    "reference pixels",
+    "CAPRI refined recipes",
+    "calibration features",
+    "objective",
+    "model-derived length"
+  ],
+  "fit_seeds": 3,
+  "validation_seeds": 4,
+  "numeric_search": [
+    [
+      "size_absolute",
+      0.08,
+      0.3,
+      0.95,
+      "size"
+    ],
+    [
+      "width_absolute",
+      0.12,
+      0.4,
+      1.9,
+      "x_scale"
+    ],
+    [
+      "spacing_absolute",
+      0.08,
+      -0.35,
+      0.6,
+      "spacing"
+    ],
+    [
+      "rotation_absolute",
+      5.0,
+      0.0,
+      40.0,
+      "rotation"
+    ],
+    [
+      "jitter_absolute",
+      0.04,
+      0.0,
+      0.3,
+      "jitter"
+    ],
+    [
+      "size_jitter_absolute",
+      0.05,
+      0.0,
+      0.3,
+      "size_jitter"
+    ],
+    [
+      "slant_absolute",
+      0.08,
+      -0.3,
+      0.5,
+      "slant"
+    ]
+  ],
+  "background_fx": [
+    "gradient",
+    "texture",
+    "grid",
+    "dots",
+    "lines",
+    "curves",
+    "blobs",
+    "circles",
+    "pattern"
+  ],
+  "surface_fx": [
+    "grain",
+    "blur",
+    "noise_over",
+    "jpeg"
+  ],
+  "target_labels": false,
+  "reader_used": false,
+  "vlm": false,
+  "corpus": false,
+  "code_sha256": "760b974083b337a43f260b94154a429507e6b0e0cf220b54dae8616aa1477aaa"
+}

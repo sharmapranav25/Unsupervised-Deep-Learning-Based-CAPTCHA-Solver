@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Blueways\BwCaptcha\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  Blueways\BwCaptcha\Middleware\Captcha:
+    public: true
+
+  Blueways\BwCaptcha\EventListener\ModifyRegistrationValidatorResultEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'bw-captcha/sf-event-mgt-registration'

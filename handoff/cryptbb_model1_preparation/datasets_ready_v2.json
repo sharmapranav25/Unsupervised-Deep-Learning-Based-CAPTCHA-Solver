@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "images_each": 100000,
+  "total_unique_pixels": 200000,
+  "cross_dataset_pixel_overlap": 0,
+  "configs": [
+    {
+      "dataset": "A",
+      "path": "model1\\configs\\cryptbb\\A\\prepared_fixed32x128.yml",
+      "sha256": "514f3b089459e5bf377536855b6c41c8090b56f34367cafec685f403538d3e13",
+      "source_config": "model1\\configs\\cryptbb\\A\\prepared.yml",
+      "source_sha256": "3565d398e46052cb0e38a1fa44496e9c2c47f278e811f91b78399ae54fdb83d6",
+      "preflight": "model1/runs/cryptbb/A/preflight_fixed32x128/receipt.json"
+    },
+    {
+      "dataset": "B",
+      "path": "model1\\configs\\cryptbb\\B\\prepared_fixed32x128.yml",
+      "sha256": "27d7f733a65b3c1ed494ec95de354e7787e16107e6db746f4c366356c4b77c5e",
+      "source_config": "model1\\configs\\cryptbb\\B\\prepared.yml",
+      "source_sha256": "16286a7220e7870868a99f08bf6d8a931d4e4305a41e672ecef688a6b54291c3",
+      "preflight": "model1/runs/cryptbb/B/preflight_fixed32x128/receipt.json"
+    }
+  ],
+  "training_started": false,
+  "change": "Only add loader min_ratio=4 alongside max_ratio=4 to guarantee original intended32x128 input. Pools unchanged.",
+  "supersedes": "datasets_ready.json for config paths; original retained"
+}

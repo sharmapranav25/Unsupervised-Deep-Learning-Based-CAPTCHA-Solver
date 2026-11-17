@@ -1,0 +1,43 @@
+{
+  "completed_at": "2026-11-14T18:57:46.948339+00:00",
+  "datasets": {
+    "A": {
+      "images": 100000,
+      "unique_pixels": 100000,
+      "unique_seeds": 100000,
+      "controllers": {
+        "custom": 25000,
+        "dino": 25000,
+        "mixed": 25000,
+        "synthtiger": 25000
+      },
+      "all_images_decoded": true,
+      "old_AB_and_real_pixel_overlap": 0,
+      "new_A_overlap": null,
+      "lmdb_sha256": "837cdf8826b539812872dc51bd7849e93f5142f8e800d945c13119349f1d53c2",
+      "provenance_sha256": "e0534c86b7fb8eade15b77629cac439479a99e5b0ae7dc7105019b773828fc91",
+      "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+    },
+    "B": {
+      "images": 100000,
+      "unique_pixels": 100000,
+      "unique_seeds": 100000,
+      "controllers": {
+        "custom": 25000,
+        "dino": 25000,
+        "mixed": 25000,
+        "synthtiger": 25000
+      },
+      "all_images_decoded": true,
+      "old_AB_and_real_pixel_overlap": 0,
+      "new_A_overlap": 0,
+      "lmdb_sha256": "5824df6983de37b02d7659bf286fbbdd1f3316a8005975aec064fe8042d9f13a",
+      "provenance_sha256": "d15ba7d415b2bc712d40e1631aa0ce0c29f6643b09444c79c5c4dc7ee36399f5",
+      "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+    }
+  },
+  "training_started": false,
+  "training_authorized": true,
+  "reader_preflight_pending": true,
+  "admission_protocol_sha256": "09ed2a1c4cb50db93fe54b3656098ec5a01f57671999c4412bea1eeddbef4d40"
+}

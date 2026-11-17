@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-14T20:34:45.851111+00:00",
+  "model": "GLM-OCR",
+  "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+  "images": 251,
+  "manifest_sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd",
+  "source_manifest_sha256": "fa240b7d4a35e1da11bea470f81c40ff03a93121e9547912cdfa50871e5d97f6",
+  "source_prediction_sha256": "3052c10a4ff05a2ee12c64cd9a9da8356198d4d3f5fbabfba2144cc63085958d",
+  "method": "Subset previously frozen551 predictions by exact RGB pixel hash; no new inference",
+  "scoring": "Case-sensitive exact match after original whitespace trim; also report untrimmed raw exact",
+  "training_changed": false,
+  "preprocessing": "Official AutoProcessor, original RGB pixels, no custom crop or enlargement"
+}

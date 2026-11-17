@@ -1,0 +1,114 @@
+{
+  "verified_at": "2026-11-16T06:16:45.202649+00:00",
+  "results": [
+    {
+      "epoch": 1,
+      "model3": {
+        "model": 3,
+        "dataset": "B",
+        "epoch": 1,
+        "correct": 0,
+        "total": 251,
+        "accuracy_percent": 0.0,
+        "cer_percent": 97.61526232114467,
+        "checkpoint_sha256": "2d97b4330b2683812c6f5423cb971fd806cefaef304d561fabf4ca0abfef35a0",
+        "device": "cpu",
+        "seconds": 24.094000000040978,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model2": {
+        "model": 2,
+        "dataset": "B",
+        "epoch": 1,
+        "correct": 0,
+        "total": 251,
+        "accuracy_percent": 0.0,
+        "cer_percent": 97.61526232114467,
+        "checkpoint_sha256": "45d1315724a9ffd2c684863c9095a60b3bff892f2a4620c101dfa76962151259",
+        "device": "cpu",
+        "seconds": 23.42200000025332,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model1": {
+        "model": 1,
+        "dataset": "B",
+        "epoch": 1,
+        "correct": 0,
+        "total": 251,
+        "accuracy_percent": 0.0,
+        "cer_percent": 98.48966613672496,
+        "checkpoint_sha256": "58bbf327d894d6adf18155cd807399ff22c71411f82b34bc624646646e390785",
+        "device": "cpu",
+        "seconds": 22.67200000025332,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "difference_correct_vs_static": 0,
+      "difference_pp_vs_static": 0.0
+    },
+    {
+      "epoch": 2,
+      "model3": {
+        "model": 3,
+        "dataset": "B",
+        "epoch": 2,
+        "correct": 31,
+        "total": 251,
+        "accuracy_percent": 12.350597609561753,
+        "cer_percent": 34.41971383147854,
+        "checkpoint_sha256": "2092e81c8a0fede5050d26daf264b9df90a6e2981916305d9f9263e290197541",
+        "device": "cpu",
+        "seconds": 24.015999999828637,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model2": {
+        "model": 2,
+        "dataset": "B",
+        "epoch": 2,
+        "correct": 31,
+        "total": 251,
+        "accuracy_percent": 12.350597609561753,
+        "cer_percent": 34.41971383147854,
+        "checkpoint_sha256": "027eb4b191a0c2e815c6a16cc85bf2a5756e02a85deb1f918c303f0c89ec31e4",
+        "device": "cpu",
+        "seconds": 25.32799999974668,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "model1": {
+        "model": 1,
+        "dataset": "B",
+        "epoch": 2,
+        "correct": 0,
+        "total": 251,
+        "accuracy_percent": 0.0,
+        "cer_percent": 90.77901430842607,
+        "checkpoint_sha256": "91387990dc0196d50aff58d72390d1d8022b3c2eb5d67c7091ef9d3903dba044",
+        "device": "cpu",
+        "seconds": 22.719000000040978,
+        "diagnostic_only": true,
+        "training_changed": false
+      },
+      "difference_correct_vs_static": 0,
+      "difference_pp_vs_static": 0.0
+    }
+  ],
+  "training_status": {
+    "state": "assessing",
+    "epoch": 3,
+    "completed_epoch": 2,
+    "trained_epoch": 3,
+    "global_step": 2346,
+    "processed": 57600,
+    "total": 100000,
+    "seconds": 97.59400000004098,
+    "updated_at": "2026-11-16T06:16:42.867235+00:00"
+  },
+  "training_sources_unchanged": true,
+  "protocol_sha256": "8fb1d3c6638c69cccc71d4f527bd24ebbdb4d3b75c90d80b0d0489b5d1e6ae96",
+  "manifest_sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd",
+  "purpose": "Finite requested checkpoint diagnostic; no training or selection change"
+}

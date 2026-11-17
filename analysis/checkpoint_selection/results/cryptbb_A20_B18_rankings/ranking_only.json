@@ -1,0 +1,2274 @@
+{
+  "purpose": "Predict epoch ranking only; no absolute accuracy or domain-gap estimation",
+  "selection_freeze_sha256": "4b4707fe918071b5fe665c802436f6b4c957eceeedf240a0d8e9f5f1b3935d4c",
+  "rankings": [
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        20,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 15,
+      "top3_epochs": [
+        15,
+        14,
+        20
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        15,
+        20
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        13,
+        20
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "exact",
+      "k": "auto",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        13,
+        20
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": false
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_anytie",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        14,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        20,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_anytie",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        18,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_fractional",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        14,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        20,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        13,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_fractional",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        18,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        12,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        20,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        20,
+        5
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        15,
+        20
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        6,
+        5
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        14,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "char",
+      "k": "auto",
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        14,
+        13
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": false
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_anytie",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        14,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        13,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_anytie",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        12,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_fractional",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19,
+      "top3_epochs": [
+        19,
+        20,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_fractional",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        12,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "edit",
+      "k": "all",
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "edit",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        12,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        19,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        20,
+        19
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 20,
+      "top3_epochs": [
+        20,
+        15,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        20,
+        5
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        15,
+        20
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        6,
+        5
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        14,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "edit",
+      "k": "auto",
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        14,
+        13
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": false
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14,
+      "top3_epochs": [
+        14,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        13,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        14,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        14,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        18,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        12,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        7,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        12,
+        11
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "exact",
+      "k": "auto",
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        12,
+        11
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": false
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_anytie",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        14,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        13,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_anytie",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 16,
+      "top3_epochs": [
+        16,
+        18,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_fractional",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_fractional",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 16,
+      "top3_epochs": [
+        16,
+        18,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 7,
+      "top3_epochs": [
+        7,
+        17,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        3,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        13,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        5,
+        3
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        18,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        4,
+        3
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        13,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        6,
+        4
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        11,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "char",
+      "k": "auto",
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        11,
+        14
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": true
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_anytie",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        15,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        11
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_anytie",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_fractional",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_fractional",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "edit",
+      "k": "all",
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "edit",
+      "k": "cross",
+      "selected_epoch": 7,
+      "top3_epochs": [
+        7,
+        17,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 17,
+      "top3_epochs": [
+        17,
+        18,
+        16
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        13
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        17,
+        15
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        3,
+        17
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 18,
+      "top3_epochs": [
+        18,
+        13,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 4,
+      "top3_epochs": [
+        4,
+        5,
+        3
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 13,
+      "top3_epochs": [
+        13,
+        18,
+        12
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        4,
+        3
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        13,
+        18
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 5,
+      "top3_epochs": [
+        5,
+        6,
+        4
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        11,
+        14
+      ],
+      "resolved_k": null,
+      "mask_criterion_passed": null
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "edit",
+      "k": "auto",
+      "selected_epoch": 12,
+      "top3_epochs": [
+        12,
+        11,
+        14
+      ],
+      "resolved_k": 5,
+      "mask_criterion_passed": true
+    }
+  ]
+}

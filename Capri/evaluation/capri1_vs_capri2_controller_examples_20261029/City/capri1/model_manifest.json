@@ -1,0 +1,34 @@
+{
+  "version": "capri1",
+  "description_checkpoint": "E:\\pranav\\CAPRI\\models\\active\\hybrid\\hybrid.pt",
+  "description_sha256": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+  "controller_models": {
+    "custom_encoder": {
+      "path": "models/active/custom_encoder/custom_encoder.pt",
+      "source": "E:\\pranav\\CAPRI\\learned_controller_20261004\\training\\encoder.pt",
+      "sha256": "0dfac96c3b903cab88bddcfe28dde69550fe53d7d43571a26eb2cd5bd7e3ba38",
+      "bytes": 4231794,
+      "status": "active",
+      "role": "Frozen custom appearance encoder; not an adjustment policy."
+    },
+    "text_mask": {
+      "path": "models/active/text_mask/text_mask.pt",
+      "source": "E:\\pranav\\CAPRI\\controller_mvp_v3\\mask_training\\best.pt",
+      "sha256": "8d7747a31215371a3d0721536bb14e46ffb07cdd00798effeaf732f57785f33c",
+      "bytes": 1563758,
+      "status": "active",
+      "role": "Synthetic-trained text-region mask estimator."
+    },
+    "dino": {
+      "path": "models/active/dino/dino.pth",
+      "source": "C:\\Users\\pranav\\.cache\\torch\\hub\\checkpoints\\dino_deitsmall8_pretrain.pth",
+      "sha256": "55c8b267f479b614ec20858947ce361ba804846c193e20be74263a096bb6d75e",
+      "bytes": 86728949,
+      "status": "active",
+      "role": "Original DINO ViT-S/8, used by controller iteration v2. Not DINOv2 or DINOv3 pretrained weights."
+    }
+  },
+  "preprocessing": "Shared RGB96,bilinear,widthcap480,edgepad; FP32",
+  "count": "CAPRI internal length",
+  "font": "Original CAPRI font heads"
+}

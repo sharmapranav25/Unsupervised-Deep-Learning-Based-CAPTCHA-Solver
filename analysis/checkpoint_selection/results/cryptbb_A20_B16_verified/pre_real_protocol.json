@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-11-14T23:18:36.699285+00:00",
+  "config": {
+    "seed": 4817,
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "rank2_relative_mse_improvement": 0.35,
+    "rank2_absolute_rmse_improvement": 0.003,
+    "rank2_starts": 4,
+    "bootstrap_samples": 10000
+  },
+  "code_hashes": {
+    "agreement.py": "6822b4d8c7c7f6e998f0eb77895f892620d36ece3747592b16a924f02a47fe3a",
+    "baselines.py": "9d003db9dae1d077b0edaaf1bbf12d407f77e4fdaaafcf42df354fbb020dc4d3",
+    "estimator.py": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+    "evaluate.py": "7811cb85bd40222b63dff9801ad2bf7c3481ff57867e4881c1ad587c1ccfc95d",
+    "loader.py": "bede6b1c2eceacf5d40618c3d3135e87d42843300e5676b660b7934864498b70",
+    "plots.py": "f8a88afa8faf7db75520207ee6a89ffde440b8a52768f432759063e3b7fd73bf",
+    "run.py": "13472e9781f40ec3c947bbb62eaa1209470c9ffe9d2a58a202706e3e7186bcd7",
+    "simulate.py": "1b140ce1736e79b8106921e0caedf78b224e32f826a2772c26f5f9bc13dba90a",
+    "__init__.py": "d23b58966b7570a3872afc0d6cf1832e16451361b422979116d667feefa68fdf"
+  },
+  "simulation_gate_sha256": "5c918b4f3500b7edd80ec6d60bf3f84f247b2316cf93d6e5aed580647920a9f1",
+  "mode_ties": [
+    "any",
+    "fractional"
+  ],
+  "mode_length_rule": "Per-image maximum observed predicted length; absent positions vote None, not filled from labels.",
+  "rank1_interpretation": "Exact kernel has accuracy interpretation only under diverse independent errors. Char/edit estimates are similarity factors; their accuracy MAE is a model-mismatch diagnostic.",
+  "cross_run": "Historical Model1-A versus v3 Model1-B; not matched-generator independent seeds.",
+  "calibration_bins": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "b13_near_tolerance": 0.03,
+  "optional_collision_term": "Not fitted; c and accuracy are additionally non-identifiable without anchors.",
+  "automatic_k": "Smallest passing k; if none pass, report k5 fallback explicitly, not a successful band detection.",
+  "rank2_flag": "In-sample additional structure, not proof of wrongness; components not identified as truth/trap.",
+  "selection_tie": "earliest epoch",
+  "bootstrap_samples": 10000
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "syntax_modules": 3,
+  "loader_lock_events": [
+    "load",
+    "acquire",
+    "step",
+    "release",
+    "load",
+    "acquire",
+    "step",
+    "release"
+  ],
+  "all_four_engines_exported": true,
+  "decoded_samples": 12,
+  "shards": [
+    {
+      "entry_id": "custom_028",
+      "controller": "custom",
+      "engine": "capri",
+      "count": 3,
+      "entries_sha256": "e79cc92a45095a0469a21880b3354e2d40aff5683a01c55910845bd8e09b2bc6",
+      "seed_base": 30000000000,
+      "zip_sha256": "f6c9638fbe77c42120fe08d59b546b42ac9de8146019eaf06582acc3be5f5ee8",
+      "rejections": 0,
+      "seconds": 0.3282458782196045
+    },
+    {
+      "entry_id": "dino_028",
+      "controller": "dino",
+      "engine": "capri",
+      "count": 3,
+      "entries_sha256": "e79cc92a45095a0469a21880b3354e2d40aff5683a01c55910845bd8e09b2bc6",
+      "seed_base": 30000000000,
+      "zip_sha256": "01a5f405859540a558f0f04005439198f7d131e8f62cf3554cdf593ea594b292",
+      "rejections": 0,
+      "seconds": 0.23650836944580078
+    },
+    {
+      "entry_id": "mixed_028",
+      "controller": "mixed",
+      "engine": "capri",
+      "count": 3,
+      "entries_sha256": "e79cc92a45095a0469a21880b3354e2d40aff5683a01c55910845bd8e09b2bc6",
+      "seed_base": 30000000000,
+      "zip_sha256": "26a7e51e030930042d6a37c40fbbfd8ca49775ff513d490597768d60cac5b212",
+      "rejections": 0,
+      "seconds": 0.28661036491394043
+    },
+    {
+      "entry_id": "synthtiger_028",
+      "controller": "synthtiger",
+      "engine": "synthtiger",
+      "count": 3,
+      "entries_sha256": "e79cc92a45095a0469a21880b3354e2d40aff5683a01c55910845bd8e09b2bc6",
+      "seed_base": 30000000000,
+      "zip_sha256": "6c5d26e3c2a47d7dfc7128bd6a7930695f412b4b0a2ff87484da3cca4221edf2",
+      "rejections": 0,
+      "seconds": 1.9687256813049316
+    }
+  ],
+  "scope": "Adapter checks using preview recipes; does not replace actual full-corpus or paired GPU preflight"
+}

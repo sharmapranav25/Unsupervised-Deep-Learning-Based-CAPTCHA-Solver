@@ -1,0 +1,139 @@
+{
+  "family": "cryptbb_v3_feature_priority_B_v1_20261115",
+  "A_sources_unchanged": true,
+  "A_completed_checkpoint_verified": true,
+  "processes": [
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1791504764.2179885,
+      "pid": 17596
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1792346633.25365,
+      "pid": 39452
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1792309207.7704415,
+      "pid": 42684
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1792309207.6694899,
+      "pid": 58308
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1791950537.9755096,
+      "pid": 65432
+    },
+    {
+      "cmdline": [
+        "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+        "-B",
+        "E:/pranav/CAPRI/runs/model3_b_feature_preparation_20261115/install.py"
+      ],
+      "name": "python.exe",
+      "create_time": 1794808217.6448057,
+      "pid": 74816
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1792065664.3150673,
+      "pid": 80964
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1792347378.0602963,
+      "pid": 95532
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1793172482.8026483,
+      "pid": 111508
+    },
+    {
+      "cmdline": null,
+      "name": "python.exe",
+      "create_time": 1793648801.8453667,
+      "pid": 122772
+    },
+    {
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "E:/pranav/CAPRI/runs/model3_b_feature_preparation_20261115/install.py"
+      ],
+      "name": "python.exe",
+      "create_time": 1794808217.6969247,
+      "pid": 155700
+    }
+  ],
+  "replacements": [
+    [
+      "Model3-A",
+      "Model3-B"
+    ],
+    [
+      "cryptbb_feature_v1_metadata as META",
+      "cryptbb_feature_b_v1_metadata as META"
+    ],
+    [
+      "FAMILY='cryptbb_v3_feature_priority_v1_20261115'",
+      "FAMILY='cryptbb_v3_feature_priority_B_v1_20261115'"
+    ],
+    [
+      "/FAMILY/'A'",
+      "/FAMILY/'B'"
+    ],
+    [
+      "model3/src/feature_priority_v1/capri.py",
+      "model3/src/feature_priority_b_v1/capri.py"
+    ],
+    [
+      "cryptbb_v3_epoch20_static_A_20261115",
+      "cryptbb_v3_epoch20_static_B_20261115"
+    ],
+    [
+      "model1/configs/cryptbb_v3/A/prepared.yml",
+      "model1/configs/cryptbb_v3/B/prepared.yml"
+    ],
+    [
+      "datasets/cryptbb_v3/A/train_lmdb",
+      "datasets/cryptbb_v3/B/train_lmdb"
+    ],
+    [
+      "draws/A_epochs01_20.npy",
+      "draws/B_epochs01_20.npy"
+    ],
+    [
+      "model1/runs/cryptbb_v3/B/epoch_20.pth",
+      "model1/runs/cryptbb_v3/A/epoch_20.pth"
+    ],
+    [
+      "['datasets']['A']",
+      "['datasets']['B']"
+    ],
+    [
+      "worker_A",
+      "worker_B"
+    ]
+  ],
+  "files": {
+    "Capri\\src\\capri_controller\\training\\cryptbb_feature_b_v1.py": "d3045f98d65a43077623404853f3de5f4a62de631c1473afc018750194935662",
+    "Capri\\src\\capri_controller\\training\\cryptbb_feature_b_v1_metadata.py": "1d06fd887e2ddd9eb4837d4a7d8cb04babfb91e9463cfbcfde0042c637b8dad6",
+    "model3\\src\\feature_priority_b_v1\\capri.py": "1c72859a61e2f17e1e415671518789b99d24394889b6b8561ba7ae9a6a902941",
+    "handoff\\cryptbb_v3_feature_priority_B_v1_20261115\\verify_policy.py": "1fdee51c90ae2dcb0563792308fb76a994ca71491166157f100120af982f38ab"
+  },
+  "sampler_sha256": "fe96d1da0bbed618725b31c77b3dd819f0489f0ea744a2e177e1c71122122527",
+  "authorization": "User requested prepare, verify and start Model3-B from feature-priority handoff"
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-14T05:02:08.441775+00:00",
+  "user_request": "Generate CryptBB datasets A and B with controller v2, then start Model1-A and Model1-B in parallel",
+  "mode": "free",
+  "images_each": 100000,
+  "arms": [
+    "custom",
+    "dino",
+    "mixed",
+    "synthtiger"
+  ],
+  "old_runs_preserved": true,
+  "old_B_remains_cancelled": true,
+  "new_B_authorized": true,
+  "parallel_execution": "Two concurrent readers, full GPU batches arbitrated by shared lock; unchanged batch128, seed48,20epochs",
+  "rejection": "Unvalidated controller entries block production until repaired; per-image completeness/usability/contrast and overlap checks enforced"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical": "Capri/src/capri_controller/training/ab_curriculum.py",
+  "baseline": "model1/src/OpenOCR",
+  "historical_sampler": "Capri/src/capri_controller/training/ds3_data.py",
+  "datasets": "datasets/darkbay/manifests/datasets.json",
+  "audit": "datasets/darkbay/manifests/audit.json",
+  "frozen_sources": "protocol.json and source/",
+  "real_pixels": "evaluation_data/darkbay/split_manifests/image_manifest.json",
+  "outputs": {
+    "model2": "model2/runs/darkbay",
+    "model3": "model3/runs/darkbay",
+    "rankings": "model2/rankings/darkbay"
+  },
+  "authorization": "User: start the training"
+}

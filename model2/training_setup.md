@@ -1,0 +1,9 @@
+# model2: authorized A/B curriculum
+
+Current protocol and source freeze: handoff/darkbay_curriculum_20261113/protocol.json. Current state: that folder's status.json, readiness.json and model2/runs/darkbay/A,B/status.json. User authorized training. The new adapter is model2/src/train_darkbay.py; coordinated launch uses Capri/capri.py darkbay-ab-curriculum coordinate. The100k pools and actual100096-draw/782-step epoch budget match Model1, with batch128 and fixed final20epoch selection. No holdout or additional augmentation is introduced. New configs are indexed under configs/darkbay/A,B. Under the current root AGENTS.md run-output rule, full resume and epoch checkpoints are stored in runs/darkbay/A,B/checkpoints with logs/metrics/plots beside them. Historical models/ packages remain preserved. The migration-stage planning text below is superseded.
+
+Reuse datasets/darkbay/A and B. Exactly one20epoch run per direction is planned; no training has started. Model1-B supplies the initial A ranking; Model1-A supplies B ranking. The two100k corpora are already complete. Reuse the original Model1 architecture, initialization, optimizer, preprocessing and optimization budget unless a protocol explicitly records a change.
+
+The older implementation and results exist but assume95k/5k split, old data paths and repeated runs. Do not run it unchanged. Finalize the new sampling and selection protocol and create verified adapters before launch. Recommended checkpoint rule: fixed final epoch20 on100k optimization images, matching Model1. Synthetic validation design remains unresolved if needed for any additional policy; real labels must never fill that role.
+
+Canonical shared code is under Capri/src/capri_controller/training. Historical evidence under results/historical is not a completed new A/B experiment. New checkpoints belong in models/parseq/darkbay/A,B and new logs/configs in runs/.

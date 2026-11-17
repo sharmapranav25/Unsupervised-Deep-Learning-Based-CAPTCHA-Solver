@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-11-15T13:19:17.822066+00:00",
+  "model": 2,
+  "dataset": "A",
+  "provisional": false,
+  "selector": "masked_rank1_v1_exact_auto",
+  "estimator_sha256": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+  "estimator_config": {
+    "seed": 4817,
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "rank2_relative_mse_improvement": 0.35,
+    "rank2_absolute_rmse_improvement": 0.003,
+    "rank2_starts": 4,
+    "bootstrap_samples": 10000
+  },
+  "candidate_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "selected_epoch": 14,
+  "top3": [
+    14,
+    13,
+    12
+  ],
+  "scores": [
+    0.0,
+    0.24577273408021474,
+    0.2304582244054743,
+    0.31008966802756444,
+    0.3231208725967453,
+    0.37099766714437005,
+    0.40871904655141644,
+    0.4161650501560676,
+    0.5042687246621743,
+    0.5566761264583657,
+    0.5568874251137285,
+    0.6588514067505904,
+    0.6807038734236155,
+    0.7120794763038554,
+    0.6561726105602966,
+    0.6252270512269158,
+    0.6404892243800311,
+    0.631031869945218,
+    0.6543024853678944,
+    0.6556929290283524
+  ],
+  "resolved_k": 5,
+  "fallback_used": true,
+  "mask_diagnostics": [
+    {
+      "k": 0,
+      "next_distance_residual": 0.07859173809963815,
+      "far_residual": 0.041712234513845904,
+      "tolerance": 0.010428058628461476,
+      "passes": false
+    },
+    {
+      "k": 1,
+      "next_distance_residual": 0.06841409508295654,
+      "far_residual": 0.033793005844168514,
+      "tolerance": 0.008448251461042128,
+      "passes": false
+    },
+    {
+      "k": 2,
+      "next_distance_residual": 0.05685805526424577,
+      "far_residual": 0.024593154927027173,
+      "tolerance": 0.006148288731756793,
+      "passes": false
+    },
+    {
+      "k": 3,
+      "next_distance_residual": 0.0468646906714946,
+      "far_residual": 0.015090681989227119,
+      "tolerance": 0.005,
+      "passes": false
+    },
+    {
+      "k": 4,
+      "next_distance_residual": 0.029959626879343244,
+      "far_residual": 0.010139541573193498,
+      "tolerance": 0.005,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "next_distance_residual": 0.018514883488590032,
+      "far_residual": 0.008173242474541348,
+      "tolerance": 0.005,
+      "passes": false
+    }
+  ],
+  "labels_read": false,
+  "training_changed": false,
+  "prediction_sources": [
+    {
+      "epoch": 1,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_01\\predictions.json",
+      "sha256": "a55e744bbc7ce303111232deafc8fc07f9cf4f01d8421be5462996d9d16fd1a3",
+      "checkpoint_sha256": "aacb6b5c18e8bd4c3faefd79f42b15b2bc1dcaa3e257096050fc3dd705343ac0"
+    },
+    {
+      "epoch": 2,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_02\\predictions.json",
+      "sha256": "8b4a18180eb8206df6e340adc76347859fc681230bb300848298701a842686ca",
+      "checkpoint_sha256": "033c06622d98006a94ad105ebf098231ee3fc8fbbe19bc292daf8ffcd61eb53b"
+    },
+    {
+      "epoch": 3,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_03\\predictions.json",
+      "sha256": "8349065ed49cbaed6bd405c93041e1836e692c0f0383d7e05b3a13aa8729a147",
+      "checkpoint_sha256": "eaae8fc4beb0574931b3b7f924c4d2d5e49950045ea3235e6c297fe4972a7e39"
+    },
+    {
+      "epoch": 4,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_04\\predictions.json",
+      "sha256": "e8e0a9270c7a4b559b3185f86918d6bb782e78ea49567931db56f8abe4094936",
+      "checkpoint_sha256": "c56578bebbc64fd8e2aba8afba24ee9fc652a97b23b374cc145b694383efc989"
+    },
+    {
+      "epoch": 5,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_05\\predictions.json",
+      "sha256": "66a75fd936148181295dee59e7b44f536c018fa81e618e132bfb30110629a681",
+      "checkpoint_sha256": "934e2426ba20d92d9afbfbef9ac4c56ec6a24640ce57e00e76c24fa0af96c74a"
+    },
+    {
+      "epoch": 6,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_06\\predictions.json",
+      "sha256": "a75f32c783e03ddc38ea6cd131c7a69274862c1892c8baa35440732a38d65b85",
+      "checkpoint_sha256": "a5ed5318f143e92cbdc88a795b26001e1c8c92ece7a411f7c8c23ae28f9d347b"
+    },
+    {
+      "epoch": 7,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_07\\predictions.json",
+      "sha256": "a7c19ed0d1ce75fd4df129e5db2845ab4b26cf5df3f90c8951f1d48b13f03b8d",
+      "checkpoint_sha256": "4590b45255d12ddd4b102161e0b56061c7172cb2f273c4af785d335868f9c32b"
+    },
+    {
+      "epoch": 8,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_08\\predictions.json",
+      "sha256": "82c3f6719413eba7404bc1c928a419e6eeff5a3303c7bf7792ea1b33ad3c580e",
+      "checkpoint_sha256": "d0242760da9cd7fa2bc8cb5308056b5d573118a3bd143f56228bf42a80b87b5a"
+    },
+    {
+      "epoch": 9,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_09\\predictions.json",
+      "sha256": "c4547c0b6115183badcbee89b1218d5c0ca72e00891c0ec468357e7e12b95d22",
+      "checkpoint_sha256": "7aabe781704d5c3745a785c660d0bc7e881fc386ee60519f049396e7ff7788e3"
+    },
+    {
+      "epoch": 10,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_10\\predictions.json",
+      "sha256": "5860a71fe380df0237ea71bc82d03a9728c7454e69e502d7ca3b59644d22c4ee",
+      "checkpoint_sha256": "aa59d0c584bf626bbaf333c5a12af74698de0f6b86df07f2739436753ec4b34b"
+    },
+    {
+      "epoch": 11,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_11\\predictions.json",
+      "sha256": "f5acf42c27e3f2f38a5356612f7c37d09c77938654a4b92f6f31bfecf2c2483c",
+      "checkpoint_sha256": "984aee4a61b15d887cc9dc505767bbd8f3892d6bf0a604e44ecf084a2940e37b"
+    },
+    {
+      "epoch": 12,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_12\\predictions.json",
+      "sha256": "a8721b6a582451213fac2779b6556bc163b2900145badb92f31d881788cb3d95",
+      "checkpoint_sha256": "0e3fc572ebfdca85a3cba29b12b32e1025e014f6e9e83abb834f5982ef95e10a"
+    },
+    {
+      "epoch": 13,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_13\\predictions.json",
+      "sha256": "73032c1021656bb32d40afd7e434ff7650552f86098a2d9ddb18be3b2bc52501",
+      "checkpoint_sha256": "06bca7ffb184aaeccbb342e0efd83f1c62ef51139846242ae7fe6ba96814c5d2"
+    },
+    {
+      "epoch": 14,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_14\\predictions.json",
+      "sha256": "29a0c4f3b4f68584feb96d4d392ec609d5200d1c28e21133ba9c2d976f7a292e",
+      "checkpoint_sha256": "922e30ec7c96dd1267f77c55f578f985013e883e1f3c23adaa9c4923a62ae3e5"
+    },
+    {
+      "epoch": 15,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_15\\predictions.json",
+      "sha256": "7a29a217bfa4596076ad1108813d34736837d7dab672bd08401dc5c093b05cd4",
+      "checkpoint_sha256": "57407166504e53b6ad7d899aef4a4a5fc1b0aa611eb69021eec38a24737c05ff"
+    },
+    {
+      "epoch": 16,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_16\\predictions.json",
+      "sha256": "76eadf5aa0da9a430286740d093cf4db4dd4a8ffbaeb761763c0187470fe74e5",
+      "checkpoint_sha256": "9ed3232473575e1d09e5d4c92c338369a57b34c99e2e5ba1fa5891a0d1756eb2"
+    },
+    {
+      "epoch": 17,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_17\\predictions.json",
+      "sha256": "95717b3a14f8b117c6d1146f76cc69196c8b44c0da284dcade560e2b1d48f424",
+      "checkpoint_sha256": "f42e525aa18a0914a35b35157d27110bbd1514b5a5dcef4d4849a3f66079aa4a"
+    },
+    {
+      "epoch": 18,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_18\\predictions.json",
+      "sha256": "240da62e6adb716db9c3e0aefeeed2d2ca6ce83c34ab7842f90b725f2047ff7f",
+      "checkpoint_sha256": "d5d6786ec6ed49de3b1d9b500b4385cbe444cdbce72eaa899c2a576a43bdbe0e"
+    },
+    {
+      "epoch": 19,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_19\\predictions.json",
+      "sha256": "8d16da8205385abb2a03854227bfa8430ab4381224941881cdeb8dc10b4209a1",
+      "checkpoint_sha256": "3f35ae406c8c20104a038eee013ad4bd06adda008e0fb3f41cd2c00b0293a1c7"
+    },
+    {
+      "epoch": 20,
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_cumulative_static_v1_20261115\\A\\epoch_20\\predictions.json",
+      "sha256": "b3c27739d84df9586c93cba0d67d171b4310a61a477c3bca6a480f4fe340215f",
+      "checkpoint_sha256": "071364f4054f20507aedbe9064e4350b2a8d2b1dd50cca60ffceade8aa03b73c"
+    }
+  ],
+  "note": "Final selection across all20 epochs. Factors are not accuracy estimates."
+}

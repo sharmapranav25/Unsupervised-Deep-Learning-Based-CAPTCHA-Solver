@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-11-13T22:43:30.124530+00:00",
+  "state": "DarkBay complete; agreement-selected primary reporting adopted",
+  "selection_policy": "handoff/darkbay_curriculum_20261113/agreement_selection_policy.json",
+  "results": [
+    {
+      "model": 1,
+      "rule": "raw",
+      "epoch": 17,
+      "agreement_count": 601,
+      "agreement_percent": 66.77777777777777,
+      "shared_empty": 0,
+      "A_correct": 621,
+      "B_correct": 572,
+      "A_accuracy_percent": 69.0,
+      "B_accuracy_percent": 63.55555555555556,
+      "mean_accuracy_percent": 66.27777777777777,
+      "shared_correct": 494,
+      "shared_wrong": 107,
+      "synthetic_selected_mean_percent": 66.5,
+      "change_vs_synthetic_selection_pp": -0.22222222222222854
+    },
+    {
+      "model": 2,
+      "rule": "raw",
+      "epoch": 12,
+      "agreement_count": 589,
+      "agreement_percent": 65.44444444444444,
+      "shared_empty": 0,
+      "A_correct": 659,
+      "B_correct": 646,
+      "A_accuracy_percent": 73.22222222222223,
+      "B_accuracy_percent": 71.77777777777777,
+      "mean_accuracy_percent": 72.5,
+      "shared_correct": 542,
+      "shared_wrong": 47,
+      "synthetic_selected_mean_percent": 69.0,
+      "change_vs_synthetic_selection_pp": 3.5
+    },
+    {
+      "model": 3,
+      "rule": "raw",
+      "epoch": 13,
+      "agreement_count": 603,
+      "agreement_percent": 67.0,
+      "shared_empty": 0,
+      "A_correct": 646,
+      "B_correct": 636,
+      "A_accuracy_percent": 71.77777777777777,
+      "B_accuracy_percent": 70.66666666666667,
+      "mean_accuracy_percent": 71.22222222222223,
+      "shared_correct": 532,
+      "shared_wrong": 71,
+      "synthetic_selected_mean_percent": 68.33333333333333,
+      "change_vs_synthetic_selection_pp": 2.8888888888889
+    }
+  ],
+  "baseline_mean_accuracy_percent": 66.27777777777777,
+  "gains_over_model1_pp": {
+    "1": 0.0,
+    "2": 6.2222222222222285,
+    "3": 4.944444444444457
+  },
+  "source_report": "handoff/darkbay_curriculum_20261113/ab_epoch_agreement_20261113/REPORT.md",
+  "selection_freeze_sha256": "87741149bc6f2ddd4ed20a0ae02a13063b5c3443891afc10fd6f0fb31917a2f5",
+  "limitations": [
+    "Retrospective adoption after inspecting DarkBay real results; not prospectively validated",
+    "The same900 real images used unlabeled for selection and then scoring",
+    "Shared wrong predictions can inflate agreement",
+    "Model1 epoch1 unavailable",
+    "Raw/nonempty variants yielded identical choices here"
+  ],
+  "previous_results_preserved": true
+}

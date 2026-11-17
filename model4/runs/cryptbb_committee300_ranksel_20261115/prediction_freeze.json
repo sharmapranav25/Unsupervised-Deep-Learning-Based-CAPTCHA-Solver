@@ -1,0 +1,36 @@
+{
+  "frozen_at": "2026-11-16T06:05:30.037678+00:00",
+  "sha256": "d42eef5a12306214cc59c130bcaf6272cef6b020ec52d80b4f9b983534b10d0f",
+  "members": {
+    "M1A": {
+      "epoch": 12,
+      "selection_file": "handoff/cryptbb_v3_model2_rank1_v1_20261115/teacher_selection.json",
+      "checkpoint": "model1\\runs\\cryptbb_v3\\A\\epoch_12.pth",
+      "sha256": "feb37b75d99890f30f66d5545ca661306aaa1949f496dc16333db37c89adacfc"
+    },
+    "M1B": {
+      "epoch": 13,
+      "selection_file": "handoff/cryptbb_v3_model2_rank1_v1_20261115/teacher_selection.json",
+      "checkpoint": "model1\\runs\\cryptbb_v3\\B\\epoch_13.pth",
+      "sha256": "556d95df5b4b0f471dbebafab85d6a1bb6aee2cfbc78a1a5b29d78e3c4c9a002"
+    },
+    "M2A": {
+      "epoch": 14,
+      "selection_file": "handoff/cryptbb_v3_epoch20_static_A_20261115/selection_A.json",
+      "checkpoint": "model2\\runs\\cryptbb_v3_epoch20_static_A_20261115\\A\\checkpoints\\epoch_14.pth",
+      "sha256": "fce1b7d4dab98bfce37e95bfc66d7f592684d02336e3de460d0f3765dbbbe6d0"
+    },
+    "M2B": {
+      "epoch": 14,
+      "selection_file": "handoff/cryptbb_v3_epoch20_static_B_20261115/selection_B.json",
+      "checkpoint": "model2\\runs\\cryptbb_v3_epoch20_static_B_20261115\\B\\checkpoints\\epoch_14.pth",
+      "sha256": "107861015f7366f42827cf8a3a08305dfbe995ccda8be939ea2dc980fcd9b4d1"
+    },
+    "M3A": {
+      "epoch": 20,
+      "selection_file": "model4\\runs\\cryptbb_committee300_ranksel_20261115\\selection_M3A.json",
+      "checkpoint": "model3\\runs\\cryptbb_v3_feature_priority_v1_20261115\\A\\checkpoints\\epoch_20.pth",
+      "sha256": "fc6df1515ca82526d4dce774f5d10672809fcbe894cd4a7d6c0e603ddab55f52"
+    }
+  }
+}

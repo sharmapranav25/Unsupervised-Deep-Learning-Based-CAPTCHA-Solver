@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-11-13T17:10:15.035744+00:00",
+  "sources": [
+    {
+      "source": "Capri/tools/evaluate_model2_epochs.py",
+      "snapshot": "handoff\\darkbay_curriculum_20261113\\model2_epoch_sweep_evaluate_model2_epochs.py",
+      "sha256": "b5949782f951272d9d63b6351ca697ffaf6b5bb36d524cf201b38858863ec0a0"
+    },
+    {
+      "source": "Capri/src/capri_controller/training/ab_status_evaluation.py",
+      "snapshot": "handoff\\darkbay_curriculum_20261113\\model2_epoch_sweep_ab_status_evaluation.py",
+      "sha256": "b4e2af52153b933336a35e9d32b7b1081354b988d159eb742aa6d2e1de58478c"
+    }
+  ],
+  "requested_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "model": 2,
+  "datasets": [
+    "A",
+    "B"
+  ],
+  "averaging": false,
+  "selection_unchanged": "fixed final20"
+}

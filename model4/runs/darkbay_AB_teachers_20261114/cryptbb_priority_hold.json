@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-14T08:17:40.936715+00:00",
+  "user_choice": "CryptBB Model1 -> Model2 first",
+  "queue_state_at_hold": {
+    "started_at": "2026-11-14T08:03:13.038984+00:00",
+    "models": {
+      "parseq": "pending",
+      "abinet": "pending",
+      "trba": "pending",
+      "vitstr": "pending",
+      "crnn": "pending",
+      "clip4str_b": "pending",
+      "mgp_str_base": "pending",
+      "trocr_small_printed": "pending",
+      "svtrv2_ch": "pending",
+      "doctr_master": "pending"
+    },
+    "state": "waiting_for_gpu",
+    "updated_at": "2026-11-14T08:17:14.452805+00:00",
+    "v3": {
+      "stage": "controller_fit",
+      "state": "running",
+      "updated_at": "2026-11-14T07:20:43.311071+00:00",
+      "training_started": false
+    },
+    "gpu_used_mib": 5496
+  },
+  "stop_marker_created": true,
+  "no_teacher_training_interrupted": true
+}

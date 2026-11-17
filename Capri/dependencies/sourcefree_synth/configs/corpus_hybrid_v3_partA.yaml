@@ -1,0 +1,42 @@
+# Hybrid v3 training corpus (feature_bank.generate_corpus). See docs/CORPUS_READY.md.
+name: corpus_hybrid_v3
+seed: 20261002
+workers: 28            # parallel images (each image runs 1-5 PHP processes)
+shard_size: 500
+max_attempts: 12       # redraws per image (upstream crashes, clipping, buried layers, off-scale levels)
+
+sizes:                 # train is configurable on the command line (--train N)
+  train: 100000
+  steering: 2000
+  selection: 2000
+  calibration: 2000
+  locked_test: 4000
+
+# Locked test strata: seen libraries / the 4 held-out libraries / held-out font families.
+locked_test_strata: {seen: 0.6, holdout_library: 0.2, heldout_font: 0.2}
+
+# Image kinds. "python" is excluded from the fixed sets (steering/selection/calibration/locked).
+mix:
+  library_single: 0.45   # one original library, its own sampled settings, controlled text
+  intensity: 0.25        # one approved 0-10 recipe at a uniform level
+  chain: 0.15            # A1..Ak (text off) -> B (text), libraries only
+  python: 0.0   # Part A checkpoint: Python sources not yet integrated
+
+python_sources: {python_capri: 0.3, python_shapes: 0.3, python_text: 0.4}
+python_chain_fraction: 0.5   # share of python images where the Python source is one stage of a chain
+
+chain_depth: {1: 0.5, 2: 0.3, 3: 0.2}   # number of background stages before the text stage
+
+intensity:
+  levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   # uniform over approved levels
+  max_level_error: 2                           # reject if the level measured on the image is further off
+
+text:
+  length: [2, 8]                 # uniform, independent of layout
+  pronounceable_fraction: 0.1    # CV-pattern words over the library's own alphabet
+
+fonts:
+  bank_font_probability: 0.5     # libraries with font_source: share forced to bank fonts (train split)
+
+libraries:
+  exclude: []                    # training-library exclusions (with reasons in CORPUS_READY.md)

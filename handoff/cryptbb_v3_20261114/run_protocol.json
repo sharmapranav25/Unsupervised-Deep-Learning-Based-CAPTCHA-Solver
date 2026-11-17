@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-14T07:19:29.048863+00:00",
+  "controller": "v3 split",
+  "reference_manifest_sha256": "7b7fa203b448448632095a21895fc2fc5a702c01028cb3b28400e404a38aa6d6",
+  "new_reference_set": true,
+  "reference_origin": "100 historical selftrain images from labeled651, with opaque names and labels isolated; no label access by generator",
+  "pseudo_label_pool": 300,
+  "evaluation_pool": 251,
+  "images_each": 100000,
+  "entries": 400,
+  "images_per_entry": 250,
+  "images_per_arm": 25000,
+  "render_seed_bases": {
+    "A": 50000000000,
+    "B": 60000000000
+  },
+  "calibration": "Native calibration on first24 freshly inferred reference recipes; replaces historical reference-derived calibration",
+  "fresh_count_vote": "Unique model-derived majority >=50/100; no manual family length",
+  "entry_gate": "All400 entries must validate; otherwise stop and report IDs",
+  "selection": "No readers launched, no checkpoint selection in this data-only workflow",
+  "old_evidence_preserved": true
+}

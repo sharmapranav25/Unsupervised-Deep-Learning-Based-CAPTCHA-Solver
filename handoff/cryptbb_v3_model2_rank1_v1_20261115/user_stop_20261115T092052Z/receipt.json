@@ -1,0 +1,246 @@
+{
+  "requested_action": "Stop current runs; preserve all saved checkpoints",
+  "started_at": "20261115T092052Z",
+  "processes": [
+    {
+      "pid": 95552,
+      "created": 1794717070.9061625,
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-m",
+        "capri_controller.training.cryptbb_v3_model2_sequential"
+      ],
+      "stopped": true
+    },
+    {
+      "pid": 23704,
+      "already_exited": true
+    },
+    {
+      "pid": 98780,
+      "created": 1794729847.4523299,
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "faulthandler",
+        "-m",
+        "capri_controller.training.cryptbb_v3_model2_selected_v1",
+        "worker",
+        "--dataset",
+        "B",
+        "--resume"
+      ],
+      "stopped": true
+    },
+    {
+      "pid": 69560,
+      "already_exited": true
+    }
+  ],
+  "status_before": {
+    "study": {
+      "state": "A_complete_B_only",
+      "execution": "sequential_A_then_B",
+      "updated_at": "2026-11-15T08:04:22.467708+00:00",
+      "A_completed_epoch": 20,
+      "B_running": true
+    },
+    "A": {
+      "state": "epoch_complete",
+      "completed_epoch": 20,
+      "global_step": 15640,
+      "updated_at": "2026-11-15T08:04:01.036044+00:00"
+    },
+    "B": {
+      "model": 2,
+      "dataset": "B",
+      "state": "training",
+      "epoch": 9,
+      "completed_epoch": 8,
+      "batch": 50,
+      "batches": 782,
+      "global_step": 6306,
+      "loss": 0.24249966442584991,
+      "gradient_norm": 2.429612398147583,
+      "lr": 0.000260769644929001,
+      "epoch_seconds": 40.875,
+      "updated_at": "2026-11-15T09:20:51.749761+00:00",
+      "peak_gpu_gib": 7.358074188232422
+    }
+  },
+  "remaining_matching_processes": [],
+  "checkpoint_files": {
+    "A": [
+      {
+        "name": "epoch_01.pth",
+        "bytes": 246478454
+      },
+      {
+        "name": "epoch_02.pth",
+        "bytes": 246478518
+      },
+      {
+        "name": "epoch_03.pth",
+        "bytes": 246478582
+      },
+      {
+        "name": "epoch_04.pth",
+        "bytes": 246478646
+      },
+      {
+        "name": "epoch_05.pth",
+        "bytes": 246478710
+      },
+      {
+        "name": "epoch_06.pth",
+        "bytes": 246478838
+      },
+      {
+        "name": "epoch_07.pth",
+        "bytes": 246478902
+      },
+      {
+        "name": "epoch_08.pth",
+        "bytes": 246478966
+      },
+      {
+        "name": "epoch_09.pth",
+        "bytes": 246479030
+      },
+      {
+        "name": "epoch_10.pth",
+        "bytes": 246479094
+      },
+      {
+        "name": "epoch_11.pth",
+        "bytes": 246479158
+      },
+      {
+        "name": "epoch_12.pth",
+        "bytes": 246479222
+      },
+      {
+        "name": "epoch_13.pth",
+        "bytes": 246479286
+      },
+      {
+        "name": "epoch_14.pth",
+        "bytes": 246479350
+      },
+      {
+        "name": "epoch_15.pth",
+        "bytes": 246479414
+      },
+      {
+        "name": "epoch_16.pth",
+        "bytes": 246479478
+      },
+      {
+        "name": "epoch_17.pth",
+        "bytes": 246479606
+      },
+      {
+        "name": "epoch_18.pth",
+        "bytes": 246479670
+      },
+      {
+        "name": "epoch_19.pth",
+        "bytes": 246479734
+      },
+      {
+        "name": "epoch_20.pth",
+        "bytes": 246479798
+      }
+    ],
+    "B": [
+      {
+        "name": "epoch_01.pth",
+        "bytes": 246485430
+      },
+      {
+        "name": "epoch_02.pth",
+        "bytes": 246485622
+      },
+      {
+        "name": "epoch_03.pth",
+        "bytes": 246485750
+      },
+      {
+        "name": "epoch_04.pth",
+        "bytes": 246485814
+      },
+      {
+        "name": "epoch_05.pth",
+        "bytes": 246485878
+      },
+      {
+        "name": "epoch_06.pth",
+        "bytes": 246485942
+      },
+      {
+        "name": "epoch_07.pth",
+        "bytes": 246486006
+      },
+      {
+        "name": "epoch_08.pth",
+        "bytes": 246486070
+      }
+    ]
+  },
+  "B_status_at_stop": {
+    "model": 2,
+    "dataset": "B",
+    "state": "training",
+    "epoch": 9,
+    "completed_epoch": 8,
+    "batch": 50,
+    "batches": 782,
+    "global_step": 6306,
+    "loss": 0.24249966442584991,
+    "gradient_norm": 2.429612398147583,
+    "lr": 0.000260769644929001,
+    "epoch_seconds": 40.875,
+    "updated_at": "2026-11-15T09:20:51.749761+00:00",
+    "peak_gpu_gib": 7.358074188232422
+  },
+  "saved_checkpoint_validation": {
+    "A": {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\runs\\cryptbb_v3_rank1_v1\\A\\checkpoints\\epoch_20.pth",
+      "readable": true,
+      "keys": [
+        "state_dict",
+        "optimizer",
+        "lr_scheduler",
+        "scaler",
+        "rng",
+        "adaptive",
+        "config",
+        "epoch",
+        "global_step",
+        "history",
+        "protocol_sha256"
+      ]
+    },
+    "B": {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\runs\\cryptbb_v3_rank1_v1\\B\\checkpoints\\epoch_08.pth",
+      "readable": true,
+      "keys": [
+        "state_dict",
+        "optimizer",
+        "lr_scheduler",
+        "scaler",
+        "rng",
+        "adaptive",
+        "config",
+        "epoch",
+        "global_step",
+        "history",
+        "protocol_sha256"
+      ]
+    }
+  }
+}

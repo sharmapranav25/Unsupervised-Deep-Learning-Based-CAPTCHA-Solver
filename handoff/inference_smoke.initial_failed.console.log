@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\verify_migrated_readers.py", line 74, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\verify_migrated_readers.py", line 30, in main
+    assert Path(openrec.__file__).resolve().is_relative_to(ROOT)
+  File "C:\ProgramData\Anaconda3\lib\pathlib.py", line 1082, in __new__
+    self = cls._from_parts(args, init=False)
+  File "C:\ProgramData\Anaconda3\lib\pathlib.py", line 707, in _from_parts
+    drv, root, parts = self._parse_args(args)
+  File "C:\ProgramData\Anaconda3\lib\pathlib.py", line 691, in _parse_args
+    a = os.fspath(a)
+TypeError: expected str, bytes or os.PathLike object, not NoneType

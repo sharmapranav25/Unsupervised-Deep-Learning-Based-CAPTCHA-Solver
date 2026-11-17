@@ -1,0 +1,118 @@
+<?php
+
+namespace Blueways\BwCaptcha\Middleware;
+
+use Blueways\BwCaptcha\Utility\CaptchaBuilderUtility;
+use MaikSchneider\Steganography\Processor;
+use Psr\Http\Message\ResponseFactoryInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\MiddlewareInterface;
+use Psr\Http\Server\RequestHandlerInterface;
+use TYPO3\CMS\Core\Context\Context;
+use TYPO3\CMS\Core\Routing\PageArguments;
+use TYPO3\CMS\Core\TypoScript\FrontendTypoScript;
+
+class Captcha implements MiddlewareInterface
+{
+    protected ResponseFactoryInterface $responseFactory;
+
+    protected Context $context;
+
+    public function __construct(
+        ResponseFactoryInterface $responseFactory,
+        Context $context,
+    ) {
+        $this->responseFactory = $responseFactory;
+        $this->context = $context;
+    }
+
+    public function process(
+        ServerRequestInterface $request,
+        RequestHandlerInterface $handler
+    ): ResponseInterface {
+        /** @var PageArguments $pageArguments */
+        $pageArguments = $request->getAttribute('routing', null);
+        if ($pageArguments->getPageType() !== '3413') {
+            // pipe request to other middleware handlers
+            return $handler->handle($request);
+        }
+
+        $settings = [];
+        try {
+            /** @var FrontendTypoScript|null $frontendTypoScript */
+            $frontendTypoScript = $request->getAttribute('frontend.typoscript');
+            $ts = $frontendTypoScript?->getSetupArray() ?? [];
+            $settings = $ts['plugin.']['tx_bwcaptcha.']['settings.'] ?? [];
+        } catch (\RuntimeException) {
+            // silent skip, fallback values apply; proper dev logging might be helpful in long term
+        }
+        $width = (int)($settings['width'] ?? 150);
+        $height = (int)($settings['height'] ?? 40);
+        $lifetime = (int)($settings['lifetime'] ?? 3600);
+        $font = CaptchaBuilderUtility::getRandomFontFileFromSettings($settings);
+
+        // create new captcha
+        $builder = CaptchaBuilderUtility::getBuilderFromSettings($settings);
+        $builder->build($width, $height, $font);
+        $newPhrase = $builder->getPhrase() ?? '';
+        $this->storePhraseToSession($newPhrase, $request, $lifetime);
+
+        // encode encrypted phrase into image
+        $gd = $builder->getGd();
+        if ((int)($settings['audioButton'] ?? 1) && $gd !== null) {
+            $processor = new Processor();
+            $image = $processor->encode($gd, $newPhrase);
+            $captchaImage = $image->get();
+            $mimeType = 'image/png';
+        } else {
+            $captchaImage = $builder->get();
+            $mimeType = 'image/jpeg';
+        }
+
+        // remove backend authentication for request (to avoid cache header override)
+        $this->context->unsetAspect('backend.user');
+
+        // construct response
+        $response = $this->responseFactory->createResponse()
+            ->withHeader('Content-Type', $mimeType)
+            ->withHeader('Cache-Control', 'no-cache, no-store, private')
+            ->withHeader('Cache-Directive', 'no-cache')
+            ->withHeader('Pragma-Directive', 'no-cache')
+            ->withHeader('Expires', '0');
+
+        // render captcha image
+        $response->getBody()->write((string)$captchaImage);
+        return $response;
+    }
+
+    protected function storePhraseToSession(
+        string $newPhrase,
+        ServerRequestInterface $request,
+        int $lifetime = 3600
+    ): void {
+        if ($request->getAttribute('frontend.user') === null) {
+            return;
+        }
+
+        // write data to session
+        $feUser = $request->getAttribute('frontend.user');
+        $captchaPhrases = $feUser->getKey('ses', 'captchaPhrases');
+        if (empty($captchaPhrases)) {
+            $captchaPhrases = [];
+        }
+
+        $time = time();
+        $captchaPhrases = array_filter(
+            $captchaPhrases,
+            function ($captchaLifetime) use ($time) {
+                return $captchaLifetime > $time;
+            },
+            ARRAY_FILTER_USE_KEY
+        );
+
+        $captchaPhrases[$time + $lifetime] = $newPhrase;
+        $feUser->setKey('ses', 'captchaPhrases', $captchaPhrases);
+        $feUser->storeSessionData();
+    }
+}

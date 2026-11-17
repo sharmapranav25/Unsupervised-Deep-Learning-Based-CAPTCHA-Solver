@@ -1,0 +1,80 @@
+plugin.tx_srfreecap {
+	## Image settings
+	# cat=plugin.tx_srfreecap/basic/010; type=int+; label=Image height in pixels
+	imageHeight = 50
+
+	# cat=plugin.tx_srfreecap/basic/020; type=int+; label=Additional image width in pixels
+	imageAdditionalWidth = 20
+
+	# cat=plugin.tx_srfreecap/basic/030; type=options[png,jpg,gif]; label=Image format
+	imageFormat = png
+
+	## Text positioning
+	# cat=plugin.tx_srfreecap/text/010; type=int+; label=Text horizontal position
+	textHorizontalPosition = 10
+
+	# cat=plugin.tx_srfreecap/text/020; type=int+; label=Text vertical position
+	textVerticalPosition = 15
+
+	## Background settings
+	# cat=plugin.tx_srfreecap/background/010; type=options[0=None,1=Random lines,2=Random circles]; label=Background type
+	backgroundType = 1
+
+	# cat=plugin.tx_srfreecap/background/020; type=boolean; label=Apply background blur
+	backgroundBlur = 0
+
+	# cat=plugin.tx_srfreecap/background/030; type=boolean; label=Apply background morph
+	backgroundMorph = 0
+
+	## Word generation
+	# cat=plugin.tx_srfreecap/generation/010; type=int+; label=Maximum word length
+	maxWordLength = 6
+
+	# cat=plugin.tx_srfreecap/generation/020; type=boolean; label=Use words list
+	useWordsList = 0
+
+	# cat=plugin.tx_srfreecap/generation/030; type=boolean; label=Generate numbers instead of words
+	generateNumbers = 0
+
+	# cat=plugin.tx_srfreecap/generation/040; type=string; label=Default words list (comma-separated)
+	defaultWordsList =
+
+	# cat=plugin.tx_srfreecap/generation/050; type=string; label=Font files (comma-separated paths)
+	fontFiles =
+
+	## Color settings
+	# cat=plugin.tx_srfreecap/color/010; type=int+; label=Color maximum darkness (0-255)
+	colorMaximumDarkness = 0
+
+	# cat=plugin.tx_srfreecap/color/020; type=int+; label=Color maximum lightness (0-255)
+	colorMaximumLightness = 128
+
+	# cat=plugin.tx_srfreecap/color/030; type=color; label=Text color (hex)
+	textColor = #000000
+
+	# cat=plugin.tx_srfreecap/color/040; type=boolean; label=Merge text with background
+	mergeWithBackground = 0
+
+	# cat=plugin.tx_srfreecap/color/050; type=int+; label=Morph factor
+	morphFactor = 3
+
+	## Security settings
+	# cat=plugin.tx_srfreecap/security/010; type=int+; label=Maximum attempts before blocking
+	maxAttempts = 5
+
+	## Accessibility
+	# cat=plugin.tx_srfreecap/accessibility/010; type=boolean; label=Enable accessible output
+	accessibleOutput = 1
+
+	# cat=plugin.tx_srfreecap/accessibility/020; type=boolean; label=Accessible output image
+	accessibleOutputImage = EXT:sr_freecap/Resources/Public/Images/audio.png
+
+	# cat=plugin.tx_srfreecap/accessibility/030; type=boolean; label=Show salutation field
+	salutation = 0
+
+	## View settings
+	view {
+		# cat=plugin.tx_srfreecap/view/010; type=string; label=Path to template partials
+		partialRootPath =
+	}
+}

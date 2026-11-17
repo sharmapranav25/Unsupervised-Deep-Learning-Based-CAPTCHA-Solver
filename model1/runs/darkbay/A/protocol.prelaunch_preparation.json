@@ -1,0 +1,1165 @@
+{
+  "created_at": "2026-11-12T23:06:25.860911+00:00",
+  "experiment": "CAPRI2 DarkBay generator -> matched PARSeq baseline",
+  "baseline": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_100k_20261005",
+  "generator_checkpoint": {
+    "completed_at": "2026-10-29T02:53:06.299634+00:00",
+    "epochs": 20,
+    "images_per_epoch": 100000,
+    "checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+    "sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+    "weights": "EMA",
+    "activated": false
+  },
+  "reference_input_sha256": "ca67c48510906b3317a7d4350247ad5d37d2cd82a11f5e51fcf2596b0d62b404",
+  "baseline_input_sha256": "c1bbfa8048f0e9b7cfa21fecf88a6031679b565a8f29a03614d52fa34a44f4fc",
+  "baseline_recipes_sha256": "886327c1d5075750d5953075e6ffa33c853c3abf09d33691a32d396e43233169",
+  "registry_sha256": "1377bacf72251461c8f883f6b0088d17433cfa79c049285ecb9eac85a01acaaa",
+  "images": 100000,
+  "seeds": [
+    48,
+    123,
+    456
+  ],
+  "epochs": 20,
+  "batch_size": 128,
+  "expected_training_steps_per_seed": 15640,
+  "initialization": "from_scratch, same as CAPRI1 baseline",
+  "reader": "SVTRv2LNConvTwo33 + PARSeq decoder",
+  "optimizer": "AdamW lr0.00035,weight_decay0.05;OneCycle,warmup2epochs",
+  "augmentation": "Exact saved CAPRI1 reader config and loader; no added curriculum or augmentation",
+  "checkpoint_selection": "Fixed final epoch20; no real-target-based selection",
+  "generation": {
+    "controllers": [
+      "custom",
+      "dino",
+      "mixed"
+    ],
+    "entries": 300,
+    "allocation": [
+      33334,
+      33333,
+      33333
+    ],
+    "count": "Internal CAPRI, unique leading count >=50/100; stop if none",
+    "font": "Trained DINO residual font heads",
+    "separate_counter_used": false,
+    "calibration": "Reconstruct CAPRI1 original first24 model-derived calibration renders; freeze features for CAPRI2 controllers",
+    "seed_base": 2000000000,
+    "preprocessing": "CAPRI2 RGB96,bilinear,widthcap480; historical CAPRI1 used Lanczos,widthcap960"
+  },
+  "evaluation": "Same900 historical real DarkBay pixels, excluding100 references; freeze all three final predictions before reading scoring labels",
+  "source_files": [
+    {
+      "path": "E:\\pranav\\CAPRI\\capri.py",
+      "sha256": "23e0d38f11548d19dd05db021d2d7bae28a4d2c4c785eb8aab02aa8d6331c0d3"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\configs\\local.json",
+      "sha256": "604df5ebf9c314fc31fd5083ee96502a30525180a198647417c7b7f2a7df6153"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\models\\registry.json",
+      "sha256": "1377bacf72251461c8f883f6b0088d17433cfa79c049285ecb9eac85a01acaaa"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\pipeline.py",
+      "sha256": "a79c8eaa5832d5c66e13e11d4562c0e59fe6c0277db869bc8887614207247df5"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\controller_comparison.py",
+      "sha256": "dd40937748cb4c8455a1ec46f8eb80abac0cf13ba14cce0773f385a7652df85d"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\corpus.py",
+      "sha256": "2f4063ffd30cda0f41059cdd923e8cbf3bfec92a92d802d992f16f564be259a6"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\controllers.py",
+      "sha256": "ac24a4928bdc6fe3a6b929fb3274d836d9dd9c3b59f843442c3dc9cea783c4de"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\artifacts.py",
+      "sha256": "819ccdc686ce268c3e8669cefeef6d3bff9b882bd3e061583c88858f4f98c3f9"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\runtime.py",
+      "sha256": "a5d29d6a3cd6ba888b2f892218920562a453e44487b155dd86aed352085bda79"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\average_parseq.py",
+      "sha256": "df70624c68aaa79734c890883b283c1ee6aafaaa0f17a80270c8575ce20802d5"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\capri2_parseq.py",
+      "sha256": "16ef731ca45d76334d444aa2f7f145c9e72b66cbb865e8e8b841e9f7770ff292"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds2.py",
+      "sha256": "c4280a44ad05e69ad7a19ac7ff3bd27b2f1cd4bfd652fc200976f28b11ef1708"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds2_data.py",
+      "sha256": "3751b7924e491775c533a1c806b5fee3f6eccecc2a59f953603e61734b70de8f"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds2_evaluate.py",
+      "sha256": "ba8a3b212dd125f1b1b4dba79ad06367cf1b13f70be4ae78f30253115990837b"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3.py",
+      "sha256": "c5feef267a890e88aec8ae621f87553d8f416328142012aaf3100cc354bcb719"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_checks.py",
+      "sha256": "5b8c7375e9d00f1f0e36400853db1ceba4a1f6a2bb98c15b58385d6aa2c99918"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_data.py",
+      "sha256": "9ed61fc598965948d2473e4d96471bded6386c5d4c524deb21fb6215f25bac4c"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_epoch_diagnostics.py",
+      "sha256": "089d3628bfa2f41cb9b26e3c17eba966647453d3717a4f2b8f2abea08e5f3b4f"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_evaluate.py",
+      "sha256": "ca46191c81cafafce2509775a715d6a8070648053a774f4a81cc50e53fbbd0b7"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_policy.py",
+      "sha256": "b1fa14592de4469326e43db84ccaaeb0f43d75c203707b66c3c9c4a298c4c6c9"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ds3_selection.py",
+      "sha256": "995a66b0d460be8787572123a45ecb7afe5fbcf6341f80d08c5477863d732ee4"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\ensemble_parseq.py",
+      "sha256": "f689421eb1f630fb8165229ad4a33e1b839c78efd0865929b7aabfd1d988c0fa"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\evaluate_epochs.py",
+      "sha256": "bc9dccb3d88e779a8d905c8325c586c72198a398a9c6ab59339f0f0fcc50599c"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\evaluate_parseq.py",
+      "sha256": "e77208c141e051d615340b1b3a180a960edbd0e1411ce133bbe613b744a50c99"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\glm_ocr.py",
+      "sha256": "f5d9f2ac3a36ff36ff9b7d5c74549d34f300c031036521c64b0285b654e769be"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\glm_shoot_policy.py",
+      "sha256": "ba5aa169a719da126ac48081c345dcd159d0f7afab501f1644714a56145f5d3f"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\prepare_parseq.py",
+      "sha256": "4e123c70c258bf4b46a80a688296b263b1fe6982be8657532ebc60188aad17f3"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\shoot_rate.py",
+      "sha256": "61aeb72ebb38eb3a4578eedd52f866ee6dc918a1ed987a0a86716639efe6d9f5"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\train_parseq.py",
+      "sha256": "746262f1cce255e1a06c9e46f5549515d81dc90c15a5a298c15c8194d6a4166b"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\training\\__init__.py",
+      "sha256": "dc4a42a27fe29789ab14572061ce394ed8e15cb20945f20e7fad27bac9edeb6c"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\base.py",
+      "sha256": "cfca8e5f37ffd867803503dc784b6e3d414aa1027396ebff9898c9cc6ee3b8ac"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\custom.py",
+      "sha256": "9273e917e7a714f909d6553c86295644216aa4bba0507d645af05f006afb30a3"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\dino.py",
+      "sha256": "a76a7527f5bd0dfebbbe1409178b0a48cae624d7261436a7d49ad477a62b5586"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\dino_base.py",
+      "sha256": "363e43abfe6ab2dc2662f6a7d15269af1678dd17800571e080800f3d1f3bfe0c"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\regions.py",
+      "sha256": "1018086d9533716a6f25cc478c57057ee117efe0b0fb2a4c984ae4887c0e393d"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\features\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\rendering\\base.py",
+      "sha256": "4c4b4b41eda4ddaf74a8a06662806dab61ca01027f084386d00c5a05f8556c27"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\rendering\\controls.py",
+      "sha256": "1b135701705979a105563cfc42c464f2c116c19ad23655db6ac0b0e2bf027517"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\rendering\\renderer.py",
+      "sha256": "658a019a121656befb8813154eb5b33c8a4e33daa1badc573f2ccd8bade03506"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\rendering\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\networks\\encoder.py",
+      "sha256": "d433eef5038263c99d823401412a82cab34ab42ef0659e40dc1036d906829530"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\networks\\mask.py",
+      "sha256": "cb61684b5f6e2fe7c55842ca546785d52ce0d00670466fc6326468dc896e7d55"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\networks\\schema.py",
+      "sha256": "d566506912eee968213fc6daacb003051e952ce2e0258f054edf1f1101831ea4"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\networks\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\data.py",
+      "sha256": "ecc8279f016ead12900d13c3fd0ac9df071c0fca72164e1ea978705beb5bda01"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\legacy_losses.py",
+      "sha256": "c3b55d2e1c396049eda485f0f44a6c1123a79942da063c6bc92294cbe726bf6e"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\legacy_model.py",
+      "sha256": "2420d2356db66eecff5dbb03d91cfa0b1c6482c56f682f0e24286b41767f8d2a"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\model.py",
+      "sha256": "796617633088e686fd38cf4484807cbbdaee996c10c96346b59056acd9e2bcad"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\primitives.py",
+      "sha256": "37564e5b5132660ed09c55767d8bba10fc2fa2b6b11f2b889323e3c63e1eb29b"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\training.py",
+      "sha256": "1d21a33bccdc939a7d36af11ac08fa777612d8970c406123e70aa77d2abbc6f4"
+    },
+    {
+      "path": "E:\\pranav\\CAPRI\\src\\capri_controller\\lightweight\\__init__.py",
+      "sha256": "cf94c9e521081edf0f3db302be4ff7453e3fbd47d681f47872fb52e9dbc651d2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\build_package.py",
+      "sha256": "6755f15ff695e6fb858ecd6d366ea9bab9b7410c0193c7a8193d6a9c806264c9"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\demo_gradio.py",
+      "sha256": "b34c8f4721abab5fd9adc91e8b223cca576594bfc982d766a47c21cd1fa92e5d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\demo_opendoc.py",
+      "sha256": "ce2b976c395ebbc278a69c6c06ae44c284d75e46818f32da0ea25b62efdb53fe"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\demo_unirec.py",
+      "sha256": "d687f658fe42a2ca1b1e3f05cb2250d7ad317bea90f73c0e6348807f8e496515"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openocr.py",
+      "sha256": "eb6273dd690424602df62f82b9e0bdd052bf25d37c6005fcb054ee18e72c5bb0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\setup.py",
+      "sha256": "93347a6ac73a26e72ec7e7de23e39b937b46ac800c8f49932c1c560e5b7516a2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\test_openocr.py",
+      "sha256": "2a62456024c456f56849f387e81c82305ceb958c895f4032b6505c3243d04e0a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\__init__.py",
+      "sha256": "e3113bd8ca54fc6331db3b44dd898308fe12dc41e5455888b26808f1ce25ad22"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\losses\\db_loss.py",
+      "sha256": "9ff8b5fd14f081206f7a10633019988fb65b32293bd92445982d54ac91988987"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\losses\\det_basic_loss.py",
+      "sha256": "fe54c74aefe46f1a0350d06512d6b0e5c7f26b01b6cf16b4e1c7d893f2053b0d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\losses\\__init__.py",
+      "sha256": "edbfcb55510fc93d427fcb13976064d0d1d0a0b5a1fadccf1d56c0a0148e6bb9"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\metrics\\det_metric.py",
+      "sha256": "5cf4d6586257f5095bb33d9b92d2f097f7dc3fb85fee0ce58f21c2dfe3fa6dc6"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\metrics\\eval_det_iou.py",
+      "sha256": "e6280ea6376a33f2b3eb73dba80c6ff6a22b5117f1a54c84141899f6102bedfb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\metrics\\__init__.py",
+      "sha256": "8e6635141d41514bf60cb1260f38ecd1708b8d4ec9d87915bb69f7c9c1a4ab60"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\base_detector.py",
+      "sha256": "e924e711c320f70635c1120ccb934dc4241dd6b7efc56d19051f8aa69b4a6b77"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\__init__.py",
+      "sha256": "ef2913c34f9628cd94a29faa7f332540edbae49eed1c5e5e4634387e8e76e898"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\backbones\\repvit.py",
+      "sha256": "ba63ad87aaba9d5fc0983116926f45b80f2c579430fa5a72f79e2a637cbdb003"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\backbones\\__init__.py",
+      "sha256": "e8706adad791a6bb1ebc64ee3327e91b6546d649b46649474b110b629ff63c32"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\heads\\db_head.py",
+      "sha256": "9926b25e74cda621b42e3b06179cb76ac0677583da1ba8ac89ee16f8396b4b2f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\heads\\__init__.py",
+      "sha256": "962fc07e015b318658f3e1561d2939d1e556457e7906a9a3c6d2e5f50154f53a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\necks\\db_fpn.py",
+      "sha256": "dbc91474b3049bdf8ecb1881b0394876e6b160ddc80f61797a8e6f44a90b73d8"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\modeling\\necks\\__init__.py",
+      "sha256": "35f9ebb6c3d061889342fa0cbd25f7d8bc3d3e5343affe65f43a5fcb63f7c846"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\postprocess\\db_postprocess.py",
+      "sha256": "d4d53d31feb4759e7586286630bddec8732deaf009781c041d1fc80d1c2a3eeb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\postprocess\\__init__.py",
+      "sha256": "54aa9b6d1248275cf91a6c10900698a86be96a1a59659f3ee777165dad1fdc31"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\crop_paste.py",
+      "sha256": "f05133e3229b4ad48b566b5f7b525793dc716b156e650b25ae3ef79c55ccbbaa"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\crop_resize.py",
+      "sha256": "bbfcacc47e14981ec32a05a41e18d052fc7fc0c7995faff3471116db4b8cd9d1"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\db_label_encode.py",
+      "sha256": "cbf7e6b8523c241003255c84435ec30fb03a9ef10368d1cd5027363bdbf3f0a4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\db_resize_for_test.py",
+      "sha256": "6ae61fd06c4b67c16a85583ae1aa8bcbccb9b8597b3bb44c531d7dcc18b84d3b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\iaa_augment.py",
+      "sha256": "d056adb8e7801494720dbf9a827949b83615d01fd3a3f63d8b4f5f516d402eb0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\opendet\\preprocess\\__init__.py",
+      "sha256": "d55349071eb8826d424f068b4f12d5bf60d0efc64da8b2432af4a133ace4cf45"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\abinet_loss.py",
+      "sha256": "c9d06af798a2dd0814494c69592e6eb23f0243be0df5ad2ddc352f8702eff8b4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\ar_loss.py",
+      "sha256": "17aff70eddc8fd3b15959ee14b5edd98242aa65292ef06ac0a1c9949a9a2d5ed"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\cam_loss.py",
+      "sha256": "1a828d476d13d80803ceacca3f8301cc8e4613195a98bac24df154783aef6cb8"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\cdistnet_loss.py",
+      "sha256": "6a2e6d59472f03be9f2eadc6e2bdea78e271864ca261c4df6b05044c077ec02b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\ce_loss.py",
+      "sha256": "19ddd3907dd1feec81cf4792c7914f97949a80352febdfcadecf62c6210c5bc4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\cmer_loss.py",
+      "sha256": "1ff0e989eaea9bab93174f78706312d9e18d110fece53118ba0bb5856968200a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\cppd_loss.py",
+      "sha256": "043550218890a8c646bbdb23f9375a84240b0d45759636f84a6ce4dbd838507f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\ctc_loss.py",
+      "sha256": "bfc4dbdc29772dcb66d4e9124d67c6654a4ab42bcaa7ee1679e4d4010eeca28f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\igtr_loss.py",
+      "sha256": "e11a91e655fafafad5b36c6a5d0565349833d1aacc0399856eb4152866ace1bc"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\lister_loss.py",
+      "sha256": "8b3387ec6e9775501345c7f7a60dd3e80fa20749b730a3f49cbd74f9cfa34a95"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\lpv_loss.py",
+      "sha256": "7a2a4c5f4166809b39dce16e8e4096d307b5b9373d770af007c81bffc3d3b882"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\mdiff_loss.py",
+      "sha256": "c1b23dde23d3f3433f300aabda726203c45471819502dc75eaf2247c628de1b6"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\mgp_loss.py",
+      "sha256": "ddc37ebf1946726762d01c73c458b0d9cb1b56b0c8ae6552a77ea8bca6a2ba89"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\parseq_loss.py",
+      "sha256": "c138bb28ec005b7351d83930b1c0f603d357733dbe174efb07c0464de79265bb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\robustscanner_loss.py",
+      "sha256": "bdd61837a7c2a040a008a6c1fc4e909748442f3dcdd5c8e6eec9a2fa2d07834a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\scriptmoe_loss.py",
+      "sha256": "a904fe872aa28e3212e1e92861b4267eb55a1946da85b940f9cf68c540e5d752"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\seed_loss.py",
+      "sha256": "adb1f9ff0a37a80e4523dca07ef8294862c6fee2988c398c6029a4337ffe2f50"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\smtr_loss.py",
+      "sha256": "c0f28ced1c2f8129e6ae9d82e07bab3f4bd222601c6ec8b5fc082774f106e0e4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\srn_loss.py",
+      "sha256": "ea3d8146c3af8f4054cb9c8bd158fa594cb4f521824f8d39c58837bccc74ff9c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\unirec_loss.py",
+      "sha256": "b2c9e9f80a30aad9b4245b6b70832929c73137f004c552a045eba57ee3d491be"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\visionlan_loss.py",
+      "sha256": "eeb9050ca8e4266a959f280bf34ea2a423686427cacffedc1b3e6ebe57b86853"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\losses\\__init__.py",
+      "sha256": "75d2604ede36874912c9fb491eb2b883b870b68823a6aac977208a880120e552"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric.py",
+      "sha256": "acd4ccb49c067f6ae87944d393d0d2e15bf01c9e138eef95d6a3b973cbf9ae74"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric_cmer.py",
+      "sha256": "f76424f46ef2cc96e71ba655a4e30ba02c1e0f2785264a16aed9da5bd758280d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric_gtc.py",
+      "sha256": "c80de545848fbdeba68a5204019ebf3270eeb1ea438224a44187495710d6df7c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric_long.py",
+      "sha256": "c00422abfbaf2d69d170bc9b5623b577ac803d3da88631ee9bf52dc261bd9148"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric_mgp.py",
+      "sha256": "6b4191418d3355d28a47527843d58ec61b9e4fc7b14a4aca428734dd06802c93"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\rec_metric_mlt.py",
+      "sha256": "2eab7fa83f4436b5fb290af5cdc6211e08526f0d4a36623dd07fca3f13db2ed7"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\metrics\\__init__.py",
+      "sha256": "6b517bdc3823b66656d8f283024ced3287e997bf2d712b209b671f63c0b2fa29"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\base_recognizer.py",
+      "sha256": "e9588f52e22d5f8cdc16108060dc384aeae9fee2eb1935aabb1289dc9fff8810"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\common.py",
+      "sha256": "bade139de7afab1c3b81a2d6893b68ab55f58ee36d246da42648de7a3d143f10"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\__init__.py",
+      "sha256": "4b208774cbe6c2d256ac65fc88f7e4c17c78001e331b44742eca56e55ef491f2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\cmer_modeling\\modeling_cmer.py",
+      "sha256": "da136bf1ac75a155cbc2be5637cdfe2a4c8d12ddbbfeb1d0d79ec006ac3a7f53"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\abinet_decoder.py",
+      "sha256": "32ed783dca60a180c221cc7e17e6c270a1547e14be29fb4aa97380b68dc9a378"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\aster_decoder.py",
+      "sha256": "c46181db2e94afd80f62b696dc911fa9d8ff9ed2aff85fba44ae08553a9425a4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\bus_decoder.py",
+      "sha256": "dbf0e32d2d3ecfe00a0e92a09496d481a46906aa37667c87e9fb8b07ea8ce4d7"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\cam_decoder.py",
+      "sha256": "21f91e1742385f571efaf223424108f7a01270941a0b42c2531304a47841b89f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\cdistnet_decoder.py",
+      "sha256": "5d2c6e217d3d75c15d1fcc01ec18d1df0e79434d7034ca050fd8c0d2d128a377"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\cppd_decoder.py",
+      "sha256": "2eb759256ee0f750eec782b0dbbbfb79a1a1d4ba4475eb18117c817e60655d8b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\ctc_decoder.py",
+      "sha256": "018cefec73f5e2b6b46e3079d087f520457aa660d9bdfc21e8bf8370c035bce3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\dan_decoder.py",
+      "sha256": "3d309e3bd36f00e09e8b65e90a602f1d832785435c474923b622b9940ce597eb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\dptr_parseq_clip_b_decoder.py",
+      "sha256": "cd584c0f1f7bcf108562f7dfefcbe95882e01196b704a4a0e54e64fd3612d9f3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\igtr_decoder.py",
+      "sha256": "bfa5de67d57f827d637cd95683860259c56f0d436a0e7031368ac15fd67f11c1"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\lister_decoder.py",
+      "sha256": "dc5de37ef8f5e85681f6ae041e20fc3cf35e9153588c0110e8486fff31e9cdec"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\lpv_decoder.py",
+      "sha256": "6219aaa007553be0264e48bf5e37a7e248176b4824a6d5df7e6c44e90fc64f52"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\matrn_decoder.py",
+      "sha256": "28584515a86003b7debca2535094cff02e15686446968efcdb02c63d37b31545"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\mdiff_decoder.py",
+      "sha256": "72f7e354ec138f07b26fcdc01b3cd93f9a384bd29628703be42ba1f01b0de985"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\mgp_decoder.py",
+      "sha256": "e11bee31ed2af5c659730b4fc65c853dd42a9dfe370c0d79f62b4ce01077c3bf"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\nrtr_decoder.py",
+      "sha256": "40c34d3a624404e5f41f3836e41dfb7d243b9215b1b335ce052ab7e89325be93"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\ote_decoder.py",
+      "sha256": "c07797cf872340ae71334dd59a36147d2e1c4f52271b09fd86523090b0e000bc"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\parseq_decoder.py",
+      "sha256": "fbe9268799515a080dad7dbd68eaf4b321e614723c412bbf19d1309c15660dac"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\rctc_decoder.py",
+      "sha256": "45ed5f3e903b8054166daf2d63885fbc40c864e448459d5b19eebfb325d8f7c7"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\robustscanner_decoder.py",
+      "sha256": "1a45e930c3525e307a0eca888c7376d066fe5cc0a4e4aacba92f1716011113ec"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\sar_decoder.py",
+      "sha256": "3150e96bc4b5e7982b7a113987f8ae8dba6b01d9a9f0e7720a715e00a046a281"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\scriptmoe_decoder.py",
+      "sha256": "eba3bba599f5bae7b84ea05951f3d15597079cd6bbdbbc53ca072a8b8a2d65ca"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\smtr_decoder.py",
+      "sha256": "606362f77d30a8be5d4409bf2b2f31d05b32bb13fae9c978e412fd638c87dd51"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\smtr_decoder_nattn.py",
+      "sha256": "d0f0f1f3dbae1a9be5e8c177cd2a64f45c83f17ab0a75d978edd8624d98da76d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\srn_decoder.py",
+      "sha256": "917dd200967d42aaa207021cb965f9a8441494e6cc1789021eaeb4fc222e91a9"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\visionlan_decoder.py",
+      "sha256": "9973d01908245929544629ccc037c8d2e208186b29cde1bef0febcfd04f5c2f3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\decoders\\__init__.py",
+      "sha256": "5db23f232c9fd3b191e0eccd9fe4b8de4108d018734f63f316abd6506a99a8eb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\autostr_encoder.py",
+      "sha256": "bfa16beb534b74b02380da382d1039b915132a82021cfedd07be4b4811b00701"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\cam_encoder.py",
+      "sha256": "cc6ee95c5dbbcea31d4507ce2e28a2bcb160c785f3b056a09b73e6c22f4deead"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\convnextv2.py",
+      "sha256": "e47e0e268fa4f00b853f32f3aabc6513fadfd1125f77578fdb5968b1e2eb9c48"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\focalsvtr.py",
+      "sha256": "fbd44491eb1d0f28389854d3f304db558641b8e02895a7ffe5a762ff1b0a3390"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\nrtr_encoder.py",
+      "sha256": "68ebc0abcec0da0ecdb6b04f465b49b2dfc8a16301cc37821b55faeef0245cb5"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_hgnet.py",
+      "sha256": "fc4f83e139b1db7c3b5fa1bd4a3f61612fd0768dfe0e6975ca8d4ee9d109629b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_lcnetv3.py",
+      "sha256": "fac055421fe85f644be07039ba9bd352db457abfca33dbf22a35ca825bfe6c65"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_mobilenet_v3.py",
+      "sha256": "a3290c5479f1d68d7fd5fd1e50015fd879cefb183be4db02232164ceee387a15"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_mv1_enhance.py",
+      "sha256": "9d8eaa3459a0c20fe70dca0d9771d41d90f3e88dbab2f92ace2b0bab5ac3eb1a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_nrtr_mtb.py",
+      "sha256": "f3f4eb3f046f2bd0e47e6248b82154891ef6a0ce2c0e2c230b1c68ba27871231"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_resnet_31.py",
+      "sha256": "1da23c22c0b85f2f2f01924dded88e94915e6d176fccae485df1059df8e7b737"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_resnet_45.py",
+      "sha256": "56744bbee90ce9246776630b37297aaac987c9e3a7c3f46c86c0cc6f868c533f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_resnet_fpn.py",
+      "sha256": "620e0497ada5f60f5fdba3115a4b3d1e857dfa11cfb2a524daa649cdd5a72114"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\rec_resnet_vd.py",
+      "sha256": "1d1907b447a53beadf739626ecf77951fdc041d5d7101c5919f0176fbf66e7e8"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\repvit.py",
+      "sha256": "e2278b5facb3a113b1196a851eff25a055fb5fb122076d07a297fb30d3391653"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\resnet31_rnn.py",
+      "sha256": "fbe1d8c61915052dfb5c0e2aa612572544ff03e1094e6d210f996aa5a81c112f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\svtrnet.py",
+      "sha256": "61daf70234ca141a9b77f5ed6be710f39996a6aa7333dfa1094d2ec93ef6504a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\svtrnet2dpos.py",
+      "sha256": "e28cca550087325e2769b6562ac40310575b107ce6c14b216d98197cf758dd77"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\svtrv2.py",
+      "sha256": "18828652322eea22b486c6ac58fa92c4b9a2884704e4eaf340797b0e6ee74d81"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\svtrv2_lnconv.py",
+      "sha256": "3e09545e9a64ebec7e3c8d91d8361c90647f478767ee3dd21459ebfbe823fa16"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\svtrv2_lnconv_two33.py",
+      "sha256": "6dcde65e66a21d43b44ed54b23f2590088f210b5e3e3ab13a161fc27697df3f2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\vit.py",
+      "sha256": "12aa2562094caf0a29a998ad70baed1db11d0fa0a754cc08070c0364cafb410c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\encoders\\__init__.py",
+      "sha256": "ee242da9cf4804ec462cabd907887dfa6ac8718fa2051f4a15ddfc15974a2f1c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\transforms\\aster_tps.py",
+      "sha256": "ffd400af05102c7ebb5070e3b945808a9aa8cf0988ebea809622e3bae4e67227"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\transforms\\moran.py",
+      "sha256": "301646812c2a257893f11db7885e6cbbe997149742729c5c6066fb45f1e5c9e4"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\transforms\\tps.py",
+      "sha256": "19586e45007cc32ace66b33bc06c944a1994e19cd958db82687c966bcd25d0a3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\transforms\\__init__.py",
+      "sha256": "aaed486fc1d593bce5036e96e9ff2cc859aa9edda00395f64bac9e0397e266fd"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\unirec_modeling\\configuration_unirec.py",
+      "sha256": "f3502cf2f70fbce0d58d3fcffe92ce7324b07ba2cc5fd9ab4caf5adc415074c6"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\modeling\\unirec_modeling\\modeling_unirec.py",
+      "sha256": "ba25b87c89ae3d18ed2a2534f5adccc9b6526b634fbb24fed6ac1ee38e029a35"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\optimizer\\lr.py",
+      "sha256": "45bd5fa13789638b75cd944260e159c5e14e849c1fd48ba0fc0abef904b64974"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\optimizer\\__init__.py",
+      "sha256": "fa43c550016faa832c8a1d1665767f32db97d43558f6ce46d9568dd82328f8eb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\abinet_postprocess.py",
+      "sha256": "91f69c39e3dc51288b02865c3dce9559b27ac9e2ec33c4599a734a811e25fd7b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\ar_postprocess.py",
+      "sha256": "231dc34acdf99e0dcb14933aaea1b3332716569cfbef8b8c703285dcf300e9eb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\ce_postprocess.py",
+      "sha256": "c4ad392b3431e52f8411ebb52d44626e189f19d81f2b64bbcae472a979acfd39"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\char_postprocess.py",
+      "sha256": "5568f3dcbe537e962edcefb2d596a05b45b258f29bbdd2850834049b74970d73"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\cmer_postprocess.py",
+      "sha256": "ff4325f842bd370e17b7cbdb2129901fd6dd7cd594ac88089e212582b6f83467"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\cppd_postprocess.py",
+      "sha256": "53b6fcfd87ed214cb152ef8141457c4f461437b2e38f400306f80382d9c728f9"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\ctc_postprocess.py",
+      "sha256": "fcba292059790509dd6a71a7d1035d81dcdb22227c572bddc2bfa7d01994618d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\igtr_postprocess.py",
+      "sha256": "49666ca8aaa5ada1f359731375a048dab6ddf30d852a11215a60d2efbef21711"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\lister_postprocess.py",
+      "sha256": "55ab34780644328d7df75bfff19bb4bd58b076a4f5ab143e4efd66c93dfecfe9"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\mgp_postprocess.py",
+      "sha256": "122ea6d1b1cf6238dba38c8c62b14d7a0c713aa7ee1025ee9e6fcf66dcf3c464"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\nrtr_postprocess.py",
+      "sha256": "5433d6373b51b0592e8748e7eddb4a0e1cfe02642c2d8fd6b9fd9b36f4799b3d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\scriptmoe_postprocess.py",
+      "sha256": "fd60d141cfe8c9f4ade27a26c3b1322485d5a5b0233bf3293d93ca7e2af0dd48"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\smtr_postprocess.py",
+      "sha256": "3b5fad51a0f2e8f86798d1a58784699c0bea3210766476fec9cc31e6c860db5c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\srn_postprocess.py",
+      "sha256": "63170013437350c0ec8f7f78cd216ba298f31145ff32fa38fb595256c46b3353"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\unirec_postprocess.py",
+      "sha256": "1058fd4c899ac82cb847be67ee80da3754ffe0424fc56ac3683052fae628df91"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\visionlan_postprocess.py",
+      "sha256": "a6c1e58057c259313a3fee90a4ba42621e6a265e583b13fb54beb10506141d80"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\postprocess\\__init__.py",
+      "sha256": "ac954c65de2e0ded0ba5d53ff860b50486d9631b6ba67062e8a5a4b4286f88f1"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\abinet_aug.py",
+      "sha256": "06c89edf6946b8afa07dccad26347ed3723d8e6a939b2cfe40c577b0525d1b80"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\abinet_label_encode.py",
+      "sha256": "479cbaa3912c2bfd5b91e7a7ca54fb3ff1478be7f62a93424b06473c6f00f911"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\ar_label_encode.py",
+      "sha256": "5b3719f9cf9be12ff7eb70995e178928e77af0be8bc2b201a92e5c0e5d4b6fff"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\auto_augment.py",
+      "sha256": "2702296024abd610acc44b3304b10d67200d96b770f74cd1a2374cbf0b8e1a81"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\cam_label_encode.py",
+      "sha256": "9de2798dcef0c62b7253de86f0eaa67054a9dc61634d6c3b391b536051197567"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\ce_label_encode.py",
+      "sha256": "8bf84e9de77d3c7885f8337c1e5f630476b4c7e9e553bd8ef802bb26426c860c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\char_label_encode.py",
+      "sha256": "b9d6c88d716a76a51ad18e312211deed8c89069556bbb88c128c3c59d16cc0ee"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\cmer_label_encode.py",
+      "sha256": "8bdc66641d97da50fac7f06ed244395116f8ee06e0f6c70e76643b99fa64eb20"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\cppd_label_encode.py",
+      "sha256": "1dd76c56476495d6a2fa1c05e05b4bcb516be19c7aac187ca9e029dbf4fc4bb0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\ctc_label_encode.py",
+      "sha256": "c084cd95b0da3bbd71d2b345986f6865cf6fa08033893d95771bce34fad34601"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\dptr_label_encode.py",
+      "sha256": "92c11f4a904ce0249240bf0acb5c75f3ad07dd02b11bf7d16f855b62724ccc6e"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\ep_label_encode.py",
+      "sha256": "9c0f2e7cfc4bc5f01b9a2ec4a12380c29b94513288a10109df6565b043afe7cd"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\igtr_label_encode.py",
+      "sha256": "b341f2842eb220ba436a5d0ccb98c99e603000be76d5a6aaf6ea261187ad551e"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\mdiff_label_encode.py",
+      "sha256": "dac5b79f9c840f91a8b4e9e9413a4498782077362e488cf05dda58e67611caba"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\mgp_label_encode.py",
+      "sha256": "d15ccd29fe48b0f536fc3ef3c079312e2c1e0d45ead4026fa8550fa2b611b4ef"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\parseq_aug.py",
+      "sha256": "4841dc6f205c2f3cccfae4813f1d33634da76d1af6c20bf1ec5726a2af184e07"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\rec_aug.py",
+      "sha256": "9cc6337ae673d1cb3bd430e1fb816c369bc526fd5223c97ae89bbce2cc59197c"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\resize.py",
+      "sha256": "6a5ce615f6b1981875d04148ee7df08b9683cffe559dcd9cc506280086bf2e0d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\scriptaware_ar_label_encode.py",
+      "sha256": "1d578f43a21de84d2b7e9eb92455b5824c890dd2b482e26e2b866566b8b6735b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\smtr_label_encode.py",
+      "sha256": "6a09fb77da23c84498af0129b6e2af8e889e844d4ba43da859710931b85edada"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\srn_label_encode.py",
+      "sha256": "42e3f541e2d83f8f5822633aa1cd55431965f027c7ebf9a6e0349ac4b681bb79"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\unirec_label_encode.py",
+      "sha256": "6094e9d7fa29257f8eb9f7a3008be63faa06be461ab9215e847276e36b9f8740"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\visionlan_label_encode.py",
+      "sha256": "21b07a3234e22686a0673bad658a43ee0fe149b033c5f2555715a11f28173354"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\openrec\\preprocess\\__init__.py",
+      "sha256": "aa9ba6d75f38e8fc47b878724556e0cc2d43c12c4b463e8920051206a02cee2e"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\create_lmdb_dataset.py",
+      "sha256": "10731545eab38df69e4056462a605b5fea5bb15a92c7ec807ce1823b43357a30"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\download_example_images.py",
+      "sha256": "e2fc95f7afbc33730e1d71fd63f0334d1a738a9de873af0c61a80dece5cbb903"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_det.py",
+      "sha256": "db617cdbae419f38af054174de87823087c9652fbe42e91789659dce98136955"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec.py",
+      "sha256": "a3fca981bf199dfefe5c4dd6f634e0fc1674442601066317c6c931aee320ee82"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec_all_ch.py",
+      "sha256": "48c9377a8385ff382062b3bb9eb844c243eb7435ee13604582240f03e85823ac"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec_all_en.py",
+      "sha256": "3432d4a1d37d57fa9d9b59d346ea0ed940ed485d4dd52979e37e75c7fb6bb6fb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec_all_long.py",
+      "sha256": "787f5cff2ee1d8f1294a11899665b832ff28726154b2e69854cceba3ee4aef9e"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec_all_long_simple.py",
+      "sha256": "c66d1423d5cd3d6be60e809c08c23bf5b7723f6a8f22c96fc60ca3c509572ed2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\eval_rec_all_mlt.py",
+      "sha256": "d5e8002cda7c9cfe889dc585ff9b39bda44291055d621c588f23f54527f1c7d3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\export_rec.py",
+      "sha256": "ecbeaa1a8a5f2cba9d38c421722f7f078045331c124894e1d0688d319e7be96b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_det.py",
+      "sha256": "0a004e9852ce906054a7ecb7e1c5ac4e7e59e003e80ad317518fca787558ff17"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_doc.py",
+      "sha256": "93d1c366f8eecdf8270ce4b0c9bf42e3d30aafa7795a531a78be07c5ae2db59a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_doc_onnx.py",
+      "sha256": "ae1699248b96bc9a8a0139cdc7ede16c7a409a0993674c48a1711cb02d51c232"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_e2e.py",
+      "sha256": "1880d6c5cfc477b08d82d1077ef29e1edcc67a86d0518c099d8aaf9a67628f8b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_e2e_parallel.py",
+      "sha256": "123b62467c44fbb3cb43754dfabf2ead877a47b528c958c24ec01751baff9d06"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_rec.py",
+      "sha256": "0dd62ab2a09f3c083f89a35c1cb4deb08eef307fea444d0170867d066d22fcdb"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer_unirec_onnx.py",
+      "sha256": "510e05fb1937a96a19bf6501081afcce3dfa2087f53f9bcff126959db534c6d8"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\toonnx.py",
+      "sha256": "73f6e5f9d897785fc9a5da5dc40b4ef8a58c6c8fccff2f6d92160298bb980e22"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\to_markdown.py",
+      "sha256": "b7d25f8f76ee1b99d3bc85339c44bccfc5cda0e074fe8123dd3034909df329d3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\train_det.py",
+      "sha256": "27ed5b6026dbbd02103ab116434f3343066fbd9947a9c8d9e5a3dca8ab24ac18"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\train_rec.py",
+      "sha256": "451991acec65c0c6dfd664ca4d2efacf2ed587fdc23e844fe08c86f2f4311bae"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utility.py",
+      "sha256": "8d614dd065bc03efbafa25a2fc4e9a8b66cc531f4f3ed43ef78856c6fde6d874"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\cmer_web_dataset.py",
+      "sha256": "f91f9a18a19f583902c4a9367c4419d4e648cf84528635aec6694f5b94a8c317"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\collate_fn.py",
+      "sha256": "2ad0ef7309beccb85ce7e98a761e9e3404cf470e8a52a40865d63f83db7c10ed"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\lmdb_dataset.py",
+      "sha256": "7f578b393b9f3fcfa3df2608561d2728cf4078538a7b79932015c6b3e07987cf"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\lmdb_dataset_test.py",
+      "sha256": "03345e4c3770b3ad0c0e67209dd99a1a0310a2d8815306987b356e718e277647"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\multi_scale_sampler.py",
+      "sha256": "08c8d2e6e1d98219ab38d1949daf1d8cc0fe25951a85405aee129375b110ce46"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\native_size_dataset.py",
+      "sha256": "969ace5cf41a971a3764610b88421b806fd8afd40363aee6b7a93fe6913ca7d5"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\native_size_sampler.py",
+      "sha256": "60600fa36bb289e388f53775432ec7da92b5cc5c1d0eb0438cc9d3d4a4226b9e"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\ratio_dataset.py",
+      "sha256": "a44fe260fcd9e3db97c3ee452f879c4ed646d32ece465293eec465d210bdddb6"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\ratio_dataset_test.py",
+      "sha256": "5f53c87501a58c75beeaec8d378d1418882b82838c8f4c8554b4cff6d4e2c8c1"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\ratio_dataset_tvresize.py",
+      "sha256": "f4d0f8c2ad26839ccad2d0e6dff75d4bfc004ff57ba3c1b4554a4839a6f7c454"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\ratio_dataset_tvresize_test.py",
+      "sha256": "4d356a2059cfd47a2c1e6fcd5ad0b0f564c344df3376b5867ec349121e6d42f0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\ratio_sampler.py",
+      "sha256": "1c75fff380e0ffc8305fd176ffe9ed6f47eca29106f65dec2cb20536a1942cb0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\simple_dataset.py",
+      "sha256": "ac3dcb069426be959397f1d9895f96b7745e596c62c90d48ca2c7a562821e023"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\strlmdb_dataset.py",
+      "sha256": "e3deec722d725b33bd2fbe918cf2abdd9fc78f63ad8ceaa4569c824879fa1c63"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\text_lmdb_dataset.py",
+      "sha256": "fe14fbb792159a0757f5937c6b1b193756b581a36ca83bac99af5277bc2f4e99"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\data\\__init__.py",
+      "sha256": "c5c9dd230a8df1e5a4e7dd039985481de1d9d2f23b9bac23daf642ed16ca0a31"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\download\\download_dataset.py",
+      "sha256": "6b5f80589eca016260b8d711b7b502d7518464cee1e54f136db1ac2b308fd317"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\download\\utils.py",
+      "sha256": "6dc589ff108f57fe714f408c467355e011fec9eaf4131b0a55381cdd22723629"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\engine\\config.py",
+      "sha256": "d4748258ede40fc8b93e8e6e2fe9762f4a8d84c1364288259aaddc465fdf2881"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\engine\\trainer.py",
+      "sha256": "ae5d916f3bbfe28d35b74fc8aaf2a931db17ea65f6a328db40331d4344f24eee"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer\\onnx_engine.py",
+      "sha256": "0802aa126809f1ac77ac885b1606f5d376f703520befdd94e44e8c3bd44546b3"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer\\predict_rec.py",
+      "sha256": "498dfb3e7727f418991a4ef197750c7dea28653e2ce248d3029618ad47ccb9c8"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\infer\\utility.py",
+      "sha256": "d4b8f1551f418f87a10a820b4c9cdf77aec9df5a93860d523d522e6a43365f62"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\ckpt.py",
+      "sha256": "dd071c6fb54d70eef81f3166a0f1f6f815d6bc2b1fca0f516698f282964d7ff2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\gen_label.py",
+      "sha256": "ef27ece67ee314db9a36f45124fff507850ac28deb6af1ea6c1630eefcbea98f"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\logging.py",
+      "sha256": "7bf8d917d6497f7ceda5a1afe460980a52871c3902682388d8a2a3cd6f5c0b77"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\poly_nms.py",
+      "sha256": "054b736c2a7ce7250c3972ebc3eef4d66e92cb832010243eca997d5d09aa7af6"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\stats.py",
+      "sha256": "54cf9fde997aa733477c4506d727021889447ca0391cd4f71e63b7c855e85dd0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\utility.py",
+      "sha256": "d789a8a3e83945107092330d9f150eece58145fa2cc74dfcec4ac2986a63080b"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\visual.py",
+      "sha256": "5cc8eff55134da53f464547506cacfd2d3c78e002d8f2b9ee6ea3fba11fe0913"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_metric\\Deteval.py",
+      "sha256": "56995860abd14e26d8967640be56a7259a092278e808adb7f82911e46c7fc7d7"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_metric\\polygon_fast.py",
+      "sha256": "f154d053d7c5a56d9386eb14b7de86816d86f754781a403fa394963220d25cc2"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_utils\\extract_batchsize.py",
+      "sha256": "6b382c436cab4b9761711ce12a5400f177c65a8936d28779fb61bdfe2aab3924"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_utils\\extract_textpoint_fast.py",
+      "sha256": "ebe971e0ae75848ee9cf5876c6635e3d7753d05c8ef257c58926e35ae1bf3064"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_utils\\extract_textpoint_slow.py",
+      "sha256": "61822dbd9d01c20963444b8cf407e813463cc91f211da1ccffe3d1a5cb462e67"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_utils\\pgnet_pp_utils.py",
+      "sha256": "9510a73bd57af50a248c38c104cfa2689642935ccdedb2165e48311408b06814"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\e2e_utils\\visual.py",
+      "sha256": "b1b6062d6e26dfa66ba763e42031af31129abace4c02264af1009566989fa71d"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\Models\\level 1\\upstream\\OpenOCR\\tools\\utils\\opendoc_onnx_utils\\utils.py",
+      "sha256": "f1a2de65e7e5bbcdac5e8dad752203f8af9f6a8c6b48a0669552ffcc722c74d0"
+    }
+  ],
+  "config_sha256": {
+    "48": "856de69623db8017dca941fd3109127006bae84cd885bc0fb194691c0e13594c",
+    "123": "f55a204962a9b16ebe96bbab55d28a30214837d2f52f298e9d5029c9530187de",
+    "456": "027c8ef5d467dfff336ae2b8be2a2ce59dd04fde144e282265b682489d1908bb"
+  },
+  "limits": [
+    "Historical real test has been examined before",
+    "CAPRI2 text-ordinal and font width/slant supervision absent; preserve actual outputs",
+    "Generated-data quality and reader gains remain unproven",
+    "Baseline source/config matched; old run did not preserve full external source hashes, current OpenOCR snapshotted"
+  ]
+}

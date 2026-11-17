@@ -1,0 +1,22 @@
+{
+  "role": "diagnostic_preview_only",
+  "references": 100,
+  "fit_candidates": 64,
+  "fit_seeds_per_candidate": 24,
+  "fresh_test_images": 100,
+  "fit_seed": 3900000000,
+  "test_seed": 4120000000,
+  "reference_pixels_only": true,
+  "target_labels_used": false,
+  "reader_used": false,
+  "length": 5,
+  "count_votes": 70,
+  "font_pool": "314 previously render-verified assets, re-ranked using CryptBB pixels",
+  "source_sha256": "c3172370f6d053ffd0a6a15b7c82af2724b1975ed57db8d13302b6bbc96d678f",
+  "renderer_source_sha256": "7a96478e2f67ee418a3e17d445947960ea01257ac60acdde7016a3f39b1576f0",
+  "limitations": [
+    "Existing native SynthTIGER recipe family: striped backgrounds and grayscale glyphs; not a CAPRI recipe translator",
+    "Similarity diagnostic, not OCR or transfer accuracy",
+    "No production corpus, reader, committee rejection gate, or active training changes"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "model": 1,
+  "dataset": "B",
+  "epoch": 7,
+  "seed": 48,
+  "checkpoint": "model1\\runs\\darkbay\\B\\checkpoints\\epoch_7.pth",
+  "checkpoint_sha256": "ff7889ad095b164b4629fe92874e72d48384793d6988005ee86c63ce33f6508d",
+  "device": "cpu",
+  "threads": 2,
+  "batch_size": 16,
+  "precision": "FP32",
+  "images": 900,
+  "decoding": "Same saved free AR decoder plus one refinement; no forced length or case normalization",
+  "cpu_adapter": "Process-local memory.get_device() -> memory.device; training sources unchanged",
+  "evaluator_sha256": "edc477e5b566718189d40cfd2c9f64895178d468141829b3f7dc6f4bb242c587",
+  "created_at": "2026-11-13T08:38:16.247303+00:00",
+  "selection": "User-requested latest fully saved epoch captured at start; diagnostics only",
+  "labels": "Opened only after all four prediction files are frozen",
+  "training_changed": false,
+  "historical_repeatedly_inspected_test": true
+}

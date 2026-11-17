@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "case": 1,
+      "mae": 0.00867795782120615,
+      "selected_epoch": 13,
+      "passed": true
+    },
+    {
+      "case": 2,
+      "unmasked_epoch": 19,
+      "masked_epoch": 6,
+      "true_best_epoch": 6,
+      "passed": true
+    },
+    {
+      "case": 3,
+      "relative_mse_improvement": 0.9631994272534848,
+      "absolute_rmse_improvement": 0.018721955694760203,
+      "passed": true
+    }
+  ],
+  "config": {
+    "seed": 4817,
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "rank2_relative_mse_improvement": 0.35,
+    "rank2_absolute_rmse_improvement": 0.003,
+    "rank2_starts": 4,
+    "bootstrap_samples": 10000
+  }
+}

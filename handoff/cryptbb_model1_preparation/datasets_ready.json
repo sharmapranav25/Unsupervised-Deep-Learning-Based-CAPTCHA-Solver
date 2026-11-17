@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-11-14T00:29:37.099672+00:00",
+  "images_each": 100000,
+  "total_unique_pixels": 200000,
+  "cross_dataset_pixel_overlap": 0,
+  "configs": [
+    {
+      "dataset": "A",
+      "path": "model1\\configs\\cryptbb\\A\\prepared.yml",
+      "sha256": "3565d398e46052cb0e38a1fa44496e9c2c47f278e811f91b78399ae54fdb83d6",
+      "source_sha256": "b267cf76d1555fd675b83b2f4749ea1ed0a949febeee283cf48850bb177cfb4c"
+    },
+    {
+      "dataset": "B",
+      "path": "model1\\configs\\cryptbb\\B\\prepared.yml",
+      "sha256": "16286a7220e7870868a99f08bf6d8a931d4e4305a41e672ecef688a6b54291c3",
+      "source_sha256": "0479ada8dbbcc0834d61efe40afbbd3dfe273703382ee8a45ab1b19495db03a4"
+    }
+  ],
+  "training_started": false,
+  "synthetic_validation": "Required before training; not yet prepared for CryptBB"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    colors="true"
+    processIsolation="true"
+    stopOnFailure="false"
+    syntaxCheck="true"
+    backupGlobals="false"
+    bootstrap="test-bootstrap.php">
+
+    <testsuites>
+        <testsuite name="php-captcha-generator">
+          <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+            <exclude>
+             <file>test-bootstrap.php</file>
+             <file>src/_drafts/captcha.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

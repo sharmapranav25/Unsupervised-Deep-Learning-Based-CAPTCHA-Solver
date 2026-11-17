@@ -1,0 +1,26 @@
+# Latest DarkBay Model2 available checkpoint accuracy
+
+Family darkbay_v3_feature_20261115. Fixed snapshot of 27 committed checkpoints. Same900 historical real images,100 references excluded. Predictions frozen before labels. GPU IEEE FP32,batch4,7% allocator cap; evaluator reused unchanged from verified Model1 diagnostics. Model2-specific CPU/GPU parity is not claimed. No training or fixed-final20 selection changes.
+
+| Epoch | Model2-A | Model1-A | Difference pp | Model2-B | Model1-B | Difference pp |
+|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 0/900 (0.00%) | 0/900 (0.00%) | +0.00 | 0/900 (0.00%) | 0/900 (0.00%) | +0.00 |
+| 2 | 359/900 (39.89%) | 374/900 (41.56%) | -1.67 | 72/900 (8.00%) | 406/900 (45.11%) | -37.11 |
+| 3 | 444/900 (49.33%) | 544/900 (60.44%) | -11.11 | 487/900 (54.11%) | 448/900 (49.78%) | +4.33 |
+| 4 | 587/900 (65.22%) | 655/900 (72.78%) | -7.56 | 516/900 (57.33%) | 632/900 (70.22%) | -12.89 |
+| 5 | 565/900 (62.78%) | 643/900 (71.44%) | -8.67 | 528/900 (58.67%) | 627/900 (69.67%) | -11.00 |
+| 6 | 616/900 (68.44%) | 604/900 (67.11%) | +1.33 | 589/900 (65.44%) | 608/900 (67.56%) | -2.11 |
+| 7 | 575/900 (63.89%) | 519/900 (57.67%) | +6.22 | 590/900 (65.56%) | 484/900 (53.78%) | +11.78 |
+| 8 | 568/900 (63.11%) | 527/900 (58.56%) | +4.56 | Not saved at snapshot | — | — |
+| 9 | 545/900 (60.56%) | 579/900 (64.33%) | -3.78 | Not saved at snapshot | — | — |
+| 10 | 552/900 (61.33%) | 536/900 (59.56%) | +1.78 | Not saved at snapshot | — | — |
+| 11 | 536/900 (59.56%) | 589/900 (65.44%) | -5.89 | Not saved at snapshot | — | — |
+| 12 | 486/900 (54.00%) | 481/900 (53.44%) | +0.56 | Not saved at snapshot | — | — |
+| 13 | 517/900 (57.44%) | 532/900 (59.11%) | -1.67 | Not saved at snapshot | — | — |
+| 14 | 538/900 (59.78%) | 561/900 (62.33%) | -2.56 | Not saved at snapshot | — | — |
+| 15 | 525/900 (58.33%) | 465/900 (51.67%) | +6.67 | Not saved at snapshot | — | — |
+| 16 | 498/900 (55.33%) | 548/900 (60.89%) | -5.56 | Not saved at snapshot | — | — |
+| 17 | 530/900 (58.89%) | 540/900 (60.00%) | -1.11 | Not saved at snapshot | — | — |
+| 18 | 524/900 (58.22%) | 551/900 (61.22%) | -3.00 | Not saved at snapshot | — | — |
+| 19 | 528/900 (58.67%) | 544/900 (60.44%) | -1.78 | Not saved at snapshot | — | — |
+| 20 | 523/900 (58.11%) | 550/900 (61.11%) | -3.00 | Not saved at snapshot | — | — |

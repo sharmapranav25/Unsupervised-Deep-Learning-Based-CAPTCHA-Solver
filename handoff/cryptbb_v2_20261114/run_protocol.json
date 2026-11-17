@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-11-14T05:13:38.262256+00:00",
+  "scope": {
+    "created_at": "2026-11-14T05:02:08.441775+00:00",
+    "user_request": "Generate CryptBB datasets A and B with controller v2, then start Model1-A and Model1-B in parallel",
+    "mode": "free",
+    "images_each": 100000,
+    "arms": [
+      "custom",
+      "dino",
+      "mixed",
+      "synthtiger"
+    ],
+    "old_runs_preserved": true,
+    "old_B_remains_cancelled": true,
+    "new_B_authorized": true,
+    "parallel_execution": "Two concurrent readers, full GPU batches arbitrated by shared lock; unchanged batch128, seed48,20epochs",
+    "rejection": "Unvalidated controller entries block production until repaired; per-image completeness/usability/contrast and overlap checks enforced"
+  },
+  "generation": {
+    "images_each": 100000,
+    "entries": 400,
+    "per_entry": 250,
+    "arms": [
+      "custom",
+      "dino",
+      "mixed",
+      "synthtiger"
+    ],
+    "seed_bases": {
+      "A": 30000000000,
+      "B": 40000000000
+    },
+    "max_retries_per_image": 100,
+    "unvalidated_recipes": "block export",
+    "audit": "decode every image, verify synthetic label metadata, zero new A/B, old A/B and real pixel overlap"
+  },
+  "training": {
+    "epoch_num": 20,
+    "seed": 48,
+    "batch_size": 128,
+    "concurrent_readers": true,
+    "gpu_full_batch_lock": true,
+    "model": "same scratch SVTRv2+PARSeq as baseline",
+    "production_gate": "Actual v2 dataset checks plus paired optimizer/recovery/sampler smoke"
+  },
+  "selection_protocol_sha256": "1620fdfc3409f4f6855f92b1eb832401c6eb3b10545a0ce71b6ef14ea130005a",
+  "source_manifest_sha256": "7bef3058866b49fd088e488f6e5158841d59b179feccdb89c15fdb00e5a7c0ea",
+  "old_cryptbb_B_still_cancelled": true,
+  "old_runs_untouched": true
+}

@@ -1,0 +1,130 @@
+{
+  "verified_at": "2026-10-29T15:36:51.688994+00:00",
+  "passed": true,
+  "checkpoint_sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+  "prediction_sha256": "ef43e689435eca1b92c12f1b5d85a6da9fdbe45a914e3b2d4884126a4aac57a2",
+  "same_images_and_scoring_labels_as_previous": true,
+  "frozen_training_sources_unchanged": true,
+  "internal_counts_independently_rescored": true,
+  "comparison": {
+    "DarkBay": {
+      "epoch20": {
+        "correct": 783,
+        "n": 900,
+        "accuracy": 0.87,
+        "mean_absolute_error": 0.13,
+        "predicted_count_distribution": {
+          "5": 36,
+          "6": 784,
+          "7": 80
+        },
+        "unscored": 0
+      },
+      "partial_epoch16": {
+        "correct": 803,
+        "n": 900,
+        "accuracy": 0.8922222222222222,
+        "mean_absolute_error": 0.10777777777777778,
+        "predicted_count_distribution": {
+          "5": 23,
+          "6": 804,
+          "7": 73
+        },
+        "unscored": 0
+      },
+      "accuracy_change_percentage_points": -2.2222222222222254
+    },
+    "CryptBB": {
+      "epoch20": {
+        "correct": 59,
+        "n": 100,
+        "accuracy": 0.59,
+        "mean_absolute_error": 0.5,
+        "predicted_count_distribution": {
+          "2": 2,
+          "3": 2,
+          "4": 24,
+          "5": 59,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 0
+      },
+      "partial_epoch16": {
+        "correct": 63,
+        "n": 100,
+        "accuracy": 0.63,
+        "mean_absolute_error": 0.45,
+        "predicted_count_distribution": {
+          "2": 2,
+          "3": 2,
+          "4": 25,
+          "5": 63,
+          "6": 6,
+          "7": 2
+        },
+        "unscored": 0
+      },
+      "accuracy_change_percentage_points": -4.0000000000000036
+    },
+    "City": {
+      "epoch20": {
+        "correct": 48,
+        "n": 51,
+        "accuracy": 0.9411764705882353,
+        "mean_absolute_error": 0.058823529411764705,
+        "predicted_count_distribution": {
+          "5": 96,
+          "6": 4
+        },
+        "unscored": 49
+      },
+      "partial_epoch16": {
+        "correct": 51,
+        "n": 51,
+        "accuracy": 1.0,
+        "mean_absolute_error": 0.0,
+        "predicted_count_distribution": {
+          "5": 100
+        },
+        "unscored": 49
+      },
+      "accuracy_change_percentage_points": -5.882352941176472
+    },
+    "SimpleCaptcha": {
+      "epoch20": {
+        "correct": 14,
+        "n": 100,
+        "accuracy": 0.14,
+        "mean_absolute_error": 1.72,
+        "predicted_count_distribution": {
+          "2": 8,
+          "3": 6,
+          "4": 7,
+          "5": 14,
+          "6": 9,
+          "7": 48,
+          "8": 8
+        },
+        "unscored": 0
+      },
+      "partial_epoch16": {
+        "correct": 7,
+        "n": 100,
+        "accuracy": 0.07,
+        "mean_absolute_error": 1.91,
+        "predicted_count_distribution": {
+          "2": 8,
+          "3": 8,
+          "4": 9,
+          "5": 7,
+          "6": 4,
+          "7": 54,
+          "8": 10
+        },
+        "unscored": 0
+      },
+      "accuracy_change_percentage_points": 7.000000000000001
+    }
+  }
+}

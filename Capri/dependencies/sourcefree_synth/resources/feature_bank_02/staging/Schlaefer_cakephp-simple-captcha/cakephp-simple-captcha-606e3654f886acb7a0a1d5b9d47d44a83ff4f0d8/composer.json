@@ -1,0 +1,35 @@
+{
+  "name": "siezi/cakephp-simple-captcha",
+  "type": "cakephp-plugin",
+  "description": "Simple Captcha Plugin for CakePHP",
+  "keywords": [
+    "cakephp",
+    "cake4",
+    "plugin",
+    "captcha"
+  ],
+  "homepage": "https://github.com/Schlaefer/cakephp-simple-captcha",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/Schlaefer/cakephp-simple-captcha",
+    "issues": "https://github.com/Schlaefer/cakephp-simple-captcha/issues"
+  },
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "cakephp/cakephp": "^4.0",
+    "phpunit/phpunit": "~8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Siezi\\SimpleCaptcha\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Siezi\\SimpleCaptcha\\Test\\": "tests",
+      "Cake\\Test\\" : "vendor/cakephp/cakephp/test"
+    }
+  }
+}

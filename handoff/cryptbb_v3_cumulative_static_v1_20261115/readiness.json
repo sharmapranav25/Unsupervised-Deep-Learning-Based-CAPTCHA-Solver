@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "created_at": "2026-11-15T09:45:23.992378+00:00",
+  "protocol_sha256": "3d16e75acf2bda7dc97acb474038cb014c0ff09d978c03afebe80a1515a8e306",
+  "datasets": {
+    "A": {
+      "full_batch": 128,
+      "loss": 4.235225677490234,
+      "gradient": 1.9851984977722168,
+      "replay_loss": 4.202003479003906,
+      "exact_all_weights_optimizer_scheduler_scaler_python_numpy_torch_cuda_module_rng": true,
+      "sampler_exact": true,
+      "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+      "peak_gpu_gib": 7.357789516448975
+    },
+    "B": {
+      "full_batch": 128,
+      "loss": 4.2413787841796875,
+      "gradient": 2.0221734046936035,
+      "replay_loss": 4.20684814453125,
+      "exact_all_weights_optimizer_scheduler_scaler_python_numpy_torch_cuda_module_rng": true,
+      "sampler_exact": true,
+      "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+      "peak_gpu_gib": 7.357789516448975
+    }
+  },
+  "preprocessing": {
+    "passed": true,
+    "exact_matches": 6,
+    "datasets": [
+      "A",
+      "B"
+    ]
+  },
+  "lifecycle": {
+    "20_epoch_transition_and_completion": true,
+    "immutable_archive_and_existing_run_guard": true,
+    "STOP_A_and_B_before_next_optimizer_step": true,
+    "worker_failure_propagated": true,
+    "STOP_precedes_B_transition": true
+  },
+  "pilot_weights_disposable": true,
+  "real_labels_read": false
+}

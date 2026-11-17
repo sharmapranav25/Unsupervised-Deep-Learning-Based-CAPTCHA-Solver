@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_v3_sequence.py", line 70, in <module>
+    if __name__=='__main__':run()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_v3_sequence.py", line 59, in run
+    children('capri_controller.training.cryptbb_v3_model1','worker',True)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_v3_sequence.py", line 31, in children
+    assert not failed and all(p.returncode==0 for t,p,l in group),[(t,p.returncode) for t,p,l in group]
+AssertionError: [('A', 3221226505), ('B', 1)]

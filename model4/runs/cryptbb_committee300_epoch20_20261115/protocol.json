@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-16T05:55:53.583740+00:00",
+  "purpose": "user-requested committee accuracy diagnostic on the 300 pseudo-label pool",
+  "members": {
+    "M1A": "model1/runs/cryptbb_v3/A/epoch_20.pth",
+    "M1B": "model1/runs/cryptbb_v3/B/epoch_20.pth",
+    "M2A": "model2/runs/cryptbb_v3_epoch20_static_A_20261115/A/checkpoints/epoch_20.pth",
+    "M2B": "model2/runs/cryptbb_v3_epoch20_static_B_20261115/B/checkpoints/epoch_20.pth",
+    "M3A": "model3/runs/cryptbb_v3_feature_priority_v1_20261115/A/checkpoints/epoch_20.pth"
+  },
+  "epoch_rule": "epoch 20 for every member (user instruction)",
+  "device": "cuda FP32",
+  "batch_size": 16,
+  "preprocessing": "RGB PIL bicubic 32x128 ToTensor Normalize0.5",
+  "decoding": "saved config ARLabelDecode, no normalization",
+  "pool_sha256": "2259354db92fcb67e607b535085474dd70fe81c8c8b706f0fec92d9260a30551",
+  "labels": "opened only after prediction_freeze.json is written",
+  "script_sha256": "d1561559586bfee28285e994977b4a0713a718f1f7829c31fefe5f8cec8ef122",
+  "no_training_no_export": true
+}

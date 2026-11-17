@@ -1,0 +1,49 @@
+{
+  "source_images": 1000,
+  "evaluation_unique_images": 900,
+  "excluded_controller_images": 100,
+  "duplicate_eligible_images": 0,
+  "synthetic_pixel_overlap": 0,
+  "source_sizes": {
+    "(200, 50)": 1000
+  },
+  "metric": "Case-sensitive exact whole-string match; corpus CER also reported",
+  "checkpoint_selection": "All three fixed epoch20 latest checkpoints, no winner selected",
+  "preprocessing": "Training-compatible RGB torchvision bicubic32x128, ToTensor, Normalize(.5,.5)",
+  "decoding": "Saved PARSeq autoregressive decoder with one refinement; no forced length or charset narrowing",
+  "label_access": "Ground-truth filename stems are parsed only after all three prediction files are hash-frozen",
+  "limitation": "Existing historical real-family images; excludes this run's100 controller references but does not establish untouched status relative to earlier experiments.",
+  "checkpoints": [
+    {
+      "seed": 48,
+      "epoch": 20,
+      "global_step": 15640,
+      "checkpoint": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\parseq_darkbay_100k_20261005\\seed_48\\latest.pth",
+      "sha256": "a17c6665b0295f8d8507dbf36bba301ab4d95890ff63fde22d46906e32486176",
+      "seconds": 6843.896595716476,
+      "selection": "Fixed final epoch; no target labels or accuracy selection",
+      "data_sha256": "3b4ccde1e4807259bfbc654903c6e76ec31b8a1c1ac24cbb85715af29b16d25f"
+    },
+    {
+      "seed": 123,
+      "epoch": 20,
+      "global_step": 15640,
+      "checkpoint": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\parseq_darkbay_100k_20261005\\seed_123\\latest.pth",
+      "sha256": "d9d30566fb97d8a2fb127cf744e4d834ea02276919e0e479f86fc2afe3add810",
+      "seconds": 6899.740765571594,
+      "selection": "Fixed final epoch; no target labels or accuracy selection",
+      "data_sha256": "3b4ccde1e4807259bfbc654903c6e76ec31b8a1c1ac24cbb85715af29b16d25f"
+    },
+    {
+      "seed": 456,
+      "epoch": 20,
+      "global_step": 15640,
+      "checkpoint": "C:\\Users\\pranav\\Documents\\ChatGPT\\thesis\\runs\\parseq_darkbay_100k_20261005\\seed_456\\latest.pth",
+      "sha256": "197a9176d5e63101c7a614e5bdb48386c9909bae667d76b43fe4c531d4be9204",
+      "seconds": 6864.265486955643,
+      "selection": "Fixed final epoch; no target labels or accuracy selection",
+      "data_sha256": "3b4ccde1e4807259bfbc654903c6e76ec31b8a1c1ac24cbb85715af29b16d25f"
+    }
+  ],
+  "code_sha256": "e77208c141e051d615340b1b3a180a960edbd0e1411ce133bbe613b744a50c99"
+}

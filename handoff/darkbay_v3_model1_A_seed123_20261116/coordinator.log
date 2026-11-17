@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\darkbay_v3_model1_A_seed123_20261116\capri.py", line 7, in <module>
+    main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 360, in main
+    return globals()[a.stage]()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 334, in coordinate
+    if not (STUDY/'readiness/receipt.json').exists():child('readiness')
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 326, in child
+    assert p.returncode==0, f'{stage} failed; inspect logs, no blind retry'
+AssertionError: readiness failed; inspect logs, no blind retry

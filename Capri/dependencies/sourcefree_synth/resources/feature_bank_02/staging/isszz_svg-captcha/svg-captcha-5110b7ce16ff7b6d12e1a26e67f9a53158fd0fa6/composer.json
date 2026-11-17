@@ -1,0 +1,36 @@
+{
+    "name": "isszz/svg-captcha",
+    "description": "think svg captcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "isszz",
+            "email": "isszz@qq.com"
+        }
+    ],
+    "require": {
+        "ext-mbstring": "*",
+        "topthink/framework": "6.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
+        "psr-4": {
+            "isszz\\captcha\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-dev"
+        },
+        "think": {
+            "config":{
+                "svgcaptcha": "src/config/config.php"
+            }
+        }
+    }
+}

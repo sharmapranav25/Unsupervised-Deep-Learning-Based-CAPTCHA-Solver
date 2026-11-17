@@ -1,0 +1,164 @@
+{
+  "created_at": "2026-11-13T22:03:21.113691+00:00",
+  "scope": "CryptBB datasets and Model1 setup only",
+  "reader_training_authorized": false,
+  "reader_training_started": false,
+  "selected_generator": {
+    "path": "models/capri/checkpoint.pt",
+    "sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+    "epoch": 20,
+    "weights": "EMA",
+    "internal_count": true,
+    "separate_counter_used": false
+  },
+  "registry_sha256": "a8998c5ed8be7a3e3b960c80a143a126f19e8bc02bc376575a67a646d49a79cb",
+  "reference_manifest_sha256": "acfff54db583b0f5cc6fcfbc69ad44cdc2c313e5f7a6679fa6413b6aec8bdff6",
+  "source_audit_sha256": "8833f53939c85d05f898931d99fddb55c84981b14d7cd9539795d365557b3720",
+  "images_each": 100000,
+  "render_seed_bases": {
+    "A": 2000000000,
+    "B": 6000000000
+  },
+  "controllers": [
+    "custom",
+    "dino",
+    "mixed"
+  ],
+  "allocation": {
+    "custom": 33334,
+    "dino": 33333,
+    "mixed": 33333
+  },
+  "count_rule": "Fresh pixel-only selected Capri internal count; unique leading count >=50/100, ties rejected",
+  "calibration": "Reconstruct historical CryptBB capri1 first24 recipes with current verified controller features, matching DarkBay calibration procedure",
+  "real_test_images": 551,
+  "excluded_historical_selftrain_images": 100,
+  "real_labels_in_generation": false,
+  "reader": {
+    "epochs": 20,
+    "batch_size": 128,
+    "steps_per_epoch": 782,
+    "draws_per_epoch": 100096,
+    "seed": 48,
+    "initialization": "from scratch",
+    "checkpoint_selection": "Frozen synthetic validation only, earliest epoch on ties; CryptBB validation set must be frozen before future training"
+  },
+  "frozen_files": [
+    {
+      "path": "Capri/src/capri_controller/cryptbb_preparation.py",
+      "sha256": "f79d3027fce50aafac244c4fcd7cd1e040af8d58f2c7ae7e2aa96bdcbebf7e5c"
+    },
+    {
+      "path": "Capri/src/capri_controller/controller_comparison.py",
+      "sha256": "dd40937748cb4c8455a1ec46f8eb80abac0cf13ba14cce0773f385a7652df85d"
+    },
+    {
+      "path": "Capri/src/capri_controller/pipeline.py",
+      "sha256": "a79c8eaa5832d5c66e13e11d4562c0e59fe6c0277db869bc8887614207247df5"
+    },
+    {
+      "path": "Capri/src/capri_controller/corpus.py",
+      "sha256": "2f4063ffd30cda0f41059cdd923e8cbf3bfec92a92d802d992f16f564be259a6"
+    },
+    {
+      "path": "Capri/src/capri_controller/training/capri2_parseq.py",
+      "sha256": "8c9e9ccc6a9b9055c2a2c471b8b39134e739222b2d61183476d19213294df149"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/base.py",
+      "sha256": "cfca8e5f37ffd867803503dc784b6e3d414aa1027396ebff9898c9cc6ee3b8ac"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/custom.py",
+      "sha256": "9273e917e7a714f909d6553c86295644216aa4bba0507d645af05f006afb30a3"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/dino.py",
+      "sha256": "a76a7527f5bd0dfebbbe1409178b0a48cae624d7261436a7d49ad477a62b5586"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/dino_base.py",
+      "sha256": "363e43abfe6ab2dc2662f6a7d15269af1678dd17800571e080800f3d1f3bfe0c"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/regions.py",
+      "sha256": "1018086d9533716a6f25cc478c57057ee117efe0b0fb2a4c984ae4887c0e393d"
+    },
+    {
+      "path": "Capri/src/capri_controller/features/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Capri/src/capri_controller/rendering/base.py",
+      "sha256": "4c4b4b41eda4ddaf74a8a06662806dab61ca01027f084386d00c5a05f8556c27"
+    },
+    {
+      "path": "Capri/src/capri_controller/rendering/controls.py",
+      "sha256": "1b135701705979a105563cfc42c464f2c116c19ad23655db6ac0b0e2bf027517"
+    },
+    {
+      "path": "Capri/src/capri_controller/rendering/renderer.py",
+      "sha256": "658a019a121656befb8813154eb5b33c8a4e33daa1badc573f2ccd8bade03506"
+    },
+    {
+      "path": "Capri/src/capri_controller/rendering/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/data.py",
+      "sha256": "ecc8279f016ead12900d13c3fd0ac9df071c0fca72164e1ea978705beb5bda01"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/legacy_losses.py",
+      "sha256": "c3b55d2e1c396049eda485f0f44a6c1123a79942da063c6bc92294cbe726bf6e"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/legacy_model.py",
+      "sha256": "2420d2356db66eecff5dbb03d91cfa0b1c6482c56f682f0e24286b41767f8d2a"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/model.py",
+      "sha256": "796617633088e686fd38cf4484807cbbdaee996c10c96346b59056acd9e2bcad"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/primitives.py",
+      "sha256": "37564e5b5132660ed09c55767d8bba10fc2fa2b6b11f2b889323e3c63e1eb29b"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/training.py",
+      "sha256": "1d21a33bccdc939a7d36af11ac08fa777612d8970c406123e70aa77d2abbc6f4"
+    },
+    {
+      "path": "Capri/src/capri_controller/lightweight/__init__.py",
+      "sha256": "cf94c9e521081edf0f3db302be4ff7453e3fbd47d681f47872fb52e9dbc651d2"
+    },
+    {
+      "path": "Capri/src/capri_controller/networks/encoder.py",
+      "sha256": "d433eef5038263c99d823401412a82cab34ab42ef0659e40dc1036d906829530"
+    },
+    {
+      "path": "Capri/src/capri_controller/networks/mask.py",
+      "sha256": "cb61684b5f6e2fe7c55842ca546785d52ce0d00670466fc6326468dc896e7d55"
+    },
+    {
+      "path": "Capri/src/capri_controller/networks/schema.py",
+      "sha256": "d566506912eee968213fc6daacb003051e952ce2e0258f054edf1f1101831ea4"
+    },
+    {
+      "path": "Capri/src/capri_controller/networks/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Capri/src/capri_controller/controllers.py",
+      "sha256": "ac24a4928bdc6fe3a6b929fb3274d836d9dd9c3b59f843442c3dc9cea783c4de"
+    },
+    {
+      "path": "Capri/src/capri_controller/runtime.py",
+      "sha256": "a5d29d6a3cd6ba888b2f892218920562a453e44487b155dd86aed352085bda79"
+    },
+    {
+      "path": "Capri/configs/local.json",
+      "sha256": "223b4b09c930724c1600b0a4c9a33442271cf75fcc8c4228dc7b957cff0655d9"
+    }
+  ]
+}

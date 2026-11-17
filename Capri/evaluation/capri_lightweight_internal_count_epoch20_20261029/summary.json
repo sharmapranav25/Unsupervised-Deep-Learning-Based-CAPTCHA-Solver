@@ -1,0 +1,168 @@
+{
+  "completed_at": "2026-10-29T15:36:06.789439+00:00",
+  "checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+  "checkpoint_sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+  "checkpoint_pointer": {
+    "checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+    "epoch": 20,
+    "step": 19206,
+    "epoch_complete": true
+  },
+  "sampler_state": {
+    "epoch": 20,
+    "consumed_batches": 961,
+    "step": 19206
+  },
+  "weights": "EMA",
+  "schemes": {
+    "CryptBB": {
+      "images": 100,
+      "capri": {
+        "correct": 59,
+        "n": 100,
+        "accuracy": 0.59,
+        "mean_absolute_error": 0.5,
+        "predicted_count_distribution": {
+          "2": 2,
+          "3": 2,
+          "4": 24,
+          "5": 59,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 40,
+        "n": 100,
+        "accuracy": 0.4,
+        "mean_absolute_error": 1.08,
+        "predicted_count_distribution": {
+          "2": 1,
+          "3": 9,
+          "4": 14,
+          "5": 40,
+          "6": 11,
+          "7": 13,
+          "8": 12
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "5": 100
+      }
+    },
+    "City": {
+      "images": 100,
+      "capri": {
+        "correct": 48,
+        "n": 51,
+        "accuracy": 0.9411764705882353,
+        "mean_absolute_error": 0.058823529411764705,
+        "predicted_count_distribution": {
+          "5": 96,
+          "6": 4
+        },
+        "unscored": 49
+      },
+      "separate_transformer": {
+        "correct": 18,
+        "n": 51,
+        "accuracy": 0.35294117647058826,
+        "mean_absolute_error": 0.7450980392156863,
+        "predicted_count_distribution": {
+          "3": 5,
+          "4": 47,
+          "5": 35,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 49
+      },
+      "truth_count_distribution": {
+        "5": 51
+      }
+    },
+    "SimpleCaptcha": {
+      "images": 100,
+      "capri": {
+        "correct": 14,
+        "n": 100,
+        "accuracy": 0.14,
+        "mean_absolute_error": 1.72,
+        "predicted_count_distribution": {
+          "2": 8,
+          "3": 6,
+          "4": 7,
+          "5": 14,
+          "6": 9,
+          "7": 48,
+          "8": 8
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 1,
+        "n": 100,
+        "accuracy": 0.01,
+        "mean_absolute_error": 2.71,
+        "predicted_count_distribution": {
+          "2": 14,
+          "4": 8,
+          "5": 1,
+          "7": 10,
+          "8": 67
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "5": 100
+      }
+    },
+    "DarkBay": {
+      "images": 900,
+      "capri": {
+        "correct": 783,
+        "n": 900,
+        "accuracy": 0.87,
+        "mean_absolute_error": 0.13,
+        "predicted_count_distribution": {
+          "5": 36,
+          "6": 784,
+          "7": 80
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 49,
+        "n": 900,
+        "accuracy": 0.05444444444444444,
+        "mean_absolute_error": 1.7344444444444445,
+        "predicted_count_distribution": {
+          "2": 1,
+          "3": 1,
+          "4": 7,
+          "5": 24,
+          "6": 49,
+          "7": 119,
+          "8": 699
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "6": 899,
+        "7": 1
+      }
+    }
+  },
+  "label_sources": {
+    "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_100k_20261005\\evaluation_darkbay\\scoring_labels.json": "9861b917b01e397afd8b6a1311a4efce99890a73aeef6db4f6b4b8898626f05f",
+    "E:\\pranav\\cryptbb_sourcefree\\data\\cryptbb_split\\test\\labels.csv": "5692f224c952d7fdc7a71e6df0500865b153db336f60ce5f208b0562b321a99f",
+    "E:\\pranav\\CAPRI\\runs\\capri_decoder_500k_20261007\\diagnostics\\real_three_schemes_100_epoch8_20261008_v2\\simple_dataset_metadata.json": "5a2e605087434d48f64e3864b2363ae13749b828dbfc0011ba74fdf955984cdd",
+    "E:\\pranav\\Final sem\\CaptchaThesis\\system5_clean_baseline\\splits\\benchmark\\city.jsonl": "eec563b7782c336d8738111c8c0843f25d4a4c2f471cb6c98f7aa68d20b1b423",
+    "E:\\pranav\\Final sem\\CaptchaThesis\\system5_clean_baseline\\splits\\test\\city.jsonl": "a5c8661634d4c7435111fbcd4a3e945fab7d941f2df2d7bf434174baa459d5e1",
+    "E:\\pranav\\Final sem\\CaptchaThesis\\system5_clean_baseline\\splits\\dev\\city.jsonl": "0fb514507f01335d8885ab2ae853ae28653d78deb3c3917943e73895efed6c3a"
+  },
+  "prediction_sha256": "ef43e689435eca1b92c12f1b5d85a6da9fdbe45a914e3b2d4884126a4aac57a2",
+  "limitations": "Historical target sets, fixed existing sample. CPU FP32. SimpleCaptcha count based on saved publisher metadata. City only exact-file-hash matched annotations; remaining images not assigned assumed labels. No model selection or training changes."
+}

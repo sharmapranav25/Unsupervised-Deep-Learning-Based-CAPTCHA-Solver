@@ -1,0 +1,33 @@
+{
+  "adopted_at": "2026-11-13T21:28:27.710937+00:00",
+  "authorization": "User: we have to ignore what the best epoch is and stick with the epoch selected via validation",
+  "scope": "Checkpoint selection for the study; current implemented validation set is DarkBay Controller4",
+  "rule": "Maximize case-sensitive whole-string accuracy on the frozen synthetic validation set independently for each model and dataset; choose earliest epoch on an exact tie",
+  "training_budget": "Complete the planned20epochs; this rule selects a saved checkpoint and does not introduce early stopping",
+  "real_labels_role": "Score only after the synthetic choice is frozen; never use real accuracy peaks or real-curve agreement to choose or revise an epoch",
+  "darkbay_validation": "datasets/darkbay/validation/controller4_synthtiger_1000",
+  "darkbay_manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+  "freeze_dataset_and_rule": true,
+  "eligibility": {
+    "Model1": "Retained epochs2-20; epoch1 unavailable",
+    "Model2": "Epochs1-20",
+    "Model3": "Epochs1-20 after completed training and validation; current1-17 choices provisional"
+  },
+  "current_choices": {
+    "Model1-A": 12,
+    "Model1-B": 8,
+    "Model2-A": 16,
+    "Model2-B": 18,
+    "Model3-A_provisional": 16,
+    "Model3-B_provisional": 14
+  },
+  "pending_darkbay_work": [
+    "Evaluate frozen validation set on Model3 A/B epochs18-20 once checkpoints are committed",
+    "Freeze final validation choices using all eligible epochs; preserve the prior through17 selection freeze as an earlier snapshot",
+    "Score selected real predictions and publish the adopted selection report alongside historical fixed20 report before declaring the expanded DarkBay study complete"
+  ],
+  "historical_artifacts": "Preserve all earlier fixed20 protocols/results, existing selection freezes and original coordinator output; do not rewrite their provenance",
+  "reporting": "Use validation-selected results for the adopted comparison. Fixed20 remains a clearly labeled historical comparison, not the active checkpoint-selection rule.",
+  "limits": "This rule was adopted retrospectively after historical real diagnostics had been viewed; do not describe the present DarkBay experiment as prospectively blinded.",
+  "future_families": "Apply the same validation-only principle; freeze their synthetic validation data and metric before reader evaluation. No extra generator/training launches authorized by this addendum."
+}

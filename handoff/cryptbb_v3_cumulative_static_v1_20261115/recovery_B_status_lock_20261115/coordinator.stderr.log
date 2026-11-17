@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_cumulative_static.py", line 396, in <module>
+    if __name__=='__main__': main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_cumulative_static.py", line 388, in main
+    elif a.stage=='coordinate': coordinate()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_cumulative_static.py", line 359, in coordinate
+    supervise(tag,active,tick); active=None
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_cumulative_static.py", line 335, in supervise
+    assert p.returncode==0, f'{tag} worker failed: {p.returncode}'
+AssertionError: B worker failed: 1

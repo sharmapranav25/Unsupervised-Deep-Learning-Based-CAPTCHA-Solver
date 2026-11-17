@@ -1,0 +1,225 @@
+{
+  "created_at": "2026-11-16T06:04:51.455157+00:00",
+  "model": 3,
+  "dataset": "A",
+  "selector": "masked_rank1_v1_exact_auto",
+  "estimator_sha256": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+  "estimator_config": {
+    "seed": 4817,
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "rank2_relative_mse_improvement": 0.35,
+    "rank2_absolute_rmse_improvement": 0.003,
+    "rank2_starts": 4,
+    "bootstrap_samples": 10000
+  },
+  "candidate_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "selected_epoch": 20,
+  "top3": [
+    20,
+    19,
+    18
+  ],
+  "scores": [
+    0.0,
+    0.22636745116609072,
+    0.2526270504490367,
+    0.20080779288523454,
+    0.32073684598054536,
+    0.3762897835467701,
+    0.4121792417777978,
+    0.3787750109910149,
+    0.5352702309865478,
+    0.5459409343858503,
+    0.6777235527248668,
+    0.6586306999967926,
+    0.6468729148098951,
+    0.7028961258480031,
+    0.6750080893369186,
+    0.6863315938618139,
+    0.6928020224650044,
+    0.7082335548046513,
+    0.7148109305706135,
+    0.72987299333475
+  ],
+  "resolved_k": 5,
+  "fallback_used": true,
+  "mask_diagnostics": [
+    {
+      "k": 0,
+      "next_distance_residual": 0.06845986596193243,
+      "far_residual": 0.03331005691360437,
+      "tolerance": 0.008327514228401093,
+      "passes": false
+    },
+    {
+      "k": 1,
+      "next_distance_residual": 0.05517323424140874,
+      "far_residual": 0.02584147486999182,
+      "tolerance": 0.006460368717497955,
+      "passes": false
+    },
+    {
+      "k": 2,
+      "next_distance_residual": 0.05079966891383726,
+      "far_residual": 0.018772526260051943,
+      "tolerance": 0.005,
+      "passes": false
+    },
+    {
+      "k": 3,
+      "next_distance_residual": 0.03951671218729521,
+      "far_residual": 0.0118570807956061,
+      "tolerance": 0.005,
+      "passes": false
+    },
+    {
+      "k": 4,
+      "next_distance_residual": 0.024061226764683134,
+      "far_residual": 0.007198339759298453,
+      "tolerance": 0.005,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "next_distance_residual": 0.011844824097471654,
+      "far_residual": 0.0056694698916269996,
+      "tolerance": 0.005,
+      "passes": false
+    }
+  ],
+  "labels_read": false,
+  "prediction_sources": [
+    {
+      "epoch": 1,
+      "sha256": "aa452ef8e22f7f876767da4d6707ff9fcb1bc5bb89b48b09f8e79caac0380d9f",
+      "checkpoint_sha256": "1041648061bf370f87c3aade2bb4e355a8228b732158b34b8d9f87a2124b4383"
+    },
+    {
+      "epoch": 2,
+      "sha256": "219ae10a9dbc2a4cd8ac6136c1b8e9680ac2f1a321458d366acfb94aa43a0851",
+      "checkpoint_sha256": "a624bc5d4707d2ea99975556879cbb9413722652a6da1c858149979491de9f54"
+    },
+    {
+      "epoch": 3,
+      "sha256": "b073443f19082ba6a84a3d3c564dc18762a280053b31836eaaa27c8b12e6bb30",
+      "checkpoint_sha256": "dc04924215e8645cfebd0cd33e98356a93977a9cf23eb6e4c7ba09390d9d89b6"
+    },
+    {
+      "epoch": 4,
+      "sha256": "451b599c08b9a23572f27f6389833207fb3a3e36f7e7bb46a82f662ad24fa662",
+      "checkpoint_sha256": "71743294ebcf56b323c557c63e92995dffd6b0356ba11c5396a1e3b8dc04b3d2"
+    },
+    {
+      "epoch": 5,
+      "sha256": "b17622142aae0e785196d16ca9c29ecce46cf303212db2ef10a10210fd949501",
+      "checkpoint_sha256": "df6df53ea3fcae8a2b350e06f3f8c1c4d7249eb4fb0dc91c2563042ba78f7c8a"
+    },
+    {
+      "epoch": 6,
+      "sha256": "9a098aad4c3d9a5cf378e89bd570d73410219e280c6118fe45541cb5b1c945e7",
+      "checkpoint_sha256": "d09b9555480c0f0eeebfe92635a7ca06dff8085fa014f971f84ef97ef3a18492"
+    },
+    {
+      "epoch": 7,
+      "sha256": "8b8e5b946625ec3246a7ef666c2a4664c7c093f8c975caf55d7d5483be1a0312",
+      "checkpoint_sha256": "d920957992ad868e3121d0dc2a11ff60bad228327a5954e1160356ee892a7dbd"
+    },
+    {
+      "epoch": 8,
+      "sha256": "67e69d56261ff00fdea934617a2cc15c6c404cd6a403376fad469b251a6eeb34",
+      "checkpoint_sha256": "46860344d87fc4d852ad07cfc6f542ca16aa3a0f948a8b3492a4f4e700aceb45"
+    },
+    {
+      "epoch": 9,
+      "sha256": "16a0de89f86a154046f675a0557e33594bcecb6a947821e00be256324a89c291",
+      "checkpoint_sha256": "daafb7441ac0164b56404ff05f38920634cc86f19254409505fa86f76ee80b10"
+    },
+    {
+      "epoch": 10,
+      "sha256": "e3639a2be1dccce73a98bbd36ac0b66be7c099c09ec6d5f9f4344d2764f17220",
+      "checkpoint_sha256": "465df40ad8e7741880d3ad7bb4019873a832db5e46522b59fb4ab0bc1ec6a768"
+    },
+    {
+      "epoch": 11,
+      "sha256": "1d7e28f1823b650933f9a9753884e3699c93d9df1bc0cbd75678e9d86480dcbd",
+      "checkpoint_sha256": "2ffd0f7763844892676ff309cb70ce85c7d82b96db97204d6848d12fc9e6451f"
+    },
+    {
+      "epoch": 12,
+      "sha256": "bf62fd497bc0f13595a7b8ecd9d0a7d80fea847e87b4e970d8e7b4a0e3e0e7b3",
+      "checkpoint_sha256": "4112df6ecf420d70142daff7a5c320bfbd95ea87abda5efec7c991c2f3e82b0f"
+    },
+    {
+      "epoch": 13,
+      "sha256": "0581d5df06d78026e042cdcd8569d3bf67190109a531f46a732d17deef4e2958",
+      "checkpoint_sha256": "c01a40676adfc555887192730dcc4a26f0653d4c292ba7ce14117debc1a2df40"
+    },
+    {
+      "epoch": 14,
+      "sha256": "57f6f62b9c2a7b3c827fae9255f8754100cfbcf3dc831f272365ad2ac400c1b9",
+      "checkpoint_sha256": "19894e99126b0593c737acc174a518083040f6c562835359df4c0cfc856a0df6"
+    },
+    {
+      "epoch": 15,
+      "sha256": "6833af56182dd5432eba194a26ed29877938ba3f94700450db1c9fac5ff1725c",
+      "checkpoint_sha256": "2ade9229042f9e5cf1313ed7449e62ac3061a08e8a66763093914c4bdb83cb99"
+    },
+    {
+      "epoch": 16,
+      "sha256": "00e373669ce65f80f414348747855937f5ff8303c6512f843a045732bcc11e66",
+      "checkpoint_sha256": "65c418c7d960e38338b616f3525b78dc49bb5affadc98d6acd5ff5db190e6738"
+    },
+    {
+      "epoch": 17,
+      "sha256": "8bbed23c33a8d8420018f7f8054b00eecac8a807035c138a88614d5740adb928",
+      "checkpoint_sha256": "ea86e508a6f2119a5b62fa2cc15c82873f1c42382e6f1270212e648f6bc9c437"
+    },
+    {
+      "epoch": 18,
+      "sha256": "11a12e2224fb07bea26916e201fb1fadcbd943ea134aa8147eafdeb66d6c8378",
+      "checkpoint_sha256": "a43035dd8e4d6308d524c4651f5954beea064323799e0d215f2fa45a265410e4"
+    },
+    {
+      "epoch": 19,
+      "sha256": "a426f48ccc30175bad5995e52860dfafdd856528da8fce6938ef97d503c3e3b6",
+      "checkpoint_sha256": "7460ff5e930224e26f82350530b39e72ba9843d20341b2dcb1180e37b962cafa"
+    },
+    {
+      "epoch": 20,
+      "sha256": "977945278b6a34f5ff6818f987c3e8b7dee8a56375bf7d62cde8bbe5ae45881b",
+      "checkpoint_sha256": "fc6df1515ca82526d4dce774f5d10672809fcbe894cd4a7d6c0e603ddab55f52"
+    }
+  ],
+  "device_note": "predictions on GPU FP32",
+  "scope": "Model4 committee diagnostic only; not an official Model3 reporting selection"
+}

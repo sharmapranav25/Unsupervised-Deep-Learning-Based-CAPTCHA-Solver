@@ -1,0 +1,104 @@
+[2026/11/14 11:00:30] openrec INFO: ----------- Config -----------
+[2026/11/14 11:00:30] openrec INFO: Architecture : 
+[2026/11/14 11:00:30] openrec INFO:     Decoder : 
+[2026/11/14 11:00:30] openrec INFO:         decode_ar : True
+[2026/11/14 11:00:30] openrec INFO:         name : PARSeqDecoder
+[2026/11/14 11:00:30] openrec INFO:         only_attn : False
+[2026/11/14 11:00:30] openrec INFO:         refine_iters : 1
+[2026/11/14 11:00:30] openrec INFO:     Encoder : 
+[2026/11/14 11:00:30] openrec INFO:         depths : [6, 6, 6]
+[2026/11/14 11:00:30] openrec INFO:         dims : [128, 256, 384]
+[2026/11/14 11:00:30] openrec INFO:         last_stage : False
+[2026/11/14 11:00:30] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/14 11:00:30] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/14 11:00:30] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/14 11:00:30] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/14 11:00:30] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/14 11:00:30] openrec INFO:         use_pos_embed : False
+[2026/11/14 11:00:30] openrec INFO:     Transform : None
+[2026/11/14 11:00:30] openrec INFO:     algorithm : PARSeq
+[2026/11/14 11:00:30] openrec INFO:     model_type : rec
+[2026/11/14 11:00:30] openrec INFO: Eval : None
+[2026/11/14 11:00:30] openrec INFO: Global : 
+[2026/11/14 11:00:30] openrec INFO:     cal_metric_during_train : False
+[2026/11/14 11:00:30] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 11:00:30] openrec INFO:     checkpoints : None
+[2026/11/14 11:00:30] openrec INFO:     device : gpu
+[2026/11/14 11:00:30] openrec INFO:     distributed : False
+[2026/11/14 11:00:30] openrec INFO:     epoch_num : 20
+[2026/11/14 11:00:30] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/14 11:00:30] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/14 11:00:30] openrec INFO:     grad_clip_val : 20
+[2026/11/14 11:00:30] openrec INFO:     infer_img : None
+[2026/11/14 11:00:30] openrec INFO:     log_smooth_window : 20
+[2026/11/14 11:00:30] openrec INFO:     max_text_length : 25
+[2026/11/14 11:00:30] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\cryptbb_v3_training_20261114\readiness\A
+[2026/11/14 11:00:30] openrec INFO:     pretrained_model : None
+[2026/11/14 11:00:30] openrec INFO:     print_batch_step : 50
+[2026/11/14 11:00:30] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/14 11:00:30] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\cryptbb_v3\A\predictions_unused.txt
+[2026/11/14 11:00:30] openrec INFO:     seed : 48
+[2026/11/14 11:00:30] openrec INFO:     use_amp : True
+[2026/11/14 11:00:30] openrec INFO:     use_space_char : False
+[2026/11/14 11:00:30] openrec INFO:     use_tensorboard : False
+[2026/11/14 11:00:30] openrec INFO: LRScheduler : 
+[2026/11/14 11:00:30] openrec INFO:     cycle_momentum : False
+[2026/11/14 11:00:30] openrec INFO:     name : OneCycleLR
+[2026/11/14 11:00:30] openrec INFO:     warmup_epoch : 2
+[2026/11/14 11:00:30] openrec INFO: Loss : 
+[2026/11/14 11:00:30] openrec INFO:     name : PARSeqLoss
+[2026/11/14 11:00:30] openrec INFO: Metric : 
+[2026/11/14 11:00:30] openrec INFO:     is_filter : False
+[2026/11/14 11:00:30] openrec INFO:     is_lower : False
+[2026/11/14 11:00:30] openrec INFO:     main_indicator : acc
+[2026/11/14 11:00:30] openrec INFO:     name : RecMetric
+[2026/11/14 11:00:30] openrec INFO: Optimizer : 
+[2026/11/14 11:00:30] openrec INFO:     filter_bias_and_bn : True
+[2026/11/14 11:00:30] openrec INFO:     lr : 0.00035
+[2026/11/14 11:00:30] openrec INFO:     name : AdamW
+[2026/11/14 11:00:30] openrec INFO:     weight_decay : 0.05
+[2026/11/14 11:00:30] openrec INFO: PostProcess : 
+[2026/11/14 11:00:30] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 11:00:30] openrec INFO:     name : ARLabelDecode
+[2026/11/14 11:00:30] openrec INFO:     use_space_char : False
+[2026/11/14 11:00:30] openrec INFO: Train : 
+[2026/11/14 11:00:30] openrec INFO:     dataset : 
+[2026/11/14 11:00:30] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\cryptbb_v3\\A\\train_lmdb']
+[2026/11/14 11:00:30] openrec INFO:         ds_width : True
+[2026/11/14 11:00:30] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/14 11:00:30] openrec INFO:         padding : False
+[2026/11/14 11:00:30] openrec INFO:         transforms : 
+[2026/11/14 11:00:30] openrec INFO:             DecodeImagePIL : 
+[2026/11/14 11:00:30] openrec INFO:                 img_mode : RGB
+[2026/11/14 11:00:30] openrec INFO:             ARLabelEncode : 
+[2026/11/14 11:00:30] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 11:00:30] openrec INFO:                 max_text_length : 25
+[2026/11/14 11:00:30] openrec INFO:                 use_space_char : False
+[2026/11/14 11:00:30] openrec INFO:             KeepKeys : 
+[2026/11/14 11:00:30] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/14 11:00:30] openrec INFO:     loader : 
+[2026/11/14 11:00:30] openrec INFO:         batch_size_per_card : 128
+[2026/11/14 11:00:30] openrec INFO:         drop_last : True
+[2026/11/14 11:00:30] openrec INFO:         max_ratio : 4
+[2026/11/14 11:00:30] openrec INFO:         min_ratio : 4
+[2026/11/14 11:00:30] openrec INFO:         num_workers : 0
+[2026/11/14 11:00:30] openrec INFO:         shuffle : True
+[2026/11/14 11:00:30] openrec INFO:     sampler : 
+[2026/11/14 11:00:30] openrec INFO:         divided_factor : [4, 16]
+[2026/11/14 11:00:30] openrec INFO:         first_bs : 128
+[2026/11/14 11:00:30] openrec INFO:         fix_bs : True
+[2026/11/14 11:00:30] openrec INFO:         is_training : True
+[2026/11/14 11:00:30] openrec INFO:         name : RatioSampler
+[2026/11/14 11:00:30] openrec INFO:         scales : [[128, 32]]
+[2026/11/14 11:00:30] openrec INFO: filename : prepared
+[2026/11/14 11:00:30] openrec INFO: ---------------------------------------------
+[2026/11/14 11:00:40] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\A\train_lmdb
+[2026/11/14 11:00:41] openrec INFO: 0
+[2026/11/14 11:00:41] openrec INFO: 0
+[2026/11/14 11:00:41] openrec INFO: 0
+[2026/11/14 11:00:41] openrec INFO: 0
+[2026/11/14 11:00:41] openrec INFO: 100000
+[2026/11/14 11:00:41] openrec INFO: train dataloader has 782 iters
+[2026/11/14 11:00:41] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/14 11:00:42] openrec INFO: train from scratch
+[2026/11/14 11:00:42] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0

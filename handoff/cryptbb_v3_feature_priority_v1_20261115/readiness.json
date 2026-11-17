@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "protocol_sha256": "cb6c931940cc5bbf2a1781a3789e874f31746300804fb2d50a1b602dbabafa7a",
+  "checked_at": "2026-11-16T02:44:34.783392+00:00",
+  "initial_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+  "all100k_synthetic_labels_match": true,
+  "policy_tests": {
+    "passed": true,
+    "threshold_strict": true,
+    "forgetting": true,
+    "reference_importance": true,
+    "immutable_buckets": true,
+    "exact_replay": true,
+    "full_batches": true,
+    "coverage": true
+  },
+  "warmup_draws_exact": true,
+  "fixed256_inference_repeats_exactly": true,
+  "early_256_vs64_string_differences": 2,
+  "mature_inference256_matches64_on512_images": true,
+  "mature_probe_unique_strings": 512,
+  "real_data_guard_tested": true,
+  "baseline_step_and_preprocessing_source_hashes_match": true,
+  "inference_preserves_weights_and_all_rng": true,
+  "full128_resume_weights_optimizer_scheduler_scaler_rng_sampler_exact": true,
+  "production_size_adaptive_replay": true,
+  "losses": [
+    4.237785339355469,
+    4.208187103271484,
+    4.208187103271484
+  ],
+  "peak_gpu_gib": 7.357699394226074,
+  "pilot_weights_disposable": true
+}

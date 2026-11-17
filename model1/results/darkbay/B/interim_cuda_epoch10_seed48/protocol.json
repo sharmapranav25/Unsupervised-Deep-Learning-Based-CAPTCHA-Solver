@@ -1,0 +1,22 @@
+{
+  "model": 1,
+  "dataset": "B",
+  "epoch": 10,
+  "seed": 48,
+  "checkpoint": "model1\\runs\\darkbay\\B\\checkpoints\\epoch_10.pth",
+  "checkpoint_sha256": "d380de7d18351d892fccf027da334e373e076b31315901f0106c419fa4f533b9",
+  "device": "cuda",
+  "threads": 2,
+  "batch_size": 64,
+  "precision": "FP32",
+  "images": 900,
+  "gpu_scheduling": "Existing training GPU lock per inference batch; no training state changes",
+  "decoding": "Same saved free AR decoder plus one refinement; no forced length or case normalization",
+  "cpu_adapter": "Process-local memory.get_device() -> memory.device; training sources unchanged",
+  "evaluator_sha256": "41bcb96f744fe8ba4ea43d58efe43f2360eab0e13ab909f2883c00bb37a91d94",
+  "created_at": "2026-11-13T16:56:39.016300+00:00",
+  "selection": "User-requested latest fully saved epoch captured at start; diagnostics only",
+  "labels": "Opened only after all four prediction files are frozen",
+  "training_changed": false,
+  "historical_repeatedly_inspected_test": true
+}

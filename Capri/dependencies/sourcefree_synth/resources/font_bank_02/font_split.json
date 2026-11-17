@@ -1,0 +1,133 @@
+{
+ "version": 2,
+ "method": "v2: the 26 v1 held-out families ranked by sha256(salt+family) within caps-only / mixed-case strata; first 13 (caps-only kept on both sides) stay held out, the rest join train",
+ "salt": "hybrid_v3_font_split|",
+ "counts": {
+  "train": {
+   "families": 162,
+   "caps_only": 20
+  },
+  "heldout": {
+   "families": 13,
+   "caps_only": 2
+  }
+ },
+ "heldout_families": [
+  "Acme",
+  "Andika",
+  "Cabin",
+  "Fascinate Inline",
+  "Monoton",
+  "Odor Mean Chey",
+  "Rhodium Libre",
+  "Space Mono",
+  "Spinnaker",
+  "Tac One",
+  "Tiro Kannada",
+  "Unbounded",
+  "Vollkorn SC"
+ ],
+ "heldout_keys": [
+  "acme",
+  "andika",
+  "cabin",
+  "fascinateinline",
+  "monoton",
+  "odormeanchey",
+  "rhodiumlibre",
+  "spacemono",
+  "spinnaker",
+  "tacone",
+  "tirokannada",
+  "unbounded",
+  "vollkornsc"
+ ],
+ "moved_to_train_v2": [
+  "Barlow",
+  "Fugaz One",
+  "Gotu",
+  "LXGW WenKai Mono TC",
+  "Libertinus Mono",
+  "Noto Nastaliq Urdu",
+  "Noto Sans Warang Citi",
+  "Noto Serif NP Hmong",
+  "Raleway Dots",
+  "Rubik Light",
+  "Ruda",
+  "Six Caps",
+  "Train One"
+ ],
+ "fonts_json_sha256": "67816ac4700be72f54f536fe1c0b371363e72a13e7b896302afc7610264c6d1f",
+ "v1": {
+  "method": "sha256(salt+family) rank within caps-only / mixed-case strata; first round(15%) held out",
+  "salt": "hybrid_v3_font_split|",
+  "fraction": 0.15,
+  "counts": {
+   "train": {
+    "families": 149,
+    "caps_only": 19
+   },
+   "heldout": {
+    "families": 26,
+    "caps_only": 3
+   }
+  },
+  "heldout_families": [
+   "Acme",
+   "Andika",
+   "Barlow",
+   "Cabin",
+   "Fascinate Inline",
+   "Fugaz One",
+   "Gotu",
+   "LXGW WenKai Mono TC",
+   "Libertinus Mono",
+   "Monoton",
+   "Noto Nastaliq Urdu",
+   "Noto Sans Warang Citi",
+   "Noto Serif NP Hmong",
+   "Odor Mean Chey",
+   "Raleway Dots",
+   "Rhodium Libre",
+   "Rubik Light",
+   "Ruda",
+   "Six Caps",
+   "Space Mono",
+   "Spinnaker",
+   "Tac One",
+   "Tiro Kannada",
+   "Train One",
+   "Unbounded",
+   "Vollkorn SC"
+  ],
+  "heldout_keys": [
+   "acme",
+   "andika",
+   "barlow",
+   "cabin",
+   "fascinateinline",
+   "fugazone",
+   "gotu",
+   "libertinusmono",
+   "lxgwwenkaimonotc",
+   "monoton",
+   "notonastaliqurdu",
+   "notosanswarangciti",
+   "notoserifnphmong",
+   "odormeanchey",
+   "ralewaydots",
+   "rhodiumlibre",
+   "rubik",
+   "ruda",
+   "sixcaps",
+   "spacemono",
+   "spinnaker",
+   "tacone",
+   "tirokannada",
+   "trainone",
+   "unbounded",
+   "vollkornsc"
+  ],
+  "fonts_json_sha256": "82b31d5d6f540e51b56f0cc61bc0d02b6b2d4b653f034300d8ecaf8f3b620852"
+ }
+}

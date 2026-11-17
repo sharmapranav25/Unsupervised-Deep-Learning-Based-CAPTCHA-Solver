@@ -1,0 +1,145 @@
+{
+  "time": "2026-10-29T15:36:06.794227+00:00",
+  "state": "complete",
+  "schemes": {
+    "CryptBB": {
+      "images": 100,
+      "capri": {
+        "correct": 59,
+        "n": 100,
+        "accuracy": 0.59,
+        "mean_absolute_error": 0.5,
+        "predicted_count_distribution": {
+          "2": 2,
+          "3": 2,
+          "4": 24,
+          "5": 59,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 40,
+        "n": 100,
+        "accuracy": 0.4,
+        "mean_absolute_error": 1.08,
+        "predicted_count_distribution": {
+          "2": 1,
+          "3": 9,
+          "4": 14,
+          "5": 40,
+          "6": 11,
+          "7": 13,
+          "8": 12
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "5": 100
+      }
+    },
+    "City": {
+      "images": 100,
+      "capri": {
+        "correct": 48,
+        "n": 51,
+        "accuracy": 0.9411764705882353,
+        "mean_absolute_error": 0.058823529411764705,
+        "predicted_count_distribution": {
+          "5": 96,
+          "6": 4
+        },
+        "unscored": 49
+      },
+      "separate_transformer": {
+        "correct": 18,
+        "n": 51,
+        "accuracy": 0.35294117647058826,
+        "mean_absolute_error": 0.7450980392156863,
+        "predicted_count_distribution": {
+          "3": 5,
+          "4": 47,
+          "5": 35,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 49
+      },
+      "truth_count_distribution": {
+        "5": 51
+      }
+    },
+    "SimpleCaptcha": {
+      "images": 100,
+      "capri": {
+        "correct": 14,
+        "n": 100,
+        "accuracy": 0.14,
+        "mean_absolute_error": 1.72,
+        "predicted_count_distribution": {
+          "2": 8,
+          "3": 6,
+          "4": 7,
+          "5": 14,
+          "6": 9,
+          "7": 48,
+          "8": 8
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 1,
+        "n": 100,
+        "accuracy": 0.01,
+        "mean_absolute_error": 2.71,
+        "predicted_count_distribution": {
+          "2": 14,
+          "4": 8,
+          "5": 1,
+          "7": 10,
+          "8": 67
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "5": 100
+      }
+    },
+    "DarkBay": {
+      "images": 900,
+      "capri": {
+        "correct": 783,
+        "n": 900,
+        "accuracy": 0.87,
+        "mean_absolute_error": 0.13,
+        "predicted_count_distribution": {
+          "5": 36,
+          "6": 784,
+          "7": 80
+        },
+        "unscored": 0
+      },
+      "separate_transformer": {
+        "correct": 49,
+        "n": 900,
+        "accuracy": 0.05444444444444444,
+        "mean_absolute_error": 1.7344444444444445,
+        "predicted_count_distribution": {
+          "2": 1,
+          "3": 1,
+          "4": 7,
+          "5": 24,
+          "6": 49,
+          "7": 119,
+          "8": 699
+        },
+        "unscored": 0
+      },
+      "truth_count_distribution": {
+        "6": 899,
+        "7": 1
+      }
+    }
+  }
+}

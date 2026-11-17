@@ -1,0 +1,42 @@
+{
+  "inputs": 100,
+  "refined_inputs": 100,
+  "preview_only": false,
+  "controllers": [
+    "custom",
+    "dino",
+    "mixed"
+  ],
+  "length_rule": {
+    "counts": {
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 2,
+      "6": 89,
+      "7": 7,
+      "8": 2
+    },
+    "threshold": 0.5,
+    "default_length": 6,
+    "votes": 89,
+    "mode": "majority"
+  },
+  "refinement": "Highest probability resolves incompatible heads; inactive levels zero; clamp generic renderer parameter ranges; apply observed majority length. Preserve every raw prediction and per-image recipe.",
+  "comparison": "50% corresponding image appearance descriptors +50% full100-image distribution. Custom and DINO metrics differ; mixed uses calibrated50/50 components. No character-string matching.",
+  "candidates": "Per-image neutral, pixel-derived colors, generic geometry/effect variants, then separate mutations around each controller leader. Same model-derived length throughout.",
+  "selection": "Per-controller shortlist validated on3 fresh synthetic seeds against the same unlabeled reference pixels; require all3 complete and usable. This is recipe reliability testing, not an unseen-target evaluation.",
+  "diversity": "100 entries per controller, including shared choices. Do not select one globally best controller. Track exact duplicate settings and pixel hashes.",
+  "corpus": "100000 images; balanced333/334 allocations over300 entries, seeded remainder assignment. Fresh strings and render seeds; retry within the same entry for complete, usable outputs of derived length. Log every rejection.",
+  "source_hashes": {
+    "hybrid": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+    "custom_encoder": "0dfac96c3b903cab88bddcfe28dde69550fe53d7d43571a26eb2cd5bd7e3ba38",
+    "text_mask": "8d7747a31215371a3d0721536bb14e46ffb07cdd00798effeaf732f57785f33c",
+    "dino": "55c8b267f479b614ec20858947ce361ba804846c193e20be74263a096bb6d75e"
+  },
+  "vlm": false,
+  "target_labels": false,
+  "code_sha256": "a79c8eaa5832d5c66e13e11d4562c0e59fe6c0277db869bc8887614207247df5",
+  "description_checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+  "description_checkpoint_sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764"
+}

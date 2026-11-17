@@ -1,0 +1,16 @@
+{
+  "model": 2,
+  "dataset": "B",
+  "epoch": 20,
+  "checkpoint_sha256": "fb68f56e30b00e920031a3694177406eb9d1bfdab7e90071d14d59cdb309d3e6",
+  "training_protocol_sha256": "05672addbc1c7547a4fd420b5eb89005524347cc6da5c784c8c60e09df028b1d",
+  "manifest_sha256": "52ed4addf3527f7eda1de26ea3984b0f1bfbbae2a16c351fcac594993b5b8d3a",
+  "images": 900,
+  "device": "cpu",
+  "precision": "FP32",
+  "batch": 16,
+  "threads": 2,
+  "labels_after_freeze": true,
+  "selection": "Fixed final20 primary; interim diagnostics do not steer training",
+  "historical_test": true
+}

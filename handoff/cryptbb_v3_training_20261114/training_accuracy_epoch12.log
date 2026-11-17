@@ -1,0 +1,27 @@
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:06.685470+00:00', 'pid': 141708, 'processed': 512, 'total': 100000, 'seconds': 7.171000000089407, 'images_per_second': 71.39868916380092, 'estimated_seconds_remaining': 1393.414937517373}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:13.181151+00:00', 'pid': 141708, 'processed': 1024, 'total': 100000, 'seconds': 13.671000000089407, 'images_per_second': 74.90307951088458, 'estimated_seconds_remaining': 1321.3875937586417}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:19.501261+00:00', 'pid': 141708, 'processed': 1536, 'total': 100000, 'seconds': 20.0, 'images_per_second': 76.8, 'estimated_seconds_remaining': 1282.0833333333333}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:26.015949+00:00', 'pid': 141708, 'processed': 2048, 'total': 100000, 'seconds': 26.5, 'images_per_second': 77.28301886792453, 'estimated_seconds_remaining': 1267.4453125}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:32.640574+00:00', 'pid': 141708, 'processed': 2560, 'total': 100000, 'seconds': 33.125, 'images_per_second': 77.28301886792453, 'estimated_seconds_remaining': 1260.8203125}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:39.109081+00:00', 'pid': 141708, 'processed': 3072, 'total': 100000, 'seconds': 39.592999999877065, 'images_per_second': 77.58947288686228, 'estimated_seconds_remaining': 1249.241635412788}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:45.730521+00:00', 'pid': 141708, 'processed': 3584, 'total': 100000, 'seconds': 46.217999999877065, 'images_per_second': 77.5455450259538, 'estimated_seconds_remaining': 1243.3467321395499}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:51.516079+00:00', 'pid': 141708, 'processed': 4096, 'total': 100000, 'seconds': 52.0, 'images_per_second': 78.76923076923077, 'estimated_seconds_remaining': 1217.53125}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:28:57.336662+00:00', 'pid': 141708, 'processed': 4608, 'total': 100000, 'seconds': 57.82800000021234, 'images_per_second': 79.68458186316455, 'estimated_seconds_remaining': 1197.1199166710624}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:03.608287+00:00', 'pid': 141708, 'processed': 5120, 'total': 100000, 'seconds': 64.09299999987707, 'images_per_second': 79.88391868082037, 'estimated_seconds_remaining': 1187.7234062477219}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:10.434298+00:00', 'pid': 141708, 'processed': 5632, 'total': 100000, 'seconds': 70.9210000000894, 'images_per_second': 79.41230383092314, 'estimated_seconds_remaining': 1188.3297102287709}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:16.812805+00:00', 'pid': 141708, 'processed': 6144, 'total': 100000, 'seconds': 77.2960000000894, 'images_per_second': 79.48664872687971, 'estimated_seconds_remaining': 1180.7769166680325}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:23.315739+00:00', 'pid': 141708, 'processed': 6656, 'total': 100000, 'seconds': 83.81199999991804, 'images_per_second': 79.41583544130326, 'estimated_seconds_remaining': 1175.3827115373122}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:29.627474+00:00', 'pid': 141708, 'processed': 7168, 'total': 100000, 'seconds': 90.125, 'images_per_second': 79.53398058252426, 'estimated_seconds_remaining': 1167.19921875}
+{'state': 'evaluating', 'updated_at': '2026-11-14T22:29:36.076977+00:00', 'pid': 141708, 'processed': 7680, 'total': 100000, 'seconds': 96.56199999991804, 'images_per_second': 79.5343924111609, 'estimated_seconds_remaining': 1160.7557083323481}
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_v3_training_accuracy.py", line 81, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\cryptbb_v3_training_accuracy.py", line 48, in main
+    if (out/'STOP').exists() or (STUDY/'STOP').exists():raise RuntimeError('Stop marker present; evaluation stops')
+RuntimeError: Stop marker present; evaluation stops

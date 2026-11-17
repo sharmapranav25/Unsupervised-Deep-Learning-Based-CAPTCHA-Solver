@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-11-13T17:15:32.188640+00:00",
+  "sources": [
+    {
+      "source": "Capri/tools/evaluate_model1_epochs.py",
+      "snapshot": "handoff\\darkbay_curriculum_20261113\\model1_epoch_sweep_evaluate_model1_epochs.py",
+      "sha256": "52526b06b5b4bdf474dc405184d9325457acffb0fdaa810a509febcb49d77a27"
+    },
+    {
+      "source": "Capri/src/capri_controller/training/ab_status_evaluation.py",
+      "snapshot": "handoff\\darkbay_curriculum_20261113\\model1_epoch_sweep_ab_status_evaluation.py",
+      "sha256": "903bbea1c58344c01c27b3a16b0123798c4a0d248064cc9dc3ce1d7358f1a9be"
+    }
+  ],
+  "available_epochs": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "unavailable_epochs": [
+    1
+  ],
+  "reason": "Original trainer epoch > start_save_epoch with save_epoch_step [1,1]; epoch1 latest overwritten; no epoch1 archive in migrated or original A/B runs",
+  "evidence": [
+    "model1/configs/darkbay/A/original.yml",
+    "model1/runs/darkbay/A/training/train.log",
+    "model1/runs/darkbay/B/training/train.log",
+    "model1/src/OpenOCR/tools/engine/trainer.py"
+  ],
+  "averaging": false
+}

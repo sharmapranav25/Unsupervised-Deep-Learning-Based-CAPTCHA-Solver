@@ -1,0 +1,59 @@
+{
+    "name": "mobicms/captcha",
+    "description": "A simple PHP CAPTCHA library",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "captcha"
+    ],
+    "authors": [
+        {
+            "name": "Oleg Kasyanov",
+            "role": "Team Lead, Developer",
+            "homepage": "https://github.com/batumibiz",
+            "email": "oleg@batumi.org"
+        },
+        {
+            "name": "Our Contributors",
+            "homepage": "https://github.com/mobicms/captcha/graphs/contributors"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/mobicms/captcha",
+        "issues": "https://github.com/mobicms/captcha/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "pestphp/pest": "^v4.7",
+        "vimeo/psalm": "^6.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mobicms\\Captcha\\": "src/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@static-analysis",
+            "@test"
+        ],
+        "cs-check": "php-cs-fixer check",
+        "cs-fix": "php-cs-fixer fix",
+        "static-analysis": "psalm --no-diff --show-info=true",
+        "test": "pest --colors=always",
+        "test-coverage": [
+            "@putenv XDEBUG_MODE=coverage",
+            "pest --colors=always --coverage --coverage-clover clover.xml --log-junit report.xml"
+        ]
+    }
+}

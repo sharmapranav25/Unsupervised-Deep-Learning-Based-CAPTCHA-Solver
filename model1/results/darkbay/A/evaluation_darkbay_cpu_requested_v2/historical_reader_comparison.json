@@ -1,0 +1,111 @@
+{
+  "comparison": "Corresponding single-reader epoch20 checkpoints on historical900 DarkBay images",
+  "new_model1_A": {
+    "correct": 615,
+    "total": 900,
+    "exact_match_percent": 68.33333333333333,
+    "character_error_rate_percent": 6.202555082392149,
+    "checkpoint_epoch": 20,
+    "checkpoint_sha256": "09c7f135749843c0b91651b6d6554bc29b84dd8f5a8cad5a6af452f54adddc35",
+    "device": "cpu",
+    "seconds": 49.374579429626465,
+    "previous_capri_reader": {
+      "seed": 48,
+      "correct": 492,
+      "total": 900,
+      "exact_match_percent": 54.666666666666664,
+      "character_error_rate_percent": 9.794482503240141,
+      "predicted_lengths": {
+        "6": 900
+      }
+    },
+    "change_percentage_points": 13.666666666666664,
+    "checkpoint_selection": "Fixed final epoch20",
+    "historical_real_test": true
+  },
+  "old_model2_epoch20": {
+    "seed": 48,
+    "epoch": 20,
+    "correct": 577,
+    "total": 900,
+    "accuracy": 64.11111111111111,
+    "CER": 7.7763377152379185,
+    "synthetic_validation": {
+      "epoch": 20,
+      "acc": 0.96499999807,
+      "norm_edit_dis": 0.9930666666805333,
+      "num_samples": 5000
+    }
+  },
+  "old_model3_epoch20": {
+    "seed": 48,
+    "epoch": 20,
+    "correct": 569,
+    "total": 900,
+    "accuracy": 63.22222222222222,
+    "CER": 8.128124421403443,
+    "synthetic_validation": {
+      "epoch": 20,
+      "acc": 0.9641999980716001,
+      "norm_edit_dis": 0.9929333333474667,
+      "num_samples": 5000,
+      "mean_sequence_nll": 0.14588565229205375,
+      "validation_seconds": 11.159932700000354
+    }
+  },
+  "gain_vs_model2_pp": 4.222222222222214,
+  "gain_vs_model3_pp": 5.111111111111107,
+  "published_model2": {
+    "seed_48": {
+      "correct": 566,
+      "total": 900,
+      "accuracy": 62.888888888888886,
+      "CER": 7.924458433623403
+    },
+    "seed_123": {
+      "correct": 520,
+      "total": 900,
+      "accuracy": 57.77777777777778,
+      "CER": 9.794482503240141
+    },
+    "seed_456": {
+      "correct": 524,
+      "total": 900,
+      "accuracy": 58.22222222222222,
+      "CER": 9.350120348083689
+    },
+    "ensemble": {
+      "correct": 565,
+      "total": 900,
+      "accuracy": 62.77777777777778,
+      "CER": 8.091094241807072
+    }
+  },
+  "published_model3": {
+    "seed_48": {
+      "correct": 569,
+      "total": 900,
+      "accuracy": 63.22222222222222,
+      "CER": 8.128124421403443
+    },
+    "seed_123": {
+      "correct": 539,
+      "total": 900,
+      "accuracy": 59.888888888888886,
+      "CER": 8.868728013330864
+    },
+    "seed_456": {
+      "correct": 531,
+      "total": 900,
+      "accuracy": 59.0,
+      "CER": 8.609516756156268
+    },
+    "ensemble": {
+      "correct": 569,
+      "total": 900,
+      "accuracy": 63.22222222222222,
+      "CER": 7.831882984632475
+    }
+  },
+  "limits": "Different generators, datasets and training protocols; not a curriculum-only ablation. New diagnostic uses CPU FP32; historical inference used GPU. Model3 final-epoch designation followed inspection of historical real results. New A/B Model2/3 experiments have not been trained."
+}

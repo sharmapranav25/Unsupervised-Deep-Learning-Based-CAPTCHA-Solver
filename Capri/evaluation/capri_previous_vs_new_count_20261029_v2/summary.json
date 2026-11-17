@@ -1,0 +1,136 @@
+{
+  "completed_at": "2026-10-29T17:30:26.421908+00:00",
+  "schemes": {
+    "DarkBay": {
+      "previous_capri": {
+        "correct": 672,
+        "n": 900,
+        "accuracy": 0.7466666666666667,
+        "mean_absolute_error": 0.26222222222222225,
+        "predicted_count_distribution": {
+          "3": 1,
+          "4": 6,
+          "5": 203,
+          "6": 673,
+          "7": 17
+        },
+        "unscored": 0
+      },
+      "new_capri": {
+        "correct": 783,
+        "n": 900,
+        "accuracy": 0.87,
+        "mean_absolute_error": 0.13,
+        "predicted_count_distribution": {
+          "5": 36,
+          "6": 784,
+          "7": 80
+        },
+        "unscored": 0
+      },
+      "change_percentage_points": 12.333333333333329
+    },
+    "CryptBB": {
+      "previous_capri": {
+        "correct": 9,
+        "n": 100,
+        "accuracy": 0.09,
+        "mean_absolute_error": 1.86,
+        "predicted_count_distribution": {
+          "2": 13,
+          "3": 24,
+          "4": 23,
+          "5": 9,
+          "6": 2,
+          "7": 13,
+          "8": 16
+        },
+        "unscored": 0
+      },
+      "new_capri": {
+        "correct": 59,
+        "n": 100,
+        "accuracy": 0.59,
+        "mean_absolute_error": 0.5,
+        "predicted_count_distribution": {
+          "2": 2,
+          "3": 2,
+          "4": 24,
+          "5": 59,
+          "6": 10,
+          "7": 3
+        },
+        "unscored": 0
+      },
+      "change_percentage_points": 50.0
+    },
+    "City": {
+      "previous_capri": {
+        "correct": 48,
+        "n": 51,
+        "accuracy": 0.9411764705882353,
+        "mean_absolute_error": 0.058823529411764705,
+        "predicted_count_distribution": {
+          "4": 15,
+          "5": 85
+        },
+        "unscored": 49
+      },
+      "new_capri": {
+        "correct": 48,
+        "n": 51,
+        "accuracy": 0.9411764705882353,
+        "mean_absolute_error": 0.058823529411764705,
+        "predicted_count_distribution": {
+          "5": 96,
+          "6": 4
+        },
+        "unscored": 49
+      },
+      "change_percentage_points": 0.0
+    },
+    "SimpleCaptcha": {
+      "previous_capri": {
+        "correct": 21,
+        "n": 100,
+        "accuracy": 0.21,
+        "mean_absolute_error": 1.64,
+        "predicted_count_distribution": {
+          "2": 18,
+          "3": 7,
+          "4": 9,
+          "5": 21,
+          "6": 12,
+          "7": 24,
+          "8": 9
+        },
+        "unscored": 0
+      },
+      "new_capri": {
+        "correct": 14,
+        "n": 100,
+        "accuracy": 0.14,
+        "mean_absolute_error": 1.72,
+        "predicted_count_distribution": {
+          "2": 8,
+          "3": 6,
+          "4": 7,
+          "5": 14,
+          "6": 9,
+          "7": 48,
+          "8": 8
+        },
+        "unscored": 0
+      },
+      "change_percentage_points": -6.999999999999998
+    }
+  },
+  "baseline_checkpoint": "E:\\pranav\\CAPRI\\models\\active\\hybrid\\hybrid.pt",
+  "baseline_sha256": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+  "new_checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+  "new_sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+  "baseline_prediction_sha256": "3261f22e50b4b11be4e12c26d3ba1c8e7ad65e84bb2f3b5c9d628d5fbb15fedf",
+  "new_prediction_sha256": "ef43e689435eca1b92c12f1b5d85a6da9fdbe45a914e3b2d4884126a4aac57a2",
+  "same_images_labels_preprocessing": true,
+  "limitations": "Historical mostly fixed-length target sets. City49unscored; SimpleCaptcha ground truth from saved publisher count metadata. This is count accuracy, not text recognition. No checkpoint selection or deployment changes."
+}

@@ -1,0 +1,1118 @@
+{
+  "selection_sha256": "6d9164cf57a88a832840e087c42354facc7cc43e85318cc9547699b3eae7fd89",
+  "selection_frozen_before_scoring": true,
+  "rows": [
+    {
+      "model": 1,
+      "dataset": "A",
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "eligible_epochs": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "provisional": false,
+      "selected": {
+        "epoch": 14,
+        "recorded_loss": 0.071274,
+        "eligible": true,
+        "estimated_score": 0.6312127749089131,
+        "correct": 45,
+        "total": 251,
+        "accuracy_percent": 17.92828685258964
+      },
+      "unrestricted_selected": {
+        "epoch": 12,
+        "recorded_loss": 0.134839,
+        "eligible": false,
+        "estimated_score": 0.7080992758841361,
+        "correct": 61,
+        "total": 251,
+        "accuracy_percent": 24.302788844621514
+      },
+      "final_epoch": {
+        "epoch": 20,
+        "recorded_loss": 0.00873,
+        "eligible": true,
+        "estimated_score": 0.6214157637005165,
+        "correct": 59,
+        "total": 251,
+        "accuracy_percent": 23.50597609561753
+      },
+      "top3": [
+        {
+          "epoch": 14,
+          "recorded_loss": 0.071274,
+          "eligible": true,
+          "estimated_score": 0.6312127749089131,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.009148,
+          "eligible": true,
+          "estimated_score": 0.6299876608222091,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.00873,
+          "eligible": true,
+          "estimated_score": 0.6214157637005165,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        }
+      ],
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "recorded_loss": 3.825254,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 2,
+          "recorded_loss": 2.67017,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 3,
+          "recorded_loss": 0.780133,
+          "eligible": false,
+          "estimated_score": 0.25964301551647173,
+          "correct": 28,
+          "total": 251,
+          "accuracy_percent": 11.155378486055778
+        },
+        {
+          "epoch": 4,
+          "recorded_loss": 0.602629,
+          "eligible": false,
+          "estimated_score": 0.36063518983389986,
+          "correct": 42,
+          "total": 251,
+          "accuracy_percent": 16.733067729083665
+        },
+        {
+          "epoch": 5,
+          "recorded_loss": 0.505664,
+          "eligible": false,
+          "estimated_score": 0.3592801767995223,
+          "correct": 49,
+          "total": 251,
+          "accuracy_percent": 19.52191235059761
+        },
+        {
+          "epoch": 6,
+          "recorded_loss": 0.418627,
+          "eligible": false,
+          "estimated_score": 0.37170308290080323,
+          "correct": 46,
+          "total": 251,
+          "accuracy_percent": 18.326693227091635
+        },
+        {
+          "epoch": 7,
+          "recorded_loss": 0.368319,
+          "eligible": false,
+          "estimated_score": 0.3892212950288147,
+          "correct": 51,
+          "total": 251,
+          "accuracy_percent": 20.318725099601593
+        },
+        {
+          "epoch": 8,
+          "recorded_loss": 0.347187,
+          "eligible": false,
+          "estimated_score": 0.4330405523450572,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 9,
+          "recorded_loss": 0.284366,
+          "eligible": false,
+          "estimated_score": 0.5010944096982692,
+          "correct": 49,
+          "total": 251,
+          "accuracy_percent": 19.52191235059761
+        },
+        {
+          "epoch": 10,
+          "recorded_loss": 0.21184,
+          "eligible": false,
+          "estimated_score": 0.6051893882283657,
+          "correct": 57,
+          "total": 251,
+          "accuracy_percent": 22.709163346613547
+        },
+        {
+          "epoch": 11,
+          "recorded_loss": 0.161154,
+          "eligible": false,
+          "estimated_score": 0.6231075612620345,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 12,
+          "recorded_loss": 0.134839,
+          "eligible": false,
+          "estimated_score": 0.7080992758841361,
+          "correct": 61,
+          "total": 251,
+          "accuracy_percent": 24.302788844621514
+        },
+        {
+          "epoch": 13,
+          "recorded_loss": 0.107799,
+          "eligible": false,
+          "estimated_score": 0.6625715494888766,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964
+        },
+        {
+          "epoch": 14,
+          "recorded_loss": 0.071274,
+          "eligible": true,
+          "estimated_score": 0.6312127749089131,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964
+        },
+        {
+          "epoch": 15,
+          "recorded_loss": 0.048055,
+          "eligible": true,
+          "estimated_score": 0.5951100985108583,
+          "correct": 53,
+          "total": 251,
+          "accuracy_percent": 21.115537848605577
+        },
+        {
+          "epoch": 16,
+          "recorded_loss": 0.030243,
+          "eligible": true,
+          "estimated_score": 0.595423763045654,
+          "correct": 48,
+          "total": 251,
+          "accuracy_percent": 19.12350597609562
+        },
+        {
+          "epoch": 17,
+          "recorded_loss": 0.020498,
+          "eligible": true,
+          "estimated_score": 0.5864481798792617,
+          "correct": 49,
+          "total": 251,
+          "accuracy_percent": 19.52191235059761
+        },
+        {
+          "epoch": 18,
+          "recorded_loss": 0.012435,
+          "eligible": true,
+          "estimated_score": 0.596632757872373,
+          "correct": 58,
+          "total": 251,
+          "accuracy_percent": 23.10756972111554
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.009148,
+          "eligible": true,
+          "estimated_score": 0.6299876608222091,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.00873,
+          "eligible": true,
+          "estimated_score": 0.6214157637005165,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        }
+      ],
+      "all20_mean_accuracy_percent": 17.98804780876494,
+      "resolved_k": 5,
+      "fallback_used": true
+    },
+    {
+      "model": 1,
+      "dataset": "B",
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "eligible_epochs": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "provisional": false,
+      "selected": {
+        "epoch": 14,
+        "recorded_loss": 0.063387,
+        "eligible": true,
+        "estimated_score": 0.6965952309425407,
+        "correct": 53,
+        "total": 251,
+        "accuracy_percent": 21.115537848605577
+      },
+      "unrestricted_selected": {
+        "epoch": 13,
+        "recorded_loss": 0.107787,
+        "eligible": false,
+        "estimated_score": 0.7120621070435926,
+        "correct": 62,
+        "total": 251,
+        "accuracy_percent": 24.701195219123505
+      },
+      "final_epoch": {
+        "epoch": 20,
+        "recorded_loss": 0.006476,
+        "eligible": true,
+        "estimated_score": 0.6798952666185075,
+        "correct": 60,
+        "total": 251,
+        "accuracy_percent": 23.904382470119522
+      },
+      "top3": [
+        {
+          "epoch": 14,
+          "recorded_loss": 0.063387,
+          "eligible": true,
+          "estimated_score": 0.6965952309425407,
+          "correct": 53,
+          "total": 251,
+          "accuracy_percent": 21.115537848605577
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.006476,
+          "eligible": true,
+          "estimated_score": 0.6798952666185075,
+          "correct": 60,
+          "total": 251,
+          "accuracy_percent": 23.904382470119522
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.008947,
+          "eligible": true,
+          "estimated_score": 0.669242174934596,
+          "correct": 61,
+          "total": 251,
+          "accuracy_percent": 24.302788844621514
+        }
+      ],
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "recorded_loss": 3.815821,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 2,
+          "recorded_loss": 3.015368,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 3,
+          "recorded_loss": 0.813376,
+          "eligible": false,
+          "estimated_score": 0.2708593518735432,
+          "correct": 38,
+          "total": 251,
+          "accuracy_percent": 15.139442231075698
+        },
+        {
+          "epoch": 4,
+          "recorded_loss": 0.606049,
+          "eligible": false,
+          "estimated_score": 0.2911361053469819,
+          "correct": 39,
+          "total": 251,
+          "accuracy_percent": 15.53784860557769
+        },
+        {
+          "epoch": 5,
+          "recorded_loss": 0.469996,
+          "eligible": false,
+          "estimated_score": 0.43707082595462454,
+          "correct": 50,
+          "total": 251,
+          "accuracy_percent": 19.9203187250996
+        },
+        {
+          "epoch": 6,
+          "recorded_loss": 0.416878,
+          "eligible": false,
+          "estimated_score": 0.35170380410827756,
+          "correct": 42,
+          "total": 251,
+          "accuracy_percent": 16.733067729083665
+        },
+        {
+          "epoch": 7,
+          "recorded_loss": 0.363827,
+          "eligible": false,
+          "estimated_score": 0.4769969520136687,
+          "correct": 50,
+          "total": 251,
+          "accuracy_percent": 19.9203187250996
+        },
+        {
+          "epoch": 8,
+          "recorded_loss": 0.335192,
+          "eligible": false,
+          "estimated_score": 0.4806246639498698,
+          "correct": 51,
+          "total": 251,
+          "accuracy_percent": 20.318725099601593
+        },
+        {
+          "epoch": 9,
+          "recorded_loss": 0.251135,
+          "eligible": false,
+          "estimated_score": 0.41530665935087924,
+          "correct": 35,
+          "total": 251,
+          "accuracy_percent": 13.944223107569721
+        },
+        {
+          "epoch": 10,
+          "recorded_loss": 0.193386,
+          "eligible": false,
+          "estimated_score": 0.5533627102080044,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964
+        },
+        {
+          "epoch": 11,
+          "recorded_loss": 0.174089,
+          "eligible": false,
+          "estimated_score": 0.6002765255448753,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 12,
+          "recorded_loss": 0.13506,
+          "eligible": false,
+          "estimated_score": 0.6304447332119174,
+          "correct": 55,
+          "total": 251,
+          "accuracy_percent": 21.91235059760956
+        },
+        {
+          "epoch": 13,
+          "recorded_loss": 0.107787,
+          "eligible": false,
+          "estimated_score": 0.7120621070435926,
+          "correct": 62,
+          "total": 251,
+          "accuracy_percent": 24.701195219123505
+        },
+        {
+          "epoch": 14,
+          "recorded_loss": 0.063387,
+          "eligible": true,
+          "estimated_score": 0.6965952309425407,
+          "correct": 53,
+          "total": 251,
+          "accuracy_percent": 21.115537848605577
+        },
+        {
+          "epoch": 15,
+          "recorded_loss": 0.047718,
+          "eligible": true,
+          "estimated_score": 0.6505299088092192,
+          "correct": 58,
+          "total": 251,
+          "accuracy_percent": 23.10756972111554
+        },
+        {
+          "epoch": 16,
+          "recorded_loss": 0.026208,
+          "eligible": true,
+          "estimated_score": 0.6593427016649648,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        },
+        {
+          "epoch": 17,
+          "recorded_loss": 0.015927,
+          "eligible": true,
+          "estimated_score": 0.6509131829760838,
+          "correct": 58,
+          "total": 251,
+          "accuracy_percent": 23.10756972111554
+        },
+        {
+          "epoch": 18,
+          "recorded_loss": 0.015253,
+          "eligible": true,
+          "estimated_score": 0.6502721787889179,
+          "correct": 62,
+          "total": 251,
+          "accuracy_percent": 24.701195219123505
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.008947,
+          "eligible": true,
+          "estimated_score": 0.669242174934596,
+          "correct": 61,
+          "total": 251,
+          "accuracy_percent": 24.302788844621514
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.006476,
+          "eligible": true,
+          "estimated_score": 0.6798952666185075,
+          "correct": 60,
+          "total": 251,
+          "accuracy_percent": 23.904382470119522
+        }
+      ],
+      "all20_mean_accuracy_percent": 18.52589641434263,
+      "resolved_k": 5,
+      "fallback_used": true
+    },
+    {
+      "model": 2,
+      "dataset": "A",
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "eligible_epochs": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "provisional": false,
+      "selected": {
+        "epoch": 14,
+        "recorded_loss": 0.03937462800899354,
+        "eligible": true,
+        "estimated_score": 0.780204735725522,
+        "correct": 66,
+        "total": 251,
+        "accuracy_percent": 26.294820717131476
+      },
+      "unrestricted_selected": {
+        "epoch": 14,
+        "recorded_loss": 0.03937462800899354,
+        "eligible": true,
+        "estimated_score": 0.780204735725522,
+        "correct": 66,
+        "total": 251,
+        "accuracy_percent": 26.294820717131476
+      },
+      "final_epoch": {
+        "epoch": 20,
+        "recorded_loss": 0.005360727670782334,
+        "eligible": true,
+        "estimated_score": 0.7710412052833128,
+        "correct": 64,
+        "total": 251,
+        "accuracy_percent": 25.49800796812749
+      },
+      "top3": [
+        {
+          "epoch": 14,
+          "recorded_loss": 0.03937462800899354,
+          "eligible": true,
+          "estimated_score": 0.780204735725522,
+          "correct": 66,
+          "total": 251,
+          "accuracy_percent": 26.294820717131476
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.005360727670782334,
+          "eligible": true,
+          "estimated_score": 0.7710412052833128,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.006123082214922351,
+          "eligible": true,
+          "estimated_score": 0.7523344708775426,
+          "correct": 66,
+          "total": 251,
+          "accuracy_percent": 26.294820717131476
+        }
+      ],
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "recorded_loss": 3.8200188250188023,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 2,
+          "recorded_loss": 1.2608962567032451,
+          "eligible": false,
+          "estimated_score": 0.2393177286826963,
+          "correct": 35,
+          "total": 251,
+          "accuracy_percent": 13.944223107569721
+        },
+        {
+          "epoch": 3,
+          "recorded_loss": 0.9904861867122943,
+          "eligible": false,
+          "estimated_score": 0.21299124127637073,
+          "correct": 33,
+          "total": 251,
+          "accuracy_percent": 13.147410358565738
+        },
+        {
+          "epoch": 4,
+          "recorded_loss": 0.7118825252022585,
+          "eligible": false,
+          "estimated_score": 0.2393124661529239,
+          "correct": 33,
+          "total": 251,
+          "accuracy_percent": 13.147410358565738
+        },
+        {
+          "epoch": 5,
+          "recorded_loss": 0.5696686621745835,
+          "eligible": false,
+          "estimated_score": 0.3290033714964955,
+          "correct": 42,
+          "total": 251,
+          "accuracy_percent": 16.733067729083665
+        },
+        {
+          "epoch": 6,
+          "recorded_loss": 0.4696116929545122,
+          "eligible": false,
+          "estimated_score": 0.41695405249331047,
+          "correct": 53,
+          "total": 251,
+          "accuracy_percent": 21.115537848605577
+        },
+        {
+          "epoch": 7,
+          "recorded_loss": 0.3746311941072154,
+          "eligible": false,
+          "estimated_score": 0.4344187242768611,
+          "correct": 51,
+          "total": 251,
+          "accuracy_percent": 20.318725099601593
+        },
+        {
+          "epoch": 8,
+          "recorded_loss": 0.3015997680404302,
+          "eligible": false,
+          "estimated_score": 0.48219963355902434,
+          "correct": 58,
+          "total": 251,
+          "accuracy_percent": 23.10756972111554
+        },
+        {
+          "epoch": 9,
+          "recorded_loss": 0.22627458991983052,
+          "eligible": false,
+          "estimated_score": 0.4865439699975092,
+          "correct": 51,
+          "total": 251,
+          "accuracy_percent": 20.318725099601593
+        },
+        {
+          "epoch": 10,
+          "recorded_loss": 0.1759849213673483,
+          "eligible": false,
+          "estimated_score": 0.5191062001931357,
+          "correct": 58,
+          "total": 251,
+          "accuracy_percent": 23.10756972111554
+        },
+        {
+          "epoch": 11,
+          "recorded_loss": 0.12624943566025065,
+          "eligible": false,
+          "estimated_score": 0.5581569920537156,
+          "correct": 55,
+          "total": 251,
+          "accuracy_percent": 21.91235059760956
+        },
+        {
+          "epoch": 12,
+          "recorded_loss": 0.08577506916830911,
+          "eligible": true,
+          "estimated_score": 0.685638837739366,
+          "correct": 62,
+          "total": 251,
+          "accuracy_percent": 24.701195219123505
+        },
+        {
+          "epoch": 13,
+          "recorded_loss": 0.056255935855648094,
+          "eligible": true,
+          "estimated_score": 0.6467736172292158,
+          "correct": 56,
+          "total": 251,
+          "accuracy_percent": 22.310756972111555
+        },
+        {
+          "epoch": 14,
+          "recorded_loss": 0.03937462800899354,
+          "eligible": true,
+          "estimated_score": 0.780204735725522,
+          "correct": 66,
+          "total": 251,
+          "accuracy_percent": 26.294820717131476
+        },
+        {
+          "epoch": 15,
+          "recorded_loss": 0.024261718283614616,
+          "eligible": true,
+          "estimated_score": 0.6864274738859943,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        },
+        {
+          "epoch": 16,
+          "recorded_loss": 0.016062543920689093,
+          "eligible": true,
+          "estimated_score": 0.7037692963188761,
+          "correct": 63,
+          "total": 251,
+          "accuracy_percent": 25.099601593625497
+        },
+        {
+          "epoch": 17,
+          "recorded_loss": 0.010498893983743113,
+          "eligible": true,
+          "estimated_score": 0.7187391034369168,
+          "correct": 65,
+          "total": 251,
+          "accuracy_percent": 25.89641434262948
+        },
+        {
+          "epoch": 18,
+          "recorded_loss": 0.00753570867605898,
+          "eligible": true,
+          "estimated_score": 0.7250583780426756,
+          "correct": 59,
+          "total": 251,
+          "accuracy_percent": 23.50597609561753
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.006123082214922351,
+          "eligible": true,
+          "estimated_score": 0.7523344708775426,
+          "correct": 66,
+          "total": 251,
+          "accuracy_percent": 26.294820717131476
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.005360727670782334,
+          "eligible": true,
+          "estimated_score": 0.7710412052833128,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        }
+      ],
+      "all20_mean_accuracy_percent": 20.597609561752986,
+      "resolved_k": 5,
+      "fallback_used": true
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "eligible_epochs": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "provisional": false,
+      "selected": {
+        "epoch": 14,
+        "recorded_loss": 0.038926497311390876,
+        "eligible": true,
+        "estimated_score": 0.7387681615073742,
+        "correct": 52,
+        "total": 251,
+        "accuracy_percent": 20.717131474103585
+      },
+      "unrestricted_selected": {
+        "epoch": 14,
+        "recorded_loss": 0.038926497311390876,
+        "eligible": true,
+        "estimated_score": 0.7387681615073742,
+        "correct": 52,
+        "total": 251,
+        "accuracy_percent": 20.717131474103585
+      },
+      "final_epoch": {
+        "epoch": 20,
+        "recorded_loss": 0.005655118973170648,
+        "eligible": true,
+        "estimated_score": 0.7378809861618124,
+        "correct": 64,
+        "total": 251,
+        "accuracy_percent": 25.49800796812749
+      },
+      "top3": [
+        {
+          "epoch": 14,
+          "recorded_loss": 0.038926497311390876,
+          "eligible": true,
+          "estimated_score": 0.7387681615073742,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.005655118973170648,
+          "eligible": true,
+          "estimated_score": 0.7378809861618124,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        },
+        {
+          "epoch": 17,
+          "recorded_loss": 0.010727604267561374,
+          "eligible": true,
+          "estimated_score": 0.7354933306589642,
+          "correct": 60,
+          "total": 251,
+          "accuracy_percent": 23.904382470119522
+        }
+      ],
+      "all_epochs": [
+        {
+          "epoch": 1,
+          "recorded_loss": 3.8357514999711606,
+          "eligible": false,
+          "estimated_score": 0.0,
+          "correct": 0,
+          "total": 251,
+          "accuracy_percent": 0.0
+        },
+        {
+          "epoch": 2,
+          "recorded_loss": 1.3735410392741718,
+          "eligible": false,
+          "estimated_score": 0.19103606416596716,
+          "correct": 31,
+          "total": 251,
+          "accuracy_percent": 12.350597609561753
+        },
+        {
+          "epoch": 3,
+          "recorded_loss": 0.9952285179244283,
+          "eligible": false,
+          "estimated_score": 0.2575129419087748,
+          "correct": 41,
+          "total": 251,
+          "accuracy_percent": 16.334661354581673
+        },
+        {
+          "epoch": 4,
+          "recorded_loss": 0.7189727336778056,
+          "eligible": false,
+          "estimated_score": 0.25056097973354163,
+          "correct": 33,
+          "total": 251,
+          "accuracy_percent": 13.147410358565738
+        },
+        {
+          "epoch": 5,
+          "recorded_loss": 0.5692418096849071,
+          "eligible": false,
+          "estimated_score": 0.3802425874593641,
+          "correct": 47,
+          "total": 251,
+          "accuracy_percent": 18.725099601593627
+        },
+        {
+          "epoch": 6,
+          "recorded_loss": 0.4612529474451109,
+          "eligible": false,
+          "estimated_score": 0.35842736508860573,
+          "correct": 47,
+          "total": 251,
+          "accuracy_percent": 18.725099601593627
+        },
+        {
+          "epoch": 7,
+          "recorded_loss": 0.3725786522564376,
+          "eligible": false,
+          "estimated_score": 0.41917210899506024,
+          "correct": 45,
+          "total": 251,
+          "accuracy_percent": 17.92828685258964
+        },
+        {
+          "epoch": 8,
+          "recorded_loss": 0.29825641611195586,
+          "eligible": false,
+          "estimated_score": 0.4192441016189256,
+          "correct": 44,
+          "total": 251,
+          "accuracy_percent": 17.529880478087648
+        },
+        {
+          "epoch": 9,
+          "recorded_loss": 0.23026716219418494,
+          "eligible": false,
+          "estimated_score": 0.4641852861567108,
+          "correct": 47,
+          "total": 251,
+          "accuracy_percent": 18.725099601593627
+        },
+        {
+          "epoch": 10,
+          "recorded_loss": 0.17216905631372692,
+          "eligible": false,
+          "estimated_score": 0.5069655415682044,
+          "correct": 48,
+          "total": 251,
+          "accuracy_percent": 19.12350597609562
+        },
+        {
+          "epoch": 11,
+          "recorded_loss": 0.12017609651588723,
+          "eligible": false,
+          "estimated_score": 0.6419029486063036,
+          "correct": 55,
+          "total": 251,
+          "accuracy_percent": 21.91235059760956
+        },
+        {
+          "epoch": 12,
+          "recorded_loss": 0.08348151298282701,
+          "eligible": true,
+          "estimated_score": 0.7168830508598929,
+          "correct": 56,
+          "total": 251,
+          "accuracy_percent": 22.310756972111555
+        },
+        {
+          "epoch": 13,
+          "recorded_loss": 0.0561696103871669,
+          "eligible": true,
+          "estimated_score": 0.6991639981983866,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 14,
+          "recorded_loss": 0.038926497311390876,
+          "eligible": true,
+          "estimated_score": 0.7387681615073742,
+          "correct": 52,
+          "total": 251,
+          "accuracy_percent": 20.717131474103585
+        },
+        {
+          "epoch": 15,
+          "recorded_loss": 0.024777185056320466,
+          "eligible": true,
+          "estimated_score": 0.7296726242043794,
+          "correct": 55,
+          "total": 251,
+          "accuracy_percent": 21.91235059760956
+        },
+        {
+          "epoch": 16,
+          "recorded_loss": 0.016031097839860356,
+          "eligible": true,
+          "estimated_score": 0.7044405663099443,
+          "correct": 57,
+          "total": 251,
+          "accuracy_percent": 22.709163346613547
+        },
+        {
+          "epoch": 17,
+          "recorded_loss": 0.010727604267561374,
+          "eligible": true,
+          "estimated_score": 0.7354933306589642,
+          "correct": 60,
+          "total": 251,
+          "accuracy_percent": 23.904382470119522
+        },
+        {
+          "epoch": 18,
+          "recorded_loss": 0.0077852372777090905,
+          "eligible": true,
+          "estimated_score": 0.7112753852352077,
+          "correct": 60,
+          "total": 251,
+          "accuracy_percent": 23.904382470119522
+        },
+        {
+          "epoch": 19,
+          "recorded_loss": 0.005827398770197016,
+          "eligible": true,
+          "estimated_score": 0.7299318813620047,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        },
+        {
+          "epoch": 20,
+          "recorded_loss": 0.005655118973170648,
+          "eligible": true,
+          "estimated_score": 0.7378809861618124,
+          "correct": 64,
+          "total": 251,
+          "accuracy_percent": 25.49800796812749
+        }
+      ],
+      "all20_mean_accuracy_percent": 19.083665338645414,
+      "resolved_k": 5,
+      "fallback_used": true
+    }
+  ]
+}

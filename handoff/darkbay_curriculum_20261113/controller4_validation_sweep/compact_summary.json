@@ -1,0 +1,336 @@
+[
+  {
+    "model": 1,
+    "dataset": "A",
+    "best": {
+      "model": 1,
+      "dataset": "A",
+      "epoch": 12,
+      "correct": 149,
+      "accuracy_percent": 14.9,
+      "evaluated_epochs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "tied_epochs": [
+        12
+      ]
+    },
+    "latest": {
+      "model": 1,
+      "dataset": "A",
+      "epoch": 20,
+      "checkpoint": "model1/models/parseq/darkbay/A/epoch_20.pth",
+      "checkpoint_sha256": "d2e466f9e00a05056a214715edeb3a9c40ba954a27155358fb468db64ad6288f",
+      "correct": 131,
+      "total": 1000,
+      "accuracy_percent": 13.1,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "fc6f054e9d6789fdd0d216cd54cead84e8b68761215deb7c527efa844eab8afc",
+      "seconds": 3.2030000002123415,
+      "created_at": "2026-11-13T20:16:33.345414+00:00"
+    },
+    "late_epoch_spearman": 0.2370304114490161,
+    "real_at_earliest_validation_best": {
+      "epoch": 12,
+      "validation_correct": 149,
+      "real_correct": 585,
+      "real_summary": "model1/results/darkbay/A/interim_cuda_epoch12_seed48/summary.json",
+      "real_summary_sha256": "2e817b2bbce673f5e28df32adefd23d7a8e2639ce0bc19bf2171e1c6f1234568"
+    }
+  },
+  {
+    "model": 1,
+    "dataset": "B",
+    "best": {
+      "model": 1,
+      "dataset": "B",
+      "epoch": 8,
+      "correct": 137,
+      "accuracy_percent": 13.7,
+      "evaluated_epochs": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "tied_epochs": [
+        8
+      ]
+    },
+    "latest": {
+      "model": 1,
+      "dataset": "B",
+      "epoch": 20,
+      "checkpoint": "model1/models/parseq/darkbay/B/epoch_20.pth",
+      "checkpoint_sha256": "092a72db2b6a8d52bad779dd156e58f80c0a617d28b8bfaadff98de52c21925b",
+      "correct": 134,
+      "total": 1000,
+      "accuracy_percent": 13.4,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "be44c16633d47540b9a0c38620fe0455af11aa080f9c6074714c276d6359fbe4",
+      "seconds": 2.6409999998286366,
+      "created_at": "2026-11-13T20:18:31.554982+00:00"
+    },
+    "late_epoch_spearman": -0.3761226887483793,
+    "real_at_earliest_validation_best": {
+      "epoch": 8,
+      "validation_correct": 137,
+      "real_correct": 612,
+      "real_summary": "model1/results/darkbay/B/interim_cuda_epoch08_seed48/summary.json",
+      "real_summary_sha256": "652b6f9e65e4d5c871662da55be605071a8b38d9ed4b54cff6205ba9bc60858b"
+    }
+  },
+  {
+    "model": 2,
+    "dataset": "A",
+    "best": {
+      "model": 2,
+      "dataset": "A",
+      "epoch": 16,
+      "correct": 126,
+      "accuracy_percent": 12.6,
+      "evaluated_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "tied_epochs": [
+        16
+      ]
+    },
+    "latest": {
+      "model": 2,
+      "dataset": "A",
+      "epoch": 20,
+      "checkpoint": "model2/runs/darkbay/A/checkpoints/epoch_20.pth",
+      "checkpoint_sha256": "b506e778970aa9d78c2323803fc7a6e3bd7a58aa0969f53c54970aaea75c2bac",
+      "correct": 120,
+      "total": 1000,
+      "accuracy_percent": 12.0,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "20bc62d1e9fd9cbd1ee9706fc5a56d076a3c364ce40061104e0052d6a9ea53e6",
+      "seconds": 3.9369999999180436,
+      "created_at": "2026-11-13T20:20:29.341855+00:00"
+    },
+    "late_epoch_spearman": 0.500900090737565,
+    "real_at_earliest_validation_best": {
+      "epoch": 16,
+      "validation_correct": 126,
+      "real_correct": 617,
+      "real_summary": "model2/results/darkbay/A/interim_cuda_epoch16_seed48/summary.json",
+      "real_summary_sha256": "d480bf8dcd31b84a03157bed4e97b4fcce0f24cb6311cd4bd0bbdf3f2d3c1ee8"
+    }
+  },
+  {
+    "model": 2,
+    "dataset": "B",
+    "best": {
+      "model": 2,
+      "dataset": "B",
+      "epoch": 18,
+      "correct": 123,
+      "accuracy_percent": 12.3,
+      "evaluated_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "tied_epochs": [
+        18
+      ]
+    },
+    "latest": {
+      "model": 2,
+      "dataset": "B",
+      "epoch": 20,
+      "checkpoint": "model2/runs/darkbay/B/checkpoints/epoch_20.pth",
+      "checkpoint_sha256": "bc45a6397528c60da8d78a451fae5b05cd81931fb1a487b6a62d0373ae09b953",
+      "correct": 122,
+      "total": 1000,
+      "accuracy_percent": 12.2,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "98beaae48a7b5803302b0010d52e015100970da015158d0f849e36a4cdbbb0b8",
+      "seconds": 6.530999999959022,
+      "created_at": "2026-11-13T20:22:39.389626+00:00"
+    },
+    "late_epoch_spearman": 0.3560551004450938,
+    "real_at_earliest_validation_best": {
+      "epoch": 18,
+      "validation_correct": 123,
+      "real_correct": 625,
+      "real_summary": "model2/results/darkbay/B/interim_cuda_epoch18_seed48/summary.json",
+      "real_summary_sha256": "826727a5f040886c547c27d7f4627003ae504d56e824eec733c8894c05834ec0"
+    }
+  },
+  {
+    "model": 3,
+    "dataset": "A",
+    "best": {
+      "model": 3,
+      "dataset": "A",
+      "epoch": 16,
+      "correct": 122,
+      "accuracy_percent": 12.2,
+      "evaluated_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "tied_epochs": [
+        16
+      ]
+    },
+    "latest": {
+      "model": 3,
+      "dataset": "A",
+      "epoch": 17,
+      "checkpoint": "model3/runs/darkbay/A/checkpoints/epoch_17.pth",
+      "checkpoint_sha256": "b5b367df34bbdb1ff948dff904160f840c7b83a2f99ea5582b9ee90a121bb76f",
+      "correct": 115,
+      "total": 1000,
+      "accuracy_percent": 11.5,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "0a380a2d2f3c3e3f540a9f8311377911b12227fc67af0c8e730d60934db5b2b3",
+      "seconds": 3.4529999997466803,
+      "created_at": "2026-11-13T20:24:13.218504+00:00"
+    },
+    "late_epoch_spearman": 0.04294801833978941,
+    "real_at_earliest_validation_best": {
+      "epoch": 16,
+      "validation_correct": 122,
+      "real_correct": 603,
+      "real_summary": "model3/results/darkbay/A/interim_cuda_epoch16_seed48/summary.json",
+      "real_summary_sha256": "c31b5feaf5a24012348038b66a3326ad8b1ef11e2a798a201f0a6db4c67dbb00"
+    }
+  },
+  {
+    "model": 3,
+    "dataset": "B",
+    "best": {
+      "model": 3,
+      "dataset": "B",
+      "epoch": 14,
+      "correct": 124,
+      "accuracy_percent": 12.4,
+      "evaluated_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "tied_epochs": [
+        14
+      ]
+    },
+    "latest": {
+      "model": 3,
+      "dataset": "B",
+      "epoch": 17,
+      "checkpoint": "model3/runs/darkbay/B/checkpoints/epoch_17.pth",
+      "checkpoint_sha256": "7dc70a3c6124bd5cd6e4f2ba46446057dba5d219fcf05de8b979a40f80e7206b",
+      "correct": 112,
+      "total": 1000,
+      "accuracy_percent": 11.2,
+      "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+      "predictions_sha256": "702f16f3b481c974af3f0e348e0c0f3a5435d25ef7c36640e26dd529227cb1fe",
+      "seconds": 4.75,
+      "created_at": "2026-11-13T20:25:49.951546+00:00"
+    },
+    "late_epoch_spearman": 0.10334394242561099,
+    "real_at_earliest_validation_best": null
+  }
+]

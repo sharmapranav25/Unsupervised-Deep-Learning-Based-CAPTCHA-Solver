@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-29T18:16:19.721976+00:00",
+  "families": [
+    "DarkBay",
+    "CryptBB",
+    "City"
+  ],
+  "reference_images_per_scheme": 100,
+  "examples_per_controller": 6,
+  "controllers": [
+    "custom",
+    "dino",
+    "mixed"
+  ],
+  "capri1": {
+    "path": "models/active/hybrid/hybrid.pt",
+    "source": "E:\\pranav\\Final sem\\sourcefree_synth\\runs\\iter2_baseline_15_20261003_04\\baseline_training\\epoch_15\\ema.pt",
+    "sha256": "ae73375ead99071d55c6394f7c4eb7c4d27c0a3285f8f15d8d84c9df43bc6b32",
+    "bytes": 14686760,
+    "status": "active",
+    "role": "Simple hybrid: initial labels and length votes; CTC is not decoded."
+  },
+  "capri2": {
+    "completed_at": "2026-10-29T02:53:06.299634+00:00",
+    "epochs": 20,
+    "images_per_epoch": 100000,
+    "checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+    "sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+    "weights": "EMA",
+    "activated": false
+  },
+  "controller_registry_sha256": "1377bacf72251461c8f883f6b0088d17433cfa79c049285ecb9eac85a01acaaa",
+  "calibration": "CAPRI1 first24 model-derived calibration recipes reused unchanged for CAPRI2 within each scheme",
+  "selection": "First6 fixed fit inputs, no selection by visual outcome",
+  "preprocessing": "Both RGB96,bilinear,widthcap480,FP32",
+  "seeds": "Same existing pipeline seed schedules and length fallback seed101073",
+  "target_labels": false,
+  "separate_counter_used": false,
+  "source_hashes": {
+    "capri.py": "22a6dd30687adc917eb7669f1238c1891ddd75316b5dcb7c1ab200b5fe708bf2",
+    "configs\\local.json": "604df5ebf9c314fc31fd5083ee96502a30525180a198647417c7b7f2a7df6153",
+    "models\\registry.json": "1377bacf72251461c8f883f6b0088d17433cfa79c049285ecb9eac85a01acaaa",
+    "src\\capri_controller\\controller_comparison.py": "d71171366096c5b0a1ec0fbd4a19eca7b56cf60075b1037fd629916ca7c59935",
+    "src\\capri_controller\\pipeline.py": "3f3a9d43e4a3da37f5f22a33ec7223e10906a6f53cc7f13218321b9e37d3633a",
+    "src\\capri_controller\\controllers.py": "ac24a4928bdc6fe3a6b929fb3274d836d9dd9c3b59f843442c3dc9cea783c4de",
+    "src\\capri_controller\\artifacts.py": "819ccdc686ce268c3e8669cefeef6d3bff9b882bd3e061583c88858f4f98c3f9",
+    "src\\capri_controller\\runtime.py": "a5d29d6a3cd6ba888b2f892218920562a453e44487b155dd86aed352085bda79",
+    "src\\capri_controller\\features\\base.py": "cfca8e5f37ffd867803503dc784b6e3d414aa1027396ebff9898c9cc6ee3b8ac",
+    "src\\capri_controller\\features\\custom.py": "9273e917e7a714f909d6553c86295644216aa4bba0507d645af05f006afb30a3",
+    "src\\capri_controller\\features\\dino.py": "a76a7527f5bd0dfebbbe1409178b0a48cae624d7261436a7d49ad477a62b5586",
+    "src\\capri_controller\\features\\dino_base.py": "363e43abfe6ab2dc2662f6a7d15269af1678dd17800571e080800f3d1f3bfe0c",
+    "src\\capri_controller\\features\\regions.py": "1018086d9533716a6f25cc478c57057ee117efe0b0fb2a4c984ae4887c0e393d",
+    "src\\capri_controller\\features\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\capri_controller\\rendering\\base.py": "4c4b4b41eda4ddaf74a8a06662806dab61ca01027f084386d00c5a05f8556c27",
+    "src\\capri_controller\\rendering\\controls.py": "1b135701705979a105563cfc42c464f2c116c19ad23655db6ac0b0e2bf027517",
+    "src\\capri_controller\\rendering\\renderer.py": "658a019a121656befb8813154eb5b33c8a4e33daa1badc573f2ccd8bade03506",
+    "src\\capri_controller\\rendering\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\capri_controller\\lightweight\\data.py": "ecc8279f016ead12900d13c3fd0ac9df071c0fca72164e1ea978705beb5bda01",
+    "src\\capri_controller\\lightweight\\legacy_losses.py": "c3b55d2e1c396049eda485f0f44a6c1123a79942da063c6bc92294cbe726bf6e",
+    "src\\capri_controller\\lightweight\\legacy_model.py": "2420d2356db66eecff5dbb03d91cfa0b1c6482c56f682f0e24286b41767f8d2a",
+    "src\\capri_controller\\lightweight\\model.py": "796617633088e686fd38cf4484807cbbdaee996c10c96346b59056acd9e2bcad",
+    "src\\capri_controller\\lightweight\\primitives.py": "37564e5b5132660ed09c55767d8bba10fc2fa2b6b11f2b889323e3c63e1eb29b",
+    "src\\capri_controller\\lightweight\\training.py": "1d21a33bccdc939a7d36af11ac08fa777612d8970c406123e70aa77d2abbc6f4",
+    "src\\capri_controller\\lightweight\\__init__.py": "cf94c9e521081edf0f3db302be4ff7453e3fbd47d681f47872fb52e9dbc651d2"
+  }
+}

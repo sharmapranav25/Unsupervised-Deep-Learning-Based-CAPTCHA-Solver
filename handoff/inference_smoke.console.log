@@ -1,0 +1,35 @@
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\vendor\dinov2-85a24602099d397264d5b30461ad7f3bfd726ca1\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\vendor\dinov2-85a24602099d397264d5b30461ad7f3bfd726ca1\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\vendor\dinov2-85a24602099d397264d5b30461ad7f3bfd726ca1\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{
+  "passed": true,
+  "verified_at": "2026-11-13T05:20:45.629143+00:00",
+  "device": "cpu",
+  "reader_results": [
+    {
+      "dataset": "A",
+      "lmdb_images": 100000,
+      "checkpoint_epoch": 20,
+      "frozen_predictions_matched": 16
+    },
+    {
+      "dataset": "B",
+      "lmdb_images": 100000,
+      "checkpoint_epoch": 20,
+      "frozen_predictions_matched": 16
+    }
+  ],
+  "real_image_pixel_hashes_verified": 900,
+  "controller_reference_overlap": 0,
+  "real_scoring_labels_read": false,
+  "capri_ema_strict_load": true,
+  "openocr_loaded_from": "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\OpenOCR\\openrec\\modeling\\__init__.py",
+  "all_project_inputs_from_new_workspace": true,
+  "external_python_environment": true,
+  "training_launched": false
+}

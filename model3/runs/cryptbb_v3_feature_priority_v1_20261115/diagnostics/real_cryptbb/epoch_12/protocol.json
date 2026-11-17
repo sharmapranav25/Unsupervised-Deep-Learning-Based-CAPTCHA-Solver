@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-16T04:28:36.834047+00:00",
+  "training_protocol_sha256": "cb6c931940cc5bbf2a1781a3789e874f31746300804fb2d50a1b602dbabafa7a",
+  "checkpoint": "model3\\runs\\cryptbb_v3_feature_priority_v1_20261115\\A\\checkpoints\\epoch_12.pth",
+  "seed": 48,
+  "model": 3,
+  "dataset": "A",
+  "epoch": 12,
+  "checkpoint_sha256": "4112df6ecf420d70142daff7a5c320bfbd95ea87abda5efec7c991c2f3e82b0f",
+  "manifest_sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd",
+  "images": 251,
+  "device": "cpu",
+  "precision": "FP32",
+  "threads": 2,
+  "batch_size": 16,
+  "preprocessing": "RGB PIL bicubic32x128 ToTensor Normalize0.5",
+  "decoding": "Saved free AR and1 refinement; no length forcing or text normalization",
+  "purpose": "User-requested diagnostic only; no training/curriculum/selection changes",
+  "labels": "Opened only after persisted prediction freeze",
+  "cpu_adapter": "Process-local memory.get_device() -> memory.device",
+  "decoder_source_sha256": "fbe9268799515a080dad7dbd68eaf4b321e614723c412bbf19d1309c15660dac",
+  "evaluator_sha256": "7c2130e23eef616dd1932987dd3b0f995136eaf3276d9bb717fb27b8cae80147"
+}

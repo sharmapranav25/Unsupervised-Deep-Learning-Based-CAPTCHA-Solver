@@ -1,0 +1,53 @@
+{
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "isolated_packages": "runtime/controller4_packages",
+  "versions": {
+    "synthtiger": "1.2.1",
+    "numpy": "1.26.4",
+    "Pillow": "11.3.0",
+    "scipy": "1.13.1",
+    "opencv-python": "unavailable under this distribution name",
+    "fonttools": "4.60.2",
+    "imgaug": "0.4.0",
+    "pygame": "2.6.1",
+    "arabic-reshaper": "3.0.0",
+    "blend-modes": "2.2.0",
+    "pytweening": "1.2.0",
+    "python-bidi": "0.6.7",
+    "scikit-image": "0.24.0",
+    "lmdb": "2.0.0"
+  },
+  "downloaded_archives": [
+    {
+      "path": "runtime/temporary/synthtiger-1.2.1-py3-none-any.whl",
+      "sha256": "f3d6380af8e4cf5c0b5575a19af17a554179c1df42d57fcbbdcd2f06f3bb8232"
+    },
+    {
+      "path": "runtime/temporary/numpy-1.26.4-cp39-cp39-win_amd64.whl",
+      "sha256": "3373d5d70a5fe74a2c1bb6d2cfd9609ecf686d47a2d7b1d37a8f3b6bf6003aea"
+    },
+    {
+      "path": "runtime/temporary/pygame-2.6.1-cp39-cp39-win_amd64.whl",
+      "sha256": "6582aa71a681e02e55d43150a9ab41394e6bf4d783d2962a10aea58f424be060"
+    },
+    {
+      "path": "runtime/temporary/arabic_reshaper-3.0.0-py3-none-any.whl",
+      "sha256": "3f71d5034bb694204a239a6f1ebcf323ac3c5b059de02259235e2016a1a5e2dc"
+    },
+    {
+      "path": "runtime/temporary/blend_modes-2.2.0-py3-none-any.whl",
+      "sha256": "31ad22b382071e6716a48534fcfcd1b0c22cd5f77ffc6b10d3f5547371141218"
+    },
+    {
+      "path": "runtime/temporary/imgaug-0.4.0-py2.py3-none-any.whl",
+      "sha256": "ce61e65b4eb7405fc62c1b0a79d2fa92fd47f763aaecb65152d29243592111f9"
+    },
+    {
+      "path": "runtime/temporary/pytweening-1.2.0.tar.gz",
+      "sha256": "243318b7736698066c5f362ec5c2b6434ecf4297c3c8e7caa8abfe6af4cac71b"
+    }
+  ],
+  "source_sha256": "7a96478e2f67ee418a3e17d445947960ea01257ac60acdde7016a3f39b1576f0",
+  "base_environment": "runtime/local.json",
+  "note": "Isolated NumPy1.26.4 prevents changes to reader training environment. No GPU or reader model is used."
+}

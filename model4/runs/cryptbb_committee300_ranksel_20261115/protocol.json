@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-11-16T06:04:58.860784+00:00",
+  "members": {
+    "M1A": {
+      "epoch": 12,
+      "selection_file": "handoff/cryptbb_v3_model2_rank1_v1_20261115/teacher_selection.json"
+    },
+    "M1B": {
+      "epoch": 13,
+      "selection_file": "handoff/cryptbb_v3_model2_rank1_v1_20261115/teacher_selection.json"
+    },
+    "M2A": {
+      "epoch": 14,
+      "selection_file": "handoff/cryptbb_v3_epoch20_static_A_20261115/selection_A.json"
+    },
+    "M2B": {
+      "epoch": 14,
+      "selection_file": "handoff/cryptbb_v3_epoch20_static_B_20261115/selection_B.json"
+    },
+    "M3A": {
+      "epoch": 20,
+      "selection_file": "model4\\runs\\cryptbb_committee300_ranksel_20261115\\selection_M3A.json"
+    }
+  },
+  "pool_sha256": "2259354db92fcb67e607b535085474dd70fe81c8c8b706f0fec92d9260a30551",
+  "device": "cuda FP32 batch16",
+  "script_sha256": "771cdc15286d9e57e59eb2b667bbac4851265465c0b66c3baee06a315b456019",
+  "labels": "opened only after prediction_freeze.json"
+}

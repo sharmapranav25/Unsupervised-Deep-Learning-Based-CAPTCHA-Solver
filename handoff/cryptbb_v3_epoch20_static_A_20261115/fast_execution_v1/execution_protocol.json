@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-15T21:48:54.9087892Z",
+  "authorization": "User requested pause at next completion, set up faster execution, then resume",
+  "training_protocol_sha256": "fc52cbd556a89db1c4240d525c5d21aa8fcda52fc2421b8499b4c203c8ac42b5",
+  "source_sha256": "e17818830844ded35ad087cd716c4147325f5c2523a65a234971123dca731384",
+  "changes": [
+    "Retain GPU allocator cache between steps; retain exclusive GPU byte lock",
+    "Remove redundant explicit synchronization; each unchanged step already synchronizes loss/norm",
+    "One deterministic CPU batch prefetched in order; no random transforms or sample reorder"
+  ],
+  "preserved": [
+    "Batch128",
+    "Data/ranking/draw manifest",
+    "Model and numerical step",
+    "Seed and RNG",
+    "Optimizer/scheduler/scaler",
+    "All frozen original sources",
+    "Checkpoint epochs and update budget"
+  ],
+  "verify": "Compare24 actual epoch5 updates from the same immutable epoch4 full-state checkpoint; bit-exact batch tensors, losses, gradients, model, optimizer, scheduler, scaler, RNG and sampler; measure wall time",
+  "resume": "Only after passed equivalence; use fast if measured improvement exceeds3%; never use disposable verification weights"
+}

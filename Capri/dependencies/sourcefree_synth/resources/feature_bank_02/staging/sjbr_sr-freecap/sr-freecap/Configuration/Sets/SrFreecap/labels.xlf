@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:sr_freecap/Configuration/Sets/SrFreecap/labels.xlf" date="2018-09-04T12:30:00Z"
+		  product-name="sr_freecap">
+		<header/>
+		<body>
+			<trans-unit id="label" resname="label">
+				<source>Freecap CAPTCHA</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap" resname="categories.freecap">
+				<source>Freecap CAPTCHA</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.image" resname="categories.freecap.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.image.dimensions" resname="categories.freecap.image.dimensions">
+				<source>Dimensions</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.image.text" resname="categories.freecap.image.text">
+				<source>Text appearance</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.image.background" resname="categories.freecap.image.background">
+				<source>Image background</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.content" resname="categories.freecap.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.behavior" resname="categories.freecap.behavior">
+				<source>Behavior</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.accessibility" resname="categories.freecap.accessibility">
+				<source>Accessibility</source>
+			</trans-unit>
+			<trans-unit id="categories.freecap.templates" resname="categories.freecap.templates">
+				<source>Templates</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.imageFormat" resname="settings.freecap.imageFormat">
+				<source>CAPTCHA image format</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.imageFormat" resname="settings.description.freecap.imageFormat">
+				<source>Format of the generated CAPTCHA image</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.imageHeight" resname="settings.freecap.imageHeight">
+				<source>CAPTCHA image height</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.imageHeight" resname="settings.description.freecap.imageHeight">
+				<source>Height of the generated CAPTCHA image</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.imageAdditionalWidth" resname="settings.freecap.imageAdditionalWidth">
+				<source>CAPTCHA image additional width</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.imageAdditionalWidth" resname="settings.description.freecap.imageAdditionalWidth">
+				<source>The width, in pixels, of the generated image is based on the maximum possible length of the word plus the value of this property.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.textHorizontalPosition" resname="settings.freecap.textHorizontalPosition">
+				<source>Text horizontal position</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.textHorizontalPosition" resname="settings.description.freecap.textHorizontalPosition">
+				<source>The horizontal (X) starting position of the word relative to the left of the image, in pixels.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.textVerticalPosition" resname="settings.freecap.textVerticalPosition">
+				<source>Text vertical position</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.textVerticalPosition" resname="settings.description.freecap.textVerticalPosition">
+				<source>The vertical (Y) starting position of the word relative to the top of the image, in pixels.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.morphFactor" resname="settings.freecap.morphFactor">
+				<source>Text morphing factor</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.morphFactor" resname="settings.description.freecap.morphFactor">
+				<source>Morphing factor applied to each character of the CAPTCHA string</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.textColor" resname="settings.freecap.textColor">
+				<source>Different color for each letter of the text</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.textColor" resname="settings.description.freecap.textColor">
+				<source>If not set, all letters are of the same random color. If set, each letter is of a different random color.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.colorMaximumDarkness" resname="settings.freecap.colorMaximumDarkness">
+				<source>Maximum darkness of the text color</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.colorMaximumDarkness" resname="settings.description.freecap.colorMaximumDarkness">
+				<source>The lower the number [0-255], the darker the color of the text may be.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.colorMaximumLightness" resname="settings.freecap.colorMaximumLightness">
+				<source>Maximum lightness of the text color</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.colorMaximumLightness" resname="settings.description.freecap.colorMaximumLightness">
+				<source>The higher the number [0-255], the lighter the color of the text may be.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.backgroundType" resname="settings.freecap.backgroundType">
+				<source>Background type</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.backgroundType" resname="settings.description.freecap.backgroundType">
+				<source>If not set, will be a random selection of possible types.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.backgroundBlur" resname="settings.freecap.backgroundBlur">
+				<source>Background blurring</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.backgroundBlur" resname="settings.description.freecap.backgroundBlur">
+				<source>If enabled, the background is blurred. The CAPTCHA string should be easier to read.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.backgroundMorph" resname="settings.freecap.backgroundMorph">
+				<source>Background morphing</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.backgroundMorph" resname="settings.description.freecap.backgroundMorph">
+				<source>If enabled, the background is morphed (recommended).</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.mergeWithBackground" resname="settings.freecap.mergeWithBackground">
+				<source>Merge CAPTCHA string with background</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.mergeWithBackground" resname="settings.description.freecap.mergeWithBackground">
+				<source>If enabled, the CAPTCHA string is merged with non-transparent background. If not enabled, the CAPTCHA string is written over the background.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.maxAttempts" resname="settings.freecap.maxAttempts">
+				<source>Maximun attempts</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.maxAttempts" resname="settings.description.freecap.maxAttempts">
+				<source>Maximum times a user may refresh the image</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.salutation" resname="settings.freecap.salutation">
+				<source>Type of salutation</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.salutation" resname="settings.description.freecap.salutation">
+				<source>Type of salutation to use (possible values are 'formal' or 'informal')</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.maxWordLength" resname="settings.freecap.maxWordLength">
+				<source>Maximun word length</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.maxWordLength" resname="settings.description.freecap.maxWordLength">
+				<source>Maximun length of the randomly generated CAPTCHA string</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.generateNumbers" resname="settings.freecap.generateNumbers">
+				<source>Generate CAPTCHA with numbers only</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.generateNumbers" resname="settings.description.freecap.generateNumbers">
+				<source>This option is ignored if Use list of words is enabled</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.useWordsList" resname="settings.freecap.useWordsList">
+				<source>Use list of words</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.useWordsList" resname="settings.description.freecap.useWordsList">
+				<source>If enabled, the CAPTCHA string will be selected from a list of words. If not, it will be randomly generated.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.defaultWordsList" resname="settings.freecap.defaultWordsList">
+				<source>Default words list file</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.defaultWordsList" resname="settings.description.freecap.defaultWordsList">
+				<source>All words lists should be in the same directory.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.fontFiles" resname="settings.freecap.fontFiles">
+				<source>List of GD font files</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.fontFiles" resname="settings.description.freecap.fontFiles">
+				<source>Coma-separated list of GD font files located in directory uploads/tx_srfreecap/ or in some extension directory using the usual syntax EXT:extensionKey/etc.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.accessibleOutput" resname="settings.freecap.accessibleOutput">
+				<source>Enable audio version</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.accessibleOutput" resname="settings.description.freecap.accessibleOutput">
+				<source>If enabled, the CAPTCHA provides an audio version.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.accessibleOutputImage" resname="settings.freecap.accessibleOutputImage">
+				<source>Audio version image</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.accessibleOutputImage" resname="settings.description.freecap.accessibleOutputImage">
+				<source>File name of the audio version image. If null, a textual message is used.</source>
+			</trans-unit>
+			<trans-unit id="settings.freecap.view.partialRootPath" resname="settings.freecap.view.partialRootPath">
+				<source>Path to template partials (FE)</source>
+			</trans-unit>
+			<trans-unit id="settings.description.freecap.view.partialRootPath" resname="settings.description.freecap.view.partialRootPath">
+				<source>Path to template partials that may be used render the CAPTCHA</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

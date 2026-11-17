@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-29T08:30:14.6275992-07:00",
+  "state": "complete",
+  "epochs": 20,
+  "images_per_epoch": 100000,
+  "final_checkpoint_sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+  "checkpoint_verified": true,
+  "launch_to_completion_seconds": 26773.0,
+  "completion": {
+    "completed_at": "2026-10-28T19:53:06.299634-07:00",
+    "epochs": 20,
+    "images_per_epoch": 100000,
+    "checkpoint": "E:\\pranav\\CAPRI\\runs\\capri_lightweight_joint20_100k_20261028\\epochs\\epoch_0020\\checkpoint.pt",
+    "sha256": "28f95fd8daf3831fb860ab59e15b8b65bd4a68bacc434eb7eb7a296e6190b764",
+    "weights": "EMA",
+    "activated": false
+  },
+  "synthetic_dev": {
+    "images": 2000,
+    "count_correct": 1620,
+    "count_accuracy": 0.81,
+    "separate_count_correct": 654,
+    "separate_count_accuracy": 0.327,
+    "font_category_correct": 1163,
+    "font_category_support": 1870,
+    "font_category_accuracy": 0.6219251336898396,
+    "font_retrieval_single_family_support": 1677,
+    "font_retrieval_unambiguous_correct": 148,
+    "font_retrieval_accuracy": 0.08825283243887895,
+    "font_tied_predictions": 44,
+    "effect_bce": 0.11415958932928137,
+    "limitation": "Reused synthetic DEV. Whole-image font retrieval; multi-font scenes excluded from exact single-family metric. Known pixel aliases retained. No real/calibration/test."
+  },
+  "last_target_diagnostic": "step14750,during epoch16; not final epoch20",
+  "separate_counter_removed": false,
+  "activated": false
+}

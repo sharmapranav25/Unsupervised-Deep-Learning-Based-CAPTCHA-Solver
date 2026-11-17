@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3",
+  "created_at": "2026-11-13T06:24:41.859174+00:00",
+  "preprocessing_exact_matches": 3,
+  "pool_size": 100000,
+  "draws_per_epoch": 100096,
+  "steps_per_epoch": 782,
+  "static_schedule_counts": [
+    [
+      100096,
+      0,
+      0
+    ],
+    [
+      50048,
+      50048,
+      0
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ],
+    [
+      15014,
+      25024,
+      60058
+    ]
+  ],
+  "adaptive_twenty_updates_and_replay": true,
+  "checkpoint_next_step_max_tensor_error": 0.0,
+  "resume_losses": [
+    3.9298417568206787,
+    3.9298417568206787
+  ],
+  "optimizer_scheduler_rng_resume_verified": true,
+  "deterministic_scoring": true,
+  "tiny_training_losses": [
+    4.2077507972717285,
+    4.115131378173828,
+    4.0359272956848145
+  ],
+  "paired_full_batch_pilots": {
+    "A": {
+      "pilot": true,
+      "steps": 4,
+      "record": {
+        "epoch": 1,
+        "mean_loss": 4.20120644569397,
+        "training_wall_seconds": 8.625,
+        "gpu_step_including_wait_seconds": 8.092999999877065,
+        "rescore_wall_seconds": 0,
+        "update": null
+      },
+      "passed": true,
+      "peak_gpu_gib": 7.359851837158203,
+      "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3"
+    },
+    "B": {
+      "pilot": true,
+      "steps": 4,
+      "record": {
+        "epoch": 1,
+        "mean_loss": 4.20003068447113,
+        "training_wall_seconds": 6.438000000081956,
+        "gpu_step_including_wait_seconds": 6.0020000003278255,
+        "rescore_wall_seconds": 0,
+        "update": null
+      },
+      "passed": true,
+      "peak_gpu_gib": 7.359851837158203,
+      "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3"
+    }
+  },
+  "real_labels_used_for_readiness": false
+}

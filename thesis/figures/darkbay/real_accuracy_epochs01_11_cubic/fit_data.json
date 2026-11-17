@@ -1,0 +1,377 @@
+{
+  "method": "Unweighted ordinary least squares, cubic polynomial, identical degree across all6 runs",
+  "sources": [
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model1_epoch_accuracy.json",
+      "sha256": "c86519c76e5504b48c123e674457caa429ca69c696decb997b1e25d304c9d782"
+    },
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model2_epoch_accuracy.json",
+      "sha256": "6cad6245c7a10c8b14b0784b8f27b4747832a1fb785e036872ea31df7e4efa85"
+    },
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model3_epoch_accuracy.json",
+      "sha256": "c83bd8647a5d8401b5cf55fd3ab5b2634250b157b69c345a0bc433f3c96b4387"
+    }
+  ],
+  "results": {
+    "A": {
+      "Model 1": {
+        "coefficients_descending": [
+          0.08549166882500157,
+          -2.017676767676759,
+          16.590434257100895,
+          16.989898989899036
+        ],
+        "equation": "y = 0.085492*e^3 -2.017677*e^2 +16.590434*e +16.989899",
+        "epoch_domain": [
+          2,
+          11
+        ],
+        "rmse_percentage_points": 3.0475655464448974,
+        "measured_points": [
+          {
+            "epoch": 2,
+            "accuracy_percent": 42.22222222222222
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 50.22222222222222
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 59.111111111111114
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 59.77777777777778
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 64.55555555555556
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 60.44444444444444
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 58.888888888888886
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 70.11111111111111
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 69.77777777777777
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 66.55555555555556
+          }
+        ]
+      },
+      "Model 2": {
+        "coefficients_descending": [
+          0.33400241733575037,
+          -7.23789173789174,
+          48.93820685487354,
+          -37.10269360269366
+        ],
+        "equation": "y = 0.334002*e^3 -7.237892*e^2 +48.938207*e -37.102694",
+        "epoch_domain": [
+          1,
+          11
+        ],
+        "rmse_percentage_points": 5.254563363471704,
+        "measured_points": [
+          {
+            "epoch": 1,
+            "accuracy_percent": 0.0
+          },
+          {
+            "epoch": 2,
+            "accuracy_percent": 40.888888888888886
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 59.666666666666664
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 58.77777777777778
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 61.0
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 73.77777777777777
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 65.88888888888889
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 56.0
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 66.0
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 65.33333333333333
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 67.0
+          }
+        ]
+      },
+      "Model 3": {
+        "coefficients_descending": [
+          0.2226107226107223,
+          -5.555685055685056,
+          43.36985236985238,
+          -34.83164983164984
+        ],
+        "equation": "y = 0.222611*e^3 -5.555685*e^2 +43.369852*e -34.831650",
+        "epoch_domain": [
+          1,
+          11
+        ],
+        "rmse_percentage_points": 3.5897440382288623,
+        "measured_points": [
+          {
+            "epoch": 1,
+            "accuracy_percent": 0.0
+          },
+          {
+            "epoch": 2,
+            "accuracy_percent": 38.0
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 47.888888888888886
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 67.11111111111111
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 66.66666666666667
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 73.55555555555556
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 73.0
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 72.22222222222223
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 64.33333333333333
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 71.22222222222223
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 63.77777777777778
+          }
+        ]
+      }
+    },
+    "B": {
+      "Model 1": {
+        "coefficients_descending": [
+          0.05467063800397152,
+          -1.8434343434343488,
+          18.80391522058193,
+          6.8589225589224645
+        ],
+        "equation": "y = 0.054671*e^3 -1.843434*e^2 +18.803915*e +6.858923",
+        "epoch_domain": [
+          2,
+          11
+        ],
+        "rmse_percentage_points": 2.015667073927082,
+        "measured_points": [
+          {
+            "epoch": 2,
+            "accuracy_percent": 38.77777777777778
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 46.77777777777778
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 53.0
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 64.88888888888889
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 67.66666666666667
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 64.11111111111111
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 68.0
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 65.33333333333333
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 66.0
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 63.44444444444444
+          }
+        ]
+      },
+      "Model 2": {
+        "coefficients_descending": [
+          0.19373219373219341,
+          -4.685444185444187,
+          36.713416213416245,
+          -27.0639730639731
+        ],
+        "equation": "y = 0.193732*e^3 -4.685444*e^2 +36.713416*e -27.063973",
+        "epoch_domain": [
+          1,
+          11
+        ],
+        "rmse_percentage_points": 4.694297335147284,
+        "measured_points": [
+          {
+            "epoch": 1,
+            "accuracy_percent": 0.0
+          },
+          {
+            "epoch": 2,
+            "accuracy_percent": 36.77777777777778
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 48.77777777777778
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 54.55555555555556
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 62.888888888888886
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 57.77777777777778
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 73.55555555555556
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 64.33333333333333
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 66.22222222222223
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 68.66666666666667
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 64.88888888888889
+          }
+        ]
+      },
+      "Model 3": {
+        "coefficients_descending": [
+          0.25815850815850805,
+          -5.838254338254344,
+          42.34634809634815,
+          -32.45622895622903
+        ],
+        "equation": "y = 0.258159*e^3 -5.838254*e^2 +42.346348*e -32.456229",
+        "epoch_domain": [
+          1,
+          11
+        ],
+        "rmse_percentage_points": 5.05104568460948,
+        "measured_points": [
+          {
+            "epoch": 1,
+            "accuracy_percent": 0.0
+          },
+          {
+            "epoch": 2,
+            "accuracy_percent": 36.55555555555556
+          },
+          {
+            "epoch": 3,
+            "accuracy_percent": 55.0
+          },
+          {
+            "epoch": 4,
+            "accuracy_percent": 52.333333333333336
+          },
+          {
+            "epoch": 5,
+            "accuracy_percent": 63.55555555555556
+          },
+          {
+            "epoch": 6,
+            "accuracy_percent": 72.11111111111111
+          },
+          {
+            "epoch": 7,
+            "accuracy_percent": 58.888888888888886
+          },
+          {
+            "epoch": 8,
+            "accuracy_percent": 67.11111111111111
+          },
+          {
+            "epoch": 9,
+            "accuracy_percent": 70.11111111111111
+          },
+          {
+            "epoch": 10,
+            "accuracy_percent": 62.77777777777778
+          },
+          {
+            "epoch": 11,
+            "accuracy_percent": 69.77777777777777
+          }
+        ]
+      }
+    }
+  },
+  "script": "Capri\\tools\\plot_darkbay_fitted_accuracy.py",
+  "script_sha256": "002760d681ed6d16dae5a5850c6259dd5ae9d5efee8464cc98c740976a34f1c8"
+}

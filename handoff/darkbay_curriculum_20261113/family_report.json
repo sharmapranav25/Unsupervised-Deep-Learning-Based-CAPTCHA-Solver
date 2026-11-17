@@ -1,0 +1,97 @@
+{
+  "state": "DarkBay complete; waiting for CryptBB readiness",
+  "created_at": "2026-11-13T21:31:35.703878+00:00",
+  "model1": {
+    "A": 615,
+    "B": 573
+  },
+  "results": [
+    {
+      "model": 2,
+      "dataset": "A",
+      "epoch": 20,
+      "correct": 600,
+      "total": 900,
+      "accuracy": 0.6666666666666666,
+      "model1_correct": 615,
+      "difference_correct": -15,
+      "difference_percentage_points": -1.6666666666666667,
+      "selection": "fixed final epoch20",
+      "historical_repeatedly_inspected_test": true
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "epoch": 20,
+      "correct": 627,
+      "total": 900,
+      "accuracy": 0.6966666666666667,
+      "model1_correct": 573,
+      "difference_correct": 54,
+      "difference_percentage_points": 6.0,
+      "selection": "fixed final epoch20",
+      "historical_repeatedly_inspected_test": true
+    },
+    {
+      "model": 3,
+      "dataset": "A",
+      "epoch": 20,
+      "correct": 629,
+      "total": 900,
+      "accuracy": 0.6988888888888889,
+      "model1_correct": 615,
+      "difference_correct": 14,
+      "difference_percentage_points": 1.5555555555555556,
+      "selection": "fixed final epoch20",
+      "historical_repeatedly_inspected_test": true
+    },
+    {
+      "model": 3,
+      "dataset": "B",
+      "epoch": 20,
+      "correct": 610,
+      "total": 900,
+      "accuracy": 0.6777777777777778,
+      "model1_correct": 573,
+      "difference_correct": 37,
+      "difference_percentage_points": 4.111111111111111,
+      "selection": "fixed final epoch20",
+      "historical_repeatedly_inspected_test": true
+    }
+  ],
+  "length_threshold": {
+    "forty_percent_supported": false,
+    "actual_rule": "unique leading count >=50/100 votes",
+    "DarkBay_votes": 89,
+    "predicted_count": 6,
+    "accuracy_threshold_claim": "Not established"
+  },
+  "output_paths": {
+    "Model2-A": {
+      "run": "model2\\runs\\darkbay\\A",
+      "results": "model2\\results\\darkbay\\A\\evaluation_epoch20",
+      "ranking": "model2\\rankings\\darkbay\\A"
+    },
+    "Model2-B": {
+      "run": "model2\\runs\\darkbay\\B",
+      "results": "model2\\results\\darkbay\\B\\evaluation_epoch20",
+      "ranking": "model2\\rankings\\darkbay\\B"
+    },
+    "Model3-A": {
+      "run": "model3\\runs\\darkbay\\A",
+      "results": "model3\\results\\darkbay\\A\\evaluation_epoch20",
+      "ranking": "model2\\rankings\\darkbay\\A"
+    },
+    "Model3-B": {
+      "run": "model3\\runs\\darkbay\\B",
+      "results": "model3\\results\\darkbay\\B\\evaluation_epoch20",
+      "ranking": "model2\\rankings\\darkbay\\B"
+    }
+  },
+  "limits": [
+    "Single run per dataset; no repeated seeds",
+    "Historical real test repeatedly inspected",
+    "GPU steps serialized to preserve batch128",
+    "Ranking retries at architecture horizon25 if early stopping leaves insufficient positions for synthetic NLL"
+  ]
+}

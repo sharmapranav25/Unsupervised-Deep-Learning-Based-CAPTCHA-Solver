@@ -1,0 +1,1726 @@
+{
+  "images": 100000,
+  "references": 100,
+  "families": [
+    {
+      "name": "rotation",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "per_char_rotation"
+        ],
+        "renderer_field": "rotation"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 1031
+        },
+        "1": {
+          "min": 12.0,
+          "max": 12.0,
+          "images": 44718
+        },
+        "2": {
+          "min": 18.0,
+          "max": 18.0,
+          "images": 26219
+        },
+        "3": {
+          "min": 24.0,
+          "max": 24.0,
+          "images": 28032
+        }
+      },
+      "images": 100000,
+      "rank": 1
+    },
+    {
+      "name": "size_variation",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "size_variation"
+        ],
+        "renderer_field": "size_jitter"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.1299038105676658,
+          "max": 0.1299038105676658,
+          "images": 70430
+        },
+        "1": {
+          "min": 0.17320508075688773,
+          "max": 0.17320508075688773,
+          "images": 29570
+        }
+      },
+      "images": 100000,
+      "rank": 2
+    },
+    {
+      "name": "slant",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "slant"
+        ],
+        "renderer_field": "slant"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.12,
+          "max": 0.12,
+          "images": 3084
+        },
+        "1": {
+          "min": 0.16,
+          "max": 0.16,
+          "images": 16979
+        },
+        "2": {
+          "min": 0.2,
+          "max": 0.2,
+          "images": 36252
+        },
+        "3": {
+          "min": 0.24,
+          "max": 0.24,
+          "images": 24149
+        },
+        "4": {
+          "min": 0.28,
+          "max": 0.28,
+          "images": 15427
+        },
+        "5": {
+          "min": 0.32,
+          "max": 0.32,
+          "images": 4109
+        }
+      },
+      "images": 100000,
+      "rank": 3
+    },
+    {
+      "name": "spacing",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "wide_spacing",
+          "overlap_tight_spacing"
+        ],
+        "renderer_field": "spacing"
+      },
+      "cuts": [
+        0.2,
+        0.28,
+        0.30000000000000004
+      ],
+      "groups": {
+        "0": {
+          "min": -0.35,
+          "max": 0.18,
+          "images": 8722
+        },
+        "1": {
+          "min": 0.2,
+          "max": 0.26,
+          "images": 48335
+        },
+        "2": {
+          "min": 0.28,
+          "max": 0.3,
+          "images": 6935
+        },
+        "3": {
+          "min": 0.30000000000000004,
+          "max": 0.48,
+          "images": 36008
+        }
+      },
+      "images": 100000,
+      "rank": 4
+    },
+    {
+      "name": "vertical_jitter",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "vertical_jitter"
+        ],
+        "renderer_field": "jitter"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.09664843506234334,
+          "max": 0.09664843506234334,
+          "images": 6179
+        },
+        "1": {
+          "min": 0.12886458008312446,
+          "max": 0.12886458008312446,
+          "images": 58591
+        },
+        "2": {
+          "min": 0.1610807251039056,
+          "max": 0.1610807251039056,
+          "images": 24177
+        },
+        "3": {
+          "min": 0.1932968701246867,
+          "max": 0.1932968701246867,
+          "images": 11053
+        }
+      },
+      "images": 100000,
+      "rank": 5
+    },
+    {
+      "name": "width",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "condensed",
+          "expanded"
+        ],
+        "renderer_field": "x_scale"
+      },
+      "cuts": [
+        0.6806,
+        0.7742,
+        0.8929897125888218,
+        1.1259
+      ],
+      "groups": {
+        "0": {
+          "min": 0.5251253810600847,
+          "max": 0.6805,
+          "images": 19824
+        },
+        "1": {
+          "min": 0.6806,
+          "max": 0.769424505729757,
+          "images": 20054
+        },
+        "2": {
+          "min": 0.7742,
+          "max": 0.888,
+          "images": 19541
+        },
+        "3": {
+          "min": 0.8929897125888218,
+          "max": 1.1205211726384363,
+          "images": 20288
+        },
+        "4": {
+          "min": 1.1259,
+          "max": 1.72,
+          "images": 20293
+        }
+      },
+      "images": 100000,
+      "rank": 6
+    },
+    {
+      "name": "content:mixed",
+      "reference_count": 94,
+      "importance": 0.94,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "mixed_case_alnum",
+        "renderer_charset": "mixed"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 92798
+        }
+      },
+      "images": 92798,
+      "rank": 7
+    },
+    {
+      "name": "effect:blocks",
+      "reference_count": 57,
+      "importance": 0.57,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_blocks",
+        "renderer_effect": "blocks"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 6661
+        },
+        "1": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 26160
+        },
+        "2": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 13132
+        },
+        "3": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 19043
+        },
+        "4": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 5146
+        },
+        "5": {
+          "min": 7.0,
+          "max": 7.0,
+          "images": 255
+        },
+        "6": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 255
+        }
+      },
+      "images": 70652,
+      "rank": 8
+    },
+    {
+      "name": "font:montenegringothicone",
+      "reference_count": 31,
+      "importance": 0.31,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "montenegringothicone"
+        ],
+        "reference_ids": [
+          1,
+          2,
+          7,
+          8,
+          13,
+          16,
+          24,
+          25,
+          26,
+          35,
+          37,
+          38,
+          40,
+          42,
+          48,
+          52,
+          53,
+          57,
+          64,
+          66,
+          67,
+          69,
+          73,
+          74,
+          76,
+          78,
+          84,
+          87,
+          89,
+          96,
+          97
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 15892
+        }
+      },
+      "images": 15892,
+      "rank": 9
+    },
+    {
+      "name": "font:aclonica",
+      "reference_count": 30,
+      "importance": 0.3,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "aclonica"
+        ],
+        "reference_ids": [
+          3,
+          9,
+          12,
+          14,
+          17,
+          18,
+          28,
+          29,
+          30,
+          43,
+          44,
+          46,
+          47,
+          50,
+          54,
+          55,
+          58,
+          60,
+          68,
+          70,
+          71,
+          75,
+          79,
+          82,
+          83,
+          92,
+          93,
+          94,
+          95,
+          99
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 12486
+        }
+      },
+      "images": 12486,
+      "rank": 10
+    },
+    {
+      "name": "font:cousine",
+      "reference_count": 23,
+      "importance": 0.23,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "cousine"
+        ],
+        "reference_ids": [
+          0,
+          4,
+          5,
+          9,
+          11,
+          15,
+          18,
+          29,
+          31,
+          33,
+          39,
+          41,
+          54,
+          55,
+          58,
+          60,
+          71,
+          75,
+          77,
+          81,
+          82,
+          85,
+          88
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 6746
+        }
+      },
+      "images": 6746,
+      "rank": 11
+    },
+    {
+      "name": "font:diplomata",
+      "reference_count": 18,
+      "importance": 0.18,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "diplomata"
+        ],
+        "reference_ids": [
+          1,
+          16,
+          19,
+          34,
+          35,
+          37,
+          38,
+          48,
+          49,
+          52,
+          53,
+          57,
+          61,
+          63,
+          69,
+          84,
+          87,
+          96
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 5245
+        }
+      },
+      "images": 5245,
+      "rank": 12
+    },
+    {
+      "name": "font:ruda",
+      "reference_count": 16,
+      "importance": 0.16,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "ruda"
+        ],
+        "reference_ids": [
+          0,
+          5,
+          18,
+          20,
+          22,
+          31,
+          32,
+          47,
+          51,
+          54,
+          59,
+          79,
+          85,
+          86,
+          92,
+          94
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 5929
+        }
+      },
+      "images": 5929,
+      "rank": 13
+    },
+    {
+      "name": "font:manuale",
+      "reference_count": 15,
+      "importance": 0.15,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "manuale"
+        ],
+        "reference_ids": [
+          10,
+          12,
+          15,
+          24,
+          26,
+          36,
+          38,
+          49,
+          61,
+          63,
+          78,
+          81,
+          87,
+          90,
+          97
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 6631
+        }
+      },
+      "images": 6631,
+      "rank": 14
+    },
+    {
+      "name": "font:playfairdisplaysc",
+      "reference_count": 14,
+      "importance": 0.14,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "playfairdisplaysc"
+        ],
+        "reference_ids": [
+          6,
+          8,
+          19,
+          34,
+          37,
+          56,
+          57,
+          65,
+          66,
+          67,
+          72,
+          74,
+          76,
+          96
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 7105
+        }
+      },
+      "images": 7105,
+      "rank": 15
+    },
+    {
+      "name": "font:lumanosimo",
+      "reference_count": 12,
+      "importance": 0.12,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "lumanosimo"
+        ],
+        "reference_ids": [
+          10,
+          24,
+          53,
+          56,
+          61,
+          65,
+          67,
+          72,
+          73,
+          76,
+          78,
+          91
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 3906
+        }
+      },
+      "images": 3906,
+      "rank": 16
+    },
+    {
+      "name": "font:genos",
+      "reference_count": 11,
+      "importance": 0.11,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "genos"
+        ],
+        "reference_ids": [
+          3,
+          20,
+          41,
+          43,
+          50,
+          62,
+          68,
+          80,
+          83,
+          95,
+          99
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 5583
+        }
+      },
+      "images": 5583,
+      "rank": 17
+    },
+    {
+      "name": "effect:border",
+      "reference_count": 10,
+      "importance": 0.1,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "border_frame",
+        "renderer_effect": "border"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 1.0,
+          "max": 1.0,
+          "images": 4123
+        },
+        "1": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 517
+        },
+        "2": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 516
+        }
+      },
+      "images": 5156,
+      "rank": 18
+    },
+    {
+      "name": "font:breeserif",
+      "reference_count": 10,
+      "importance": 0.1,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "breeserif"
+        ],
+        "reference_ids": [
+          2,
+          6,
+          19,
+          40,
+          42,
+          63,
+          66,
+          69,
+          89,
+          97
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2870
+        }
+      },
+      "images": 2870,
+      "rank": 19
+    },
+    {
+      "name": "content:upper",
+      "reference_count": 8,
+      "importance": 0.08,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "uppercase_only",
+        "renderer_charset": "upper"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 6173
+        }
+      },
+      "images": 6173,
+      "rank": 20
+    },
+    {
+      "name": "font:existing_06",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "existing_06"
+        ],
+        "reference_ids": [
+          5,
+          7,
+          8,
+          13,
+          33,
+          51
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2317
+        }
+      },
+      "images": 2317,
+      "rank": 21
+    },
+    {
+      "name": "font:graduate",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "graduate"
+        ],
+        "reference_ids": [
+          20,
+          41,
+          50,
+          62,
+          80,
+          95
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1562
+        }
+      },
+      "images": 1562,
+      "rank": 22
+    },
+    {
+      "name": "font:jaro",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "jaro"
+        ],
+        "reference_ids": [
+          12,
+          30,
+          36,
+          39,
+          44,
+          93
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 3305
+        }
+      },
+      "images": 3305,
+      "rank": 23
+    },
+    {
+      "name": "font:alumnisans",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisans"
+        ],
+        "reference_ids": [
+          45,
+          59,
+          85,
+          90,
+          92
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2305
+        }
+      },
+      "images": 2305,
+      "rank": 24
+    },
+    {
+      "name": "font:alumnisanssc",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisanssc"
+        ],
+        "reference_ids": [
+          4,
+          15,
+          21,
+          22,
+          31
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2541
+        }
+      },
+      "images": 2541,
+      "rank": 25
+    },
+    {
+      "name": "font:miriamlibre",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "miriamlibre"
+        ],
+        "reference_ids": [
+          14,
+          47,
+          55,
+          60,
+          82
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2282
+        }
+      },
+      "images": 2282,
+      "rank": 26
+    },
+    {
+      "name": "effect:pattern",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_pattern",
+        "renderer_effect": "pattern"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 1288
+        },
+        "1": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 1542
+        }
+      },
+      "images": 2830,
+      "rank": 27
+    },
+    {
+      "name": "font:alumnisanscollegiateone",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisanscollegiateone"
+        ],
+        "reference_ids": [
+          29,
+          58,
+          75,
+          86
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2029
+        }
+      },
+      "images": 2029,
+      "rank": 28
+    },
+    {
+      "name": "font:puritan",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "puritan"
+        ],
+        "reference_ids": [
+          9,
+          70,
+          77,
+          81
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2293
+        }
+      },
+      "images": 2293,
+      "rank": 29
+    },
+    {
+      "name": "font:alumnisanspinstripe",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisanspinstripe"
+        ],
+        "reference_ids": [
+          23,
+          71,
+          90
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2043
+        }
+      },
+      "images": 2043,
+      "rank": 30
+    },
+    {
+      "name": "font:khand",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "khand"
+        ],
+        "reference_ids": [
+          0,
+          32,
+          88
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2050
+        }
+      },
+      "images": 2050,
+      "rank": 31
+    },
+    {
+      "name": "font:margarine",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "margarine"
+        ],
+        "reference_ids": [
+          62,
+          68,
+          80
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 784
+        }
+      },
+      "images": 784,
+      "rank": 32
+    },
+    {
+      "name": "font:cinzel",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "cinzel"
+        ],
+        "reference_ids": [
+          7,
+          91
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1016
+        }
+      },
+      "images": 1016,
+      "rank": 33
+    },
+    {
+      "name": "content:digits",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "digits_only",
+        "renderer_charset": "digits"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1029
+        }
+      },
+      "images": 1029,
+      "rank": 34
+    },
+    {
+      "name": "effect:texture",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_image_texture",
+        "renderer_effect": "texture"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 515
+        }
+      },
+      "images": 515,
+      "rank": 35
+    },
+    {
+      "name": "font:antonio",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "antonio"
+        ],
+        "reference_ids": [
+          11
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 772
+        }
+      },
+      "images": 772,
+      "rank": 36
+    },
+    {
+      "name": "font:eastseadokdo",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "eastseadokdo"
+        ],
+        "reference_ids": [
+          36
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 258
+        }
+      },
+      "images": 258,
+      "rank": 37
+    },
+    {
+      "name": "font:existing_04",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "existing_04"
+        ],
+        "reference_ids": [
+          91
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 257
+        }
+      },
+      "images": 257,
+      "rank": 38
+    },
+    {
+      "name": "font:existing_10",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "existing_10"
+        ],
+        "reference_ids": [
+          6
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 258
+        }
+      },
+      "images": 258,
+      "rank": 39
+    },
+    {
+      "name": "font:sixcaps",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "sixcaps"
+        ],
+        "reference_ids": [
+          45
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 508
+        }
+      },
+      "images": 508,
+      "rank": 40
+    },
+    {
+      "name": "font:zcoolkuaile",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "zcoolkuaile"
+        ],
+        "reference_ids": [
+          98
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1027
+        }
+      },
+      "images": 1027,
+      "rank": 41
+    }
+  ],
+  "ranking": {
+    "dataset": "A",
+    "teacher": "B",
+    "teacher_epoch": 20,
+    "images": 100000,
+    "teacher_sha256": "6debb603bd998b04278682a8013ed963366074133a1e83b66182f2e13f252840",
+    "sha256": "4fcfbaf37d06d8d383cf849cf65b45898c34ea8e9b256957a3f7a6827c337032",
+    "predictions_sha256": "0907addd4fa97eb3141da2363880d7c77cfa332c29d687f3f7065a1b3f4e4fe7",
+    "bucket_counts": [
+      33334,
+      33333,
+      33333
+    ],
+    "seconds": 476.875,
+    "protocol_sha256": "53b85edaaf41d34a6e6e1923156435559ab965b8b52a2e0daf828f2d16c61192"
+  },
+  "features_sha256": "2c58215e468e080a10646f4c9705c913658bd1180d4fd49c1f402db53a01fc02",
+  "reference_predictions_sha256": "a869d3b116954e98e20eb51292c4dd6fc5bc954c5a5f5041756b4e5f15bfa1df",
+  "provenance_sha256": "6e18a28ba97070a6d09b06f6bf8fb7a4766b9020e1b700997a359dea731cb734",
+  "lmdb_sha256": "b4e888839cb9418752d8b59225278e62ea944f690f796b2007c5937ad7662af1",
+  "metadata_hashes": {
+    "corpus\\custom_000.zip": "0a56f0c842189173e156b4946d3d0a32d1fb1a8014008f93965ef510dac9491a",
+    "corpus\\custom_001.zip": "56df5e28e267a4c730935a2d02f32912d2e6fbecae8852706d308b1c335234ff",
+    "corpus\\custom_002.zip": "070f325ed9b9e05957268eeae7834297b98e33876f3aed17b74fc7625f759306",
+    "corpus\\custom_003.zip": "4758e6c757c44f6edb800993b62bae72843f1adf5a95f52652f07e6823d492b4",
+    "corpus\\custom_004.zip": "5701b53c0d571b313edea6865c81738e068700dea86790b154a4a62bbb655077",
+    "corpus\\custom_005.zip": "af6662487b7b43f2e777bec1f1e4043d41924bffab13a597e129dd20b3b8f904",
+    "corpus\\custom_006.zip": "752f3ea133a9b1c42b5f583496b05a2c07d1281695c5373385906899fa0eb5a1",
+    "corpus\\custom_007.zip": "249e99940386d75ac4132b735cc8a45d935dacd0cec2e3306c506f2ded59fa20",
+    "corpus\\custom_008.zip": "ab430cac309ea45657821511e4da9232d602134e56e003617e8a940741787281",
+    "corpus\\custom_009.zip": "f3f30c2dad1654f96a689725bc12eed322b9021e476b51733016386da89f1c51",
+    "corpus\\custom_010.zip": "833c6ac116395544e1c7084cd19627e99eae51ef05997323efa9d2c6633e2ddf",
+    "corpus\\custom_011.zip": "25a9a4fb7d0246e3735917a86c1c94152edf6a96b3914caf834eecfeb589914b",
+    "corpus\\custom_012.zip": "24dfcc1c9aaa0bcebb2e8b0df7ee93f45de073c0afcbc877cec445bbc6d4a98e",
+    "corpus\\custom_013.zip": "2ec7b3aaa2545364d3aac6e94d9d73bfdf1b74772125f6214522059cbdcb0b26",
+    "corpus\\custom_014.zip": "074543427479e1c1ce8c3ba7c9d7f8df2d22c243cf83ac4d85020b61f1c25be2",
+    "corpus\\custom_015.zip": "f1e4a747b7ee804475f435b17df502af61bb013f6f1dadd435c8ae55413a6bbb",
+    "corpus\\custom_016.zip": "dbe81476d12a2999ae369456e195c9f8ec5436ed0d3739f883a2913c20940541",
+    "corpus\\custom_017.zip": "7e6112311830fb9cf21bac47438bfa52b8f9c3dfb0bfd64f8bb80074eb0ab510",
+    "corpus\\custom_018.zip": "215131193eda00afbd2e5f61dd388c92eb81b4af96649ef4edd400f61ff26494",
+    "corpus\\custom_019.zip": "67b3f920729d5a463089fbf903cb9a06203d71b3193c8b9476f6003068026701",
+    "corpus\\custom_020.zip": "8bf9ce68a1d153b3e3fbb6dd344274ff5838f71137633a0d166631dc6f6c1a1e",
+    "corpus\\custom_021.zip": "a743108b0949f34b7f6fb93c4ad98e4fc9421ffa591d1037d3f1b8ac3848f807",
+    "corpus\\custom_022.zip": "508a3356c1cbaf1dfd98627ffd57237a70994ffc78c84ca9f11edc561eb41658",
+    "corpus\\custom_023.zip": "d2aca617bea1332c082a963384151e87b32938b71fb06a80543dc02703a94e84",
+    "corpus\\custom_024.zip": "87d49caaa08b271a28fd073f4f11718908e431ef03c69e84aef9d0e124b1d21a",
+    "corpus\\custom_025.zip": "f30589f636d7f0f2a7ad33bb123a4bd8fec619630972d047441b20fd32259834",
+    "corpus\\custom_026.zip": "7178649e22287504a27bbff4bbec391da9937a2bd497eec1138e94fa99ae69d3",
+    "corpus\\custom_028.zip": "c200ee3b3810029aef382364592827ed1dc50428ac36e865446f3ea6a14c4e8f",
+    "corpus\\custom_029.zip": "6f883e1a06045564cfd53a316defa9ad8316e9bfe046859c04cc6772d1b7dbc1",
+    "corpus\\custom_030.zip": "f32420d0e3779909542c4dcb4d6460fb2597db79c6ed32c6579b499c2587bdd0",
+    "corpus\\custom_031.zip": "f6473cd4a742f574b2f55458d4d352f9359b580ef815efbbbc0c4372026f5ce1",
+    "corpus\\custom_032.zip": "1c4d2763c157f803106c7714f81d03fb82a2264f46f6faf19e1a79dd0a4f1efa",
+    "corpus\\custom_033.zip": "12d33d8d6f5fac005c364286ca8653311b694cef5d429de92d346dbfd994c33b",
+    "corpus\\custom_034.zip": "05f0d0d8b9ba487f7c2cb8b09cd5002403b2efdfe7ddec2b988a14c06dddeca8",
+    "corpus\\custom_035.zip": "4c51c0ee4ce7266069d8e4bb37fea701b15996ef880e37296d26e7ffc75bfd73",
+    "corpus\\custom_036.zip": "0f053add99828f4f22901eb2bc296cdb45a6fcd91732186809b6610e7632bfd8",
+    "corpus\\custom_037.zip": "e54fb9596a2e4de793e90f3af742604e39dba241e75c59343240ea14cdcb1937",
+    "corpus\\custom_038.zip": "7834762ac3d734952be691ea05a1fa70ced2f5b9b1a4f0fb419386b6772f1a2e",
+    "corpus\\custom_039.zip": "243859a529f65d97d54e0240ddf08ed07844be40fde851f1e7c7be93ad3216ce",
+    "corpus\\custom_040.zip": "c310d76defb246b444ada67dcbe4a62b0c78e9f9c76b551d13351c4bc50782b6",
+    "corpus\\custom_041.zip": "58e7f041d7cb3c87dd9c4837d5d0163aaac549272d4548a8be5f1c45e2de19f9",
+    "corpus\\custom_042.zip": "1b61099d9c6e6c9648fc643bc57e04ca4167de1b58a257c9d57deb3c12ef463c",
+    "corpus\\custom_043.zip": "f79987506192949d7c586f80efc09be34058d268d2d9dbfe4c0ea1339c08ac6f",
+    "corpus\\custom_044.zip": "575599f2d8ebbfba5982a592cfcb98fa4a676066fd21fa07f7ac0a51a9af0c26",
+    "corpus\\custom_045.zip": "ba1d96999e58022f58b51f8b5bfa2da3966e9d83e13e119d3bf9d4b4750df1d0",
+    "corpus\\custom_046.zip": "7146cc055341bdd142a5402458513c48f585d7a20dfcc69c091ea399a57409c0",
+    "corpus\\custom_047.zip": "5012c1e3986e7c7c851a97a4a30bcbd2801a3bddeae118d95a92943e4148419c",
+    "corpus\\custom_048.zip": "8c26d982e4f7edd1d8086c7b3552b94be53ef9af5f356a1e10dda1d444ddd5a1",
+    "corpus\\custom_049.zip": "e709f40dc4e9aef059aef323ee98498a52439b0a08ff6c2d5dbad763635251d3",
+    "corpus\\custom_050.zip": "3719f79563bc3ac2ca07ab008fe7544f8027857eaa9fca102747eafe2555d9b3",
+    "corpus\\custom_051.zip": "1b22812773994e56008769122109d9751a2140ed79417f3ff883531e78ab5033",
+    "corpus\\custom_052.zip": "e874d5d9248c4d818801d272e0cf59bd273c8a7dd60fb29a29753db0e45f7e64",
+    "corpus\\custom_053.zip": "5ba449a1b1b9b13869c22cb171205813a3c0fae7798e0f84244a0e11abd3ba1e",
+    "corpus\\custom_054.zip": "be937fb9f8edb60a73cb027887726e7e87100932ccbfcd02807814f9fcdae2ba",
+    "corpus\\custom_055.zip": "171b926a375e5c559210c3aa507a26482f7afd9b2d1bedf48c662da999bfef3c",
+    "corpus\\custom_056.zip": "447dac0b4a21874959d56a5996914609df8783fa8725e2f1a38f25e656baaeff",
+    "corpus\\custom_057.zip": "c4f6b23ae1f5eb5e1a1f82a11c2dcd1e0e9c3f1349d5bb6ca40a8a263c60518e",
+    "corpus\\custom_058.zip": "b96b54d9e8df10b5dc3af6c17487d341fddaf35e6aac7b4fa93d7b9a577b9f2d",
+    "corpus\\custom_059.zip": "821e9ce07707a7c32218a1e0d289ae7d25c421a44330779d12795fb497ad2bc9",
+    "corpus\\custom_060.zip": "553d0323c2887fd1833fc9c477675c7df946ac61f9b0da57eb794402df0d4544",
+    "corpus\\custom_061.zip": "c2d804db6e83d24adbebc11db5c832686aded4f5c4d5a993d212d09b1c5a8471",
+    "corpus\\custom_062.zip": "f56d618293aa4ffa36c8f3315a27fcb4ab6ffa99eb966662073041691bb90b28",
+    "corpus\\custom_063.zip": "7bb1fbd3519dbb0acb306a738c3a17a9478c1b9995d92c4fd5f96b792de21477",
+    "corpus\\custom_064.zip": "28ad162cca7f57b354a370ac125e00096d6467d3a370650394d48452e623568e",
+    "corpus\\custom_065.zip": "a39d70bc2a12c20515f72b9ce06511786d941729b5ce7d10a81eab6cdf8275f2",
+    "corpus\\custom_066.zip": "0fe0fb5ab64370e771c5f8499bb3f25301b19e0ebeb3346757e6dae4d39c8ca0",
+    "corpus\\custom_067.zip": "f9bdabd50c8d4229f2f33ead426eef57e58e639df4a37db3af67e30ad8e15958",
+    "corpus\\custom_068.zip": "8c8945460c9688d9a1115bf4cd01bc73d5ed4f09a2ad82f9315457897c114bf3",
+    "corpus\\custom_069.zip": "d4fa51d801e1f85b8b6734ef814a257c196b5470518a24d6efd6eb8b9e41ee35",
+    "corpus\\custom_070.zip": "b117093a452b126ec6a2b097f60247debb2a6cbd895667774751cf07f0309dd3",
+    "corpus\\custom_071.zip": "f47405c6816661064e7f8d6d7cc4bbd1802f6337b296c70b2fc9656a0e5d5cb1",
+    "corpus\\custom_072.zip": "131acd069e4949d1163ad8155080074b2f627f71cb0c2ebd183bda1559088b15",
+    "corpus\\custom_073.zip": "cbc0e4c0110ca1c3a7d581b4111079be5cd9a2864875fa61945eb16e11174150",
+    "corpus\\custom_074.zip": "0b48b74990d624a032eb67b5e3b613b7f69c69dd6ef713de4c559b18b0a19bb1",
+    "corpus\\custom_075.zip": "539750a9cbb88f8f0debbc684a502921a0fba0b399a07d0858d28097f9328bb0",
+    "corpus\\custom_076.zip": "d7217d8fb1c3fc7cae689bbb3e1b586f8bf4871ed46c4a5f2e12da09d889aa3a",
+    "corpus\\custom_077.zip": "86ce9c80149379d9705db471948c39361f456181667b2344f4ebc5cca8af6d4e",
+    "corpus\\custom_078.zip": "61077005070203951d5719808d63e57d540fd3c7d04af98994daaa5899b50cf5",
+    "corpus\\custom_079.zip": "720ec5c7cee929e3ef8192205fb49fa93c05741c743319b0d99eb011b07af981",
+    "corpus\\custom_080.zip": "97ca03a5fbe606c32e1961bea826dcabc675c9c6b3effa029a54395ca4683966",
+    "corpus\\custom_081.zip": "ddcd011c9dbb5a091c39825aba3fc4126b7c8011bd1780ad377d59b6fada2765",
+    "corpus\\custom_082.zip": "8290e5b964a70aada68b3bf12132a4ce01274f5afaff0f877b3dff51d906e6a3",
+    "corpus\\custom_083.zip": "cd3b27da248516f158f5f99a8e3df4b1e9abf0859feb00692854fe9c27681f17",
+    "corpus\\custom_084.zip": "57591a11d69b824d71df466f4cb9d1a71ab70ec6a67570250a5fca92f68e870d",
+    "corpus\\custom_085.zip": "438dcf2b0939b38b7f6368b8c9e5a9937b0aa93d7cab69d9ff588bb57c87c68c",
+    "corpus\\custom_086.zip": "4687b0db0f08eb84ce4740d9536365db66bd097740e3c571c4f7ad2227e8f933",
+    "corpus\\custom_087.zip": "06e591050a81fa265450302014f485ea30a46e53a91c8963833b105b8cb71cf6",
+    "corpus\\custom_088.zip": "0681779aa0d6d052d712c00703069574a22c6c1b4e301dc2dc951445a581ff6c",
+    "corpus\\custom_089.zip": "c5ba63371b56c20c52cad4fb8f80be2dbd91917d39709ba4054bd4553800502a",
+    "corpus\\custom_090.zip": "941206fc16ac9d3538df3d3920734a34cb375bf54d990bcb9723b3a186f28a7c",
+    "corpus\\custom_091.zip": "9e028b127cd9bbed27503231ea250ae6ed961cec0b367affa06a8bed8a6a82e5",
+    "corpus\\custom_092.zip": "afd26e505c5159c8113e0fc4a8df961fd2821b2df31c45c82ee7c7c13f367df8",
+    "corpus\\custom_093.zip": "7f7e3d4925eb218e5916ed907045235df9f077abded871a8ed43f3fe7768c896",
+    "corpus\\custom_094.zip": "89611c0949e8645cb0f1aeec536fd0719cc098ac0f375f06b7fdd2d9dc718b07",
+    "corpus\\custom_095.zip": "1cb5ab178e04c5b0a18fe0817dad3314ce74dddbad38288599843f45e7264156",
+    "corpus\\custom_096.zip": "b59a0476cd52cca0a822497fd4ec284c7a26d1924b982139a26b5ec5e9b5fd64",
+    "corpus\\custom_097.zip": "5b926dad0d2109f5f6e8e84d8e67e7625fc2538b56770b7a67a3fb2fc007a611",
+    "corpus\\custom_098.zip": "7a84f943eba53db16bb9839eff6c86028f021f2404fa70fa58cb99aedc4ba85c",
+    "corpus\\custom_099.zip": "2ae8d648281a3d7367e76fa4c83c396379eaea3e8e9445621d64184cc755ca57",
+    "corpus\\dino_000.zip": "984e1008733b24651485f91965e0d00a2630a6f9e1dcf0974ce38d4664b08a95",
+    "corpus\\dino_001.zip": "7ffa167c788ad34c061cc361e128fdad86fa9c5010d0a371a83a853d896b4eaf",
+    "corpus\\dino_002.zip": "a81ef05af76cd1a4a5ae87920bdf7044ae7e08480aafe0ed7ad710b640cb5a8a",
+    "corpus\\dino_003.zip": "a3369f1561665f0fb5802e1a9a8c89b9176d8522f56b15a9309a858a667c7c5d",
+    "corpus\\dino_004.zip": "b4adf034e085ccac883dcf104e0319647189257ebf817902623451a5ede7d901",
+    "corpus\\dino_005.zip": "f58c37d55b42feca6e2a4dae6e9227bd2303c4ac4c3e9b644774f2faf4ef7abb",
+    "corpus\\dino_006.zip": "bde76729d856203ef69bfbb35d6a3016d2c08370565d8331630c09147474b545",
+    "corpus\\dino_007.zip": "ecdf663d090ce10ae6be50528ff0cb56142aa0db16dff0ad267f9cfcd3590a79",
+    "corpus\\dino_008.zip": "23a21dced0a9dc6cc594f8ffa24dda7b406434d1da35137d446c5d981cce24f8",
+    "corpus\\dino_009.zip": "5ca363ce77a87ba710f9e872ddef254793dcf0c9637a1da67465305f4bc9aa25",
+    "corpus\\dino_010.zip": "4df22d4a0d65e1ec0821dad52c90f82d56e27bc117247b7a98901cfb8161f149",
+    "corpus\\dino_011.zip": "2c6cb0b0f964fd4983da6a489c1e2ace346be2531c3f610ea3ecf2d6adc6e4be",
+    "corpus\\dino_012.zip": "fcdc67423e757b8e93d409b666d19fba8de11646b80f40a0164e4d389c1973bd",
+    "corpus\\dino_013.zip": "574673e78a69d768ab7efe051185c87f683d6613db5a3974b2b177f22e66d012",
+    "corpus\\dino_015.zip": "17d11de9dba3ae4caad81dc57e73c8ff80712419b7072e0c73738cf44ce67ca0",
+    "corpus\\dino_016.zip": "1d370b96c10498f59297c3987872bacc5c368ef09aea89aeec909fd5fcaedf2b",
+    "corpus\\dino_017.zip": "43f4b16545f23f99893b6295fc1e6714cac45c1fce8203aea70ae87d5193acb4",
+    "corpus\\dino_018.zip": "21f7a3bdbbc2b4b5798adc4f2793bc938ceecd83f41d5e4f2c37ff2d9e304e11",
+    "corpus\\dino_019.zip": "737a93e7b6711bfb3bcfc0070d87eb865b01a42c91c3bdad6b4ea3cb60331c44",
+    "corpus\\dino_020.zip": "f4ebed1b0249fa0b00fb878b55fcdfe43849b0dfa1e93b649e9ea773360bea03",
+    "corpus\\dino_021.zip": "2f73757685f7fcfbed864cd7c1c5803ce4515de204a0d0ddd722234042f4772f",
+    "corpus\\dino_022.zip": "4abc92412246224f9bea0a93b761f107328955341b6335badf39e39edd7e912f",
+    "corpus\\dino_023.zip": "a0c87a147fa49b140f8f1703e55976a30e58b7f18d2718c8082e7d9d57f544b6",
+    "corpus\\dino_024.zip": "ead2d45d2ade91e99399ee90eaf76f58e95aacf96af30f014b7c7202806a6a1c",
+    "corpus\\dino_025.zip": "1aeab48c7a9a56d51dd2ded008402bc8b78b812124ed582f7d5cbeacc6fa5c47",
+    "corpus\\dino_026.zip": "7b4b73a6f34def156f320ba37a3a4498494f44baa70be1d8243e53d54fe8e0df",
+    "corpus\\dino_028.zip": "2bf1bd15b08d83384932e4db4bace37f4d9d91634f251550dcbd9e5d4282f27e",
+    "corpus\\dino_029.zip": "227497352f357ad5127e2f20fb44a7d6d5ec97c6978d4356ef527e765f434337",
+    "corpus\\dino_030.zip": "c55f9e01a6aedef413803edcbdf4bcc4042ec066c14674f148ba1f37b789bfbe",
+    "corpus\\dino_031.zip": "9ca09fcb6fcde54ca7c2199098d32c2cfbc3fef1b04ed53ee9b2a83da90d4275",
+    "corpus\\dino_032.zip": "77196b7b2c21003f6a6f1576f1c27b4043048ed98822d10e2173d558bba225fe",
+    "corpus\\dino_033.zip": "4a3b42bab9a2a1ff53646f1f214a7484bd1e9b2d41bd396a5d565115d1a5be21",
+    "corpus\\dino_034.zip": "008cf0c4eb40bf333800d7cdb350613eb5cdc5ca58d0663776281e77a405f081",
+    "corpus\\dino_035.zip": "7d30e3b7a136e73a8540c1396ae074b8ec20b494b0bc35b5e48e9268e184a379",
+    "corpus\\dino_036.zip": "5a9a6c16ce28eab28891b72f54e54a9ab839bd8ad68e931b642b8834c67b397b",
+    "corpus\\dino_037.zip": "1b3724015f5f970d00cfb871372f097494471b9ac5a8163542866768aefe6085",
+    "corpus\\dino_038.zip": "17b5fda5d65c95fd0370473cc9358d4010a981756760f2f70eaf7f358910f8a9",
+    "corpus\\dino_039.zip": "5af56511f18414dfcb3acd1f2bede77e660004f84f3b5ab7617bfc60fdc9d20c",
+    "corpus\\dino_040.zip": "3a55132a34388ec15e9b583f85702ef1b800ed9211a00cad9048aa6bcfdb550d",
+    "corpus\\dino_041.zip": "4afa049ca2183f695cdd83f1816d55a1efd5b3921dc61b295bf6e436caffd7be",
+    "corpus\\dino_042.zip": "2549c0c2b79cdaec7ef560b435e2bcd0b28cf068f0044eb8bcc519c6cae9a967",
+    "corpus\\dino_043.zip": "97e229a5d16195014eb5b42a8e3094a98dbd027f383567a5bd7ef98d744b4f54",
+    "corpus\\dino_044.zip": "4fb4b735d40286179fdbbaacda8dbd3787db0b87f0e2a38a4a9ee981c0fa63ae",
+    "corpus\\dino_045.zip": "29d3acdaa3e0f722969cab8bfa624bd63685c6f7470b739332a37a076e4f8fb6",
+    "corpus\\dino_046.zip": "22931298e9e3e2a04067338e45ec104e88e19e6eeb16d08ec0e0e8a7346e9666",
+    "corpus\\dino_047.zip": "d35b756429eababdf8d9495df4b8627d079f0ba85ebc897bca535b864554bbbe",
+    "corpus\\dino_048.zip": "f91ddaef486117838a66e2ec0f1d0744e2186d9e0f26b0de1a4219205594d26b",
+    "corpus\\dino_049.zip": "52ef72345b2f4732eb9315121c7ef585eee811565b85e904798fe17ec1630fdf",
+    "corpus\\dino_050.zip": "c9b7c0fda1ebfb8631ada1b0bca34c965453b53567968642d605c9f3c146e74f",
+    "corpus\\dino_051.zip": "c8e3da1ad777e2dbfb3e4660b64ab45b67b4f91a99e2255e9ee483af1ef6f69e",
+    "corpus\\dino_052.zip": "550d00c7e7eee1eb658d20cdfdceaf3f5be71874aeda51e9e80d05168b70ee86",
+    "corpus\\dino_053.zip": "08d19d62e85f247491380717c4585ba9c9f64140cb2d9e7a7be8bc24d4405d72",
+    "corpus\\dino_054.zip": "e8c63f597468605b441a9a547fbca4307d874a5964076d8e9188575428b121fa",
+    "corpus\\dino_055.zip": "a6dba6c0f2fd58207b0fa8010212b2eb3b8007b4715c5b00afe5bfb930a6bcd1",
+    "corpus\\dino_056.zip": "9bc5d769146a5584f4bf740229789df0db26014d89f9ff3e16b16bcf1d2df764",
+    "corpus\\dino_057.zip": "0075fd3222407b65ddd76ad725e473f2e2681302af7cd1a1545ca5748bb38c2a",
+    "corpus\\dino_058.zip": "6b1de4b3b91b24ee8ba3b01a50e0165ffe7716450baf3394ab3afea217469e14",
+    "corpus\\dino_059.zip": "5cdab6db5e8635eb7ef794b5040c5f0a27dd2bd4e7569c74ea883c062333aba8",
+    "corpus\\dino_060.zip": "45585e9735c21911c81a7aa7f043d258e0b4dd3f252fbe46b73c11dc3c429ae6",
+    "corpus\\dino_061.zip": "da4ec12c87d751bb9777d1afafe87110bccdde5d4627f8c5d8706e092b6c9578",
+    "corpus\\dino_062.zip": "51e0527fd0394457858047c5f5ec5fa4dc563ad6afda2bb2c50b549dfcbf9894",
+    "corpus\\dino_063.zip": "38d1cbbe93230468e33293dd3e5598b3439ae586df0ce9fcf12ccddfe83faa42",
+    "corpus\\dino_064.zip": "e4b5111c9f6311b7e422c5d62a2fbd2ee9ae1411804adf4335f0d4abc5d40a76",
+    "corpus\\dino_065.zip": "856c6e613c1daa15a9998ab48fad838044c60360012aa06ee13c78a5c89ae553",
+    "corpus\\dino_066.zip": "2cc7dfea2fea53437d195d22c273ae921719b7d472802f2bd173f203f3c4466d",
+    "corpus\\dino_067.zip": "b27160631b0dacb3cbc562d8493ae2f8f6ee4295414c6165d33a54cf1c8affed",
+    "corpus\\dino_068.zip": "0ea1f926bbc51e644752d0207565c0344ba05d8665de7edcf287daaa5d9243ed",
+    "corpus\\dino_069.zip": "9fcab4d3b5d6d786453559ad1dd371efca877705ed254f21f43bfecf30890984",
+    "corpus\\dino_070.zip": "8597debbbe30b791ac4a99da1ef4eae79302d884a4c291233c88fbd6b62e3724",
+    "corpus\\dino_071.zip": "1c532c57b8dfdeae2d3bdbd2c509a7844ce3497b71d4a5bda6aa11ad0ada1b77",
+    "corpus\\dino_072.zip": "612ab17f259e0ad5b197e19e509808e129491955524fbd756a8b1b7a50914f54",
+    "corpus\\dino_073.zip": "ccb5fd6b619c8c638f943e0009edfeb250daa8998ae05035f4effec3b5889ee6",
+    "corpus\\dino_074.zip": "c2b181cdfb15eb8421264336ccc4c15d692bfca5acd2e4f59d65e89d48a432de",
+    "corpus\\dino_075.zip": "7eed9babe3f54e79878379e303a003bef530d5f2924f33407907adfe36588f2b",
+    "corpus\\dino_076.zip": "785576b941d39e7e1c7b92c3836b006103cefe3bc5eb317ba629a08fd0640412",
+    "corpus\\dino_077.zip": "6ffd0496ca9aa6b69d6bd7d2b080e9fad35a0245bbb846a81f9dc40dfaff6eb5",
+    "corpus\\dino_078.zip": "6b2d7bb8e6e10d8c086d3060268a402c7fdceb5836eeb305d86997d99d3485ec",
+    "corpus\\dino_079.zip": "24485700b13703fa0af19594f8a789fd347a7f6262f1e534e3aafca8e6efbcdd",
+    "corpus\\dino_080.zip": "5bb01ec9f0dca3c4a6a85d7bdac1f692c8bd0caff1fd62e225c43e25ab897390",
+    "corpus\\dino_081.zip": "647e23f0a866739a779a4e8734ffe5d99f243aa424de0e612ca821a6522e8e59",
+    "corpus\\dino_082.zip": "783867b76454e4ad3df0c88263e8e15feba7e5f3645d498ba573a5f5da63e6be",
+    "corpus\\dino_083.zip": "132a7edf1c2f3ebc82771b9a99c3081045c14af7611ceaaca908a043730bd37b",
+    "corpus\\dino_084.zip": "f9ccffb2047827bfd06c68b1e575e2780582ebc73c0b0c4bd5a75bc341c3e147",
+    "corpus\\dino_085.zip": "e1fcff7559da950e2005ce06ba08e02bffb40b86bfd432640f4c7cf29d2c3f6d",
+    "corpus\\dino_086.zip": "fa7345927f6b77812b7ae3b7179a9d5c95aa258e5e461bd1aa69ed086402f9fa",
+    "corpus\\dino_087.zip": "b5371515ff503d46963e28799704fc0acff75198145a0445d2697411574ab996",
+    "corpus\\dino_088.zip": "f4e7dcdd89c7fa977a64127b8878ca02d22c7d895f42a4fdc3b895427898cdfb",
+    "corpus\\dino_089.zip": "1f3bc5569847e0d247ea10642ac60028a2801b7103f1dee3b01f40ca49fdbc78",
+    "corpus\\dino_090.zip": "e2bc92eaa58b0a8e914adf630c371b323901068883f2aa8df8081c43bcf6b02d",
+    "corpus\\dino_091.zip": "4b5aa189ce95f254b4bddf2942b7454855eb1b76227e775b09982f784cc0cfd6",
+    "corpus\\dino_092.zip": "2ff7a602ea22cbd7f914311be19751356ebd5a738bf1076b47784b98468b6377",
+    "corpus\\dino_093.zip": "ede7c01145f84502b883ed19908d1081f27959cbc78a4e9db8ad847d474716b2",
+    "corpus\\dino_094.zip": "60e488142427a533293a12addeaa578f66220d2b30a9f5e84d1068b0fdb53835",
+    "corpus\\dino_095.zip": "41be5ff61836f3a2b37264b0a275ab29aecf9ab43b712b46d2062f6648efa916",
+    "corpus\\dino_096.zip": "47c63e7fb3d30ef20482dac39f758c45ed9c5a0111cd5e16c1f32ba1563e0972",
+    "corpus\\dino_097.zip": "b60f119d2d250b01f7a8a1071052e573fc966ba8f59406d820af213e16718110",
+    "corpus\\dino_098.zip": "c868812695a0168a585e806b9a76b685340a07d2ca3086c8f864fd1cd57331ee",
+    "corpus\\dino_099.zip": "bc1b50169eaf50754c85ad2d5b4281772ccbf51b9d139332658c2eb50adda73d",
+    "corpus\\mixed_000.zip": "eb1c4be6dbc1ea615a835ee73ec65bc4d1e6f6206246ee3c38082ea11eef3815",
+    "corpus\\mixed_001.zip": "9d02f74ac4acbbba8b5973bd85afc8c264e1f7cc8d9ea230866ae182482e3f76",
+    "corpus\\mixed_002.zip": "570dc010d64c400fcfe79ed191db7c83a8262c8008d8811228adb80bb8764c40",
+    "corpus\\mixed_003.zip": "01324ea0c765f650f715313ac080c4b32efb7ed519352d1e991ea480937c82d6",
+    "corpus\\mixed_004.zip": "817052c53dc0feb7c5ba67d4f41e35395cf030c902793e226a70b8a04c287d21",
+    "corpus\\mixed_005.zip": "709f136fbec149b9da3973ed9451f0d8e4c7de4781fcfa1db15208e6e084303e",
+    "corpus\\mixed_006.zip": "184831ac0a9d3989a879c7c6f3df294494f56693ab51de031793af43ebd4ed8d",
+    "corpus\\mixed_007.zip": "6dffad3d1ee2694f1ebd0115d029b85ee62ebff3101349d66d7f5128d82f4be2",
+    "corpus\\mixed_008.zip": "cafb8f1ec7c2ed65068ef447f540d7cffd62971022d47d379adf4aac18601e67",
+    "corpus\\mixed_009.zip": "92f27fb40cc3fd1bf3f55b78aa852938b3136510d4a29c087ffef6b0bdade6be",
+    "corpus\\mixed_010.zip": "47fd4c8270372f305cc4ef709e363243c802f9bae11343aaf726c09a6d0597bf",
+    "corpus\\mixed_011.zip": "f67f5f4aaeeab4598ca8d0a4c8383d8c3e895c3fa288628bea1508d3706c7aec",
+    "corpus\\mixed_012.zip": "26e5a5387a7433e43cdfba66cdd2111575e0a0d9a64e8a2639f4209d44e0ee53",
+    "corpus\\mixed_013.zip": "adebf36f27ee9cc7b745048956eabd9df263ea1afba36ef4e83d39f03d8f6d33",
+    "corpus\\mixed_015.zip": "5c67a1479a88334fdbcf2198f275cdf318336bbd945f0947143465344e6d6e03",
+    "corpus\\mixed_016.zip": "667d6775f2e7a77c7188200edbcd2b9f18358606ebbdc9860372f8d4c88c9aa5",
+    "corpus\\mixed_017.zip": "b799f30b6b797129376f643382f2a5d004bc19a234a9e60d616bc9cfafd6c44b",
+    "corpus\\mixed_018.zip": "64c01f28b8c5f152eea47ee8ba9306ac2e1f90aa397eafe11a77bb29797c91d7",
+    "corpus\\mixed_019.zip": "a6b17e12b7162dec624b615882b69585f124cf5dfa981c37bb09cbf03d1fcda8",
+    "corpus\\mixed_020.zip": "f74d0ebb7a3bd393510b4f5dd4b643eb9d1e8ca2474b3c8669c472cd99c7a5bb",
+    "corpus\\mixed_022.zip": "4291839dbbd1b411cc82a7139472c60887fbedcfb7e6c658a64594584ccc9bd4",
+    "corpus\\mixed_023.zip": "232534524d2e26816530d21ea9d2938f41caf2f0fae84da9316a85d733fce6e9",
+    "corpus\\mixed_024.zip": "99049cc54ff7285102cc37eef2da9937109cacc8128be0d4f58f6efbc8808fca",
+    "corpus\\mixed_025.zip": "de0f5750430aee4a9f870504580001313c305644a0dc073d1daa818b7fbf435d",
+    "corpus\\mixed_026.zip": "1e06f0024189b8d5f9b6c5663ad09ec39aa5d3f454ac561789526089c425088a",
+    "corpus\\mixed_028.zip": "1f78122f78569ca71785a5525b1e9cf5912ad70fa3c177f6baec9db93fdcd896",
+    "corpus\\mixed_029.zip": "48d5faa2432b68460df9711c716bda28529d368053ffddb067611e5f20aca428",
+    "corpus\\mixed_030.zip": "423118320ae665554e36a71ae8d35ef5c43b25be8d61a8e5818d3c6042daa185",
+    "corpus\\mixed_031.zip": "666d96fd413f10ae956447d1cc893b30b86582364d9cdd362cc28e548b9c72ae",
+    "corpus\\mixed_032.zip": "366bc8e49147c33c2575f82619d166c52c47b26971e38ddce38b7f27d7fa5df5",
+    "corpus\\mixed_033.zip": "5ceee3d468ed6c18382e8e2b8eefbd48cedb4b65fb4c7e484d090485794fe2dd",
+    "corpus\\mixed_034.zip": "3c756a8d09bfed380f267850beab2c8b1540c82b255c55f545fb2e25d60f6087",
+    "corpus\\mixed_035.zip": "21b26914e56619502207dc0260317d2cc150c7fca2935dc38bfaa8528db1635b",
+    "corpus\\mixed_036.zip": "9be309d41f87612bc3bf677fd1b5029b313d52f1dc93d3eab23e69be235ccca9",
+    "corpus\\mixed_037.zip": "e03fbadd5d9dcfcdd1fe65e2e8d5f514b2daba419522c38fa2a9d99ff9a59165",
+    "corpus\\mixed_038.zip": "6985060a7150f99b820197470b34cfed3b496239f73878f71dce44b8944ef725",
+    "corpus\\mixed_039.zip": "1d6e2a2ad83e74f8d44a3edf13bb13fc8a8ab3151cfb869c6fe89d3b24613f50",
+    "corpus\\mixed_040.zip": "36825033d2453d37fffa6e27eda5ac22339b22a0d5eec757e1d65c4d6b10e78e",
+    "corpus\\mixed_041.zip": "0a8666306180f955c68ce42d100825e463a47b82dd8db75a03640810c5f9bbbf",
+    "corpus\\mixed_042.zip": "d4312365dac20dd7e873984149c791bf78a9148b39ea4744d50475a835419cec",
+    "corpus\\mixed_043.zip": "6e3c0c3aa937be3d985a3e8ba6382a6173b85a84f02b389c22c0e873404e5127",
+    "corpus\\mixed_044.zip": "d18d988e10b020215b737164e56deb0b54fbaec9a6d05fd245f40673e7ebc7e5",
+    "corpus\\mixed_045.zip": "82d13d44debdf031030d3d3a32b12267a6036b357c85667e6a8152f068b9b6e2",
+    "corpus\\mixed_046.zip": "ed67885a7e375fab86ffcfddd289956f3db7b5eb16fd968f5df6528772f26bc4",
+    "corpus\\mixed_047.zip": "f2f6f97acbd9e55c7ca77114f160dbbc7c63e2a0ef4f3c071390c4ad8a978bd9",
+    "corpus\\mixed_048.zip": "474c9a6c29b8d4287ec11d2165db0f1b0bb9446d82db4f564545ef7af7141214",
+    "corpus\\mixed_049.zip": "14408f3d7a24e294183defc0e48998876597b7ac1c847e8510229648d0131db8",
+    "corpus\\mixed_050.zip": "8120c6394dd1a6c707a67baffbfa82daa0d89ee850ee4b5212f32a2e6c44a24c",
+    "corpus\\mixed_051.zip": "bf22d87d9ac34d230aa370e4174c293fd0e64232df78d0fe45c753f8a2416c41",
+    "corpus\\mixed_052.zip": "3e63a699f67156344de4935eb98066bedef9d0bac5e9d9da5f2892ee000d4cc8",
+    "corpus\\mixed_053.zip": "8129d08ea96dc6b98220323f4c0a84989a1966b58af39309d4a73d44b30a7fbe",
+    "corpus\\mixed_054.zip": "e1e359a83c6f91b1adf8e9fe3b0faeca516c64d55190b7d7b8f715f6371ce9eb",
+    "corpus\\mixed_055.zip": "aadc90b58f869cf0e72e9338f47068d0ccebfeac2ab2a420fab56fe1ec335510",
+    "corpus\\mixed_056.zip": "a231559d9f61bbb6632ab5005d0fbf54c2f2d97ecb7f723f43a64fb531c12b70",
+    "corpus\\mixed_057.zip": "e8fc2ac6d0d31135171d2f7d0ff860ef2290987aaae5bdb3a36aea93d59d1549",
+    "corpus\\mixed_058.zip": "f78f19a193e8d6c8993f7f3ab41aa4eac5baf5ed00b42761bb62989035d2f12a",
+    "corpus\\mixed_059.zip": "91cbceab0714aefb2afeba032fa46efb858f11dbf57ef93a426998c7bd00e068",
+    "corpus\\mixed_060.zip": "a751651915b663c6709d08dd245fdbf941b6bd6f987a2b44775cd36324ac8bb7",
+    "corpus\\mixed_061.zip": "4074d296e0efe786be3a92fa509fde7dfd0ca335325fe36f2029c9e3999fa946",
+    "corpus\\mixed_062.zip": "4971c0ce252ee3c4c3959284e4db6d6e389c5ce86769d805d8164d467d407065",
+    "corpus\\mixed_063.zip": "93be6e1b82d1aa1175df0f25f42c795c423b1200b94cb3757ab268a66b9f1e15",
+    "corpus\\mixed_064.zip": "d504c8cef4abfed34daf352ad328b23c9761bb98666f8113e62e20c57fec61ac",
+    "corpus\\mixed_065.zip": "ab8e9a53c59c52dbf55dfd0f6b46e069929d316d33c07d1b8866a503580ab57d",
+    "corpus\\mixed_066.zip": "db456667223503739f7b6d1909abb7c2e7759f28ad63908526abcff12da15442",
+    "corpus\\mixed_067.zip": "63e8cbf64e6fc4a4913ba9a0d85d9b8fc465ae2710d10d14b5518895a3968109",
+    "corpus\\mixed_068.zip": "45c36b7ec013ac282c58dc158d7e66815bc1cf7c0606c8cef5680d3e83678853",
+    "corpus\\mixed_069.zip": "f8100932b413c0cdca592e133da5ebf255e40d1a51d51718f916408b38f3d202",
+    "corpus\\mixed_070.zip": "978afbd647e7e024416d42409d988169e9243c9763cda87c9edaf28a63213171",
+    "corpus\\mixed_071.zip": "c3787bb39ddd4d52e189383164c9b31989a9988919fc2e427675ce095d06dbb8",
+    "corpus\\mixed_072.zip": "20c7aa8daddd8f714ea7adc0c1d5b2f5d392a1470038b03f5e24b1148688d267",
+    "corpus\\mixed_073.zip": "14a20438f5de256bd673a28ca10cf134eadc631949c10da90f780412195c3ff2",
+    "corpus\\mixed_074.zip": "83cad7b8e0d90d0d1767aa3de597314702a5afe2a580fc2576e46a33a4972c79",
+    "corpus\\mixed_075.zip": "aa1a88038bc822b8eeadb39edc56780593e8f624e2c7a23306264b47968c2655",
+    "corpus\\mixed_076.zip": "f42bf16a044653befbface631a30a37e1830f8655d46a80082105611b93b6f3d",
+    "corpus\\mixed_077.zip": "3a2a3e79c95a4a2de4cf7667886f1d07d607c8563d453271e31df944ff006f09",
+    "corpus\\mixed_078.zip": "0b872c3443447d01102211409ea66892d480b0f82f676180da399506d9a7d0fb",
+    "corpus\\mixed_079.zip": "4e70d6e00469d6d5406fff449473a934a598aacf076ac187e9ad6922f7baac6a",
+    "corpus\\mixed_080.zip": "8460c8006e760b2aa0980d011d98750ba05e14e4e696ccea22645b39f85be74a",
+    "corpus\\mixed_081.zip": "1bb8e8845692f216b3b30d4b6fc06ababef2e0fabdf6a92cb1412db6566b43a3",
+    "corpus\\mixed_082.zip": "7fae932895cb6cbab865f9a87d3e15d3e7ff91b9b1cca2eaab33367bb5626fda",
+    "corpus\\mixed_083.zip": "338fe493a4ad5821f4ee392670f271b64ae8a9b689f1057e14356f83b781de40",
+    "corpus\\mixed_084.zip": "b3bdfa5ef822293be8170f46a246c1ede80a64b4d43907c80ed40a8e7b39950a",
+    "corpus\\mixed_085.zip": "13598536eef1d76c58df7ebe7c60ec9d1c78d11c44542fd2f05528d29ad52d8e",
+    "corpus\\mixed_086.zip": "3e85df4e2a308c8fd2d7fae1f0decdbd3c46e671688e3d5014b23ca0e5fc1f29",
+    "corpus\\mixed_087.zip": "264ed7b98116521b2c47d3e9b3996663491502eb36f8748c4e20ee0ff49aa49a",
+    "corpus\\mixed_088.zip": "d05ae145d65e393fc14d8864dc199aa349badf89d4d0cf8c090daf28500201dd",
+    "corpus\\mixed_089.zip": "ff0b301bb7298726f1ea3a008ad9340342b238a150246444aad854511b54967a",
+    "corpus\\mixed_090.zip": "d4e076cc572e18cfce9a50ccc4d8fdc832af666d95268e0dc98e26143e4bddc6",
+    "corpus\\mixed_091.zip": "d841ce590252920c9703e3d816964c1d60b02d9a603f977c04d28fd5b9c63841",
+    "corpus\\mixed_092.zip": "41b5163c44496ea7e71e700ace75368dc1b43562f96e6a72080b978fb0410dc7",
+    "corpus\\mixed_093.zip": "6fc3755dacb976ff3692c31d9e05d8529e204b1cbcc72cda730443f6b1a8ba3a",
+    "corpus\\mixed_094.zip": "5d718c283f778f2766215cad4ec914aee9b98ca14f7f7ef23a85d1db9e3416d0",
+    "corpus\\mixed_095.zip": "c71c34c1bdec5232cd2a9cab419efd84ec5ae25a921f3410d317d4070d23d86f",
+    "corpus\\mixed_096.zip": "d5bf2b1dfac14ee0078fb8874c84f3b10641538361a42eaacc99a42dfc71bf38",
+    "corpus\\mixed_097.zip": "956cac493693011833f15bc47df19a2797b7f2017165a8f099d8ca79418af82a",
+    "corpus\\mixed_098.zip": "e97b95356dde2448f18fbcd70d894ac9b5cc4dfc9bc9017acca1112483574efa",
+    "corpus\\mixed_099.zip": "60a035d4a981ffcb651caa22384a63b49e892aa30692433f699dd89eb9ba116e",
+    "corpus\\synthtiger_000.zip": "1a76c2a9b488e1231971d5763341d2afbdba5d9fbd13b1d3f48d6fa80c5352eb",
+    "corpus\\synthtiger_001.zip": "4e5bc3fb782b3934c3e3e2d6c55b294e426ee51388d5ac6acfdf1aab3c275860",
+    "corpus\\synthtiger_002.zip": "202b30f1a9a860dce133d31f5382476d4457f42af595822fa5a6039b651ebc29",
+    "corpus\\synthtiger_003.zip": "6d2ecd49ddfa349b7c20b6041fbf36eae17072b8986df8b20c7b71e87c3309d2",
+    "corpus\\synthtiger_004.zip": "46344492337f466c649d055c885047b6f95bef13b6f0c71bc7b7eead3a04361d",
+    "corpus\\synthtiger_005.zip": "44913ab62ae5593905146d27f155860cfe3519498da6c1ca8490805bdf7914ca",
+    "corpus\\synthtiger_006.zip": "cc571b7c261acb3233baa3e504fc8d5e7028bb79dc50e1970c465520e0b64649",
+    "corpus\\synthtiger_007.zip": "12b92726e00b08473e9dcdc677bafc0f079f61e16d15eb8db5479492a18fcb03",
+    "corpus\\synthtiger_008.zip": "c71b164d92177768da414d14487581f523ea50d3943c518bd72b6f3b3db40fd3",
+    "corpus\\synthtiger_009.zip": "f2aa656535fbded548cb191df477ac5e50ddbd512714efa14c6ae342d68529b2",
+    "corpus\\synthtiger_010.zip": "66e18b835bd9f99009f542cc38d2ab2866f3e2a052af1759554763d148598fd9",
+    "corpus\\synthtiger_011.zip": "62e5e87a13125577be673a569df1de9ea2f8fa2de289b9713d0826d28293dd4d",
+    "corpus\\synthtiger_012.zip": "ac09ec225e555596a99c1e75cf6a6201db64a0ff79158ee52eb08af8e46fc2d9",
+    "corpus\\synthtiger_013.zip": "0f48ab74743f774923b890f1f1a5aaf60bf56fdc9c29b8cebcf79c8abbf55ed4",
+    "corpus\\synthtiger_014.zip": "f8c66322027fc5ed68e18d075a7cbbba782f0db387222581a9f7cc58dccc0209",
+    "corpus\\synthtiger_015.zip": "f22e2c780edff982a3c09f9870e87b419da07f5e3d06f886396a04322bb708d7",
+    "corpus\\synthtiger_016.zip": "d7569ae1b4866a05c49e88f8c5725f914654d62bd7d401439190e1cfca1a7855",
+    "corpus\\synthtiger_017.zip": "a313394ed587a7a1868496306c8737b7fa1514eca4d6379c1432f5e72ba97948",
+    "corpus\\synthtiger_018.zip": "880e8a177d86dc2061b164b32a99fc14c3cec5dbc0c12430c932f5e3fd47f4aa",
+    "corpus\\synthtiger_019.zip": "bffca863dc345298dba83fa90ef8bef9304072f6b073613456bb291cd8e0e973",
+    "corpus\\synthtiger_020.zip": "b9f343ec3bd693f05d1f11d6a23064867f223c8e0ddf314052d42dbccbd8e849",
+    "corpus\\synthtiger_022.zip": "4572e6e8e53d6e9926c82cc4b861d99d5958647c2c0ec5e6e337e11b31e31dff",
+    "corpus\\synthtiger_023.zip": "dc9ce358f8b55783a27cdc9620557e0ebeb92c8d9dab71c42c152a037106cf88",
+    "corpus\\synthtiger_024.zip": "b4d271907eaa7c3ba7f5c718b977b0e06bb607b7eda81104669ce375dd616845",
+    "corpus\\synthtiger_025.zip": "39cda1e1a4645c81c3711d2e4abb1bd071cd1cfeecd910b2293444dddbaae7e8",
+    "corpus\\synthtiger_026.zip": "4da619f218a60c86e635bbdeae59e12d91b77ad360fe7fc532b531672683840f",
+    "corpus\\synthtiger_028.zip": "65a52e344006ea92d01aba9b41d23d96e0d34d85686704aaeb435de0b59962e5",
+    "corpus\\synthtiger_029.zip": "9f434c676ddb56070e793e80fdfb16abe1dc1b3685543a080e749ab5a914467a",
+    "corpus\\synthtiger_030.zip": "2278985676b8cd8edd66bde60022f55e9e80a205221ecac68f11cab5bb6b4b3c",
+    "corpus\\synthtiger_031.zip": "f394d88e6911b5082ac8ab1556d16133cdbf066f4ca0acc5e7bd8467b92dfabc",
+    "corpus\\synthtiger_032.zip": "798b05e0f358ceafa78388c5996ad5dbb6acdbac1cf61594f6ceb9cf0eacea89",
+    "corpus\\synthtiger_033.zip": "b2ae4e22787d7bb10e576c145970112cbe5b8a6425da95bcb14602368457bcc6",
+    "corpus\\synthtiger_035.zip": "1d65eefb8ec3afeadc1230a1c59e8b7dda52c3a6d12cdb5e0247b92988d460fb",
+    "corpus\\synthtiger_036.zip": "e4a595282492b9a94500d188979c5d1438f5ab9aa0c452a1ef055879c384b2bd",
+    "corpus\\synthtiger_037.zip": "1014f4930b48344454f3e52a049e14f52a9db06ed792319b4032317af32cd8f4",
+    "corpus\\synthtiger_038.zip": "644b1efdb2e680cc023a525c1e382530d4d994a4cb56f147610c1466f6738409",
+    "corpus\\synthtiger_039.zip": "21cf98cfc18399dd29be8e8516c6e367cc4428125719463235d78e702eeae492",
+    "corpus\\synthtiger_040.zip": "a0d6f514c9b112f816d3470449161f125753ee0bd32cbb7b3b9b8e191afdea4a",
+    "corpus\\synthtiger_041.zip": "f59c408effec5c834d366c1d52c6874fd77411785138b2478ea278df82d4c14a",
+    "corpus\\synthtiger_042.zip": "227c09514c4b76dd0be53e8214bb452cffb43e5097fe5db78463697a9a1626d2",
+    "corpus\\synthtiger_043.zip": "6334cd633836c7859c8a3a77dbe71ce9c4057d33fb8f066ad54a7baf927bee40",
+    "corpus\\synthtiger_044.zip": "4f18034e1c243cbdd33b28318fb24849265e2625ff96206f73d476c5ea30f6e3",
+    "corpus\\synthtiger_045.zip": "9a903778df8ff85f01baf489d353cfad17b3ffe22ba18baa582491c918f1526e",
+    "corpus\\synthtiger_046.zip": "ffabc66c3820c5cb2bca073ecea798862cff247d78febc7bb3aacf892bad0907",
+    "corpus\\synthtiger_047.zip": "c3eeefbdd9bfe16828a357db8a22962af8575691b591baebe7dc1e9391d230e3",
+    "corpus\\synthtiger_048.zip": "a7ff09766063c557fc22a4ff9d778ee58a9a293a6afddb5af1380d706c762e0f",
+    "corpus\\synthtiger_049.zip": "0ead16275f310e056604896f4ce9d3a7c2f56202e2e3137c0d61e560274d9b62",
+    "corpus\\synthtiger_050.zip": "1d920ac1fb1fa19ce036d34fcea30af24d1f8f10f1bf47f3ccca7f13ad04a803",
+    "corpus\\synthtiger_052.zip": "dfbd4f972eafbd6a5fc146eddbbde7701f72931f56d641faea12d33c6033a462",
+    "corpus\\synthtiger_053.zip": "1b278f7b3a6d5708502b7f07f25c2ef29f487b8342004108c0759c6cdd4d3215",
+    "corpus\\synthtiger_054.zip": "466e25d1771f03a1b243625eda231ec071a46cf07036155233121c56fcd6e220",
+    "corpus\\synthtiger_055.zip": "3ed4dbf25825be53e2a66b7b5d0ac8eb8052a48d5ccface88f70766400e19212",
+    "corpus\\synthtiger_057.zip": "69052f0739f2b65dffa3a69b80dc4b008b641da224e4ed207b31bf9069f7ac97",
+    "corpus\\synthtiger_058.zip": "4c2aabf8e9b08d214b05c6b0418456169eec89bd12ab46f50c19d76aa7ebf2c3",
+    "corpus\\synthtiger_059.zip": "5e7ff3541a03b8aaf37681b5eb1ef27f277b289e49a7f10c90265406ff13a3ca",
+    "corpus\\synthtiger_060.zip": "007e836f794840852f30fcb72c1a7475386b5418dde942dafd084ac0959d8914",
+    "corpus\\synthtiger_061.zip": "4ac9d44a5a5a833675dc9efd85ba5f11edd13b97dfb4e0454eafc8fcffe62af5",
+    "corpus\\synthtiger_062.zip": "919087ea9c341d7e207db0d86a503ee5d043c6cbbda2054fd84b955842c24c31",
+    "corpus\\synthtiger_063.zip": "2da1b6291bc0e279f43ee70715c9a5f139d1557c24610b73c58c92f6788b75b2",
+    "corpus\\synthtiger_064.zip": "ac9dde5ad261fae1dc8a255f14ebbd3854cefe56259bf4b21982364983165fb6",
+    "corpus\\synthtiger_065.zip": "b903fe3dd159d4f315dc5424d6da78d56a16e50c9f5f14eddec91e132f5ec709",
+    "corpus\\synthtiger_066.zip": "ab8f20d174e7b5d93ab4fca42a2b63686c44c694bba5d67bf91c4c04d41e85c0",
+    "corpus\\synthtiger_067.zip": "48c12164e0d8a5e236134734dea54f77a995a5fdf7e6e06030941651b6f6f1a8",
+    "corpus\\synthtiger_068.zip": "19ebb89fc5f7e627fe1553ec76d9089ab962f51a62e08d44b1b41b07f73145cd",
+    "corpus\\synthtiger_069.zip": "e377e92213683d7ec823aac3805ce887d1093f4da7cf2aad20c3844dab8818fc",
+    "corpus\\synthtiger_070.zip": "7e17504218b54a86ec29bf088c006ec5d4ed03d360c9c4898664ce3c499ffc2c",
+    "corpus\\synthtiger_071.zip": "290c35a9af9cea77d7878fd5f02db779515bd88b6833a8d2b3b7999d297f54b3",
+    "corpus\\synthtiger_072.zip": "4ecd6253ffd293f4b1462edef032aad74408e1f448c738e242ae8e0ca5f03577",
+    "corpus\\synthtiger_073.zip": "15d159332d80d9356b1f5081a4510008200336f9b3e26be0517d124c5559b6d0",
+    "corpus\\synthtiger_074.zip": "d75a41bb15c1c71bd9ce60b65c2059189f6fb8c8331b523e55b7417c96d85513",
+    "corpus\\synthtiger_075.zip": "3a1758b45ac83388ce60b54c73da9d9d8a8885f78dc763d1d9c2dc2247c7c978",
+    "corpus\\synthtiger_076.zip": "b0df0f946a0e133256c14345fb66e721521d6aa6cc3007dc920adae918075072",
+    "corpus\\synthtiger_077.zip": "d364b55cae6c24a082ffb2520aa60d672d46ffbaf8814247a874f430671bfc8a",
+    "corpus\\synthtiger_078.zip": "a79386cf8b99f2391d5e3d28925bbc72706f894bbf221f80cb493a48876e7c12",
+    "corpus\\synthtiger_079.zip": "8f5ca3d3d567ae1f7777632dc6c3fd3ef0ae113a8d9e3e956476ea9bc77fdac7",
+    "corpus\\synthtiger_080.zip": "dd5e73b54bf015cf01b306882dea965aa685a38479d4b4b06135988239700712",
+    "corpus\\synthtiger_081.zip": "95a4ee420202503872dc248f52535e9bce12cafac7da91287566ac60a0214dd0",
+    "corpus\\synthtiger_082.zip": "9faf15d6086e99f6b24df461356a8562991d105189e392260158da3a68efafd6",
+    "corpus\\synthtiger_083.zip": "996152d31b7f0bfb9f3859098f1bf317fdcf77c48c459e7f83392abf747832b0",
+    "corpus\\synthtiger_084.zip": "645702fe1a2ed63b56418e8514434cf28dc32c4e365dd8069aa800c9228f2a82",
+    "corpus\\synthtiger_085.zip": "31ab50539ce8c6a0ad11d6b5d075b8189c60fc95c3271a6f8f355058bb7c831d",
+    "corpus\\synthtiger_086.zip": "1dc4ab774aea5b00de97517e9428f9b4bd871acf26319407bddb52716bb3e7af",
+    "corpus\\synthtiger_087.zip": "09484fea60c2b8e49e9caea7b984b460bab5205ff7a3c6181a12805b42e9ea34",
+    "corpus\\synthtiger_088.zip": "9cfdc55e8fe3afadb013de71cd75730fe199a246478ad911a83b091c7b9a4d54",
+    "corpus\\synthtiger_089.zip": "95a32dbc06e28ae785dc64cc968677d17507f1ca7992efce9917dc577248c5fd",
+    "corpus\\synthtiger_090.zip": "573aca7bd415ec4663dcd4598541e6f68cdfa2f7e0cae21e862b5907d63bbcc0",
+    "corpus\\synthtiger_091.zip": "6f0ca6e5cdc77aac9326bb22b75f02885bb4e65a70948a182cdddbea1144006f",
+    "corpus\\synthtiger_092.zip": "67ed5096b817072a038cc315d317ef6957ba8a72179348e0d36257987cc7de29",
+    "corpus\\synthtiger_093.zip": "82ae7b74eb15547f4eb63227a003f43e2b9faaec1ae6e5653fb80df75c2a94c2",
+    "corpus\\synthtiger_094.zip": "796007abd2cfd0bc0144273866dcd6f4eb44a71f8c4dfc6df00e98e9af80060f",
+    "corpus\\synthtiger_095.zip": "9cfd95afc78220a82cc711b232c32666ac63281dfb3787af5f153ebfe21fbaa9",
+    "corpus\\synthtiger_096.zip": "518f2e252dd4087c60cce642568b15e6d32df8e6e810a3aa56fadecbfe8d9a6f",
+    "corpus\\synthtiger_097.zip": "2f50b8bc6526d66c59cd8d8ad9d8908c7fec604d777af0f502a5809d8c7764ba",
+    "corpus\\synthtiger_098.zip": "fdac6403ec2d9151f58f441d947c40e41a9fcd667a216df2d66deeaecd122844",
+    "corpus\\synthtiger_099.zip": "60ae8ad8c6ec998042dc5ed7cf42243895a287e6749df5bdfdd435baf4829786"
+  },
+  "grouping": "Exact settings when <=8 values, otherwise metadata-only quintile bins; no correctness used.",
+  "importance": "Raw reference prevalence for geometry/effects. Exact synthetic font sets use unique source-reference coverage of fitted recipes, not inferred real font identity.",
+  "ties": "Descending reference prevalence then lexical family name; never student accuracy or real labels.",
+  "exclusions": "Zero-reference features have no targeted priority but all their images retain uniform coverage. No real strings or labels read."
+}

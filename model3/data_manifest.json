@@ -1,0 +1,15 @@
+{
+  "dataset_manifest": "datasets/darkbay/manifests/datasets.json",
+  "directions": {
+    "A": {
+      "dataset": "A",
+      "teacher": "model1/models/parseq/darkbay/B/epoch_20.pth"
+    },
+    "B": {
+      "dataset": "B",
+      "teacher": "model1/models/parseq/darkbay/A/epoch_20.pth"
+    }
+  },
+  "status": "configured; consult coordinator and per-run status for actual progress",
+  "current_protocol": "handoff/darkbay_curriculum_20261113/protocol.json"
+}

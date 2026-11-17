@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 131, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 121, in main
+    if a.stage=='run':return run()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 108, in run
+    one('readers',['curriculum-check','--dataset',tag],'curriculum_checks_'+tag)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 44, in one
+    job=launch_child(module,args,name);supervise([job],[list(paths)])
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 39, in supervise
+    raise RuntimeError('Child failed: '+','.join(x['name'] for x in failed))
+RuntimeError: Child failed: curriculum_checks_B
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\execution_fast.py", line 122, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\execution_fast.py", line 117, in main
+    assert W.read(D/'parity.json')['passed'];coordinator()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\execution_fast.py", line 73, in coordinator
+    sys.argv.pop(1);K.main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 121, in main
+    if a.stage=='run':return run()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 109, in run
+    paired('worker',2);paired('worker',3)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\execution_fast.py", line 66, in pair
+    if stage=='worker':return sequential(stage,model)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\execution_fast.py", line 60, in sequential
+    K.one('readers',args,f'worker_M{model}_{tag}',[run/'status.json',run/'history.json'])
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 44, in one
+    job=launch_child(module,args,name);supervise([job],[list(paths)])
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\coordinator.py", line 19, in supervise
+    W.stop();active=[];failed=[]
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\common.py", line 20, in stop
+    if (STUDY/'STOP').exists():raise RuntimeError('User STOP; no automatic removal')
+RuntimeError: User STOP; no automatic removal

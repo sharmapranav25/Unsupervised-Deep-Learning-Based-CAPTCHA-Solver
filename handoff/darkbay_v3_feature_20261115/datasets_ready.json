@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-11-16T09:49:27.734342+00:00",
+  "images_each": 100000,
+  "datasets": {
+    "A": {
+      "images": 100000,
+      "unique_pixels": 100000,
+      "unique_seeds": 100000,
+      "controllers": {
+        "custom": 25000,
+        "dino": 25000,
+        "mixed": 25000,
+        "synthtiger": 25000
+      },
+      "all_images_decoded": true,
+      "old_AB_and_real_pixel_overlap": 0,
+      "new_A_overlap": null,
+      "lmdb_sha256": "b4e888839cb9418752d8b59225278e62ea944f690f796b2007c5937ad7662af1",
+      "provenance_sha256": "6e18a28ba97070a6d09b06f6bf8fb7a4766b9020e1b700997a359dea731cb734",
+      "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+    },
+    "B": {
+      "images": 100000,
+      "unique_pixels": 100000,
+      "unique_seeds": 100000,
+      "controllers": {
+        "custom": 25000,
+        "dino": 25000,
+        "mixed": 25000,
+        "synthtiger": 25000
+      },
+      "all_images_decoded": true,
+      "old_AB_and_real_pixel_overlap": 0,
+      "new_A_overlap": 0,
+      "lmdb_sha256": "762d8af0e90a3539b0f6393b720d61b46d5350ee8682b20b7f7511a223b345b5",
+      "provenance_sha256": "fd2b396da59d83782a523d07b1e943aca129268ca72b9e625d5be63aa111742d",
+      "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+    }
+  }
+}

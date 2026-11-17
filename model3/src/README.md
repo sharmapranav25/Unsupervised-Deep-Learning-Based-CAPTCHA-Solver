@@ -1,0 +1,3 @@
+# Shared implementation
+
+The current A/B adapter is train_darkbay.py, backed by Capri/src/capri_controller/training/ab_curriculum.py. It reuses ds3_data.AdaptiveSampler.update, while matching the actual Model1 draw/update budget. The new coordinator starts both Model3 readers from scratch after both Model2 readers finish. Outputs: model3/runs/darkbay/{A,B}, including adaptive scores after each epoch. Initial rankings are shared from model2/rankings/darkbay/{A,B}. See handoff/darkbay_curriculum_20261113 for the frozen protocol, readiness and current status. Historical ds3.py is preserved and must not launch this study.

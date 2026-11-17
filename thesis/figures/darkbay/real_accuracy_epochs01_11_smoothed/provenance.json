@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model1_epoch_accuracy.json",
+      "sha256": "c86519c76e5504b48c123e674457caa429ca69c696decb997b1e25d304c9d782"
+    },
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model2_epoch_accuracy.json",
+      "sha256": "6cad6245c7a10c8b14b0784b8f27b4747832a1fb785e036872ea31df7e4efa85"
+    },
+    {
+      "path": "handoff\\darkbay_curriculum_20261113\\model3_epoch_accuracy.json",
+      "sha256": "39b095eb4c788829075a8f67d2c5e2594f5d3588e43fa667ca290100b7e284dc"
+    }
+  ],
+  "plot_script": "Capri\\tools\\plot_darkbay_smoothed_accuracy.py",
+  "plot_script_sha256": "bd94b828c55c54b8f078571daf810a140aaa1d5cbba6ba48f1e227ee29df5a2e",
+  "smoothing": "Trailing arithmetic mean over 3 complete epochs, applied identically to every run; no A/B averaging",
+  "colors": {
+    "1": "#159447",
+    "2": "#2463EB",
+    "3": "#DC3545"
+  },
+  "missing": "Model1 epoch1 unavailable, represented as a gap",
+  "selection": "No training or checkpoint-selection changes"
+}

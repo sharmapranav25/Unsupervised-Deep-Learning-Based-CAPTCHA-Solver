@@ -1,0 +1,144 @@
+{
+  "created_at": "2026-11-13T22:27:23.278793+00:00",
+  "selection_freeze_sha256": "87741149bc6f2ddd4ed20a0ae02a13063b5c3443891afc10fd6f0fb31917a2f5",
+  "scoring_labels_sha256": "9861b917b01e397afd8b6a1311a4efce99890a73aeef6db4f6b4b8898626f05f",
+  "selected_results": [
+    {
+      "model": 1,
+      "rule": "raw",
+      "epoch": 17,
+      "agreement_count": 601,
+      "agreement_percent": 66.77777777777777,
+      "shared_empty": 0,
+      "A_correct": 621,
+      "B_correct": 572,
+      "A_accuracy_percent": 69.0,
+      "B_accuracy_percent": 63.55555555555556,
+      "mean_accuracy_percent": 66.27777777777777,
+      "shared_correct": 494,
+      "shared_wrong": 107,
+      "synthetic_selected_mean_percent": 66.5,
+      "change_vs_synthetic_selection_pp": -0.22222222222222854
+    },
+    {
+      "model": 1,
+      "rule": "nonempty",
+      "epoch": 17,
+      "agreement_count": 601,
+      "agreement_percent": 66.77777777777777,
+      "shared_empty": 0,
+      "A_correct": 621,
+      "B_correct": 572,
+      "A_accuracy_percent": 69.0,
+      "B_accuracy_percent": 63.55555555555556,
+      "mean_accuracy_percent": 66.27777777777777,
+      "shared_correct": 494,
+      "shared_wrong": 107,
+      "synthetic_selected_mean_percent": 66.5,
+      "change_vs_synthetic_selection_pp": -0.22222222222222854
+    },
+    {
+      "model": 2,
+      "rule": "raw",
+      "epoch": 12,
+      "agreement_count": 589,
+      "agreement_percent": 65.44444444444444,
+      "shared_empty": 0,
+      "A_correct": 659,
+      "B_correct": 646,
+      "A_accuracy_percent": 73.22222222222223,
+      "B_accuracy_percent": 71.77777777777777,
+      "mean_accuracy_percent": 72.5,
+      "shared_correct": 542,
+      "shared_wrong": 47,
+      "synthetic_selected_mean_percent": 69.0,
+      "change_vs_synthetic_selection_pp": 3.5
+    },
+    {
+      "model": 2,
+      "rule": "nonempty",
+      "epoch": 12,
+      "agreement_count": 589,
+      "agreement_percent": 65.44444444444444,
+      "shared_empty": 0,
+      "A_correct": 659,
+      "B_correct": 646,
+      "A_accuracy_percent": 73.22222222222223,
+      "B_accuracy_percent": 71.77777777777777,
+      "mean_accuracy_percent": 72.5,
+      "shared_correct": 542,
+      "shared_wrong": 47,
+      "synthetic_selected_mean_percent": 69.0,
+      "change_vs_synthetic_selection_pp": 3.5
+    },
+    {
+      "model": 3,
+      "rule": "raw",
+      "epoch": 13,
+      "agreement_count": 603,
+      "agreement_percent": 67.0,
+      "shared_empty": 0,
+      "A_correct": 646,
+      "B_correct": 636,
+      "A_accuracy_percent": 71.77777777777777,
+      "B_accuracy_percent": 70.66666666666667,
+      "mean_accuracy_percent": 71.22222222222223,
+      "shared_correct": 532,
+      "shared_wrong": 71,
+      "synthetic_selected_mean_percent": 68.33333333333333,
+      "change_vs_synthetic_selection_pp": 2.8888888888889
+    },
+    {
+      "model": 3,
+      "rule": "nonempty",
+      "epoch": 13,
+      "agreement_count": 603,
+      "agreement_percent": 67.0,
+      "shared_empty": 0,
+      "A_correct": 646,
+      "B_correct": 636,
+      "A_accuracy_percent": 71.77777777777777,
+      "B_accuracy_percent": 70.66666666666667,
+      "mean_accuracy_percent": 71.22222222222223,
+      "shared_correct": 532,
+      "shared_wrong": 71,
+      "synthetic_selected_mean_percent": 68.33333333333333,
+      "change_vs_synthetic_selection_pp": 2.8888888888889
+    }
+  ],
+  "associations": [
+    {
+      "model": 1,
+      "window": "2-20",
+      "spearman_agreement_vs_mean_real": 0.6728151724820337
+    },
+    {
+      "model": 1,
+      "window": "6-20",
+      "spearman_agreement_vs_mean_real": 0.3401970924634106
+    },
+    {
+      "model": 2,
+      "window": "2-20",
+      "spearman_agreement_vs_mean_real": 0.8506808022830936
+    },
+    {
+      "model": 2,
+      "window": "6-20",
+      "spearman_agreement_vs_mean_real": 0.6956135285370264
+    },
+    {
+      "model": 3,
+      "window": "2-20",
+      "spearman_agreement_vs_mean_real": 0.8516245600066307
+    },
+    {
+      "model": 3,
+      "window": "6-20",
+      "spearman_agreement_vs_mean_real": 0.6976755349542741
+    }
+  ],
+  "readers_verified": 118,
+  "images_per_reader": 900,
+  "existing_selection_changed": false
+}

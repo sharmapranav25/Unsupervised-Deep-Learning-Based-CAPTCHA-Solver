@@ -1,0 +1,61 @@
+{
+  "verified_at": "2026-11-16T07:08:50.9988205+00:00",
+  "coordinator_pid": 84056,
+  "process_started_at": "2026-11-16T07:04:18.1550281Z",
+  "state": "waiting_for_cryptbb_B_completion",
+  "latest_monitor": {
+    "observed_at": "2026-11-15T23:08:50.561341-08:00",
+    "state": "waiting_for_cryptbb_B_completion",
+    "prior": {
+      "observed_at": "2026-11-15T23:08:47.610721-08:00",
+      "worker_alive": true,
+      "training": {
+        "state": "assessing",
+        "epoch": 9,
+        "completed_epoch": 8,
+        "trained_epoch": 9,
+        "global_step": 7038,
+        "processed": 57600,
+        "total": 100000,
+        "seconds": 100.92199999978766,
+        "updated_at": "2026-11-15T23:08:46.513897-08:00"
+      },
+      "STOP_present": false
+    },
+    "coordinator_pid": 84056,
+    "STOP_present": false
+  },
+  "cpu_readiness": {
+    "passed": true,
+    "checked_at": "2026-11-15T23:03:54.942257-08:00",
+    "checks": {
+      "passed": true,
+      "threshold_strict": true,
+      "forgetting": true,
+      "reference_importance": true,
+      "immutable_buckets": true,
+      "exact_replay": true,
+      "full_batches": true,
+      "coverage": true,
+      "full20epoch_static_budget": true,
+      "warmup_exact": true,
+      "adaptive_full20epoch_progression": true,
+      "A_B_started_before_waiting": true,
+      "data_audits_precede_training_and_stage_order": true
+    },
+    "gpu_readiness": "Deferred until fresh datasets and prior CryptBB worker completion; mandatory gates in coordinator"
+  },
+  "reference_split": {
+    "verified_at": "2026-11-15T23:01:49.570991-08:00",
+    "references": 100,
+    "evaluation": 900,
+    "overlap": 0,
+    "reference_sha256": "5f83c939353b83c6e61ed374cba0978f90996da6011e5cee68177d7f570e3c2d",
+    "evaluation_manifest_sha256": "52ed4addf3527f7eda1de26ea3984b0f1bfbbae2a16c351fcac594993b5b8d3a"
+  },
+  "automation_id": "supervise-fresh-darkbay-v3-overnight",
+  "automation_interval_minutes": 5,
+  "inventory_errors": 0,
+  "fresh_generation_started": false,
+  "fresh_training_started": false
+}

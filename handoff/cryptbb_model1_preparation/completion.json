@@ -1,0 +1,41 @@
+{
+  "completed_at": "2026-11-14T00:36:16.199027+00:00",
+  "datasets": {
+    "version": 2,
+    "images_each": 100000,
+    "total_unique_pixels": 200000,
+    "cross_dataset_pixel_overlap": 0,
+    "configs": [
+      {
+        "dataset": "A",
+        "path": "model1\\configs\\cryptbb\\A\\prepared_fixed32x128.yml",
+        "sha256": "514f3b089459e5bf377536855b6c41c8090b56f34367cafec685f403538d3e13",
+        "source_config": "model1\\configs\\cryptbb\\A\\prepared.yml",
+        "source_sha256": "3565d398e46052cb0e38a1fa44496e9c2c47f278e811f91b78399ae54fdb83d6",
+        "preflight": "model1/runs/cryptbb/A/preflight_fixed32x128/receipt.json"
+      },
+      {
+        "dataset": "B",
+        "path": "model1\\configs\\cryptbb\\B\\prepared_fixed32x128.yml",
+        "sha256": "27d7f733a65b3c1ed494ec95de354e7787e16107e6db746f4c366356c4b77c5e",
+        "source_config": "model1\\configs\\cryptbb\\B\\prepared.yml",
+        "source_sha256": "16286a7220e7870868a99f08bf6d8a931d4e4305a41e672ecef688a6b54291c3",
+        "preflight": "model1/runs/cryptbb/B/preflight_fixed32x128/receipt.json"
+      }
+    ],
+    "training_started": false,
+    "change": "Only add loader min_ratio=4 alongside max_ratio=4 to guarantee original intended32x128 input. Pools unchanged.",
+    "supersedes": "datasets_ready.json for config paths; original retained"
+  },
+  "reader_training_started": false,
+  "reader_training_authorized": false,
+  "repair_source_sha256": "2be9166d36aa7adff7fda8f325edbaa9340586873305c85fae485bd30babb593",
+  "original_failure": "preflight_A expected32x128 but aspect ratio3 selected40x112; original failure/configs retained",
+  "selection_protocol_sha256": "7f0060a60152526d907e6bebb4eaaa9ac96cd7e4a0c4f0325291d81c0d6f6f3d",
+  "limitations": [
+    "Historical scoring labels follow documented filenames, not independent annotation",
+    "Agreement selection is transductive and does not guarantee best real checkpoint",
+    "Model1 resume fidelity and CryptBB Model2/3 adapters remain future work; no training launched"
+  ],
+  "all_preflights_passed": true
+}

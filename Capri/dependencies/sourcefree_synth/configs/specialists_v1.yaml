@@ -1,0 +1,118 @@
+# Specialist pools: train_hybrid_v3.yaml with the whole batch targeted at one head group (static, no curriculum).
+name: specialists_v1
+seed: 20261002
+workers: 28
+shard_size: 500
+max_attempts: 12
+sizes:
+  train: 0
+  steering: 2000
+  selection: 2000
+  calibration: 2000
+  seen_test: 2000
+  generalisation: 5000
+strata:
+  generalisation:
+    holdout_library: 0.5
+    heldout_font: 0.5
+mix:
+  library_single: 0.45
+  intensity: 0.25
+  chain: 0.15
+  python: 0.15
+python_sources:
+  python_recipe: 0.5
+  python_text: 0.2
+  python_shapes: 0.15
+  python_capri: 0.15
+python_chain_fraction: 0.5
+chain_depth:
+  1: 0.5
+  2: 0.3
+  3: 0.2
+intensity:
+  levels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  max_level_error: 2
+text:
+  length:
+  - 2
+  - 8
+  pronounceable_fraction: 0.1
+fonts:
+  bank_font_probability: 0.5
+libraries:
+  exclude: []
+curriculum:
+  epochs: 15
+  new_per_epoch: 6667
+  samples_per_epoch: 20000
+  targeted_fraction: 1.0
+  head_min_share: 0.0
+  head_max_share: 1.0
+  hard_positive_fraction: 0.5
+  hard_positive_levels:
+  - 1
+  - 2
+  - 3
+  - 4
+  target_fallback_attempts: 3
+  improve_delta: 0.01
+  flag_after: 3
+  static_control: false
+gates:
+  presence:
+    f1: 0.85
+    recall: 0.85
+    fpr: 0.1
+  ordinal_within1: 0.85
+  length_acc: 0.95
+  composition_mae: 0.1
+  slot_iou: 0.5
+  slot_iou_frac: 0.9
+freezing:
+  enabled: true
+  start_epoch: 3
+  weight_change: 0.01
+  act_drift: 0.02
+  importance_top: 0.2
+  unfreeze_drop: 0.02
+  stuck_release: 8
+  stuck_grow_after: 2
+  grow_channels: 16
+  max_frozen_fraction: 0.6
+model:
+  height: 96
+  d: 160
+  layers: 5
+  heads: 4
+  mlp: 640
+  dropout: 0.1
+  drop_path: 0.1
+  slots: 8
+  slot_layers: 3
+  max_cols: 128
+train:
+  batch: 128
+  lr: 0.0005
+  min_lr: 1.0e-05
+  weight_decay: 0.05
+  warmup_steps: 1000
+  grad_clip: 1.0
+  ema: 0.999
+  bf16: true
+  loader_workers: 6
+  char_weight: 0.2
+  focal_gamma: 2.0
+  focal_prevalence: 0.05
+  max_width: 1024

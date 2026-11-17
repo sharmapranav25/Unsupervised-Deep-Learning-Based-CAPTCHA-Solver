@@ -1,0 +1,5 @@
+{
+  "at": "2026-11-14T22:29:41.956619+00:00",
+  "error": "RuntimeError('Stop marker present; evaluation stops')",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\cryptbb_v3_training_accuracy.py\", line 48, in main\n    if (out/'STOP').exists() or (STUDY/'STOP').exists():raise RuntimeError('Stop marker present; evaluation stops')\nRuntimeError: Stop marker present; evaluation stops\n"
+}

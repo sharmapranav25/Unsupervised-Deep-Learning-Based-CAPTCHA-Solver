@@ -1,0 +1,5 @@
+# CryptBB epoch20-teacher static A
+
+User requested A only, scratch, with B20 ranking and original DarkBay schedule. Canonical module: capri_controller.training.cryptbb_epoch20_static_a. Source environment.ps1 before execution. Frozen protocol.json lists source/data/teacher hashes. coordinate owns rank -> draws -> readiness -> single A worker plus CPU evaluation. Do not launch another coordinator, alter sources, automatically remove STOP or resume. Inspect stage logs/status and exact PID creation identities. launch_verified.json proves repeated optimizer progress. Every committed checkpoint is immutable. Expected20epochs/15640updates,20 real diagnostic evaluations and independent original-v1 choice. Both selection and training are isolated from real labels. Original-v1 fallback remains possible. Final report: MORNING_REPORT.md/results.json/results.csv/report_verification.json.
+
+Old selected-teacher static and cumulative experiments remain preserved. This new ranking may differ from B13's; ranking_comparison.json records bucket migration without real labels. No B run, extra controls, model registry changes or data regeneration.

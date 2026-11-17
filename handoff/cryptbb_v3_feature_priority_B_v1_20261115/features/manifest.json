@@ -1,0 +1,2311 @@
+{
+  "images": 100000,
+  "references": 100,
+  "families": [
+    {
+      "name": "rotation",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "per_char_rotation"
+        ],
+        "renderer_field": "rotation"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 12.0,
+          "max": 12.0,
+          "images": 14106
+        },
+        "1": {
+          "min": 18.0,
+          "max": 18.0,
+          "images": 22190
+        },
+        "2": {
+          "min": 24.0,
+          "max": 24.0,
+          "images": 39682
+        },
+        "3": {
+          "min": 30.0,
+          "max": 30.0,
+          "images": 21932
+        },
+        "4": {
+          "min": 36.0,
+          "max": 36.0,
+          "images": 2090
+        }
+      },
+      "images": 100000,
+      "rank": 1
+    },
+    {
+      "name": "size_variation",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "size_variation"
+        ],
+        "renderer_field": "size_jitter"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.1299038105676658,
+          "max": 0.1299038105676658,
+          "images": 98956
+        },
+        "1": {
+          "min": 0.17320508075688773,
+          "max": 0.17320508075688773,
+          "images": 1044
+        }
+      },
+      "images": 100000,
+      "rank": 2
+    },
+    {
+      "name": "slant",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "slant"
+        ],
+        "renderer_field": "slant"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.08,
+          "max": 0.08,
+          "images": 4178
+        },
+        "1": {
+          "min": 0.12,
+          "max": 0.12,
+          "images": 22722
+        },
+        "2": {
+          "min": 0.16,
+          "max": 0.16,
+          "images": 16702
+        },
+        "3": {
+          "min": 0.2,
+          "max": 0.2,
+          "images": 29766
+        },
+        "4": {
+          "min": 0.24,
+          "max": 0.24,
+          "images": 14099
+        },
+        "5": {
+          "min": 0.28,
+          "max": 0.28,
+          "images": 8355
+        },
+        "6": {
+          "min": 0.32,
+          "max": 0.32,
+          "images": 4178
+        }
+      },
+      "images": 100000,
+      "rank": 3
+    },
+    {
+      "name": "spacing",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "wide_spacing",
+          "overlap_tight_spacing"
+        ],
+        "renderer_field": "spacing"
+      },
+      "cuts": [
+        0.2,
+        0.28,
+        0.30000000000000004
+      ],
+      "groups": {
+        "0": {
+          "min": -0.31,
+          "max": 0.18,
+          "images": 9644
+        },
+        "1": {
+          "min": 0.2,
+          "max": 0.27,
+          "images": 29328
+        },
+        "2": {
+          "min": 0.28,
+          "max": 0.3,
+          "images": 6213
+        },
+        "3": {
+          "min": 0.30000000000000004,
+          "max": 0.59,
+          "images": 54815
+        }
+      },
+      "images": 100000,
+      "rank": 4
+    },
+    {
+      "name": "vertical_jitter",
+      "reference_count": 100,
+      "importance": 1.0,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "vertical_jitter"
+        ],
+        "renderer_field": "jitter"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.06443229004156223,
+          "max": 0.06443229004156223,
+          "images": 15675
+        },
+        "1": {
+          "min": 0.09664843506234334,
+          "max": 0.09664843506234334,
+          "images": 33411
+        },
+        "2": {
+          "min": 0.12886458008312446,
+          "max": 0.12886458008312446,
+          "images": 23488
+        },
+        "3": {
+          "min": 0.1610807251039056,
+          "max": 0.1610807251039056,
+          "images": 15932
+        },
+        "4": {
+          "min": 0.1932968701246867,
+          "max": 0.1932968701246867,
+          "images": 11494
+        }
+      },
+      "images": 100000,
+      "rank": 5
+    },
+    {
+      "name": "width",
+      "reference_count": 99,
+      "importance": 0.99,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "keys": [
+          "condensed",
+          "expanded"
+        ],
+        "renderer_field": "x_scale"
+      },
+      "cuts": [
+        0.5809641532756489,
+        0.6765660340249778,
+        0.8929897125888218,
+        1.22
+      ],
+      "groups": {
+        "0": {
+          "min": 0.4,
+          "max": 0.5754942702430424,
+          "images": 18317
+        },
+        "1": {
+          "min": 0.5809641532756489,
+          "max": 0.6699,
+          "images": 19396
+        },
+        "2": {
+          "min": 0.6765660340249778,
+          "max": 0.8723,
+          "images": 21951
+        },
+        "3": {
+          "min": 0.8929897125888218,
+          "max": 1.2185,
+          "images": 19305
+        },
+        "4": {
+          "min": 1.22,
+          "max": 1.72,
+          "images": 21031
+        }
+      },
+      "images": 100000,
+      "rank": 6
+    },
+    {
+      "name": "content:mixed",
+      "reference_count": 89,
+      "importance": 0.89,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "mixed_case_alnum",
+        "renderer_charset": "mixed"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 91642
+        }
+      },
+      "images": 91642,
+      "rank": 7
+    },
+    {
+      "name": "effect:grid",
+      "reference_count": 40,
+      "importance": 0.4,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_grid",
+        "renderer_effect": "grid"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 3881
+        },
+        "1": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 1298
+        },
+        "2": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 1046
+        },
+        "3": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 1046
+        },
+        "4": {
+          "min": 7.0,
+          "max": 7.0,
+          "images": 5747
+        },
+        "5": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 23053
+        }
+      },
+      "images": 36071,
+      "rank": 8
+    },
+    {
+      "name": "effect:border",
+      "reference_count": 39,
+      "importance": 0.39,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "border_frame",
+        "renderer_effect": "border"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 1.0,
+          "max": 1.0,
+          "images": 17799
+        },
+        "1": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 9947
+        },
+        "2": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 1552
+        },
+        "3": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 2609
+        },
+        "4": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 1315
+        }
+      },
+      "images": 33222,
+      "rank": 9
+    },
+    {
+      "name": "font:diplomata",
+      "reference_count": 39,
+      "importance": 0.39,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "diplomata"
+        ],
+        "reference_ids": [
+          4,
+          5,
+          8,
+          10,
+          11,
+          12,
+          14,
+          19,
+          24,
+          28,
+          29,
+          30,
+          36,
+          39,
+          44,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          57,
+          58,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          70,
+          74,
+          76,
+          80,
+          86,
+          91,
+          92,
+          93,
+          97
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 16415
+        }
+      },
+      "images": 16415,
+      "rank": 10
+    },
+    {
+      "name": "effect:blocks",
+      "reference_count": 36,
+      "importance": 0.36,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_blocks",
+        "renderer_effect": "blocks"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 1.0,
+          "max": 1.0,
+          "images": 519
+        },
+        "1": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 17012
+        },
+        "2": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 9135
+        },
+        "3": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 3397
+        },
+        "4": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 527
+        }
+      },
+      "images": 30590,
+      "rank": 11
+    },
+    {
+      "name": "effect:grain",
+      "reference_count": 18,
+      "importance": 0.18,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "pixel_noise",
+        "renderer_effect": "grain"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 1.0,
+          "max": 1.0,
+          "images": 1552
+        },
+        "1": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 2850
+        },
+        "2": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 2334
+        },
+        "3": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 1034
+        },
+        "4": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 3398
+        },
+        "5": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 2875
+        },
+        "6": {
+          "min": 7.0,
+          "max": 7.0,
+          "images": 3138
+        },
+        "7": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 7327
+        }
+      },
+      "images": 24508,
+      "rank": 12
+    },
+    {
+      "name": "font:montenegringothicone",
+      "reference_count": 17,
+      "importance": 0.17,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "montenegringothicone"
+        ],
+        "reference_ids": [
+          4,
+          8,
+          12,
+          14,
+          19,
+          23,
+          36,
+          44,
+          49,
+          53,
+          64,
+          66,
+          74,
+          76,
+          80,
+          86,
+          91
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 8108
+        }
+      },
+      "images": 8108,
+      "rank": 13
+    },
+    {
+      "name": "font:manuale",
+      "reference_count": 14,
+      "importance": 0.14,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "manuale"
+        ],
+        "reference_ids": [
+          5,
+          12,
+          20,
+          28,
+          29,
+          30,
+          39,
+          51,
+          60,
+          63,
+          79,
+          92,
+          93,
+          97
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 6808
+        }
+      },
+      "images": 6808,
+      "rank": 14
+    },
+    {
+      "name": "font:playfairdisplaysc",
+      "reference_count": 14,
+      "importance": 0.14,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "playfairdisplaysc"
+        ],
+        "reference_ids": [
+          10,
+          11,
+          32,
+          36,
+          48,
+          50,
+          52,
+          57,
+          65,
+          66,
+          76,
+          80,
+          84,
+          94
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 7331
+        }
+      },
+      "images": 7331,
+      "rank": 15
+    },
+    {
+      "name": "effect:circles",
+      "reference_count": 13,
+      "importance": 0.13,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_circles",
+        "renderer_effect": "circles"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 1038
+        },
+        "1": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 4726
+        },
+        "2": {
+          "min": 9.0,
+          "max": 9.0,
+          "images": 4971
+        }
+      },
+      "images": 10735,
+      "rank": 16
+    },
+    {
+      "name": "font:existing_06",
+      "reference_count": 13,
+      "importance": 0.13,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "existing_06"
+        ],
+        "reference_ids": [
+          5,
+          8,
+          9,
+          17,
+          20,
+          45,
+          48,
+          49,
+          55,
+          78,
+          86,
+          94,
+          99
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 4168
+        }
+      },
+      "images": 4168,
+      "rank": 17
+    },
+    {
+      "name": "font:lemon",
+      "reference_count": 12,
+      "importance": 0.12,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "lemon"
+        ],
+        "reference_ids": [
+          0,
+          13,
+          21,
+          31,
+          33,
+          37,
+          40,
+          42,
+          67,
+          71,
+          73,
+          89
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 7834
+        }
+      },
+      "images": 7834,
+      "rank": 18
+    },
+    {
+      "name": "font:shrikhand",
+      "reference_count": 11,
+      "importance": 0.11,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "shrikhand"
+        ],
+        "reference_ids": [
+          0,
+          13,
+          21,
+          24,
+          33,
+          37,
+          46,
+          47,
+          58,
+          62,
+          67
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 4697
+        }
+      },
+      "images": 4697,
+      "rank": 19
+    },
+    {
+      "name": "font:aclonica",
+      "reference_count": 7,
+      "importance": 0.07,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "aclonica"
+        ],
+        "reference_ids": [
+          9,
+          41,
+          72,
+          81,
+          85,
+          95,
+          99
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2602
+        }
+      },
+      "images": 2602,
+      "rank": 20
+    },
+    {
+      "name": "font:unlock",
+      "reference_count": 7,
+      "importance": 0.07,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "unlock"
+        ],
+        "reference_ids": [
+          23,
+          32,
+          53,
+          61,
+          73,
+          79,
+          84
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2350
+        }
+      },
+      "images": 2350,
+      "rank": 21
+    },
+    {
+      "name": "font:alumnisansinlineone",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisansinlineone"
+        ],
+        "reference_ids": [
+          1,
+          17,
+          54,
+          77,
+          90,
+          94
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2087
+        }
+      },
+      "images": 2087,
+      "rank": 22
+    },
+    {
+      "name": "font:breeserif",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "breeserif"
+        ],
+        "reference_ids": [
+          4,
+          32,
+          57,
+          65,
+          79,
+          84
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1562
+        }
+      },
+      "images": 1562,
+      "rank": 23
+    },
+    {
+      "name": "font:montaguslab",
+      "reference_count": 6,
+      "importance": 0.06,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "montaguslab"
+        ],
+        "reference_ids": [
+          3,
+          15,
+          25,
+          34,
+          35,
+          68
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1825
+        }
+      },
+      "images": 1825,
+      "rank": 24
+    },
+    {
+      "name": "font:caacupeone",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "caacupeone"
+        ],
+        "reference_ids": [
+          26,
+          45,
+          54,
+          56,
+          75
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2345
+        }
+      },
+      "images": 2345,
+      "rank": 25
+    },
+    {
+      "name": "font:margarine",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "margarine"
+        ],
+        "reference_ids": [
+          7,
+          38,
+          59,
+          69,
+          77
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 3130
+        }
+      },
+      "images": 3130,
+      "rank": 26
+    },
+    {
+      "name": "font:sancreek",
+      "reference_count": 5,
+      "importance": 0.05,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "sancreek"
+        ],
+        "reference_ids": [
+          0,
+          6,
+          16,
+          31,
+          89
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2614
+        }
+      },
+      "images": 2614,
+      "rank": 27
+    },
+    {
+      "name": "effect:curves",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "curves",
+        "renderer_effect": "curves"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 517
+        },
+        "1": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 2614
+        }
+      },
+      "images": 3131,
+      "rank": 28
+    },
+    {
+      "name": "effect:occluders",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "occlusion",
+        "renderer_effect": "occluders"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 517
+        },
+        "1": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 1043
+        },
+        "2": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 519
+        }
+      },
+      "images": 2079,
+      "rank": 29
+    },
+    {
+      "name": "font:cousine",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "cousine"
+        ],
+        "reference_ids": [
+          2,
+          43,
+          72,
+          78
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1041
+        }
+      },
+      "images": 1041,
+      "rank": 30
+    },
+    {
+      "name": "font:eastseadokdo",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "eastseadokdo"
+        ],
+        "reference_ids": [
+          75,
+          78,
+          81,
+          95
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1303
+        }
+      },
+      "images": 1303,
+      "rank": 31
+    },
+    {
+      "name": "font:glegoo",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "glegoo"
+        ],
+        "reference_ids": [
+          15,
+          34,
+          35,
+          98
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1305
+        }
+      },
+      "images": 1305,
+      "rank": 32
+    },
+    {
+      "name": "font:moolahlah",
+      "reference_count": 4,
+      "importance": 0.04,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "moolahlah"
+        ],
+        "reference_ids": [
+          1,
+          7,
+          38,
+          69
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2096
+        }
+      },
+      "images": 2096,
+      "rank": 33
+    },
+    {
+      "name": "font:diplomatasc",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "diplomatasc"
+        ],
+        "reference_ids": [
+          16,
+          21,
+          62
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1045
+        }
+      },
+      "images": 1045,
+      "rank": 34
+    },
+    {
+      "name": "font:ericaone",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "ericaone"
+        ],
+        "reference_ids": [
+          22,
+          83,
+          90
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1307
+        }
+      },
+      "images": 1307,
+      "rank": 35
+    },
+    {
+      "name": "font:holtwoodonesc",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "holtwoodonesc"
+        ],
+        "reference_ids": [
+          3,
+          25,
+          82
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1565
+        }
+      },
+      "images": 1565,
+      "rank": 36
+    },
+    {
+      "name": "font:poetsenone",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "poetsenone"
+        ],
+        "reference_ids": [
+          22,
+          88,
+          90
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1825
+        }
+      },
+      "images": 1825,
+      "rank": 37
+    },
+    {
+      "name": "font:protestrevolution",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "protestrevolution"
+        ],
+        "reference_ids": [
+          26,
+          45,
+          75
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1832
+        }
+      },
+      "images": 1832,
+      "rank": 38
+    },
+    {
+      "name": "font:vastshadow",
+      "reference_count": 3,
+      "importance": 0.03,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "vastshadow"
+        ],
+        "reference_ids": [
+          3,
+          15,
+          34
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1046
+        }
+      },
+      "images": 1046,
+      "rank": 39
+    },
+    {
+      "name": "content:digits",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "digits_only",
+        "renderer_charset": "digits"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 2089
+        }
+      },
+      "images": 2089,
+      "rank": 40
+    },
+    {
+      "name": "font:bahianita",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "bahianita"
+        ],
+        "reference_ids": [
+          2,
+          43
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1043
+        }
+      },
+      "images": 1043,
+      "rank": 41
+    },
+    {
+      "name": "font:existing_11",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "existing_11"
+        ],
+        "reference_ids": [
+          70,
+          96
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 520
+        }
+      },
+      "images": 520,
+      "rank": 42
+    },
+    {
+      "name": "font:graduate",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "graduate"
+        ],
+        "reference_ids": [
+          68,
+          96
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 784
+        }
+      },
+      "images": 784,
+      "rank": 43
+    },
+    {
+      "name": "font:khand",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "khand"
+        ],
+        "reference_ids": [
+          70,
+          72
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1048
+        }
+      },
+      "images": 1048,
+      "rank": 44
+    },
+    {
+      "name": "font:ruda",
+      "reference_count": 2,
+      "importance": 0.02,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "ruda"
+        ],
+        "reference_ids": [
+          85,
+          87
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 783
+        }
+      },
+      "images": 783,
+      "rank": 45
+    },
+    {
+      "name": "content:upper",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "uppercase_only",
+        "renderer_charset": "upper"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 4182
+        }
+      },
+      "images": 4182,
+      "rank": 46
+    },
+    {
+      "name": "effect:dots",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "dot_noise",
+        "renderer_effect": "dots"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 2.0,
+          "max": 2.0,
+          "images": 2074
+        },
+        "1": {
+          "min": 3.0,
+          "max": 3.0,
+          "images": 13462
+        },
+        "2": {
+          "min": 4.0,
+          "max": 4.0,
+          "images": 6997
+        },
+        "3": {
+          "min": 5.0,
+          "max": 5.0,
+          "images": 1297
+        },
+        "4": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 1044
+        }
+      },
+      "images": 24874,
+      "rank": 47
+    },
+    {
+      "name": "effect:morph",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "morph_distortion",
+        "renderer_effect": "morph"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 8.0,
+          "max": 8.0,
+          "images": 1046
+        }
+      },
+      "images": 1046,
+      "rank": 48
+    },
+    {
+      "name": "effect:texture",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "raw_pixel_reference_prediction",
+        "key": "bg_image_texture",
+        "renderer_effect": "texture"
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 6.0,
+          "max": 6.0,
+          "images": 519
+        }
+      },
+      "images": 519,
+      "rank": 49
+    },
+    {
+      "name": "font:alumnisanssc",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "alumnisanssc"
+        ],
+        "reference_ids": [
+          95
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 522
+        }
+      },
+      "images": 522,
+      "rank": 50
+    },
+    {
+      "name": "font:antonio",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "antonio"
+        ],
+        "reference_ids": [
+          87
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 783
+        }
+      },
+      "images": 783,
+      "rank": 51
+    },
+    {
+      "name": "font:astloch",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "astloch"
+        ],
+        "reference_ids": [
+          96
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 522
+        }
+      },
+      "images": 522,
+      "rank": 52
+    },
+    {
+      "name": "font:bitcountpropsingleink",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "bitcountpropsingleink"
+        ],
+        "reference_ids": [
+          98
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 260
+        }
+      },
+      "images": 260,
+      "rank": 53
+    },
+    {
+      "name": "font:bowlbyonesc",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "bowlbyonesc"
+        ],
+        "reference_ids": [
+          18
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 1046
+        }
+      },
+      "images": 1046,
+      "rank": 54
+    },
+    {
+      "name": "font:climatecrisis",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "climatecrisis"
+        ],
+        "reference_ids": [
+          83
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 783
+        }
+      },
+      "images": 783,
+      "rank": 55
+    },
+    {
+      "name": "font:croissantone",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "croissantone"
+        ],
+        "reference_ids": [
+          6
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 261
+        }
+      },
+      "images": 261,
+      "rank": 56
+    },
+    {
+      "name": "font:genos",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "genos"
+        ],
+        "reference_ids": [
+          9
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 524
+        }
+      },
+      "images": 524,
+      "rank": 57
+    },
+    {
+      "name": "font:passeroone",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "passeroone"
+        ],
+        "reference_ids": [
+          7
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 261
+        }
+      },
+      "images": 261,
+      "rank": 58
+    },
+    {
+      "name": "font:puritan",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "puritan"
+        ],
+        "reference_ids": [
+          81
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 523
+        }
+      },
+      "images": 523,
+      "rank": 59
+    },
+    {
+      "name": "font:slabo13px",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "slabo13px"
+        ],
+        "reference_ids": [
+          25
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 524
+        }
+      },
+      "images": 524,
+      "rank": 60
+    },
+    {
+      "name": "font:tiltprism",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "tiltprism"
+        ],
+        "reference_ids": [
+          17
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 524
+        }
+      },
+      "images": 524,
+      "rank": 61
+    },
+    {
+      "name": "font:titanone",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "titanone"
+        ],
+        "reference_ids": [
+          55
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 524
+        }
+      },
+      "images": 524,
+      "rank": 62
+    },
+    {
+      "name": "font:zcoolkuaile",
+      "reference_count": 1,
+      "importance": 0.01,
+      "source": {
+        "kind": "fitted_font_reference_coverage",
+        "font_set": [
+          "zcoolkuaile"
+        ],
+        "reference_ids": [
+          41
+        ]
+      },
+      "cuts": [],
+      "groups": {
+        "0": {
+          "min": 0.0,
+          "max": 0.0,
+          "images": 524
+        }
+      },
+      "images": 524,
+      "rank": 63
+    }
+  ],
+  "ranking": {
+    "dataset": "B",
+    "teacher": "A",
+    "teacher_epoch": 20,
+    "images": 100000,
+    "seconds": 333.3600000003353,
+    "protocol_sha256": "83fb0ac28a75f8f5e5523529ea91ac5844395e3a9acf5b3f9c1539b98a070e28",
+    "teacher_sha256": "a599a42d9a33e991cc7ae1f22ab92851bd3495e7d9f9fce517fdb1feb81cc8c3",
+    "sha256": "96259e5224b8f315a161db4ce0ac919d4810324727e3ff466f90e799a58315ae",
+    "predictions_sha256": "0605376a203644d3b31e50b8b7d1b3df207866d30402e5710ab44b26c8821c3b",
+    "bucket_counts": [
+      33334,
+      33333,
+      33333
+    ],
+    "completed_at": "2026-11-15T23:35:09.186404+00:00"
+  },
+  "features_sha256": "470f2a5d25cf1e2dffbbad3be531548e739985964fbd79943e2922038b9f8e63",
+  "reference_predictions_sha256": "712bccbd09d64a26321a8c8072c5c63acd7e78165c0106450db1ab40a1cce44b",
+  "provenance_sha256": "d15ba7d415b2bc712d40e1631aa0ce0c29f6643b09444c79c5c4dc7ee36399f5",
+  "lmdb_sha256": "5824df6983de37b02d7659bf286fbbdd1f3316a8005975aec064fe8042d9f13a",
+  "metadata_hashes": {
+    "corpus\\custom_000.zip": "1c360d8d9c815828e65f1133422f5031775a9ae20edb6687ba3a8af8c98831e7",
+    "corpus\\custom_001.zip": "1a3fb87b62ebfae41ef29997fffb6cd0589995e2e53575394a3b71d56a5657ae",
+    "corpus\\custom_002.zip": "1fd844338b3ed7ba4574371789e9176430fdff5e30831a3f42bda74b6c105199",
+    "corpus\\custom_003.zip": "6099ddc958c8c8a9c4822131efa868bd3621c16f60a1e2c63e9a49d11211f29b",
+    "corpus\\custom_004.zip": "20f369184284dd41a4a535681053c3bdfe21c202a723ddd0d10b1b5ecd5c613c",
+    "corpus\\custom_005.zip": "1eb8cf18399a48d42ab324e7d787ac5632a44d7d67f3ac0b7663efef34858bf4",
+    "corpus\\custom_006.zip": "e9b9af7065537b9b56bbe0f4a81b72ed07b86b2da746c0e193a19e250fafd682",
+    "corpus\\custom_007.zip": "7aa3622358f6cd38fda2259f7bbd5ff8e6ee36801a13544eb6703330b0ce78ae",
+    "corpus\\custom_008.zip": "1e88088ecd405b744e728eb1c35e6450ac0416d6b918d7c24325164c1469be23",
+    "corpus\\custom_009.zip": "8093d388b5364bd3c65a52922bc663708ed1692586c5c8e61ec763607b2ffd7c",
+    "corpus\\custom_010.zip": "d82a1d49b8d1706cc8d54c4c6c2cfdc84838359df8c6eaa6958b48b17ab96830",
+    "corpus\\custom_011.zip": "4ed8469ee80593a4a2fbe73634e6f2dfe4cbbf4b0561a31f21709bbcafcecc32",
+    "corpus\\custom_012.zip": "f2698f5702c8a68c887acd507e80eac7322df7ef92866a8e6093c8ea638117cb",
+    "corpus\\custom_013.zip": "88665a90a1584933ea3b68aa6b34c503b210b151f93b509e12008370eee76aae",
+    "corpus\\custom_014.zip": "49a52a47cf3e6d7a407d9854ca7abf31a3744c284a0c61cd1eb3e8dc069b9431",
+    "corpus\\custom_015.zip": "01177c58303ae18b0cb04c3b8938160237b80ee7f13d355a982af19dcb56919a",
+    "corpus\\custom_017.zip": "024b7303470010059fa651e24594b4c0de598f8a16becdfa2f802240f505d0b7",
+    "corpus\\custom_018.zip": "8b5bf28cb73061071b5ab22bfda38e94aea119b4c15b4820e734c8687b7adc88",
+    "corpus\\custom_019.zip": "d94de589349eef8df8e44367fccd6b6b5eca245db1d749bc7d088b0661ed6536",
+    "corpus\\custom_020.zip": "92caacb35837cbb776c366a9c87822d552601224e228468f4a46b94fbc3776eb",
+    "corpus\\custom_021.zip": "ea0fe587f2c1e185ba389fa9acdd0f7bf8ce53f7866dfc1b8f27988f2779cadf",
+    "corpus\\custom_022.zip": "73e1e94ced4b6a24a1e26c71a830442ee6a18fa47d2534520cb01f23cb4b4f75",
+    "corpus\\custom_023.zip": "cd964cfd90602244229885b988becbc4f24d830e7756d4398212a44266820f91",
+    "corpus\\custom_024.zip": "12819ed0644ed5ce554b602e5e3ef00e00bf060374793199fd68c32313bf1d93",
+    "corpus\\custom_025.zip": "0c9833b997eea902878e1b8947e728d6ce38a426eb6e2dcb19e93d63c94b3eef",
+    "corpus\\custom_026.zip": "4657ea0bbe9a0af6d63e20f7e80db3df659b5b6c2dbfaf40f9b8994ca0c3ed92",
+    "corpus\\custom_028.zip": "9fe10b1bf245eb4594021d786e67d44af1af376aea2a9adbbc00e9d439748782",
+    "corpus\\custom_029.zip": "76ddde0d9e4defea404cf74aab8f7aa839a6cde94bb6f5bd99b3ac7aed542d40",
+    "corpus\\custom_030.zip": "8b9f30b77119c970f14d5c90aa7e746af86abd5c7c6b9514eb882104a1ca8913",
+    "corpus\\custom_031.zip": "39280d5c954ff87be9ed6dd8c8b450dee18799638cd5807d06b2420f86a8ae4a",
+    "corpus\\custom_032.zip": "62531033ed2d1821274cc645dc79f9b9b6a2bbea6ae640e964008ae6e13fa007",
+    "corpus\\custom_033.zip": "a7745acb5d377e083b3e480ce8d807d092452d3a5d6bfde80a573609000089d4",
+    "corpus\\custom_034.zip": "bfdf327c027e37d3025728f940f5cfa0c987ebaa9eb447a7b8f6fc01bd396f98",
+    "corpus\\custom_036.zip": "168e4cd9d3b0e57da55b922d8aafabb5651d4e4cef0e2e3e693e1501be390437",
+    "corpus\\custom_037.zip": "ca06b3cf0f49a4c7d0a31c1f06a070bd953eefaa85dd55464d3f2658f20073b8",
+    "corpus\\custom_038.zip": "a6f3cd425d814f6487084dbb86db29fd35784b18647fff4b3b430cc3c9dcc148",
+    "corpus\\custom_039.zip": "a3e68854eee558b79da6cf9b032b5589f2054316b9dfa627bd06d290584844a7",
+    "corpus\\custom_040.zip": "0efccbce55756f1239c36dc7a95a941225c2ade10f41f2c128a1ea2167823f68",
+    "corpus\\custom_041.zip": "b67e7acaed23593331e99f0b4f94158af848c0e1f0846b6eb8ef229ba5fb782a",
+    "corpus\\custom_042.zip": "f429d037a7932474600216c23327758d4ff4a7c6bc209b8b1ecd648fba9db157",
+    "corpus\\custom_044.zip": "4e543e89005cd0f5aab6e57a74a14b33ae1a3f2017b6a6f71eedd042f20d44ec",
+    "corpus\\custom_045.zip": "2ca30cec5f9e8895c2bafe94e7c0ce04a763eaac2cf30fca504f3d941c19bf5c",
+    "corpus\\custom_046.zip": "cb581b73957c85d50d20a67bba74caa88808a96ae805ef68b8db05f03b03b8ab",
+    "corpus\\custom_047.zip": "888be18fac7f2ee7f17b00875f03bee68cae0ec03f728314fef6fb9cdcecca12",
+    "corpus\\custom_048.zip": "43ba2a29ff0ba0bb73ed8e20f74d9e3274d617ec8792e67b4a5bb06098e7fe48",
+    "corpus\\custom_049.zip": "1c95c3d691250e5d727a03a74b87821d40d3be34ff72f7cbafd8a957c60a9938",
+    "corpus\\custom_050.zip": "11bf6cbb145fa6b0a664c14df5a7072f8d33a32fc23b59fbbe03e9a397b47adb",
+    "corpus\\custom_051.zip": "6447e7eee740a7a399d7b8712c53dd3a3b3f0ca38cbff4c3338debd69d2fabff",
+    "corpus\\custom_052.zip": "9509cc707b87eb01d881ec2a5ba2657e10e9256fcb7f3e5dc7a63be96109299d",
+    "corpus\\custom_053.zip": "819df33935b4d17184eedd5ea08164d8e99f5cc392a8912d45eee6df8edca186",
+    "corpus\\custom_054.zip": "e9192bdd01fac3a4db47d8ae8758108184a3839556466819752585f9db15bbd3",
+    "corpus\\custom_055.zip": "72e083d0737b9cb6f7734972362af1a4cd56564e8aa8ff458a7936b358b70c45",
+    "corpus\\custom_056.zip": "5f19c0d97768c70574c5189018693faf0b1cfa218ac5b16298f76f8ca5b24571",
+    "corpus\\custom_057.zip": "4040c906f98a73d8258a9e5abbee02c5b5c8046a8ee3311fea2f3d8f38e91f79",
+    "corpus\\custom_058.zip": "cde69f2d718547fa86720c20232b76e465cdb6add2d265cc45f4da27ca75519e",
+    "corpus\\custom_059.zip": "25a08f63e69cb9f44c199e426ed0bb2a5ff99591437e6a65abb9b516b6b1f37e",
+    "corpus\\custom_060.zip": "ae861e57f066246acb778264fdc7187910c03ac198d2f83ee8962537672bb4ae",
+    "corpus\\custom_061.zip": "bd205ea152b4e5f0f4f47bd99feecc56f02940a6979f5e669a954f11a50d1ac0",
+    "corpus\\custom_062.zip": "eda75e4d1d379dc7a93bfbaeb3bf69cb6da2c347e53609e305c4cb205470d5be",
+    "corpus\\custom_063.zip": "aea7db53a2f06501cb537e183b5f54c2e3d2aefaec0c7c8129ec8bdb4031b77a",
+    "corpus\\custom_064.zip": "4afbb662555e5c0504652b4e7c9a7aae548b4458dfb5c327902fe17c29afdb89",
+    "corpus\\custom_065.zip": "8bdb9ff83860aceaf94dde8b7ceb29f6066ab0be96096f86a8d763a422bfab30",
+    "corpus\\custom_066.zip": "c0c32f654a736ae27ed4042cf4e7ed0a0fd74efc928d6add3d5baa5b9508f148",
+    "corpus\\custom_067.zip": "15cc93cfbfb829f28f60f78355bd849271cd3e442631c90fcafb7ff4583ac390",
+    "corpus\\custom_068.zip": "de34553825b26cebee995e5c246a834afc16ef4e511c849915adae3ae5e5e841",
+    "corpus\\custom_069.zip": "87656ef4e17653a4f326a8a756bb60db04425649d47efa3acf350476849e717d",
+    "corpus\\custom_070.zip": "8478b55ca114a9c84d3510b04a5a6790270e66bfb76c94f7ff0b7e778a6735f5",
+    "corpus\\custom_071.zip": "292f8a2acecc8121e37bc531e24c840e600c6acd6434d0d220c3f2ca89017cbf",
+    "corpus\\custom_072.zip": "d3ee45ac5d0b32722f9fd5c58d8c7e66bf8cf788225a07c00f6086f98924f8c5",
+    "corpus\\custom_073.zip": "7329fd099b754f7aa1976712632d24b14bdce30cb61fddef157e3a620e3733d7",
+    "corpus\\custom_074.zip": "fa1d2d5d641f3ef54206490e55a7e68d3dc1c0213f594b44e270f94730a7a0e5",
+    "corpus\\custom_075.zip": "90c9a2f7a91fbe23a2086cf02c425693f6da3a2ce3a6926ae7379be66cc9814b",
+    "corpus\\custom_076.zip": "4d59cf867e31b891acb5c5011b6444a13d3cde0617d967e9725c3f95912ed1b4",
+    "corpus\\custom_077.zip": "d02077f0348f588ae6657076e1b0b335324f8ca7f84a0ba0dd70d59528358d17",
+    "corpus\\custom_078.zip": "c06b98d7e0fd285c47d02b73a92fa39980988f4535efe1cb19120c0825cb1065",
+    "corpus\\custom_079.zip": "bc1e19cef70cf80fe91e33e853773e9cba11528cad3cb111c3a5d89c9ba31a76",
+    "corpus\\custom_080.zip": "4101269e99e8f54e3618ae1ab3042afa567fb206866aba438bdad518c4744da2",
+    "corpus\\custom_081.zip": "74cf3cc567323cd9ddd00093f67fe67b352324aa1f04f3eca800717414c86cb6",
+    "corpus\\custom_082.zip": "ba18367abf2f677db7878dbcba887d31c4d212b9e1a50d9a0a8dfdc8bba4e153",
+    "corpus\\custom_083.zip": "9203c1ed0f78ccf26ccdd09da3359cce70d97f920ba175eafd436ba6fab83997",
+    "corpus\\custom_084.zip": "d5b50e1449f55247f051e1eed54d842ca0755d19367f57b39016c5905506437b",
+    "corpus\\custom_085.zip": "5cbe1bd2baa468293c4ae9613291cdf04b71760f1e54e1f48b0596e8c656641d",
+    "corpus\\custom_086.zip": "2325b21968dea427260a7efe695163c56435f58280a094fc18c91e075ff9b0c5",
+    "corpus\\custom_087.zip": "64456b2c95e018d46a52aca7a93418fbb89a9506ccf9f637e2c0c067ac8609d9",
+    "corpus\\custom_088.zip": "f2f3ffdbe6fbb7f961acf328511908078e21b4ee25d5a0a97cacaf89b228dea0",
+    "corpus\\custom_089.zip": "1290cb0e10c97ab5070d254addb88d7010d9400f9b3df9c1f4d7a6eb70711704",
+    "corpus\\custom_090.zip": "c9e0b3f8880cdc9428d9c8f037bc7a292ffc0244b2df38c5d7b4288d05787a40",
+    "corpus\\custom_091.zip": "07f81cae121d5d3ae50e8e37e042ef9367592b695fb3bd704fdba0e68ec91c47",
+    "corpus\\custom_092.zip": "f9ca7d0f0038567fb47b7084558c9ddf8e21f7c120b4ffd633bf648ca3f20597",
+    "corpus\\custom_093.zip": "577c101104a20764b27cf0101a4b81be28dcd6f0959125e6c17224f599cb0a1a",
+    "corpus\\custom_094.zip": "3160c9532f50242f95c6bc9199d9606db961cbe2b2fd2d285bf68b93a0e54ae4",
+    "corpus\\custom_095.zip": "668b0528247457493e87b136b1e3f65fd89bbff0aaa1d0f749bb167a1e9c9440",
+    "corpus\\custom_096.zip": "b310dd37f7706663f3a1f33b7e3e06f9127594efa76a4a37b75ee53a09d4c410",
+    "corpus\\custom_099.zip": "80244449126a1fd4bab11b47cbef0b754673e8d1b0eb37157334fdbc71fd9a7c",
+    "corpus\\dino_000.zip": "220e158c6a4c28d8620db71d46d32cff43edb3e89d3212b98be673e9c87c5632",
+    "corpus\\dino_001.zip": "5f2e8c582bcb0e8d29875fcb863fd7eb9ac11609b2335dbefedb4a329f360b5d",
+    "corpus\\dino_002.zip": "8a741cd763736e9daccf6ba17d4e755ed4fd5b505f4dfabc577434690b7d34a5",
+    "corpus\\dino_003.zip": "8ae1bedd616cdd20ba8d12d29233bf3de8af458dcf66c47545b0621c7d0b42a0",
+    "corpus\\dino_004.zip": "bd50e4763111990619ef7a1515d43623b18f21fa4668a24931f1573e021c374d",
+    "corpus\\dino_005.zip": "839476798e599bc1b3e3eee09a55f193ab21de6ac8654d2c5279c57c6ce01174",
+    "corpus\\dino_006.zip": "c6f8d34e57203e45941cf2dc08c3a799a1fadf988a11db8ea5c4c0b81488202e",
+    "corpus\\dino_007.zip": "ffaf17891fc6f28cde68ec70b4aa36ac96caa845848ba21ff988adfdb59e0e76",
+    "corpus\\dino_008.zip": "d3cf54a492f4096eda52a7e5a5ea20dc2780e08f74da90a12fcb9dfe393aa67d",
+    "corpus\\dino_009.zip": "e59c7fa13c80fc8e26affe1a3af992aaeb4ff889b45a87a3e3a5c323c17c10b3",
+    "corpus\\dino_010.zip": "3414516e15e50d123b597abb45549afd3d605f683c3a41783afd5e53d18c6293",
+    "corpus\\dino_011.zip": "7482bf7232e41fca0ef67a761eefa39771f7f132d8669c3ec21a302c570299cb",
+    "corpus\\dino_012.zip": "b43b1389643fdb4dc5b8e2acf87725470d970a62562fc9951c9bc0abb69fdbc3",
+    "corpus\\dino_013.zip": "5d2e4733d551a93ee173b071ac0b5b3365c8c0e5068115dfa9ec22c74a24675a",
+    "corpus\\dino_014.zip": "94cb4056d9cbe904c7337db07b866def04907e609805bd34b03022d7bbdf0fe5",
+    "corpus\\dino_016.zip": "473cfc2d4d586a3b422f633656874fd9c352fb35122291e88ad9c7b338f50b38",
+    "corpus\\dino_017.zip": "ade0f741ba38a20c0cd008d22248ba7544b18d333ceed189eac36c93c223efc4",
+    "corpus\\dino_018.zip": "61e0354c6b644d1cda13ffb30fbeade2983fcc52b8579715f7c9e50d144c893f",
+    "corpus\\dino_019.zip": "710c6fc96c026e8ba476c6a04a6b5192e77dd798544632694a9e895d42151b16",
+    "corpus\\dino_020.zip": "86a4e69ab5898ff21bc157520739bb95eaf2fd3a77a3ba1503687681d794422d",
+    "corpus\\dino_021.zip": "24a3afcba4b9c1e1cf8e357936fcae86d47bfdfcd646d659b541a72aa74aa989",
+    "corpus\\dino_022.zip": "caa8716198055dd6babf52747ad604ef889f4da3f940283f412d593a0818024d",
+    "corpus\\dino_023.zip": "49169cce12e311ae4b5469717141c0dfbe21983f356d74e10d0d69f3bc2fb2c3",
+    "corpus\\dino_024.zip": "71f5e14f71603a6c4402d73a256853945fd1869a3ad7d650db2310dbd5d0e469",
+    "corpus\\dino_025.zip": "787c06822018f7d0dc00b56f84f75de4693b4fcc6c310339c47c6154b246c7c2",
+    "corpus\\dino_026.zip": "09438138ccf432488ece9e8b9a8f3d7ec6b50531e34b512a01f817f60cec6c8f",
+    "corpus\\dino_028.zip": "f52786fde5cbb7c1b2da10eea303e7e9684a21e8401a0eebc6edcdb3000f29d0",
+    "corpus\\dino_029.zip": "2af5ab93b44cd3fbc911d2c20f8c0f2cd33d2a67ee7116191846a634b8460890",
+    "corpus\\dino_030.zip": "ad5e14fa2c4a1bbbfeabedfa29f2926f643fc1ee3f1135951f98c68ac66a6b6b",
+    "corpus\\dino_031.zip": "4da086a057af850da7d523303372310ffc72a8c9ba9795043921fae0263a6172",
+    "corpus\\dino_032.zip": "58c34203a56556386c02445d75d960d1f7feba3d83e22b2ee7183a01b3c6b101",
+    "corpus\\dino_033.zip": "770f7b8d2be2e5067e3b6e1a6d0702ff610d4d137591a079d9a26d291b2ae6c0",
+    "corpus\\dino_034.zip": "dcd52b722a9119963562b9048c3d9e805a8e47241dc986c21ce0d27ba6c9a345",
+    "corpus\\dino_035.zip": "29e174d71df06e32b9de0f751c9f70c884e8d5e73a974f8dd9ce0bb4968d5dcc",
+    "corpus\\dino_036.zip": "25170e3c53b198e1678b08619c51cad38de92b60311e30678d73e0cd7a55ff17",
+    "corpus\\dino_037.zip": "48c2a9f030ab96c3b150b2b66e5fa973f50c29ad59d8e028c6fcc1793800c97e",
+    "corpus\\dino_038.zip": "04995e4136deca66952966847621a5f19637b0d63861e260a013c33c3675d641",
+    "corpus\\dino_039.zip": "0984bfb7e96d3163da8d4c5740d46c6f96130d13f0a9a4434ded8e6c0d30f106",
+    "corpus\\dino_040.zip": "74deec7dfc7fd44ff01d27a3defdc32be2d9b2a5d2490a6817efe1ee2568a7a7",
+    "corpus\\dino_041.zip": "027f5a0d504329acee1f9be52ea57dce5972ba60ac860923f8b59c10d540e8f2",
+    "corpus\\dino_042.zip": "fa7c30a5d7d0226c6b9fd8d63e19f9cdb6aaff30d17418e23c13aca4477ce669",
+    "corpus\\dino_043.zip": "60881bd334463fd52263288181b9b2041804d00d87c9013d89f2ea0345ed5b81",
+    "corpus\\dino_044.zip": "63b5c23dcdb8789ef245119b8eb87fde3ed5731211edae6f146d41f56ed9afb0",
+    "corpus\\dino_045.zip": "4191f13f1ae6789562457d51aa8e018da2b0584bc8b72fc916e3e8685cbc5a6a",
+    "corpus\\dino_046.zip": "b7ba12af5a0deb024e02f638445218648927a33e3c53722c73b109c30ede339f",
+    "corpus\\dino_047.zip": "0defda0e37487cca4cbe2eb0074d0065cc0fbbe6540c8bbe951a52ad1c854250",
+    "corpus\\dino_048.zip": "64c78d4632febef8ca702847f575a943f3d5ba2c7b42ed802265ae901d35b663",
+    "corpus\\dino_049.zip": "26cf6f3990a6f72e6a1787d21c14c7ed3ef73398f6cbc1d713b87ab363db5d96",
+    "corpus\\dino_050.zip": "2ca273e976f43113969d952afd0b332b43870d4b7c1fe6a5fcf9330a88365b19",
+    "corpus\\dino_052.zip": "e6e0c8f91cefe87966480fca447def91774904e892a435df4b61676faafc1d7b",
+    "corpus\\dino_053.zip": "666494a6691ac970f9849341ebd6570e73e6eaae8f6701ec52ebc73c58783489",
+    "corpus\\dino_054.zip": "48737854873fa6908865d7dc2ba1c9145f764c8e099d334d7863d942a68ce9ed",
+    "corpus\\dino_055.zip": "01f7f82451134b2f6c723ba88ad1122378109ce4ddd802896cad48d25548537e",
+    "corpus\\dino_056.zip": "42cda9fdf1b992230dbbc16a5250fca965eb5db092bca33e74d1ea9955ee688b",
+    "corpus\\dino_057.zip": "a0e0fd3ca87a095f1e6c2361dee09ec68821e796dcf7300877b08fc08347f94f",
+    "corpus\\dino_058.zip": "7dffded5f9394cc732d8c0ee8ab8cf23f3536c5461c8f386fc88da49e3a1a190",
+    "corpus\\dino_059.zip": "646cb9432e4128577bb2e12cd68eff0a9303c3f72b567ed444cf2eaed8b93cc3",
+    "corpus\\dino_060.zip": "ed60ab2d2bd383eef4bff718e168079752a5c0c217c82573f4492ee85503e225",
+    "corpus\\dino_061.zip": "cd05830016ad43ea9961b7b5b4cca6564929dc0b6e5eb27ca330bd1483c4c070",
+    "corpus\\dino_062.zip": "d12b0a46d04a496f24bc4d8dce01cca54ff4e0b38578f292b57773ba40a593a1",
+    "corpus\\dino_063.zip": "c4b25de8c4359c1da4ed82dc337bc163ebb3d8f3dd0a08a5a626a96feb6bedd4",
+    "corpus\\dino_064.zip": "0f86aec04dbc15997817b5846688e2093a8663991779f84acbca9f04edd5c72f",
+    "corpus\\dino_065.zip": "9833576afe5e09ffa95289638ec536ae9282589e7913501c4a9d0b3ea9b8de2a",
+    "corpus\\dino_066.zip": "59dcbdece43009d5fd1338404835201983a70b3466fd8e586e2ecf1cd724f866",
+    "corpus\\dino_067.zip": "1d9040d9d33a7f01b59304818347988081acbce6711df12f09a86b5b2526d10f",
+    "corpus\\dino_068.zip": "1c52df36ba3a0cd72f82d68f1d3731f335dbe8d86fcadb593a0fb7f89284dea0",
+    "corpus\\dino_069.zip": "1d6cb37ee573223f2f040d273b7cb1eb8171756c00108c77a576d32fdb077b15",
+    "corpus\\dino_070.zip": "9e27569c6b9114169c3f56b6e3a73b517a86f34ab75052545e0b7fa88158ef4c",
+    "corpus\\dino_071.zip": "df7d5b6ba6f967a1fbd43629d23f4ec1d082ae9846f771a14deb91e88726e87b",
+    "corpus\\dino_072.zip": "97b416667f06cd8d1ac8cb0b60f327eeba09cb55f1462cdb933ecacdea6e52d5",
+    "corpus\\dino_073.zip": "228f0a8e33aa08dcab8a62c3a0d3d771f9616ef7b71c5692b27387ce395ad6ad",
+    "corpus\\dino_074.zip": "daf521bf5844d61a964dea1f880510a2ccc781381c3d42c8597ea39ef8f28039",
+    "corpus\\dino_075.zip": "27d0da9b5024edd8d3703dc1548251ff574a57cfe5790bdf5c69de4e77f83505",
+    "corpus\\dino_076.zip": "4a3b2cbd8151f268baa76e2c57f37c1a0b7a0d3b422884db37e8ed655601e8af",
+    "corpus\\dino_077.zip": "c04171883f278b1990e335e6693cbd6d485bddc6de8bfd4be014419ddd84d8fd",
+    "corpus\\dino_078.zip": "100a38775239c6682041784b8853c04ab1aaf35206ed8581fd4b34842e19b418",
+    "corpus\\dino_079.zip": "3aff850209a171a4df7bd4ca54b337a05787936fb322b352467896ed0fc85cef",
+    "corpus\\dino_080.zip": "b5a2cc425153c3bfdac5f6ae5c8510b553f89f1281d3e063d3efeb777018cb77",
+    "corpus\\dino_081.zip": "540ae745ec0ec776a41ae7cc776b7cf67d55624e278bc86fc6a6c38844a52dcf",
+    "corpus\\dino_082.zip": "6ac1396ce5cd58552e1cb9540ae02b7addb9ebc78eb75b25c370d98459462891",
+    "corpus\\dino_083.zip": "997c39a927493d252a827de26e74a7888cc7d01f7f76d564335e7eac9dba2630",
+    "corpus\\dino_084.zip": "12f814ff06db584c5e620b7231544c93f20215a6cd0d22ece55c047805be2931",
+    "corpus\\dino_085.zip": "783b8822e76d8d698a3094b3591ce63c50830c23777357e151e8118acbe3ab1e",
+    "corpus\\dino_086.zip": "746b234abce7e9fc565d9e0336898d05cd957e19fecaa420a80ee9c8101db596",
+    "corpus\\dino_087.zip": "fa5716792162934b5ecb95d36a8a22d5602d2e2e67bb6097eb7de322a6149e77",
+    "corpus\\dino_088.zip": "2bdef4fdf9f64bfa55b1c8837eb05041fcedf910048fd0ab168625c177db55c0",
+    "corpus\\dino_089.zip": "d6e80018c1dfef2fbd2d2838106b5ab0699bb9c7a199d84a9dd2c310a47d964c",
+    "corpus\\dino_090.zip": "929ac75ca76bc582fd6d1d8a51d28f1c18d97b0eba3d90f0af0ca14273058002",
+    "corpus\\dino_091.zip": "c46f27090d26b987d7e92cbb20d9d720cf8ede7da844cda29e4205eb8682e835",
+    "corpus\\dino_092.zip": "19ece89166c873308bb2f7a882fa15b50b9ab31acd9f6fa31533242ddad42459",
+    "corpus\\dino_093.zip": "5eed879bc576ca6cb4c11f10e3bdf1b3ac625a142ee7c933a3522a4ea6ede5b9",
+    "corpus\\dino_094.zip": "dc8198b25b7ad811ab1fda4f5c93e13d315b54f492a9476e1ba985a43353f256",
+    "corpus\\dino_095.zip": "9817b6080f6060ed707c3e01e5741bb27e25422ecedfe4fb1135d39099ae66be",
+    "corpus\\dino_096.zip": "43271da0b44d19d22dff58a905cd898c27cbed148f99fa17df87294b7324a8e2",
+    "corpus\\dino_097.zip": "4d5db0792fb95e069b1f6b4d08e338f7a4cf1dfcf120758d0b1a1f31faff7ab1",
+    "corpus\\dino_098.zip": "acfae68fced7053d2b32b1e136ff929f1bc7dd9d18ed9deb6d60a42611032e10",
+    "corpus\\dino_099.zip": "67163bf9a4fafab62b8079517ce59ac74878c816fa7e16242f16cdff11131a0e",
+    "corpus\\mixed_000.zip": "66b975abbd54aee0b2e51e02f5f166da7a4e1ab357c419be7fc2780f45707e4b",
+    "corpus\\mixed_001.zip": "127602b4365e78a13a5adb147e2fdaa87d266927ef23c6ecc52dde3143d6227c",
+    "corpus\\mixed_002.zip": "a29fd26deed82bef15ebcca41075db1b004613b52837576d153b12297af37ade",
+    "corpus\\mixed_003.zip": "716ac36c055402a3e385dca1e457232500ec260fb0e1c528a5aa7d942e0067f4",
+    "corpus\\mixed_004.zip": "bff26eff1a30a04e14844e2a2e48d3f2f69ce68c2b7d96add78de4cd868cf9a5",
+    "corpus\\mixed_005.zip": "6d1dfa5e4b4910f7e219cd513b98f47112d9787e2dbba6d11b3d84c84cec7bb8",
+    "corpus\\mixed_006.zip": "c5c76f6f8dcfe10245dc1b47143bd0bf72c7d565c514cdcb1910ce35ecdc709f",
+    "corpus\\mixed_007.zip": "031bd9bd19a6a71b0cef6b6ee91e94d9bcbaa7193380e47e2b2689f2f00284b7",
+    "corpus\\mixed_008.zip": "512d675e54cb9b392402b3de195900fb1cbbcb73a7b91da3884fefdb1847954a",
+    "corpus\\mixed_009.zip": "2d10d40610e2f2c2153c7b717df3e25c28f63c2b45f830d5ad6e735489e0d2a9",
+    "corpus\\mixed_010.zip": "8237677a20eaeefedb1d0467330cfb6e29fbe2c8bb973f15c9582ec0257dae46",
+    "corpus\\mixed_011.zip": "cc9753d615c86d6ff2aa71cb322963fa2636d23a0ea17b4517478cbb1f38b6eb",
+    "corpus\\mixed_012.zip": "46e82bac6b9c171e7ac77271b9ea988cec4872eec8de0527b92d29ac238a7021",
+    "corpus\\mixed_013.zip": "0478c36d261a7923c0a58f12edb253e990f6c9a6d3978020575ca61a0985604f",
+    "corpus\\mixed_014.zip": "997c9b97a531b913b8e4d0b9132b6fab13dbffd4cc2b8cd9f41e67cace30516d",
+    "corpus\\mixed_015.zip": "b23ff41ce4deaba461b982d258d91db24b87fc4c66800c1cf451381df4e04165",
+    "corpus\\mixed_016.zip": "d2a00fb312beddcfa6d64c59d56daa4d598672d9a05934526c4ae611ad8916c5",
+    "corpus\\mixed_017.zip": "9d03a8ad2a0a546b606350c33cca1674959c3d98d5b9d51b48e89cebea7c210d",
+    "corpus\\mixed_018.zip": "67486bf22126cc93ac68224eccda1c93a7afe7160b1b3c9baa1b0e77c64a500a",
+    "corpus\\mixed_019.zip": "790adb07be891f64b67418bcaa0cbed8fe8161214344f9481810a0105c4ab3b7",
+    "corpus\\mixed_020.zip": "4a342b50dd137d748a9872d80b637fbdf4c18641b5889bcd0e2695bb8fdf1e30",
+    "corpus\\mixed_021.zip": "f9ad8b9754ff1e03961744ce04775c667e9b4a1c405b3be76ab16c4842046a3b",
+    "corpus\\mixed_022.zip": "562fd41ccf61377838162c746110bd078f599010b692a9e96b47f81a711be617",
+    "corpus\\mixed_023.zip": "62a6048cd09f027c1a7bd1a0eac89b07b85ef8a97874b37dea73c1fc54d91716",
+    "corpus\\mixed_024.zip": "3861f309c70121ec0821b546e9e40383e6cdbaeb1baad3b38d52107f8472652d",
+    "corpus\\mixed_025.zip": "b6ac763ab605ff25db732bd18ec979bbe0c9bf4156c195a95cef72d703c05380",
+    "corpus\\mixed_026.zip": "38df64513fb3d4e52a082a572521ad87682d52659035943833b051517267e5cf",
+    "corpus\\mixed_028.zip": "d8833857ad4b7932f56e9c3b9f648f66266760f6fb82bd4191be01a324cdd3ec",
+    "corpus\\mixed_029.zip": "d17cf07004c1e8cb75e34930aee399d9b1ebea1985316c3df304c088ff2baec4",
+    "corpus\\mixed_030.zip": "ec05802d3ed60c428693065ed163641bb73c8a0779a81aaf2f63eba90c08da58",
+    "corpus\\mixed_031.zip": "72f343cced60939bd4ea74b9de8481578311a9461c7d5f987504e405040238bc",
+    "corpus\\mixed_032.zip": "531d1b6b8c65b457f56c9cee49f47406f8526142377566de86f63ae6994d9972",
+    "corpus\\mixed_033.zip": "974d9c8c8f5416706591ac69785e90cac1cc5955c45dca5f9a7e3c3db9e00fef",
+    "corpus\\mixed_034.zip": "4e17db68f834b6a9387ae88bfbe9d25cc35129abf775caff56c82aa2878370f5",
+    "corpus\\mixed_035.zip": "642f82e9b4ef7100cb35a3b3d5156126a0c8b0ccb4b96b0fa3e7cd05a61bc1ea",
+    "corpus\\mixed_036.zip": "f4a6fb0c9821cac544a435660969e3ce81cfac34800a43b0075cf5f5119077f3",
+    "corpus\\mixed_037.zip": "32e7fb036509a1bfde627f9a3fba4bf4f692b9d33e68a2cf2e4a9fc0c82ff6df",
+    "corpus\\mixed_038.zip": "51b0153de5e39bde015cf4b9d3c5aad04f21b9ac848934103b485e7049d1046c",
+    "corpus\\mixed_039.zip": "6931e2f473839891e73757609dea87e225cac1fd1b82a83703724780dd75e7ec",
+    "corpus\\mixed_040.zip": "42216525d655dea5b3c905e83a807fb4a448c80de3637f75f432f610ddb45f6a",
+    "corpus\\mixed_041.zip": "0db4c7d4ce0ccd4bdf26330b3335f1209bb3b3f42d9fbb5e1e54e1697acb116a",
+    "corpus\\mixed_042.zip": "e961d1d8a53c56a879c9ef38bd3cca8377fd3f7d06089ad87b766ff7fe242321",
+    "corpus\\mixed_043.zip": "edc32cb9979a43a3513fec030421e8b702e2cc87cdce75668cb05eaaa3b59781",
+    "corpus\\mixed_044.zip": "d0835a886b87b7ae4d4e57622033deb2ba8d125d7664b194a2f15f184c470245",
+    "corpus\\mixed_045.zip": "12f4e93e06d5d91cdf01a58ab3eefd10ed36d39d060a9937fba2b14dc7e5fbab",
+    "corpus\\mixed_046.zip": "5ff7f0ab5949766b173d8273e7eab18bbfc6efc4e6e9629da505f55a9230d03f",
+    "corpus\\mixed_047.zip": "db2778746f2c71588f1e8e00a82c39ded16d1a89de217b99b6e03ff994fd4214",
+    "corpus\\mixed_048.zip": "155870cc3edb292f1ad3b9015846bb37b7d833937d764dd3a14d61413eb76804",
+    "corpus\\mixed_049.zip": "1b78008079eda5868ec3aa49ff6a395b7666c1842d91cb678d47eda3a895a94c",
+    "corpus\\mixed_050.zip": "b2ed0dc39a92ec8877907145532b81a3efa68d6d8d83b0c1e6525a94d7028950",
+    "corpus\\mixed_052.zip": "3727fec3282340345a0cee2d8641b524d7c766d6a76dac05adc4eb59ed3af38a",
+    "corpus\\mixed_053.zip": "6dbed18218c22b436918ec5c33b491c16a7ad5a30e101d410f55390b0e308b29",
+    "corpus\\mixed_054.zip": "0634b0b50be5c579f2c451d800a0b41ca2c5486cf6bf30b5caa578469dc8b159",
+    "corpus\\mixed_055.zip": "e8f4e34abc7b8d78fba820f8ee18b1afa8e717026e6d7c0205952e4a7179e943",
+    "corpus\\mixed_056.zip": "5e35e2c684cb20cee077affe78d2b6e71767c5f334b9839d63d4c3622a1dae09",
+    "corpus\\mixed_057.zip": "cec930d17fe19fd8bedbb0597e2fbe5fe2e1c40d50ac2dba4b5f027537ab0a49",
+    "corpus\\mixed_058.zip": "3c5ab588f9160c649e9438ada856330c98f55dc448a0f39d8cc9104d5c77bb35",
+    "corpus\\mixed_059.zip": "5869a61747eb031e67f5a902c95fc613281bfb0d958e4d4c6ba9779a6b2d70f3",
+    "corpus\\mixed_060.zip": "0b34552815aa9e2389fe1e9fe0cac0408afc9b66390603d3a42ce0fe82d83efb",
+    "corpus\\mixed_061.zip": "40326a5d0e45fb9d2e50c4bb78a951731bc11ee3eba4eaa8668b528637e02e36",
+    "corpus\\mixed_062.zip": "cd1483bf08ca41048e5a62ba4441f2e4381c15cc3892e785c8c6fc8a4903112f",
+    "corpus\\mixed_063.zip": "16c0dbf38cccc2ca2ed3e79ef1ffcc988c04e88e03e616d4b61825e47e33d45f",
+    "corpus\\mixed_064.zip": "3fdd4b9188dc91710369ee5d3a762ee6861b30a7af07079892d10385a6d006ca",
+    "corpus\\mixed_065.zip": "5e023f63bc29a0937546221665a8d28d76f8addbf9da332b734b74e76e8e49d3",
+    "corpus\\mixed_066.zip": "a5ee917df1678d7489ac8cae5b372c3acc1f090b1226b496a2d75d993412e7cd",
+    "corpus\\mixed_067.zip": "0da90770c1502dc9b57cf3da8fa2cf915aaec4e54d098e95b053073cba75ca3b",
+    "corpus\\mixed_068.zip": "329e69833a4d3d07ab125b291e2468a04d91fc07c8f5534877fd2f960f0cc6ed",
+    "corpus\\mixed_069.zip": "497a4796e9761de9e20818d3c9d000283d145ce022ad3c5151a3dbe668c63ca3",
+    "corpus\\mixed_070.zip": "4bd30b227e54a3c3bec07ebdc0194583a59de8bdf666482aa8baed693d50c405",
+    "corpus\\mixed_071.zip": "c9f00a21c2494bf1156c4deeb3d64e2edb9cba64e5b833a971d91ba7ede26fe3",
+    "corpus\\mixed_072.zip": "1444c95701df6b6bc916e0d658ef0eb316126b719f9f1a0a61904c6ce3e52259",
+    "corpus\\mixed_073.zip": "34c443a26eb1d5e2e6ff7fa75aff147c1b24b9f450cf4ac3146a2717b29c31b9",
+    "corpus\\mixed_074.zip": "9f6c36f6f78b5623bc435467832847648951e25b9441af479df88aacd194d458",
+    "corpus\\mixed_075.zip": "f45ffbbfe4849044dd983a6a5bfc405111ff0aae09ba96b182d7d4cdec44ce4d",
+    "corpus\\mixed_076.zip": "c176d9fc673763a6740ed096cea7d17b68603a2ade56c44ae2adaa47da6240d6",
+    "corpus\\mixed_077.zip": "71350269d3c7f06be9b15399ad733ac1700e18479b100cd7636d98739f769db7",
+    "corpus\\mixed_078.zip": "a1852d6424fb949fdd1e24ae44766ce31198083bbee5d76e1fa51a892f8efc95",
+    "corpus\\mixed_079.zip": "9b039c7a18df0d15ecbbb897a04f89400c6b39e2db25ca3f2295191f3c1080f5",
+    "corpus\\mixed_080.zip": "9e106776d15384c08b3e004ac7b7c340b130310a17f05c9b4c51bef6d4cc8103",
+    "corpus\\mixed_081.zip": "8a0c237a20963c63cb55223e017ad4b3ca3be7a1dd776512d4fac21dd5603937",
+    "corpus\\mixed_082.zip": "dcf490b97e64ffa20cc94e3cf103cf7e54ffdb1be5d1fce00a093fa48f6d241c",
+    "corpus\\mixed_083.zip": "8929154105f925ce46976b03229a178f066211b59ef785c51b1a31da2d8c5cd6",
+    "corpus\\mixed_084.zip": "84d5c35c64de813cb5fbc3aeef829ddbf84f010cec6e74385f93c8cb29b46d5b",
+    "corpus\\mixed_085.zip": "85448d8f3d7d500a6913e3f7f057f27ca378d4a5d9a93941576c33c9182afdce",
+    "corpus\\mixed_086.zip": "4c344f9a7ce94001fc3e370ec1294fe3bcf931eb1896a9e6146bdf3e683a8a97",
+    "corpus\\mixed_087.zip": "1a11fd2a18178a521cb8f15e17648456ef1abe6cd84c349718706d09bdedb531",
+    "corpus\\mixed_088.zip": "41241f5809702b45c532b8742d89a84d8ff879c88be9425f455eb6451e4510d2",
+    "corpus\\mixed_089.zip": "6b882b3ca56d5bd1244004b778218b68511c7ddc173b8bbb944ca095675d4960",
+    "corpus\\mixed_090.zip": "1f595dc7720bf2897e45fe45d844cea6bfadee2f361f8ad4bb9d53c5e20553bb",
+    "corpus\\mixed_091.zip": "e2a964513cbfbdefbfafc7262d1be8123c0c8893ff32a3d864f530d66e63c3bf",
+    "corpus\\mixed_092.zip": "2cff5a8883e8bb713f60f54eb054ffd28f797d11c14c3115eb55b3fb2d1b1011",
+    "corpus\\mixed_093.zip": "7466fb485639fd2a869225056825738d66a668539a3df7f3c6971a6585951972",
+    "corpus\\mixed_094.zip": "945263a5e28faf70d4ad3969823959bf861836cfe2d3c2753586790c5461e029",
+    "corpus\\mixed_095.zip": "7bef269ad1478f58b04bb60165e19dfa5be71381db082d9022d2ac0fe829f504",
+    "corpus\\mixed_096.zip": "6a7b6b12c2e00d13a2e92f2ec555d2e2fd01f953153d1a5a941298ad2c86d0cd",
+    "corpus\\mixed_099.zip": "bf196841654101b72efecadb6a27af6e8505c9bc6c435d4a6b326a45fbab4f72",
+    "corpus\\synthtiger_000.zip": "75c4f693383c76070dbb570ed66f8044074402c1cc0f99523b1ad742c2cb1bbd",
+    "corpus\\synthtiger_001.zip": "56cd01fb0b04f20d9423b8df8851a244f7156e322263d62044d7ab227fbd733e",
+    "corpus\\synthtiger_002.zip": "2916ec9ba86dd0068709bb10795d0b7eaa65b120521ada446ce9f821222e5f56",
+    "corpus\\synthtiger_003.zip": "20e3346cc9335eb8ccaa847109c2a00c6c7ab4a747c86d44dd87234fb4faf903",
+    "corpus\\synthtiger_004.zip": "a94c57d6eb34690539e247d2327c3b6dbf5a1d075e5f870884688d94a14bdfd3",
+    "corpus\\synthtiger_005.zip": "557945af91d70eaf74266228970df0d4e92efa720d685d0e064ddf290f7eba23",
+    "corpus\\synthtiger_006.zip": "06e94f2eebbb0c2e2b42efdd1dbcb44dbe7a5acde3807f9e27b2d35807ae86ce",
+    "corpus\\synthtiger_007.zip": "4a7c04aed258edfc6e200f6b787d5378530bf0d7fbf29d36302952bb25670add",
+    "corpus\\synthtiger_008.zip": "ed6a3008e18a0b488555d78132fde32522050a95c076cbd5a2cd93d3cd343526",
+    "corpus\\synthtiger_009.zip": "9757866c66a464799539014f6bb25e32d292b6ab32b8347c4df18c667c97933b",
+    "corpus\\synthtiger_010.zip": "50739d410a57e7401b0cc6ece5a7247f3d7243357695ce3f4373687af92164ed",
+    "corpus\\synthtiger_011.zip": "456198849d13fab1f0a23a9e00c3ea1b690e71db60486c74effb2532880be7e8",
+    "corpus\\synthtiger_012.zip": "ec9ef0f19f6f7f92bfeeb5f92dc7276a67793407326b8a6a98adaef16b761087",
+    "corpus\\synthtiger_013.zip": "93d30ace4644b7bc2a1f580e53a95faa939532ac4f6caf6fa00eee492c8df41f",
+    "corpus\\synthtiger_014.zip": "8b837e636cbf9bcfbb4a312e52e2f6483a33ce3893b66a106915af3b6377d5e3",
+    "corpus\\synthtiger_015.zip": "b0624ad1f5cd2be3f9ffc31086659a8cc8b736634e0cd4df35d355959eb4df64",
+    "corpus\\synthtiger_017.zip": "831148496afdd7e88d34521330c391e7cfbffbc669f43c77869544015a5f0f00",
+    "corpus\\synthtiger_018.zip": "5e5d46542226f389aeefcaa4a84eb3520cb0483cd2ad3916bacaf5167450f795",
+    "corpus\\synthtiger_019.zip": "1677832254ad6e94f402e942feee417a89042667b45fc971195af31e89e21cdd",
+    "corpus\\synthtiger_020.zip": "bb164ad74abf995afc6180509f81c20d2bd401a8d6ed4b00754a587287d2f01a",
+    "corpus\\synthtiger_021.zip": "e7a914634411e633dd425eef841b0df46ece164668edfa13f019cc6bdc8ce790",
+    "corpus\\synthtiger_022.zip": "02b593db619a798b1ff1d9ae6eb8f1392f0abd877d5322abd9e1d276a243a4a8",
+    "corpus\\synthtiger_023.zip": "72dc271911e8a99bef140c0425ce7d60fdab6de962851fa98eb96d5ff8ee4c90",
+    "corpus\\synthtiger_024.zip": "6bceaa8122f8c7ad39766c1c9cdd8a2f1f1c216b3f403d9bd75d6df6c7326e64",
+    "corpus\\synthtiger_025.zip": "f3a1e577263a396525f4e08d52a59ec03b7e74fc9fc70d212a2988607ae72ce5",
+    "corpus\\synthtiger_026.zip": "884cf487ab1ed654c3bd4d2740de74ad7dc010e70a284e59cffe6e0788177259",
+    "corpus\\synthtiger_028.zip": "a9651022285388a92800cb312182a3ddd2d18369d6f878351ff63155ad313f9d",
+    "corpus\\synthtiger_029.zip": "e58d1f0e9c67dd1737bb3edb37b14b540d19e19deba7e3049f5f9d581f2340b8",
+    "corpus\\synthtiger_030.zip": "3919c53a9f3283f7de7b6e9c8eb358deb62309b13007b97bdeda389bfa49603a",
+    "corpus\\synthtiger_031.zip": "026fdf518d74fdfbdabe1905553a5deecab3abbe47b4e92a5eaea36d4184b6c2",
+    "corpus\\synthtiger_032.zip": "778aef2e046fc0c76ead5fc1175a988a428e44ab9f3c1cae2c2e5ba641fd6d56",
+    "corpus\\synthtiger_033.zip": "ba3d812877d53d44774f4d4ecb73d40e4939300ee1c72114eb4185331664caf0",
+    "corpus\\synthtiger_034.zip": "684d4654c6e637c66f0e7a7a7424d409daab15a02a58fd6cd5b423e2e107821e",
+    "corpus\\synthtiger_036.zip": "9cf2aa444a64820b91d53598b082a348d68669b8bc51118e026a78aaee0095df",
+    "corpus\\synthtiger_037.zip": "db26f3bfb3943e82040c515471d84ca597b18dcbd10c74981ea0187a5ab3ae05",
+    "corpus\\synthtiger_038.zip": "d7553ce00ab3429642c8687c6ce186c84cf5d99b0658c646a3e994895fe86772",
+    "corpus\\synthtiger_039.zip": "e4bf0121f85043e8ddd3917e8b2a69d309601171968c4572d579fd288bed6306",
+    "corpus\\synthtiger_040.zip": "23de0cee51c97ace7df2f488bc147f7e7f933dcde225a16566ecc17f4a8a933b",
+    "corpus\\synthtiger_041.zip": "42773f4f301f9433c4ad1f4d6146280276427e366c17820b8ac0c2563140aea7",
+    "corpus\\synthtiger_042.zip": "d1cd251436e960b642b2c6ea6b61a7b112c8f359147aae8bc749e8e38125c08a",
+    "corpus\\synthtiger_044.zip": "10d0e3bb4f696f48226606ba76cd1023057efa8b251915922f1a425d6424a4a4",
+    "corpus\\synthtiger_045.zip": "fc86130fb9e856336fb2d09b622aceb9e79c7c71c2d25c764dd67674fe1ccfec",
+    "corpus\\synthtiger_046.zip": "1d7a1090fb449a551c5a59eb409896f58fcf8c153b2a6e7001e986bedb146ec8",
+    "corpus\\synthtiger_047.zip": "24ce193da24e162a43b81f1a1480e4dcce5986679f32ebb7a7e66e217c6e7a29",
+    "corpus\\synthtiger_048.zip": "32c05f7ef67ac20e68befe93d372f6f73d9562e66313d2402b514f404403a251",
+    "corpus\\synthtiger_049.zip": "60f3a6739f24e5f297fc8c6d41fa3c724e7e842260c7e64436d33d66a26fb086",
+    "corpus\\synthtiger_050.zip": "e9213fb5886e8e0b51974d0071ba2c7429a090d5d61654c18927b6d1fd65c6b9",
+    "corpus\\synthtiger_051.zip": "3099bc3abbb76bed7200a21903f38a2ddb02e2e0659adcf12c9890c2c1b4ec69",
+    "corpus\\synthtiger_052.zip": "3ad89440bd1416bdda2e02155c68fbbda007c187b2ffafad4253b12425522fa3",
+    "corpus\\synthtiger_053.zip": "3ca23cf242366ef98b00a3ab4b4878e79a84abcde1a2bd8b767a0529ca695c72",
+    "corpus\\synthtiger_054.zip": "196b4d86c848d58d6bc15b941fd4e048f629c9fa2fc4e94972288c71bbb2d4bd",
+    "corpus\\synthtiger_055.zip": "d7ee17859630754a7662d48281e48e1fb62f21fe79f52f35240e78c1995578cf",
+    "corpus\\synthtiger_056.zip": "64ceaf8f82d185b2e25b59a1c95df4eefa0e3cb141fcd7faa715589e91fdaa12",
+    "corpus\\synthtiger_057.zip": "b2d293b6400dfcc6f5225118eaa8fafd3b8b6a1b7b66784e1e605d91644d0ed1",
+    "corpus\\synthtiger_058.zip": "bc8d40e81612276281a4cd6b32b2e26b344b8936bd3ad967fa42a990653f4bae",
+    "corpus\\synthtiger_059.zip": "6fe498dc8fce065a4d14321c405e8ad015a870e8ef652ebcd64317bb64289c1b",
+    "corpus\\synthtiger_060.zip": "4dbe85474627d40d8af078e85ebe32a9d6589aa829b3def5e56dd93afa44a805",
+    "corpus\\synthtiger_061.zip": "5769d7919764250e5cc7df0cd98ab3274ad787c57d2fdb2263261c97a3744ef6",
+    "corpus\\synthtiger_062.zip": "1c460a8ca7d9568895784ada48ce312c2283dc9d083db7615a817d3ec20d0046",
+    "corpus\\synthtiger_063.zip": "66ab1d7a00719e102c87fe39b75b99b9319486297bf1d77d67ec69979306c274",
+    "corpus\\synthtiger_064.zip": "9e7729384ebf94984fd6be7ad0201631013bd3e327c03cc384410f3da8f07f46",
+    "corpus\\synthtiger_065.zip": "ef74a607ad37b9d9198f300b1588612ac3c576cd4701220a44f74949280787d3",
+    "corpus\\synthtiger_066.zip": "12f803db27ec5d653ceea92e0df59e20c6eacd217ff82b4c5c498a41f2fe0df1",
+    "corpus\\synthtiger_067.zip": "28d9525ce70b843c890e6595cafba2c9fd7e73d52fdd14a30003ecaf28d7c768",
+    "corpus\\synthtiger_068.zip": "505734b54db4637ed256c50a9f825eb537ab8a42bd06dd927f364df074d94fe5",
+    "corpus\\synthtiger_069.zip": "e7b35c7c8d3c2f2fdea805c067881f981fa8e4e7ff04394d83dacbd7de535c9f",
+    "corpus\\synthtiger_070.zip": "d3ec44a09d226f6dc383591c6e69ce4092a791962b6e4cf1195da90cf18312be",
+    "corpus\\synthtiger_071.zip": "3816de706ffee242800e4a9b167fae5ab39aa96f75190dcca39a4051e7cd89ae",
+    "corpus\\synthtiger_072.zip": "5f40b2b70a1b1ec20d579017060f2123c6c66fefa69c90db06e8d12bdeae6c8d",
+    "corpus\\synthtiger_073.zip": "760eb35e37b95e09e160f672e9bedc0fc0799e5a4fc2e88b2fc8e1f2d397b1fa",
+    "corpus\\synthtiger_074.zip": "c97a84690fedf6542ac68cc2d084ab68c6ce5f4d258583bf4f57ab82dc298c58",
+    "corpus\\synthtiger_075.zip": "1beaad249f0433fef04d807f60c5a8ebfd62b75ed95c4abdb3ba5ed1f95a8d0e",
+    "corpus\\synthtiger_076.zip": "029c74db30f39daecca36c63126dfd66fab1ba7efeecf4b37be89767d7322621",
+    "corpus\\synthtiger_077.zip": "29a514b1a702a12491f40b8b5fcb25f024ef8b5f2f43ec26215d38e8ac01aae1",
+    "corpus\\synthtiger_078.zip": "0a6cb1a12ac7c518a305500743034878c31ce124c1a2f19065f5a62a513206c9",
+    "corpus\\synthtiger_079.zip": "2c1d85652fcb81599539a324f98d8490de8d704b1c284d81c000b9b88b626417",
+    "corpus\\synthtiger_080.zip": "6bc29bf28d3692f8f2a3fee14cf1a36dc1568e7a7361863b8d542bd111ce1550",
+    "corpus\\synthtiger_081.zip": "9a064469e5d1a04e0e77148803919b6776610da37f95702e544c81e2a84820d3",
+    "corpus\\synthtiger_082.zip": "e0b298d5487f89e85aad2eefbfeda710106c12d1b493e3d88c0ecdc955126c3f",
+    "corpus\\synthtiger_083.zip": "687f3742c75042039167b1bc93d2db993c5b17d9880dcaab290935249c9feec3",
+    "corpus\\synthtiger_084.zip": "eed50f0ca6f58b8b60d0089c63cc67e37049565fc5f4cda0461ac7b6d9fb9469",
+    "corpus\\synthtiger_085.zip": "56ddca53efe7967502ad2f45e881144bbd37b95a7d65e979ca21295df374a743",
+    "corpus\\synthtiger_086.zip": "48470777c905511923a8b83798150c9a42c9a8a1fc4ad45d89208393ae05cc40",
+    "corpus\\synthtiger_087.zip": "2c3fc366ee2bf3e773072b97bd8a563169754554b256f0f8c301990612f70f49",
+    "corpus\\synthtiger_088.zip": "7979fb2d7dac0645295e882ea5fd53a227136b5ee5a0a56db68591a57ba137cc",
+    "corpus\\synthtiger_089.zip": "d5b7fd2dd611ab518a981e5702eec98daa8750af6f218d34e763df5ba88720fb",
+    "corpus\\synthtiger_090.zip": "2f4c4928ab2122b7d22bf0bd42861a3b10326712e72b5470dec69bccf9564d9c",
+    "corpus\\synthtiger_091.zip": "53071b1632ebad7032d5ce320212d31f96056ade59d58ba4a1b0fbe1e1917a28",
+    "corpus\\synthtiger_092.zip": "f9364e90c063eba430d6c08d65792a54a53cbaab4d4bbcf0020761e3f91df00a",
+    "corpus\\synthtiger_093.zip": "624fe3c54e41e29a725848e49a396b61b4fea1e1a9e9598c8bdbfdce20b320ed",
+    "corpus\\synthtiger_094.zip": "b84f374a47ddfac4c33580ef24f0aa58d169edc97fd4858753d978afed5ad53e",
+    "corpus\\synthtiger_095.zip": "5f63a227e4c697028505464797e26c951d92264c69bdc1692d58467680bf8b9b",
+    "corpus\\synthtiger_096.zip": "3fddd6b191af5fe4ce24f963c253a01dc1009db763ff02673382cfae18d06f31",
+    "corpus\\synthtiger_097.zip": "331906b5afd5cca9a19772c90ea5c57323f11d25d58d64db30130abac56a95f6",
+    "corpus\\synthtiger_098.zip": "2c742500967d8cfd0e829eb76ddc2925353a0add4639bc0ce35f7060bde3eb37",
+    "corpus\\synthtiger_099.zip": "77c585d1a4fadb4db51320294a256d787502f54b1fb89e6be3fa4e75ff2d6ced"
+  },
+  "grouping": "Exact settings when <=8 values, otherwise metadata-only quintile bins; no correctness used.",
+  "importance": "Raw reference prevalence for geometry/effects. Exact synthetic font sets use unique source-reference coverage of fitted recipes, not inferred real font identity.",
+  "ties": "Descending reference prevalence then lexical family name; never student accuracy or real labels.",
+  "exclusions": "Zero-reference features have no targeted priority but all their images retain uniform coverage. No real strings or labels read."
+}

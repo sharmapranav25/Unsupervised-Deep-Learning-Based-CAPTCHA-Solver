@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-11-13T06:26:39.341608+00:00",
+  "production_started": true,
+  "model2": {
+    "A": {
+      "model": 2,
+      "dataset": "A",
+      "state": "training",
+      "epoch": 1,
+      "completed_epoch": 0,
+      "batch": 50,
+      "batches": 782,
+      "global_step": 50,
+      "loss": 4.114781379699707,
+      "gradient_norm": 1.0381293296813965,
+      "lr": 1.4847686997723319e-05,
+      "epoch_seconds": 69.6410000002943,
+      "updated_at": "2026-11-13T06:26:05.016234+00:00",
+      "peak_gpu_gib": 7.359851837158203
+    },
+    "B": {
+      "model": 2,
+      "dataset": "B",
+      "state": "training",
+      "epoch": 1,
+      "completed_epoch": 0,
+      "batch": 75,
+      "batches": 782,
+      "global_step": 75,
+      "loss": 4.073349952697754,
+      "gradient_norm": 0.9448687434196472,
+      "lr": 1.590528961551064e-05,
+      "epoch_seconds": 106.875,
+      "updated_at": "2026-11-13T06:26:39.241280+00:00",
+      "peak_gpu_gib": 7.359851837158203
+    }
+  },
+  "model3": "queued after Model2 pair",
+  "readiness_sha256": "62594f8b61b77c6597fed2dd254f91851b94a5b640587a1ed14f614ed6a0bd45",
+  "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3",
+  "rough_remaining_hours": [
+    15,
+    18
+  ],
+  "eta_basis": "First50 updates per reader took about70seconds with the shared GPU; add full-pool Model3 rescoring; provisional, not completion guarantee",
+  "model1_retrained": false
+}

@@ -1,0 +1,129 @@
+{
+  "at": "2026-11-17T01:59:37.196877+00:00",
+  "state": "verified_optimizer_progress",
+  "queued": false,
+  "readiness_passed": true,
+  "first_progress": {
+    "at": "2026-11-17T01:58:48.582306+00:00",
+    "pid": 135188,
+    "process_created": 1794880625.8735883,
+    "optimizer_steps": 100,
+    "epoch": 1,
+    "step_in_epoch": 100
+  },
+  "latest_progress": {
+    "at": "2026-11-17T01:59:33.529563+00:00",
+    "pid": 135188,
+    "process_created": 1794880625.8735883,
+    "optimizer_steps": 200,
+    "epoch": 1,
+    "step_in_epoch": 200
+  },
+  "committed_epochs": 0,
+  "evaluated_epochs": 0,
+  "identities": [
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\handoff\\darkbay_v3_model1_A_seed123_20261116\\coordinator_launch.json",
+      "identity": {
+        "pid": 153968,
+        "process_created": 1794880489.8858502,
+        "command": [
+          "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+          "-B",
+          "-u",
+          "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+          "coordinate"
+        ],
+        "at": "2026-11-17T01:54:49.917993+00:00"
+      },
+      "command": [
+        "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+        "coordinate"
+      ],
+      "matches": true
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\handoff\\darkbay_v3_model1_A_seed123_20261116\\coordinator.lock.json",
+      "identity": {
+        "pid": 151624,
+        "process_created": 1794880489.9902859,
+        "created_at": "2026-11-17T01:54:50.253581+00:00"
+      },
+      "command": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+        "coordinate"
+      ],
+      "matches": true
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\handoff\\darkbay_v3_model1_A_seed123_20261116\\worker_launch.json",
+      "identity": {
+        "pid": 119196,
+        "process_created": 1794880625.8017004,
+        "command": [
+          "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+          "-B",
+          "-u",
+          "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+          "worker"
+        ],
+        "at": "2026-11-17T01:57:05.812381+00:00"
+      },
+      "command": [
+        "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+        "worker"
+      ],
+      "matches": true
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\runs\\darkbay_v3_model1_A_seed123_20261116\\A\\training.lock.json",
+      "identity": {
+        "pid": 135188,
+        "process_created": 1794880625.8735883,
+        "created_at": "2026-11-17T01:57:57.578400+00:00"
+      },
+      "command": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+        "worker"
+      ],
+      "matches": true
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\handoff\\darkbay_v3_model1_A_seed123_20261116\\gpu_owner.lock.json",
+      "identity": {
+        "pid": 135188,
+        "process_created": 1794880625.8735883,
+        "created_at": "2026-11-17T01:57:57.578400+00:00"
+      },
+      "command": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\darkbay_v3_model1_A_seed123_20261116\\capri.py",
+        "worker"
+      ],
+      "matches": true
+    }
+  ],
+  "protocol_sha256": "d3e80df75075b5b4e6718290b85774b9ec41bbd1b46fe6c1f536a7e4ebef0a68",
+  "readiness_receipt_sha256": "af65c3aa2c7091ec447200ee5fc3f785ecef0ee42ae7d27b6fa960499e5f19ba",
+  "scratch_initialization_verified": true,
+  "old_study_STOP_preserved": true,
+  "old_supervision_heartbeat": "remains PAUSED",
+  "evaluation_plan": "All20 checkpoints after training; GPU FP32 batch4, predictions frozen before labels; same900 same-epoch seed48 comparison; epoch20 primary",
+  "baseline24_seconds": 21.282000000122935,
+  "cached24_seconds": 13.953000000212342,
+  "sources_frozen": 276
+}

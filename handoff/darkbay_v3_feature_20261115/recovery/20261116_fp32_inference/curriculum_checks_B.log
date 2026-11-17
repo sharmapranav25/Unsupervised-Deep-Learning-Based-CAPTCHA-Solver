@@ -1,0 +1,16 @@
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\ProgramData\Anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\readers.py", line 127, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\readers.py", line 122, in main
+    elif a.stage=='curriculum-check':curriculum_check(a.dataset)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\readers.py", line 87, in curriculum_check
+    E=bind(3,tag);E.check()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_overnight_v1\engine.py", line 241, in check
+    assert mature256==mature64
+AssertionError

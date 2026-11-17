@@ -1,0 +1,7 @@
+# Adaptive curriculum
+
+Historical implemented rule: initialize from the teacher's ranking and train epoch1 on easy images only. After each epoch, rescore every synthetic training image using the current reader, with deterministic unaugmented FP32 inference and known synthetic labels. Difficulty is summed negative log probability of correct characters from free autoregressive outputs, converted to percentile ranks.
+
+Smooth difficulty as50%previous smoothed rank plus50%current rank. Rebuild three equally sized easy/medium/hard groups. Estimate each group's remaining difficulty with mean(1-exp(-min(NLL,50))). Allocate at least20% and at most50% of next-epoch draws to each group. Limit subsequent changes to10percentage points per epoch; the initial easy-only transition has a special uniform reference. Sample with replacement. Save ranking, bucket masses, model/optimizer/scheduler and random states for resume. Extra full-pool inference adds compute beyond static training.
+
+New A/B design starts from the opposite Model1 teacher, then Model3 updates its own training-pool ranking. No images are regenerated. Reuse Model2's frozen initial ranking. The previous95k/5k split and three-run orchestration are historical and must be adapted; new100k,20epoch runners and smoke checks remain pending. Original exact code: Capri/src/capri_controller/training/ds3_data.py. Original protocol and actual final-checkpoint selection amendments remain under results/historical.

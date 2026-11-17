@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-13T04:24:01.200901+00:00",
+  "device": "cpu",
+  "precision": "FP32",
+  "cpu_threads": 4,
+  "checkpoint": {
+    "seed": 48,
+    "epoch": 15,
+    "global_step": 11730,
+    "checkpoint": "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_dataset_b_100k_20261112\\seed_48\\epoch_15.pth",
+    "sha256": "22d60dd2d795ad4ee881b6c158c9838333b82bcb485babf5951c2a24a8061a03"
+  },
+  "images": 900,
+  "excluded_controller_references": 100,
+  "preprocessing": "RGB,bicubic32x128,ToTensor,Normalize0.5",
+  "decoding": "Saved PARSeq autoregressive decoder, one refinement, no forced length or narrowed charset",
+  "label_access": "Only after all final predictions are frozen",
+  "purpose": "User-requested saved Model1 checkpoint diagnostic; does not alter ongoing training",
+  "model_selection": "User-requested latest fully saved checkpoint captured before inference; no accuracy-based selection",
+  "comparison_limit": "Historical CAPRI1 reference is final epoch20 GPU FP32, not necessarily epoch-matched; CPU numerical differences are possible",
+  "historical_real_test": true,
+  "evaluator_sha256": "5fc5c8973d7c610e1619ab00e59d49416ba0d3fa29b5ccab85e999886067a34c"
+}

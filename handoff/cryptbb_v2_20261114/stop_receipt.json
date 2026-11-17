@@ -1,0 +1,294 @@
+{
+  "stopped_at": "2026-11-14T06:23:25.902948+00:00",
+  "reason": "Explicit user request: stop the run",
+  "process_trees": [
+    {
+      "receipt": "workflow_launch.json",
+      "root_pid": 59988,
+      "processes": [
+        {
+          "pid": 59988,
+          "created": 1794633218.2868235,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-u",
+            "-m",
+            "capri_controller.cryptbb_v2_workflow"
+          ]
+        },
+        {
+          "pid": 86948,
+          "created": 1794633218.3043766,
+          "cmdline": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ]
+        },
+        {
+          "pid": 73548,
+          "created": 1794633218.34424,
+          "cmdline": [
+            "C:\\ProgramData\\Anaconda3\\python.exe",
+            "-B",
+            "-u",
+            "-m",
+            "capri_controller.cryptbb_v2_workflow"
+          ]
+        }
+      ]
+    },
+    {
+      "receipt": "fit_launch.json",
+      "root_pid": 135988,
+      "processes": [
+        {
+          "pid": 135988,
+          "created": 1794633128.399861,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-u",
+            "E:\\pranav\\Thesis-Pranav-Final\\handoff\\cryptbb_v2_20261114\\observe_fit.py"
+          ]
+        },
+        {
+          "pid": 91936,
+          "created": 1794633128.4139504,
+          "cmdline": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ]
+        },
+        {
+          "pid": 149004,
+          "created": 1794633128.4483116,
+          "cmdline": [
+            "C:\\ProgramData\\Anaconda3\\python.exe",
+            "-B",
+            "-u",
+            "E:\\pranav\\Thesis-Pranav-Final\\handoff\\cryptbb_v2_20261114\\observe_fit.py"
+          ]
+        }
+      ]
+    },
+    {
+      "receipt": "fit_status.json",
+      "root_pid": 137140,
+      "processes": [
+        {
+          "pid": 137140,
+          "created": 1794632645.2347612,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-u",
+            "-m",
+            "capri_controller.controller_v2",
+            "--dataset",
+            "cryptbb",
+            "--inputs",
+            "100",
+            "--workers",
+            "14",
+            "--mode",
+            "free",
+            "--out",
+            "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_controller_v2_free_full_20261114"
+          ]
+        },
+        {
+          "pid": 16888,
+          "created": 1794632645.2705529,
+          "cmdline": [
+            "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+            "0x4"
+          ]
+        },
+        {
+          "pid": 51348,
+          "created": 1794632645.3137417,
+          "cmdline": [
+            "C:\\ProgramData\\Anaconda3\\python.exe",
+            "-B",
+            "-u",
+            "-m",
+            "capri_controller.controller_v2",
+            "--dataset",
+            "cryptbb",
+            "--inputs",
+            "100",
+            "--workers",
+            "14",
+            "--mode",
+            "free",
+            "--out",
+            "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_controller_v2_free_full_20261114"
+          ]
+        },
+        {
+          "pid": 157040,
+          "created": 1794632663.692101,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2472)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 151384,
+          "created": 1794632663.7260416,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2404)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 151668,
+          "created": 1794632663.7534308,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2400)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 130232,
+          "created": 1794632666.4128163,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=1476)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 141992,
+          "created": 1794632666.429139,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=1276)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 143328,
+          "created": 1794632666.440376,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=1904)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 128820,
+          "created": 1794632669.9554121,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2092)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 144032,
+          "created": 1794632675.804916,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=1908)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 4064,
+          "created": 1794632675.8245008,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2300)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 152808,
+          "created": 1794632675.8452399,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2392)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 97376,
+          "created": 1794632675.874084,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2136)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 110080,
+          "created": 1794632675.8876462,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2172)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 25088,
+          "created": 1794632675.9128385,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2256)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 142768,
+          "created": 1794632675.9323227,
+          "cmdline": [
+            "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+            "-B",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=51348, pipe_handle=2292)",
+            "--multiprocessing-fork"
+          ]
+        }
+      ]
+    }
+  ],
+  "surviving_pids": [],
+  "last_fit_progress": {
+    "processed": 28,
+    "total": 100,
+    "seconds": 4680.14016699791
+  },
+  "outputs_preserved": true,
+  "automatic_pipeline_disabled_by_stop_file": true
+}

@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-11-15T21:02:33.801719+00:00",
+  "worker": {
+    "pid": 99700,
+    "process_created": 1794776518.6622891,
+    "created_at": "2026-11-15T21:02:02.812267+00:00"
+  },
+  "wrapper": {
+    "pid": 102012,
+    "process_created": 1794776518.5977283,
+    "args": [
+      "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-u",
+      "-X",
+      "faulthandler",
+      "-m",
+      "capri_controller.training.cryptbb_epoch20_static_a",
+      "worker",
+      "--dataset",
+      "A"
+    ],
+    "created_at": "2026-11-15T21:01:58.607232+00:00"
+  },
+  "first": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 1,
+    "completed_epoch": 0,
+    "batch": 1,
+    "global_step": 1,
+    "loss": 4.237785339355469,
+    "gradient_norm": 2.016101121902466,
+    "epoch_seconds": 1.7970000002533197,
+    "updated_at": "2026-11-15T21:02:09.165430+00:00"
+  },
+  "progress": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 1,
+    "completed_epoch": 0,
+    "batch": 25,
+    "global_step": 25,
+    "loss": 4.11328125,
+    "gradient_norm": 1.2965651750564575,
+    "epoch_seconds": 21.469000000040978,
+    "updated_at": "2026-11-15T21:02:28.838223+00:00"
+  },
+  "protocol_sha256": "fc52cbd556a89db1c4240d525c5d21aa8fcda52fc2421b8499b4c203c8ac42b5",
+  "scratch": {
+    "pretrained": false,
+    "seed": 48,
+    "model_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+    "protocol_sha256": "fc52cbd556a89db1c4240d525c5d21aa8fcda52fc2421b8499b4c203c8ac42b5"
+  }
+}

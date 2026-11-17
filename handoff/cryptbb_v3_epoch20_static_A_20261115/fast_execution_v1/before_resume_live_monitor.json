@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-11-15T21:44:26.174802+00:00",
+  "stage": "stopped",
+  "processes": {
+    "coordinator": {
+      "pid": 136948,
+      "process_created": 1794776129.9138908,
+      "created_at": "2026-11-15T20:55:30.237749+00:00",
+      "identity_matches": true,
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "faulthandler",
+        "-m",
+        "capri_controller.training.cryptbb_epoch20_static_a",
+        "coordinate"
+      ]
+    }
+  },
+  "STOP_present": true,
+  "training": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 5,
+    "completed_epoch": 4,
+    "batch": 1,
+    "global_step": 3129,
+    "loss": 0.5830155611038208,
+    "gradient_norm": 3.0634937286376953,
+    "epoch_seconds": 0.9059999999590218,
+    "updated_at": "2026-11-15T21:44:23.832452+00:00"
+  },
+  "ranking": {
+    "processed": 96064,
+    "total": 100000,
+    "seconds": 312.4210000000894
+  }
+}

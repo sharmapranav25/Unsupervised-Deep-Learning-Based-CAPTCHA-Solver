@@ -1,0 +1,1191 @@
+{
+  "frozen_at": "2026-11-14T23:30:54.963442+00:00",
+  "labels_read": false,
+  "code_hashes": {
+    "agreement.py": "6822b4d8c7c7f6e998f0eb77895f892620d36ece3747592b16a924f02a47fe3a",
+    "baselines.py": "9d003db9dae1d077b0edaaf1bbf12d407f77e4fdaaafcf42df354fbb020dc4d3",
+    "estimator.py": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+    "evaluate.py": "7811cb85bd40222b63dff9801ad2bf7c3481ff57867e4881c1ad587c1ccfc95d",
+    "loader.py": "658c4f7e3f79b68011fe0f09338696e47b884e3512d8a7af15a2541cf8b8958a",
+    "plots.py": "67c995c63eb0adaac367c8a3ac07ba59daa1e36c526bdba188dad1fd5a4a877b",
+    "ranking_only.py": "920ef1820c2ad65cd436c44bc75f770b7ec11f6f8125dc09b7d4b8e26a376744",
+    "run.py": "fb1602d5cb753b0c38dd1ccec161de3379ee21b96be60cff909a699bae4a4a4f",
+    "simulate.py": "1b140ce1736e79b8106921e0caedf78b224e32f826a2772c26f5f9bc13dba90a",
+    "__init__.py": "d23b58966b7570a3872afc0d6cf1832e16451361b422979116d667feefa68fdf"
+  },
+  "files": {
+    "factorizations.json": "2d9c5de34ca65a422e9ab2ceda5c4cf236ad3c68b3291c78794897913348a494",
+    "Model1-A_char_agreement.npy": "2e841272bdaee6bfe9658f9bab3d35cdf434b150e1e37f9f1274f078e7eb8938",
+    "Model1-A_char_cross_agreement.npy": "437ac30a4fcb5ca6ab6346d00ed890b7f8f562c11fcf4d20001f01a7def38583",
+    "Model1-A_char_k_selection.json": "675b81f191b1303e560fe1639ad41828e0f2524a340fad3733b47ede35831ef3",
+    "Model1-A_edit_agreement.npy": "0d35553ba15f5f2e5b995de641ab21c00d615a9cb22a5e8a1a37f4052f2b0cc9",
+    "Model1-A_edit_cross_agreement.npy": "4857c462271ff8a0c6f981daa4b07613a83366c4c35681439b1c6025386faa18",
+    "Model1-A_edit_k_selection.json": "0b4c9793b213f7198650ab2bc49681dc8e766f1478c900ee09c39dd653ccc2f7",
+    "Model1-A_exact_agreement.npy": "9b6c2f7169e551627d080bdab7ad243bd04f208daa76b87aff96a62a8c724770",
+    "Model1-A_exact_cross_agreement.npy": "bcf6d381c99211bafdd5fc895a06a12ef4f1fd4f9a1d40f721f274cc64d95127",
+    "Model1-A_exact_k_selection.json": "ac37f3047f3da0a45504189d8ef7afcda66a13ab778d52a470a3d0efbac284a1",
+    "Model1-B_char_agreement.npy": "68a8d33ec96efeb270f05bca4be834d511ef4e48ddb4d6c8863185ad353462b8",
+    "Model1-B_char_cross_agreement.npy": "90b447738f89fabe45a6d7d3e0498608d8e329a41b0a5ce977f3e6ba756340f6",
+    "Model1-B_char_k_selection.json": "f9b87dfa8c500bfba0fa85ebd3d09b477d72573f2b937d8fe81478b658cf2c7d",
+    "Model1-B_edit_agreement.npy": "bf320fb0c9750f0448a2d3989ae7d7745393632b4ccf73a7df71d4978faf85dd",
+    "Model1-B_edit_cross_agreement.npy": "249154606caaf8a5f55c1d92188e86902fb6829c0db0088c192bca2b58058574",
+    "Model1-B_edit_k_selection.json": "dc4250ba9c63074897668e2636788edc7c55c4a4783749346b93bf3682b65208",
+    "Model1-B_exact_agreement.npy": "95a23bf2f5ac2ec7ccbb90f9baddb1a3d834cb06701276c11aafb01ea0498c82",
+    "Model1-B_exact_cross_agreement.npy": "ffce2a54c18a110eb495d011f669c406a9e99b48e34597f34dc6cc992e2196ab",
+    "Model1-B_exact_k_selection.json": "28e2d11e5cf57dd024666f4c009ce9e6238c4428765a6f49600303746b4d77db",
+    "prediction_sources.json": "38f761f129342bbd0dc3314efe5e3268b833ab3493c859e4e46dfdb04acb6898",
+    "pre_real_protocol.json": "1b813d70ade7665b09f2a4890eb642c832d4588cf7902db2052798f841327e07",
+    "rank_diagnostics.json": "52987aa222d83bde0c86fd17569923616d8965b5226a4d80a6a5b9f6bb79907c",
+    "residual_by_distance.csv": "8bd4d0f424980ffab0f03ced4ded3e42475ad3e372149691b69011fd6fe2f8cb",
+    "scores.json": "b440e45979e4c80f5500da10dfd93cae54d4c677d0a678a88a25b7d2ba0d5b06",
+    "simulation_gate.json": "5c918b4f3500b7edd80ec6d60bf3f84f247b2316cf93d6e5aed580647920a9f1"
+  },
+  "selected": [
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 15
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "exact",
+      "k": "auto",
+      "selected_epoch": 14,
+      "resolved_k": 5,
+      "k_criterion_passed": false
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_anytie",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_anytie",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_fractional",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_fractional",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "char",
+      "k": "auto",
+      "selected_epoch": 12,
+      "resolved_k": 5,
+      "k_criterion_passed": false
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_anytie",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_anytie",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_self_fractional",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_loo_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 19
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_mode_fractional",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_all",
+      "kernel": "edit",
+      "k": "all",
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "cross_pairwise",
+      "kernel": "edit",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 20
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-A",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-A",
+      "method": "rank1_auto",
+      "kernel": "edit",
+      "k": "auto",
+      "selected_epoch": 12,
+      "resolved_k": 5,
+      "k_criterion_passed": false
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 14
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 13
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 13
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 13
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "exact",
+      "k": "auto",
+      "selected_epoch": 13,
+      "resolved_k": 5,
+      "k_criterion_passed": false
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_anytie",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_anytie",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 16
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_fractional",
+      "kernel": "exact",
+      "k": "all",
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 3,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 4,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "exact",
+      "k": 5,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_fractional",
+      "kernel": "exact",
+      "k": "cross",
+      "selected_epoch": 16
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 7
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 13
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "char",
+      "k": "auto",
+      "selected_epoch": 12,
+      "resolved_k": 5,
+      "k_criterion_passed": true
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_anytie",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_anytie",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_anytie",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_self_fractional",
+      "kernel": "char",
+      "k": "all",
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_loo_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 0,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 3,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 4,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "mode_neighbour_fractional",
+      "kernel": "char",
+      "k": 5,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_mode_fractional",
+      "kernel": "char",
+      "k": "cross",
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_all",
+      "kernel": "edit",
+      "k": "all",
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "cross_pairwise",
+      "kernel": "edit",
+      "k": "cross",
+      "selected_epoch": 7
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 0,
+      "selected_epoch": 17
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 1,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 2,
+      "selected_epoch": 18
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 4
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 3,
+      "selected_epoch": 13
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 4,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-B",
+      "method": "pairwise_masked",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 5
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1",
+      "kernel": "edit",
+      "k": 5,
+      "selected_epoch": 12
+    },
+    {
+      "run": "Model1-B",
+      "method": "rank1_auto",
+      "kernel": "edit",
+      "k": "auto",
+      "selected_epoch": 12,
+      "resolved_k": 5,
+      "k_criterion_passed": true
+    }
+  ]
+}

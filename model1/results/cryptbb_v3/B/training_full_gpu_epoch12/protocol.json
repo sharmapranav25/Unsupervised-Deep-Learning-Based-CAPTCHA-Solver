@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-11-14T22:27:58.695278+00:00",
+  "epoch": 12,
+  "dataset": "B",
+  "images": 100000,
+  "checkpoint_sha256": "25110b933de35e116bc0019f615764677b83f690a594cc988696b2e6000a8031",
+  "data_receipt": {
+    "images": 100000,
+    "unique_pixels": 100000,
+    "unique_seeds": 100000,
+    "controllers": {
+      "custom": 25000,
+      "dino": 25000,
+      "mixed": 25000,
+      "synthtiger": 25000
+    },
+    "all_images_decoded": true,
+    "old_AB_and_real_pixel_overlap": 0,
+    "new_A_overlap": 0,
+    "lmdb_sha256": "5824df6983de37b02d7659bf286fbbdd1f3316a8005975aec064fe8042d9f13a",
+    "provenance_sha256": "d15ba7d415b2bc712d40e1631aa0ce0c29f6643b09444c79c5c4dc7ee36399f5",
+    "charset_sha256": "b118286e2228265c008bfb74d49d8d065228a4052574abdf69272857fe42c9dd"
+  },
+  "device": "cuda",
+  "precision": "FP32",
+  "batch_size": 64,
+  "threads": 2,
+  "decoding": "Saved free AR and one refinement; no teacher forcing or length forcing",
+  "preprocessing": "RGB PIL bicubic32x128 ToTensor Normalize0.5",
+  "gpu_execution": "Existing training gpu_slot per batch; no training-process mutation",
+  "evaluator_sha256": "22e5f94c31c92f5dded908d2ab65bf00ade0cc14379c55537572d0e607379165",
+  "diagnostic_only": true,
+  "training_changed": false
+}

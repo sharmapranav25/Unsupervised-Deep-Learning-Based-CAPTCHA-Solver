@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-11-14T07:17:21.139283+00:00",
+  "user_request": "Reserve 300 images each for Model4, and 100 each for references",
+  "status": "splits_frozen_no_pseudo_labels_or_training",
+  "selection_salt": "model4-reservation-20261114-v1",
+  "counts": {
+    "darkbay": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 600,
+      "total_unique_images": 1000,
+      "cross_split_pixel_overlap": 0
+    },
+    "cryptbb": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 251,
+      "total_unique_images": 651,
+      "cross_split_pixel_overlap": 0
+    },
+    "city": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 599,
+      "total_unique_images": 999,
+      "cross_split_pixel_overlap": 0
+    }
+  },
+  "duplicate_city_source_files_ignored": 1,
+  "input_manifests": [
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\evaluation_data\\darkbay\\split_manifests\\image_manifest.json",
+      "sha256": "52ed4addf3527f7eda1de26ea3984b0f1bfbbae2a16c351fcac594993b5b8d3a"
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\evaluation_data\\darkbay\\scoring_labels\\scoring_labels.json",
+      "sha256": "9861b917b01e397afd8b6a1311a4efce99890a73aeef6db4f6b4b8898626f05f"
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\evaluation_data\\cryptbb\\image_manifest.json",
+      "sha256": "fa240b7d4a35e1da11bea470f81c40ff03a93121e9547912cdfa50871e5d97f6"
+    },
+    {
+      "path": "E:\\pranav\\Thesis-Pranav-Final\\evaluation_data\\cryptbb\\scoring_labels\\scoring_labels.json",
+      "sha256": "262f72f053c8604176f6f4ddd36907ce740658cc4739a9292df03e1484cf0df0"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\CaptchaThesis\\system5_clean_baseline\\splits\\dev\\city.jsonl",
+      "sha256": "0fb514507f01335d8885ab2ae853ae28653d78deb3c3917943e73895efed6c3a"
+    },
+    {
+      "path": "E:\\pranav\\Final sem\\CaptchaThesis\\system5_clean_baseline\\splits\\test\\city.jsonl",
+      "sha256": "a5c8661634d4c7435111fbcd4a3e945fab7d941f2df2d7bf434174baa459d5e1"
+    }
+  ],
+  "script_sha256": "325196435253b038874d9f89fbd7e95fc1821a383d483e1aa048512523c88e84",
+  "selection": {
+    "darkbay": "Reuse historical 100 controller references; hash-order remaining 900 for 300 Model4.",
+    "cryptbb": "Use historical selftrain100 as reference pixels; hash-order historical test551 for 300 Model4. This replaces the old distinct unlabeled100 reference set for the next run.",
+    "city": "Reuse dev300 as Model4; hash-order test699 for 100 reference and 599 evaluation."
+  },
+  "rules": [
+    "No labels or predictions used in new hash-order selection. Existing City dev split is historical, not newly randomized.",
+    "Model-facing paths are opaque and contain no ground-truth labels.",
+    "scoring_only is forbidden as a generation or Model4 training input; pseudo labels must come from a future frozen teacher procedure.",
+    "Only reference_pool is authorized for new controller fitting. Exclude pseudo_label_pool and evaluation_pool by pixel hash.",
+    "Use the same remaining evaluation pool for future cross-model comparisons; historical full-pool metrics stay historical.",
+    "Teacher, filtering policy and Model4 training budget remain undecided.",
+    "Historical exposure remains; these are not newly untouched tests.",
+    "Old manifests, datasets and stopped jobs remain unchanged."
+  ]
+}

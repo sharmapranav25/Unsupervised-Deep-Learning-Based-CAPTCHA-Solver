@@ -1,0 +1,12 @@
+{
+  "global_seed": 123,
+  "python_hash_seed": 123,
+  "trainer": "Unchanged Trainer.set_random_seed(123): Python, NumPy, torch CPU, all CUDA",
+  "dataset": "Original traversal seeded by Trainer; dataset.seed=123+(epoch-1)",
+  "sampler_constructor": "Pass explicit seed123 instead of implicit None entropy",
+  "sampler_iteration": "Original RatioSampler algorithm, only random.seed(self.epoch) replaced by random.seed(self.seed+self.epoch), initial counter0",
+  "module_generators": "Original module enumeration preserved; hardcoded48+i becomes123+i before any training forward",
+  "inactive_entropy": "Other decoders/CMER transforms not configured. PARSeq default_rng() reset deterministically before use.",
+  "workers": 0,
+  "notes": "Seed changes include previously hardcoded/entropy-derived streams by explicit user request; padding, coverage, order algorithm and upstream training operations unchanged."
+}

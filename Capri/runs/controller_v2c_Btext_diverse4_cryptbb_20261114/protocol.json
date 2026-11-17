@@ -1,0 +1,106 @@
+{
+  "dataset": "cryptbb",
+  "source_run": "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_model1_preparation_20261113\\generator",
+  "preview_inputs": [
+    28,
+    13,
+    94,
+    85
+  ],
+  "input_selection": "most typical + farthest-point on custom whole-image descriptors (no labels, no visual cherry-picking)",
+  "arms": [
+    "custom",
+    "dino",
+    "mixed",
+    "synthtiger"
+  ],
+  "reused_unchanged": [
+    "reference pixels",
+    "CAPRI refined recipes",
+    "calibration features",
+    "objective",
+    "model-derived length"
+  ],
+  "fit_seeds": 3,
+  "validation_seeds": 4,
+  "numeric_search": [
+    [
+      "size_absolute",
+      0.08,
+      0.3,
+      0.95,
+      "size"
+    ],
+    [
+      "width_absolute",
+      0.12,
+      0.4,
+      1.9,
+      "x_scale"
+    ],
+    [
+      "spacing_absolute",
+      0.08,
+      -0.35,
+      0.6,
+      "spacing"
+    ],
+    [
+      "rotation_absolute",
+      5.0,
+      0.0,
+      40.0,
+      "rotation"
+    ],
+    [
+      "jitter_absolute",
+      0.04,
+      0.0,
+      0.3,
+      "jitter"
+    ],
+    [
+      "size_jitter_absolute",
+      0.05,
+      0.0,
+      0.3,
+      "size_jitter"
+    ],
+    [
+      "slant_absolute",
+      0.08,
+      -0.3,
+      0.5,
+      "slant"
+    ],
+    [
+      "weight_absolute",
+      0.15,
+      0.0,
+      1.0,
+      "weight"
+    ],
+    [
+      "bold_absolute",
+      1,
+      0,
+      2,
+      "bold_stroke"
+    ]
+  ],
+  "mode": "bounded",
+  "version": "v2b",
+  "min_text_contrast": 40.0,
+  "background": "replacement candidates over every under-text effect",
+  "surface_fx": [
+    "grain",
+    "blur",
+    "noise_over",
+    "jpeg"
+  ],
+  "target_labels": false,
+  "reader_used": false,
+  "vlm": false,
+  "corpus": false,
+  "code_sha256": "29cd20d0cf8260d96a054a366fd43accc0b9758d8e1c6d06f8b3b1eac0a60f45"
+}

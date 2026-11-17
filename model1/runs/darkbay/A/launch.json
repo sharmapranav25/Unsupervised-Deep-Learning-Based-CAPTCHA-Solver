@@ -1,0 +1,35 @@
+{
+  "pid": 135216,
+  "started_at": "2026-11-12T15:11:00.9519148-08:00",
+  "executable": "E:\\pranav\\Final sem\\sourcefree_synth\\experiments_xgb\\.venv\\Scripts\\python.exe",
+  "arguments": [
+    "-B",
+    "-u",
+    "E:\\pranav\\CAPRI\\capri.py",
+    "train-capri2-parseq",
+    "--out",
+    "E:\\pranav\\CAPRI\\runs\\parseq_darkbay_capri2_100k_20261112",
+    "--resume"
+  ],
+  "working_directory": "E:\\pranav\\CAPRI",
+  "preflight": {
+    "passed": true,
+    "created_at": "2026-11-12T15:10:38.050403-08:00",
+    "data": "baseline",
+    "dataset_images": 100000,
+    "batches_per_epoch": 782,
+    "batch_shape": [
+      128,
+      3,
+      32,
+      128
+    ],
+    "loss": 4.190185546875,
+    "seconds": 1.5820856094360352,
+    "peak_gpu_gib": 7.199338912963867,
+    "optimizer_steps": 0,
+    "torch_version": "2.5.1+cu121",
+    "gpu": "NVIDIA RTX A4000"
+  },
+  "purpose": "Authorized CAPRI2 dataset generation and three-seed PARSeq training"
+}

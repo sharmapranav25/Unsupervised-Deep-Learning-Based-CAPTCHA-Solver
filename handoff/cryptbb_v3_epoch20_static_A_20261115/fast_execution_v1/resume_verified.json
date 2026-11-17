@@ -1,0 +1,41 @@
+{
+  "verified_at": "2026-11-15T21:51:04.980867+00:00",
+  "worker": {
+    "pid": 157784,
+    "process_created": 1794779439.8317254,
+    "created_at": "2026-11-15T21:50:44.553353+00:00"
+  },
+  "first": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 5,
+    "completed_epoch": 4,
+    "batch": 1,
+    "global_step": 3129,
+    "loss": 0.5830155611038208,
+    "gradient_norm": 3.0634937286376953,
+    "epoch_seconds": 1.5619999999180436,
+    "updated_at": "2026-11-15T21:50:51.993332+00:00"
+  },
+  "progress": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 5,
+    "completed_epoch": 4,
+    "batch": 25,
+    "global_step": 3153,
+    "loss": 0.5562478303909302,
+    "gradient_norm": 3.2011399269104004,
+    "epoch_seconds": 10.889999999664724,
+    "updated_at": "2026-11-15T21:51:01.330588+00:00"
+  },
+  "checkpoint": {
+    "epoch": 4,
+    "global_step": 3128,
+    "checkpoint": "checkpoints\\epoch_04.pth",
+    "sha256": "e425cfe82e3d0a238d25d5220a5a39943fcf0870b15d756420593e109734d011",
+    "protocol_sha256": "fc52cbd556a89db1c4240d525c5d21aa8fcda52fc2421b8499b4c203c8ac42b5",
+    "committed_at": "2026-11-15T21:44:22.919311+00:00"
+  },
+  "verification_sha256": "74c75d122299b2fa0087a63960ece77c108f19bb1b9c32896e91550ff1e69d81"
+}

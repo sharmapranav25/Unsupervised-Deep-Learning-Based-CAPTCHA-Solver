@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-12T23:45:13.609911+00:00",
+  "orchestrator_alive": true,
+  "pid": 28076,
+  "reader_runs_each": 1,
+  "frozen_sources_verified": true,
+  "identical_recipes": true,
+  "first_B_shard_hash_verified": true,
+  "A_progress": {
+    "completed_images": 98668,
+    "completed_shards": 296,
+    "requested_shards": 300,
+    "seconds": 957.2107100486755
+  },
+  "B_progress": {
+    "completed_images": 7999,
+    "completed_shards": 24,
+    "requested_shards": 300,
+    "seconds": 173.14274215698242
+  },
+  "A_pipeline": {
+    "updated_at": "2026-11-12T23:29:01.169521+00:00",
+    "stage": "corpus",
+    "state": "running",
+    "pid": 149968,
+    "current_seed": null,
+    "training_started": false
+  },
+  "study": {
+    "updated_at": "2026-11-12T23:42:08.905970+00:00",
+    "stage": "generate_B",
+    "pid": 28076,
+    "state": "running"
+  }
+}

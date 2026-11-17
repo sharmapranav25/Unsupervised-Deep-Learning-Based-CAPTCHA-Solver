@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-13T05:20:45.629143+00:00",
+  "device": "cpu",
+  "reader_results": [
+    {
+      "dataset": "A",
+      "lmdb_images": 100000,
+      "checkpoint_epoch": 20,
+      "frozen_predictions_matched": 16
+    },
+    {
+      "dataset": "B",
+      "lmdb_images": 100000,
+      "checkpoint_epoch": 20,
+      "frozen_predictions_matched": 16
+    }
+  ],
+  "real_image_pixel_hashes_verified": 900,
+  "controller_reference_overlap": 0,
+  "real_scoring_labels_read": false,
+  "capri_ema_strict_load": true,
+  "openocr_loaded_from": "E:\\pranav\\Thesis-Pranav-Final\\model1\\src\\OpenOCR\\openrec\\modeling\\__init__.py",
+  "all_project_inputs_from_new_workspace": true,
+  "external_python_environment": true,
+  "training_launched": false
+}

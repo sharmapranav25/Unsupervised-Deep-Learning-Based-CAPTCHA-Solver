@@ -1,0 +1,21 @@
+{
+  "state": "complete",
+  "evaluations": 112,
+  "images_per_checkpoint": 1000,
+  "coverage": {
+    "Model1": "A/B epochs2-20; epoch1 unavailable",
+    "Model2": "A/B epochs1-20",
+    "Model3": "A/B epochs1-17 captured before inference;18-20 still pending"
+  },
+  "report": "handoff/darkbay_curriculum_20261113/controller4_validation_sweep/REPORT.md",
+  "table": "handoff/darkbay_curriculum_20261113/controller4_validation_sweep/epoch_accuracy.md",
+  "plots": "thesis/figures/darkbay/controller4_validation",
+  "per_reader_results": "modelN/results/darkbay/{A,B}/controller4_validation/epoch_NN",
+  "evaluator": "Capri/tools/evaluate_controller4_validation.py",
+  "evaluator_sha256": "a836e2290b63dfdd5baf3b5e08642d3f502d95fe759f5da75ef4d43240d975f7",
+  "report_script_sha256": "94163d169bee7dbcbeb0998cbec33bc07f0062983fbd23fc4ff7c34d7ac2d828",
+  "verification_sha256": "64bfc1f243422f2e7e2a7c64874b8e30c9d25473ad71db8963de00639eef94ba",
+  "manifest_sha256": "ecee22acf037f4f81b1e2a48a8efba41a543f73cee2cd775a8875db27e4d2044",
+  "plot_visual_inspection": "Both detail PNGs inspected; clear 0-20% axes, raw values, no averages or smoothing",
+  "training_changed": false
+}

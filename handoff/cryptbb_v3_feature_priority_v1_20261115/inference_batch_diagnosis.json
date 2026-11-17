@@ -1,0 +1,29 @@
+{
+  "early": {
+    "weights_unchanged": true,
+    "fixed_batch_repeated_equal": true,
+    "different_strings": 2,
+    "correct256": 0,
+    "correct64": 0,
+    "examples": [
+      {
+        "index": 501,
+        "batch256": "zPPPPPPzPPPkPsPkPPPPzPPPPz",
+        "batch64": "zPPPPPPzPPPPPsPkPPPPzPPPPz"
+      },
+      {
+        "index": 511,
+        "batch256": "zPPPPPPPPPPPPPPPPPPcPPPPPz",
+        "batch64": "zPPPcPPPPPPPPPPPPPPcPPPPPz"
+      }
+    ]
+  },
+  "mature": {
+    "weights_unchanged": true,
+    "fixed_batch_repeated_equal": true,
+    "different_strings": 0,
+    "correct256": 348,
+    "correct64": 348,
+    "examples": []
+  }
+}

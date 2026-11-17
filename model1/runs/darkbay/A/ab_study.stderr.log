@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "E:\pranav\CAPRI\tools\run_ab_study.py", line 6, in <module>
+    if __name__=='__main__':main()
+  File "E:\pranav\CAPRI\src\capri_controller\training\ab_study.py", line 219, in main
+    stage(out,target,'evaluate','evaluate_'+label)
+  File "E:\pranav\CAPRI\src\capri_controller\training\ab_study.py", line 54, in stage
+    call(out, label, cmd, target=target)
+  File "E:\pranav\CAPRI\src\capri_controller\training\ab_study.py", line 31, in call
+    check_stop(out)
+  File "E:\pranav\CAPRI\src\capri_controller\training\ab_study.py", line 27, in check_stop
+    raise RuntimeError('Study STOP marker found; no next stage started')
+RuntimeError: Study STOP marker found; no next stage started

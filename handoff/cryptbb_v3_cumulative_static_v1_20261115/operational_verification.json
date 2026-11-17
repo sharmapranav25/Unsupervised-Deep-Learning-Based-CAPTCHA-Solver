@@ -1,0 +1,80 @@
+{
+  "verified_at": "2026-11-15T09:48:14.969814+00:00",
+  "processes": {
+    "coordinator": {
+      "pid": 132524,
+      "process_created": 1794735964.4724755,
+      "created_at": "2026-11-15T09:46:04.742917+00:00",
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "faulthandler",
+        "-m",
+        "capri_controller.training.cryptbb_cumulative_static",
+        "coordinate"
+      ],
+      "parent_pid": 141208
+    },
+    "worker_A": {
+      "pid": 118224,
+      "process_created": 1794735965.0787847,
+      "created_at": "2026-11-15T09:46:09.417569+00:00",
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "faulthandler",
+        "-m",
+        "capri_controller.training.cryptbb_cumulative_static",
+        "worker",
+        "--dataset",
+        "A"
+      ],
+      "parent_pid": 146268
+    },
+    "evaluation_report": {
+      "pid": 131812,
+      "process_created": 1794735965.0400066,
+      "created_at": "2026-11-15T09:46:05.373249+00:00",
+      "cmdline": [
+        "C:\\ProgramData\\Anaconda3\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "faulthandler",
+        "-m",
+        "capri_controller.training.cryptbb_cumulative_static",
+        "evaluate",
+        "--watch"
+      ],
+      "parent_pid": 155588
+    }
+  },
+  "progress": {
+    "state": "training",
+    "dataset": "A",
+    "epoch": 1,
+    "completed_epoch": 0,
+    "batch": 125,
+    "global_step": 125,
+    "loss": 3.9449822902679443,
+    "gradient_norm": 1.1597198247909546,
+    "epoch_seconds": 102.15700000012293,
+    "updated_at": "2026-11-15T09:47:56.488771+00:00"
+  },
+  "old_processes_absent": true,
+  "old_STOP_preserved": true,
+  "only_A_training": true,
+  "ACLineStatus": 1,
+  "awake": {
+    "requested_at": "2026-11-15T09:46:04.981520+00:00",
+    "system_required": true,
+    "previous_state": -2147483648
+  },
+  "protocol_sha256": "3d16e75acf2bda7dc97acb474038cb014c0ff09d978c03afebe80a1515a8e306",
+  "automation_id": "watch-cryptbb-model1-and-model2-training",
+  "automation_thread": "01a1de90-bfc0-7a13-9206-872058812f3e"
+}

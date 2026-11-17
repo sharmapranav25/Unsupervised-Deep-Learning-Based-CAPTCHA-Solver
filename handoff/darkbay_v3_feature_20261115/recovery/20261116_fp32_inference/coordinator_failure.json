@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-16T15:52:21.214935+00:00",
+  "error": "Traceback (most recent call last):\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_overnight_v1\\coordinator.py\", line 108, in run\n    one('readers',['curriculum-check','--dataset',tag],'curriculum_checks_'+tag)\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_overnight_v1\\coordinator.py\", line 44, in one\n    job=launch_child(module,args,name);supervise([job],[list(paths)])\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_overnight_v1\\coordinator.py\", line 39, in supervise\n    raise RuntimeError('Child failed: '+','.join(x['name'] for x in failed))\nRuntimeError: Child failed: curriculum_checks_B\n",
+  "STOP_present": false,
+  "recovery": "User authorized bounded diagnosis/recovery; no source changes or blind restart"
+}

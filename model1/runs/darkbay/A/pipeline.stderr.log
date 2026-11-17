@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\pranav\CAPRI\capri.py", line 22, in <module>
+    capri2_parseq()
+  File "E:\pranav\CAPRI\src\capri_controller\training\capri2_parseq.py", line 271, in main
+    if args.stage=='run':return run(out,args.resume)
+  File "E:\pranav\CAPRI\src\capri_controller\training\capri2_parseq.py", line 252, in run
+    child(out,'preflight');child(out,'calibration');child(out,'controllers');child(out,'corpus');child(out,'pack');child(out,'preflight')
+  File "E:\pranav\CAPRI\src\capri_controller\training\capri2_parseq.py", line 235, in child
+    if (out/'STOP').exists():raise RuntimeError('User STOP marker found before next stage')
+RuntimeError: User STOP marker found before next stage

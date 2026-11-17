@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-16T05:56:23.266404+00:00",
+  "n": 300,
+  "members": {
+    "M1A": 69,
+    "M1B": 62,
+    "M2A": 67,
+    "M2B": 79,
+    "M3A": 71
+  },
+  "rules": {
+    ">=5/5 agree": {
+      "labelled": 42,
+      "correct": 25,
+      "precision": 0.5952380952380952,
+      "coverage": 0.14
+    },
+    ">=4/5 agree": {
+      "labelled": 79,
+      "correct": 47,
+      "precision": 0.5949367088607594,
+      "coverage": 0.2633333333333333
+    },
+    ">=3/5 agree": {
+      "labelled": 132,
+      "correct": 62,
+      "precision": 0.4696969696969697,
+      "coverage": 0.44
+    }
+  },
+  "plurality_vote_correct": 83,
+  "any_member_correct": 128,
+  "distribution_of_agreement": {
+    "2": 79,
+    "5": 42,
+    "4": 37,
+    "1": 89,
+    "3": 53
+  },
+  "diagnostic_only": true
+}

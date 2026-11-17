@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-14T23:55:19.148904+00:00",
+  "request": "Start model 1 -A training",
+  "supersedes_pause": true,
+  "resume_checkpoint": {
+    "epoch": 1,
+    "global_step": 782,
+    "checkpoint": "epoch_1.pth",
+    "sha256": "f32822442cdc8584b70f7bfb6e37144c3fcf3e80e9a442efc6e86838e9bc6fe8",
+    "completed_at": "2026-11-14T20:33:03.022975+00:00",
+    "protocol_sha256": "2acd4c6b017d0592a81e4a12371344e18e22e1fb456f7ec8e35ea88682a0e597"
+  },
+  "B_completed": {
+    "completed_at": "2026-11-14T23:44:18.161446+00:00",
+    "seconds": 12370.88155579567,
+    "epoch": 20,
+    "global_step": 15640,
+    "checkpoint": "epoch_20.pth",
+    "sha256": "b530ebe4ec3a0a312d71b6eafa9e3452b8c0e0198df795b557cd8c25d2486022",
+    "protocol_sha256": "2acd4c6b017d0592a81e4a12371344e18e22e1fb456f7ec8e35ea88682a0e597",
+    "selection_pending": true
+  },
+  "seed": 48,
+  "batch_size": 128,
+  "target_epoch": 20,
+  "Model2_auto_launch": false
+}

@@ -1,0 +1,2098 @@
+{
+  "selection": "First three references, no visual selection",
+  "method": "Neutral recipe replay uses same synthetic text and seed as saved pilots; all nine controller replays verified pixel-exact.",
+  "examples": [
+    {
+      "input_index": 0,
+      "reference": {
+        "source": "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_model1_preparation_20261113\\inputs\\000_3b77e3ccdcb9.png",
+        "pixel_sha256": "3b77e3ccdcb9a879bf0a079e336f841a953f59069243030a7b0bfe40d76566e3"
+      },
+      "seed": 1400003,
+      "synthetic_text": "xnW6k",
+      "base_recipe": {
+        "description": {
+          "size": [
+            200,
+            60
+          ],
+          "length": 5,
+          "font": {
+            "category": "Serif",
+            "stroke": "Serif",
+            "italic": false,
+            "weight": 4,
+            "width": 4,
+            "x_height": 7,
+            "slant": 8
+          },
+          "content": "mixed",
+          "effects": {
+            "bg_gradient": {
+              "present": false,
+              "level": 0,
+              "probability": 0.007693022023886442
+            },
+            "bg_image_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.35013100504875183
+            },
+            "bg_blocks": {
+              "present": false,
+              "level": 0,
+              "probability": 0.26143521070480347
+            },
+            "bg_grid": {
+              "present": false,
+              "level": 0,
+              "probability": 0.10998382419347763
+            },
+            "bg_circles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.13399465382099152
+            },
+            "bg_decoy_chars": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06113005802035332
+            },
+            "border_frame": {
+              "present": true,
+              "level": 2,
+              "probability": 0.991359531879425
+            },
+            "straight_lines": {
+              "present": false,
+              "level": 0,
+              "probability": 0.05831006541848183
+            },
+            "bands": {
+              "present": false,
+              "level": 0,
+              "probability": 0.018109338358044624
+            },
+            "curves": {
+              "present": false,
+              "level": 0,
+              "probability": 0.32878464460372925
+            },
+            "scribbles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.060371171683073044
+            },
+            "dot_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.22717535495758057
+            },
+            "blob_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.05241496115922928
+            },
+            "bg_pattern": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0809282511472702
+            },
+            "glyph_shadow": {
+              "present": false,
+              "level": 0,
+              "probability": 0.14773079752922058
+            },
+            "extrude_3d": {
+              "present": false,
+              "level": 0,
+              "probability": 0.1828378587961197
+            },
+            "glyph_outline": {
+              "present": false,
+              "level": 0,
+              "probability": 0.100345179438591
+            },
+            "hollow_outline_glyphs": {
+              "present": false,
+              "level": 0,
+              "probability": 0.00266739702783525
+            },
+            "stroke_bold": {
+              "present": false,
+              "level": 0,
+              "probability": 0.04272456839680672
+            },
+            "stroke_thin": {
+              "present": false,
+              "level": 0,
+              "probability": 0.02306508831679821
+            },
+            "glyph_fill_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.011027198284864426
+            },
+            "translucent_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.003862497629597783
+            },
+            "strike_through": {
+              "present": false,
+              "level": 0,
+              "probability": 0.003944295924156904
+            },
+            "noise_over_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.11429426074028015
+            },
+            "occlusion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06733623147010803
+            },
+            "glyph_cuts": {
+              "present": false,
+              "level": 0,
+              "probability": 0.003747787559404969
+            },
+            "wave_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06032220274209976
+            },
+            "morph_distortion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.012833567336201668
+            },
+            "perspective": {
+              "present": false,
+              "level": 0,
+              "probability": 0.013930999673902988
+            },
+            "blur": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06602257490158081
+            },
+            "local_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.07077410072088242
+            },
+            "inverted_regions": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0014654017286375165
+            },
+            "pixel_noise": {
+              "present": true,
+              "level": 8,
+              "probability": 0.5816794633865356
+            },
+            "compression": {
+              "present": false,
+              "level": 0,
+              "probability": 0.2995399236679077
+            },
+            "pixelation": {
+              "present": false,
+              "level": 0,
+              "probability": 0.07702147960662842
+            },
+            "low_resolution": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0730653703212738
+            },
+            "colour_quantization": {
+              "present": false,
+              "level": 0,
+              "probability": 0.033357784152030945
+            }
+          },
+          "text_features": {
+            "per_char_rotation": {
+              "present": true,
+              "level": 3,
+              "probability": 0.7409342527389526
+            },
+            "vertical_jitter": {
+              "present": true,
+              "level": 5,
+              "probability": 0.8312656879425049
+            },
+            "size_variation": {
+              "present": true,
+              "level": 3,
+              "probability": 0.6740003228187561
+            },
+            "text_on_curve": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3516274690628052
+            },
+            "slant": {
+              "present": true,
+              "level": 4,
+              "probability": 0.6671810150146484
+            },
+            "overlap_tight_spacing": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0002420578384771943
+            },
+            "wide_spacing": {
+              "present": true,
+              "level": 2,
+              "probability": 0.9996957778930664
+            },
+            "condensed": {
+              "present": true,
+              "level": 2,
+              "probability": 0.7736340761184692
+            },
+            "expanded": {
+              "present": false,
+              "level": 0,
+              "probability": 0.2120303362607956
+            },
+            "font_mixture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.22861932218074799
+            },
+            "multicolor_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.464706152677536
+            },
+            "two_layer": {
+              "present": false,
+              "level": 0,
+              "probability": 4.930557042825967e-05
+            },
+            "digits_only": {
+              "present": false,
+              "level": 0,
+              "probability": 8.944513751885097e-07
+            },
+            "uppercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.003331247251480818
+            },
+            "lowercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0016894942382350564
+            },
+            "mixed_case_alnum": {
+              "present": true,
+              "level": 5,
+              "probability": 0.9783420562744141
+            }
+          }
+        },
+        "seed": 1100003,
+        "index": 0,
+        "size": [
+          200,
+          60
+        ],
+        "effects_spec": {
+          "background": "random",
+          "effects": [
+            {
+              "name": "border",
+              "level": 2
+            },
+            {
+              "name": "grain",
+              "level": 8
+            }
+          ]
+        },
+        "text_spec": {
+          "text": "GaGwl",
+          "charset": "mixed",
+          "layout": "line",
+          "fonts": [
+            "playfairdisplaysc"
+          ],
+          "size": 0.62,
+          "size_jitter": 0.1299038105676658,
+          "weight": null,
+          "bold_stroke": 0,
+          "x_scale": 0.7296638031604624,
+          "slant": 0.32,
+          "rotation": 18.0,
+          "jitter": 0.1610807251039056,
+          "spacing": 0.2,
+          "curve": 0.0,
+          "multicolour": false,
+          "palette": "contrast"
+        }
+      },
+      "baseline_usable": true,
+      "controllers": [
+        {
+          "entry": "custom_000",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              221,
+              223,
+              224
+            ],
+            "text_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "effect_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": null,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": 1.1,
+            "spacing_absolute": 0.0,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "xnW6k",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "playfairdisplaysc"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.32,
+            "rotation": 18.0,
+            "jitter": 0.1610807251039056,
+            "spacing": 0.0,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "dino_000",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              221,
+              223,
+              224
+            ],
+            "text_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "effect_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": 0.05,
+            "rotation_absolute": null,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": 0.55,
+            "width_absolute": 1.1,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "xnW6k",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "playfairdisplaysc"
+            ],
+            "size": 0.55,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.32,
+            "rotation": 18.0,
+            "jitter": 0.05,
+            "spacing": 0.2,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "mixed_000",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              221,
+              223,
+              224
+            ],
+            "text_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "effect_palette": [
+              [
+                82,
+                77,
+                62
+              ],
+              [
+                127,
+                73,
+                197
+              ],
+              [
+                95,
+                98,
+                138
+              ],
+              [
+                118,
+                134,
+                140
+              ],
+              [
+                135,
+                36,
+                97
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": null,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": 1.1,
+            "spacing_absolute": 0.15,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "xnW6k",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "playfairdisplaysc"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.32,
+            "rotation": 18.0,
+            "jitter": 0.1610807251039056,
+            "spacing": 0.15,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        }
+      ]
+    },
+    {
+      "input_index": 1,
+      "reference": {
+        "source": "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_model1_preparation_20261113\\inputs\\001_2a009ec92aeb.png",
+        "pixel_sha256": "2a009ec92aeb1cec4ea82f8a185b9df5e7f42c460c1cb15a91852aea776fca0b"
+      },
+      "seed": 1401012,
+      "synthetic_text": "Nzzv9",
+      "base_recipe": {
+        "description": {
+          "size": [
+            200,
+            60
+          ],
+          "length": 5,
+          "font": {
+            "category": "Display",
+            "stroke": "Serif",
+            "italic": false,
+            "weight": 4,
+            "width": 4,
+            "x_height": 7,
+            "slant": 7
+          },
+          "content": "mixed",
+          "effects": {
+            "bg_gradient": {
+              "present": false,
+              "level": 0,
+              "probability": 0.00033940820139832795
+            },
+            "bg_image_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.000552113342564553
+            },
+            "bg_blocks": {
+              "present": false,
+              "level": 0,
+              "probability": 0.012665975838899612
+            },
+            "bg_grid": {
+              "present": true,
+              "level": 8,
+              "probability": 0.9931426048278809
+            },
+            "bg_circles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.013877286575734615
+            },
+            "bg_decoy_chars": {
+              "present": false,
+              "level": 0,
+              "probability": 0.004686989355832338
+            },
+            "border_frame": {
+              "present": false,
+              "level": 0,
+              "probability": 0.055949632078409195
+            },
+            "straight_lines": {
+              "present": false,
+              "level": 0,
+              "probability": 0.00378628121688962
+            },
+            "bands": {
+              "present": false,
+              "level": 0,
+              "probability": 0.01254238747060299
+            },
+            "curves": {
+              "present": false,
+              "level": 0,
+              "probability": 0.004708059597760439
+            },
+            "scribbles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0005446572322398424
+            },
+            "dot_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.02366636134684086
+            },
+            "blob_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.005569819360971451
+            },
+            "bg_pattern": {
+              "present": false,
+              "level": 0,
+              "probability": 0.000592402124311775
+            },
+            "glyph_shadow": {
+              "present": false,
+              "level": 0,
+              "probability": 0.08073127269744873
+            },
+            "extrude_3d": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06812085956335068
+            },
+            "glyph_outline": {
+              "present": false,
+              "level": 0,
+              "probability": 0.037087541073560715
+            },
+            "hollow_outline_glyphs": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0028106635436415672
+            },
+            "stroke_bold": {
+              "present": false,
+              "level": 0,
+              "probability": 0.29754793643951416
+            },
+            "stroke_thin": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0266717616468668
+            },
+            "glyph_fill_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.037462297827005386
+            },
+            "translucent_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.009905431419610977
+            },
+            "strike_through": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0011718415189534426
+            },
+            "noise_over_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.01267430279403925
+            },
+            "occlusion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.04716874286532402
+            },
+            "glyph_cuts": {
+              "present": false,
+              "level": 0,
+              "probability": 0.009101011790335178
+            },
+            "wave_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.059628840535879135
+            },
+            "morph_distortion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.09425649046897888
+            },
+            "perspective": {
+              "present": false,
+              "level": 0,
+              "probability": 0.004516526125371456
+            },
+            "blur": {
+              "present": false,
+              "level": 0,
+              "probability": 0.00704178586602211
+            },
+            "local_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.046983543783426285
+            },
+            "inverted_regions": {
+              "present": false,
+              "level": 0,
+              "probability": 0.00010269402991980314
+            },
+            "pixel_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.033537015318870544
+            },
+            "compression": {
+              "present": false,
+              "level": 0,
+              "probability": 0.03558438643813133
+            },
+            "pixelation": {
+              "present": false,
+              "level": 0,
+              "probability": 0.005930422805249691
+            },
+            "low_resolution": {
+              "present": false,
+              "level": 0,
+              "probability": 0.007269822061061859
+            },
+            "colour_quantization": {
+              "present": false,
+              "level": 0,
+              "probability": 0.037060871720314026
+            }
+          },
+          "text_features": {
+            "per_char_rotation": {
+              "present": true,
+              "level": 6,
+              "probability": 0.6170151829719543
+            },
+            "vertical_jitter": {
+              "present": true,
+              "level": 3,
+              "probability": 0.780117928981781
+            },
+            "size_variation": {
+              "present": true,
+              "level": 3,
+              "probability": 0.6746112704277039
+            },
+            "text_on_curve": {
+              "present": false,
+              "level": 0,
+              "probability": 0.23462657630443573
+            },
+            "slant": {
+              "present": true,
+              "level": 4,
+              "probability": 0.6534979343414307
+            },
+            "overlap_tight_spacing": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0050921253859996796
+            },
+            "wide_spacing": {
+              "present": true,
+              "level": 3,
+              "probability": 0.9938212037086487
+            },
+            "condensed": {
+              "present": true,
+              "level": 3,
+              "probability": 0.7781890034675598
+            },
+            "expanded": {
+              "present": false,
+              "level": 0,
+              "probability": 0.22319169342517853
+            },
+            "font_mixture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.2039858102798462
+            },
+            "multicolor_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.4699329733848572
+            },
+            "two_layer": {
+              "present": false,
+              "level": 0,
+              "probability": 1.4684797861264087e-05
+            },
+            "digits_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.002206329256296158
+            },
+            "uppercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3062704801559448
+            },
+            "lowercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.08196797966957092
+            },
+            "mixed_case_alnum": {
+              "present": false,
+              "level": 0,
+              "probability": 0.41954460740089417
+            }
+          }
+        },
+        "seed": 1107922,
+        "index": 1,
+        "size": [
+          200,
+          60
+        ],
+        "effects_spec": {
+          "background": "random",
+          "effects": [
+            {
+              "name": "grid",
+              "level": 8
+            }
+          ]
+        },
+        "text_spec": {
+          "text": "mM7cm",
+          "charset": "mixed",
+          "layout": "line",
+          "fonts": [
+            "sancreek"
+          ],
+          "size": 0.62,
+          "size_jitter": 0.1299038105676658,
+          "weight": null,
+          "bold_stroke": 0,
+          "x_scale": 0.8979378752283999,
+          "slant": 0.28,
+          "rotation": 36.0,
+          "jitter": 0.09664843506234334,
+          "spacing": 0.30000000000000004,
+          "curve": 0.0,
+          "multicolour": false,
+          "palette": "contrast"
+        }
+      },
+      "baseline_usable": true,
+      "controllers": [
+        {
+          "entry": "custom_001",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              255,
+              255,
+              255
+            ],
+            "text_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "effect_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": null,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": 1.1,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "Nzzv9",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "sancreek"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.28,
+            "rotation": 36.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.30000000000000004,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "dino_001",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              255,
+              255,
+              255
+            ],
+            "text_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "effect_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": 20.0,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": 0.8,
+            "width_absolute": null,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "Nzzv9",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "sancreek"
+            ],
+            "size": 0.8,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 0.8979378752283999,
+            "slant": 0.28,
+            "rotation": 20.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.30000000000000004,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "mixed_001",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              255,
+              255,
+              255
+            ],
+            "text_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "effect_palette": [
+              [
+                59,
+                45,
+                159
+              ],
+              [
+                48,
+                91,
+                124
+              ],
+              [
+                125,
+                68,
+                133
+              ],
+              [
+                132,
+                176,
+                29
+              ],
+              [
+                122,
+                146,
+                104
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": 20.0,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": 0.8,
+            "width_absolute": null,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "Nzzv9",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "sancreek"
+            ],
+            "size": 0.8,
+            "size_jitter": 0.1299038105676658,
+            "weight": null,
+            "bold_stroke": 0,
+            "x_scale": 0.8979378752283999,
+            "slant": 0.28,
+            "rotation": 20.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.30000000000000004,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        }
+      ]
+    },
+    {
+      "input_index": 2,
+      "reference": {
+        "source": "E:\\pranav\\Thesis-Pranav-Final\\Capri\\runs\\cryptbb_model1_preparation_20261113\\inputs\\002_451e7f76be85.png",
+        "pixel_sha256": "451e7f76be85595ead0aeeeb0cd657d65e574af77478a2b65c63070eb96aa3cf"
+      },
+      "seed": 1402021,
+      "synthetic_text": "vi9Pf",
+      "base_recipe": {
+        "description": {
+          "size": [
+            200,
+            60
+          ],
+          "length": 5,
+          "font": {
+            "category": "Serif",
+            "stroke": "Serif",
+            "italic": false,
+            "weight": 4,
+            "width": 2,
+            "x_height": 7,
+            "slant": 4
+          },
+          "content": "mixed",
+          "effects": {
+            "bg_gradient": {
+              "present": false,
+              "level": 0,
+              "probability": 0.009006126783788204
+            },
+            "bg_image_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3102701008319855
+            },
+            "bg_blocks": {
+              "present": true,
+              "level": 5,
+              "probability": 0.5325940847396851
+            },
+            "bg_grid": {
+              "present": false,
+              "level": 0,
+              "probability": 0.07799477875232697
+            },
+            "bg_circles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.12018280476331711
+            },
+            "bg_decoy_chars": {
+              "present": false,
+              "level": 0,
+              "probability": 0.03279345482587814
+            },
+            "border_frame": {
+              "present": true,
+              "level": 1,
+              "probability": 0.9650416374206543
+            },
+            "straight_lines": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06017225980758667
+            },
+            "bands": {
+              "present": false,
+              "level": 0,
+              "probability": 0.054941728711128235
+            },
+            "curves": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3079116940498352
+            },
+            "scribbles": {
+              "present": false,
+              "level": 0,
+              "probability": 0.025544673204421997
+            },
+            "dot_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.19190123677253723
+            },
+            "blob_noise": {
+              "present": false,
+              "level": 0,
+              "probability": 0.031872909516096115
+            },
+            "bg_pattern": {
+              "present": false,
+              "level": 0,
+              "probability": 0.09729204326868057
+            },
+            "glyph_shadow": {
+              "present": false,
+              "level": 0,
+              "probability": 0.09491492062807083
+            },
+            "extrude_3d": {
+              "present": false,
+              "level": 0,
+              "probability": 0.08137606084346771
+            },
+            "glyph_outline": {
+              "present": false,
+              "level": 0,
+              "probability": 0.03362661227583885
+            },
+            "hollow_outline_glyphs": {
+              "present": false,
+              "level": 0,
+              "probability": 0.010577453300356865
+            },
+            "stroke_bold": {
+              "present": false,
+              "level": 0,
+              "probability": 0.16768570244312286
+            },
+            "stroke_thin": {
+              "present": false,
+              "level": 0,
+              "probability": 0.013626692816615105
+            },
+            "glyph_fill_texture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.013735692016780376
+            },
+            "translucent_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.019925570115447044
+            },
+            "strike_through": {
+              "present": false,
+              "level": 0,
+              "probability": 0.008244620636105537
+            },
+            "noise_over_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.1074427142739296
+            },
+            "occlusion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3080589175224304
+            },
+            "glyph_cuts": {
+              "present": false,
+              "level": 0,
+              "probability": 0.002435625996440649
+            },
+            "wave_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.045455630868673325
+            },
+            "morph_distortion": {
+              "present": false,
+              "level": 0,
+              "probability": 0.03764853999018669
+            },
+            "perspective": {
+              "present": false,
+              "level": 0,
+              "probability": 0.010434633120894432
+            },
+            "blur": {
+              "present": false,
+              "level": 0,
+              "probability": 0.06826073676347733
+            },
+            "local_warp": {
+              "present": false,
+              "level": 0,
+              "probability": 0.02790512703359127
+            },
+            "inverted_regions": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0006672883755527437
+            },
+            "pixel_noise": {
+              "present": true,
+              "level": 7,
+              "probability": 0.5463448762893677
+            },
+            "compression": {
+              "present": false,
+              "level": 0,
+              "probability": 0.11813119798898697
+            },
+            "pixelation": {
+              "present": false,
+              "level": 0,
+              "probability": 0.07421880960464478
+            },
+            "low_resolution": {
+              "present": false,
+              "level": 0,
+              "probability": 0.07796428352594376
+            },
+            "colour_quantization": {
+              "present": false,
+              "level": 0,
+              "probability": 0.03639758750796318
+            }
+          },
+          "text_features": {
+            "per_char_rotation": {
+              "present": true,
+              "level": 4,
+              "probability": 0.7217573523521423
+            },
+            "vertical_jitter": {
+              "present": true,
+              "level": 3,
+              "probability": 0.8047354817390442
+            },
+            "size_variation": {
+              "present": true,
+              "level": 3,
+              "probability": 0.6640974283218384
+            },
+            "text_on_curve": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3472956418991089
+            },
+            "slant": {
+              "present": true,
+              "level": 5,
+              "probability": 0.6624033451080322
+            },
+            "overlap_tight_spacing": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0009579398902133107
+            },
+            "wide_spacing": {
+              "present": true,
+              "level": 2,
+              "probability": 0.9990240335464478
+            },
+            "condensed": {
+              "present": false,
+              "level": 0,
+              "probability": 0.3396005928516388
+            },
+            "expanded": {
+              "present": true,
+              "level": 6,
+              "probability": 0.6562456488609314
+            },
+            "font_mixture": {
+              "present": false,
+              "level": 0,
+              "probability": 0.22104662656784058
+            },
+            "multicolor_text": {
+              "present": false,
+              "level": 0,
+              "probability": 0.4621448814868927
+            },
+            "two_layer": {
+              "present": false,
+              "level": 0,
+              "probability": 7.937407644931227e-05
+            },
+            "digits_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0013559116050601006
+            },
+            "uppercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.0005346510442905128
+            },
+            "lowercase_only": {
+              "present": false,
+              "level": 0,
+              "probability": 0.009262897074222565
+            },
+            "mixed_case_alnum": {
+              "present": true,
+              "level": 5,
+              "probability": 0.9828190207481384
+            }
+          }
+        },
+        "seed": 1115841,
+        "index": 2,
+        "size": [
+          200,
+          60
+        ],
+        "effects_spec": {
+          "background": "random",
+          "effects": [
+            {
+              "name": "blocks",
+              "level": 5
+            },
+            {
+              "name": "border",
+              "level": 1
+            },
+            {
+              "name": "grain",
+              "level": 7
+            }
+          ]
+        },
+        "text_spec": {
+          "text": "p6GDF",
+          "charset": "mixed",
+          "layout": "line",
+          "fonts": [
+            "manuale"
+          ],
+          "size": 0.62,
+          "size_jitter": 0.1299038105676658,
+          "weight": 0.26405457020020706,
+          "bold_stroke": 0,
+          "x_scale": 0.5251253810600847,
+          "slant": 0.16,
+          "rotation": 24.0,
+          "jitter": 0.09664843506234334,
+          "spacing": 0.2,
+          "curve": 0.0,
+          "multicolour": false,
+          "palette": "contrast"
+        }
+      },
+      "baseline_usable": true,
+      "controllers": [
+        {
+          "entry": "custom_002",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              225,
+              223,
+              223
+            ],
+            "text_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "effect_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": 20.0,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": 1.1,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "vi9Pf",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "manuale"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": 0.26405457020020706,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.16,
+            "rotation": 20.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.2,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "dino_002",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": null,
+            "text_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "effect_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": null,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": [
+              [
+                225,
+                223,
+                223
+              ],
+              [
+                255,
+                255,
+                254
+              ],
+              [
+                252,
+                247,
+                244
+              ],
+              [
+                225,
+                244,
+                228
+              ],
+              [
+                178,
+                160,
+                173
+              ]
+            ],
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": null,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "vi9Pf",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "manuale"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": 0.26405457020020706,
+            "bold_stroke": 0,
+            "x_scale": 0.5251253810600847,
+            "slant": 0.16,
+            "rotation": 24.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.2,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        },
+        {
+          "entry": "mixed_002",
+          "pixel_exact_replay": true,
+          "controls": {
+            "size": 1.0,
+            "width": 1.0,
+            "spacing": 0.0,
+            "rotation": 1.0,
+            "jitter": 1.0,
+            "weight": 0.0,
+            "font": null,
+            "background": [
+              225,
+              223,
+              223
+            ],
+            "text_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "effect_palette": [
+              [
+                135,
+                26,
+                154
+              ],
+              [
+                161,
+                187,
+                81
+              ],
+              [
+                120,
+                60,
+                75
+              ],
+              [
+                169,
+                92,
+                94
+              ],
+              [
+                128,
+                64,
+                82
+              ]
+            ],
+            "color_mode": "alternating",
+            "effects": {},
+            "length": 5,
+            "jitter_absolute": null,
+            "rotation_absolute": 20.0,
+            "bold_extra": 0,
+            "font_pool": null,
+            "background_pool": null,
+            "block_layout": null,
+            "block_speckle": null,
+            "effect_styles": {},
+            "keep_only": null,
+            "charset": null,
+            "layout": null,
+            "size_absolute": null,
+            "width_absolute": 1.1,
+            "spacing_absolute": null,
+            "weight_absolute": null,
+            "bold_absolute": null,
+            "slant_absolute": null,
+            "size_jitter_absolute": null,
+            "curve_absolute": null,
+            "glyph_outline": 0,
+            "frame_width": 0,
+            "frame_padding": 2
+          },
+          "final_text_spec": {
+            "text": "vi9Pf",
+            "charset": "mixed",
+            "layout": "line",
+            "fonts": [
+              "manuale"
+            ],
+            "size": 0.62,
+            "size_jitter": 0.1299038105676658,
+            "weight": 0.26405457020020706,
+            "bold_stroke": 0,
+            "x_scale": 1.1,
+            "slant": 0.16,
+            "rotation": 20.0,
+            "jitter": 0.09664843506234334,
+            "spacing": 0.2,
+            "curve": 0.0,
+            "multicolour": false,
+            "palette": "contrast"
+          }
+        }
+      ]
+    }
+  ]
+}

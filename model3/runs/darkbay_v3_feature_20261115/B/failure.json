@@ -1,0 +1,6 @@
+{
+  "updated_at": "2026-11-17T00:40:06.424716+00:00",
+  "completed_epoch": 14,
+  "error": "Traceback (most recent call last):\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_overnight_v1\\engine.py\", line 285, in worker\n    stop_check();loss,norm=C.step(model,opt,sched,scaler,batch);losses.append(loss)\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_overnight_v1\\common.py\", line 20, in stop\n    if (STUDY/'STOP').exists():raise RuntimeError('User STOP; no automatic removal')\nRuntimeError: User STOP; no automatic removal\n",
+  "automatic_restart": false
+}

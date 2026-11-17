@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "all_images_decoded_and_pixel_verified": true,
+  "opaque_paths": true,
+  "cross_split_pixel_overlap": 0,
+  "counts": {
+    "darkbay": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 600,
+      "total_unique_images": 1000,
+      "cross_split_pixel_overlap": 0
+    },
+    "cryptbb": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 251,
+      "total_unique_images": 651,
+      "cross_split_pixel_overlap": 0
+    },
+    "city": {
+      "reference_images": 100,
+      "model4_reserved": 300,
+      "evaluation": 599,
+      "total_unique_images": 999,
+      "cross_split_pixel_overlap": 0
+    }
+  },
+  "manifest_hashes": [
+    {
+      "path": "evaluation_data/model4_reservation_20261114/city/evaluation_pool.json",
+      "sha256": "c51dbec8e412fdb9b5503d6f25e8dcb79eb6c9754567cbc809a44a5d07e9c1fe"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/city/pseudo_label_pool.json",
+      "sha256": "a44915cd2dd19961bb1c3001b88fde6a0d0355832e28da3852ef09dae34e6470"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/city/reference_pool.json",
+      "sha256": "dfd0e11aeae1f86a60ca3cacd285986175048032b27e710c967de5c60dfd0efd"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/cryptbb/evaluation_pool.json",
+      "sha256": "dba4dccedb752f910b71d19073f1a22e8fd0582207102f4f268904793cbac5fd"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/cryptbb/pseudo_label_pool.json",
+      "sha256": "2259354db92fcb67e607b535085474dd70fe81c8c8b706f0fec92d9260a30551"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/cryptbb/reference_pool.json",
+      "sha256": "7b7fa203b448448632095a21895fc2fc5a702c01028cb3b28400e404a38aa6d6"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/darkbay/evaluation_pool.json",
+      "sha256": "784af144848eb7c811b2d1789bf94aaba2de3bf997315677f3a9b257fbc68b84"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/darkbay/pseudo_label_pool.json",
+      "sha256": "590b6c54867ed452c6399f14b8f536312e618eba202926dcd4b4816cd3e81311"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/darkbay/reference_pool.json",
+      "sha256": "241ede7bd4cdab04901c0db7a0c34b21f30637fa9366b0a99e4be4de46721ba4"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/protocol.json",
+      "sha256": "950963a0737bb5eeba741fdf9682dfbf4789d6bb8adc277d5d80387ac8d2d987"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/city/evaluation_pool_labels.json",
+      "sha256": "4a532ce73889711c97ed4f18f78c031e993d5d42e3a51f2ac0a92c9001b9b340"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/city/pseudo_label_pool_labels.json",
+      "sha256": "907e4fd018d66b6514e0dbd37e60aa90422bd68d2bfddc7cda2bdc8de51540a4"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/city/reference_pool_labels.json",
+      "sha256": "0e7566111e274f254439fd904e9af90ddbe26a0aa9547a92600455789778911a"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/city/source_provenance.json",
+      "sha256": "ae47dd1ad17d6512e433855bd86e9ba4ef292961d66cced6b68f0b27720dbb33"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/cryptbb/evaluation_pool_labels.json",
+      "sha256": "80cde8538b3dc113064c61b1087d2f83ace928d4ef68381e51370b12c818b81e"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/cryptbb/pseudo_label_pool_labels.json",
+      "sha256": "94c6fcb0ab73340a5027fd7be4ee936f82481f662d45f9737ed77378f174270b"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/cryptbb/reference_pool_labels.json",
+      "sha256": "b63e3f032d515573c3af4284065fbe9bd2823b8aab544847e9276a2a6ea15df8"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/cryptbb/source_provenance.json",
+      "sha256": "bc5534d8951879a956d05082972aa4709c1a254b8a5573b15bfff15d76e6d231"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/darkbay/evaluation_pool_labels.json",
+      "sha256": "b75595703bcfe4da9b0a85abf7b817e3de4fa7289fe0ec2460374d78b673ded5"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/darkbay/pseudo_label_pool_labels.json",
+      "sha256": "ebc774247787f6240ca17861d0e787ef7179f2bc87d76b4530faf778eff11b70"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/darkbay/reference_pool_labels.json",
+      "sha256": "04b969037632837274cf923eee39280d1875d135bae33dc85c0b0bad11c53a86"
+    },
+    {
+      "path": "evaluation_data/model4_reservation_20261114/scoring_only/darkbay/source_provenance.json",
+      "sha256": "3880f61e47e8e117702e16b58688689c6ca6f13f7894ae29d4d27d5156244c8b"
+    }
+  ]
+}

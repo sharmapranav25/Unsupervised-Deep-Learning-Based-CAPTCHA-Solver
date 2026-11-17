@@ -1,0 +1,16 @@
+Cubic least-squares fits to real DarkBay accuracy through epoch11.
+e = epoch; y = fitted accuracy in percent. Fit raw values, not moving averages.
+Same degree3 for all runs. Dataset A and B separate; no extrapolation.
+
+Dataset A, Model 1: y = 0.085492*e^3 -2.017677*e^2 +16.590434*e +16.989899
+  Domain: 2 <= e <= 11; RMSE 3.047566 percentage points.
+Dataset A, Model 2: y = 0.334002*e^3 -7.237892*e^2 +48.938207*e -37.102694
+  Domain: 1 <= e <= 11; RMSE 5.254563 percentage points.
+Dataset A, Model 3: y = 0.222611*e^3 -5.555685*e^2 +43.369852*e -34.831650
+  Domain: 1 <= e <= 11; RMSE 3.589744 percentage points.
+Dataset B, Model 1: y = 0.054671*e^3 -1.843434*e^2 +18.803915*e +6.858923
+  Domain: 2 <= e <= 11; RMSE 2.015667 percentage points.
+Dataset B, Model 2: y = 0.193732*e^3 -4.685444*e^2 +36.713416*e -27.063973
+  Domain: 1 <= e <= 11; RMSE 4.694297 percentage points.
+Dataset B, Model 3: y = 0.258159*e^3 -5.838254*e^2 +42.346348*e -32.456229
+  Domain: 1 <= e <= 11; RMSE 5.051046 percentage points.

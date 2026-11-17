@@ -1,0 +1,41 @@
+{
+  "config": {
+    "seed": 4817,
+    "bootstrap_samples": 2000,
+    "bootstrap_batch": 100,
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "low_partner_score": 0.05,
+    "low_score_fraction_warning": 0.5,
+    "degenerate_score": 0.01,
+    "degenerate_output_share": 0.5,
+    "denominator_floor": 1e-06,
+    "bootstrap_confidence": 0.95,
+    "candidate_rule": "95% percentile CI overlaps the distant-score winner CI",
+    "plateau_rule": "mean distant score over original epochs t-k through t+k, including self",
+    "fallback_rule": "largest permitted k; explicitly mark criterion failure",
+    "coupling_tau_min": 0.05,
+    "coupling_tau_max_multiplier": 100,
+    "interpretation": "Uncalibrated agreement-factor ranking scores, not accuracy probabilities"
+  },
+  "code_hashes": {
+    "agreement.py": "6822b4d8c7c7f6e998f0eb77895f892620d36ece3747592b16a924f02a47fe3a",
+    "baselines.py": "9d003db9dae1d077b0edaaf1bbf12d407f77e4fdaaafcf42df354fbb020dc4d3",
+    "estimator.py": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+    "evaluate.py": "7d8fb726652cf767ebd1a5db810a20b0281fcfa32aae0a421384c24b86ea121f",
+    "loader.py": "658c4f7e3f79b68011fe0f09338696e47b884e3512d8a7af15a2541cf8b8958a",
+    "plots.py": "67c995c63eb0adaac367c8a3ac07ba59daa1e36c526bdba188dad1fd5a4a877b",
+    "ranking_only.py": "920ef1820c2ad65cd436c44bc75f770b7ec11f6f8125dc09b7d4b8e26a376744",
+    "regimes.py": "1037d0d3c54626854618e5f53540a8cf48c219ce3e245294d1d870497925ba4b",
+    "run.py": "fb1602d5cb753b0c38dd1ccec161de3379ee21b96be60cff909a699bae4a4a4f",
+    "run_regimes.py": "ba8015a9c512acd8e414b4c6ec6e5e44f913b822e6ad4999547ae421d6e64046",
+    "simulate.py": "1b140ce1736e79b8106921e0caedf78b224e32f826a2772c26f5f9bc13dba90a",
+    "__init__.py": "d23b58966b7570a3872afc0d6cf1832e16451361b422979116d667feefa68fdf"
+  },
+  "created_at": "2026-11-14T23:58:29.145058+00:00",
+  "burnin": "Flags from all-partners k0 factor <0.01, or >50% empty/identical strings across images; fixed for bootstrap. Flag all degenerate epochs, report whether early. Excluded epochs inferred afterward, never steer active scores.",
+  "bootstrap": "2000 paired image resamples, refit scores; original k/exclusions frozen. Conditional percentile CIs, not selection-adjusted or accuracy CIs.",
+  "mode_decomposition": "Regional voter-pool modes, not additive decomposition of nonlinear global mode.",
+  "joint_fit": "Four deterministic starts; log tau bounded 0.05..100*n for numerical stability; boundary solutions reported.",
+  "posthoc": "Version2 requested after earlier results/labels were inspected. Retrospective evaluation, no thresholds tuned on the 251 labels."
+}

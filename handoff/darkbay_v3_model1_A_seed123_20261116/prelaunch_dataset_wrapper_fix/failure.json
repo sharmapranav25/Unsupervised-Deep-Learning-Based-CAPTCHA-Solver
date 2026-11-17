@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-17T01:53:46.078733+00:00",
+  "error": "Traceback (most recent call last):\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_model1_seed123.py\", line 334, in coordinate\n    if not (STUDY/'readiness/receipt.json').exists():child('readiness')\n  File \"E:\\pranav\\Thesis-Pranav-Final\\Capri\\src\\capri_controller\\training\\darkbay_model1_seed123.py\", line 326, in child\n    assert p.returncode==0, f'{stage} failed; inspect logs, no blind retry'\nAssertionError: readiness failed; inspect logs, no blind retry\n",
+  "STOP_present": false,
+  "action": "Diagnose; do not blindly retry or resume historical work"
+}

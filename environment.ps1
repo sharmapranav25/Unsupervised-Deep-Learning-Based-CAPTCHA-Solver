@@ -1,0 +1,19 @@
+$thesisRoot = $PSScriptRoot
+$thesisConfig = Get-Content (Join-Path $thesisRoot 'runtime/local.json') -Raw | ConvertFrom-Json
+$thesisPython = $thesisConfig.python
+$env:PYTHONDONTWRITEBYTECODE = '1'
+$env:TEMP = Join-Path $thesisRoot 'runtime/temporary'
+$env:TMP = $env:TEMP
+$env:TORCH_HOME = Join-Path $thesisRoot 'runtime/cache/torch'
+$env:HF_HOME = Join-Path $thesisRoot 'runtime/cache/huggingface'
+$env:XDG_CACHE_HOME = Join-Path $thesisRoot 'runtime/cache'
+$env:MPLCONFIGDIR = Join-Path $thesisRoot 'runtime/cache/matplotlib'
+$env:PIP_CACHE_DIR = Join-Path $thesisRoot 'runtime/cache/pip'
+$env:NO_ALBUMENTATIONS_UPDATE = '1'
+$env:HF_HUB_OFFLINE = '1'
+$env:TRANSFORMERS_OFFLINE = '1'
+$env:CAPRI_CONFIG = Join-Path $thesisRoot 'Capri/configs/local.json'
+$env:CAPRI_PROJECT = Join-Path $thesisRoot 'Capri/dependencies/sourcefree_synth'
+$env:CAPRI_RENDERER = Join-Path $thesisRoot 'Capri/renderer'
+$env:PYTHONPATH = ((Join-Path $thesisRoot 'model1/src/parseq_packages'), (Join-Path $thesisRoot 'model1/src/OpenOCR'), (Join-Path $thesisRoot 'Capri/src')) -join ';'
+New-Item -ItemType Directory -Force $env:TEMP,$env:TORCH_HOME,$env:HF_HOME,$env:XDG_CACHE_HOME,$env:MPLCONFIGDIR,$env:PIP_CACHE_DIR | Out-Null

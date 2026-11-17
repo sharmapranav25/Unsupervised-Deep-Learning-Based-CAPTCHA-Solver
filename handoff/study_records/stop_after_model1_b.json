@@ -1,0 +1,10 @@
+{
+  "requested_at": "2026-11-12T18:57:53.4550481-08:00",
+  "requested_action": "Finish Model 1-B, then stop",
+  "allow_current_training_to_finish": true,
+  "stop_before": "evaluate_A",
+  "further_evaluation_authorized": false,
+  "further_training_authorized": false,
+  "mechanism": "Existing coordinator STOP check before next stage",
+  "note": "Coordinator records the STOP-triggered exit as failed; interpret together with this user stop request and the saved B completion receipt."
+}

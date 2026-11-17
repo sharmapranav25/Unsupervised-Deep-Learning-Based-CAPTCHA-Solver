@@ -1,0 +1,125 @@
+[2026/11/14 12:16:21] openrec INFO: ----------- Config -----------
+[2026/11/14 12:16:21] openrec INFO: Architecture : 
+[2026/11/14 12:16:21] openrec INFO:     Decoder : 
+[2026/11/14 12:16:21] openrec INFO:         decode_ar : True
+[2026/11/14 12:16:21] openrec INFO:         name : PARSeqDecoder
+[2026/11/14 12:16:21] openrec INFO:         only_attn : False
+[2026/11/14 12:16:21] openrec INFO:         refine_iters : 1
+[2026/11/14 12:16:21] openrec INFO:     Encoder : 
+[2026/11/14 12:16:21] openrec INFO:         depths : [6, 6, 6]
+[2026/11/14 12:16:21] openrec INFO:         dims : [128, 256, 384]
+[2026/11/14 12:16:21] openrec INFO:         last_stage : False
+[2026/11/14 12:16:21] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/14 12:16:21] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/14 12:16:21] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/14 12:16:21] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/14 12:16:21] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/14 12:16:21] openrec INFO:         use_pos_embed : False
+[2026/11/14 12:16:21] openrec INFO:     Transform : None
+[2026/11/14 12:16:21] openrec INFO:     algorithm : PARSeq
+[2026/11/14 12:16:21] openrec INFO:     model_type : rec
+[2026/11/14 12:16:21] openrec INFO: Eval : None
+[2026/11/14 12:16:21] openrec INFO: Global : 
+[2026/11/14 12:16:21] openrec INFO:     cal_metric_during_train : False
+[2026/11/14 12:16:21] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 12:16:21] openrec INFO:     checkpoints : None
+[2026/11/14 12:16:21] openrec INFO:     device : gpu
+[2026/11/14 12:16:21] openrec INFO:     distributed : False
+[2026/11/14 12:16:21] openrec INFO:     epoch_num : 20
+[2026/11/14 12:16:21] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/14 12:16:21] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/14 12:16:21] openrec INFO:     grad_clip_val : 20
+[2026/11/14 12:16:21] openrec INFO:     infer_img : None
+[2026/11/14 12:16:21] openrec INFO:     log_smooth_window : 20
+[2026/11/14 12:16:21] openrec INFO:     max_text_length : 25
+[2026/11/14 12:16:21] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\model1\runs\cryptbb_v3\A
+[2026/11/14 12:16:21] openrec INFO:     pretrained_model : None
+[2026/11/14 12:16:21] openrec INFO:     print_batch_step : 50
+[2026/11/14 12:16:21] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/14 12:16:21] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\cryptbb_v3\A\predictions_unused.txt
+[2026/11/14 12:16:21] openrec INFO:     seed : 48
+[2026/11/14 12:16:21] openrec INFO:     use_amp : True
+[2026/11/14 12:16:21] openrec INFO:     use_space_char : False
+[2026/11/14 12:16:21] openrec INFO:     use_tensorboard : False
+[2026/11/14 12:16:21] openrec INFO: LRScheduler : 
+[2026/11/14 12:16:21] openrec INFO:     cycle_momentum : False
+[2026/11/14 12:16:21] openrec INFO:     name : OneCycleLR
+[2026/11/14 12:16:21] openrec INFO:     warmup_epoch : 2
+[2026/11/14 12:16:21] openrec INFO: Loss : 
+[2026/11/14 12:16:21] openrec INFO:     name : PARSeqLoss
+[2026/11/14 12:16:21] openrec INFO: Metric : 
+[2026/11/14 12:16:21] openrec INFO:     is_filter : False
+[2026/11/14 12:16:21] openrec INFO:     is_lower : False
+[2026/11/14 12:16:21] openrec INFO:     main_indicator : acc
+[2026/11/14 12:16:21] openrec INFO:     name : RecMetric
+[2026/11/14 12:16:21] openrec INFO: Optimizer : 
+[2026/11/14 12:16:21] openrec INFO:     filter_bias_and_bn : True
+[2026/11/14 12:16:21] openrec INFO:     lr : 0.00035
+[2026/11/14 12:16:21] openrec INFO:     name : AdamW
+[2026/11/14 12:16:21] openrec INFO:     weight_decay : 0.05
+[2026/11/14 12:16:21] openrec INFO: PostProcess : 
+[2026/11/14 12:16:21] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 12:16:21] openrec INFO:     name : ARLabelDecode
+[2026/11/14 12:16:21] openrec INFO:     use_space_char : False
+[2026/11/14 12:16:21] openrec INFO: Train : 
+[2026/11/14 12:16:21] openrec INFO:     dataset : 
+[2026/11/14 12:16:21] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\cryptbb_v3\\A\\train_lmdb']
+[2026/11/14 12:16:21] openrec INFO:         ds_width : True
+[2026/11/14 12:16:21] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/14 12:16:21] openrec INFO:         padding : False
+[2026/11/14 12:16:21] openrec INFO:         transforms : 
+[2026/11/14 12:16:21] openrec INFO:             DecodeImagePIL : 
+[2026/11/14 12:16:21] openrec INFO:                 img_mode : RGB
+[2026/11/14 12:16:21] openrec INFO:             ARLabelEncode : 
+[2026/11/14 12:16:21] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\charset.txt
+[2026/11/14 12:16:21] openrec INFO:                 max_text_length : 25
+[2026/11/14 12:16:21] openrec INFO:                 use_space_char : False
+[2026/11/14 12:16:21] openrec INFO:             KeepKeys : 
+[2026/11/14 12:16:21] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/14 12:16:21] openrec INFO:     loader : 
+[2026/11/14 12:16:21] openrec INFO:         batch_size_per_card : 128
+[2026/11/14 12:16:21] openrec INFO:         drop_last : True
+[2026/11/14 12:16:21] openrec INFO:         max_ratio : 4
+[2026/11/14 12:16:21] openrec INFO:         min_ratio : 4
+[2026/11/14 12:16:21] openrec INFO:         num_workers : 0
+[2026/11/14 12:16:21] openrec INFO:         shuffle : True
+[2026/11/14 12:16:21] openrec INFO:     sampler : 
+[2026/11/14 12:16:21] openrec INFO:         divided_factor : [4, 16]
+[2026/11/14 12:16:21] openrec INFO:         first_bs : 128
+[2026/11/14 12:16:21] openrec INFO:         fix_bs : True
+[2026/11/14 12:16:21] openrec INFO:         is_training : True
+[2026/11/14 12:16:21] openrec INFO:         name : RatioSampler
+[2026/11/14 12:16:21] openrec INFO:         scales : [[128, 32]]
+[2026/11/14 12:16:21] openrec INFO: filename : prepared
+[2026/11/14 12:16:21] openrec INFO: ---------------------------------------------
+[2026/11/14 12:16:25] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\cryptbb_v3\A\train_lmdb
+[2026/11/14 12:16:25] openrec INFO: 0
+[2026/11/14 12:16:25] openrec INFO: 0
+[2026/11/14 12:16:25] openrec INFO: 0
+[2026/11/14 12:16:25] openrec INFO: 0
+[2026/11/14 12:16:25] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/14 12:16:26] openrec INFO: train dataloader has 782 iters
+[2026/11/14 12:16:26] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/14 12:16:26] openrec INFO: train from scratch
+[2026/11/14 12:16:26] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+[2026/11/14 12:17:07] openrec INFO: epoch: [1/20], global_step: 50, lr: 0.000015, loss: 4.111845, avg_reader_cost: 0.29585 s, avg_batch_cost: 0.81491 s, avg_samples: 128.0, ips: 157.07334 samples/s, eta: 3:31:44
+[2026/11/14 12:17:48] openrec INFO: epoch: [1/20], global_step: 100, lr: 0.000017, loss: 4.048044, avg_reader_cost: 0.30536 s, avg_batch_cost: 0.80339 s, avg_samples: 128.0, ips: 159.32560 samples/s, eta: 3:29:34
+[2026/11/14 12:18:53] openrec INFO: epoch: [1/20], global_step: 150, lr: 0.000021, loss: 3.989954, avg_reader_cost: 0.79422 s, avg_batch_cost: 1.29375 s, avg_samples: 128.0, ips: 98.93683 samples/s, eta: 4:10:35
+[2026/11/14 12:20:00] openrec INFO: epoch: [1/20], global_step: 200, lr: 0.000026, loss: 3.968872, avg_reader_cost: 0.82030 s, avg_batch_cost: 1.34877 s, avg_samples: 128.0, ips: 94.90137 samples/s, eta: 4:34:06
+[2026/11/14 12:21:07] openrec INFO: epoch: [1/20], global_step: 250, lr: 0.000033, loss: 3.900372, avg_reader_cost: 0.81218 s, avg_batch_cost: 1.33442 s, avg_samples: 128.0, ips: 95.92194 samples/s, eta: 4:47:02
+[2026/11/14 12:22:14] openrec INFO: epoch: [1/20], global_step: 300, lr: 0.000042, loss: 3.869053, avg_reader_cost: 0.81626 s, avg_batch_cost: 1.33706 s, avg_samples: 128.0, ips: 95.73231 samples/s, eta: 4:55:23
+[2026/11/14 12:23:20] openrec INFO: epoch: [1/20], global_step: 350, lr: 0.000052, loss: 3.862967, avg_reader_cost: 0.80739 s, avg_batch_cost: 1.31454 s, avg_samples: 128.0, ips: 97.37236 samples/s, eta: 5:00:13
+[2026/11/14 12:24:27] openrec INFO: epoch: [1/20], global_step: 400, lr: 0.000063, loss: 3.859496, avg_reader_cost: 0.81747 s, avg_batch_cost: 1.33504 s, avg_samples: 128.0, ips: 95.87747 samples/s, eta: 5:04:13
+[2026/11/14 12:25:35] openrec INFO: epoch: [1/20], global_step: 450, lr: 0.000076, loss: 3.853861, avg_reader_cost: 0.82279 s, avg_batch_cost: 1.35092 s, avg_samples: 128.0, ips: 94.74997 samples/s, eta: 5:07:32
+[2026/11/14 12:26:43] openrec INFO: epoch: [1/20], global_step: 500, lr: 0.000089, loss: 3.842980, avg_reader_cost: 0.82310 s, avg_batch_cost: 1.34304 s, avg_samples: 128.0, ips: 95.30634 samples/s, eta: 5:09:45
+[2026/11/14 12:27:51] openrec INFO: epoch: [1/20], global_step: 550, lr: 0.000104, loss: 3.847178, avg_reader_cost: 0.83544 s, avg_batch_cost: 1.35558 s, avg_samples: 128.0, ips: 94.42453 samples/s, eta: 5:11:39
+[2026/11/14 12:28:56] openrec INFO: epoch: [1/20], global_step: 600, lr: 0.000119, loss: 3.837773, avg_reader_cost: 0.79519 s, avg_batch_cost: 1.30575 s, avg_samples: 128.0, ips: 98.02762 samples/s, eta: 5:12:01
+[2026/11/14 12:30:03] openrec INFO: epoch: [1/20], global_step: 650, lr: 0.000135, loss: 3.828622, avg_reader_cost: 0.79700 s, avg_batch_cost: 1.32433 s, avg_samples: 128.0, ips: 96.65249 samples/s, eta: 5:12:30
+[2026/11/14 12:31:10] openrec INFO: epoch: [1/20], global_step: 700, lr: 0.000151, loss: 3.842087, avg_reader_cost: 0.81484 s, avg_batch_cost: 1.33877 s, avg_samples: 128.0, ips: 95.61044 samples/s, eta: 5:13:02
+[2026/11/14 12:32:17] openrec INFO: epoch: [1/20], global_step: 750, lr: 0.000168, loss: 3.818004, avg_reader_cost: 0.80026 s, avg_batch_cost: 1.32792 s, avg_samples: 128.0, ips: 96.39161 samples/s, eta: 5:13:09
+[2026/11/14 12:33:00] openrec INFO: epoch: [1/20], global_step: 782, lr: 0.000179, loss: 3.825254, avg_reader_cost: 0.52011 s, avg_batch_cost: 0.85653 s, avg_samples: 81.92, ips: 95.64121 samples/s, eta: 5:13:15
+0 100000 128.0 781 128

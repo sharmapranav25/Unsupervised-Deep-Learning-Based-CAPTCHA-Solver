@@ -1,0 +1,119 @@
+{
+  "teacher": "E:\\pranav\\Thesis-Pranav-Final\\model1\\runs\\darkbay_v3_feature_20261115\\A\\epoch_20.pth",
+  "teacher_sha256": "7201361d2afd0113d962c2f534fee8668cb2cc56bb7f48fd305f316e0e521d08",
+  "differences": [
+    {
+      "probe_index": 114,
+      "image_id": 22309,
+      "a": "3MYRgs",
+      "b": "3MyRgs",
+      "max_probability_difference": 0.0006494820117950439,
+      "positions": [
+        {
+          "position": 2,
+          "top256": [
+            [
+              "Y",
+              0.5000199675559998
+            ],
+            [
+              "y",
+              0.4999684691429138
+            ],
+            [
+              "9",
+              2.871560354833491e-06
+            ]
+          ],
+          "top64": [
+            [
+              "y",
+              0.5006178617477417
+            ],
+            [
+              "Y",
+              0.4993704855442047
+            ],
+            [
+              "9",
+              2.870665184673271e-06
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "fixed256_strings_exact": true,
+  "fixed256_probabilities_exact": true,
+  "max_probability_difference": 0.0012821555137634277,
+  "max_memory_difference": 0.0017948150634765625,
+  "shapes": {
+    "256a": [
+      [
+        256,
+        26,
+        63
+      ],
+      [
+        256,
+        26,
+        63
+      ]
+    ],
+    "64": [
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ],
+      [
+        64,
+        26,
+        63
+      ]
+    ],
+    "256b": [
+      [
+        256,
+        26,
+        63
+      ],
+      [
+        256,
+        26,
+        63
+      ]
+    ]
+  },
+  "real_labels_used": false
+}

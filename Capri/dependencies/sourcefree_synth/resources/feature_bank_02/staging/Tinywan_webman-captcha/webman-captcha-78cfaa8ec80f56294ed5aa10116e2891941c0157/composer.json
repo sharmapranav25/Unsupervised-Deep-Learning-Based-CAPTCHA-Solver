@@ -1,0 +1,29 @@
+{
+  "name": "tinywan/captcha",
+  "description": "base64 image verification captcha library for webman plugin",
+  "keywords": ["base64", "captcha", "webman", "plugin"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tinywan",
+      "email": "756684177@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-redis": "*",
+    "ext-gd": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tinywan\\Captcha\\": "src"
+    }
+  },
+  "require-dev": {
+    "workerman/webman": "^1.0",
+    "friendsofphp/php-cs-fixer": "^3.6",
+    "phpstan/phpstan": "^1.4"
+  }
+}

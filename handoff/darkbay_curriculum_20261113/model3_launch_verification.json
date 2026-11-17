@@ -1,0 +1,103 @@
+{
+  "verified_at": "2026-11-13T12:38:37.393931+00:00",
+  "transition": "Model2 complete; Model3 running",
+  "coordinator": {
+    "state": "training_pair",
+    "model": 3,
+    "pid": 80132,
+    "updated_at": "2026-11-13T12:28:16.406012+00:00"
+  },
+  "children": {
+    "model": 3,
+    "pilot": false,
+    "pids": {
+      "A": 124864,
+      "B": 144656
+    },
+    "updated_at": "2026-11-13T12:28:16.541506+00:00"
+  },
+  "datasets": {
+    "A": {
+      "model2_completion": {
+        "model": 2,
+        "dataset": "A",
+        "epoch": 20,
+        "global_step": 15640,
+        "checkpoint": "checkpoints\\epoch_20.pth",
+        "sha256": "b506e778970aa9d78c2323803fc7a6e3bd7a58aa0969f53c54970aaea75c2bac",
+        "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3",
+        "training_wall_seconds": 21777.438000000548,
+        "rescore_wall_seconds": 0,
+        "selection": "fixed final epoch20"
+      },
+      "model3_initialization": {
+        "model_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "pretrained": false,
+        "seed": 48
+      },
+      "model3_status": {
+        "model": 3,
+        "dataset": "A",
+        "state": "training",
+        "epoch": 1,
+        "completed_epoch": 0,
+        "batch": 400,
+        "batches": 782,
+        "global_step": 400,
+        "loss": 3.876052141189575,
+        "gradient_norm": 0.9883430004119873,
+        "lr": 6.543511490487237e-05,
+        "epoch_seconds": 562.2339999997057,
+        "updated_at": "2026-11-13T12:38:07.610967+00:00",
+        "peak_gpu_gib": 7.359851837158203
+      },
+      "ranking": "model2\\rankings\\darkbay\\A",
+      "ranking_teacher": "B",
+      "ranking_sha256": "12601549ccff6a6f856986e48872d2cf4fe6c40ddfc0b30a9d775f5f7584f352",
+      "initial_draws_all_from_teacher_easy_bucket": true,
+      "initial_sampling_matches_model2": true
+    },
+    "B": {
+      "model2_completion": {
+        "model": 2,
+        "dataset": "B",
+        "epoch": 20,
+        "global_step": 15640,
+        "checkpoint": "checkpoints\\epoch_20.pth",
+        "sha256": "bc45a6397528c60da8d78a451fae5b05cd81931fb1a487b6a62d0373ae09b953",
+        "protocol_sha256": "2e2d9a71cdff087b36c60e9e8ce07d11ceaea5d4782d9c607d3380f684c371d3",
+        "training_wall_seconds": 21785.750999999233,
+        "rescore_wall_seconds": 0,
+        "selection": "fixed final epoch20"
+      },
+      "model3_initialization": {
+        "model_tensor_sha256": "143edd906a13f432b8722ab68dba98cdab4f5eab20fbaae3ac1e06aef7401e43",
+        "pretrained": false,
+        "seed": 48
+      },
+      "model3_status": {
+        "model": 3,
+        "dataset": "B",
+        "state": "training",
+        "epoch": 1,
+        "completed_epoch": 0,
+        "batch": 400,
+        "batches": 782,
+        "global_step": 400,
+        "loss": 3.8780412673950195,
+        "gradient_norm": 1.0867037773132324,
+        "lr": 6.543511490487237e-05,
+        "epoch_seconds": 561.5159999998286,
+        "updated_at": "2026-11-13T12:38:06.930197+00:00",
+        "peak_gpu_gib": 7.359851837158203
+      },
+      "ranking": "model2\\rankings\\darkbay\\B",
+      "ranking_teacher": "A",
+      "ranking_sha256": "9a269d58808c6ab269c7114cd8a0fdb7c7df7f79f471a4dbbf07a8a5b00e80ea",
+      "initial_draws_all_from_teacher_easy_bucket": true,
+      "initial_sampling_matches_model2": true
+    }
+  },
+  "cryptbb_preparation_started": false,
+  "final_evaluation_pending": true
+}

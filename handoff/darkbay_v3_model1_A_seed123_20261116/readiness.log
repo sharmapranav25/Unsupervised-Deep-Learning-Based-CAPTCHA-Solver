@@ -1,0 +1,584 @@
+[2026/11/16 17:53:44] openrec INFO: ----------- Config -----------
+[2026/11/16 17:53:44] openrec INFO: Architecture : 
+[2026/11/16 17:53:44] openrec INFO:     Decoder : 
+[2026/11/16 17:53:44] openrec INFO:         decode_ar : True
+[2026/11/16 17:53:44] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 17:53:44] openrec INFO:         only_attn : False
+[2026/11/16 17:53:44] openrec INFO:         refine_iters : 1
+[2026/11/16 17:53:44] openrec INFO:     Encoder : 
+[2026/11/16 17:53:44] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 17:53:44] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 17:53:44] openrec INFO:         last_stage : False
+[2026/11/16 17:53:44] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 17:53:44] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 17:53:44] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 17:53:44] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 17:53:44] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 17:53:44] openrec INFO:         use_pos_embed : False
+[2026/11/16 17:53:44] openrec INFO:     Transform : None
+[2026/11/16 17:53:44] openrec INFO:     algorithm : PARSeq
+[2026/11/16 17:53:44] openrec INFO:     model_type : rec
+[2026/11/16 17:53:44] openrec INFO: Eval : None
+[2026/11/16 17:53:44] openrec INFO: Global : 
+[2026/11/16 17:53:44] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 17:53:44] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:53:44] openrec INFO:     checkpoints : None
+[2026/11/16 17:53:44] openrec INFO:     device : gpu
+[2026/11/16 17:53:44] openrec INFO:     distributed : False
+[2026/11/16 17:53:44] openrec INFO:     epoch_num : 20
+[2026/11/16 17:53:44] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 17:53:44] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 17:53:44] openrec INFO:     grad_clip_val : 20
+[2026/11/16 17:53:44] openrec INFO:     infer_img : None
+[2026/11/16 17:53:44] openrec INFO:     log_smooth_window : 20
+[2026/11/16 17:53:44] openrec INFO:     max_text_length : 25
+[2026/11/16 17:53:44] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\darkbay_v3_model1_A_seed123_20261116\readiness\baseline
+[2026/11/16 17:53:44] openrec INFO:     pretrained_model : None
+[2026/11/16 17:53:44] openrec INFO:     print_batch_step : 50
+[2026/11/16 17:53:44] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 17:53:44] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_model1_A_seed123_20261116\A\predictions_unused.txt
+[2026/11/16 17:53:44] openrec INFO:     seed : 123
+[2026/11/16 17:53:44] openrec INFO:     use_amp : True
+[2026/11/16 17:53:44] openrec INFO:     use_space_char : False
+[2026/11/16 17:53:44] openrec INFO:     use_tensorboard : False
+[2026/11/16 17:53:44] openrec INFO: LRScheduler : 
+[2026/11/16 17:53:44] openrec INFO:     cycle_momentum : False
+[2026/11/16 17:53:44] openrec INFO:     name : OneCycleLR
+[2026/11/16 17:53:44] openrec INFO:     warmup_epoch : 2
+[2026/11/16 17:53:44] openrec INFO: Loss : 
+[2026/11/16 17:53:44] openrec INFO:     name : PARSeqLoss
+[2026/11/16 17:53:44] openrec INFO: Metric : 
+[2026/11/16 17:53:44] openrec INFO:     is_filter : False
+[2026/11/16 17:53:44] openrec INFO:     is_lower : False
+[2026/11/16 17:53:44] openrec INFO:     main_indicator : acc
+[2026/11/16 17:53:44] openrec INFO:     name : RecMetric
+[2026/11/16 17:53:44] openrec INFO: Optimizer : 
+[2026/11/16 17:53:44] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 17:53:44] openrec INFO:     lr : 0.00035
+[2026/11/16 17:53:44] openrec INFO:     name : AdamW
+[2026/11/16 17:53:44] openrec INFO:     weight_decay : 0.05
+[2026/11/16 17:53:44] openrec INFO: PostProcess : 
+[2026/11/16 17:53:44] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:53:44] openrec INFO:     name : ARLabelDecode
+[2026/11/16 17:53:44] openrec INFO:     use_space_char : False
+[2026/11/16 17:53:44] openrec INFO: Train : 
+[2026/11/16 17:53:44] openrec INFO:     dataset : 
+[2026/11/16 17:53:44] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 17:53:44] openrec INFO:         ds_width : True
+[2026/11/16 17:53:44] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 17:53:44] openrec INFO:         padding : False
+[2026/11/16 17:53:44] openrec INFO:         transforms : 
+[2026/11/16 17:53:44] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 17:53:44] openrec INFO:                 img_mode : RGB
+[2026/11/16 17:53:44] openrec INFO:             ARLabelEncode : 
+[2026/11/16 17:53:44] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:53:44] openrec INFO:                 max_text_length : 25
+[2026/11/16 17:53:44] openrec INFO:                 use_space_char : False
+[2026/11/16 17:53:44] openrec INFO:             KeepKeys : 
+[2026/11/16 17:53:44] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 17:53:44] openrec INFO:     loader : 
+[2026/11/16 17:53:44] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 17:53:44] openrec INFO:         drop_last : True
+[2026/11/16 17:53:44] openrec INFO:         max_ratio : 4
+[2026/11/16 17:53:44] openrec INFO:         min_ratio : 4
+[2026/11/16 17:53:44] openrec INFO:         num_workers : 0
+[2026/11/16 17:53:44] openrec INFO:         shuffle : True
+[2026/11/16 17:53:44] openrec INFO:     sampler : 
+[2026/11/16 17:53:44] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 17:53:44] openrec INFO:         first_bs : 128
+[2026/11/16 17:53:44] openrec INFO:         fix_bs : True
+[2026/11/16 17:53:44] openrec INFO:         is_training : True
+[2026/11/16 17:53:44] openrec INFO:         name : RatioSampler
+[2026/11/16 17:53:44] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 17:53:44] openrec INFO:         seed : 123
+[2026/11/16 17:53:44] openrec INFO: filename : prepared
+[2026/11/16 17:53:44] openrec INFO: ---------------------------------------------
+Traceback (most recent call last):
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\darkbay_v3_model1_A_seed123_20261116\capri.py", line 7, in <module>
+    main()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 360, in main
+    return globals()[a.stage]()
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 166, in readiness
+    t=make_trainer(folder/('cached' if fast else 'baseline'))
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 134, in make_trainer
+    t=Trainer(cfg,mode='train',task='rec')
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\OpenOCR\tools\engine\trainer.py", line 95, in __init__
+    self.train_dataloader = build_dataloader(self.cfg,
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\OpenOCR\tools\data\__init__.py", line 56, in build_dataloader
+    dataset = dataset_class(config, mode, logger, seed, epoch=epoch, task=task)
+  File "E:\pranav\Thesis-Pranav-Final\Capri\src\capri_controller\training\darkbay_model1_seed123.py", line 113, in __init__
+    super().__init__(config,mode,logger,seed=seed,epoch=epoch,task=task)
+  File "E:\pranav\Thesis-Pranav-Final\model1\src\OpenOCR\tools\data\ratio_dataset_tvresize.py", line 20, in __init__
+    super(RatioDataSetTVResize, self).__init__()
+TypeError: __init__() missing 3 required positional arguments: 'config', 'mode', and 'logger'
+[2026/11/16 17:55:45] openrec INFO: ----------- Config -----------
+[2026/11/16 17:55:45] openrec INFO: Architecture : 
+[2026/11/16 17:55:45] openrec INFO:     Decoder : 
+[2026/11/16 17:55:45] openrec INFO:         decode_ar : True
+[2026/11/16 17:55:45] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 17:55:45] openrec INFO:         only_attn : False
+[2026/11/16 17:55:45] openrec INFO:         refine_iters : 1
+[2026/11/16 17:55:45] openrec INFO:     Encoder : 
+[2026/11/16 17:55:45] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 17:55:45] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 17:55:45] openrec INFO:         last_stage : False
+[2026/11/16 17:55:45] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 17:55:45] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 17:55:45] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 17:55:45] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 17:55:45] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 17:55:45] openrec INFO:         use_pos_embed : False
+[2026/11/16 17:55:45] openrec INFO:     Transform : None
+[2026/11/16 17:55:45] openrec INFO:     algorithm : PARSeq
+[2026/11/16 17:55:45] openrec INFO:     model_type : rec
+[2026/11/16 17:55:45] openrec INFO: Eval : None
+[2026/11/16 17:55:45] openrec INFO: Global : 
+[2026/11/16 17:55:45] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 17:55:45] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:55:45] openrec INFO:     checkpoints : None
+[2026/11/16 17:55:45] openrec INFO:     device : gpu
+[2026/11/16 17:55:45] openrec INFO:     distributed : False
+[2026/11/16 17:55:45] openrec INFO:     epoch_num : 20
+[2026/11/16 17:55:45] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 17:55:45] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 17:55:45] openrec INFO:     grad_clip_val : 20
+[2026/11/16 17:55:45] openrec INFO:     infer_img : None
+[2026/11/16 17:55:45] openrec INFO:     log_smooth_window : 20
+[2026/11/16 17:55:45] openrec INFO:     max_text_length : 25
+[2026/11/16 17:55:45] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\darkbay_v3_model1_A_seed123_20261116\readiness\baseline
+[2026/11/16 17:55:45] openrec INFO:     pretrained_model : None
+[2026/11/16 17:55:45] openrec INFO:     print_batch_step : 50
+[2026/11/16 17:55:45] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 17:55:45] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_model1_A_seed123_20261116\A\predictions_unused.txt
+[2026/11/16 17:55:45] openrec INFO:     seed : 123
+[2026/11/16 17:55:45] openrec INFO:     use_amp : True
+[2026/11/16 17:55:45] openrec INFO:     use_space_char : False
+[2026/11/16 17:55:45] openrec INFO:     use_tensorboard : False
+[2026/11/16 17:55:45] openrec INFO: LRScheduler : 
+[2026/11/16 17:55:45] openrec INFO:     cycle_momentum : False
+[2026/11/16 17:55:45] openrec INFO:     name : OneCycleLR
+[2026/11/16 17:55:45] openrec INFO:     warmup_epoch : 2
+[2026/11/16 17:55:45] openrec INFO: Loss : 
+[2026/11/16 17:55:45] openrec INFO:     name : PARSeqLoss
+[2026/11/16 17:55:45] openrec INFO: Metric : 
+[2026/11/16 17:55:45] openrec INFO:     is_filter : False
+[2026/11/16 17:55:45] openrec INFO:     is_lower : False
+[2026/11/16 17:55:45] openrec INFO:     main_indicator : acc
+[2026/11/16 17:55:45] openrec INFO:     name : RecMetric
+[2026/11/16 17:55:45] openrec INFO: Optimizer : 
+[2026/11/16 17:55:45] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 17:55:45] openrec INFO:     lr : 0.00035
+[2026/11/16 17:55:45] openrec INFO:     name : AdamW
+[2026/11/16 17:55:45] openrec INFO:     weight_decay : 0.05
+[2026/11/16 17:55:45] openrec INFO: PostProcess : 
+[2026/11/16 17:55:45] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:55:45] openrec INFO:     name : ARLabelDecode
+[2026/11/16 17:55:45] openrec INFO:     use_space_char : False
+[2026/11/16 17:55:45] openrec INFO: Train : 
+[2026/11/16 17:55:45] openrec INFO:     dataset : 
+[2026/11/16 17:55:45] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 17:55:45] openrec INFO:         ds_width : True
+[2026/11/16 17:55:45] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 17:55:45] openrec INFO:         padding : False
+[2026/11/16 17:55:45] openrec INFO:         transforms : 
+[2026/11/16 17:55:45] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 17:55:45] openrec INFO:                 img_mode : RGB
+[2026/11/16 17:55:45] openrec INFO:             ARLabelEncode : 
+[2026/11/16 17:55:45] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:55:45] openrec INFO:                 max_text_length : 25
+[2026/11/16 17:55:45] openrec INFO:                 use_space_char : False
+[2026/11/16 17:55:45] openrec INFO:             KeepKeys : 
+[2026/11/16 17:55:45] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 17:55:45] openrec INFO:     loader : 
+[2026/11/16 17:55:45] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 17:55:45] openrec INFO:         drop_last : True
+[2026/11/16 17:55:45] openrec INFO:         max_ratio : 4
+[2026/11/16 17:55:45] openrec INFO:         min_ratio : 4
+[2026/11/16 17:55:45] openrec INFO:         num_workers : 0
+[2026/11/16 17:55:45] openrec INFO:         shuffle : True
+[2026/11/16 17:55:45] openrec INFO:     sampler : 
+[2026/11/16 17:55:45] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 17:55:45] openrec INFO:         first_bs : 128
+[2026/11/16 17:55:45] openrec INFO:         fix_bs : True
+[2026/11/16 17:55:45] openrec INFO:         is_training : True
+[2026/11/16 17:55:45] openrec INFO:         name : RatioSampler
+[2026/11/16 17:55:45] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 17:55:45] openrec INFO:         seed : 123
+[2026/11/16 17:55:45] openrec INFO: filename : prepared
+[2026/11/16 17:55:45] openrec INFO: ---------------------------------------------
+[2026/11/16 17:55:45] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\A\train_lmdb
+[2026/11/16 17:55:45] openrec INFO: 0
+[2026/11/16 17:55:45] openrec INFO: 0
+[2026/11/16 17:55:45] openrec INFO: 0
+[2026/11/16 17:55:45] openrec INFO: 0
+[2026/11/16 17:55:45] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/16 17:55:45] openrec INFO: train dataloader has 782 iters
+[2026/11/16 17:55:46] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/16 17:55:46] openrec INFO: train from scratch
+[2026/11/16 17:55:46] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+E:\pranav\model 1\.venv\Lib\site-packages\torch\nn\functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+[2026/11/16 17:56:17] openrec INFO: ----------- Config -----------
+[2026/11/16 17:56:17] openrec INFO: Architecture : 
+[2026/11/16 17:56:17] openrec INFO:     Decoder : 
+[2026/11/16 17:56:17] openrec INFO:         decode_ar : True
+[2026/11/16 17:56:17] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 17:56:17] openrec INFO:         only_attn : False
+[2026/11/16 17:56:17] openrec INFO:         refine_iters : 1
+[2026/11/16 17:56:17] openrec INFO:     Encoder : 
+[2026/11/16 17:56:17] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 17:56:17] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 17:56:17] openrec INFO:         last_stage : False
+[2026/11/16 17:56:17] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 17:56:17] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 17:56:17] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 17:56:17] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 17:56:17] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 17:56:17] openrec INFO:         use_pos_embed : False
+[2026/11/16 17:56:17] openrec INFO:     Transform : None
+[2026/11/16 17:56:17] openrec INFO:     algorithm : PARSeq
+[2026/11/16 17:56:17] openrec INFO:     model_type : rec
+[2026/11/16 17:56:17] openrec INFO: Eval : None
+[2026/11/16 17:56:17] openrec INFO: Global : 
+[2026/11/16 17:56:17] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 17:56:17] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:17] openrec INFO:     checkpoints : None
+[2026/11/16 17:56:17] openrec INFO:     device : gpu
+[2026/11/16 17:56:17] openrec INFO:     distributed : False
+[2026/11/16 17:56:17] openrec INFO:     epoch_num : 20
+[2026/11/16 17:56:17] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 17:56:17] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 17:56:17] openrec INFO:     grad_clip_val : 20
+[2026/11/16 17:56:17] openrec INFO:     infer_img : None
+[2026/11/16 17:56:17] openrec INFO:     log_smooth_window : 20
+[2026/11/16 17:56:17] openrec INFO:     max_text_length : 25
+[2026/11/16 17:56:17] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\darkbay_v3_model1_A_seed123_20261116\readiness\cached
+[2026/11/16 17:56:17] openrec INFO:     pretrained_model : None
+[2026/11/16 17:56:17] openrec INFO:     print_batch_step : 50
+[2026/11/16 17:56:17] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 17:56:17] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_model1_A_seed123_20261116\A\predictions_unused.txt
+[2026/11/16 17:56:17] openrec INFO:     seed : 123
+[2026/11/16 17:56:17] openrec INFO:     use_amp : True
+[2026/11/16 17:56:17] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:17] openrec INFO:     use_tensorboard : False
+[2026/11/16 17:56:17] openrec INFO: LRScheduler : 
+[2026/11/16 17:56:17] openrec INFO:     cycle_momentum : False
+[2026/11/16 17:56:17] openrec INFO:     name : OneCycleLR
+[2026/11/16 17:56:17] openrec INFO:     warmup_epoch : 2
+[2026/11/16 17:56:17] openrec INFO: Loss : 
+[2026/11/16 17:56:17] openrec INFO:     name : PARSeqLoss
+[2026/11/16 17:56:17] openrec INFO: Metric : 
+[2026/11/16 17:56:17] openrec INFO:     is_filter : False
+[2026/11/16 17:56:17] openrec INFO:     is_lower : False
+[2026/11/16 17:56:17] openrec INFO:     main_indicator : acc
+[2026/11/16 17:56:17] openrec INFO:     name : RecMetric
+[2026/11/16 17:56:17] openrec INFO: Optimizer : 
+[2026/11/16 17:56:17] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 17:56:17] openrec INFO:     lr : 0.00035
+[2026/11/16 17:56:17] openrec INFO:     name : AdamW
+[2026/11/16 17:56:17] openrec INFO:     weight_decay : 0.05
+[2026/11/16 17:56:17] openrec INFO: PostProcess : 
+[2026/11/16 17:56:17] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:17] openrec INFO:     name : ARLabelDecode
+[2026/11/16 17:56:17] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:17] openrec INFO: Train : 
+[2026/11/16 17:56:17] openrec INFO:     dataset : 
+[2026/11/16 17:56:17] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 17:56:17] openrec INFO:         ds_width : True
+[2026/11/16 17:56:17] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 17:56:17] openrec INFO:         padding : False
+[2026/11/16 17:56:17] openrec INFO:         transforms : 
+[2026/11/16 17:56:17] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 17:56:17] openrec INFO:                 img_mode : RGB
+[2026/11/16 17:56:17] openrec INFO:             ARLabelEncode : 
+[2026/11/16 17:56:17] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:17] openrec INFO:                 max_text_length : 25
+[2026/11/16 17:56:17] openrec INFO:                 use_space_char : False
+[2026/11/16 17:56:17] openrec INFO:             KeepKeys : 
+[2026/11/16 17:56:17] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 17:56:17] openrec INFO:     loader : 
+[2026/11/16 17:56:17] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 17:56:17] openrec INFO:         drop_last : True
+[2026/11/16 17:56:17] openrec INFO:         max_ratio : 4
+[2026/11/16 17:56:17] openrec INFO:         min_ratio : 4
+[2026/11/16 17:56:17] openrec INFO:         num_workers : 0
+[2026/11/16 17:56:17] openrec INFO:         shuffle : True
+[2026/11/16 17:56:17] openrec INFO:     sampler : 
+[2026/11/16 17:56:17] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 17:56:17] openrec INFO:         first_bs : 128
+[2026/11/16 17:56:17] openrec INFO:         fix_bs : True
+[2026/11/16 17:56:17] openrec INFO:         is_training : True
+[2026/11/16 17:56:17] openrec INFO:         name : RatioSampler
+[2026/11/16 17:56:17] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 17:56:17] openrec INFO:         seed : 123
+[2026/11/16 17:56:17] openrec INFO: filename : prepared
+[2026/11/16 17:56:17] openrec INFO: ---------------------------------------------
+[2026/11/16 17:56:17] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\A\train_lmdb
+[2026/11/16 17:56:18] openrec INFO: 0
+[2026/11/16 17:56:18] openrec INFO: 0
+[2026/11/16 17:56:18] openrec INFO: 0
+[2026/11/16 17:56:18] openrec INFO: 0
+[2026/11/16 17:56:18] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/16 17:56:18] openrec INFO: train dataloader has 782 iters
+[2026/11/16 17:56:18] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/16 17:56:18] openrec INFO: train from scratch
+[2026/11/16 17:56:18] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+0 100000 128.0 781 128
+[2026/11/16 17:56:50] openrec INFO: ----------- Config -----------
+[2026/11/16 17:56:50] openrec INFO: Architecture : 
+[2026/11/16 17:56:50] openrec INFO:     Decoder : 
+[2026/11/16 17:56:50] openrec INFO:         decode_ar : True
+[2026/11/16 17:56:50] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 17:56:50] openrec INFO:         only_attn : False
+[2026/11/16 17:56:50] openrec INFO:         refine_iters : 1
+[2026/11/16 17:56:50] openrec INFO:     Encoder : 
+[2026/11/16 17:56:50] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 17:56:50] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 17:56:50] openrec INFO:         last_stage : False
+[2026/11/16 17:56:50] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 17:56:50] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 17:56:50] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 17:56:50] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 17:56:50] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 17:56:50] openrec INFO:         use_pos_embed : False
+[2026/11/16 17:56:50] openrec INFO:     Transform : None
+[2026/11/16 17:56:50] openrec INFO:     algorithm : PARSeq
+[2026/11/16 17:56:50] openrec INFO:     model_type : rec
+[2026/11/16 17:56:50] openrec INFO: Eval : None
+[2026/11/16 17:56:50] openrec INFO: Global : 
+[2026/11/16 17:56:50] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 17:56:50] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:50] openrec INFO:     checkpoints : None
+[2026/11/16 17:56:50] openrec INFO:     device : gpu
+[2026/11/16 17:56:50] openrec INFO:     distributed : False
+[2026/11/16 17:56:50] openrec INFO:     epoch_num : 20
+[2026/11/16 17:56:50] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 17:56:50] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 17:56:50] openrec INFO:     grad_clip_val : 20
+[2026/11/16 17:56:50] openrec INFO:     infer_img : None
+[2026/11/16 17:56:50] openrec INFO:     log_smooth_window : 20
+[2026/11/16 17:56:50] openrec INFO:     max_text_length : 25
+[2026/11/16 17:56:50] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\darkbay_v3_model1_A_seed123_20261116\readiness\restored
+[2026/11/16 17:56:50] openrec INFO:     pretrained_model : None
+[2026/11/16 17:56:50] openrec INFO:     print_batch_step : 50
+[2026/11/16 17:56:50] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 17:56:50] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_model1_A_seed123_20261116\A\predictions_unused.txt
+[2026/11/16 17:56:50] openrec INFO:     seed : 123
+[2026/11/16 17:56:50] openrec INFO:     use_amp : True
+[2026/11/16 17:56:50] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:50] openrec INFO:     use_tensorboard : False
+[2026/11/16 17:56:50] openrec INFO: LRScheduler : 
+[2026/11/16 17:56:50] openrec INFO:     cycle_momentum : False
+[2026/11/16 17:56:50] openrec INFO:     name : OneCycleLR
+[2026/11/16 17:56:50] openrec INFO:     warmup_epoch : 2
+[2026/11/16 17:56:50] openrec INFO: Loss : 
+[2026/11/16 17:56:50] openrec INFO:     name : PARSeqLoss
+[2026/11/16 17:56:50] openrec INFO: Metric : 
+[2026/11/16 17:56:50] openrec INFO:     is_filter : False
+[2026/11/16 17:56:50] openrec INFO:     is_lower : False
+[2026/11/16 17:56:50] openrec INFO:     main_indicator : acc
+[2026/11/16 17:56:50] openrec INFO:     name : RecMetric
+[2026/11/16 17:56:50] openrec INFO: Optimizer : 
+[2026/11/16 17:56:50] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 17:56:50] openrec INFO:     lr : 0.00035
+[2026/11/16 17:56:50] openrec INFO:     name : AdamW
+[2026/11/16 17:56:50] openrec INFO:     weight_decay : 0.05
+[2026/11/16 17:56:50] openrec INFO: PostProcess : 
+[2026/11/16 17:56:50] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:50] openrec INFO:     name : ARLabelDecode
+[2026/11/16 17:56:50] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:50] openrec INFO: Train : 
+[2026/11/16 17:56:50] openrec INFO:     dataset : 
+[2026/11/16 17:56:50] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 17:56:50] openrec INFO:         ds_width : True
+[2026/11/16 17:56:50] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 17:56:50] openrec INFO:         padding : False
+[2026/11/16 17:56:50] openrec INFO:         transforms : 
+[2026/11/16 17:56:50] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 17:56:50] openrec INFO:                 img_mode : RGB
+[2026/11/16 17:56:50] openrec INFO:             ARLabelEncode : 
+[2026/11/16 17:56:50] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:50] openrec INFO:                 max_text_length : 25
+[2026/11/16 17:56:50] openrec INFO:                 use_space_char : False
+[2026/11/16 17:56:50] openrec INFO:             KeepKeys : 
+[2026/11/16 17:56:50] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 17:56:50] openrec INFO:     loader : 
+[2026/11/16 17:56:50] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 17:56:50] openrec INFO:         drop_last : True
+[2026/11/16 17:56:50] openrec INFO:         max_ratio : 4
+[2026/11/16 17:56:50] openrec INFO:         min_ratio : 4
+[2026/11/16 17:56:50] openrec INFO:         num_workers : 0
+[2026/11/16 17:56:50] openrec INFO:         shuffle : True
+[2026/11/16 17:56:50] openrec INFO:     sampler : 
+[2026/11/16 17:56:50] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 17:56:50] openrec INFO:         first_bs : 128
+[2026/11/16 17:56:50] openrec INFO:         fix_bs : True
+[2026/11/16 17:56:50] openrec INFO:         is_training : True
+[2026/11/16 17:56:50] openrec INFO:         name : RatioSampler
+[2026/11/16 17:56:50] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 17:56:50] openrec INFO:         seed : 123
+[2026/11/16 17:56:50] openrec INFO: filename : prepared
+[2026/11/16 17:56:50] openrec INFO: ---------------------------------------------
+[2026/11/16 17:56:50] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\A\train_lmdb
+[2026/11/16 17:56:50] openrec INFO: 0
+[2026/11/16 17:56:50] openrec INFO: 0
+[2026/11/16 17:56:50] openrec INFO: 0
+[2026/11/16 17:56:50] openrec INFO: 0
+[2026/11/16 17:56:50] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/16 17:56:50] openrec INFO: train dataloader has 782 iters
+[2026/11/16 17:56:51] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/16 17:56:51] openrec INFO: train from scratch
+[2026/11/16 17:56:51] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128
+[2026/11/16 17:56:58] openrec INFO: ----------- Config -----------
+[2026/11/16 17:56:58] openrec INFO: Architecture : 
+[2026/11/16 17:56:58] openrec INFO:     Decoder : 
+[2026/11/16 17:56:58] openrec INFO:         decode_ar : True
+[2026/11/16 17:56:58] openrec INFO:         name : PARSeqDecoder
+[2026/11/16 17:56:58] openrec INFO:         only_attn : False
+[2026/11/16 17:56:58] openrec INFO:         refine_iters : 1
+[2026/11/16 17:56:58] openrec INFO:     Encoder : 
+[2026/11/16 17:56:58] openrec INFO:         depths : [6, 6, 6]
+[2026/11/16 17:56:58] openrec INFO:         dims : [128, 256, 384]
+[2026/11/16 17:56:58] openrec INFO:         last_stage : False
+[2026/11/16 17:56:58] openrec INFO:         local_k : [[5, 5], [5, 5], [-1, -1]]
+[2026/11/16 17:56:58] openrec INFO:         mixer : [['Conv', 'Conv', 'Conv', 'Conv', 'Conv', 'Conv'], ['Conv', 'Conv', 'FGlobal', 'Global', 'Global', 'Global'], ['Global', 'Global', 'Global', 'Global', 'Global', 'Global']]
+[2026/11/16 17:56:58] openrec INFO:         name : SVTRv2LNConvTwo33
+[2026/11/16 17:56:58] openrec INFO:         num_heads : [4, 8, 12]
+[2026/11/16 17:56:58] openrec INFO:         sub_k : [[1, 1], [2, 1], [-1, -1]]
+[2026/11/16 17:56:58] openrec INFO:         use_pos_embed : False
+[2026/11/16 17:56:58] openrec INFO:     Transform : None
+[2026/11/16 17:56:58] openrec INFO:     algorithm : PARSeq
+[2026/11/16 17:56:58] openrec INFO:     model_type : rec
+[2026/11/16 17:56:58] openrec INFO: Eval : None
+[2026/11/16 17:56:58] openrec INFO: Global : 
+[2026/11/16 17:56:58] openrec INFO:     cal_metric_during_train : False
+[2026/11/16 17:56:58] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:58] openrec INFO:     checkpoints : None
+[2026/11/16 17:56:58] openrec INFO:     device : gpu
+[2026/11/16 17:56:58] openrec INFO:     distributed : False
+[2026/11/16 17:56:58] openrec INFO:     epoch_num : 20
+[2026/11/16 17:56:58] openrec INFO:     eval_batch_step : 9223372036854775807
+[2026/11/16 17:56:58] openrec INFO:     eval_epoch_step : 9223372036854775807
+[2026/11/16 17:56:58] openrec INFO:     grad_clip_val : 20
+[2026/11/16 17:56:58] openrec INFO:     infer_img : None
+[2026/11/16 17:56:58] openrec INFO:     log_smooth_window : 20
+[2026/11/16 17:56:58] openrec INFO:     max_text_length : 25
+[2026/11/16 17:56:58] openrec INFO:     output_dir : E:\pranav\Thesis-Pranav-Final\handoff\darkbay_v3_model1_A_seed123_20261116\readiness\seed48_control
+[2026/11/16 17:56:58] openrec INFO:     pretrained_model : None
+[2026/11/16 17:56:58] openrec INFO:     print_batch_step : 50
+[2026/11/16 17:56:58] openrec INFO:     save_epoch_step : [1, 1]
+[2026/11/16 17:56:58] openrec INFO:     save_res_path : E:\pranav\Thesis-Pranav-Final\model1\runs\darkbay_v3_model1_A_seed123_20261116\A\predictions_unused.txt
+[2026/11/16 17:56:58] openrec INFO:     seed : 48
+[2026/11/16 17:56:58] openrec INFO:     use_amp : True
+[2026/11/16 17:56:58] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:58] openrec INFO:     use_tensorboard : False
+[2026/11/16 17:56:58] openrec INFO: LRScheduler : 
+[2026/11/16 17:56:58] openrec INFO:     cycle_momentum : False
+[2026/11/16 17:56:58] openrec INFO:     name : OneCycleLR
+[2026/11/16 17:56:58] openrec INFO:     warmup_epoch : 2
+[2026/11/16 17:56:58] openrec INFO: Loss : 
+[2026/11/16 17:56:58] openrec INFO:     name : PARSeqLoss
+[2026/11/16 17:56:58] openrec INFO: Metric : 
+[2026/11/16 17:56:58] openrec INFO:     is_filter : False
+[2026/11/16 17:56:58] openrec INFO:     is_lower : False
+[2026/11/16 17:56:58] openrec INFO:     main_indicator : acc
+[2026/11/16 17:56:58] openrec INFO:     name : RecMetric
+[2026/11/16 17:56:58] openrec INFO: Optimizer : 
+[2026/11/16 17:56:58] openrec INFO:     filter_bias_and_bn : True
+[2026/11/16 17:56:58] openrec INFO:     lr : 0.00035
+[2026/11/16 17:56:58] openrec INFO:     name : AdamW
+[2026/11/16 17:56:58] openrec INFO:     weight_decay : 0.05
+[2026/11/16 17:56:58] openrec INFO: PostProcess : 
+[2026/11/16 17:56:58] openrec INFO:     character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:58] openrec INFO:     name : ARLabelDecode
+[2026/11/16 17:56:58] openrec INFO:     use_space_char : False
+[2026/11/16 17:56:58] openrec INFO: Train : 
+[2026/11/16 17:56:58] openrec INFO:     dataset : 
+[2026/11/16 17:56:58] openrec INFO:         data_dir_list : ['E:\\pranav\\Thesis-Pranav-Final\\datasets\\darkbay_v3_feature_20261115\\A\\train_lmdb']
+[2026/11/16 17:56:58] openrec INFO:         ds_width : True
+[2026/11/16 17:56:58] openrec INFO:         name : RatioDataSetTVResize
+[2026/11/16 17:56:58] openrec INFO:         padding : False
+[2026/11/16 17:56:58] openrec INFO:         transforms : 
+[2026/11/16 17:56:58] openrec INFO:             DecodeImagePIL : 
+[2026/11/16 17:56:58] openrec INFO:                 img_mode : RGB
+[2026/11/16 17:56:58] openrec INFO:             ARLabelEncode : 
+[2026/11/16 17:56:58] openrec INFO:                 character_dict_path : E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\charset.txt
+[2026/11/16 17:56:58] openrec INFO:                 max_text_length : 25
+[2026/11/16 17:56:58] openrec INFO:                 use_space_char : False
+[2026/11/16 17:56:58] openrec INFO:             KeepKeys : 
+[2026/11/16 17:56:58] openrec INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/11/16 17:56:58] openrec INFO:     loader : 
+[2026/11/16 17:56:58] openrec INFO:         batch_size_per_card : 128
+[2026/11/16 17:56:58] openrec INFO:         drop_last : True
+[2026/11/16 17:56:58] openrec INFO:         max_ratio : 4
+[2026/11/16 17:56:58] openrec INFO:         min_ratio : 4
+[2026/11/16 17:56:58] openrec INFO:         num_workers : 0
+[2026/11/16 17:56:58] openrec INFO:         shuffle : True
+[2026/11/16 17:56:58] openrec INFO:     sampler : 
+[2026/11/16 17:56:58] openrec INFO:         divided_factor : [4, 16]
+[2026/11/16 17:56:58] openrec INFO:         first_bs : 128
+[2026/11/16 17:56:58] openrec INFO:         fix_bs : True
+[2026/11/16 17:56:58] openrec INFO:         is_training : True
+[2026/11/16 17:56:58] openrec INFO:         name : RatioSampler
+[2026/11/16 17:56:58] openrec INFO:         scales : [[128, 32]]
+[2026/11/16 17:56:58] openrec INFO:         seed : 48
+[2026/11/16 17:56:58] openrec INFO: filename : prepared
+[2026/11/16 17:56:58] openrec INFO: ---------------------------------------------
+[2026/11/16 17:56:58] openrec INFO: Initialize indexs of datasets:E:\pranav\Thesis-Pranav-Final\datasets\darkbay_v3_feature_20261115\A\train_lmdb
+[2026/11/16 17:56:58] openrec INFO: 0
+[2026/11/16 17:56:58] openrec INFO: 0
+[2026/11/16 17:56:58] openrec INFO: 0
+[2026/11/16 17:56:58] openrec INFO: 0
+[2026/11/16 17:56:58] openrec INFO: 100000
+0 100000 128.0 781 128
+[2026/11/16 17:56:58] openrec INFO: train dataloader has 782 iters
+[2026/11/16 17:56:59] openrec INFO: {'Total': 20076927, 'Trainable': 20076927}
+[2026/11/16 17:56:59] openrec INFO: train from scratch
+[2026/11/16 17:56:59] openrec INFO: run with torch 2.5.1+cu121 and device cuda:0
+0 100000 128.0 781 128

@@ -1,0 +1,1347 @@
+{
+  "created_at": "2026-11-16T01:20:24.556146+00:00",
+  "retrospective": true,
+  "threshold_user_requested": 0.1,
+  "estimator_sha256": "dee14c99919ffb4d51ba47b2104f766cea584dc113a995ab857a037539421150",
+  "estimator_config": {
+    "seed": 4817,
+    "k_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residual_absolute_tolerance": 0.005,
+    "residual_relative_tolerance": 0.25,
+    "rank2_relative_mse_improvement": 0.35,
+    "rank2_absolute_rmse_improvement": 0.003,
+    "rank2_starts": 4,
+    "bootstrap_samples": 10000
+  },
+  "runs": [
+    {
+      "model": 1,
+      "dataset": "A",
+      "family": "cryptbb_v3",
+      "threshold": 0.1,
+      "comparison": "strictly below",
+      "loss_definition": "End-of-epoch logged rolling median; not full-epoch mean",
+      "loss_source": "E:\\pranav\\Thesis-Pranav-Final\\model1\\runs\\cryptbb_v3\\A\\train.log",
+      "loss_source_sha256": "300240465280d4f48dd745d23535d5ca2e57756c219b76f71fe1d6beb41794c5",
+      "recorded_losses": {
+        "1": 3.825254,
+        "2": 2.67017,
+        "3": 0.780133,
+        "4": 0.602629,
+        "5": 0.505664,
+        "6": 0.418627,
+        "7": 0.368319,
+        "8": 0.347187,
+        "9": 0.284366,
+        "10": 0.21184,
+        "11": 0.161154,
+        "12": 0.134839,
+        "13": 0.107799,
+        "14": 0.071274,
+        "15": 0.048055,
+        "16": 0.030243,
+        "17": 0.020498,
+        "18": 0.012435,
+        "19": 0.009148,
+        "20": 0.00873
+      },
+      "eligible_epochs": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pending_evaluation_epochs": [],
+      "provisional": false,
+      "original_unmodified_selector_applicable": true,
+      "unsupported_masks": [],
+      "supported_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "adaptation": "No estimator adaptation: original full20 fits and masks0-5; loss gate applied only to winner eligibility",
+      "unrestricted_selected_epoch": 12,
+      "all20_ranking": [
+        12,
+        13,
+        14,
+        19,
+        11,
+        20,
+        10,
+        18,
+        16,
+        15,
+        17,
+        9,
+        8,
+        7,
+        6,
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "eligible_ranking": [
+        14,
+        19,
+        20,
+        18,
+        16,
+        15,
+        17
+      ],
+      "selected_epoch": 14,
+      "top3": [
+        14,
+        19,
+        20
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.25964301551647173,
+        0.36063518983389986,
+        0.3592801767995223,
+        0.37170308290080323,
+        0.3892212950288147,
+        0.4330405523450572,
+        0.5010944096982692,
+        0.6051893882283657,
+        0.6231075612620345,
+        0.7080992758841361,
+        0.6625715494888766,
+        0.6312127749089131,
+        0.5951100985108583,
+        0.595423763045654,
+        0.5864481798792617,
+        0.596632757872373,
+        0.6299876608222091,
+        0.6214157637005165
+      ],
+      "resolved_k": 5,
+      "fallback_used": true,
+      "mask_diagnostics": [
+        {
+          "k": 0,
+          "next_distance_residual": 0.08703574321733094,
+          "far_residual": 0.043751315846211586,
+          "tolerance": 0.010937828961552896,
+          "passes": false
+        },
+        {
+          "k": 1,
+          "next_distance_residual": 0.068161664570754,
+          "far_residual": 0.034073938802156714,
+          "tolerance": 0.008518484700539179,
+          "passes": false
+        },
+        {
+          "k": 2,
+          "next_distance_residual": 0.06086357494651917,
+          "far_residual": 0.024859004684086222,
+          "tolerance": 0.0062147511710215556,
+          "passes": false
+        },
+        {
+          "k": 3,
+          "next_distance_residual": 0.05124432165319878,
+          "far_residual": 0.015804791020454782,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 4,
+          "next_distance_residual": 0.03653250222404396,
+          "far_residual": 0.00832307848055933,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 5,
+          "next_distance_residual": 0.01777998219297316,
+          "far_residual": 0.004190672800119267,
+          "tolerance": 0.005,
+          "passes": false
+        }
+      ],
+      "triplet_counts": [
+        36,
+        28,
+        21,
+        15,
+        10,
+        6,
+        3,
+        1,
+        6,
+        10,
+        12,
+        12,
+        10,
+        6,
+        1,
+        3,
+        6,
+        10,
+        15,
+        21
+      ],
+      "labels_read": false,
+      "training_changed": false,
+      "prediction_sources": [
+        {
+          "epoch": 1,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch01",
+          "prediction_sha256": "0dd8727367c950b787db8ae7149b0105327c2cf604494675273983fc299db30b",
+          "checkpoint_sha256": "f32822442cdc8584b70f7bfb6e37144c3fcf3e80e9a442efc6e86838e9bc6fe8"
+        },
+        {
+          "epoch": 2,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch02",
+          "prediction_sha256": "ced608cc4cdc7437ce43d9f760c63b224e1f13cfbd511e4d153297af80823020",
+          "checkpoint_sha256": "118583d55c31d816085c53d724d76d03c3a74d9fb9870bdc9ac52849b1805ceb"
+        },
+        {
+          "epoch": 3,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch03",
+          "prediction_sha256": "e9e05d951170594747b6d9d24bf761c0723d746723421eda9f0cec60b097a3b3",
+          "checkpoint_sha256": "8c8b1001c046f37b88f27c3bdb9b457242a6750d969dc9c69c36ced78064530e"
+        },
+        {
+          "epoch": 4,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch04",
+          "prediction_sha256": "258b1736bdbf577fdc43fefd19b6c1f3cff78f5b3467a7a9e39aae82ac376b27",
+          "checkpoint_sha256": "22c6ee153d441af6f905041b248e828d278bcfc70b9339f9108e8e2e3a2e8291"
+        },
+        {
+          "epoch": 5,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch05",
+          "prediction_sha256": "f325bc3ca26018315eed36f5e087556134a41e24956c83cf96bffbc52acc15eb",
+          "checkpoint_sha256": "ca3ed4c4730a48db10beb8e257f2b2faeeedd03fb3a7a605cc655590aedbd7ed"
+        },
+        {
+          "epoch": 6,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch06",
+          "prediction_sha256": "09088a509d9d32a1900d4924212f8097cb21f9e237342ba9cdbb95e8506dfe68",
+          "checkpoint_sha256": "194f950c8501197dbcd96adcbdba006bac7fb31cba7d69385c71aaddd7e5596d"
+        },
+        {
+          "epoch": 7,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch07",
+          "prediction_sha256": "7c2e1b04238cae0bd6f91b9dcc4d292d7914e694819916fc6f89802e8acea9a1",
+          "checkpoint_sha256": "b24651e49eae285206ddf56e8f37ff2c6cae84038701703743345a13ae5b02a3"
+        },
+        {
+          "epoch": 8,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch08",
+          "prediction_sha256": "660182858d286761978ab3ff1a4d9e050f6ec19082bcbff3462cf495905f5907",
+          "checkpoint_sha256": "47c7063bddd0e336d8a85f6d8440f6db16fa3eb473554bfd53067f50598b084a"
+        },
+        {
+          "epoch": 9,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch09",
+          "prediction_sha256": "0d61cb612b5202568a01a419800e685ac0f662a94642af9be67a52db976d151f",
+          "checkpoint_sha256": "8df2598478f4e5b6931c93c496eef55bed271ff38f471b2cc199928680794aee"
+        },
+        {
+          "epoch": 10,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch10",
+          "prediction_sha256": "d38d5295711bb8ea91c25199a523b078bdd601a446305aba58ee7d0996f755d4",
+          "checkpoint_sha256": "9f3c717a3e14a70c855d92a52dfcd366282f35d4b38df7aff70884d3fbce09bd"
+        },
+        {
+          "epoch": 11,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch11",
+          "prediction_sha256": "14248dd4c83dce9b0562f26b399af93a1103bf5e236400116f84dce289aaf6c3",
+          "checkpoint_sha256": "d83e1e3fbb3d638eb03762a4fc4de02da5c2a4750d2297cf6c1962c07339de0e"
+        },
+        {
+          "epoch": 12,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch12",
+          "prediction_sha256": "0214b421f43113e39461581b5d00f50cbeae4c56c9f641df7af738fe42eeaa3f",
+          "checkpoint_sha256": "feb37b75d99890f30f66d5545ca661306aaa1949f496dc16333db37c89adacfc"
+        },
+        {
+          "epoch": 13,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch13",
+          "prediction_sha256": "e76eaaab97fb0394616bec3f35f075bfe738db093e99aa9fe8dfe607fb70b0ff",
+          "checkpoint_sha256": "f7dfb0aecb676d7cf28fbc17657876aef34dd7d424dec898bb2a6bb48277ee10"
+        },
+        {
+          "epoch": 14,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch14",
+          "prediction_sha256": "45d7d426202793401b5bd9b2e142283de3115ced4ea98d0fc5342c705520bb34",
+          "checkpoint_sha256": "97af794639e6de6dfd9fca2cabadce50bf1fc8f3cbacc823cdb871c8bf4ed40e"
+        },
+        {
+          "epoch": 15,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch15",
+          "prediction_sha256": "6ef020dc574cc3a57176551009f0a494e187eb2e19a6a5e494a8322e0cf949d8",
+          "checkpoint_sha256": "f73c80cabc1b4101d8fc468651d389c1d22103d9c7cdc5d11893aebd170ff06b"
+        },
+        {
+          "epoch": 16,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch16",
+          "prediction_sha256": "15d4625704705db552e83e72b3d9f90eb5b21b10c63f17bef765141b1c2ef0f0",
+          "checkpoint_sha256": "e5c8f108160ed7738d8fc4c11001def503274bf311059ebb3c9fe29497cd7c1c"
+        },
+        {
+          "epoch": 17,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch17",
+          "prediction_sha256": "65a759e0dc37d8b6179897b40cfc4fcb7560e6f72e7e56c37618018bccf69606",
+          "checkpoint_sha256": "bff1011b060d6136d4b5152eafc4664dfbae1f14ac18768f069c63aee322a37e"
+        },
+        {
+          "epoch": 18,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch18",
+          "prediction_sha256": "214ae2e037d557bdb72fb998c918fd66944fdc1754d1f6a25211bbe52ab429df",
+          "checkpoint_sha256": "9e0dfd490ff4b8725c56ac4af45056e38ba8cb4ff3f90c206c6c57b1a5a05c02"
+        },
+        {
+          "epoch": 19,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch19",
+          "prediction_sha256": "b29f7db115e99fe63560fc304ee6eddd984eb898a1a53b5838df0308de81930e",
+          "checkpoint_sha256": "701c405425c4bccbb1681ab7ff5e58b424971133257ec148c69a387de4d8a57e"
+        },
+        {
+          "epoch": 20,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\A\\requested_cpu_epoch20",
+          "prediction_sha256": "84e6c8b041923a8238a2f907b15c1c57efd33f6edeb13c24cc6863cec6b425f9",
+          "checkpoint_sha256": "a599a42d9a33e991cc7ae1f22ab92851bd3495e7d9f9fce517fdb1feb81cc8c3"
+        }
+      ]
+    },
+    {
+      "model": 1,
+      "dataset": "B",
+      "family": "cryptbb_v3",
+      "threshold": 0.1,
+      "comparison": "strictly below",
+      "loss_definition": "End-of-epoch logged rolling median; not full-epoch mean",
+      "loss_source": "E:\\pranav\\Thesis-Pranav-Final\\model1\\runs\\cryptbb_v3\\B\\train.log",
+      "loss_source_sha256": "a559ec40b802c1098d6f08cb1349798d0d75d4fb40f28e2f5acedadd6d9e9152",
+      "recorded_losses": {
+        "1": 3.815821,
+        "2": 3.015368,
+        "3": 0.813376,
+        "4": 0.606049,
+        "5": 0.469996,
+        "6": 0.416878,
+        "7": 0.363827,
+        "8": 0.335192,
+        "9": 0.251135,
+        "10": 0.193386,
+        "11": 0.174089,
+        "12": 0.13506,
+        "13": 0.107787,
+        "14": 0.063387,
+        "15": 0.047718,
+        "16": 0.026208,
+        "17": 0.015927,
+        "18": 0.015253,
+        "19": 0.008947,
+        "20": 0.006476
+      },
+      "eligible_epochs": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pending_evaluation_epochs": [],
+      "provisional": false,
+      "original_unmodified_selector_applicable": true,
+      "unsupported_masks": [],
+      "supported_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "adaptation": "No estimator adaptation: original full20 fits and masks0-5; loss gate applied only to winner eligibility",
+      "unrestricted_selected_epoch": 13,
+      "all20_ranking": [
+        13,
+        14,
+        20,
+        19,
+        16,
+        17,
+        15,
+        18,
+        12,
+        11,
+        10,
+        8,
+        7,
+        5,
+        9,
+        6,
+        4,
+        3,
+        1,
+        2
+      ],
+      "eligible_ranking": [
+        14,
+        20,
+        19,
+        16,
+        17,
+        15,
+        18
+      ],
+      "selected_epoch": 14,
+      "top3": [
+        14,
+        20,
+        19
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.2708593518735432,
+        0.2911361053469819,
+        0.43707082595462454,
+        0.35170380410827756,
+        0.4769969520136687,
+        0.4806246639498698,
+        0.41530665935087924,
+        0.5533627102080044,
+        0.6002765255448753,
+        0.6304447332119174,
+        0.7120621070435926,
+        0.6965952309425407,
+        0.6505299088092192,
+        0.6593427016649648,
+        0.6509131829760838,
+        0.6502721787889179,
+        0.669242174934596,
+        0.6798952666185075
+      ],
+      "resolved_k": 5,
+      "fallback_used": true,
+      "mask_diagnostics": [
+        {
+          "k": 0,
+          "next_distance_residual": 0.07625698007167751,
+          "far_residual": 0.037307030925198964,
+          "tolerance": 0.009326757731299741,
+          "passes": false
+        },
+        {
+          "k": 1,
+          "next_distance_residual": 0.05800614748720158,
+          "far_residual": 0.028719650269040973,
+          "tolerance": 0.007179912567260243,
+          "passes": false
+        },
+        {
+          "k": 2,
+          "next_distance_residual": 0.05667242509572098,
+          "far_residual": 0.020759307511623266,
+          "tolerance": 0.0051898268779058164,
+          "passes": false
+        },
+        {
+          "k": 3,
+          "next_distance_residual": 0.04430773454566185,
+          "far_residual": 0.012886776025069378,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 4,
+          "next_distance_residual": 0.025437692215832582,
+          "far_residual": 0.007662990117683564,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 5,
+          "next_distance_residual": 0.018614962307086296,
+          "far_residual": 0.005947421374407382,
+          "tolerance": 0.005,
+          "passes": false
+        }
+      ],
+      "triplet_counts": [
+        36,
+        28,
+        21,
+        15,
+        10,
+        6,
+        3,
+        1,
+        6,
+        10,
+        12,
+        12,
+        10,
+        6,
+        1,
+        3,
+        6,
+        10,
+        15,
+        21
+      ],
+      "labels_read": false,
+      "training_changed": false,
+      "prediction_sources": [
+        {
+          "epoch": 1,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch01",
+          "prediction_sha256": "87d0dff3da467a055e36895a452390cf2fa985200a8d4bc7fba56f9b72cc0a51",
+          "checkpoint_sha256": "58bbf327d894d6adf18155cd807399ff22c71411f82b34bc624646646e390785"
+        },
+        {
+          "epoch": 2,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch02",
+          "prediction_sha256": "2c748a7c0a350866f5d2f69ad81d60d9055f618454a0e2daa674900110620b50",
+          "checkpoint_sha256": "91387990dc0196d50aff58d72390d1d8022b3c2eb5d67c7091ef9d3903dba044"
+        },
+        {
+          "epoch": 3,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch03",
+          "prediction_sha256": "63513da4a3c132c3c7a168ff0b7da50fe6cc954f94bfdb376c2f650a1c4639f2",
+          "checkpoint_sha256": "ae56674821b168f51a81d392f7a1b01278955c584ae023b7ca27d87a58eb9c11"
+        },
+        {
+          "epoch": 4,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch04",
+          "prediction_sha256": "56b7e2770ecd4c4afe7d7f2ef768f7c7772acd1cab0e731bb3382d4008614e93",
+          "checkpoint_sha256": "2b2f95090e059f9da1b15e63b55f44546e1b9bd632710bcde8d04c47557bcfbe"
+        },
+        {
+          "epoch": 5,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch05",
+          "prediction_sha256": "44b45c9677063961e507f2cf5ed19a5d666ee59d8267ae628c077cdcf3a98df9",
+          "checkpoint_sha256": "2aeb9b11cc0180eade846a60fff4519dd109be247460da3bf4d1240884755dd2"
+        },
+        {
+          "epoch": 6,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch06",
+          "prediction_sha256": "5cdba56e710d5bdbb4e535102b48f06580b8e91d320733865dffb10f53c387fc",
+          "checkpoint_sha256": "a88404af9d6770ed045b8c31e8fd062ff38c202e52b086803cd04891bcf309cf"
+        },
+        {
+          "epoch": 7,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch07",
+          "prediction_sha256": "1f12d530037ab20daf15530fbd9d54829479a4697af3b1a67099147a9e0b4335",
+          "checkpoint_sha256": "b675938e0aa5333036f2e0d5df74f66e7840b594e64f0efc59f56ebd67b276af"
+        },
+        {
+          "epoch": 8,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch08",
+          "prediction_sha256": "013eb1dae1d6b8fc3e2bba35a6191a0df7144588b926e0dfe8fee060e7e25252",
+          "checkpoint_sha256": "fb3d12456f2ba81851e066d2a71bd5d33ede1c9f8d14844ed795e4c670cf152d"
+        },
+        {
+          "epoch": 9,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch09",
+          "prediction_sha256": "64865b157aa01cd74c55e2cc890f0377ec2a2fa194e4e32ed9727a230b24b75c",
+          "checkpoint_sha256": "35a3cc6f8a2c285cb78f6d2dc4f8365afa31e78e658d7ad313877ff26e61c390"
+        },
+        {
+          "epoch": 10,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch10",
+          "prediction_sha256": "afbdc9c95f1f2f40b88945866dca06c528a7c72fc10a2c12542751fad92e3948",
+          "checkpoint_sha256": "52cbe672d439577b4ea278b4e5d4b94e5ae5b8668039d354da6a17b27c671f7f"
+        },
+        {
+          "epoch": 11,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch11",
+          "prediction_sha256": "7ed4e8d3f5d8b59bc7fc2de3542c17a6763772fa3a23ff75fc918eb6dffdf1f5",
+          "checkpoint_sha256": "18035f3e0ae7eed7b37bf91d670850bb09b7fc4e242f7ffa14e710f5e22396df"
+        },
+        {
+          "epoch": 12,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch12",
+          "prediction_sha256": "874a6d91c1833ff1192314230410920163b063bee8387477a4c8064c5ab9379b",
+          "checkpoint_sha256": "25110b933de35e116bc0019f615764677b83f690a594cc988696b2e6000a8031"
+        },
+        {
+          "epoch": 13,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch13",
+          "prediction_sha256": "07a186e95d96813b544c0a1f7af5e2c16cdb30831101eb55e6ed6d4ab2f5809e",
+          "checkpoint_sha256": "556d95df5b4b0f471dbebafab85d6a1bb6aee2cfbc78a1a5b29d78e3c4c9a002"
+        },
+        {
+          "epoch": 14,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch14",
+          "prediction_sha256": "6b42a3497022f788b9ffd07b16bc7922067db5ad353633a2f8547e6cd563b75a",
+          "checkpoint_sha256": "c3fe53250d2bc1d48e6eb7f5ef1b1060348fcd2ef0117ed0d3113ec82205d075"
+        },
+        {
+          "epoch": 15,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch15",
+          "prediction_sha256": "9e4644c8681e8864328a10255ebbac6364fa08785652dee2e18b44f2c00598a7",
+          "checkpoint_sha256": "f2b7b0009892959fc84da733f3f08335cc6d29108dd4770b2b73ab2b852442f3"
+        },
+        {
+          "epoch": 16,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch16",
+          "prediction_sha256": "16ad906d1b899d19426e97f29f956a38fdc3f520695c8a95bc077bf63a22e2ef",
+          "checkpoint_sha256": "3f4e4ee58b866565453c39d127129ba27e24ad22419c5ebe03fbae18fc737320"
+        },
+        {
+          "epoch": 17,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch17",
+          "prediction_sha256": "80127a89e8581245da903cc4c90d4865c7d7ec39b558d39f4500a5746bb44163",
+          "checkpoint_sha256": "8650f65c4b43c6bf5eab9d5a62880bf6b69061fb7748d1f73a06a3ff499e1629"
+        },
+        {
+          "epoch": 18,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch18",
+          "prediction_sha256": "8df771bc06b26ee5f9483d561d6ddf50feee8cd49ae640b16d21ab2fd7435572",
+          "checkpoint_sha256": "11270dc6c8fa6769f9a5826805a9a44e035576ca133c6cc9c88b2ed320108897"
+        },
+        {
+          "epoch": 19,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch19",
+          "prediction_sha256": "642fbfaa7bc2945ac8d55d552ffb73a28b7875684bd3e6ef28617e9c662bba6e",
+          "checkpoint_sha256": "0f3388dcefa338e817aa9aa5c2231882847e7de421beda99d0208287409a917f"
+        },
+        {
+          "epoch": 20,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model1\\results\\cryptbb_v3\\B\\requested_cpu_epoch20",
+          "prediction_sha256": "40ee863d679b77dbb4e709595524f256c12f5a442b600e8f54d83e169a4a7a1e",
+          "checkpoint_sha256": "b530ebe4ec3a0a312d71b6eafa9e3452b8c0e0198df795b557cd8c25d2486022"
+        }
+      ]
+    },
+    {
+      "model": 2,
+      "dataset": "A",
+      "family": "cryptbb_v3_epoch20_static_A_20261115",
+      "threshold": 0.1,
+      "comparison": "strictly below",
+      "loss_definition": "Full-epoch mean of sampled training-batch losses",
+      "loss_source": "E:\\pranav\\Thesis-Pranav-Final\\model2\\runs\\cryptbb_v3_epoch20_static_A_20261115\\A\\history.json",
+      "loss_source_sha256": "9044f741b640d119d174acc1dfd1b4ae3e199b3b3b13f5f43c81ee7fd0755e49",
+      "recorded_losses": {
+        "1": 3.8200188250188023,
+        "2": 1.2608962567032451,
+        "3": 0.9904861867122943,
+        "4": 0.7118825252022585,
+        "5": 0.5696686621745835,
+        "6": 0.4696116929545122,
+        "7": 0.3746311941072154,
+        "8": 0.3015997680404302,
+        "9": 0.22627458991983052,
+        "10": 0.1759849213673483,
+        "11": 0.12624943566025065,
+        "12": 0.08577506916830911,
+        "13": 0.056255935855648094,
+        "14": 0.03937462800899354,
+        "15": 0.024261718283614616,
+        "16": 0.016062543920689093,
+        "17": 0.010498893983743113,
+        "18": 0.00753570867605898,
+        "19": 0.006123082214922351,
+        "20": 0.005360727670782334
+      },
+      "eligible_epochs": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pending_evaluation_epochs": [],
+      "provisional": false,
+      "original_unmodified_selector_applicable": true,
+      "unsupported_masks": [],
+      "supported_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "adaptation": "No estimator adaptation: original full20 fits and masks0-5; loss gate applied only to winner eligibility",
+      "unrestricted_selected_epoch": 14,
+      "all20_ranking": [
+        14,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        12,
+        13,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        2,
+        4,
+        3,
+        1
+      ],
+      "eligible_ranking": [
+        14,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        12,
+        13
+      ],
+      "selected_epoch": 14,
+      "top3": [
+        14,
+        20,
+        19
+      ],
+      "scores": [
+        0.0,
+        0.2393177286826963,
+        0.21299124127637073,
+        0.2393124661529239,
+        0.3290033714964955,
+        0.41695405249331047,
+        0.4344187242768611,
+        0.48219963355902434,
+        0.4865439699975092,
+        0.5191062001931357,
+        0.5581569920537156,
+        0.685638837739366,
+        0.6467736172292158,
+        0.780204735725522,
+        0.6864274738859943,
+        0.7037692963188761,
+        0.7187391034369168,
+        0.7250583780426756,
+        0.7523344708775426,
+        0.7710412052833128
+      ],
+      "resolved_k": 5,
+      "fallback_used": true,
+      "mask_diagnostics": [
+        {
+          "k": 0,
+          "next_distance_residual": 0.07680707851789383,
+          "far_residual": 0.034487033386374134,
+          "tolerance": 0.008621758346593534,
+          "passes": false
+        },
+        {
+          "k": 1,
+          "next_distance_residual": 0.0657869788543783,
+          "far_residual": 0.027760241539712637,
+          "tolerance": 0.006940060384928159,
+          "passes": false
+        },
+        {
+          "k": 2,
+          "next_distance_residual": 0.05575116401835259,
+          "far_residual": 0.02032177785990324,
+          "tolerance": 0.00508044446497581,
+          "passes": false
+        },
+        {
+          "k": 3,
+          "next_distance_residual": 0.03714149874585036,
+          "far_residual": 0.013731568933719298,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 4,
+          "next_distance_residual": 0.034703589139234665,
+          "far_residual": 0.009609859491150818,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 5,
+          "next_distance_residual": 0.016883909664850316,
+          "far_residual": 0.006800685104388093,
+          "tolerance": 0.005,
+          "passes": false
+        }
+      ],
+      "triplet_counts": [
+        36,
+        28,
+        21,
+        15,
+        10,
+        6,
+        3,
+        8,
+        12,
+        15,
+        16,
+        15,
+        12,
+        8,
+        3,
+        6,
+        10,
+        15,
+        21,
+        28
+      ],
+      "labels_read": false,
+      "training_changed": false,
+      "prediction_sources": [
+        {
+          "epoch": 1,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_01",
+          "prediction_sha256": "34fc9511a28938e1760055376d499abc1d572f878369a8fd55cf931c983135c2",
+          "checkpoint_sha256": "7e4d71194b1ae4d8ba93af2be5742916b4c33f915be4d2b8fe8ac9d13bf3e9f2"
+        },
+        {
+          "epoch": 2,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_02",
+          "prediction_sha256": "219ae10a9dbc2a4cd8ac6136c1b8e9680ac2f1a321458d366acfb94aa43a0851",
+          "checkpoint_sha256": "b8c262580115a958daded60d400dd37f2d04e581c79401d2f1e05169dc49eeb2"
+        },
+        {
+          "epoch": 3,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_03",
+          "prediction_sha256": "e763ba073dff02d866be233d3085bd21f6e424a017c595485679eadbb8aa35ff",
+          "checkpoint_sha256": "5fd0f7db7e0211c5e638b264927e1e08a92d2a586e1a76a71a94c86d1e1c1448"
+        },
+        {
+          "epoch": 4,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_04",
+          "prediction_sha256": "59ebc39192d1040282faa3b4f2c3e3332fd892408ba46dd392ad485d5c60dbe5",
+          "checkpoint_sha256": "e425cfe82e3d0a238d25d5220a5a39943fcf0870b15d756420593e109734d011"
+        },
+        {
+          "epoch": 5,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_05",
+          "prediction_sha256": "0f1c33fa523cd144ce65079561f55aba8ffd33fb40d98f871a1963565480d7bb",
+          "checkpoint_sha256": "4da85bb10310f3ca4f921df90a34a5518b902f1dbd7173b8c2fdd040d9fe4cc5"
+        },
+        {
+          "epoch": 6,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_06",
+          "prediction_sha256": "e8663c667a2a9bebf167089b7b703a243381c4f4d0eb925789ee363a6236cf6c",
+          "checkpoint_sha256": "a7622a230d9511a7d2b33c19ace3da45043476d15de157a34512367da6c5dfa9"
+        },
+        {
+          "epoch": 7,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_07",
+          "prediction_sha256": "7b6f81069b4c9c87a4ea0bc2d277b359529a995b821a0f2790d5ec9f51fd4544",
+          "checkpoint_sha256": "3ad9f82902b8d2342131326479a758dc5726701c8b47043aa90fcb00f5f4e7da"
+        },
+        {
+          "epoch": 8,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_08",
+          "prediction_sha256": "e9167d6108bd9ab54f1ae6c25831dfbfe59bb3157279b9e748d83a3916b0467b",
+          "checkpoint_sha256": "54db1d171978ffbd2d9401916ce2f300da6c2eca37bf79da2c16959755bd4fb6"
+        },
+        {
+          "epoch": 9,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_09",
+          "prediction_sha256": "d37e988393660a3a638220c766e7015c45eae17fdfb27c463b527cc44453875d",
+          "checkpoint_sha256": "35eb2ae51082f3fd6c4ea8751228a23d16bf77706964376e1305d0bd18b80294"
+        },
+        {
+          "epoch": 10,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_10",
+          "prediction_sha256": "976a825dcb2ba5b3b34443594c23a80a16179a4472ea65568de8a8223987fd8c",
+          "checkpoint_sha256": "1c74a554674ef53c088bcd22fe52098471b001a13f0f7b7bf3f6e253ea47e4b2"
+        },
+        {
+          "epoch": 11,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_11",
+          "prediction_sha256": "9d96519fd6d818fbf6a7d77726f0685e11df52585d71e96ae8c7b74325ab94ba",
+          "checkpoint_sha256": "9b76e43eb2cd19184f71fcea0820af85a7fa28c930e03f4c7e926bcab2c73ff3"
+        },
+        {
+          "epoch": 12,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_12",
+          "prediction_sha256": "de0c0639009779887e244df6cbedc98fc67546eafbe63f55c4190d679387d7df",
+          "checkpoint_sha256": "30955d8c9d99e5f19e23bbd0472da57bf326311bed0aacb0b675c0056d2f1af3"
+        },
+        {
+          "epoch": 13,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_13",
+          "prediction_sha256": "ce49f7995955e3df981c7dadcb64a4f63b1ae553ad6b3cc55b8da01c151a85a4",
+          "checkpoint_sha256": "8315168d219bbaa03a285f4b77e38cc04933c928c1ab955299d2c65b3be1fb9e"
+        },
+        {
+          "epoch": 14,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_14",
+          "prediction_sha256": "86667215b9a1cc83cd91d3e9bb8c0d04e29b223987a7d151e05b63c220477f03",
+          "checkpoint_sha256": "fce1b7d4dab98bfce37e95bfc66d7f592684d02336e3de460d0f3765dbbbe6d0"
+        },
+        {
+          "epoch": 15,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_15",
+          "prediction_sha256": "eb5b130284bcbb3f10217414138f46c5f72a2416462436dfdfe5089d579a1c86",
+          "checkpoint_sha256": "86bf56d6b58bf653a75b4782660ae0c2bad23e21639ad29f99acf250c2f7b6ee"
+        },
+        {
+          "epoch": 16,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_16",
+          "prediction_sha256": "71624c8959a31864e2636cb7a4b79824eee97617052633054faf2f6301fbfa2a",
+          "checkpoint_sha256": "d726c8abd066a6e9a1d02bbb68bcdcffaed53a26a9a39aaecc726c64e12b83bf"
+        },
+        {
+          "epoch": 17,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_17",
+          "prediction_sha256": "06b52ca37434559f9ed8923c57720cd1c47743c11ace8bd65d5ba8045619cace",
+          "checkpoint_sha256": "7e8ea83db5e24c64cf341ecaba4ea2c96af03162ffb090cabac663174156a32d"
+        },
+        {
+          "epoch": 18,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_18",
+          "prediction_sha256": "248b6eafd6b8a5195a9347479e7be339361a5575d06179ae6657014d7f1694c1",
+          "checkpoint_sha256": "2d85f461990e996b22344607e8ada1090c6190964c2d6295e42f9c37ef7f3c6e"
+        },
+        {
+          "epoch": 19,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_19",
+          "prediction_sha256": "336ab1a8ec9205bebef26016efedef03077f033f621260a0f7a627c2e435e605",
+          "checkpoint_sha256": "e07d50fad06498bf8bf229d0f5bbe7fe9a3db90baeeeeeaa77b7d960d5c545a4"
+        },
+        {
+          "epoch": 20,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_A_20261115\\A\\epoch_20",
+          "prediction_sha256": "18610638ec2cd5ead8886731b683c01adf5d6af2ca62f88da818023fb65d73e4",
+          "checkpoint_sha256": "42eb13dec856ac054a731864e1442a115980ce642d0ac6628e4407d8129d49f9"
+        }
+      ]
+    },
+    {
+      "model": 2,
+      "dataset": "B",
+      "family": "cryptbb_v3_epoch20_static_B_20261115",
+      "threshold": 0.1,
+      "comparison": "strictly below",
+      "loss_definition": "Full-epoch mean of sampled training-batch losses",
+      "loss_source": "E:\\pranav\\Thesis-Pranav-Final\\model2\\runs\\cryptbb_v3_epoch20_static_B_20261115\\B\\history.json",
+      "loss_source_sha256": "b1fb55fc4e84a243d08fcc47270dddeeb0e9d463668a63eaba7e024608ef4e5a",
+      "recorded_losses": {
+        "1": 3.8357514999711606,
+        "2": 1.3735410392741718,
+        "3": 0.9952285179244283,
+        "4": 0.7189727336778056,
+        "5": 0.5692418096849071,
+        "6": 0.4612529474451109,
+        "7": 0.3725786522564376,
+        "8": 0.29825641611195586,
+        "9": 0.23026716219418494,
+        "10": 0.17216905631372692,
+        "11": 0.12017609651588723,
+        "12": 0.08348151298282701,
+        "13": 0.0561696103871669,
+        "14": 0.038926497311390876,
+        "15": 0.024777185056320466,
+        "16": 0.016031097839860356,
+        "17": 0.010727604267561374,
+        "18": 0.0077852372777090905,
+        "19": 0.005827398770197016,
+        "20": 0.005655118973170648
+      },
+      "eligible_epochs": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pending_evaluation_epochs": [],
+      "provisional": false,
+      "original_unmodified_selector_applicable": true,
+      "unsupported_masks": [],
+      "supported_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "adaptation": "No estimator adaptation: original full20 fits and masks0-5; loss gate applied only to winner eligibility",
+      "unrestricted_selected_epoch": 14,
+      "all20_ranking": [
+        14,
+        20,
+        17,
+        19,
+        15,
+        12,
+        18,
+        16,
+        13,
+        11,
+        10,
+        9,
+        8,
+        7,
+        5,
+        6,
+        3,
+        4,
+        2,
+        1
+      ],
+      "eligible_ranking": [
+        14,
+        20,
+        17,
+        19,
+        15,
+        12,
+        18,
+        16,
+        13
+      ],
+      "selected_epoch": 14,
+      "top3": [
+        14,
+        20,
+        17
+      ],
+      "scores": [
+        0.0,
+        0.19103606416596716,
+        0.2575129419087748,
+        0.25056097973354163,
+        0.3802425874593641,
+        0.35842736508860573,
+        0.41917210899506024,
+        0.4192441016189256,
+        0.4641852861567108,
+        0.5069655415682044,
+        0.6419029486063036,
+        0.7168830508598929,
+        0.6991639981983866,
+        0.7387681615073742,
+        0.7296726242043794,
+        0.7044405663099443,
+        0.7354933306589642,
+        0.7112753852352077,
+        0.7299318813620047,
+        0.7378809861618124
+      ],
+      "resolved_k": 5,
+      "fallback_used": true,
+      "mask_diagnostics": [
+        {
+          "k": 0,
+          "next_distance_residual": 0.07124929143577624,
+          "far_residual": 0.03456568657520377,
+          "tolerance": 0.008641421643800943,
+          "passes": false
+        },
+        {
+          "k": 1,
+          "next_distance_residual": 0.060445554196664114,
+          "far_residual": 0.02629678367498603,
+          "tolerance": 0.006574195918746507,
+          "passes": false
+        },
+        {
+          "k": 2,
+          "next_distance_residual": 0.04862239013616912,
+          "far_residual": 0.017837335356862733,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 3,
+          "next_distance_residual": 0.04220211619211013,
+          "far_residual": 0.011660598437970054,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 4,
+          "next_distance_residual": 0.022652139076575015,
+          "far_residual": 0.007988318778764252,
+          "tolerance": 0.005,
+          "passes": false
+        },
+        {
+          "k": 5,
+          "next_distance_residual": 0.0153099900998846,
+          "far_residual": 0.006789727737667205,
+          "tolerance": 0.005,
+          "passes": false
+        }
+      ],
+      "triplet_counts": [
+        36,
+        28,
+        21,
+        15,
+        10,
+        6,
+        3,
+        8,
+        12,
+        15,
+        16,
+        15,
+        12,
+        8,
+        3,
+        6,
+        10,
+        15,
+        21,
+        28
+      ],
+      "labels_read": false,
+      "training_changed": false,
+      "prediction_sources": [
+        {
+          "epoch": 1,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_01",
+          "prediction_sha256": "954cc5ebfd4cf9f74a8c16f84d882e0ef278d636a12cdf9b14af435bbd100593",
+          "checkpoint_sha256": "45d1315724a9ffd2c684863c9095a60b3bff892f2a4620c101dfa76962151259"
+        },
+        {
+          "epoch": 2,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_02",
+          "prediction_sha256": "c5ab31969538ed4facc8d2cb857c435f749af925f74b212cc56ac1f570e938ad",
+          "checkpoint_sha256": "027eb4b191a0c2e815c6a16cc85bf2a5756e02a85deb1f918c303f0c89ec31e4"
+        },
+        {
+          "epoch": 3,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_03",
+          "prediction_sha256": "0839734f832af8b3c26756101295767f872d712e3ac21ec6d6787f473233d8ff",
+          "checkpoint_sha256": "13c98d818b2016b6576bb6aa9c9ec25124d5b385ec99954639ea3474f374ec90"
+        },
+        {
+          "epoch": 4,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_04",
+          "prediction_sha256": "387f00b62d7968dff52a371ea073023c74a9fa3ef0394d1e22a2986aec20bcbb",
+          "checkpoint_sha256": "c659a8f2d3f554bfa5071ef6f59ec1e368a67d8bc6ebcc234d80f0cd05dc3906"
+        },
+        {
+          "epoch": 5,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_05",
+          "prediction_sha256": "777047ca2d160cc7afa4e73ad6b2942100d2ce72f80c90fe4d072253592b1871",
+          "checkpoint_sha256": "a431609ab17a85b9927d00fee4a9c931dc8a69f6524b8d6b3ff933d4f19d41ed"
+        },
+        {
+          "epoch": 6,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_06",
+          "prediction_sha256": "f28221cd9aeb254f9670ecbb8095c376cf3fc66b851be782acf1fa6926c0f59c",
+          "checkpoint_sha256": "66e566ab9e2b7b847139f95b2b45026ced2919a078bb84824f7121a4d12c6d11"
+        },
+        {
+          "epoch": 7,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_07",
+          "prediction_sha256": "6a1b40a88d481ce964c82b6db062153256ce5fd74d4dac006f95ee3d558b7097",
+          "checkpoint_sha256": "2397fe4bedac040935939806402ab80023c2322bad5c24dfba414c5f3427a195"
+        },
+        {
+          "epoch": 8,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_08",
+          "prediction_sha256": "9cb958d8a79a4a0e4a4f6cfb4698a546bfa73ce71617bd9e96a80ebeb71ebdda",
+          "checkpoint_sha256": "6cd0ba8cdb502e67a2789dca559d92fe3ebd817af53444e2bc8b77f5459f4acc"
+        },
+        {
+          "epoch": 9,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_09",
+          "prediction_sha256": "10792dae51f0d0e1b6a107a18bf6251e11dd66de68dfc264b434d8c00908c96e",
+          "checkpoint_sha256": "8839a0561b3b41f7e9ec4b56fc3b61fda96fa1b5c98a2f31c39ae272296679e5"
+        },
+        {
+          "epoch": 10,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_10",
+          "prediction_sha256": "f28fd23039068d5e9317944c18ea695e2dc17e41306c63bd0327868ea13ce418",
+          "checkpoint_sha256": "d5229dbe0a179f6b7b24647cd92a667a06c22a692a2d834c2361843f18c89b94"
+        },
+        {
+          "epoch": 11,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_11",
+          "prediction_sha256": "f78ac00e8246aa2fd4d23d67e41085b1b75743f34155684f464681306ca47f49",
+          "checkpoint_sha256": "6188d20bf08aede6aee67055e9e6600dc806c1a4ee59b24fd190fedc6322b3d9"
+        },
+        {
+          "epoch": 12,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_12",
+          "prediction_sha256": "a2066889c5a9a8df0fef9cf789723d04ec0da64f3b287765754995967ea0ae5f",
+          "checkpoint_sha256": "b02b0facb9114aa610f8a2365aebcf536981bbc7179f8d49e61601ecd2db5e7e"
+        },
+        {
+          "epoch": 13,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_13",
+          "prediction_sha256": "9dc85b77597f32a00e8e26ce111e88696cc068435f8c4f38890da1734376f3b5",
+          "checkpoint_sha256": "f358836671fa43097775110c202da702e967457266713bec0114836aecc61606"
+        },
+        {
+          "epoch": 14,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_14",
+          "prediction_sha256": "e4f2df673b296375b3a4d44a356ab6272e4c5e8db8543fb416ab42adb2fa5d33",
+          "checkpoint_sha256": "107861015f7366f42827cf8a3a08305dfbe995ccda8be939ea2dc980fcd9b4d1"
+        },
+        {
+          "epoch": 15,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_15",
+          "prediction_sha256": "4aa36669fee9d8bf6e5d5898c5406a296e285514bd2a137a66e30b9a17cc36fe",
+          "checkpoint_sha256": "99b4a2b059757e4c76df4d2363bab4cf0bf3637f3c763f8d82e2ef83bb60c912"
+        },
+        {
+          "epoch": 16,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_16",
+          "prediction_sha256": "ca8f7cbaaec3f486d428cdda1925b36fc6da6d32968249c17fd7be4682245390",
+          "checkpoint_sha256": "f156e4ad7c88091a9df99856fad515d1f905d2e636d472e4906676ddf69791a7"
+        },
+        {
+          "epoch": 17,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_17",
+          "prediction_sha256": "0ca5a5d9fe617648662b53300bd585877b6c936b3444c2385c3d24cdeebb5bff",
+          "checkpoint_sha256": "442370bfc26a3ae7d5ad24369e0989e65cb2a2ed7f6cabc506a40d0fcab5d36c"
+        },
+        {
+          "epoch": 18,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_18",
+          "prediction_sha256": "af501308684b1b3b709d50a170b4dd5de95965cbaa756e3a4226af6392e06d6f",
+          "checkpoint_sha256": "3ce598aa885fe9094cf8737c03ed3e6244b7299f4d190671536d0ab4d6845cd0"
+        },
+        {
+          "epoch": 19,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_19",
+          "prediction_sha256": "db1e5323204a289f271ff1015478333949380ce405c13ed450f89e763721e436",
+          "checkpoint_sha256": "4f8b9d347c3ddc27afbe0ed90085546331d15ad78db5f5790d7c786488e5faee"
+        },
+        {
+          "epoch": 20,
+          "path": "E:\\pranav\\Thesis-Pranav-Final\\model2\\results\\cryptbb_v3_epoch20_static_B_20261115\\B\\epoch_20",
+          "prediction_sha256": "d6b6e09d5fe74996aba0919482487fe9891c8114c5f592887c41de0e39cb3434",
+          "checkpoint_sha256": "56f96e7828e879b8f81fba7471640c534f7a4a56b08e9b54cbaa892478a92fd0"
+        }
+      ]
+    }
+  ],
+  "labels_read": false,
+  "note": "Original full20 estimator unchanged. Retrospective winner-eligibility gate only; official production selections preserved."
+}

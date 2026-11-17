@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-14T08:22:52.791778+00:00",
+  "user_request": "After CryptBB v3 generation, train Model1-A/B in parallel, then Model2-A/B in parallel",
+  "priority": "CryptBB Model1 -> Model2 before pending Model4 teacher queue",
+  "epochs_each": 20,
+  "batch_size": 128,
+  "seed": 48,
+  "teacher_rankings": "Model1-B epoch20 ranks A; Model1-A epoch20 ranks B",
+  "model3_authorized": false,
+  "production_gate": "Both validated100k corpora + exact-data paired preflight",
+  "notes": "No relaxed controller admission; no restarts of stopped v2 or historical Model1-B"
+}

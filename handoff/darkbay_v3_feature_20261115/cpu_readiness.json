@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-16T07:03:54.942257+00:00",
+  "checks": {
+    "passed": true,
+    "threshold_strict": true,
+    "forgetting": true,
+    "reference_importance": true,
+    "immutable_buckets": true,
+    "exact_replay": true,
+    "full_batches": true,
+    "coverage": true,
+    "full20epoch_static_budget": true,
+    "warmup_exact": true,
+    "adaptive_full20epoch_progression": true,
+    "A_B_started_before_waiting": true,
+    "data_audits_precede_training_and_stage_order": true
+  },
+  "gpu_readiness": "Deferred until fresh datasets and prior CryptBB worker completion; mandatory gates in coordinator"
+}

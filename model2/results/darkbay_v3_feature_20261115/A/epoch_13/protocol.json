@@ -1,0 +1,16 @@
+{
+  "model": 2,
+  "dataset": "A",
+  "epoch": 13,
+  "checkpoint_sha256": "41f2fa6638694c171fe2264051af2e5c8525f7118a37e0f9a523d0ae959835c9",
+  "training_protocol_sha256": "1d2b263423b13df594b1b49630c84593a70ddf7695b11dc2ab44c49371f27cd3",
+  "manifest_sha256": "52ed4addf3527f7eda1de26ea3984b0f1bfbbae2a16c351fcac594993b5b8d3a",
+  "images": 900,
+  "device": "cuda",
+  "precision": "FP32",
+  "batch": 4,
+  "threads": 2,
+  "labels_after_freeze": true,
+  "selection": "Fixed final20 primary; interim diagnostics do not steer training",
+  "historical_test": true
+}
